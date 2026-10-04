@@ -1,0 +1,223 @@
+{
+    "label": "ancestries",
+    "collection": "daggerheart.ancestries",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "MOe9Lf4CeK3FKNyL": {
+            "_note": "Aetheris"
+        },
+        "ed8BoLR4SHOpeV00": {
+            "_note": "Clank"
+        },
+        "VLeOEqkLS0RbF0tB": {
+            "_note": "Drakona"
+        },
+        "pDt6fI6otv2E2odf": {
+            "_note": "Dwarf"
+        },
+        "UfSkmzJu8trnSbJW": {
+            "_note": "Earthkin"
+        },
+        "q2l6g3Ssa04K84GO": {
+            "_note": "Elf"
+        },
+        "moNuI4qFehGE1ZgV": {
+            "_note": "Emberkin"
+        },
+        "XzJVbb5NT9k79ykR": {
+            "_note": "Faerie"
+        },
+        "HaYhe6WqoXW5EbRl": {
+            "_note": "Faun"
+        },
+        "hzKmydI8sR3uk4CO": {
+            "_note": "Firbolg"
+        },
+        "J1hX7nBBc5jQiHli": {
+            "_note": "Fungril"
+        },
+        "eZNG5Iv0yfbHs5CO": {
+            "_note": "Galapa"
+        },
+        "3U8CncG92a7ERIJ0": {
+            "_note": "Giant"
+        },
+        "RkSFOANAzYlAVv91": {
+            "_note": "Gnome"
+        },
+        "EKPEdIz9lA9grPqH": {
+            "_note": "Goblin"
+        },
+        "CtL2jDjvPOJxNJKm": {
+            "_note": "Halfling"
+        },
+        "wtJ5V5qRppLQn61n": {
+            "_note": "Human"
+        },
+        "hyxcuF2I0xcZSGkm": {
+            "_note": "Infernis"
+        },
+        "yyW0UM8srD9WuwW7": {
+            "_note": "Katari"
+        },
+        "D1RbUsRV9HpTrPuF": {
+            "_note": "Orc"
+        },
+        "HwOoBKXOL9Tf5j85": {
+            "_note": "Ribbet"
+        },
+        "2yMLxxn7CHEvmShj": {
+            "_note": "Simiah"
+        },
+        "8j6sTY4Y2hfeUHyi": {
+            "_note": "Skykin"
+        },
+        "whKWzHY0cC4fAsLs": {
+            "_note": "Tidekin"
+        },
+        "BNofV1UC4ZbdFTkb": {
+            "_note": "Adaptability"
+        },
+        "GVhmLouGq9GWCsN8": {
+            "_note": "Amphibious"
+        },
+        "kFuNdXalIInsFRlh": {
+            "_note": "Amphibious"
+        },
+        "nLL2zuDDDbbyxlrQ": {
+            "_note": "Caprine Leap"
+        },
+        "TfolXWFG2W2hx6sK": {
+            "_note": "Celestial Trance"
+        },
+        "qNoIvEtDIA8JkOiq": {
+            "_note": "Celestial Wings"
+        },
+        "AA2CZlJSWW8GPhrR": {
+            "_note": "Charge"
+        },
+        "AXqcoxnRoWBbbKpK": {
+            "_note": "Danger Sense"
+        },
+        "WuwXH2r2uM9sDJtj": {
+            "_note": "Death Connection"
+        },
+        "i92lYjDhVB0LyPid": {
+            "_note": "Dread Visage"
+        },
+        "2xlqKOkDxWHbuj4t": {
+            "_note": "Efficient"
+        },
+        "sRaE3CgkgjBF1UpV": {
+            "_note": "Elemental Breath"
+        },
+        "tXWEMdLXafUSZTbK": {
+            "_note": "Endurance"
+        },
+        "H18ab3im0cn6gYdC": {
+            "_note": "Eye of the Storm"
+        },
+        "IlWvn5kCqCBMuUJn": {
+            "_note": "Fearless"
+        },
+        "lNgbbYnCKgrdvA85": {
+            "_note": "Feline Instincts"
+        },
+        "zmTuxjHiNDsW4VYa": {
+            "_note": "Fireproof"
+        },
+        "puDdIetm05O8andm": {
+            "_note": "Flicker Step"
+        },
+        "9tmeXm623hl4Qnws": {
+            "_note": "Fungril Network"
+        },
+        "hgFrDlmnPjhRUxOg": {
+            "_note": "Gale Force"
+        },
+        "k9hwCXpESBx326PC": {
+            "_note": "Hallowed Aura"
+        },
+        "HMXNJZ7ynzajR2KT": {
+            "_note": "High Stamina"
+        },
+        "FaHu2yAthY6ZvM2d": {
+            "_note": "Ignition"
+        },
+        "CvUVZRfxgxhmRQ9I": {
+            "_note": "Immovable"
+        },
+        "0RN0baBxh95GT1cm": {
+            "_note": "Increased Fortitude"
+        },
+        "e2Cu6exxtvfQzc1e": {
+            "_note": "Internal Compass"
+        },
+        "gpW19TfJk0WWFh1S": {
+            "_note": "Kick"
+        },
+        "HCyMnY3yW1PBTZvc": {
+            "_note": "Lifespring"
+        },
+        "oWbdlh51ajn1Q5kL": {
+            "_note": "Long Tongue"
+        },
+        "U6iFjZgLYawlOlQZ": {
+            "_note": "Luckbender"
+        },
+        "8O6SQQMxKWr430QA": {
+            "_note": "Luckbringer"
+        },
+        "soQvPL0MrTLLcc31": {
+            "_note": "Natural Climber"
+        },
+        "3lNqft3LmOlEIEkw": {
+            "_note": "Nimble"
+        },
+        "tsX9rZ2JRkzgF8DR": {
+            "_note": "Nimble Fingers"
+        },
+        "g6I4tRUQNgL4vZ6H": {
+            "_note": "Purposeful Design"
+        },
+        "0NSPSuB8KSEYTJIP": {
+            "_note": "Quick Reactions"
+        },
+        "WRs2jvwM0STmkWIW": {
+            "_note": "Reach"
+        },
+        "UFR67BUOhNGLFyg9": {
+            "_note": "Retract"
+        },
+        "Zj69cAeb3NjIa8Hn": {
+            "_note": "Retracting Claws"
+        },
+        "u8ZhV962rNmUlzkp": {
+            "_note": "Scales"
+        },
+        "A6a87OWA3tx16g9V": {
+            "_note": "Shell"
+        },
+        "THm8khYAtu2vQrdd": {
+            "_note": "Stoneskin"
+        },
+        "60o3cKUZzxO9EDQF": {
+            "_note": "Sturdy"
+        },
+        "YsJticxv8OFndd4D": {
+            "_note": "Surefooted"
+        },
+        "S0Ww7pYOSREt8qKg": {
+            "_note": "Thick Skin"
+        },
+        "YhxD1ujZpftPu19w": {
+            "_note": "Tusks"
+        },
+        "G5pE8FW94V1W9jJx": {
+            "_note": "Unshakeable"
+        },
+        "WquAjoOcso8lwySW": {
+            "_note": "Wings"
+        }
+    }
+}

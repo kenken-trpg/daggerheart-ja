@@ -679,6 +679,52 @@ npm run packs:check          # エンリッチャ (@UUID/@Lookup) の整合性
 `system.attack.name`、`system.experiences`、`pages[].text.content`。
 工程2 (`communities` + `ancestries`) が `items[]` の検証になる。
 
+### 工程2 (`communities` + `ancestries`) 済み — 計画の前提が1つ外れていた
+
+**`items[]` はこの2パックに存在しない。** 工程表には「工程2で入れ子 `items[]` を
+検証する」と書いていたが、実データを見ると `communities` / `ancestries` の
+`features` は**同じパック内の別ドキュメントへの UUID 参照**で、埋め込みではない。
+
+```json
+"system": { "features": ["Compendium.daggerheart.communities.Item.OyzEkHdHYwmoofQx"] }
+```
+
+参照先は同じパックのエントリなので、**既存のマッピングでそのまま訳せる**
+(`ancestries` 73ファイルの内訳は ancestry 24 + feature 48 + フォルダ1)。
+`items[]` の検証は、アクターに機能が埋め込まれている `adversaries` /
+`environments` (工程5) まで出番がない。
+
+代わりにここで検証できたのは **`effects[]`**:
+
+| 確認項目 | 結果 |
+| --- | --- |
+| `effects[]` の `name` / `description` | 成立 (Babele の既定マッピングがそのまま効く) |
+| エフェクトの他18キー | 無傷 |
+| 3パック同時読み込み | エラーなし |
+| 未訳エントリ | 英語のまま、名前の欠落なし (30/30、72/72) |
+
+#### マッピングのレイヤはキー単位でマージされる (検証済み)
+
+`document-mappings.js` の `#mergeLayer` は型ごとに
+`#mergedDefinition(target[key] ?? {}, value)` を呼ぶ。つまり
+**`Item` を定義しても既定の `effects` は消えない。** `description` だけを
+`system.description.value` → `system.description` に差し替えられるのはこのため。
+
+裏を返すと、**既定を無効化したいときは明示的に打ち消す必要がある**。
+これは `ActiveEffect.changes` で効いてくる: 既定は `changes[].value` を
+`structured` で訳す設定になっているが、ここには数式が混ざる
+(「訳してはいけないフィールド」参照)。`communities` / `ancestries` には
+`changes` が1件も無いので今回は無害だったが、**`changes` を持つパックを
+有効にするときは、その前に打ち消し方を決めること。**
+
+#### 訳さないと判断したフィールド (実データで確認)
+
+| フィールド | 実際の値 | 判断 |
+| --- | --- | --- |
+| `system.featureForm` | 63件すべて `passive` | 列挙キー。訳さない |
+| `system.loreReference` | `warborne` / `frostborne` など小文字スラグ | 同上 |
+| `system.features` | `Compendium....Item.<id>` | 参照。訳すと壊れる |
+
 ### 残っている未検証項目
 
 - **既存ワールドへの影響。** Babele は閲覧・インポート時にのみ訳を当てる。

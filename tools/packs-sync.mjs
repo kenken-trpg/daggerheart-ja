@@ -60,7 +60,7 @@ const PACKS = {
 };
 
 /* Which packs `export` currently writes. Widened one at a time as each is proven. */
-const ENABLED = ['transformations'];
+const ENABLED = ['transformations', 'communities', 'ancestries'];
 
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 
@@ -90,6 +90,23 @@ function translatableFields(document) {
     const fields = { name: document.name ?? '' };
 
     if (document.system?.description) fields.description = document.system.description;
+
+    /*
+     * Fields deliberately left out, checked against the data rather than assumed:
+     *   system.featureForm    always the enum 'passive'
+     *   system.loreReference  lowercase slugs (warborne, frostborne, ...)
+     *   system.features       UUIDs pointing at other documents in the same pack
+     * Translating any of these breaks the reference rather than localizing it.
+     */
+
+    const effects = (document.effects ?? []).reduce((acc, effect) => {
+        const entry = {};
+        if (effect.name) entry.name = effect.name;
+        if (effect.description) entry.description = effect.description;
+        if (Object.keys(entry).length) acc[effect._id] = entry;
+        return acc;
+    }, {});
+    if (Object.keys(effects).length) fields.effects = effects;
 
     const actions = document.system?.actions ?? {};
     const translatableActions = Object.entries(actions).reduce((acc, [id, action]) => {

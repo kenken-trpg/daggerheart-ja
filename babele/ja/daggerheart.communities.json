@@ -1,0 +1,107 @@
+{
+    "label": "communities",
+    "collection": "daggerheart.communities",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "7hCkORII05slZW3c": {
+            "_note": "Duneborne"
+        },
+        "XLaNJvrahs9rRraZ": {
+            "_note": "Freeborne",
+            "name": "自由民",
+            "description": "<p>自由民のコミュニティの一員であるということは、かつて圧政下にあったが今は解放された共同体の出身だということです。</p>"
+        },
+        "YHfNavuBRxvyqeNO": {
+            "_note": "Frostborne"
+        },
+        "wbI1Im48QmZA1UIE": {
+            "_note": "Hearthborne"
+        },
+        "DVw2mOCHB8i0XeBz": {
+            "_note": "Highborne"
+        },
+        "YsvlyqYoi8QQ8kwm": {
+            "_note": "Loreborne"
+        },
+        "TY2TejenASXtS484": {
+            "_note": "Orderborne"
+        },
+        "Mv4TfmbbgKyOj1rt": {
+            "_note": "Reborne"
+        },
+        "WHLA4qrdszXQHOuo": {
+            "_note": "Ridgeborne"
+        },
+        "o5AA5J05N7EvH1rN": {
+            "_note": "Seaborne"
+        },
+        "rGwCPMqZtky7SE6d": {
+            "_note": "Slyborne"
+        },
+        "eX0I1ZNMyD3nfaL1": {
+            "_note": "Underborne"
+        },
+        "82mDY2EIBfLkNwQj": {
+            "_note": "Wanderborne"
+        },
+        "fB2lEkodBCuyyMs1": {
+            "_note": "Warborne"
+        },
+        "CRJ5pzJj4FjCtIlx": {
+            "_note": "Wildborne"
+        },
+        "E7QiHAoOxQIZEVR1": {
+            "_note": "Brave Face"
+        },
+        "u5OSsvjcD8tvf5Gc": {
+            "_note": "Close-Knit"
+        },
+        "7aXWdH3gzaYREK0X": {
+            "_note": "Dedicated"
+        },
+        "3Q6bQ73PdGz2Bmcz": {
+            "_note": "Found Family"
+        },
+        "z8HhzWZUZCSrbzTc": {
+            "_note": "Hardy"
+        },
+        "07x6Qe6qMzDw2xN4": {
+            "_note": "Know the Tide"
+        },
+        "TQ1AIQjndC4mYmmU": {
+            "_note": "Lightfoot",
+            "name": "軽やかな足",
+            "description": "<p>あなたの動きは自然と静かです。音を立てずに移動するロールに有利を得ます。</p>",
+            "effects": {
+                "4my9X5XC3uwDSx7B": {
+                    "name": "軽やかな足",
+                    "description": "<p>あなたの動きは自然と静かです。音を立てずに移動するロールに有利を得ます。</p>"
+                }
+            }
+        },
+        "aMla3xQuCHEwORGD": {
+            "_note": "Low-Light Living"
+        },
+        "2RSrQouA2zEJ5Xee": {
+            "_note": "Nomadic Pack"
+        },
+        "DOrvaVrES1HYhG2u": {
+            "_note": "Oasis"
+        },
+        "C7NR6qRatawZusmg": {
+            "_note": "Privilege"
+        },
+        "ZmEuBdL0JrvuA8le": {
+            "_note": "Scoundrel"
+        },
+        "DYmmr5CknLtHnwuj": {
+            "_note": "Steady"
+        },
+        "OyzEkHdHYwmoofQx": {
+            "_note": "Unbound"
+        },
+        "JBZJmywisJg5X3tH": {
+            "_note": "Well-Read"
+        }
+    }
+}
