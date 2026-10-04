@@ -596,14 +596,100 @@ Daggerheart のデータは、訳すべきテキストが**ランダム ID を�
 `glossary/` は packs でもそのまま使う。むしろ UI より効く — 同じ用語が
 980,122文字の中に散るので、揃っていないことが目立つ。
 
+### 工程0〜1 実装済み・実機で成立を確認 (2026-10-04)
+
+**方式は成立する。** `transformations` で端から端まで通した。
+
+| 確認項目 | 結果 |
+| --- | --- |
+| 訳ファイルが読まれる | `translation for daggerheart.transformations pack successfully loaded from modules/daggerheart-ja/babele/ja/…` |
+| `_id` 照合 | 成立。`_identity: {export:["_id"], match:["_id","name"]}` |
+| 既定マッピングの上書き | 成立。`description` を `system.description.value` → `system.description` に差し替え |
+| `structured` コンバータ | 成立。`system.actions.<id>.name` / `.description` が訳される |
+| **訳さないデータの保全** | 成立。action の残り18キー (`type`/`damage`/`_id` 等) は無傷 |
+| フォルダ名 | 成立。`変身の特徴` |
+| 未訳エントリ | 英語のまま残る |
+| コンソール | 警告・エラーなし |
+
+実装は次の4つ:
+
+| ファイル | 役目 |
+| --- | --- |
+| `tools/fetch-reference.mjs` | 上流の tarball から `lang/en.json` と `src/packs/**` を取得 (1,822ファイル) |
+| `tools/packs-sync.mjs` | `export` / `prepare` / `apply` / `report` / `check` |
+| `babele/ja/mappings.json` | `_identity` とフィールドマッピング |
+| `scripts/babele.mjs` | `game.babele.register({module, lang, dir})` |
+
+#### 実機で分かったこと (設計時に見落としていた3点)
+
+**1. Babele は libWrapper を必須とする。** `script/foundry/wrapper.js` が
+`CONFIG.DatabaseBackend._getDocuments` を libWrapper で包んで訳を当てる。
+libWrapper が無いと**登録もファイル読み込みも成功したまま、訳だけが当たらない**。
+Babele の `module.json` には `relationships.requires` に入っているので
+インストール時には解決されるが、切っていると静かに失敗する。
+`game.babele.translate(collection, data)` を直接呼ぶと訳が返るので、
+**「translate は効くのに画面は英語」ならまず libWrapper を疑う**。
+
+**2. 未訳フィールドを `""` で書いてはいけない。** Babele はファイルにある値を
+そのまま当てるので、`"name": ""` と書くと**原文が消えて名前が空のエントリになる**。
+実機で `Corpse` の名前と説明が消えて発覚した。
+→ `export` は**訳のあるフィールドだけを書く**。未訳の受け皿は `lang-sync` と同じく
+別の作業ファイル (`prepare` → `lang/translation/packs-pending.json` → `apply`)。
+
+**3. フォルダはドキュメントではない。** `src/packs/**` にはフォルダ定義の JSON
+(`_key` が `!folders!…`) が混ざっている。これをエントリとして書くと、
+コンペンディウムに存在しない `_id` を持つ行ができる (19件書いて実在18件)。
+Babele はフォルダを**英語名をキーに** `folders` で引く。`entries` とは別物。
+
+```json
+{
+    "collection": "daggerheart.transformations",
+    "folders": { "Transformation Features": "変身の特徴" },
+    "entries": {
+        "ohtlJOWsGtPumnt3": { "_note": "Fangs", "name": "牙", "description": "<p>…</p>" }
+    }
+}
+```
+
+**4. `Babele.get()` は非推奨。** 2.5.5 以降は `game.babele`、4 で削除予定。
+既存の翻訳モジュール (dnd5e-de 等) の例はこの古い API を使っているので、
+真似すると警告が出る。
+
+#### 運用
+
+```bash
+npm run reference            # 上流の en.json と src/packs を取得
+npm run packs:export         # 訳ファイルを上流に合わせて作り直す (訳は保持)
+npm run packs:prepare        # 未訳を packs-pending.json に書き出す
+#   → "ja" を埋める
+npm run packs:apply
+npm run packs:report         # パック別カバー率
+npm run packs:check          # エンリッチャ (@UUID/@Lookup) の整合性
+```
+
+`packs-sync.mjs` の `ENABLED` に書いたパックだけを対象にする。いまは
+`transformations` のみ。**1パックずつ、実機で確認してから広げる** —
+パックごとにデータ形状が違い、マッピングの追加が要るため。
+
+#### 次に広げるときに要るマッピング
+
+`transformations` は `name` / `system.description` / `system.actions` しか持たない、
+最も単純な形。上の「必要なマッピングの全体像」の表のうち、まだ書いていないのは
+`items[]` (`document` コンバータ)、`effects[]`、`system.motivesAndTactics`、
+`system.attack.name`、`system.experiences`、`pages[].text.content`。
+工程2 (`communities` + `ancestries`) が `items[]` の検証になる。
+
 ### 残っている未検証項目
 
 - **既存ワールドへの影響。** Babele は閲覧・インポート時にのみ訳を当てる。
   既にワールドへインポート済みのドキュメントは遡って翻訳されない。
-  ユーザーへの告知事項。
-- **`src/packs` の `_stats.coreVersion` が 14.366/14.367** のため、
-  それより古いコアでは journals / rolltables の移行が失敗する (実機テストで確認済み)。
-  Babele 検証は `verified` の 14.368 で行う。
+  ユーザーへの告知事項。**未検証。**
+- **モジュール配布物に `babele/` を含めること。** リリースの zip は
+  `module.json` / `lang/` / `styles/` だけだったので、`babele/` と `scripts/` の
+  追加が要る (`.github/workflows/release.yml`)。
+- **`recommends` に lib-wrapper を足すか。** Babele 自身が `requires` で
+  持っているので二重になるが、上の「静かに失敗する」経路を踏ませないために
+  書いておく価値はある。判断保留。
 
 ## 配布 (マニフェスト URL でのインストール)
 

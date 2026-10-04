@@ -10,6 +10,11 @@
     "lang:report": "node ./tools/lang-sync.mjs report",
     "lang:prepare": "node ./tools/lang-sync.mjs prepare",
     "lang:diff": "node ./tools/lang-sync.mjs diff",
-    "lang:apply": "node ./tools/lang-sync.mjs apply"
+    "lang:apply": "node ./tools/lang-sync.mjs apply",
+    "packs:export": "node ./tools/packs-sync.mjs export",
+    "packs:prepare": "node ./tools/packs-sync.mjs prepare",
+    "packs:apply": "node ./tools/packs-sync.mjs apply",
+    "packs:report": "node ./tools/packs-sync.mjs report",
+    "packs:check": "node ./tools/packs-sync.mjs check"
   }
 }

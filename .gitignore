@@ -16,3 +16,6 @@ lang/Daggerheart_en-ja.csv
 
 # リリース成果物
 module.zip
+
+# 翻訳作業ファイル (packs)
+lang/translation/packs-pending.json

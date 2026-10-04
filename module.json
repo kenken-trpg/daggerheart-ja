@@ -55,8 +55,18 @@
     },
     "flags": {
         "hotReload": {
-            "extensions": ["css", "json"],
-            "paths": ["styles/daggerheart-ja.css", "lang"]
+            "extensions": [
+                "css",
+                "json"
+            ],
+            "paths": [
+                "styles/daggerheart-ja.css",
+                "lang",
+                "babele"
+            ]
         }
-    }
+    },
+    "esmodules": [
+        "scripts/babele.mjs"
+    ]
 }

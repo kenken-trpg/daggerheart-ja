@@ -47,7 +47,7 @@ jobs:
 
       # 配布物は翻訳と CSS だけ。ビルドするものが無いので依存関係も要らない。
       - name: Build module.zip
-        run: zip -r ./module.zip module.json lang/ja.json styles/ README.md LICENSE
+        run: zip -r ./module.zip module.json lang/ja.json styles/ scripts/ babele/ README.md LICENSE
 
       - name: Attach the files to the release
         uses: ncipollo/release-action@v1

@@ -1,0 +1,19 @@
+{
+    "Item": {
+        "_identity": {
+            "export": ["_id"],
+            "match": ["_id", "name"]
+        },
+        "name": "name",
+        "description": "system.description",
+        "actions": {
+            "path": "system.actions",
+            "converter": "structured",
+            "container": "keyed",
+            "mapping": {
+                "name": "name",
+                "description": "description"
+            }
+        }
+    }
+}
