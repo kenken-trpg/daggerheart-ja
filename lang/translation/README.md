@@ -1642,3 +1642,118 @@ diff <(sed 's/}/}\n/g' /tmp/base.css) <(sed 's/}/}\n/g' /tmp/fork.css)
   これは A を選ぶ代償として受け入れる。
 - **CSS が静かに効かなくなりうる。** 上流がセレクタを変えてもエラーは出ない。
   上の `diff` 手順を上流追従時に回して検出する。
+
+## 残り10パックのマッピングを全部通した — 「既存マッピングで足りる」は外れだった (2026-10-05)
+
+工程5の報告で「残るパックは既存マッピングで足りる見込み」と書いた。測って
+いなかった。全パックの文字列リーフを現行マッピングと突き合わせたところ、
+**届いていない自由文が12経路 876フィールド**あった。
+
+| 件数 | 経路 | パック |
+| --- | --- | --- |
+| 324 | `system.attack.name` | weapons |
+| 240 | `results[].name` | rolltables |
+| 64 | `system.advantageOn.<id>.value` | beastforms |
+| 56 | `system.actions.<id>.areas[].name` | 6パック |
+| 39 | `system.backgroundQuestions[]` | classes |
+| 39 | `system.connections[]` | classes |
+| 23 | `effects[].system.changes[].value.name` | classes, beastforms |
+| 20 | `system.examples` | beastforms |
+| 18+18 | `pages[].name` / `pages[].text.content` | journals |
+| 15 | `effects[].system.duration.description` | 4パック |
+| 12+4 | `results[].description` / テーブルの `description` | rolltables |
+| 3 | `system.levelupOptionTiers.<tier>.<id>.label` | classes |
+| 1 | `system.actions.<id>.countdown[].name` | domains |
+
+`system.attack` は **`Actor` にしか付けていなかった**。武器は Item なので
+空振りしていた。工程5で `attack.name` が訳されなかったのと同じ経路で、同じ形の
+見落とし。
+
+### journals と rolltables は Babele の既定マッピングが持っていた
+
+`script/mapping/default-mappings.js` に `JournalEntry` (`pages` → `JournalEntryPage`
+の `name` / `text.content`) と `RollTable` (`results` → `TableResult`) がある。
+マッピングは**キー単位でマージ**されるので、こちらで何も書かなくても届く。
+「文書型が未定義」という見立ては誤り。
+
+`TableResult.name` は `referencedDocumentField` で、`documentUuid` の指す
+**文書の訳をそのまま使う**。つまり rolltables の `results[].name` 240件は、
+参照先の items パックを訳せば自動的に付いてくる。個別に訳す対象ではない。
+
+### 訳してはいけないものを3つ確定した
+
+**`weaponFeatures[].value` (73種) / `armorFeatures[].value` (44種)** は
+`reliable` / `fortuneFavored` のような camelCase の列挙キーで、`lang/ja.json`
+側で訳される。触らない。
+
+**`advantageOn.<id>.value` は見た目が似ているが別物。** データモデルは素の
+`StringField` (Tagify の自由入力、`module/data/item/beastform.mjs:63`) で、
+画面にそのまま出る。訳す。
+
+**`effects[].system.changes[].value.name` の25件中22件は i18n キー。**
+`"DAGGERHEART.ITEMS.Beastform.attackName"` で、システムが `game.i18n` で解決する。
+訳せば画面にキーの文字列が出る。残り3件 (`Brawler's Strike` / `Claws` /
+`Claw Swipe`) が本当の固有名。**「オブジェクトだから固有名」という形の判定では
+足りない**ことがここで出た。工程5で数式ヒューリスティックを捨てて許可リストに
+したのと同じ失敗の形なので、`I18N_KEY` で除外する。
+
+### Babele の `structured` で表現できなかったもの
+
+`structured` は**名前の付いた階層しか降りられない**。`mapping` の値は
+translation キー → エントリ内のパスなので、キーが id や添字の階層には名前がない。
+
+- **素の文字列の配列** (`backgroundQuestions` / `connections`)。`structured` は
+  エントリにオブジェクトをマージするので、文字列にはマージする先がない。
+- **2重キー** (`levelupOptionTiers.<tier>.<id>.label`)。tier も id も名前がない。
+
+そこで `scripts/babele.mjs` で自前のコンバータを2つ登録した
+(`game.babele.registerConverters`)。`stringArray` は配列を添字で合わせ、
+`leafFields` は**元データ自身の形を再帰**して `fields` に挙げたキーだけ訳す
+(ダイス種別やコストは触らない)。
+
+`areas[].name` / `countdown[].name` は `structured` の `mapping` の中に
+`structured` を入れ子にすれば届いた。`MappingBlock` が入れ子の定義からも
+`FieldMapping` を作るため。
+
+### `apply` がコンテナの種類を推測していた
+
+`system.levelupOptionTiers` は tier 番号 — `"2"` / `"3"` / `"4"` — でキーされた
+**オブジェクト**。`apply` は「数字のセグメントなら配列」と**キーの字面から
+推測**していたので、ここに配列を作り、`[null,null,null,null,{...}]` を書いた。
+`leafFields` はオブジェクトを期待して配列を渡され、何も訳さずに返した。
+
+配列かどうかは**元データ** (`translatableFields(document)`) から読むように直した。
+推測をやめただけで、工程5の `carryOver` のバグ (2段決め打ち) と同じ種類の誤り。
+
+### ライセンス未確認でブラウザ検証ができなかったので、Babele のコードを Node で回した
+
+テスト環境を作り直したが、`Config/license.json` が世代11 (`version: 11.293`)
+の記録で、アプリは 14.365。サーバは起動するが `/license` に飛ばされる。
+ライセンス確認は本人しかできない。
+
+代わりに `tools/mapping-probe.mjs` を書いた。**Babele の `DocumentMappings` /
+`ConverterRegistry` / `FieldMapping` を import して実際に動かす**ハーネスで、
+モックではない。足りないのはブラウザ側 (compendium runtime、埋め込み文書の走査、
+見た目) だけなので、「このマッピングはこのフィールドに届くか」にしか答えない。
+
+```
+npm run packs:probe -- <.../Data/modules/babele>
+```
+
+**32/32 通った。** しかも1件、実際に落ちたものを捕まえた:
+`advantageOn` を `container: "keyed"` + `valuePath: "value"` で書いたところ、
+訳が当たらなかった。`StructuredDataConverter._translateValue` は、訳が
+プレーンオブジェクトのとき `valuePath` の経路に入らず、`mapping` が空なので
+何もマージせずに返す。`mapping: { "value": "value" }` に変えて通った。
+`valuePath` は**訳が裸のスカラのとき**の経路で、こちらの出力形
+(`advantageOn.<id>.value`) とは噛み合わない。
+
+### 現状
+
+13/15パック有効、45/10,356フィールド。訳したのは機構検証のプローブ15件だけ。
+`journals` (SRD 本文 208,012字、ライセンス判断が先) と `rolltables`
+(既定マッピングで足り、参照先の訳に追従する) が未有効。
+
+**ブラウザでの見た目の確認は残っている。** 日本語が入った状態でのレイアウト
+崩れの走査 (工程1で6種のアクター・12種のアイテムに対して回したもの) は、
+ライセンスを一度通さないと回せない。

@@ -1,8 +1,13 @@
 {
     "Actor": {
         "_identity": {
-            "export": ["_id"],
-            "match": ["_id", "name"]
+            "export": [
+                "_id"
+            ],
+            "match": [
+                "_id",
+                "name"
+            ]
         },
         "name": "name",
         "description": "system.description",
@@ -15,7 +20,25 @@
             "cardinality": "one",
             "mapping": {
                 "name": "name",
-                "description": "description"
+                "description": "description",
+                "areas": {
+                    "path": "areas",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                },
+                "countdown": {
+                    "path": "countdown",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                }
             }
         },
         "experiences": {
@@ -50,8 +73,13 @@
     },
     "Item": {
         "_identity": {
-            "export": ["_id"],
-            "match": ["_id", "name"]
+            "export": [
+                "_id"
+            ],
+            "match": [
+                "_id",
+                "name"
+            ]
         },
         "name": "name",
         "description": "system.description",
@@ -61,14 +89,88 @@
             "container": "keyed",
             "mapping": {
                 "name": "name",
-                "description": "description"
+                "description": "description",
+                "areas": {
+                    "path": "areas",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                },
+                "countdown": {
+                    "path": "countdown",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                }
             }
+        },
+        "attack": {
+            "path": "system.attack",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "name": "name",
+                "description": "description",
+                "areas": {
+                    "path": "areas",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                },
+                "countdown": {
+                    "path": "countdown",
+                    "converter": "structured",
+                    "container": "array",
+                    "cardinality": "many",
+                    "mapping": {
+                        "name": "name"
+                    }
+                }
+            }
+        },
+        "examples": "system.examples",
+        "advantageOn": {
+            "path": "system.advantageOn",
+            "converter": "structured",
+            "container": "keyed",
+            "mapping": {
+                "value": "value"
+            }
+        },
+        "backgroundQuestions": {
+            "path": "system.backgroundQuestions",
+            "converter": "stringArray"
+        },
+        "connections": {
+            "path": "system.connections",
+            "converter": "stringArray"
+        },
+        "levelupOptionTiers": {
+            "path": "system.levelupOptionTiers",
+            "converter": "leafFields",
+            "fields": [
+                "label"
+            ]
         }
     },
     "ActiveEffect": {
         "_identity": {
-            "export": ["_id"],
-            "match": ["_id", "name"]
+            "export": [
+                "_id"
+            ],
+            "match": [
+                "_id",
+                "name"
+            ]
         },
         "name": "name",
         "description": "description",
@@ -77,7 +179,11 @@
             "converter": "structured",
             "container": "array",
             "cardinality": "many",
-            "valuePath": "value"
-        }
+            "valuePath": "value",
+            "mapping": {
+                "name": "value.name"
+            }
+        },
+        "durationDescription": "system.duration.description"
     }
 }

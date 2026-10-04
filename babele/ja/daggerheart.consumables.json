@@ -1,0 +1,375 @@
+{
+    "label": "consumables",
+    "collection": "daggerheart.consumables",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "cfVFmS8vT9dbq9s1": {
+            "_note": "Acidpaste"
+        },
+        "nSjz413RgiOwfzdb": {
+            "_note": "Arcticite Shard"
+        },
+        "VlbsCjvvLNfTzNXb": {
+            "_note": "Armor Stitcher"
+        },
+        "JGD3M9hBHtVAA8XP": {
+            "_note": "Attune Potion"
+        },
+        "EMHMKPJ2pGgzUyW8": {
+            "_note": "Berserker's Brew"
+        },
+        "eAXHdzA5qNPldOpn": {
+            "_note": "Blinding Orb",
+            "effects": {
+                "nryJhrF26hyFQUxH": {
+                    "durationDescription": "<p>HPをマークするまで。</p>"
+                }
+            }
+        },
+        "pDGzmczoTlKGmKgd": {
+            "_note": "Blood of the Yorgi"
+        },
+        "FOPQNqXbiVO0ilYL": {
+            "_note": "Bolster Potion"
+        },
+        "PfQvqopXgvroBklL": {
+            "_note": "Bonding Honey"
+        },
+        "RrIasiMCt6mqVTps": {
+            "_note": "Bridge Seed"
+        },
+        "8xFCYnLWg6N4kPLC": {
+            "_note": "Bundle of Spiderlegs"
+        },
+        "4CDCPkloeXY7kD5H": {
+            "_note": "Cacophonous Concoction"
+        },
+        "IKMVQ6VwtapwoUim": {
+            "_note": "Channelstone"
+        },
+        "CVBbFfOY75YwyQsp": {
+            "_note": "Charm Potion"
+        },
+        "bLvJPYvDYJWtICP2": {
+            "_note": "Chimeric Saliva"
+        },
+        "elsyP6VhHw1JjGSl": {
+            "_note": "Circle of the Void"
+        },
+        "1D81W1ECLzGHHyAv": {
+            "_note": "Ciscan Fog Bottle"
+        },
+        "XnEWhR8OvFZM3G07": {
+            "_note": "Cockerel Claw Tea"
+        },
+        "PRtw3OSktTtTSkJ6": {
+            "_note": "Concoction"
+        },
+        "eeBhZSGLjuNZuJuI": {
+            "_note": "Control Potion"
+        },
+        "OEfUMLY95eWMogPO": {
+            "_note": "Cupbearer's Bezoar"
+        },
+        "xDnJeF1grkmKck8Q": {
+            "_note": "Death Tea"
+        },
+        "OGnTVWBqgNJDrOeK": {
+            "_note": "Deathseer's Powder"
+        },
+        "W5lLL29DqYFoZuwS": {
+            "_note": "Demiurge's Draught"
+        },
+        "pGSYSCJhas5crBG2": {
+            "_note": "Displacement Token"
+        },
+        "wM18PWWW2Ami4fBG": {
+            "_note": "Dragonbloom Tea"
+        },
+        "7r21aeT3LT8wQypK": {
+            "_note": "Drakemantle"
+        },
+        "eU8VpbWB2NHIL47n": {
+            "_note": "Dripfang Poison"
+        },
+        "Iy67pwuveS0tqJ7g": {
+            "_note": "Emberite Shard"
+        },
+        "aWHSO2AqDufi7nL4": {
+            "_note": "Enlighten Potion"
+        },
+        "aX6NyxkNzu0LcJpt": {
+            "_note": "Feast of Xuria"
+        },
+        "DpxEMpwfasEBpORU": {
+            "_note": "Featherbone"
+        },
+        "6SBC5kHntnJMA0JM": {
+            "_note": "Featherstep Potion"
+        },
+        "qhpwdNc4mApeKfk7": {
+            "_note": "Formoid Serum"
+        },
+        "vrbpqW9l3zf6GPZy": {
+            "_note": "Fulgurite Shard"
+        },
+        "sgqL3qFiArgCR8oI": {
+            "_note": "Gambler's Fallacy"
+        },
+        "Nvbb9mze6o5D0AEg": {
+            "_note": "Gill Salve"
+        },
+        "Qnvfa3o3EaHskRZ7": {
+            "_note": "Glowmoss Mushroom"
+        },
+        "QowgtRfI0AmzGroZ": {
+            "_note": "Godling's Pomelo"
+        },
+        "BnvXUsVqI8coqj8F": {
+            "_note": "Gossip Flower"
+        },
+        "bmQOoxTV2l9iTvRi": {
+            "_note": "Gravity Bomb"
+        },
+        "YAJKrrRTqNJvfRqn": {
+            "_note": "Green Ooze Oil"
+        },
+        "8WkhvSzeOmLdnoLJ": {
+            "_note": "Grindletooth Venom"
+        },
+        "fl2f3ees8RFMze9t": {
+            "_note": "Growing Potion"
+        },
+        "Aruc2NLutWuVIjP1": {
+            "_note": "Health Potion"
+        },
+        "VSwa1LpQ9PjZKsWF": {
+            "_note": "Homet's Secret Potion"
+        },
+        "EhaQCPJ8oiqpRIwB": {
+            "_note": "Hopehold Flare"
+        },
+        "nQTo6mNoPTEVBtkm": {
+            "_note": "Improved Arcane Shard"
+        },
+        "BqBWXXe9T07AMV4u": {
+            "_note": "Improved Grindletooth Venom"
+        },
+        "NjrThlxWMaLZT0Sa": {
+            "_note": "Instant Camp"
+        },
+        "bd5DgRHcLN0lP0oI": {
+            "_note": "Invisibility Potion"
+        },
+        "ECPyjhxssMU469iv": {
+            "_note": "Iridian Dust"
+        },
+        "yUol6M5b8jsbk9za": {
+            "_note": "Jar of Lost Voices"
+        },
+        "c2putn9apuurJhWX": {
+            "_note": "Jumping Root"
+        },
+        "nL9IALzm9BNi5oSt": {
+            "_note": "Knowledge Stone"
+        },
+        "G0JNdDEqxVDrwmvc": {
+            "_note": "Lionheart Tonic"
+        },
+        "ojK5ogZD6WJqamaP": {
+            "_note": "Lyrebird Lozenge"
+        },
+        "USKNUVdtgl17llZq": {
+            "_note": "Magic-User's Malison"
+        },
+        "AA7bmiwv00lshPrC": {
+            "_note": "Major Arcane Shard"
+        },
+        "CCPFm5iXXwvyYYwR": {
+            "_note": "Major Attune Potion"
+        },
+        "mnyQDRtngWWQeRXF": {
+            "_note": "Major Bolster Potion"
+        },
+        "IJLAUlQymbSjzsri": {
+            "_note": "Major Charm Potion"
+        },
+        "80s1FLmTLtohZ5GH": {
+            "_note": "Major Control Potion"
+        },
+        "SDdv1G2veMLKrxcJ": {
+            "_note": "Major Enlighten Potion"
+        },
+        "cM7pHe8bBAxSZ2xR": {
+            "_note": "Major Health Potion"
+        },
+        "I4cQ03xbxnc81EGa": {
+            "_note": "Major Stamina Potion"
+        },
+        "yK6eEDUrsPbZA8G0": {
+            "_note": "Major Stride Potion"
+        },
+        "v6AqLxKEnR59BoUj": {
+            "_note": "Mask of the Echoed Self"
+        },
+        "2ItBeUYNkiPEPSgc": {
+            "_note": "Mesmer's Tonic"
+        },
+        "IU9cj5UPFPOD8jVH": {
+            "_note": "Midas Flask"
+        },
+        "tPfKtKRRjv8qdSqy": {
+            "_note": "Minor Health Potion"
+        },
+        "b6vGSPFWOlzZZDLO": {
+            "_note": "Minor Stamina Potion"
+        },
+        "UFQVwgYOUZ88UxcH": {
+            "_note": "Mirror of Marigold"
+        },
+        "0gjQYkFe4JmuEv7b": {
+            "_note": "Mnemonic Potion"
+        },
+        "y24kG0S0kVuA7Qsy": {
+            "_note": "Moonlight Orb"
+        },
+        "f1NHVSIHJJCIOaBl": {
+            "_note": "Morphing Clay"
+        },
+        "8wVnkcAUl36CAOMH": {
+            "_note": "Mossmantle Potion"
+        },
+        "Zsh2AvZr8EkGtLyw": {
+            "_note": "Mythic Dust"
+        },
+        "9iuovYP8xMpL1fHH": {
+            "_note": "Necroprancer's Bell"
+        },
+        "wljly6bqiDe3ZmVy": {
+            "_note": "Night Hag's Dust"
+        },
+        "3XLbwx3rBXathr8y": {
+            "_note": "Nightmare Mead"
+        },
+        "qr1bosjFcUfuwq4B": {
+            "_note": "Ogre Musk"
+        },
+        "uyybO6oGBE59Eydd": {
+            "_note": "Packet of Space Dust"
+        },
+        "j2tN23J2c1FA4IUS": {
+            "_note": "Phial of Deep Ink"
+        },
+        "eBQAxdk4y85I7xQe": {
+            "_note": "Pipeweed"
+        },
+        "dvL8oaxpEF6jKvYN": {
+            "_note": "Potion of Stability"
+        },
+        "DoUn74xOoGNnKv76": {
+            "_note": "Potion of Vigilance"
+        },
+        "06jHWdf2bSKNU7Gj": {
+            "_note": "Psychopomp's Shroud"
+        },
+        "L5gCE0cJ8Pmyqp7E": {
+            "_note": "Quintessential Severant"
+        },
+        "3vr1v9tKLW2huI3H": {
+            "_note": "Red Ooze Oil"
+        },
+        "s2Exl2XFuoOhtIov": {
+            "_note": "Redthorn Saliva"
+        },
+        "yJkwz4AP6yhGo8Vj": {
+            "_note": "Replication Parchment"
+        },
+        "eTQJhbNW5i6x79vI": {
+            "_note": "Salamander Salve"
+        },
+        "tqpz75mHlO6TeVZU": {
+            "_note": "Self-Sewing Thread"
+        },
+        "HGixKenQwhyRAYNk": {
+            "_note": "Shrinking Potion"
+        },
+        "0jQGjzdnAlkOu9hb": {
+            "_note": "Slayer's Salt"
+        },
+        "XZavUVlHEvE2srEt": {
+            "_note": "Sleeping Sap"
+        },
+        "QQjaWV5yQVjxEKdG": {
+            "_note": "Snakeskin Spirit"
+        },
+        "cg6VtQ0eVZjDdcK0": {
+            "_note": "Snap Powder"
+        },
+        "hHLAEbVkLJeOA9qz": {
+            "_note": "Snapthorn Seed"
+        },
+        "4VcsFnUD9VHm9ie8": {
+            "_note": "Sprite Bottle"
+        },
+        "joHLyjtZLsG7Uwi3": {
+            "_note": "Staff of Reversal"
+        },
+        "43A19TBIuEK2anOf": {
+            "_note": "Stake of Abjuration"
+        },
+        "hf3k1POoVSooJyN2": {
+            "_note": "Stamina Potion"
+        },
+        "y4c1jrlHrf0wBWOq": {
+            "_note": "Stardrop"
+        },
+        "JjMeRG3aAH3steY2": {
+            "_note": "Steelskin Salve"
+        },
+        "6B6Snn2h3N8g7E3Z": {
+            "_note": "Stonemason's Fortune"
+        },
+        "lNtcrkgFGOJNaroE": {
+            "_note": "Stride Potion"
+        },
+        "kwexUzdM9wm1Qums": {
+            "_note": "Sun Tree Sap"
+        },
+        "cdb3AMaxRazFahUL": {
+            "_note": "Sunlight Orb"
+        },
+        "GrDrRqWgv7gvl9vn": {
+            "_note": "Sweet Moss"
+        },
+        "gOFwztGSAAH4iLlG": {
+            "_note": "Tears of the Undying Hero"
+        },
+        "mUepnLbkvFk0ha4Z": {
+            "_note": "Unstable Arcane Shard"
+        },
+        "hvy5BkG3F6iOIXTx": {
+            "_note": "Varik Leaves"
+        },
+        "302mC6Hg0w5je1AX": {
+            "_note": "Verglasian Seed"
+        },
+        "Nwv5ydGf0MWnzq1n": {
+            "_note": "Vial of Darksmoke"
+        },
+        "pT5amnkvObOegrJr": {
+            "_note": "Vial of Featherfall"
+        },
+        "VqEX5YwK5oL3r1t6": {
+            "_note": "Vial of Moondrip"
+        },
+        "lyjoUIVjjhd78Sqr": {
+            "_note": "Warding Candle"
+        },
+        "n10vozlmosVR6lo4": {
+            "_note": "Wingsprout"
+        },
+        "wmwbo6ogg6ExLozU": {
+            "_note": "Yakamel Milk"
+        }
+    }
+}

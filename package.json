@@ -1,20 +1,21 @@
 {
-  "name": "daggerheart-ja",
-  "version": "0.1.0",
-  "description": "Japanese translation module for the Foundryborne Daggerheart system on Foundry VTT",
-  "license": "MIT",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "reference": "node ./tools/fetch-reference.mjs",
-    "lang:report": "node ./tools/lang-sync.mjs report",
-    "lang:prepare": "node ./tools/lang-sync.mjs prepare",
-    "lang:diff": "node ./tools/lang-sync.mjs diff",
-    "lang:apply": "node ./tools/lang-sync.mjs apply",
-    "packs:export": "node ./tools/packs-sync.mjs export",
-    "packs:prepare": "node ./tools/packs-sync.mjs prepare",
-    "packs:apply": "node ./tools/packs-sync.mjs apply",
-    "packs:report": "node ./tools/packs-sync.mjs report",
-    "packs:check": "node ./tools/packs-sync.mjs check"
-  }
+    "name": "daggerheart-ja",
+    "version": "0.1.0",
+    "description": "Japanese translation module for the Foundryborne Daggerheart system on Foundry VTT",
+    "license": "MIT",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "reference": "node ./tools/fetch-reference.mjs",
+        "lang:report": "node ./tools/lang-sync.mjs report",
+        "lang:prepare": "node ./tools/lang-sync.mjs prepare",
+        "lang:diff": "node ./tools/lang-sync.mjs diff",
+        "lang:apply": "node ./tools/lang-sync.mjs apply",
+        "packs:export": "node ./tools/packs-sync.mjs export",
+        "packs:prepare": "node ./tools/packs-sync.mjs prepare",
+        "packs:apply": "node ./tools/packs-sync.mjs apply",
+        "packs:report": "node ./tools/packs-sync.mjs report",
+        "packs:check": "node ./tools/packs-sync.mjs check",
+        "packs:probe": "node tools/mapping-probe.mjs"
+    }
 }

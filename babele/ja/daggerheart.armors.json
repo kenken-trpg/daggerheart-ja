@@ -1,0 +1,214 @@
+{
+    "label": "armors",
+    "collection": "daggerheart.armors",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "ar3hG23czKmfUYW9": {
+            "_note": "Advanced Banded Armor"
+        },
+        "z4K0YjsgwkkAruTr": {
+            "_note": "Advanced Brigandine Armor"
+        },
+        "LzLOJ9EVaHWAjoq9": {
+            "_note": "Advanced Chainmail Armor"
+        },
+        "crIbCb9NZ4K0VpoU": {
+            "_note": "Advanced Full Plate Armor"
+        },
+        "epkAmlZVk7HOfUUT": {
+            "_note": "Advanced Gambeson Armor"
+        },
+        "itSOp2GCyem0f7oM": {
+            "_note": "Advanced Leather Armor"
+        },
+        "gNuhJUzazz3mKWkU": {
+            "_note": "Advanced Mage Robes"
+        },
+        "z6C6ll1T4G476zKv": {
+            "_note": "Advanced Scale Mail Armor"
+        },
+        "pRMYSsBa1T5NcKZZ": {
+            "_note": "Astral Raiment"
+        },
+        "ViqJEm8v9XJWPsj4": {
+            "_note": "Banded Armor"
+        },
+        "WuoVwZA53XRAIt6d": {
+            "_note": "Bellamoi Fine Armor"
+        },
+        "mNN6pvcsS10ChrWF": {
+            "_note": "Bladefare Armor"
+        },
+        "QUNaQ3f6U2rxu21f": {
+            "_note": "Bloodstone Plate Armor"
+        },
+        "uL6AvEhXGaFlzjjS": {
+            "_note": "Brigandine Armor"
+        },
+        "haULhuEg37zUUvhb": {
+            "_note": "Chainmail Armor"
+        },
+        "vMJxEWz1srfwMsoj": {
+            "_note": "Channeling Armor"
+        },
+        "HXqjJxHUqWCv1N3W": {
+            "_note": "Circle-Forged Dreadplate"
+        },
+        "OegNW8TsqVdccwGM": {
+            "_note": "Cloverweave Cloak"
+        },
+        "HLAgfHHCJjdqnYPC": {
+            "_note": "Darkweave Shroud"
+        },
+        "b3NKjjgkQjBgmpWZ": {
+            "_note": "Deep-Forged Coral Armor"
+        },
+        "mdQ69eFHyAQUDmE7": {
+            "_note": "Dragonscale Armor"
+        },
+        "hAY6UgdGT7dj22Pr": {
+            "_note": "Dunamis Silkchain"
+        },
+        "Q6LxmtFetDDkoZVZ": {
+            "_note": "Elundrian Chain Armor"
+        },
+        "bcQUh4QG3qFX0Vx6": {
+            "_note": "Emberwoven Armor"
+        },
+        "z8dQR56ZNXmRE0w9": {
+            "_note": "Enchanter's Robes"
+        },
+        "7emTSt6nhZuTlvt5": {
+            "_note": "Full Fortified Armor"
+        },
+        "UdUJNa31WxFW2noa": {
+            "_note": "Full Plate Armor"
+        },
+        "yJFp1bfpecDcStVK": {
+            "_note": "Gambeson Armor"
+        },
+        "G3NnXEXmT6m2Mr9z": {
+            "_note": "Gilded Sunplate"
+        },
+        "hG0g8lMEGcEtDxKO": {
+            "_note": "Godbound Laminar"
+        },
+        "Fm6sgfz4fYJCvPiS": {
+            "_note": "Granminster's Finery"
+        },
+        "ukIkx5TCBUlgleBw": {
+            "_note": "Hallowed Heroplate"
+        },
+        "dvyQeUVRLc9y6rnt": {
+            "_note": "Harrowbone Armor"
+        },
+        "ZZfLZ0uTzROddFoj": {
+            "_note": "Hawkguard's Mantle"
+        },
+        "qPxlM4h0VzblCEdd": {
+            "_note": "Improved Banded Armor"
+        },
+        "2ObDhrPlWlsfmnz2": {
+            "_note": "Improved Brigandine Armor"
+        },
+        "K5WkjS0NGqHYmhU3": {
+            "_note": "Improved Chainmail Armor"
+        },
+        "9f7RozpPTqrzJS1m": {
+            "_note": "Improved Full Plate Armor"
+        },
+        "jphnMZjnS2FkOH3s": {
+            "_note": "Improved Gambeson Armor"
+        },
+        "t91M61pSCMKStTNt": {
+            "_note": "Improved Leather Armor"
+        },
+        "qks7PQ7xkP2Kwedr": {
+            "_note": "Improved Mage Robes"
+        },
+        "JJ08yuuFq3NjjMRV": {
+            "_note": "Improved Scale Mail Armor"
+        },
+        "tzZntboNtHL5C6VM": {
+            "_note": "Irontree Breastplate Armor"
+        },
+        "nibfdNtp2PtxvbVz": {
+            "_note": "Leather Armor"
+        },
+        "Fi3gY51MTzHa4gl6": {
+            "_note": "Legendary Banded Armor"
+        },
+        "9wOawkTonaRY4Sw2": {
+            "_note": "Legendary Brigandine Armor"
+        },
+        "EsIN5OLKe9ZYFNXZ": {
+            "_note": "Legendary Chainmail Armor"
+        },
+        "SXWjUR2aUR6bYvdl": {
+            "_note": "Legendary Full Plate Armor"
+        },
+        "c6tMXz4rPf9ioQrf": {
+            "_note": "Legendary Gambeson Armor"
+        },
+        "Tptgl5WOj76TyFn7": {
+            "_note": "Legendary Leather Armor"
+        },
+        "OGIBjQJEYv6uq0DA": {
+            "_note": "Legendary Mage Robes"
+        },
+        "SV7ukfVR9mhhY0E9": {
+            "_note": "Legendary Scale Mail Armor"
+        },
+        "rWDk8ovwnBrBwWRR": {
+            "_note": "Mage Robes"
+        },
+        "AQzU2RsqS5V5bd1v": {
+            "_note": "Monett's Cloak"
+        },
+        "1e5cQdnJL5HlxtKK": {
+            "_note": "Resonant Harness"
+        },
+        "tN8kAeBvNKM3EBFo": {
+            "_note": "Rosewild Armor"
+        },
+        "AHazopFnwVenDXqW": {
+            "_note": "Rune-Forged Exosuit"
+        },
+        "P4qAEDJUoNLgVRsA": {
+            "_note": "Runes of Fortification"
+        },
+        "tHlBUDQC24YMZqd6": {
+            "_note": "Runetan Floating Armor"
+        },
+        "8X16lJQ3xltTwynm": {
+            "_note": "Savior Chainmail"
+        },
+        "hfueRvwhlpTbtHmK": {
+            "_note": "Scale Mail Armor"
+        },
+        "2icJGsEO0BUwZvHe": {
+            "_note": "Skywarden's Lamellar"
+        },
+        "IuzkxBqeAqomNfxZ": {
+            "_note": "Spidersilk Tunic"
+        },
+        "QjwsIhXKqnlvRBMv": {
+            "_note": "Spiked Plate Armor"
+        },
+        "zU1R9WrVCvQcxJ17": {
+            "_note": "Stormthread Habit"
+        },
+        "TeMjFTO8sOULN30r": {
+            "_note": "Trollhide Cuirass"
+        },
+        "PSW3BxCGmtLeWOxM": {
+            "_note": "Tyris Soft Armor"
+        },
+        "OvzgUTYy2RCN85vV": {
+            "_note": "Veritas Opal Armor"
+        },
+        "VD08FahK2W2zXoBK": {
+            "_note": "Wyrdwood Splint Armor"
+        }
+    }
+}

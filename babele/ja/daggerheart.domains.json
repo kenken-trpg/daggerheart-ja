@@ -1,0 +1,655 @@
+{
+    "label": "domains",
+    "collection": "daggerheart.domains",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "Y08dLFuPXsgeRrHi": {
+            "_note": "A Soldier's Bond"
+        },
+        "Zp2S2EnLS5Iv3XuT": {
+            "_note": "Adjust Reality"
+        },
+        "5PvMQKCjrgSxzstn": {
+            "_note": "Arcana-Touched"
+        },
+        "JzSvxy9Mu3RJp1jV": {
+            "_note": "Arcane Reflection"
+        },
+        "cy8GjBPGc9w9RaGO": {
+            "_note": "Armorer"
+        },
+        "YNOCNmZ96sCp9NEr": {
+            "_note": "Astral Projection"
+        },
+        "r6NekgZkMcHz2OUq": {
+            "_note": "Avatar of Terror"
+        },
+        "AIbHfryMA2Rvs1ut": {
+            "_note": "Banish"
+        },
+        "l5D9kq901JDESaXw": {
+            "_note": "Bare Bones"
+        },
+        "Ef1JsUG50LIoKx2F": {
+            "_note": "Battle Cry"
+        },
+        "NeEOghgfyDUBTwBG": {
+            "_note": "Battle-Hardened"
+        },
+        "P0ezScyQ5t8ruByf": {
+            "_note": "Battle Monster"
+        },
+        "Gb5bqpFSBiuBxUix": {
+            "_note": "Blade-Touched"
+        },
+        "CEOM585jIX8V9PHz": {
+            "_note": "Blighting Strike"
+        },
+        "Qu0iA4s3Xov10Erd": {
+            "_note": "Blink Out"
+        },
+        "aQz8jKkCd8M9aKMA": {
+            "_note": "Body Basher"
+        },
+        "tdsL00yTSLNgZWs6": {
+            "_note": "Bold Presence"
+        },
+        "BNevJyGk7hmN7XOY": {
+            "_note": "Bolt Beacon"
+        },
+        "ON5bvnoQBy0SYc9Y": {
+            "_note": "Bone-Touched"
+        },
+        "YtZzYBtR0yLPPA93": {
+            "_note": "Book of Ava"
+        },
+        "oVs2MSC6Uf5GbgEG": {
+            "_note": "Book of Exota"
+        },
+        "R0LNheiZycZlZzV3": {
+            "_note": "Book of Grynn",
+            "actions": {
+                "K26kfjmTEH9zPMMO": {
+                    "areas": [
+                        {
+                            "name": "グリンの書"
+                        }
+                    ]
+                }
+            }
+        },
+        "gFMx08ogQ8hS2Obi": {
+            "_note": "Book of Homet"
+        },
+        "df4iRqQzRntrF6Qw": {
+            "_note": "Book of Illiat"
+        },
+        "cWRFHJdxEZ0M1dAg": {
+            "_note": "Book of Korvax"
+        },
+        "WtwSWXTRZa7QVvmo": {
+            "_note": "Book of Norai"
+        },
+        "SZMNR3uGNinJcN4N": {
+            "_note": "Book of Ronin"
+        },
+        "eq8VNqYMRHhF9xw9": {
+            "_note": "Book of Sitil"
+        },
+        "1VXzwRbvbBj5bd5V": {
+            "_note": "Book of Tyfar"
+        },
+        "aknDDYtN7EObv94t": {
+            "_note": "Book of Vagras"
+        },
+        "VOIgm2j2Ijszwc5m": {
+            "_note": "Book of Vyola"
+        },
+        "J1ovx2FpNDvPq1o6": {
+            "_note": "Book of Yarrow"
+        },
+        "VKAHS6eWz28ukcDs": {
+            "_note": "Boost"
+        },
+        "QXs4vssSqNGQu5b8": {
+            "_note": "Brace"
+        },
+        "8UANBgSdhMZ0sqfO": {
+            "_note": "Breaking Blow"
+        },
+        "0kAVO6rordCfZqYP": {
+            "_note": "Chain Lightning"
+        },
+        "2hIpGAAbwDZ9MA95": {
+            "_note": "Chains of Affliction"
+        },
+        "rnejRbUQsNGX1GMC": {
+            "_note": "Champion's Edge"
+        },
+        "R5GYUalYXLLFRlNl": {
+            "_note": "Chokehold"
+        },
+        "5EP2Lgf7ojfrc0Is": {
+            "_note": "Cinder Grasp"
+        },
+        "Zhw7PtK8nMPlsOqD": {
+            "_note": "Cloaking Blast"
+        },
+        "7Pu83ABdMukTxu3e": {
+            "_note": "Codex-Touched"
+        },
+        "R8NDiJXJWmC48WSr": {
+            "_note": "Confusing Aura"
+        },
+        "rZPH0BY8Sznc9sFG": {
+            "_note": "Conjure Swarm"
+        },
+        "Jkp6cMDiHHaBZQRS": {
+            "_note": "Conjured Steeds"
+        },
+        "3A7LZ1xmDEMGa165": {
+            "_note": "Copycat"
+        },
+        "qJaSNTuDfbPVr8Lb": {
+            "_note": "Corrosive Projectile"
+        },
+        "6dhqo1kzGxejCjHa": {
+            "_note": "Counterspell"
+        },
+        "ABp9pUfBS69NomTD": {
+            "_note": "Critical Inspiration"
+        },
+        "bap1eCWryPNowbyo": {
+            "_note": "Cruel Precision"
+        },
+        "3QxwpPmDsD5vPKbH": {
+            "_note": "Damnation"
+        },
+        "MxgSUsmCxZkMp37U": {
+            "_note": "Dark Army"
+        },
+        "yL2qrSWmTwXVOySH": {
+            "_note": "Dark Whispers"
+        },
+        "CfxaFKF0ISwzSYsu": {
+            "_note": "Darkfire"
+        },
+        "xxZOXC4tiZQ6kg1e": {
+            "_note": "Deadly Focus"
+        },
+        "x0FVGE1YbfXalJiw": {
+            "_note": "Death Grip"
+        },
+        "xFOSn8IVVNizgHFq": {
+            "_note": "Deathrun"
+        },
+        "38znCh6kHTkaPwYi": {
+            "_note": "Deft Deceiver"
+        },
+        "dc4rAXlv95srZUct": {
+            "_note": "Deft Maneuvers"
+        },
+        "tTExFWUt2DoImpat": {
+            "_note": "Dire Strike"
+        },
+        "kja5qvh4rdeDBB96": {
+            "_note": "Disintegration Wave"
+        },
+        "K8oFepK24UVsAX8B": {
+            "_note": "Divination"
+        },
+        "umRWvKMoyzLPL64a": {
+            "_note": "Dread-Touched"
+        },
+        "C0qLOwSSvZ6PG3Ws": {
+            "_note": "Earthquake"
+        },
+        "62Sj67PdPFzwWVe3": {
+            "_note": "Eclipse"
+        },
+        "T4rScs8WlliDzuzV": {
+            "_note": "Eldritch Flesh"
+        },
+        "klahWDFwihqqEhXP": {
+            "_note": "Encore"
+        },
+        "tNzFNlVHghloKsFi": {
+            "_note": "Endless Charisma"
+        },
+        "a8lFiKX1o8T924ze": {
+            "_note": "Enrapture"
+        },
+        "hZJp9mdkMnqKDROe": {
+            "_note": "Falling Sky"
+        },
+        "F2m9wvZ3v5c3yCtv": {
+            "_note": "Fane of the Wilds"
+        },
+        "jSQsSP61CX4MhSN7": {
+            "_note": "Ferocity"
+        },
+        "Nbw6Jnh1vRZzwHQI": {
+            "_note": "Final Words"
+        },
+        "54GUjNuBEy7xdzMz": {
+            "_note": "Flight"
+        },
+        "wOQLu7nLMQ7v6Ogw": {
+            "_note": "Floating Eye"
+        },
+        "06UapZuaA5S6fAKl": {
+            "_note": "Forager"
+        },
+        "LzVpMkD5I4QeaIHf": {
+            "_note": "Force of Nature"
+        },
+        "z8FFPhDh2SdFkFfS": {
+            "_note": "Forceful Push"
+        },
+        "JrkUMTzaFmQNBHVm": {
+            "_note": "Forest Sprites"
+        },
+        "oVa49lI107eZILZr": {
+            "_note": "Fortified Armor"
+        },
+        "MMl7abdGRLl7TJLO": {
+            "_note": "Frenzy"
+        },
+        "SgvjJfMyubZowPxS": {
+            "_note": "Full Surge"
+        },
+        "BFWN2cObMdlk9uVz": {
+            "_note": "Get Back Up"
+        },
+        "VZ2b4zfRzV73XTuT": {
+            "_note": "Gifted Tracker"
+        },
+        "nCNCqSH7UgW4O3To": {
+            "_note": "Glancing Blow"
+        },
+        "B5HXqYRJiL3xMNKT": {
+            "_note": "Glyph of Nightfall"
+        },
+        "HufF5KzuNfEb9RTi": {
+            "_note": "Goad Them On"
+        },
+        "3zvjgZ5Od343wHzx": {
+            "_note": "Gore and Glory"
+        },
+        "KAuNb51AwhD8KEXk": {
+            "_note": "Grace-Touched"
+        },
+        "WnGldYhJPDhx8v9X": {
+            "_note": "Ground Pound"
+        },
+        "GlRm1Dxlc0Z1b04o": {
+            "_note": "Healing Field"
+        },
+        "WTlhnQMajc1r8i50": {
+            "_note": "Healing Hands"
+        },
+        "XtSc0jIJLOoMTMYS": {
+            "_note": "Healing Strike"
+        },
+        "PM0kAvB1lRMiZujr": {
+            "_note": "Hideous Retribution"
+        },
+        "kdFoLo3KXwn4LqTG": {
+            "_note": "Hold the Line"
+        },
+        "gwmYasmfgXZ7tFS6": {
+            "_note": "Hush"
+        },
+        "2ZeuCGVatQdPOVC6": {
+            "_note": "Hypnotic Shimmer"
+        },
+        "KOf6LLpMRNwjezDx": {
+            "_note": "I Am Your Shield"
+        },
+        "Kp6RejHGimnuoBom": {
+            "_note": "I See It Coming"
+        },
+        "XTT8c8uJ4D7fvtbL": {
+            "_note": "Inevitable"
+        },
+        "cWu1o82ZF7GvnbXc": {
+            "_note": "Inspirational Words"
+        },
+        "X8OfkEoI5gLTRf1B": {
+            "_note": "Invigoration"
+        },
+        "KHkzA4Zrw8EWN1CH": {
+            "_note": "Invisibility"
+        },
+        "6r2TrUgJAXLSbmCO": {
+            "_note": "Invoke Torment"
+        },
+        "lG0OJTYWZGsCcKVw": {
+            "_note": "Jump Scare"
+        },
+        "O38MQMhJWdZnXi6b": {
+            "_note": "Know Thy Enemy"
+        },
+        "YWCRplmtwpCjpq5i": {
+            "_note": "Lead by Example"
+        },
+        "BdePs1ZWpZTZvY1Z": {
+            "_note": "Lean on Me"
+        },
+        "OszbCj0jTqq2ADx9": {
+            "_note": "Life Ward"
+        },
+        "TtGOtWkbr23VhHfH": {
+            "_note": "Manifest Wall"
+        },
+        "dT95m0Jam8sWbeuC": {
+            "_note": "Mass Disguise",
+            "actions": {
+                "ZM96wFu3YuAeUXel": {
+                    "countdown": [
+                        {
+                            "name": "集団変装"
+                        }
+                    ]
+                }
+            }
+        },
+        "ubpixIgZrJXKyM3b": {
+            "_note": "Mass Enrapture"
+        },
+        "yAGTwXHUC3qxpTeK": {
+            "_note": "Master of the Craft"
+        },
+        "TGjR4vJVNbQRV8zr": {
+            "_note": "Mending Touch"
+        },
+        "FXLsB3QbQvTtqX5B": {
+            "_note": "Midnight Spirit"
+        },
+        "uSyGKVxOJcnp28po": {
+            "_note": "Midnight-Touched"
+        },
+        "Tag303LoRNC5zGgl": {
+            "_note": "Natural Familiar"
+        },
+        "atWLorlCOxcrq8WB": {
+            "_note": "Nature's Tongue"
+        },
+        "McdncxmO9K1YNP7Y": {
+            "_note": "Never Upstaged"
+        },
+        "zcldCuqOg3dphUVI": {
+            "_note": "Night Terror"
+        },
+        "xheQZOIYp0ERQhT9": {
+            "_note": "Not Good Enough"
+        },
+        "IqxzvvjZiYbgx21A": {
+            "_note": "Notorious"
+        },
+        "zbxPl81kbWEegKQN": {
+            "_note": "On the Brink"
+        },
+        "I7pNsQ9Yx6mRJX4V": {
+            "_note": "Onslaught"
+        },
+        "iEBLySZD9z8CLdz7": {
+            "_note": "Overwhelming Aura"
+        },
+        "0vdpIn06ifF3xxqZ": {
+            "_note": "Phantom Retreat"
+        },
+        "HdgZUfWd7Hyj7nBW": {
+            "_note": "Pick and Pull"
+        },
+        "9a6xP5pxhVvdugk9": {
+            "_note": "Plant Dominion"
+        },
+        "aC43NiFQLpOADyjO": {
+            "_note": "Premonition"
+        },
+        "1p1cOmbnRd5CoKBp": {
+            "_note": "Preservation Blast"
+        },
+        "GRL0cvs96vrTDckZ": {
+            "_note": "Rage Up"
+        },
+        "Ucenef6JpjQxwXni": {
+            "_note": "Rain of Blades"
+        },
+        "tceJDcCUefrMS2Ov": {
+            "_note": "Rapid Riposte"
+        },
+        "MCgNRlh0s5XUPCfl": {
+            "_note": "Reaper's Strike"
+        },
+        "iYNVTB7uAD1FTCZu": {
+            "_note": "Reassurance"
+        },
+        "2ooUo2yoilGifY81": {
+            "_note": "Reckless"
+        },
+        "gsiQFT6q3WOgqerJ": {
+            "_note": "Recovery"
+        },
+        "faU0XkJCbar69PiN": {
+            "_note": "Redirect"
+        },
+        "HtWx5IIemCoorMj2": {
+            "_note": "Rejuvenation Barrier"
+        },
+        "wUQFsRtww18naYaq": {
+            "_note": "Restoration"
+        },
+        "z30ciOwQI7g3tHla": {
+            "_note": "Resurrection"
+        },
+        "vd5STqX29RpYbGxa": {
+            "_note": "Rift Walker"
+        },
+        "oDIZoC4l19Nli0Fj": {
+            "_note": "Rise Up"
+        },
+        "pcbYD33rBBdAo5f9": {
+            "_note": "Rousing Strike"
+        },
+        "GEhBUmv9Bj7oJfHk": {
+            "_note": "Rune Ward"
+        },
+        "lmBLMPuR8qLbuzNf": {
+            "_note": "Safe Haven"
+        },
+        "VOSFaQHZbmhMyXwi": {
+            "_note": "Sage-Touched"
+        },
+        "4uAFGp3LxiC07woC": {
+            "_note": "Salvation Beam"
+        },
+        "ZPTdjTT7JAq6R4qw": {
+            "_note": "Savor the Anguish"
+        },
+        "5bBU9jWHOuOY12lR": {
+            "_note": "Scramble"
+        },
+        "ffPbSEvLuFrFsMxl": {
+            "_note": "Second Wind"
+        },
+        "gZOMzskSOfeiXn54": {
+            "_note": "Sensory Projection"
+        },
+        "kguhWlidhxe2GbT0": {
+            "_note": "Shadowbind"
+        },
+        "A0XzD6MmBXYdk7Ps": {
+            "_note": "Shadowhunter"
+        },
+        "db4xV3YErHRslbVE": {
+            "_note": "Shape Material"
+        },
+        "8nRle10pw1HO8QVu": {
+            "_note": "Share the Burden"
+        },
+        "9ccH1Hwjvpz3iYpb": {
+            "_note": "Shared Trauma"
+        },
+        "rfIv6lln40Fh6EIl": {
+            "_note": "Shield Aura"
+        },
+        "JwfhtgmmuRxg4zhI": {
+            "_note": "Shrug It Off"
+        },
+        "RiuN0lMlfoTAhLJz": {
+            "_note": "Sigil of Retribution"
+        },
+        "LWRkhNY968Cu2Zl5": {
+            "_note": "Signature Move"
+        },
+        "21mofokzGa4yryRZ": {
+            "_note": "Siphon Essence"
+        },
+        "U1uWJE94HZVudujz": {
+            "_note": "Smite"
+        },
+        "QED2PDYePOSTbLtC": {
+            "_note": "Soothing Speech"
+        },
+        "iQhgqmLwhcSTYnvr": {
+            "_note": "Specter of the Dark"
+        },
+        "h2AmRjGVtVGOMsB4": {
+            "_note": "Spectral Mist"
+        },
+        "ewhIzXQ2h9fS9I8c": {
+            "_note": "Spellcharge"
+        },
+        "JT5dM3gVL6chDBYU": {
+            "_note": "Splendor-Touched"
+        },
+        "TYKfM3H9vBXyWiH4": {
+            "_note": "Splintering Strike"
+        },
+        "NIUhmuQGwbb3UClZ": {
+            "_note": "Stealth Expertise"
+        },
+        "5b1awkgTmMp3FVrm": {
+            "_note": "Strategic Approach"
+        },
+        "lRHo6ZkK1zybeEoG": {
+            "_note": "Stunning Sunlight"
+        },
+        "UHL661KR49EgSKHR": {
+            "_note": "Summon Horror"
+        },
+        "stId5syX7YpP2JGz": {
+            "_note": "Support Tank"
+        },
+        "H6TqCJBaa1eWEQ1z": {
+            "_note": "Swift Step"
+        },
+        "WChWEH36lUpXAC0K": {
+            "_note": "Tactician"
+        },
+        "FgzBppvLjXr0UbUI": {
+            "_note": "Telekinesis"
+        },
+        "HnPwVrWblYa9hwSt": {
+            "_note": "Teleport"
+        },
+        "HTv9QEPS466WsstP": {
+            "_note": "Tell No Lies"
+        },
+        "X7YaZgFieBlqaPdZ": {
+            "_note": "Tempest"
+        },
+        "eoC2NFqLs9llBdxC": {
+            "_note": "Terrify"
+        },
+        "oUipGK84E2KjoKqh": {
+            "_note": "Thorn Skin"
+        },
+        "B4choj481tqajWb9": {
+            "_note": "Thought Delver"
+        },
+        "7b0mzV5QMPjVPT4o": {
+            "_note": "Through Your Eyes"
+        },
+        "n0P3VS1WfxvmXbB6": {
+            "_note": "Towering Stalk"
+        },
+        "kVkoCLBXLAIifqpz": {
+            "_note": "Transcendent Union"
+        },
+        "JrdZedm1BFKeV7Yb": {
+            "_note": "Troublemaker"
+        },
+        "SDjjV61TC1NceV1m": {
+            "_note": "Twilight Toll"
+        },
+        "SZS0WYAdFBPuzOrh": {
+            "_note": "Umbral Veil"
+        },
+        "CUIQmrPjf9VCHmwJ": {
+            "_note": "Unbreakable"
+        },
+        "TV56wSysbU5xAlOa": {
+            "_note": "Uncanny Disguise"
+        },
+        "o62i0QdbUDIiAhSq": {
+            "_note": "Unleash Chaos"
+        },
+        "9QElncQUDSakuSdR": {
+            "_note": "Untouchable"
+        },
+        "s3zRsOMeUkuDwgd8": {
+            "_note": "Unyielding Armor"
+        },
+        "k1AtYd3lSchIymBr": {
+            "_note": "Valor-Touched"
+        },
+        "GBMIElIpk4cvk1Bd": {
+            "_note": "Vanishing Dodge"
+        },
+        "gV4L5ZZmfPrEbIDh": {
+            "_note": "Veil of Night"
+        },
+        "wQ53ImDswEHv5SGQ": {
+            "_note": "Versatile Fighter"
+        },
+        "qvpvTnkAoRn9vYO4": {
+            "_note": "Vicious Entangle"
+        },
+        "sWUlSPOJEaXyQLCj": {
+            "_note": "Vitality"
+        },
+        "IK56Jod0jLrpHu0V": {
+            "_note": "Voice of Dread"
+        },
+        "t3RRGH6mMYYJJCcF": {
+            "_note": "Voice of Reason"
+        },
+        "1ROT08E1UVBwHLAS": {
+            "_note": "Wall Walk"
+        },
+        "297LR0Ww7QiUwRyL": {
+            "_note": "Wall of Hunger"
+        },
+        "anO0arioUy7I5zBg": {
+            "_note": "Whirlwind"
+        },
+        "9dFvcM1i3bxG3BSA": {
+            "_note": "Wild Fortress"
+        },
+        "DjnKlZQYaWdQGKcK": {
+            "_note": "Wild Surge"
+        },
+        "ZjAdi1FSNCDDHI3X": {
+            "_note": "Words of Discord"
+        },
+        "9DwSxHoUwl8Kxj3n": {
+            "_note": "Wrangle"
+        },
+        "lOZaRb4fCVgQsWB5": {
+            "_note": "Zone of Protection"
+        }
+    }
+}

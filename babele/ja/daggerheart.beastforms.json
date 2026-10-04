@@ -1,0 +1,191 @@
+{
+    "label": "beastforms",
+    "collection": "daggerheart.beastforms",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "a9UoCwtrbgKk02mK": {
+            "_note": "Agile Scout"
+        },
+        "ItBVeCl2u5uetgy7": {
+            "_note": "Aquatic Predator"
+        },
+        "qqzdFCxyYupWZK23": {
+            "_note": "Aquatic Scout"
+        },
+        "8pUHJv3BYdjA4Qdf": {
+            "_note": "Armored Sentry"
+        },
+        "wT4xbF99I55yjKZV": {
+            "_note": "Epic Aquatic Beast"
+        },
+        "afbMt4Ld6nY3mw0N": {
+            "_note": "Great Predator"
+        },
+        "b4BMnTbJ3iPPidSb": {
+            "_note": "Great Winged Beast"
+        },
+        "iDmOtiHJJ80AIAVT": {
+            "_note": "Household Friend"
+        },
+        "mqP6z4Wg4K3oDAom": {
+            "_note": "Legendary Beast"
+        },
+        "rRUtgcUjimlpPhnn": {
+            "_note": "Legendary Hybrid"
+        },
+        "qjwMzPn33aKZACkv": {
+            "_note": "Massive Behemoth"
+        },
+        "94tvcC3D5Kp4lzuN": {
+            "_note": "Mighty Lizard"
+        },
+        "zRLjqKx4Rn2TjivL": {
+            "_note": "Mighty Strider"
+        },
+        "jV6EuEacyQlHW4SN": {
+            "_note": "Mythic Aerial Hunter"
+        },
+        "kObobka52JdpWBSu": {
+            "_note": "Mythic Beast"
+        },
+        "WAbxCf2An8qmxyJ1": {
+            "_note": "Mythic Hybrid"
+        },
+        "CItO8yX6amQaqyk7": {
+            "_note": "Nimble Grazer"
+        },
+        "YLisKYYhAGca50WM": {
+            "_note": "Pack Predator"
+        },
+        "33oFSZ1PwFqInHPe": {
+            "_note": "Pouncing Predator"
+        },
+        "m8BVTuJI1wCvzTcf": {
+            "_note": "Powerful Beast"
+        },
+        "A4TVRY0D5r9EiVwA": {
+            "_note": "Stalking Arachnid"
+        },
+        "1XrZWGDttBAAUxR1": {
+            "_note": "Striking Serpent"
+        },
+        "5BABxRe2XVrYTj8N": {
+            "_note": "Terrible Lizard"
+        },
+        "mZ4Wlqtss2FlNNvL": {
+            "_note": "Winged Beast",
+            "name": "有翼の獣",
+            "examples": "タカ、フクロウ、カラスなど",
+            "advantageOn": {
+                "DgZ77yPVJqNq7rxY": {
+                    "value": "欺く"
+                },
+                "HCH9ogsxcP0r3fU2": {
+                    "value": "発見する"
+                },
+                "WST3bOmxoIeSHYqX": {
+                    "value": "威嚇する"
+                }
+            }
+        },
+        "xLS5YT1B6yeCiNTg": {
+            "_note": "Agile"
+        },
+        "kQWWx9P3fCyGSVOI": {
+            "_note": "Aquatic"
+        },
+        "nDQZdIF2epKlhauX": {
+            "_note": "Armored Shell"
+        },
+        "FNKQlWQcArSorMPK": {
+            "_note": "Bird's-Eye View"
+        },
+        "jp5KpPRBFBOIs46Q": {
+            "_note": "Cannonball"
+        },
+        "EVOJTskJYf4rpuga": {
+            "_note": "Carrier"
+        },
+        "KAl5lxAaEfu21ukQ": {
+            "_note": "Carrier"
+        },
+        "TME5cvuTk0TW3yiJ": {
+            "_note": "Carrier"
+        },
+        "jhWSC5bNZyYUAA5Q": {
+            "_note": "Companion"
+        },
+        "QQtQ77tos8ijTHag": {
+            "_note": "Deadly Raptor"
+        },
+        "DfBXO8jTchwFG8dZ": {
+            "_note": "Demolish"
+        },
+        "HJbQcKWcFZ9NoFxs": {
+            "_note": "Devastating Strikes"
+        },
+        "a7Qvmm14nx9BCysA": {
+            "_note": "Elusive Prey"
+        },
+        "GhHsSHOa509cwCvr": {
+            "_note": "Fleet"
+        },
+        "QFg1hNCEoKVDd9Zo": {
+            "_note": "Fragile"
+        },
+        "8u0HkK3WgtU9lWYs": {
+            "_note": "Hobbling Strike"
+        },
+        "xVgmXhj2YgeqS1KK": {
+            "_note": "Hollow Bones"
+        },
+        "9QkZSeuEKgXtlpHc": {
+            "_note": "Massive Stride"
+        },
+        "tGDdEH40wyOCsFmH": {
+            "_note": "Ocean Master"
+        },
+        "d3q8lfeiEMyTjusT": {
+            "_note": "Pack Hunting"
+        },
+        "StabkQ3BzWRZa8Tz": {
+            "_note": "Physical Defense"
+        },
+        "8upqfcZvi7b5hRLE": {
+            "_note": "Rampage"
+        },
+        "Ky3rZD3sJMXYZOBC": {
+            "_note": "Snapping Strike"
+        },
+        "0ey4kM9ssj2otHvb": {
+            "_note": "Takedown"
+        },
+        "ZYbdXaWVj2zdcmaK": {
+            "_note": "Thick Hide"
+        },
+        "A0lgd6eVEfX6oqSB": {
+            "_note": "Trample"
+        },
+        "ODudjX88Te4vDP57": {
+            "_note": "Undaunted"
+        },
+        "vEAQ4cfsoPmOv2Gg": {
+            "_note": "Unyielding"
+        },
+        "2KlTnfzO03vneVS8": {
+            "_note": "Venomous Bite"
+        },
+        "uW3853pViM9VAfHb": {
+            "_note": "Venomous Strike"
+        },
+        "jYUBi7yLHap5ljpa": {
+            "_note": "Vicious Maul"
+        },
+        "cTlqpQZPy5TvdDAT": {
+            "_note": "Warning Hiss"
+        },
+        "D73fS1iM4SZPFimu": {
+            "_note": "Webslinger"
+        }
+    }
+}

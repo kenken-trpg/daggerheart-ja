@@ -1,0 +1,370 @@
+{
+    "label": "loot",
+    "collection": "daggerheart.loot",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "cTYvyaSKBxosM9Y9": {
+            "_note": "Airblade Charm"
+        },
+        "MeEg57T6MKpw3sme": {
+            "_note": "Alistair's Torch"
+        },
+        "4STt98biZwjFoKOe": {
+            "_note": "Arcane Cloak"
+        },
+        "Mn1eo2Mdtu1kzyxB": {
+            "_note": "Arcane Prism"
+        },
+        "vK6bKyQTT3m8WvMh": {
+            "_note": "Attune Relic"
+        },
+        "J8pp36Kta0WZ5n72": {
+            "_note": "Augur's Relic"
+        },
+        "v758j4FwNVAurhYK": {
+            "_note": "Bag of Ficklesand"
+        },
+        "nQ0dhnzdqm8pz9Fp": {
+            "_note": "Ball Bearings"
+        },
+        "gFzkUGCjkRJtyoe9": {
+            "_note": "Belt of Unity"
+        },
+        "TjB0iNuD9IDZhCOu": {
+            "_note": "Blackwing Quill"
+        },
+        "oMd78vhL2x2NO8Mg": {
+            "_note": "Bloodstone"
+        },
+        "m3EpxlDgxn2tCDDR": {
+            "_note": "Bolster Relic"
+        },
+        "JKh1fnnBNgse8HyG": {
+            "_note": "Boots of Supple Mystique"
+        },
+        "qgjb2uYxqLwp4JHM": {
+            "_note": "Box of Dragon Dust"
+        },
+        "bZyT7Qw7iafswlTY": {
+            "_note": "Box of Many Goods"
+        },
+        "hNCCPH0wV2GLFKT6": {
+            "_note": "Brooch"
+        },
+        "tgFFMxpuRSiRrrEB": {
+            "_note": "Calming Pendant"
+        },
+        "MHtVtO1J2ikzvRgZ": {
+            "_note": "Caltrops"
+        },
+        "gsUDP90d4SRtLEUn": {
+            "_note": "Charging Quiver"
+        },
+        "9P9jqGSlxVCbTdLe": {
+            "_note": "Charm Relic"
+        },
+        "Gf9ux8Vo2LGfEr6e": {
+            "_note": "Cheater's Coin"
+        },
+        "lGIk9vBNz0jvskXD": {
+            "_note": "Clay Companion"
+        },
+        "XyrBFqsVDHgrRpVk": {
+            "_note": "Collapsible Pole"
+        },
+        "XrpNqMnZBOFPBhc4": {
+            "_note": "Collar of Ascendancy"
+        },
+        "AHqRDhPuWAdecutZ": {
+            "_note": "Communion Relic"
+        },
+        "V25uXkAQvK3hUta4": {
+            "_note": "Companion Case"
+        },
+        "QPGBDItjrRhXU6iJ": {
+            "_note": "Control Relic"
+        },
+        "G0RktbmtnuAlKCRH": {
+            "_note": "Corrector Sprite"
+        },
+        "2kv7bVMaveULmJIE": {
+            "_note": "Crucible Frames"
+        },
+        "o5cWoYVRjaGdFRb6": {
+            "_note": "Dagginae's Obsidian Slate"
+        },
+        "HCvcAu3sdHCspGMP": {
+            "_note": "Dual Flask"
+        },
+        "fEd9wEKp1AwG6nio": {
+            "_note": "Eclipse Coin"
+        },
+        "PkmTZXRMZL022O75": {
+            "_note": "Elusive Amulet"
+        },
+        "Zt9K4eHv2etzau6v": {
+            "_note": "Elven Spyglass"
+        },
+        "p2yy61uKsyIsl8cU": {
+            "_note": "Empty Chest"
+        },
+        "YGxlijXbEIT4UDZf": {
+            "_note": "Enchanter's Loupe"
+        },
+        "vSGx1f9SYUiA29L3": {
+            "_note": "Enlighten Relic"
+        },
+        "vGHO8frU0XsfPBQY": {
+            "_note": "Escher's Mirrorball"
+        },
+        "X6RMkIt89wf7qX2E": {
+            "_note": "Fire Jar"
+        },
+        "9VKYSBQxN9XFWlAm": {
+            "_note": "Flickerfly Pendant"
+        },
+        "ABuNwIdACvsxSyNP": {
+            "_note": "Force Disc"
+        },
+        "rEfqo2aKAGcG1h1j": {
+            "_note": "Furball Bag"
+        },
+        "CyefGILogUehSTe0": {
+            "_note": "Gadiman's Backpack"
+        },
+        "CGzjBpHJRG8KSt5Y": {
+            "_note": "Gecko Gloves"
+        },
+        "zecFwBUSWtB3HW8X": {
+            "_note": "Gem of Alacrity"
+        },
+        "hMu9It3ThCLCXuCA": {
+            "_note": "Gem of Audacity"
+        },
+        "TbgeT9ZxKHqFqJSN": {
+            "_note": "Gem of Insight"
+        },
+        "rtSInNPc4B3ChBUZ": {
+            "_note": "Gem of Might"
+        },
+        "CrvJ7vb4s40YgEcy": {
+            "_note": "Gem of Precision"
+        },
+        "ua351S7CsH22X1x2": {
+            "_note": "Gem of Sagacity"
+        },
+        "80vWRBNeMZ7JXa9F": {
+            "_note": "Ghoulskin Gloves"
+        },
+        "Pj17cvdJ1XG1jv6I": {
+            "_note": "Glamour Stone"
+        },
+        "CiXwelozmBDcPY48": {
+            "_note": "Glider"
+        },
+        "meZiyR86vH97h8pJ": {
+            "_note": "Gloves of Alacrity"
+        },
+        "1MnroDYoDbw2AQxZ": {
+            "_note": "Gourmet Granules"
+        },
+        "RcYICit5t9dnMhzi": {
+            "_note": "Grapnel"
+        },
+        "BeEFlJ3Q1jnmH2nn": {
+            "_note": "Gravewarden's Bell"
+        },
+        "y7zABzR0Q2fRskTw": {
+            "_note": "Greatstone"
+        },
+        "kKl1YqFQASZWlcal": {
+            "_note": "Hero's Helm"
+        },
+        "9zgvj1CQaOmvdodC": {
+            "_note": "Hollowbark Horn"
+        },
+        "yrAGYlDyoe4OYl7d": {
+            "_note": "Homing Compasses"
+        },
+        "SAAnEAeXDnhBbLjB": {
+            "_note": "Honing Relic"
+        },
+        "9DcFR75tsnBYIp6Z": {
+            "_note": "Hopekeeper Locket"
+        },
+        "Iedjw1LVWEozVh0J": {
+            "_note": "Infinite Bag"
+        },
+        "o9aFNNwFJkEeyWel": {
+            "_note": "Insomniac's Periapt"
+        },
+        "P6Hhrc69G0X6Mpg4": {
+            "_note": "Iron Dagger Pendant"
+        },
+        "oB9zqrcM1jCKBK6U": {
+            "_note": "Iron Veil"
+        },
+        "6TfnwNWZJTiR0194": {
+            "_note": "Kingfisher's Net"
+        },
+        "2gaZtAAs0KRtAE7c": {
+            "_note": "Knockback Bracelets"
+        },
+        "NgvmrJYKpA2PrRSo": {
+            "_note": "Lakestrider Boots"
+        },
+        "KZ6EMEXj3sBl69Ko": {
+            "_note": "Loaded Dice"
+        },
+        "JsPYzrqpITqGj23I": {
+            "_note": "Lorekeeper"
+        },
+        "GkmATIuemyFtQX1D": {
+            "_note": "Manacles"
+        },
+        "kE0lB97shhgr3DuE": {
+            "_note": "Mandragorian Torch"
+        },
+        "fVhsN8pSVE9t7wjP": {
+            "_note": "Map of Revelation"
+        },
+        "PQxvxAVBbkt0TleC": {
+            "_note": "Minor Health Potion Recipe"
+        },
+        "1TLpFsp3PLDsqoTw": {
+            "_note": "Minor Stamina Potion Recipe"
+        },
+        "KzRYiDcJeVHPXf8d": {
+            "_note": "Molepaw Mittens"
+        },
+        "5YZls8XH3MB7twNa": {
+            "_note": "Mythic Dust Recipe"
+        },
+        "OhdOU8yLpq6Wj4jl": {
+            "_note": "Namer's Oracle"
+        },
+        "E7iVLwAEHiTccm3A": {
+            "_note": "Nighthawker's Ring"
+        },
+        "F4hoRfvVdZq5bhhI": {
+            "_note": "Paragon's Chain"
+        },
+        "ERL0eMaAW1Akx6Nn": {
+            "_note": "Phobophage's Circlet"
+        },
+        "QNtzJSVENww63THa": {
+            "_note": "Phoenix Feather"
+        },
+        "I63LTFD6GXHgyGpR": {
+            "_note": "Piercing Arrows"
+        },
+        "v4PIoCCEjeE3acys": {
+            "_note": "Piper Whistle"
+        },
+        "fLXPb6LWb2NdS3L7": {
+            "_note": "Portal Frames"
+        },
+        "eRd5Gk7J7hPCqp11": {
+            "_note": "Portal Seed"
+        },
+        "QGYPNBIufpBguwjC": {
+            "_note": "Premium Bedroll"
+        },
+        "HE6Ka3DD2jdreiVO": {
+            "_note": "Quillshawl"
+        },
+        "PAZL4sEq7UB5sLsA": {
+            "_note": "Reliquary of the Sightless Saint"
+        },
+        "qhzvGqgRLeTCAHGH": {
+            "_note": "Returning Ring"
+        },
+        "aUqRifqR5JXXa1dN": {
+            "_note": "Ring of Resistance"
+        },
+        "K1ysGnTpNyxPu5Au": {
+            "_note": "Ring of Silence"
+        },
+        "kn71qCQY0DnjmQBJ": {
+            "_note": "Ring of Unbreakable Resolve"
+        },
+        "GK0z0U4xxxOgQPC3": {
+            "_note": "Rings of Alliance"
+        },
+        "w7TqGqwJCyy5Wp6u": {
+            "_note": "Rings of Camaraderie"
+        },
+        "1A81VlHXrWPwtUF0": {
+            "_note": "Rings of Friendship"
+        },
+        "7xDQMVBapm45BrcP": {
+            "_note": "Self-Tying Rope"
+        },
+        "2ULPgNyqCrxea0v0": {
+            "_note": "Shard of Memory"
+        },
+        "xwZiqqwNYUJMiWjZ": {
+            "_note": "Silee's Folding Knife"
+        },
+        "edkNgwy4xghZreBa": {
+            "_note": "Skeleton Key"
+        },
+        "mYYeonjHFDgoUKAi": {
+            "_note": "Sorcerer's Hat"
+        },
+        "xxDDzhcODh98kcTC": {
+            "_note": "Soul-Twin Circlets"
+        },
+        "LZrG6CFiSjpLA2F1": {
+            "_note": "Speaking Orbs"
+        },
+        "FfJISMzYATaPQPLc": {
+            "_note": "Stride Relic"
+        },
+        "nnj12RiFanq7s5zv": {
+            "_note": "Suspended Rod"
+        },
+        "3t5jyhCi2hs6YJMg": {
+            "_note": "Temporal Sanctuary"
+        },
+        "hhdFEfPzAcTGL8QR": {
+            "_note": "Thief's Compass"
+        },
+        "4qUp8YWnsgi7ws8Q": {
+            "_note": "Timekeeper's Pendant"
+        },
+        "rJN3uu8KSC3CELzw": {
+            "_note": "Titan's Girdle"
+        },
+        "FXwxp9lScDnjA1Yl": {
+            "_note": "Traveler's Bell"
+        },
+        "LYiCqC7yYu60be4X": {
+            "_note": "Two-Faced Aegis Brooch"
+        },
+        "7yywua9TmQ4WP5WH": {
+            "_note": "Valorstone"
+        },
+        "MhCo8i0cRXzdnXbA": {
+            "_note": "Vial of Darksmoke Recipe"
+        },
+        "C2lZrVCqXZ09t7U5": {
+            "_note": "Warp Pendant"
+        },
+        "0e8FMOaUGOJHdalZ": {
+            "_note": "Whisperstep Anklet"
+        },
+        "iZ89q3CsjITHcuVs": {
+            "_note": "Wildrider's Saddle"
+        },
+        "vgwamE2rjHL2BJ95": {
+            "_note": "Windup Toy"
+        },
+        "ARuv48PWUGJGBC4n": {
+            "_note": "Woven Net"
+        },
+        "SxfSavCJXnj7gSIm": {
+            "_note": "Zephyr's Jar"
+        }
+    }
+}

@@ -60,7 +60,21 @@ const PACKS = {
 };
 
 /* Which packs `export` currently writes. Widened one at a time as each is proven. */
-const ENABLED = ['transformations', 'communities', 'ancestries', 'adversaries', 'environments'];
+const ENABLED = [
+    'transformations',
+    'communities',
+    'ancestries',
+    'adversaries',
+    'environments',
+    'domains',
+    'subclasses',
+    'classes',
+    'beastforms',
+    'items/weapons',
+    'items/armors',
+    'items/consumables',
+    'items/loot'
+];
 
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 
@@ -91,11 +105,45 @@ async function readPack(pack) {
  */
 const TRANSLATABLE_CHANGE_KEYS = new Set(['system.advantageSources', 'system.disadvantageSources']);
 
+/*
+ * A localization key sitting where prose would. Every beastform's granted attack
+ * is named "DAGGERHEART.ITEMS.Beastform.attackName", which the system resolves
+ * through game.i18n at runtime -- so lang/ja.json already translates it, and
+ * replacing the key here would leave the literal key on the sheet. 22 of the 25
+ * object-valued effect changes are this, so recognizing the shape of an object
+ * is not enough on its own.
+ */
+const I18N_KEY = /^[A-Z][A-Za-z0-9_]*(\.[A-Za-z0-9_]+)+$/;
+const isI18nKey = value => typeof value === 'string' && I18N_KEY.test(value);
+
 /** Collect name/description off a plain object, skipping what is empty. */
 function nameAndDescription(source = {}) {
     const entry = {};
     if (source.name) entry.name = source.name;
     if (source.description) entry.description = source.description;
+    return entry;
+}
+
+/**
+ * The names of a nested `areas` / `countdown` list, positionally.
+ *
+ * These sit inside an action, which is itself inside a keyed container, so the
+ * Babele mapping nests a `structured` converter in the action's mapping. The
+ * list is matched by index, hence the nulls.
+ */
+function nestedNames(list = []) {
+    if (!Array.isArray(list) || !list.length) return undefined;
+    const names = list.map(entry => entry?.name || null);
+    return names.some(Boolean) ? names.map(name => (name ? { name } : null)) : undefined;
+}
+
+/** An action's translatable shape: its own prose plus any nested named lists. */
+function actionFields(action = {}) {
+    const entry = nameAndDescription(action);
+    const areas = nestedNames(action.areas);
+    if (areas) entry.areas = areas;
+    const countdown = nestedNames(action.countdown);
+    if (countdown) entry.countdown = countdown;
     return entry;
 }
 
@@ -116,12 +164,28 @@ function keyedFields(container = {}, pick = nameAndDescription) {
 function effectFields(effect) {
     const entry = nameAndDescription(effect);
 
-    const changes = effect.system?.changes ?? [];
-    if (changes.some(change => TRANSLATABLE_CHANGE_KEYS.has(change.key) && change.value)) {
-        entry.changes = changes.map(change =>
-            TRANSLATABLE_CHANGE_KEYS.has(change.key) && change.value ? change.value : null
-        );
+    if (effect.system?.duration?.description) {
+        entry.durationDescription = effect.system.duration.description;
     }
+
+    /*
+     * A change's value is normally a formula, but a few grant a whole weapon and
+     * hold an object there. The allowlist covers the prose keys; the object case
+     * is recognized by shape, since its own `name` is the only prose in it.
+     */
+    const changes = effect.system?.changes ?? [];
+    const changeEntry = change => {
+        if (TRANSLATABLE_CHANGE_KEYS.has(change.key) && typeof change.value === 'string' && change.value) {
+            return change.value;
+        }
+        const granted = change.value;
+        if (granted && typeof granted === 'object' && !Array.isArray(granted) && granted.name && !isI18nKey(granted.name)) {
+            return { name: granted.name };
+        }
+        return null;
+    };
+    const carried = changes.map(changeEntry);
+    if (carried.some(Boolean)) entry.changes = carried;
 
     return entry;
 }
@@ -146,8 +210,36 @@ function translatableFields(document) {
         if (system[field]) fields[field] = system[field];
     }
 
-    const attack = nameAndDescription(system.attack ?? {});
+    if (system.examples) fields.examples = system.examples;
+
+    const attack = actionFields(system.attack ?? {});
     if (Object.keys(attack).length) fields.attack = attack;
+
+    /*
+     * A beastform's advantages are free text (a Tagify StringField), not an
+     * enum, and the same values get joined into system.advantageSources -- one
+     * of the two allowlisted change keys -- so both must use the same wording.
+     */
+    const advantageOn = keyedFields(system.advantageOn, group =>
+        group?.value ? { value: group.value } : {}
+    );
+    if (Object.keys(advantageOn).length) fields.advantageOn = advantageOn;
+
+    for (const field of ['backgroundQuestions', 'connections']) {
+        const list = system[field];
+        if (Array.isArray(list) && list.some(Boolean)) fields[field] = list.map(entry => entry || null);
+    }
+
+    /*
+     * Keyed by tier and then by a random id, so neither level can be named in a
+     * Babele mapping; the leafFields converter walks the shape instead.
+     */
+    const tiers = Object.entries(system.levelupOptionTiers ?? {}).reduce((acc, [tier, options]) => {
+        const kept = keyedFields(options, option => (option?.label ? { label: option.label } : {}));
+        if (Object.keys(kept).length) acc[tier] = kept;
+        return acc;
+    }, {});
+    if (Object.keys(tiers).length) fields.levelupOptionTiers = tiers;
 
     const experiences = keyedFields(system.experiences);
     if (Object.keys(experiences).length) fields.experiences = experiences;
@@ -157,7 +249,7 @@ function translatableFields(document) {
     );
     if (Object.keys(potentialAdversaries).length) fields.potentialAdversaries = potentialAdversaries;
 
-    const actions = keyedFields(system.actions);
+    const actions = keyedFields(system.actions, actionFields);
     if (Object.keys(actions).length) fields.actions = actions;
 
     const effects = (document.effects ?? []).reduce((acc, effect) => {
@@ -195,7 +287,12 @@ function carryOver(original, existing) {
          * Positional (effect changes): keep the length, carry over only the
          * positions that have a translation, null everywhere else.
          */
-        const carried = original.map((slot, index) => (slot ? existing?.[index] || null : null));
+        const carried = original.map((slot, index) => {
+            if (!slot) return null;
+            /* A slot can itself be a container (an area's name, a granted weapon). */
+            if (typeof slot === 'object') return carryOver(slot, existing?.[index]) ?? null;
+            return existing?.[index] || null;
+        });
         return carried.some(Boolean) ? carried : undefined;
     }
 
@@ -217,7 +314,12 @@ function* leaves(original, translated, trail = []) {
         if (Array.isArray(value)) {
             /* Only the positions holding text count; the nulls are untranslatable slots. */
             for (const [index, slot] of value.entries()) {
-                if (slot) yield [[...trail, field, index].join('.'), slot, translated?.[field]?.[index] ?? ''];
+                if (!slot) continue;
+                if (typeof slot === 'object') {
+                    yield* leaves(slot, translated?.[field]?.[index] ?? {}, [...trail, field, index]);
+                } else {
+                    yield [[...trail, field, index].join('.'), slot, translated?.[field]?.[index] ?? ''];
+                }
             }
         } else if (value && typeof value === 'object') {
             yield* leaves(value, translated?.[field] ?? {}, [...trail, field]);
@@ -251,7 +353,10 @@ async function buildPack(pack) {
         folders.map(folder => [folder.name, previous.folders?.[folder.name] ?? ''])
     );
 
-    return { collection, file, previous, documents, entries, folderNames };
+    /* The original shape, so `apply` can tell a keyed container from an array. */
+    const originals = Object.fromEntries(documents.map(d => [d._id, translatableFields(d)]));
+
+    return { collection, file, previous, documents, entries, folderNames, originals };
 }
 
 /** Drop the not-yet-translated entries of a flat name->translation map. */
@@ -335,7 +440,7 @@ const commands = {
 
         let applied = 0;
         for (const pack of ENABLED) {
-            const { collection, file, documents, entries, folderNames } = await buildPack(pack);
+            const { collection, file, documents, entries, folderNames, originals } = await buildPack(pack);
             const filled = pending[collection] ?? {};
 
             for (const [id, fields] of Object.entries(filled)) {
@@ -349,13 +454,21 @@ const commands = {
                      * object there would silently translate nothing.
                      */
                     const trail = where.split('.');
-                    const isIndex = segment => /^\d+$/.test(segment);
                     const last = trail.pop();
-                    const target = trail.reduce(
-                        (node, key, position) => (node[key] ??= isIndex(trail[position + 1] ?? last) ? [] : {}),
-                        (entries[id] ??= {})
-                    );
-                    target[isIndex(last) ? Number(last) : last] = value.ja;
+
+                    /*
+                     * Whether a container is an array is read off the ORIGINAL, not
+                     * guessed from the key. `system.levelupOptionTiers` is keyed by
+                     * tier -- "2", "3", "4" -- so a numeric-looking segment built an
+                     * array there and the converter, handed an array where it
+                     * expected an object, translated nothing.
+                     */
+                    let source = originals[id] ?? {};
+                    const target = trail.reduce((node, key) => {
+                        source = source?.[key];
+                        return (node[key] ??= Array.isArray(source) ? [] : {});
+                    }, (entries[id] ??= {}));
+                    target[Array.isArray(source) ? Number(last) : last] = value.ja;
                     applied += 1;
                 }
             }

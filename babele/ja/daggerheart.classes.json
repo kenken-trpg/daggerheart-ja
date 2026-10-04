@@ -1,0 +1,269 @@
+{
+    "label": "classes",
+    "collection": "daggerheart.classes",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "0EFzupppM47Bl6Yw": {
+            "_note": "Assassin"
+        },
+        "vegl3bFOq3pcFTWT": {
+            "_note": "Bard"
+        },
+        "0Qw2heB75eXNV4SM": {
+            "_note": "Brawler",
+            "name": "ブロウラー",
+            "backgroundQuestions": [
+                null,
+                null,
+                "あなたが最近敗れ、どうしても再戦したい相手は誰ですか？"
+            ],
+            "connections": [
+                null,
+                null,
+                "あなたが私に言ったことを、私はまだ許していません。それは何で、なぜ言ったのですか？"
+            ],
+            "levelupOptionTiers": {
+                "4": {
+                    "kX18xCR6KbTS3iTP": {
+                        "label": "コンボ・ダイを永続的に1段階上げる（d4からd6、d6からd8など）。"
+                    }
+                }
+            }
+        },
+        "ZNwUTCyGCEcidZFv": {
+            "_note": "Druid"
+        },
+        "nRAyoC0fOzXPDa4z": {
+            "_note": "Guardian"
+        },
+        "BTyfve69LKqoOi9S": {
+            "_note": "Ranger"
+        },
+        "CvHlkHZfpMiCz5uT": {
+            "_note": "Rogue"
+        },
+        "5ZnlJ5bEoyOTkUJv": {
+            "_note": "Seraph"
+        },
+        "DchOzHcWIJE9FKcR": {
+            "_note": "Sorcerer"
+        },
+        "cgq9QzytVs6uyaBW": {
+            "_note": "Warlock"
+        },
+        "xCUWwJz4WSthvLfy": {
+            "_note": "Warrior"
+        },
+        "HHAmaNZDicgkill5": {
+            "_note": "Witch"
+        },
+        "5LwX4m8ziY3F1ZGC": {
+            "_note": "Wizard"
+        },
+        "CHK32dfCTTyuxV1A": {
+            "_note": "Arcane Sense"
+        },
+        "3hNVqD1c0VIw2Nj5": {
+            "_note": "Attack Of Opportunity"
+        },
+        "P1K0jcnH2RiS6TLd": {
+            "_note": "Beastform"
+        },
+        "P02cbN50LIoD662z": {
+            "_note": "Channel Raw Power"
+        },
+        "5IT8wYa0m1EFw8Zp": {
+            "_note": "Cloaked"
+        },
+        "eoSmuAJmgHUyULtp": {
+            "_note": "Combat Training"
+        },
+        "LtG3pKzd4gtfLgFJ": {
+            "_note": "Combo Strike"
+        },
+        "koq6qy5n7alp7kcb": {
+            "_note": "Commune"
+        },
+        "lO3Xyd21qYimrWBs": {
+            "_note": "Deadly Determination"
+        },
+        "6rlxhrRwFaVgq9fe": {
+            "_note": "Evolution"
+        },
+        "OGPn7DUJoJwAXh8o": {
+            "_note": "Favor"
+        },
+        "YS1g7YdWwOaS629x": {
+            "_note": "Frontline Tank"
+        },
+        "D3hK5ub4uuZqjRDR": {
+            "_note": "Get In & Get Out"
+        },
+        "EFgQVcDiADsKxG3T": {
+            "_note": "Hex"
+        },
+        "2Cyb9ZeuAesf5Sb3": {
+            "_note": "Hold Them Off"
+        },
+        "WgUrpNTlX92k0Xs3": {
+            "_note": "I Am the Weapon",
+            "effects": {
+                "bGHd7NfUn4fL6u1g": {
+                    "changes": [
+                        null,
+                        {
+                            "name": "ブロウラーの一撃"
+                        }
+                    ]
+                }
+            }
+        },
+        "lSlvSUHbOoX36q2j": {
+            "_note": "Life Support"
+        },
+        "N9E5skDDK2VgvohR": {
+            "_note": "Make a Scene"
+        },
+        "XxS0Li1P6SqIho7T": {
+            "_note": "Marked for Death"
+        },
+        "cshTYdtz9yoXYYB3": {
+            "_note": "Minor Illusion"
+        },
+        "njj2C3tMDeCHHOoh": {
+            "_note": "No Mercy"
+        },
+        "h3VE0jhcM5xHKBs4": {
+            "_note": "Not This Time"
+        },
+        "QmFMbJzPV7DPLvjk": {
+            "_note": "Patron's Boon"
+        },
+        "IOWBzweDFPoAHtQW": {
+            "_note": "Patron's Pact"
+        },
+        "Xd7RYhfTxIj9aWI2": {
+            "_note": "Prayer Dice"
+        },
+        "SG2uw8h5YuwDviCn": {
+            "_note": "Prestidigitation"
+        },
+        "PydiMnNCKpd44SGS": {
+            "_note": "Rally"
+        },
+        "ncLx2P8BOUtrAD38": {
+            "_note": "Ranger's Focus"
+        },
+        "hVaaPIjxoextIgSL": {
+            "_note": "Rogue's Dodge"
+        },
+        "5QqpEwmwkPfZHpMW": {
+            "_note": "Sneak Attack"
+        },
+        "pPP9dHHa00lekbuu": {
+            "_note": "Square Up"
+        },
+        "6YsfFjmCGuFYVhT4": {
+            "_note": "Strange Patterns"
+        },
+        "PnD2UCgzIlwX6cY3": {
+            "_note": "Unstoppable"
+        },
+        "ieiQlD0joWSqt53D": {
+            "_note": "Volatile Magic"
+        },
+        "fqSdfUYUK9QUcVE4": {
+            "_note": "Wildtouch"
+        },
+        "7nIDpcWOGzO8Y6gq": {
+            "_note": "Witch's Charm"
+        },
+        "hMST9iizQP1yz0MG": {
+            "_note": "50ft of Rope"
+        },
+        "Bvr6wjf44EvCdidC": {
+            "_note": "A Romance Novel"
+        },
+        "LoQH7wpfyKsuMJ5l": {
+            "_note": "A Sharpening Stone"
+        },
+        "JqqUpW7aqMuNoqXc": {
+            "_note": "A small, harmless pet"
+        },
+        "uoG5iq09mxJPXfmk": {
+            "_note": "Basic Supplies"
+        },
+        "73XdemkRkYNFiMqN": {
+            "_note": "Book about your secret hobby"
+        },
+        "8k76EgktQXFWHf8r": {
+            "_note": "Broken Compass"
+        },
+        "aLvek22hb5kNg9MF": {
+            "_note": "Bundle of Offerings"
+        },
+        "c1jomE48GRyNeXMY": {
+            "_note": "Carving that symbolizes your patron"
+        },
+        "KuPuEAbUK4VKpS2O": {
+            "_note": "Drawing Of A Lover"
+        },
+        "Yum0uBtnEtTBcpax": {
+            "_note": "Family Heirloom"
+        },
+        "J1c708r5L9TYckER": {
+            "_note": "Grappling Hook"
+        },
+        "wVYM6LqwYCKwwbh4": {
+            "_note": "Hand wraps from a mentor"
+        },
+        "XGWVVkHlVrF5fGm6": {
+            "_note": "Letter(Never Opened)"
+        },
+        "a4MyV9MZZFY4dKCZ": {
+            "_note": "List of names with several marked off"
+        },
+        "KGnwxeMYR4V7LJVi": {
+            "_note": "Ring you can't remove"
+        },
+        "x9H46Uwlq85bqRaU": {
+            "_note": "Rusted blade inscribed with an insignia"
+        },
+        "l787jY8NXcccj6GA": {
+            "_note": "Scrying stone"
+        },
+        "VVvIPx1cduyAb8jr": {
+            "_note": "Secret Key"
+        },
+        "yqoO5aqDd4aD13pc": {
+            "_note": "Set of Forgery Tools"
+        },
+        "o3G6szWvPoz7fo6T": {
+            "_note": "Sigil of Your God"
+        },
+        "todlyATSZzLPTqnU": {
+            "_note": "Small Bag (Rocks & Bones)"
+        },
+        "LriTeh9hkwzEaCr1": {
+            "_note": "Strange Dirty Pendant"
+        },
+        "UUp0YGFj7E4x7Z6Z": {
+            "_note": "Tiny Elemental Pet"
+        },
+        "zqeXrJTd1geX73Pw": {
+            "_note": "Torch"
+        },
+        "d3VdAtW65oO8j14Y": {
+            "_note": "Totem from Mentor"
+        },
+        "eslejbiZRH6ODh9U": {
+            "_note": "Trophy from your First Kill"
+        },
+        "fhg3NK99tcgYQxdY": {
+            "_note": "Untranslated Book"
+        },
+        "9AM1YsPeuWSysdDo": {
+            "_note": "Whispering Orb"
+        }
+    }
+}

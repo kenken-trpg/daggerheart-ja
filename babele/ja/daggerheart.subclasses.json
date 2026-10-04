@@ -1,0 +1,487 @@
+{
+    "label": "subclasses",
+    "collection": "daggerheart.subclasses",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "0wCctRupJAv5hTuE": {
+            "_note": "Accomplished"
+        },
+        "k7vvMJtEcxMWUUrW": {
+            "_note": "Act of Reprisal"
+        },
+        "gpyx5lf1yWjCMVyl": {
+            "_note": "Adder's Blessing"
+        },
+        "v511C6GMShsBblah": {
+            "_note": "Adept"
+        },
+        "uByM34yQlw38yf1V": {
+            "_note": "Adrenaline"
+        },
+        "uGcs785h94RMtueH": {
+            "_note": "Advanced Training"
+        },
+        "RoG3RZWVnTK6TYFI": {
+            "_note": "Aggressive"
+        },
+        "WkrwX3w8K4wLpaY8": {
+            "_note": "Ambush"
+        },
+        "uLRkOyvk0n9QpZSi": {
+            "_note": "Anchored"
+        },
+        "lwH3E0Zyf4gbVOd0": {
+            "_note": "Apex Predator"
+        },
+        "yA4MKQ1tbKFiJoDB": {
+            "_note": "Arcane Charge"
+        },
+        "fefLgx6kcYWusjBb": {
+            "_note": "Ascendant"
+        },
+        "xPWFvGvtUjIcqgJq": {
+            "_note": "At Ease"
+        },
+        "1x1EBrNOPdlWhIAZ": {
+            "_note": "Backstab"
+        },
+        "hWsKyed1vfILg0I8": {
+            "_note": "Battle-Bonded"
+        },
+        "qqb5acyUSl1sCpWW": {
+            "_note": "Battle Ritual"
+        },
+        "Y9eGMewnFZgPvX0M": {
+            "_note": "Battlemage"
+        },
+        "2A0HBDxGc4gEARou": {
+            "_note": "Brilliant"
+        },
+        "VmX3uaONxYo3wzsU": {
+            "_note": "Circle of Power"
+        },
+        "etaQ01yGJhBLDUqZ": {
+            "_note": "Clarity of Nature"
+        },
+        "dArl2cxKIEGTicXU": {
+            "_note": "Comaraderie"
+        },
+        "MBFXxIEwc0Dl4kJg": {
+            "_note": "Companion"
+        },
+        "oirsCnN66GOlK3Fa": {
+            "_note": "Conjure Shield"
+        },
+        "cXbRm744mW6UXGam": {
+            "_note": "Contacts Everywhere"
+        },
+        "o5j2vjXU8NicYlXx": {
+            "_note": "Courage"
+        },
+        "3IT4w3WExpGFD3Mm": {
+            "_note": "Crushing"
+        },
+        "ykvPRG06i68bxV0Y": {
+            "_note": "Damage Sink"
+        },
+        "wx4I8MnEJbkgMmeY": {
+            "_note": "Dark Aegis"
+        },
+        "frBTtNMX9Y2gkuPz": {
+            "_note": "Dark Cloud"
+        },
+        "DKNkqvCMReqPRnS6": {
+            "_note": "Deadly Vengeance"
+        },
+        "hdy7nz7hnYkN0tGF": {
+            "_note": "Death Strike"
+        },
+        "pEPIud1nwUb8wxiL": {
+            "_note": "Deathless Embrace"
+        },
+        "Jdktv5p1K2PfgxrT": {
+            "_note": "Defender"
+        },
+        "YGQ7hhRGrYm8BFDP": {
+            "_note": "Defensive"
+        },
+        "J3A7ycmj65hlhWnI": {
+            "_note": "Devout"
+        },
+        "MEpNIeVPWz0RjEos": {
+            "_note": "Diminish My Foes"
+        },
+        "8INvTVCRkDoCbbih": {
+            "_note": "Draining Bane"
+        },
+        "2JH9NaOh69yN80Gw": {
+            "_note": "Elemental Aura"
+        },
+        "EFUJHrkTuyv8uA9l": {
+            "_note": "Elemental Dominion"
+        },
+        "f37TTgCc0Q3Ih1A1": {
+            "_note": "Elemental Incarnation"
+        },
+        "dPcqKN5NeDkjB1HW": {
+            "_note": "Elementalist"
+        },
+        "5bmB1YcxiJVNVXDM": {
+            "_note": "Eloquent"
+        },
+        "Cjtc43V3IzAmfIFG": {
+            "_note": "Elusive Predator"
+        },
+        "4pVBN8cuKePI423V": {
+            "_note": "Enchanted Aid"
+        },
+        "4jnGL4ENGs2AR1p1": {
+            "_note": "Enchanted Talisman"
+        },
+        "eCoEWkWuZPMZ9C6a": {
+            "_note": "Epic Poetry"
+        },
+        "tyGB6wRKjYdIBK1i": {
+            "_note": "Ethereal Visage"
+        },
+        "hzDDTkBp1cqMOq7z": {
+            "_note": "Exacting"
+        },
+        "iCXtOWBKv1FdKdWz": {
+            "_note": "Expert Training"
+        },
+        "mHuqYsV0a2MYnLej": {
+            "_note": "Eye for an Eye"
+        },
+        "D3ffFWSXCza4WGcM": {
+            "_note": "Face Your Fear"
+        },
+        "W95PSU4iXjg2v5B5": {
+            "_note": "Favored"
+        },
+        "voLbSV1fvpAQdt3y": {
+            "_note": "Fearsome Attack"
+        },
+        "CapfuUdLhzqer78i": {
+            "_note": "First Strike"
+        },
+        "EY7Eo6hNGppVL3dR": {
+            "_note": "Fleeting Shadow"
+        },
+        "iuqAzugTIf7Ipcmb": {
+            "_note": "Flow State"
+        },
+        "fMiu9xPbBVDizZEB": {
+            "_note": "Focus Cannon"
+        },
+        "hNqLf3zEfKRzSbvq": {
+            "_note": "Fueled by Fear"
+        },
+        "99U7YWNCxFZHCiT0": {
+            "_note": "Gifted Performer"
+        },
+        "aN9OhwIJXTCDc11u": {
+            "_note": "Grappling"
+        },
+        "aLL9AQUVBnpGfO2T": {
+            "_note": "Harrowing Invocation"
+        },
+        "8TH6h6a36h09mf6d": {
+            "_note": "Have No Fear"
+        },
+        "Ce0sn0kqAw3PFe0k": {
+            "_note": "Heart of a Poet"
+        },
+        "HE0slu6jR0Io2x84": {
+            "_note": "Herbal Remedies"
+        },
+        "w1BwNKxbQOSizLmZ": {
+            "_note": "Honed Expertise"
+        },
+        "aJKTuq1Ja5o9lB16": {
+            "_note": "Honed"
+        },
+        "ewgpPblJAcHCHPUO": {
+            "_note": "Invigorating"
+        },
+        "A8VBqkOtH8gEJCvv": {
+            "_note": "Ire of Pale Light"
+        },
+        "7AVRNyBcd1Nffjtn": {
+            "_note": "Iron Will"
+        },
+        "QVKgnF8eUwbX8K9H": {
+            "_note": "Isolating"
+        },
+        "pv1hw4kJ1Q28xSiG": {
+            "_note": "Keen Defenses"
+        },
+        "zrBAilBZuk9e4R1C": {
+            "_note": "Limit Breaker"
+        },
+        "xjZHD5Yo3Tu26rLm": {
+            "_note": "Loyal Friend"
+        },
+        "hd7UeBPr86Mz21Pe": {
+            "_note": "Loyal Protector"
+        },
+        "6HGlS2CvR9NBsVg5": {
+            "_note": "Lunar Phases"
+        },
+        "ZFkCz8XV1EtMoJ1w": {
+            "_note": "Maestro"
+        },
+        "UNg4eyNfEQrMdD7G": {
+            "_note": "Manipulate Magic"
+        },
+        "dHgAnbt9m1KsQFmp": {
+            "_note": "Martial Preparation"
+        },
+        "SVqDAwdpTNjUwe64": {
+            "_note": "Menacing Reach"
+        },
+        "KtkCySTmYjN2uXF4": {
+            "_note": "Moonbeam"
+        },
+        "TnuLBtHQGbqyzn82": {
+            "_note": "Natural Evasion"
+        },
+        "DPKmipNRlSAMs2Cg": {
+            "_note": "Nemesis"
+        },
+        "YlKPNBkoSOCLm1Yo": {
+            "_note": "Night's Glamour"
+        },
+        "kKdC6wJ7YAF4F12p": {
+            "_note": "Not Done Yet"
+        },
+        "K2R2i8dhtNnY9MYR": {
+            "_note": "Otherwordly"
+        },
+        "0ZLYqCcnlhQYd6hw": {
+            "_note": "Otherworldly Ire"
+        },
+        "36POMgbO969M38Ky": {
+            "_note": "Overwhelm"
+        },
+        "G54qY96XK62hgoK9": {
+            "_note": "Partner-in-Arms"
+        },
+        "uPPBOpoulUmSLlzr": {
+            "_note": "Path Forward"
+        },
+        "K6dQzaeZJHfRu87I": {
+            "_note": "Patron's Fury"
+        },
+        "LZQ2LeUg9HPjzLR6": {
+            "_note": "Patron's Mantle"
+        },
+        "HzPa5U0EQhDfFTqW": {
+            "_note": "Perfect Recall"
+        },
+        "RrYxuotaN5JAjHdT": {
+            "_note": "Poison Compendium"
+        },
+        "Yij5sNyP1Ii7BAbc": {
+            "_note": "Power of the Gods"
+        },
+        "YS52ZGdce605wNVT": {
+            "_note": "Prepared"
+        },
+        "vAZFKiSCZYHBbmtb": {
+            "_note": "Pummeljoy"
+        },
+        "bGXfEQV5TLujvgp7": {
+            "_note": "Quick"
+        },
+        "KRyrbSLVGreIOTZe": {
+            "_note": "Regeneration"
+        },
+        "oLO3VjGkMcK1uvB9": {
+            "_note": "Regenerative Reach"
+        },
+        "QYNGdH37fsGuxS7L": {
+            "_note": "Reliable Backup"
+        },
+        "zNyqL7wzm1W4dUjN": {
+            "_note": "Reliable"
+        },
+        "oNfA5F9cKwNR7joq": {
+            "_note": "Revenge"
+        },
+        "dcutk8RVOJ2sEkO1": {
+            "_note": "Rise to the Challenge"
+        },
+        "PCmYTX02JLzBpgml": {
+            "_note": "Rousing Speech"
+        },
+        "izu8r8Qi8Rd2D8ML": {
+            "_note": "Rugged"
+        },
+        "Qny2J3R35bvC0Cey": {
+            "_note": "Ruthless Predator"
+        },
+        "DxOAkDBfIMpXxAUD": {
+            "_note": "Sacred Resonance"
+        },
+        "b16QLSE6UYZExF76": {
+            "_note": "Scary"
+        },
+        "lg7f25bLIJWWLOcB": {
+            "_note": "Scorpion's Poise"
+        },
+        "hAwTXjhyphiE3aeW": {
+            "_note": "Shadow Stepper"
+        },
+        "1hF5KGKQc2VKT5O8": {
+            "_note": "Slayer"
+        },
+        "GfOSgVJW8bS1OjNq": {
+            "_note": "Sparing Touch"
+        },
+        "McoS0RxNLOg3SfSt": {
+            "_note": "Spirit Weapon"
+        },
+        "mfuYkv8RpcSh8SfG": {
+            "_note": "Stable"
+        },
+        "EVEP9G6lNF8nR5f3": {
+            "_note": "Stance Fighter"
+        },
+        "OWh9ztIVW6P0gve0": {
+            "_note": "Surrounded"
+        },
+        "1nmFmkNXY6OYyyju": {
+            "_note": "Thrive in Chaos"
+        },
+        "UNn0fdVUezD9rRJu": {
+            "_note": "Toxic Concoctions"
+        },
+        "th6HZwEFnVBjUtqm": {
+            "_note": "Transcendence"
+        },
+        "D0Kno09So9aRO2Lf": {
+            "_note": "True Strike"
+        },
+        "i4iY1IBTBWEI01QU": {
+            "_note": "Twin Fang"
+        },
+        "866b2jjyzXP8nPRQ": {
+            "_note": "Undaunted"
+        },
+        "4qP7bNyxVHBmr4Rb": {
+            "_note": "Unrelenting"
+        },
+        "WBiFZaYNoQNhysmN": {
+            "_note": "Unwavering"
+        },
+        "iyIg1VLwO8C6jvFZ": {
+            "_note": "Vanishing Act"
+        },
+        "WAkxLnKbtic1O6pC": {
+            "_note": "Venomancer"
+        },
+        "h29DyM9jwY8E7AdM": {
+            "_note": "Vexing Malison"
+        },
+        "4bLcpljjJylzM5xg": {
+            "_note": "Vigilant"
+        },
+        "kn2t409o0FDFQieo": {
+            "_note": "Virtuoso"
+        },
+        "VMjYY6MPqVhyKgM7": {
+            "_note": "Walk Between Worlds"
+        },
+        "2F1bUFY80oce97C9": {
+            "_note": "Warden's Protection"
+        },
+        "HAqtoKUTrk8Mip1n": {
+            "_note": "Weapon Specialist"
+        },
+        "7KnSOazixXXSnspj": {
+            "_note": "Well-Connected"
+        },
+        "KkQH0tYhagIqe2MT": {
+            "_note": "Wings of Light"
+        },
+        "TIUsIlTS1WkK5vr2": {
+            "_note": "Beastbound"
+        },
+        "NAFU9roaVG7f3RNJ": {
+            "_note": "Call Of The Brave"
+        },
+        "bcNe5qP3o6CKadhK": {
+            "_note": "Call Of The Slayer"
+        },
+        "M5mpGoAj8LRkylrY": {
+            "_note": "Divine Wielder"
+        },
+        "wg1H0hROc2acHwZh": {
+            "_note": "Elemental Origin"
+        },
+        "F8uUCjTnvw57oNuQ": {
+            "_note": "Executioners Guild"
+        },
+        "7dU2iosTyQaig0Sc": {
+            "_note": "Hedge"
+        },
+        "9zyjac09CXquXQSo": {
+            "_note": "Juggernaut"
+        },
+        "QdoKFfErTEgx6326": {
+            "_note": "Martial Artist"
+        },
+        "icIkkMKmVmq1WgRz": {
+            "_note": "Moon"
+        },
+        "h161OSIK24Up4qNd": {
+            "_note": "Nightwalker"
+        },
+        "yA10Wf90HYb0DTbK": {
+            "_note": "Pact of the Endless"
+        },
+        "TsJSGjecybUfKfpP": {
+            "_note": "Pact of the Wrathful"
+        },
+        "4x8jiolc2hhs41dt": {
+            "_note": "Poisoners Guild"
+        },
+        "GLpRVxnY5E82khxH": {
+            "_note": "Primal Origin"
+        },
+        "qqQlgCqhOivUFoQn": {
+            "_note": "School Of Knowledge"
+        },
+        "4y9Ph7RsCIAbkwTk": {
+            "_note": "School Of War"
+        },
+        "rKRxFBlkbh9cDK8K": {
+            "_note": "Stalwart"
+        },
+        "95QxNZwgyEm1LqdG": {
+            "_note": "Syndicate"
+        },
+        "ld8MIvk0xVJydSBz": {
+            "_note": "Troubadour"
+        },
+        "SUo8NPBPO8aN193u": {
+            "_note": "Vengeance"
+        },
+        "xp0XMjYT85Q7E90o": {
+            "_note": "Warden of Renewal"
+        },
+        "W9hs5kxOWeY7eA4Q": {
+            "_note": "Warden of the Elements"
+        },
+        "zsUglcU4NgZ8tNgZ": {
+            "_note": "Wayfinder"
+        },
+        "y7ERWRIpJsdP9Re4": {
+            "_note": "Winged Sentinel"
+        },
+        "XTSODVM8st75Os8M": {
+            "_note": "Wordsmith"
+        }
+    }
+}
