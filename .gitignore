@@ -1,0 +1,18 @@
+.vscode
+.DS_Store
+.env
+node_modules
+
+# 上流 (Foundryborne/daggerheart) から引いてくる参照用の原文。
+# このリポジトリの成果物ではないので持たない。tools/fetch-reference.mjs で取得する。
+lang/.reference/
+
+# 翻訳作業ファイル
+lang/translation/pending.json
+
+# 参照専用・再配布不可の対訳資料 (フォーク側の .gitignore から引き継ぎ)
+lang/DnD_Glossary_JP.txt
+lang/Daggerheart_en-ja.csv
+
+# リリース成果物
+module.zip

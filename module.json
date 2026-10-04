@@ -1,0 +1,62 @@
+{
+    "id": "daggerheart-ja",
+    "title": "Daggerheart 日本語化",
+    "description": "Foundryborne/daggerheart システムの UI を日本語化する非公式モジュール。公式システムをそのまま使うので、公式システム向けのモジュールと併用できる。",
+    "version": "0.1.0",
+    "compatibility": {
+        "minimum": "14.364",
+        "verified": "14.368",
+        "maximum": "14"
+    },
+    "authors": [
+        {
+            "name": "kenken-trpg",
+            "url": "https://github.com/kenken-trpg"
+        }
+    ],
+    "url": "https://github.com/kenken-trpg/daggerheart-ja",
+    "manifest": "https://raw.githubusercontent.com/kenken-trpg/daggerheart-ja/main/module.json",
+    "download": "https://github.com/kenken-trpg/daggerheart-ja/releases/download/0.1.0/module.zip",
+    "languages": [
+        {
+            "lang": "ja",
+            "name": "日本語",
+            "path": "lang/ja.json",
+            "system": "daggerheart"
+        }
+    ],
+    "styles": [
+        "styles/daggerheart-ja.css"
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "daggerheart",
+                "type": "system",
+                "manifest": "https://raw.githubusercontent.com/Foundryborne/daggerheart/main/system.json",
+                "compatibility": {
+                    "minimum": "2.10.7",
+                    "verified": "2.10.9"
+                }
+            }
+        ],
+        "recommends": [
+            {
+                "id": "foundryVTTja",
+                "type": "module",
+                "reason": "Foundry 本体の UI を日本語化する。入れないと素の UI が英語のままになる。"
+            },
+            {
+                "id": "babele",
+                "type": "module",
+                "reason": "コンペンディウム収録内容の翻訳に使う。未実装。"
+            }
+        ]
+    },
+    "flags": {
+        "hotReload": {
+            "extensions": ["css", "json"],
+            "paths": ["styles/daggerheart-ja.css", "lang"]
+        }
+    }
+}
