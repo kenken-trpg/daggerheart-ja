@@ -1,0 +1,4435 @@
+{
+    "TYPES": {
+        "Item": {
+            "ancestry": "種族",
+            "community": "コミュニティ",
+            "class": "クラス",
+            "subclass": "サブクラス",
+            "feature": "特徴",
+            "domainCard": "能力カード",
+            "consumable": "消耗品",
+            "loot": "戦利品",
+            "weapon": "武器",
+            "armor": "防具",
+            "beastform": "ビーストフォーム",
+            "transformation": "変身"
+        },
+        "ActiveEffect": {
+            "base": "標準",
+            "beastform": "ビーストフォーム"
+        },
+        "Actor": {
+            "character": "キャラクター",
+            "companion": "相棒",
+            "adversary": "敵対者",
+            "environment": "環境",
+            "npc": "NPC",
+            "party": "パーティ"
+        }
+    },
+    "CONTROLS": {
+        "inFront": "前方",
+        "ChangeSceneDarknessLevel": "シーンの暗闇レベルを変更"
+    },
+    "SCENE": {
+        "TABS": {
+            "SHEET": {
+                "dh": "Daggerheart"
+            }
+        }
+    },
+    "SETTINGS": {
+        "GridDiagonalsL": "正方グリッドおよびヘクスグリッドで斜め方向の距離をどう測るかを設定します。括弧内の数字は、各選択肢における斜め1歩の長さ（グリッドマス単位）です。この設定はDaggerheartの射程測定（近距離／遠距離など）には影響しません。"
+    },
+    "DAGGERHEART": {
+        "CharacterSheet": "キャラクターシート",
+        "ACTIONS": {
+            "TYPES": {
+                "attack": {
+                    "name": "攻撃",
+                    "tooltip": "武器攻撃、呪文発動などの攻撃的アクション。"
+                },
+                "beastform": {
+                    "name": "ビーストフォーム",
+                    "tooltip": "使用者を別の形態へ変身させます。"
+                },
+                "countdown": {
+                    "name": "カウントダウン",
+                    "tooltip": "カウントダウンを開始"
+                },
+                "damage": {
+                    "name": "ダメージ",
+                    "critical": "ダメージ（クリティカル）",
+                    "tooltip": "ロールなしの直接ダメージ。"
+                },
+                "effect": {
+                    "name": "汎用",
+                    "tooltip": "何も設定されていない場合、チャットメッセージだけを表示する汎用アクション。"
+                },
+                "healing": {
+                    "name": "治癒",
+                    "tooltip": "対象のリソースを回復します。ロールを設定できます。"
+                },
+                "macro": {
+                    "name": "マクロ",
+                    "tooltip": "UUIDでマクロを実行します。"
+                },
+                "summon": {
+                    "name": "召喚",
+                    "tooltip": "シーンにトークンを作成します。",
+                    "error": "トークンを召喚する権限がないか、アクティブなシーンがありません。",
+                    "invalidDrop": "召喚できるのはアクターエンティティのみです。"
+                },
+                "transform": {
+                    "name": "変身",
+                    "tooltip": "あるアクターを別のアクターへ変身させる",
+                    "invalidDrop": "変身先として指定できるのはアクターのみです。",
+                    "noTransformActor": "変身先のアクターが指定されていません",
+                    "transformActorMissing": "変身先に指定されたアクターが存在しません。削除されたか、辞典への出し入れで移動した可能性があります",
+                    "canvasError": "アクティブなシーンがありません。",
+                    "prototypeError": "変身アクションはトークンからのみ使えます",
+                    "linkedSelectedError": "リンクされたアクターを変身させるには、キャンバス上にそのトークンが1つだけあるか、左クリックで1つだけ選択する必要があります。",
+                    "actorLinkError": "アクターリンクがオンのトークンは変身できません"
+                },
+                "evolution": {
+                    "name": "進化",
+                    "tooltip": "アクターを進化させ、新たな能力を得ます",
+                    "tokenImage": "トークン画像",
+                    "tokenScale": "拡大率",
+                    "dynamicToken": "ダイナミックトークン",
+                    "dynamicTokenImage": "ダイナミックトークン画像",
+                    "dynamicTokenRing": "ダイナミックトークンのリング色",
+                    "dynamicTokenBackground": "ダイナミックトークンの背景",
+                    "dynamicEffects": "ダイナミックエフェクト",
+                    "tokenError": "進化アクションはトークンからのみ使用できます",
+                    "actorError": "トークンに対応するアクターが見つかりません。未進化状態に戻せません。",
+                    "deevolveConfirmationTitle": "進化を解除",
+                    "deevolveConfirmationText": "進化を解除してよろしいですか？"
+                },
+                "grouped": {
+                    "name": "グループ",
+                    "tooltip": "複数のアクションを1つのボタンにまとめます。個々のアクションは選択制かランダム決定になります。",
+                    "selectionType": {
+                        "label": "アクションの選択方式"
+                    },
+                    "groupedActions": {
+                        "label": "グループ化されたアクション"
+                    },
+                    "missingGroupedActions": "このアクションにはグループ化されたアクションが設定されていません"
+                }
+            },
+            "Config": {
+                "beastform": {
+                    "exact": {
+                        "label": "ビーストフォーム最大ティア",
+                        "hint": "空の場合はキャラクターのティアが使われます"
+                    },
+                    "modifications": {
+                        "traitBonuses": {
+                            "label": {
+                                "single": "特性ボーナス",
+                                "plural": "特性ボーナス"
+                            },
+                            "hint": "変身時に自由に選んだ特性へ適用するボーナスを選びます",
+                            "bonus": "ボーナス量"
+                        }
+                    }
+                },
+                "countdown": {
+                    "defaultOwnership": "既定の所有権",
+                    "startCountdown": "カウントダウン開始"
+                },
+                "damage": {
+                    "addResource": "リソースを追加",
+                    "multiplier": "倍率",
+                    "flatMultiplier": "固定倍率",
+                    "markResources": "リソースをマーク"
+                },
+                "general": {
+                    "customFormula": "カスタム式",
+                    "formula": "式"
+                },
+                "area": {
+                    "sectionTitle": "範囲",
+                    "shape": "形状",
+                    "size": "サイズ",
+                    "hasHole": "範囲の穴"
+                },
+                "displayInChat": "チャットに表示",
+                "deleteTriggerTitle": "トリガーを削除",
+                "deleteTriggerContent": "トリガー「{trigger}」を削除しますか？",
+                "advantageState": "有利状態",
+                "damageOnSave": "セーヴ時ダメージ",
+                "useDefaultItemValues": "アイテムの既定値を使う"
+            },
+            "Reload": {
+                "checkReload": "リロード判定",
+                "reloadRequired": "リロードが必要です！",
+                "notRolled": "未ロール",
+                "checkFailed": "判定失敗",
+                "checkPassed": "判定成功",
+                "rerollConfirmationTitle": "リロード判定を振り直す",
+                "rerollConfirmationText": "リロード判定を振り直しますか？"
+            },
+            "RollField": {
+                "diceRolling": {
+                    "compare": "条件",
+                    "dice": "ダイス種類",
+                    "flatMultiplier": "固定倍率",
+                    "multiplier": "ダイス数",
+                    "threshold": "しきい値"
+                }
+            },
+            "Settings": {
+                "attackModifier": "攻撃修正",
+                "attackName": "攻撃名",
+                "criticalThreshold": "クリティカルしきい値",
+                "includeBase": {
+                    "label": "アイテムダメージを含める"
+                },
+                "groupAttack": {
+                    "label": "グループ攻撃"
+                },
+                "multiplier": "倍率",
+                "saveHint": "リアクションロールを有効にする既定の特性を設定します。後からリアクションロールダイアログで変更できます。",
+                "resultBased": {
+                    "label": "希望／恐怖の結果に基づく式。"
+                },
+                "fullRestore": {
+                    "label": "リソースを完全に回復します。",
+                    "inChatRoll": "完全",
+                    "inFormula": "完全回復"
+                },
+                "applyTo": {
+                    "label": "対象リソース"
+                },
+                "consumeOnSuccess": {
+                    "label": "成功時のみ消費",
+                    "short": "（成功時のみ）"
+                },
+                "cost": {
+                    "stepTooltip": "段階ごとに＋{step}"
+                },
+                "summon": {
+                    "dropSummonsHere": "召喚対象をここにドロップ"
+                },
+                "transform": {
+                    "dropTransformHere": "変身先をここにドロップ",
+                    "actorIsMissing": "リンク先のアクターがありません。このリンクを削除してください。",
+                    "clearHitPoints": "HPを消す",
+                    "clearStress": "ストレスを消す"
+                },
+                "evolution": {
+                    "featureName": "特徴名",
+                    "evolutionState": "進化状態",
+                    "clearHitPoints": "HPを消す",
+                    "clearStress": "ストレスを消す"
+                }
+            }
+        },
+        "ACTIVEEFFECT": {
+            "Config": {
+                "rangeDependence": {
+                    "title": "射程依存"
+                },
+                "stacking": {
+                    "title": "スタック"
+                },
+                "conditionals": {
+                    "title": "条件"
+                },
+                "targetDispositions": "影響する態度"
+            },
+            "RangeDependance": {
+                "hint": "この効果が発動する任意の距離の設定",
+                "title": "射程依存"
+            },
+            "immuneStatusText": "無効：{status}"
+        },
+        "ACTORS": {
+            "Adversary": {
+                "FIELDS": {
+                    "attack": {
+                        "name": {
+                            "label": "名前"
+                        },
+                        "modifier": {
+                            "label": "修正値"
+                        },
+                        "range": {
+                            "label": "射程"
+                        },
+                        "damage": {
+                            "value": {
+                                "label": "ダメージ"
+                            },
+                            "type": {
+                                "label": "ダメージ種別"
+                            }
+                        }
+                    },
+                    "damageThresholds": {
+                        "major": {
+                            "label": "中傷値"
+                        },
+                        "severe": {
+                            "label": "重傷値"
+                        }
+                    },
+                    "description": {
+                        "label": "説明"
+                    },
+                    "difficulty": {
+                        "label": "難易度"
+                    },
+                    "experiences": {
+                        "element": {
+                            "name": {
+                                "label": "名前"
+                            },
+                            "value": {
+                                "label": "修正値"
+                            }
+                        }
+                    },
+                    "motivesAndTactics": {
+                        "label": "動機と戦術"
+                    },
+                    "resources": {
+                        "hitPoints": {
+                            "value": {
+                                "label": "現在"
+                            },
+                            "max": {
+                                "label": "最大"
+                            }
+                        },
+                        "stress": {
+                            "value": {
+                                "label": "現在"
+                            },
+                            "max": {
+                                "label": "最大"
+                            }
+                        }
+                    },
+                    "tier": {
+                        "label": "ティア"
+                    },
+                    "type": {
+                        "label": "タイプ"
+                    }
+                },
+                "confirmDeleteAttack": "この敵対者の攻撃を削除してよろしいですか？",
+                "changeType": {
+                    "title": "敵対者タイプを変更",
+                    "content": "敵対者タイプを変更しようとしています。変更するとタイプ固有のデータが削除されます。よろしいですか？"
+                },
+                "Embed": {
+                    "attack": "攻撃",
+                    "thresholds": "しきい値"
+                },
+                "hordeDamage": "群れダメージ",
+                "horderHp": "群れ/HP",
+                "adversaryReactionRoll": {
+                    "headerTitle": "敵対者リアクションロール"
+                }
+            },
+            "Base": {
+                "CannotAddType": "{itemType} アイテムは {actorType} アクターに追加できません。"
+            },
+            "Character": {
+                "advantageSources": {
+                    "label": "有利の要因",
+                    "hint": "キャラクターが有利になる状況のメモとして、単語や短い文を追加します。"
+                },
+                "age": "年齢",
+                "backgroundQuestions": "背景設定",
+                "burden": {
+                    "ignore": {
+                        "label": "負荷：無視",
+                        "hint": "負荷ルールを無視"
+                    }
+                },
+                "comboDieIndex": {
+                    "label": "コンボダイス段階",
+                    "hint": "コンボダイスが1d4から何段階引き上げられたかを表します。＋1するごとにダイスが1段階大きくなります。"
+                },
+                "companionFeatures": "相棒特徴",
+                "connections": "繋がり",
+                "contextMenu": {
+                    "consume": "アイテムを消費",
+                    "equip": "装備",
+                    "sendToChat": "チャットに送る",
+                    "toLoadout": "ロードアウトへ送る",
+                    "toVault": "保管庫へ送る",
+                    "unequip": "装備解除",
+                    "useItem": "アイテムを使う"
+                },
+                "defaultHopeDice": "既定の希望ダイス",
+                "defaultFearDice": "既定の恐怖ダイス",
+                "defaultAdvantageDice": "既定の有利ダイス",
+                "defaultDisadvantageDice": "既定の不利ダイス",
+                "disadvantageSources": {
+                    "label": "不利の要因",
+                    "hint": "キャラクターが不利になる状況のメモとして、単語や短い文を追加します。"
+                },
+                "faith": "信仰",
+                "levelUp": "レベルアップできます",
+                "maxEvasionBonus": "最大回避値増加",
+                "maxHPBonus": "最大HP増加",
+                "pronouns": "代名詞",
+                "roll": {
+                    "guaranteedCritical": {
+                        "label": "確定クリティカル",
+                        "hint": "1にすると常にクリティカルになります"
+                    }
+                },
+                "story": {
+                    "backgroundTitle": "背景",
+                    "characteristics": "人物的特徴",
+                    "connectionsTitle": "繋がり"
+                },
+                "experienceDataRemoveConfirmation": {
+                    "title": "経験データを削除",
+                    "text": "削除しようとしている経験にはレベルアップデータが紐づいています（おそらく「levelupAuto」自動化設定をオンにしてレベルアップしたためです）。削除すると、この自動化データも削除されます。続行しますか？"
+                },
+                "manualMulticlass": {
+                    "title": "マルチクラス",
+                    "text": "このクラスをマルチクラスとして追加しますか？"
+                },
+                "manualMulticlassSubclass": {
+                    "title": "マルチクラスのサブクラス",
+                    "text": "このサブクラスをマルチクラスのサブクラスとして追加しますか？"
+                },
+                "cannotRemoveCoreExperience": "レベルアップ自動化を使用中です。ルール進行で得た経験は削除できません。",
+                "companionLevelup": {
+                    "confirmTitle": "相棒レベルアップ",
+                    "confirmText": "相棒「{name}」を今{levelChange}レベル分レベルアップしますか？（後から手動でも行えます）"
+                },
+                "viewLevelups": "レベルアップを見る",
+                "resetCharacter": "キャラクターをリセット",
+                "viewParty": "パーティを見る",
+                "InvalidOldCharacterImportTitle": "旧キャラクターの取り込み",
+                "InvalidOldCharacterImportText": "システムバージョン1.1より前に書き出したキャラクターデータでは、完全なキャラクターは生成されません。続行しますか？",
+                "cancelBeastform": "ビーストフォームを解除",
+                "resetCharacterConfirmationTitle": "キャラクターをリセット",
+                "resetCharacterConfirmationContent": "名前と肖像以外のキャラクターデータをすべてリセットします。よろしいですか？"
+            },
+            "Companion": {
+                "FIELDS": {
+                    "attack": {
+                        "name": {
+                            "label": "攻撃名"
+                        }
+                    },
+                    "evasion": {
+                        "value": {
+                            "label": "回避値"
+                        }
+                    },
+                    "partner": {
+                        "label": "パートナー"
+                    },
+                    "resources": {
+                        "stress": {
+                            "value": {
+                                "label": "ストレス"
+                            },
+                            "currentStress": {
+                                "label": "現在のストレス"
+                            },
+                            "maxStress": {
+                                "label": "最大ストレス"
+                            }
+                        }
+                    }
+                },
+                "noPartner": "パートナー未選択"
+            },
+            "Environment": {
+                "FIELDS": {
+                    "description": {
+                        "label": "説明"
+                    },
+                    "difficulty": {
+                        "label": "難易度"
+                    },
+                    "impulses": {
+                        "label": "衝動"
+                    },
+                    "tier": {
+                        "label": "ティア"
+                    },
+                    "type": {
+                        "label": "タイプ"
+                    }
+                },
+                "newAdversary": "新しい敵対者",
+                "Embed": {
+                    "potentialAdversaries": "想定される敵対者",
+                    "any": "すべて",
+                    "special": "特殊"
+                }
+            },
+            "NPC": {
+                "FIELDS": {
+                    "motives": {
+                        "label": "動機"
+                    }
+                }
+            },
+            "Party": {
+                "Subtitle": {
+                    "character": "{community} {ancestry} | {subclass} {class}",
+                    "companion": "{partner} の相棒"
+                },
+                "RemoveConfirmation": {
+                    "title": "メンバー {name} を外す",
+                    "text": "{name} をパーティから外しますか？"
+                },
+                "Thresholds": {
+                    "minor": "軽傷",
+                    "major": "中傷",
+                    "severe": "重傷"
+                },
+                "triggerRestContent": "プレイヤーがダウンタイムムーブを行うダイアログを出します。よろしいですか？"
+            }
+        },
+        "APPLICATIONS": {
+            "ActiveEffectPathViewer": {
+                "title": "アクティブエフェクト・パスビューア",
+                "searchLabel": "パスを検索",
+                "copyPathNotification": "{name}のアクティブエフェクト・パスをクリップボードにコピーしました",
+                "macroButtonLabel": "マクロを開く",
+                "macroCopyNotification": "パスビューアを開くマクロをクリップボードにコピーしました。ホットバーのマクロに貼り付けてください。"
+            },
+            "Attribution": {
+                "title": "帰属"
+            },
+            "CharacterCreation": {
+                "tabs": {
+                    "ancestry": "種族",
+                    "community": "コミュニティ",
+                    "class": "クラス",
+                    "experience": "経験",
+                    "traits": "特性",
+                    "domainCards": "能力カード",
+                    "equipment": "装備",
+                    "story": "物語"
+                },
+                "ancestryNamePlaceholder": "種族の名前",
+                "buttonTitle": "キャラクターセットアップ",
+                "choice": "選択",
+                "finishCreation": "キャラクターセットアップを完了",
+                "heritage": "種族",
+                "initialExperiences": "初期経験",
+                "mixedAncestry": "混血種族",
+                "newExperience": "新しい経験…",
+                "selectAncestry": "種族を選択",
+                "selectPrimaryAncestry": "主種族を選択",
+                "selectSecondaryAncestry": "副種族を選択",
+                "selectArmor": "防具を選択",
+                "selectClass": "クラスを選択",
+                "selectCommunity": "コミュニティを選択",
+                "selectPrimaryWeapon": "メイン武器を選択",
+                "selectSecondaryWeapon": "サブ武器を選択",
+                "selectSubclass": "サブクラスを選択",
+                "setupSkipTitle": "キャラクターセットアップをスキップ",
+                "setupSkipContent": "手動追加によりキャラクターセットアップをスキップしています。セットアップは右上の点滅ボタンです。続行しますか？",
+                "startingItems": "開始アイテム",
+                "story": "物語",
+                "storyExplanation": "キャラクターの背景にコピーする背景と繋がりのプロンプトを選んでください。",
+                "suggestedArmor": "推奨防具",
+                "suggestedPrimaryWeapon": "推奨メイン武器",
+                "suggestedSecondaryWeapon": "推奨サブ武器",
+                "suggestedTraits": "推奨特性",
+                "suggestedWeapons": "推奨武器",
+                "title": "{actor} - キャラクターセットアップ",
+                "traitIncreases": "特性上昇"
+            },
+            "CharacterReset": {
+                "title": "キャラクターをリセット",
+                "alwaysDeleteSection": "削除されるデータ",
+                "optionalDeleteSection": "任意データ",
+                "headerTitle": "残したいデータを選んでください"
+            },
+            "CombatTracker": {
+                "combatStarted": "アクティブ",
+                "giveSpotlight": "スポットライトを渡す",
+                "requestingSpotlight": "スポットライトを要求中",
+                "requestSpotlight": "スポットライトを要求",
+                "openCountdowns": "カウントダウン",
+                "adversaryCategories": {
+                    "friendly": "友好",
+                    "adversaries": "敵対者"
+                }
+            },
+            "CompendiumBrowserSettings": {
+                "title": "辞典を有効化",
+                "enableSource": "ソースを有効化",
+                "disableSource": "ソースを無効化",
+                "worldCompendiums": "ワールド辞典"
+            },
+            "ContextMenu": {
+                "disableEffect": "効果を無効化",
+                "enableEffect": "効果を有効化",
+                "equip": "装備",
+                "sendToChat": "チャットに送る",
+                "toLoadout": "ロードアウトへ送る",
+                "recall": "リコール",
+                "toVault": "保管庫へ送る",
+                "unequip": "装備解除",
+                "useItem": "アイテムを使う"
+            },
+            "Countdown": {
+                "addCountdown": "カウントダウンを追加",
+                "loopingTypes": {
+                    "noLooping": "ループなし",
+                    "looping": "ループ",
+                    "increasing": "増加",
+                    "decreasing": "減少"
+                },
+                "FIELDS": {
+                    "countdowns": {
+                        "element": {
+                            "name": {
+                                "label": "名前"
+                            },
+                            "hidden": {
+                                "label": "隠密"
+                            },
+                            "progress": {
+                                "current": {
+                                    "label": "現在"
+                                },
+                                "looping": {
+                                    "label": "ループ"
+                                },
+                                "start": {
+                                    "label": "開始"
+                                },
+                                "startFormula": {
+                                    "label": "開始式"
+                                },
+                                "type": {
+                                    "label": {
+                                        "label": "ラベル",
+                                        "hint": "カスタム用"
+                                    },
+                                    "value": {
+                                        "label": "値"
+                                    }
+                                }
+                            },
+                            "type": {
+                                "label": "進行タイプ"
+                            }
+                        }
+                    }
+                },
+                "newCountdown": "新しいカウントダウン",
+                "openOwnership": "プレイヤー所有権を編集",
+                "removeCountdownText": "カウントダウン「{name}」を削除しますか？",
+                "removeCountdownTitle": "カウントダウンを削除",
+                "title": "{type}カウントダウン",
+                "toggleSimple": "簡易表示を切り替え",
+                "types": {
+                    "narrative": "物語",
+                    "encounter": "遭遇"
+                },
+                "hiddenNullLabel": "カウントダウンUIの既定に設定"
+            },
+            "CountdownEdit": {
+                "title": "カウントダウン編集",
+                "viewTitle": "カウントダウン",
+                "editTitle": "カウントダウンを編集",
+                "newCountdown": "新しいカウントダウン",
+                "removeCountdownTitle": "カウントダウンを削除",
+                "removeCountdownText": "カウントダウン「{name}」を削除しますか？",
+                "current": "現在値",
+                "start": "開始値",
+                "startFormula": "開始値のランダム式",
+                "currentCountdownCurrent": "現在：{value}",
+                "currentCountdownStart": "開始：{value}",
+                "progressionType": "進行",
+                "decreasing": "減少",
+                "looping": "ループ",
+                "hideNewCountdowns": "新しいカウントダウンを隠す"
+            },
+            "CreateItemDialog": {
+                "createItem": "アイテムを作成",
+                "browseCompendium": "辞典を閲覧"
+            },
+            "DaggerheartMenu": {
+                "title": "GMツール",
+                "refreshFeatures": "特徴を回復",
+                "fallingAndCollision": "落下および衝突ダメージ",
+                "gmRestMenu": "ダウンタイムの恐怖",
+                "partSizePrompt": {
+                    "inputLabel": "パーティ人数",
+                    "title": "パーティ人数を決定",
+                    "text": "ワールドに有効なパーティアクターが存在しない、または空です。プレイヤーキャラクターの人数を手動で入力してください。"
+                },
+                "chatMessageTitle": "GMの代償",
+                "chatMessageText": "GMが恐怖を得ます",
+                "activeEffectPathViewer": "アクティブエフェクト・パスビューア"
+            },
+            "DeleteConfirmation": {
+                "title": "{type} を削除 - {name}",
+                "text": "{name} を削除しますか？"
+            },
+            "DamageReduction": {
+                "maxUseableArmor": "使用可能な鎧スロット",
+                "armorWithStress": "ストレスを1消費して追加のマークを使う",
+                "thresholdImmunities": "しきい値無効",
+                "stress": "ストレス",
+                "stressReduction": "ストレスで軽減",
+                "title": "ダメージ軽減",
+                "unncessaryStress": "ストレスを消費する必要はありません",
+                "usedMarks": "使用したマーク",
+                "reduceSeverity": "しきい値が{nr}段階下がった"
+            },
+            "DeathMove": {
+                "selectMove": "ムーブを選択",
+                "takeMove": "デスムーブを行う",
+                "title": "{actor} - デスムーブ"
+            },
+            "Downtime": {
+                "longRest": {
+                    "title": "大休憩",
+                    "moves": "大休憩ムーブ（{current}/{max}）",
+                    "clearStress": {
+                        "description": "気分転換や気持ちの立て直しを描写し、マーク済みストレスをすべて消します。",
+                        "name": "ストレスを消す"
+                    },
+                    "prepare": {
+                        "description": "翌日の冒険への備えを描写し、希望を1得ます。",
+                        "name": "備える"
+                    },
+                    "prepareWithFriends": {
+                        "description": "パーティの1人以上と一緒に備え、各自希望を2得ます。",
+                        "name": "備える（一緒に）"
+                    },
+                    "repairArmor": {
+                        "description": "防具の修理に時間を使う様子を描写し、すべての鎧スロットを消します。味方の防具に対して行っても構いません。",
+                        "name": "防具の修理"
+                    },
+                    "tendToWounds": {
+                        "description": "手当てする様子を描写し、マーク済みHPをすべて消します。味方に対して行っても構いません。",
+                        "name": "傷の手当て"
+                    },
+                    "workOnAProject": {
+                        "description": "プロジェクトを始めるか、作業を続けます。",
+                        "name": "プロジェクトに取り組む"
+                    }
+                },
+                "shortRest": {
+                    "title": "小休憩",
+                    "moves": "小休憩ムーブ（{current}/{max}）",
+                    "tendToWounds": {
+                        "name": "傷の手当て",
+                        "description": "急いで傷を手当てする様子を描写し、1d4＋ティアに等しい数のHPを消します。味方に対して行っても構いません。"
+                    },
+                    "clearStress": {
+                        "name": "ストレスを消す",
+                        "description": "気分転換や気持ちの立て直しを描写し、1d4＋ティアに等しい数のストレスを消します。"
+                    },
+                    "repairArmor": {
+                        "name": "防具の修理",
+                        "description": "防具を急いで直す様子を描写し、1d4＋ティアに等しい数の鎧スロットを消します。味方の防具に対して行っても構いません。"
+                    },
+                    "prepare": {
+                        "name": "備える",
+                        "description": "先の道への備えを描写し、希望を1得ます。"
+                    },
+                    "prepareWithFriends": {
+                        "name": "備える（一緒に）",
+                        "description": "パーティの1人以上と一緒に備え、各自希望を2得ます。"
+                    }
+                },
+                "extendedDowntime": {
+                    "title": "長期ダウンタイム"
+                },
+                "refreshable": {
+                    "title": "リソースの回復"
+                },
+                "takeDowntime": "ダウンタイムを取る"
+            },
+            "FolderConfig": {
+                "defaultEntity": "既定の{entity}"
+            },
+            "HUD": {
+                "tokenHUD": {
+                    "genericEffects": "Foundry効果",
+                    "depositPartyTokens": "パーティトークンを預ける",
+                    "retrievePartyTokens": "パーティトークンを取り出す",
+                    "depositCompanionTokens": "相棒トークンを預ける",
+                    "retrieveCompanionTokens": "相棒トークンを取り出す"
+                }
+            },
+            "ImageSelect": {
+                "title": "画像を選択",
+                "selectImage": "画像を選択"
+            },
+            "ItemTransfer": {
+                "transfer": "移す"
+            },
+            "Levelup": {
+                "actions": {
+                    "creatureComfort": {
+                        "name": "安らぎ",
+                        "description": "休憩ごとに1回、静かなひとときに相棒へ愛情と関心を向けると、希望を1得るか、双方のストレスを1消せます。"
+                    },
+                    "armored": {
+                        "name": "装甲",
+                        "description": "相棒がダメージを受けたとき、相棒のストレスをマークする代わりに、自分の鎧スロットを1つマークできます。"
+                    },
+                    "bonded": {
+                        "name": "絆",
+                        "description": "最後のHPをマークしたとき、相棒が駆け寄りあなたを励まします。相棒の未マークのストレススロット数だけd6を振り、それらをマークします。1つでも6が出れば、相棒があなたを助け起こします。最後のHPを消し、シーンに復帰します。"
+                    }
+                },
+                "choiceDescriptions": {
+                    "attributes": "未マークの特性2つに＋1し、それらをマークします。",
+                    "hitPointSlots": "HPスロットを永続的に1つ得ます。",
+                    "stressSlots": "ストレススロットを永続的に1つ得ます。",
+                    "experiences": "経験2つに永続＋1を得ます。",
+                    "domainCard": "利用できるドメインから、自分のレベル以下の能力カードを追加で1枚選びます（最大レベル{maxLevel}）",
+                    "evasion": "回避値に永続＋1を得ます。",
+                    "proficiency": "習熟を＋1します。",
+                    "subclass": "アップグレードしたサブクラスカードを取ります。その後、このティアのマルチクラス選択肢を消します。",
+                    "multiclass": "マルチクラス：キャラクターに追加クラスを選び、未使用の「アップグレードしたサブクラスカードを取る」と、このシート上のもう一方のマルチクラス選択肢を消します。"
+                },
+                "delevel": {
+                    "content": "前のレベルの選択に戻すと、このレベルでの選択はすべて削除されます。続行しますか？",
+                    "title": "前のレベルに戻る"
+                },
+                "navigateLevel": "レベル{level}へ",
+                "navigateToLevelup": "レベルアップに戻る",
+                "finishLevelup": "レベルアップを完了",
+                "navigateToSummary": "要約へ",
+                "options": {
+                    "trait": "未マークの特性2つに＋1し、それらをマークします。",
+                    "hitPoint": "HPスロットを永続的に1つ得ます。",
+                    "stress": "ストレススロットを永続的に1つ得ます。",
+                    "experience": "経験2つに永続＋1を得ます。",
+                    "domainCard": "利用できるドメインから、自分のレベル以下の能力カードを追加で1枚選びます（最大レベル{maxLevel}）",
+                    "evasion": "回避値に永続＋1を得ます。",
+                    "subclass": "アップグレードしたサブクラスカードを取ります。その後、このティアのマルチクラス選択肢を消します。",
+                    "proficiency": "習熟を＋1します。",
+                    "multiclass": "マルチクラス：キャラクターに追加クラスを選び、未使用の「アップグレードしたサブクラスカードを取る」と、このシート上のもう一方のマルチクラス選択肢を消します。",
+                    "intelligent": "相棒は、選んだ相棒経験に永続＋1を得ます。",
+                    "lightInTheDark": "キャラクターの希望スロットを1つ追加します。",
+                    "creatureComfort": "休憩ごとに1回、静かなひとときに相棒へ愛情と関心を向けると、希望を1得るか、双方のストレスを1消せます。",
+                    "armored": "相棒がダメージを受けたとき、相棒のストレスをマークする代わりに、自分の鎧スロットを1つマークできます。",
+                    "vicious": "相棒のダメージダイスまたは射程を1段階上げます（d6→d8、近距離→遠距離など）",
+                    "resilient": "相棒はストレススロットを1つ追加で得ます。",
+                    "bonded": "最後のHPをマークしたとき、相棒が駆け寄りあなたを励まします。相棒の未マークのストレススロット数だけd6を振り、それらをマークします。1つでも6が出れば、相棒があなたを助け起こします。最後のHPを消し、シーンに復帰します。",
+                    "aware": "相棒は回避値に永続＋2を得ます。"
+                },
+                "selections": {
+                    "emptyDomainCardHint": "{domain} レベル{level}以下",
+                    "viciousDamage": "ダメージ",
+                    "viciousRange": "射程"
+                },
+                "summary": {
+                    "levelAchievements": "レベル達成",
+                    "levelAdvancements": "レベル成長",
+                    "proficiencyIncrease": "習熟上昇：{proficiency}",
+                    "hpIncrease": "HP上昇：{hitPoints}",
+                    "stressIncrease": "ストレス上昇：{stress}",
+                    "evasionIncrease": "回避値上昇：{evasion}",
+                    "damageThresholdMajorIncrease": "中傷値：{threshold}",
+                    "damageThresholdSevereIncrease": "重傷値：{threshold}",
+                    "newExperiences": "新しい経験",
+                    "experiencePlaceholder": "新しい経験…",
+                    "domainCards": "能力カード",
+                    "subclass": "サブクラス",
+                    "multiclass": "マルチクラス",
+                    "traits": "上昇した特性",
+                    "experienceIncreases": "経験の上昇",
+                    "damageThresholds": "ダメージしきい値",
+                    "vicious": "獰猛",
+                    "damageIncreased": "ダメージ上昇：{damage}",
+                    "rangeIncreased": "射程上昇：{range}",
+                    "simpleFeature": "特徴：{feature}"
+                },
+                "takeLevelUp": "レベルアップを完了",
+                "tier2": {
+                    "name": "ティア2",
+                    "label": "レベル2〜4",
+                    "infoLabel": "レベル2で、＋2の経験を追加で1つ得て、習熟に＋1します。",
+                    "pretext": "以下のリストから2つ選んでください",
+                    "posttext": "利用できるドメインから、自分のレベル以下の能力カードを追加で1枚取ります。"
+                },
+                "tier3": {
+                    "name": "ティア3",
+                    "label": "レベル5〜7",
+                    "infoLabel": "レベル5で、経験を追加で1つ取り、特性のマークをすべて消します。",
+                    "pretext": "レベルアップしたらキャラクターシートに記録し、以下のリストから2つ、または前のティアの未選択項目から選びます。",
+                    "posttext": "利用できるドメインから、自分のレベル以下の能力カードを追加で1枚取ります。"
+                },
+                "tier4": {
+                    "name": "ティア4",
+                    "label": "レベル8〜10",
+                    "infoLabel": "レベル8で、経験を追加で1つ取り、特性のマークをすべて消します。",
+                    "pretext": "レベルアップしたらキャラクターシートに記録し、以下のリストから2つ、または前のティアの未選択項目から選びます。",
+                    "posttext": "利用できるドメインから、自分のレベル以下の能力カードを追加で1枚取ります。"
+                },
+                "title": "{actor} レベルアップ",
+                "viewModeTitle": "{actor} レベルアップ（閲覧モード）"
+            },
+            "LevelupOptionsDialog": {
+                "title": "レベルアップ選択肢：{name}"
+            },
+            "MulticlassChoice": {
+                "title": "マルチクラス - {actor}",
+                "explanation": "{class} をマルチクラスとして追加します",
+                "selectDomainPrompt": "新しいドメインを選択"
+            },
+            "CountdownPermissions": {
+                "HiddenOptions": {
+                    "true": "隠密",
+                    "false": "公開"
+                },
+                "title": "カウントダウン権限 - {name}",
+                "noPlayers": "所有権を割り当てるプレイヤーがいません",
+                "defaultPermission": "基本の可視性",
+                "inheritLabeled": "基本（{base}）"
+            },
+            "PendingReactionsDialog": {
+                "title": "未処理のリアクションロールがあります",
+                "unfinishedRolls": "一部のトークンがリアクションロールを終えていません。",
+                "warning": "未完了のリアクションロールは失敗とみなされます。",
+                "confirmation": "続行しますか？"
+            },
+            "ReactionRoll": {
+                "title": "リアクションロール：{trait}"
+            },
+            "ResourceDice": {
+                "title": "{name}リソース",
+                "rerollDice": "ダイスを振り直す"
+            },
+            "RiskItAllDialog": {
+                "title": "{name} - すべてを賭ける",
+                "subtitle": "ストレスとHPを消す",
+                "remainingTitle": "残りポイント",
+                "clearResource": "{resource} を消す",
+                "finalTitle": "最終的なキャラクターリソース"
+            },
+            "TagTeamSelect": {
+                "title": "タッグチームロール",
+                "FIELDS": {
+                    "initiator": {
+                        "memberId": {
+                            "label": "開始するキャラクター"
+                        },
+                        "cost": {
+                            "label": "希望コスト"
+                        }
+                    }
+                },
+                "leaderTitle": "開始するキャラクター",
+                "membersTitle": "参加者",
+                "partyTeam": "パーティチーム",
+                "hopeCost": "希望コスト",
+                "initiatingCharacter": "開始するキャラクター",
+                "selectParticipants": "参加者を2人選んでください",
+                "startTagTeamRoll": "タッグチームロールを開始",
+                "openDialogForAll": "全員にダイアログを開く",
+                "rollType": "ロールタイプ",
+                "makeYourRoll": "ロールしてください",
+                "cancelTagTeamRoll": "タッグチームロールをキャンセル",
+                "finishTagTeamRoll": "タッグチームロールを完了",
+                "linkMessageHint": "キャラクターシートからロールして、タッグチームロールに紐づけます",
+                "damageNotRolled": "チャットメッセージでまだダメージが振られていません",
+                "insufficientHope": "開始するキャラクターの希望が足りません",
+                "createTagTeam": "タッグチームロールを作成",
+                "chatMessageRollTitle": "ロール",
+                "cancelConfirmTitle": "タッグチームロールをキャンセル",
+                "cancelConfirmText": "タッグチームロールをキャンセルしますか？他のプレイヤーの画面も閉じられます。",
+                "hints": {
+                    "completeRolls": "キャラクターのロールを設定して完了する",
+                    "selectRoll": "タッグチームに使うロール値を選択"
+                }
+            },
+            "GroupRollSelect": {
+                "cancelConfirmText": "グループロールをキャンセルしますか？他のプレイヤーの画面も閉じられます。",
+                "cancelConfirmTitle": "グループロールをキャンセル",
+                "initializationTitle": "キャラクター選択",
+                "finishGroupRoll": "グループロールを完了",
+                "leader": "リーダー",
+                "leaderRoll": "リーダーロール",
+                "members": "メンバー",
+                "openDialogForAll": "全員にダイアログを開く",
+                "removeRoll": "ロールを削除",
+                "resultsHint": "キャラクターがロールすると結果が表示されます",
+                "selectLeaderHint": "リーダーにするキャラクターを1人選んでください",
+                "selectParticipantsHint": "ロールに参加するすべてのキャラクターを選択",
+                "startGroupRoll": "グループロールを開始",
+                "title": "グループロール"
+            },
+            "TokenConfig": {
+                "actorSizeUsed": "アクターサイズが設定されており、寸法が決まります",
+                "tokenSize": "トークンサイズ",
+                "sizeCategory": "サイズ区分"
+            },
+            "MultiActionSelect": {
+                "instructionText": "使用するアクションを選択してください"
+            },
+            "SettingsSidebar": {
+                "systemLabel": "ゲームシステム",
+                "versionLabel": "バージョン{version}",
+                "wikiLink": "Wiki",
+                "discordLink": "Discord"
+            }
+        },
+        "CLASS": {
+            "Feature": {
+                "rallyDice": "バードの激励ダイス",
+                "short": "激励"
+            }
+        },
+        "CONFIG": {
+            "ActiveEffectDuration": {
+                "temporary": "一時的",
+                "act": "次のスポットライト",
+                "scene": "次のシーン",
+                "shortRest": "次の小休憩",
+                "longRest": "次の大休憩",
+                "session": "次のセッション",
+                "custom": "カスタム"
+            },
+            "ActiveEffectExtraPaths": {
+                "allCategory": "すべてのアクター",
+                "cast": {
+                    "label": "呪文発動修正値"
+                },
+                "fear": {
+                    "label": "恐怖の量"
+                },
+                "partySize": {
+                    "label": "パーティ人数"
+                }
+            },
+            "ActionAutomationChoices": {
+                "never": "しない",
+                "showDialog": "ダイアログのみ表示",
+                "always": "常に"
+            },
+            "AdversaryTrait": {
+                "relentless": {
+                    "name": "リレントレス",
+                    "description": "リレントレスを持つ敵は、アクショントークンが足りる限り、1回のGMムーブ中に最大X回起動できます。",
+                    "tip": "リレントレスのムーブは、1回のGMムーブ中に複数回起動できる敵対者が欲しいときに便利です。非常に速い、あるいは危険な敵や、パーティと単身で戦う敵対者に向いています。"
+                },
+                "slow": {
+                    "name": "スロウ",
+                    "description": "スロウを持つ敵は、起動にアクショントークンをX消費します。",
+                    "tip": "スロウのムーブは、ナメクジのようなクリーチャーや巨大なオーガのように、物語上ほかより行動が遅い敵対者に向いています。実際に動いたときの威力が非常に高く、その代わりにアクショントークンを多く消費する相手に特に有効です。"
+                },
+                "minion": {
+                    "name": "ミニオン",
+                    "description": "PCがこの敵対者にXダメージを与えるたび、攻撃の射程内の追加のミニオンにも1HPを与えます。",
+                    "tip": "ミニオンのムーブは、小さな敵を戦場に大量に配置し、パーティが簡単に薙ぎ払えるようにしたいときに便利です。PCが1体のミニオンに命中し、十分なダメージを与えた場合、射程内の追加のミニオンにも命中します。そのため、ミニオンでPCを取り囲むと、攻撃できるまでは圧倒的で危険に感じられます。1回の攻撃ロールで敵の波を掃討する映画的な演出をしたいなら、ミニオンは最適な手段です。"
+                }
+            },
+            "AdversaryType": {
+                "bruiser": {
+                    "label": "ブルーザー",
+                    "description": "強力な攻撃を持つ頑丈な敵対者。"
+                },
+                "horde": {
+                    "label": "群れ",
+                    "description": "群れは、集団で動く複数の敵を表します。"
+                },
+                "leader": {
+                    "label": "リーダー",
+                    "description": "他の敵対者を指揮・召喚する敵対者。"
+                },
+                "minion": {
+                    "label": "ミニオン",
+                    "description": "簡単に倒せるが、数が多いと危険な基本的な敵。"
+                },
+                "ranged": {
+                    "label": "遠隔",
+                    "description": "距離を取って攻撃する敵対者。"
+                },
+                "skulk": {
+                    "label": "スカルク",
+                    "description": "機動し、機会を捉えて相手を待ち伏せする敵対者。"
+                },
+                "social": {
+                    "label": "社交",
+                    "description": "主に対人的な脅威や課題となる敵対者。"
+                },
+                "solo": {
+                    "label": "ソロ",
+                    "description": "パーティ全体への挑戦として設計されています。"
+                },
+                "standard": {
+                    "label": "標準",
+                    "description": "一般兵の敵対者。"
+                },
+                "support": {
+                    "label": "サポート",
+                    "description": "味方を強化したり、相手を妨害したりする敵。"
+                }
+            },
+            "AdversaryTypeCost": {
+                "minion": "パーティ人数に等しいミニオンのグループごと。",
+                "support": "社交またはサポートの敵対者ごと。",
+                "standard": "群れ、遠隔、スカルク、標準の敵対者ごと。",
+                "leader": "リーダーの敵対者ごと。",
+                "bruiser": "ブルーザーの敵対者ごと。",
+                "solo": "ソロの敵対者ごと。"
+            },
+            "AreaTypes": {
+                "attached": {
+                    "label": "トークンに付着"
+                },
+                "placed": {
+                    "label": "シーンに配置"
+                }
+            },
+            "ArmorInteraction": {
+                "none": {
+                    "label": "鎧値を無視"
+                },
+                "active": {
+                    "label": "防具着用時に有効"
+                },
+                "inactive": {
+                    "label": "防具着用時は無効"
+                }
+            },
+            "ArmorFeature": {
+                "absorbing": {
+                    "name": "吸収",
+                    "description": "シーンごとに1回、魔法ダメージを受けたとき、鎧スロットを1消せます。",
+                    "actions": {
+                        "heal": {
+                            "name": "鎧スロットを消す",
+                            "description": "シーンごとに1回、魔法ダメージを受けたとき、鎧スロットを1消せます。"
+                        }
+                    }
+                },
+                "accursed": {
+                    "name": "呪詛",
+                    "description": "攻撃によってHPを何点かマークしたとき、d4を振ります。4が出たら、攻撃者は同じ点数のストレスをマークしなければなりません。",
+                    "actions": {
+                        "accursed": {
+                            "name": "呪詛",
+                            "description": "攻撃によってHPを何点かマークしたとき、d4を振ります。4が出たら、攻撃者は同じ点数のストレスをマークしなければなりません。"
+                        }
+                    }
+                },
+                "aquatic": {
+                    "name": "水棲",
+                    "description": "水中で呼吸でき、水没中は素早さロールに有利を得ます。",
+                    "effects": {
+                        "aquatic": {
+                            "name": "水棲",
+                            "description": "水中で呼吸でき、水没中は素早さロールに有利を得ます。"
+                        }
+                    }
+                },
+                "attuned": {
+                    "name": "同調",
+                    "description": "ロードアウトに置ける能力カードの最大枚数が1枚減りますが、ダメージしきい値にティアと同じ値のボーナスを得ます。",
+                    "effects": {
+                        "attuned": {
+                            "name": "同調",
+                            "description": "ロードアウトに置ける能力カードの最大枚数が1枚減りますが、ダメージしきい値にティアと同じ値のボーナスを得ます。"
+                        }
+                    }
+                },
+                "blessed": {
+                    "name": "祝福",
+                    "description": "大休憩ごとに1回、「すべてを賭ける」の死亡ムーブを行う前に、希望を任意の数だけ消費できます。消費した希望の数と同じ値を希望ダイスの出目へのボーナスとして得ます。",
+                    "actions": {
+                        "blessed": {
+                            "name": "祝福",
+                            "description": "大休憩ごとに1回、「すべてを賭ける」の死亡ムーブを行う前に、希望を任意の数だけ消費できます。消費した希望の数と同じ値を希望ダイスの出目へのボーナスとして得ます。"
+                        }
+                    }
+                },
+                "bloodthirsty": {
+                    "name": "血に飢えた",
+                    "description": "近接射程での武器攻撃がクリティカル成功したとき、HPを1消します。",
+                    "actions": {
+                        "heal": {
+                            "name": "HPを消す",
+                            "description": "近接射程での武器攻撃がクリティカル成功したとき、HPを1消します。"
+                        }
+                    }
+                },
+                "bulky": {
+                    "name": "かさばる",
+                    "description": "回避値−1。重傷値ダメージを受けたとき、ストレスを1マークしなければなりません。",
+                    "effects": {
+                        "bulky": {
+                            "name": "かさばる",
+                            "description": "回避値−1。重傷値ダメージを受けたとき、ストレスを1マークしなければなりません。"
+                        }
+                    }
+                },
+                "burning": {
+                    "name": "燃焼",
+                    "description": "敵対者が近接射程からあなたを攻撃したとき、相手はストレスを1マークします。",
+                    "actions": {
+                        "burn": {
+                            "name": "燃やす",
+                            "description": "敵対者が近接射程からあなたを攻撃したとき、相手はストレスを1マークします。"
+                        }
+                    }
+                },
+                "channeling": {
+                    "name": "伝導",
+                    "description": "呪文発動ロール＋1",
+                    "effects": {
+                        "channeling": {
+                            "name": "伝導",
+                            "description": "呪文発動ロール＋1"
+                        }
+                    }
+                },
+                "cumbersome": {
+                    "name": "扱いにくい",
+                    "description": "器用−1",
+                    "effects": {
+                        "cumbersome": {
+                            "name": "扱いにくい",
+                            "description": "器用−1"
+                        }
+                    }
+                },
+                "difficult": {
+                    "name": "扱いにくい",
+                    "description": "すべての特性と回避値に−1",
+                    "effects": {
+                        "difficult": {
+                            "name": "扱いにくい",
+                            "description": "すべての特性と回避値に−1"
+                        }
+                    }
+                },
+                "divine": {
+                    "name": "神聖",
+                    "description": "鎧スロットをマークしたとき、希望を1得ます。",
+                    "actions": {
+                        "heal": {
+                            "name": "希望を得る",
+                            "description": "鎧スロットをマークしたとき、希望を1得ます。"
+                        }
+                    }
+                },
+                "enchanted": {
+                    "name": "付呪",
+                    "description": "ダメージしきい値に呪文発動特性と同じ値のボーナスを得ます。",
+                    "effects": {
+                        "enchanted": {
+                            "name": "付呪",
+                            "description": "ダメージしきい値に呪文発動特性と同じ値のボーナスを得ます。"
+                        }
+                    }
+                },
+                "flexible": {
+                    "name": "柔軟",
+                    "description": "回避値＋1",
+                    "effects": {
+                        "flexible": {
+                            "name": "柔軟",
+                            "description": "回避値＋1"
+                        }
+                    }
+                },
+                "fortified": {
+                    "name": "強化",
+                    "description": "鎧スロットをマークすると、攻撃のしきい値を1段階ではなく2段階下げます。",
+                    "effects": {
+                        "fortified": {
+                            "name": "強化",
+                            "description": "鎧スロットをマークすると、攻撃のしきい値を1段階ではなく2段階下げます。"
+                        }
+                    }
+                },
+                "fortuneFavored": {
+                    "name": "幸運の恵み",
+                    "description": "シーンごとに1回、希望を伴う失敗を恐怖を伴う成功に変えられます。",
+                    "actions": {
+                        "fortuneFavored": {
+                            "name": "幸運の恵み",
+                            "description": "シーンごとに1回、希望を伴う失敗を恐怖を伴う成功に変えられます。"
+                        }
+                    }
+                },
+                "ghostwalker": {
+                    "name": "幽体歩行",
+                    "description": "休憩ごとに1回、ストレスを1マークして、近距離までの範囲を固体を通り抜けて移動できます。",
+                    "actions": {
+                        "ghostwalker": {
+                            "name": "幽体歩行",
+                            "description": "休憩ごとに1回、ストレスを1マークして、近距離までの範囲を固体を通り抜けて移動できます。"
+                        }
+                    }
+                },
+                "gilded": {
+                    "name": "金装飾",
+                    "description": "社交＋1",
+                    "effects": {
+                        "gilded": {
+                            "name": "金装飾",
+                            "description": "社交＋1"
+                        }
+                    }
+                },
+                "gliding": {
+                    "name": "滑空",
+                    "description": "遠距離まで滑空でき、落下ダメージを受けません。",
+                    "actions": {
+                        "gliding": {
+                            "name": "滑空",
+                            "description": "遠距離まで滑空でき、落下ダメージを受けません。"
+                        }
+                    }
+                },
+                "heavy": {
+                    "name": "重い",
+                    "description": "回避値−1",
+                    "effects": {
+                        "heavy": {
+                            "name": "重い",
+                            "description": "回避値−1"
+                        }
+                    }
+                },
+                "hopeful": {
+                    "name": "希望的",
+                    "description": "希望を消費する代わりに、鎧スロットを1マークできます。",
+                    "actions": {
+                        "hope": {
+                            "name": "希望",
+                            "description": "希望を消費する代わりに、鎧スロットを1マークできます。"
+                        }
+                    }
+                },
+                "impenetrable": {
+                    "name": "不貫通",
+                    "description": "小休憩ごとに1回、最後のHPをマークする代わりにストレスを1マークできます。",
+                    "actions": {
+                        "impenetrable": {
+                            "name": "不貫通",
+                            "description": "小休憩ごとに1回、最後のHPをマークする代わりにストレスを1マークできます。"
+                        }
+                    }
+                },
+                "lined": {
+                    "name": "裏打ち",
+                    "description": "ストレスを1マークして、軽傷値ダメージを無効化します。",
+                    "effects": {
+                        "lined": {
+                            "name": "裏打ち",
+                            "description": "ストレスを1マークして、軽傷値ダメージを無効化します。"
+                        }
+                    }
+                },
+                "magical": {
+                    "name": "魔法",
+                    "description": "物理ダメージの軽減に鎧スロットは使えません。",
+                    "effects": {
+                        "magical": {
+                            "name": "魔法",
+                            "description": "物理ダメージの軽減に鎧スロットは使えません。"
+                        }
+                    }
+                },
+                "magnificent": {
+                    "name": "壮麗",
+                    "description": "鎧値に社交と同じ値のボーナスを得ます。",
+                    "effects": {
+                        "magnificent": {
+                            "name": "壮麗",
+                            "description": "鎧値に社交と同じ値のボーナスを得ます。"
+                        }
+                    }
+                },
+                "mnemonic": {
+                    "name": "記憶術",
+                    "description": "シーンごとに1回、リコールコストを支払わずに保管庫から能力カードを1枚リコールできます。",
+                    "actions": {
+                        "mnemonic": {
+                            "name": "記憶術",
+                            "description": "シーンごとに1回、リコールコストを支払わずに保管庫から能力カードを1枚リコールできます。"
+                        }
+                    }
+                },
+                "painful": {
+                    "name": "苦痛",
+                    "description": "鎧スロットをマークするたび、ストレスを1マークする必要があります。",
+                    "actions": {
+                        "pain": {
+                            "name": "苦痛",
+                            "description": "鎧スロットをマークするたび、ストレスを1マークする必要があります。"
+                        }
+                    }
+                },
+                "physical": {
+                    "name": "物理",
+                    "description": "魔法ダメージの軽減に鎧スロットは使えません。",
+                    "effects": {
+                        "physical": {
+                            "name": "物理",
+                            "description": "魔法ダメージの軽減に鎧スロットは使えません。"
+                        }
+                    }
+                },
+                "quiet": {
+                    "name": "静寂",
+                    "description": "静かに移動するロールに＋2を得ます。",
+                    "actions": {
+                        "quiet": {
+                            "name": "静寂",
+                            "description": "静かに移動するロールに＋2を得ます。"
+                        }
+                    }
+                },
+                "quickStriding": {
+                    "name": "疾歩",
+                    "description": "拘束状態になりません。また、アクションロールの一部として遠距離まで移動できます。",
+                    "actions": {
+                        "quickStriding": {
+                            "name": "疾歩",
+                            "description": "拘束状態になりません。また、アクションロールの一部として遠距離まで移動できます。"
+                        }
+                    }
+                },
+                "reinforced": {
+                    "name": "補強",
+                    "description": "最後の鎧スロットをマークしたとき、鎧スロットを1以上消すまで、ダメージしきい値を＋2します。",
+                    "actions": {
+                        "reinforce": {
+                            "name": "補強する",
+                            "description": "最後の鎧スロットをマークしたとき、鎧スロットを1以上消すまで、ダメージしきい値を＋2します。"
+                        }
+                    },
+                    "effects": {
+                        "reinforced": {
+                            "name": "補強",
+                            "description": "最後の鎧スロットをマークしたとき、鎧スロットを1以上消すまで、ダメージしきい値を＋2します。"
+                        }
+                    }
+                },
+                "resilient": {
+                    "name": "強靭",
+                    "description": "最後の鎧スロットをマークする前にd6を振ります。6が出たら、鎧スロットをマークせずにしきい値を1段階下げます。",
+                    "actions": {
+                        "resilient": {
+                            "name": "強靭",
+                            "description": "最後の鎧スロットをマークする前にd6を振ります。6が出たら、鎧スロットをマークせずにしきい値を1段階下げます。"
+                        }
+                    }
+                },
+                "resplendent": {
+                    "name": "輝耀",
+                    "description": "シーンごとに1回、希望を消費したとき、鎧スロットを1消せます。",
+                    "actions": {
+                        "heal": {
+                            "name": "輝耀",
+                            "description": "シーンごとに1回、希望を消費したとき、鎧スロットを1消せます。"
+                        }
+                    }
+                },
+                "selfHealing": {
+                    "name": "自己修復",
+                    "description": "休憩したとき、鎧スロットを1消します。",
+                    "actions": {
+                        "heal": {
+                            "name": "自己修復",
+                            "description": "休憩したとき、鎧スロットを1消します。"
+                        }
+                    }
+                },
+                "sharp": {
+                    "name": "鋭利",
+                    "description": "近接射程の対象への攻撃が成功したとき、ダメージロールにd4を加えます。",
+                    "effects": {
+                        "sharp": {
+                            "name": "鋭利",
+                            "description": "近接射程の対象への攻撃が成功したとき、ダメージロールにd4を加えます。"
+                        }
+                    }
+                },
+                "shifting": {
+                    "name": "変移",
+                    "description": "攻撃の対象になったとき、鎧スロットを1マークして、自分への攻撃ロールを不利にできます。",
+                    "actions": {
+                        "shift": {
+                            "name": "変移する",
+                            "description": "攻撃の対象になったとき、鎧スロットを1マークして、自分への攻撃ロールを不利にできます。"
+                        }
+                    }
+                },
+                "stellar": {
+                    "name": "星辰",
+                    "description": "ストレスを1マークして、呪文発動ロールに有利を得ます。",
+                    "actions": {
+                        "stellar": {
+                            "name": "星辰",
+                            "description": "ストレスを1マークして、呪文発動ロールに有利を得ます。"
+                        }
+                    }
+                },
+                "timeslowing": {
+                    "name": "時間遅延",
+                    "description": "鎧スロットを1マークしてd4を振り、その出目を到来する攻撃に対する回避値ボーナスに加えます。",
+                    "actions": {
+                        "slowTime": {
+                            "name": "時間を遅らせる",
+                            "description": "鎧スロットを1マークしてd4を振り、その出目を到来する攻撃に対する回避値ボーナスに加えます。"
+                        }
+                    }
+                },
+                "truthseeking": {
+                    "name": "真実探知",
+                    "description": "近距離にいる別のクリーチャーが嘘をつくと、この防具が光ります。",
+                    "actions": {
+                        "truthseeking": {
+                            "name": "真実探知",
+                            "description": "近距離にいる別のクリーチャーが嘘をつくと、この防具が光ります。"
+                        }
+                    }
+                },
+                "veryHeavy": {
+                    "name": "非常に重い",
+                    "description": "回避値−2。素早さ−1",
+                    "effects": {
+                        "veryHeavy": {
+                            "name": "非常に重い",
+                            "description": "回避値−2。素早さ−1"
+                        }
+                    }
+                },
+                "vigilant": {
+                    "name": "警戒",
+                    "description": "回避値＋2。",
+                    "effects": {
+                        "vigilant": {
+                            "name": "警戒",
+                            "description": "回避値＋2。"
+                        }
+                    }
+                },
+                "vitreous": {
+                    "name": "硝子質",
+                    "description": "重傷値以上のダメージを受けるとき、鎧スロットを2マークしてそのダメージを無効化できます。そうした場合、ダウンタイムムーブとして防具を修理するまで、ダメージしきい値に−5のペナルティを受けます。",
+                    "actions": {
+                        "vitreous": {
+                            "name": "硝子質",
+                            "description": "重傷値以上のダメージを受けるとき、鎧スロットを2マークしてそのダメージを無効化できます。そうした場合、ダウンタイムムーブとして防具を修理するまで、ダメージしきい値に−5のペナルティを受けます。"
+                        }
+                    },
+                    "effects": {
+                        "vitreous": {
+                            "name": "硝子質",
+                            "description": "ダウンタイムムーブとして防具を修理するまで、ダメージしきい値に−5のペナルティを受けます"
+                        }
+                    }
+                },
+                "wallCrawling": {
+                    "name": "壁登り",
+                    "description": "回避値＋1。地面と同じように壁の上を歩けます。",
+                    "effects": {
+                        "wallCrawling": {
+                            "name": "壁登り",
+                            "description": "回避値＋1。地面と同じように壁の上を歩けます。"
+                        }
+                    }
+                },
+                "warded": {
+                    "name": "結界",
+                    "description": "受ける魔法ダメージを、ダメージしきい値に適用する前に鎧値分軽減します。",
+                    "effects": {
+                        "warded": {
+                            "name": "結界",
+                            "description": "受ける魔法ダメージを、ダメージしきい値に適用する前に鎧値分軽減します。"
+                        }
+                    }
+                }
+            },
+            "BeastformType": {
+                "normal": "通常",
+                "evolved": "進化",
+                "hybrid": "ハイブリッド"
+            },
+            "BPModifiers": {
+                "increaseDamage": {
+                    "description": "すべての敵対者のダメージロールに＋1d4（または固定＋2）を加える場合（戦闘を長引かせずに難度を上げる）",
+                    "effect": {
+                        "name": "ダメージ増加",
+                        "description": "ダメージに1d4を加算"
+                    }
+                },
+                "lessDifficult": {
+                    "description": "戦闘を易しくする、または短くしたい場合。"
+                },
+                "lowerTier": {
+                    "description": "より低いティアの敵対者を選ぶ場合。"
+                },
+                "manySolos": {
+                    "description": "ソロの敵対者を2体以上使う場合。"
+                },
+                "moreDangerous": {
+                    "description": "戦闘をより危険にする、または長引かせたい場合"
+                },
+                "noToughies": {
+                    "description": "ブルーザー、群れ、リーダー、ソロを含めない場合"
+                }
+            },
+            "Burden": {
+                "oneHanded": "片手持ち",
+                "twoHanded": "両手持ち"
+            },
+            "RangeInclusion": {
+                "withinRange": "射程内",
+                "outsideRange": "射程外"
+            },
+            "Condition": {
+                "deathMove": {
+                    "name": "デスムーブ",
+                    "description": "キャラクターはデスムーブを行おうとしています"
+                },
+                "dead": {
+                    "name": "死亡",
+                    "description": "キャラクターは死亡しています"
+                },
+                "defeated": {
+                    "name": "撃破",
+                    "description": "この敵対者は撃破されました。"
+                },
+                "hidden": {
+                    "name": "隠密",
+                    "description": "隠密中は、直接対象にした攻撃は行えず、そのクリーチャーに対するロールは不利になります。\n隠密のクリーチャーが移動または攻撃すると、隠密ではなくなります。ただし、攻撃を始める時点で隠密なら、そのロールは有利になります。隠密状態は攻撃が解決されるまで解除されません。"
+                },
+                "restrained": {
+                    "name": "拘束",
+                    "description": "効果がクリーチャーを拘束したとき、この状態が解除されるまで移動できません。\n現在位置からの行動は可能です。"
+                },
+                "unconscious": {
+                    "name": "気絶",
+                    "description": "気絶中、キャラクターは移動も行動もできず、攻撃の対象にもなりません。"
+                },
+                "vulnerable": {
+                    "name": "脆弱",
+                    "description": "脆弱状態のクリーチャーを対象とするロールはすべて有利になります。\nすでに脆弱なクリーチャーに、この状態を重ねて付与することはできません。",
+                    "autoAppliedByLabel": "最大ストレス"
+                }
+            },
+            "ConditionalComparator": {
+                "less": "より小さい",
+                "lessEquals": "以下",
+                "equals": "等しい",
+                "greaterEquals": "以上",
+                "greater": "より大きい",
+                "truthy": "真である",
+                "falsy": "偽である"
+            },
+            "ConditionalFailureMode": {
+                "suppress": "抑制",
+                "hide": "非表示"
+            },
+            "ConditionalPhase": {
+                "preparation": "準備",
+                "roll": "ロール"
+            },
+            "ConditionalType": {
+                "dataCompare": "データ比較",
+                "weaponRestriction": "武器制限",
+                "actionType": "アクションタイプ",
+                "damageType": "ダメージ種別"
+            },
+            "ConditionalWeaponRestrictionType": {
+                "sameWeapon": "同じ武器",
+                "anyWeapon": "任意の武器"
+            },
+            "CountdownProgressType": {
+                "actionRoll": "アクションロール",
+                "characterAttack": "キャラクター攻撃",
+                "characterSpotlight": "キャラクタースポットライト",
+                "custom": "カスタム",
+                "fear": "恐怖",
+                "spotlight": "スポットライト"
+            },
+            "CountdownType": {
+                "encounter": {
+                    "label": "短期",
+                    "shortLabel": "短期"
+                },
+                "narrative": {
+                    "label": "長期",
+                    "shortLabel": "長期"
+                },
+                "misc": {
+                    "label": "その他",
+                    "shortLabel": "その他"
+                }
+            },
+            "DaggerheartDiceAnimationEvents": {
+                "critical": {
+                    "name": "クリティカル"
+                },
+                "higher": {
+                    "name": "最高出目"
+                }
+            },
+            "DamageOnSave": {
+                "none": {
+                    "name": "成功時はなし"
+                },
+                "half": {
+                    "name": "成功時は半減"
+                },
+                "full": {
+                    "name": "成功時も全量"
+                },
+                "doubleOnFail": {
+                    "name": "失敗時は2倍"
+                }
+            },
+            "DamageType": {
+                "physical": {
+                    "name": "物理",
+                    "lowercase": "物理",
+                    "abbreviation": "物"
+                },
+                "magical": {
+                    "name": "魔法",
+                    "lowercase": "魔法",
+                    "abbreviation": "魔"
+                },
+                "direct": {
+                    "name": "直接ダメージ",
+                    "short": "直接",
+                    "abbreviation": "直"
+                }
+            },
+            "DeathMoves": {
+                "avoidDeath": {
+                    "name": "死を避ける",
+                    "description": "キャラクターは死を免れ、その代償を負います。一時的に気絶し、状況がどう悪化するかをGMと一緒に描写します。気絶中は移動も行動もできず、攻撃の対象にもなりません。味方がマーク済みHPを1以上消すか、パーティが大休憩を終えたときに意識を取り戻します。気絶したあと、希望ダイスを振ります。出目がキャラクターのレベル以下なら、傷跡を得ます。希望スロットを1つ永久に消し、その物語的な影響と、可能ならどう回復できるかをGMと決めます。最後の希望スロットを消した場合、そのキャラクターの旅は終わります。"
+                },
+                "riskItAll": {
+                    "name": "すべてを賭ける",
+                    "description": "デュアリティダイスを振ります。希望ダイスのほうが高ければ、キャラクターは踏みとどまり、希望ダイスの出目に等しい数のHPまたはストレスを消します（希望ダイスの値はHPとストレスに自由に振り分けられます）。恐怖ダイスのほうが高ければ、キャラクターは死の帳を越えます。デュアリティダイスがゾロ目なら、キャラクターは踏みとどまり、すべてのHPとストレスを消します。"
+                },
+                "blazeOfGlory": {
+                    "name": "栄光の炎",
+                    "description": "キャラクターは死を受け入れ、栄光の炎の中で散ります。最後の行動を1つ行います。それは（GMの承認のもと）自動的にクリティカル成功となり、その後死の帳を越えます。注：栄光の炎の効果がキャラクターに追加されています。あらゆるデュアリティロールは自動的にクリティカルになります。"
+                }
+            },
+            "DiceSoNice": {
+                "colorsets": {
+                    "hope": "希望（デフォルト）",
+                    "fear": "恐怖（デフォルト）",
+                    "advantage": "有利（デフォルト）",
+                    "disadvantage": "不利（デフォルト）"
+                },
+                "diceRoles": {
+                    "hope": "希望ダイス",
+                    "fear": "恐怖ダイス",
+                    "advantage": "有利ダイス",
+                    "disadvantage": "不利ダイス"
+                },
+                "triggers": {
+                    "dualityRoll": {
+                        "label": "デュアリティロール",
+                        "results": {
+                            "hope": "希望を伴う",
+                            "fear": "恐怖を伴う",
+                            "critical": "クリティカル"
+                        }
+                    },
+                    "gmRoll": {
+                        "label": "GMロール",
+                        "results": {
+                            "critical": "クリティカル"
+                        }
+                    }
+                }
+            },
+            "DomainCardTypes": {
+                "ability": "能力",
+                "spell": "呪文",
+                "grimoire": "グリモア"
+            },
+            "EnvironmentType": {
+                "exploration": {
+                    "label": "探索",
+                    "description": ""
+                },
+                "social": {
+                    "label": "社交",
+                    "description": ""
+                },
+                "traversal": {
+                    "label": "移動",
+                    "description": ""
+                },
+                "event": {
+                    "label": "イベント",
+                    "description": ""
+                }
+            },
+            "EvolutionState": {
+                "unevolved": "未進化",
+                "evolved": "進化"
+            },
+            "fallAndCollision": {
+                "veryClose": {
+                    "label": "至近",
+                    "chatTitle": "落下ダメージ：至近"
+                },
+                "close": {
+                    "label": "近距離",
+                    "chatTitle": "落下ダメージ：近距離"
+                },
+                "far": {
+                    "label": "遠距離",
+                    "chatTitle": "落下ダメージ：遠距離"
+                },
+                "collision": {
+                    "label": "衝突",
+                    "chatTitle": "危険な衝突"
+                }
+            },
+            "FeatureForm": {
+                "label": "特徴の形態",
+                "passive": "パッシブ",
+                "action": "アクション",
+                "reaction": "リアクション",
+                "evolution": "進化"
+            },
+            "Gold": {
+                "title": "金貨",
+                "coins": "コイン",
+                "handfuls": "一握りの金貨",
+                "bags": "袋一杯の金貨",
+                "chests": "箱一杯の金貨"
+            },
+            "HealingType": {
+                "hitPoints": {
+                    "name": "ヒットポイント",
+                    "abbreviation": "HP",
+                    "inChatRoll": "ダメージ"
+                },
+                "stress": {
+                    "name": "ストレス",
+                    "abbreviation": "STR",
+                    "inChatRoll": "ストレス"
+                },
+                "hope": {
+                    "name": "希望",
+                    "abbreviation": "HO",
+                    "inChatRoll": "希望"
+                },
+                "armor": {
+                    "name": "鎧スロット",
+                    "abbreviation": "AS",
+                    "inChatRoll": "鎧スロット"
+                },
+                "fear": {
+                    "name": "恐怖",
+                    "abbreviation": "FR",
+                    "inChatRoll": "恐怖"
+                },
+                "resource": {
+                    "name": "アイテムリソース",
+                    "abbreviation": "IR",
+                    "inChatRoll": "アイテムリソース"
+                }
+            },
+            "ItemResourceProgression": {
+                "increasing": "増加",
+                "decreasing": "減少"
+            },
+            "ItemResourceType": {
+                "simple": "簡易",
+                "diceValue": "ダイス値",
+                "die": "ダイス"
+            },
+            "LevelupData": {
+                "checkboxSelections": "チェックボックス",
+                "minCost": "最小選択数"
+            },
+            "Range": {
+                "self": {
+                    "name": "自身",
+                    "description": "自分自身を意味します。",
+                    "short": "自身"
+                },
+                "melee": {
+                    "name": "近接",
+                    "description": "対象に手が届く距離にいることを意味します。PCは通常数フィート先まで触れられますが、特に大きなNPCでは近接射程がより広くなることがあります。",
+                    "short": "近接"
+                },
+                "veryClose": {
+                    "name": "至近",
+                    "description": "対象の細かいディテールが見える距離で、必要ならすぐに手が届きます。通常は約5〜10フィートです。危険下でも、PCは他の行動の一部として至近の対象へ移動できることが多いです。バトルマップ上では、ゲームカードの短辺（約2〜3インチ）以内を至近とみなせます。",
+                    "short": "至近"
+                },
+                "close": {
+                    "name": "近距離",
+                    "description": "対象の主なディテールが見える距離です。部屋の向こうや隣の露店まで、通常は約10〜30フィートです。危険下でも、PCは他の行動の一部として近距離の対象へ移動できることが多いです。バトルマップ上では、標準的なペンや鉛筆の長さ（約5〜6インチ）以内を近距離とみなせます。",
+                    "short": "近距離"
+                },
+                "far": {
+                    "name": "遠距離",
+                    "description": "人や物の外見は見えるが、細部まではおそらく分からない距離です。小さな戦場の向こうや大きな廊下の先で、通常は約30〜100フィートです。危険下では、PCが安全に到達するには素早さロールが必要になることが多いです。バトルマップ上では、標準的な用紙の長さ（約10〜11インチ）以内を遠距離とみなせます。",
+                    "short": "遠距離"
+                },
+                "veryFar": {
+                    "name": "超遠距離",
+                    "description": "人や物の形は見えるが、細部はおそらく判別できない距離です。大きな戦場の向こうや長い通りの先で、通常は約100〜300フィートです。危険下では、PCが安全に到達するには素早さロールが必要になることが多いです。バトルマップ上では、遠距離を超えてもキャラクターの視界内なら超遠距離とみなせます。",
+                    "short": "超遠"
+                }
+            },
+            "ReloadChoices": {
+                "off": {
+                    "label": "使わない"
+                },
+                "manual": {
+                    "label": "手動"
+                },
+                "auto": {
+                    "label": "自動"
+                }
+            },
+            "Resources": {
+                "optionalResources": {
+                    "favor": "恩寵",
+                    "focus": "集中"
+                }
+            },
+            "RollTypes": {
+                "trait": {
+                    "name": "特性"
+                },
+                "attack": {
+                    "name": "攻撃"
+                },
+                "spellcast": {
+                    "name": "呪文発動"
+                },
+                "reaction": {
+                    "name": "リアクション"
+                },
+                "diceSet": {
+                    "name": "ダイスセット"
+                }
+            },
+            "RuleChoice": {
+                "off": "オフ",
+                "offWithToggle": "オフ（切り替え可）",
+                "on": "オン",
+                "onWithToggle": "オン（切り替え可）"
+            },
+            "SceneRangeMeasurementTypes": {
+                "disable": "ダガーハートの射程計測を無効化",
+                "default": "既定",
+                "custom": "カスタム"
+            },
+            "SelectAction": {
+                "selectType": "アクションタイプを選択",
+                "selectAction": "アクション選択"
+            },
+            "GroupActionSelectionType": {
+                "selected": "選択中",
+                "randomized": "ランダム"
+            },
+            "TagTeamRollTypes": {
+                "trait": "特性",
+                "ability": "能力",
+                "damageAbility": "ダメージ能力"
+            },
+            "TargetTypes": {
+                "any": "すべて",
+                "friendly": "友好",
+                "hostile": "敵対",
+                "self": "自身",
+                "other": "その他"
+            },
+            "TemplateTypes": {
+                "circle": "円",
+                "cone": "円錐",
+                "emanation": "放射",
+                "inFront": "前方",
+                "rectangle": "矩形",
+                "line": "直線"
+            },
+            "TokenSize": {
+                "tiny": "微小",
+                "small": "小型",
+                "medium": "中型",
+                "large": "大型",
+                "huge": "巨大",
+                "gargantuan": "超巨大"
+            },
+            "Traits": {
+                "agility": {
+                    "name": "素早さ",
+                    "short": "AGI",
+                    "verb": {
+                        "sprint": "疾走する",
+                        "leap": "跳躍する",
+                        "maneuver": "機動する"
+                    }
+                },
+                "strength": {
+                    "name": "頑強",
+                    "short": "STR",
+                    "verb": {
+                        "lift": "持ち上げる",
+                        "smash": "砕く",
+                        "grapple": "組み付く"
+                    }
+                },
+                "finesse": {
+                    "name": "器用",
+                    "short": "FIN",
+                    "verb": {
+                        "control": "操る",
+                        "hide": "隠れる",
+                        "tinker": "いじる"
+                    }
+                },
+                "instinct": {
+                    "name": "直感",
+                    "short": "INS",
+                    "verb": {
+                        "perceive": "知覚する",
+                        "sense": "感じ取る",
+                        "navigate": "進路を取る"
+                    }
+                },
+                "presence": {
+                    "name": "社交",
+                    "short": "PRE",
+                    "verb": {
+                        "charm": "魅了する",
+                        "perform": "演じる",
+                        "deceive": "欺く"
+                    }
+                },
+                "knowledge": {
+                    "name": "知識",
+                    "short": "KNO",
+                    "verb": {
+                        "recall": "想起する",
+                        "analyze": "分析する",
+                        "comprehend": "理解する"
+                    }
+                }
+            },
+            "TraitsSpecial": {
+                "spellcast": "呪文発動特性",
+                "highest": "最良の特性"
+            },
+            "Triggers": {
+                "postDamageReduction": {
+                    "label": "ダメージ軽減の後"
+                },
+                "preDamageReduction": {
+                    "label": "ダメージ軽減の前"
+                },
+                "dualityRoll": {
+                    "label": "デュアリティロール"
+                },
+                "fearRoll": {
+                    "label": "恐怖ロール"
+                },
+                "triggerTexts": {
+                    "strangePatternsContentTitle": "{nr}回一致しました。",
+                    "strangePatternsContentSubTitle": "希望とストレスを合計{nr}まで増やします。",
+                    "strangePatternsActionExplanation": "左クリックで増加、右クリックで減少",
+                    "ferocityContent": "希望を2消費して、次の自分への攻撃が終わるまで回避値に{bonus}のボーナスを得ますか？",
+                    "ferocityEffectDescription": "回避値が{bonus}増加します。このボーナスは、次に自分への攻撃が解決されるまで続きます。"
+                },
+                "triggerType": "トリガータイプ",
+                "triggeringActorType": "発動するアクタータイプ",
+                "triggerError": "{actor} の {item}({itemUuid}) のトリガー「{trigger}」が失敗しました。設定が誤っている可能性があります。"
+            },
+            "WeaponFeature": {
+                "accelerator": {
+                    "name": "加速",
+                    "description": "シーンごとに1回、ストレスを1マークして遠距離まで移動し、その後攻撃できます。この攻撃の習熟に＋1のボーナスを得ます。",
+                    "actions": {
+                        "accelerator": {
+                            "name": "加速",
+                            "description": "シーンごとに1回、ストレスを1マークして遠距離まで移動し、その後攻撃できます。この攻撃の習熟に＋1のボーナスを得ます。"
+                        }
+                    },
+                    "effects": {
+                        "accelerator": {
+                            "name": "加速",
+                            "description": "この攻撃の習熟に＋1のボーナスを得ます。"
+                        }
+                    }
+                },
+                "aimed": {
+                    "name": "照準",
+                    "description": "対象が自分の至近距離内にいる、または味方の近接射程内にいる場合、攻撃は不利になります。ストレスを1マークしてこのペナルティを無視できます。",
+                    "actions": {
+                        "aimed": {
+                            "name": "照準",
+                            "description": "対象が自分の至近距離内にいる、または味方の近接射程内にいる場合、攻撃は不利になります。ストレスを1マークしてこのペナルティを無視できます。"
+                        }
+                    }
+                },
+                "barrier": {
+                    "name": "障壁",
+                    "description": "@Resolve[@item.tier + 1|sign]{武器ティア＋1を得る}を鎧値に加算。回避値−1",
+                    "effects": {
+                        "barrier": {
+                            "name": "障壁",
+                            "description": "鎧値に武器ティア＋1。回避値−1"
+                        }
+                    }
+                },
+                "braced": {
+                    "name": "受け止め",
+                    "description": "この武器の射程内の敵対者から自分がダメージを受けたとき、ストレスを2マークして、その相手にHPを1マークさせられます。",
+                    "actions": {
+                        "braced": {
+                            "name": "受け止め",
+                            "description": "この武器の射程内の敵対者から自分がダメージを受けたとき、ストレスを2マークして、その相手にHPを1マークさせられます。"
+                        }
+                    }
+                },
+                "bolstering": {
+                    "name": "鼓舞",
+                    "description": "攻撃がクリティカル成功したとき、近距離内のすべてのPCが希望を1得ます。",
+                    "actions": {
+                        "bolstering": {
+                            "name": "鼓舞",
+                            "description": "攻撃がクリティカル成功したとき、近距離内のすべてのPCが希望を1得ます。"
+                        }
+                    }
+                },
+                "bonded": {
+                    "name": "絆",
+                    "description": "ダメージロールにレベルに等しいボーナスを得ます。",
+                    "effects": {
+                        "damage": {
+                            "name": "武器の絆",
+                            "description": "ダメージロールにレベルに等しいボーナスを得ます。"
+                        }
+                    }
+                },
+                "bouncing": {
+                    "name": "跳弾",
+                    "description": "ストレスを1以上マークし、その数だけ攻撃の射程内の対象に命中させます。",
+                    "actions": {
+                        "bounce": {
+                            "name": "跳ねる",
+                            "description": "ストレスを1以上マークし、その数だけ攻撃の射程内の対象に命中させます。"
+                        }
+                    }
+                },
+                "brave": {
+                    "name": "勇敢",
+                    "description": "回避値−1。重傷値に武器ティアを加算",
+                    "effects": {
+                        "brave": {
+                            "name": "勇敢",
+                            "description": "回避値−1。重傷値に武器ティアを加算"
+                        }
+                    }
+                },
+                "brutal": {
+                    "name": "残忍",
+                    "description": "ダメージダイスが最大値のとき、追加のダメージダイスを振ります。",
+                    "actions": {
+                        "addDamage": {
+                            "name": "残忍",
+                            "description": "ダメージダイスが最大値のとき、追加のダメージダイスを振ります。"
+                        }
+                    }
+                },
+                "burning": {
+                    "name": "燃焼",
+                    "description": "ダメージダイスで6が出たとき、対象はストレスを1マークします。",
+                    "actions": {
+                        "burn": {
+                            "name": "燃やす",
+                            "description": "ダメージダイスで6が出たとき、対象はストレスを1マークします。"
+                        }
+                    }
+                },
+                "catalytic": {
+                    "name": "触媒",
+                    "description": "攻撃が成功したとき、ストレスを1マークして、近距離内の味方1人の次の攻撃ロールに＋3のボーナスを与えられます。",
+                    "actions": {
+                        "catalytic": {
+                            "name": "触媒",
+                            "description": "攻撃が成功したとき、ストレスを1マークして、近距離内の味方1人の次の攻撃ロールに＋3のボーナスを与えられます。"
+                        }
+                    },
+                    "effects": {
+                        "catalytic": {
+                            "name": "触媒",
+                            "description": "次の攻撃ロールに＋3のボーナスを得ます。"
+                        }
+                    }
+                },
+                "charged": {
+                    "name": "充填",
+                    "description": "ストレスを1マークして、メイン武器攻撃の習熟に＋1します。",
+                    "actions": {
+                        "markStress": {
+                            "name": "充填する",
+                            "description": "ストレスを1マークして、メイン武器攻撃の習熟に＋1します。"
+                        }
+                    },
+                    "effects": {
+                        "charged": {
+                            "name": "充填",
+                            "description": "メイン武器攻撃の習熟に＋1します。"
+                        }
+                    }
+                },
+                "concussive": {
+                    "name": "衝撃",
+                    "description": "攻撃成功時、希望を1消費して対象を遠距離までノックバックできます。",
+                    "actions": {
+                        "attack": {
+                            "name": "衝撃を与える",
+                            "description": "攻撃成功時、希望を1消費して対象を遠距離までノックバックできます。"
+                        }
+                    }
+                },
+                "cumbersome": {
+                    "name": "扱いにくい",
+                    "description": "器用−1",
+                    "effects": {
+                        "cumbersome": {
+                            "name": "扱いにくい",
+                            "description": "器用−1"
+                        }
+                    }
+                },
+                "deadly": {
+                    "name": "致命",
+                    "description": "重傷値を与えたとき、対象は追加でHPを1マークします。",
+                    "actions": {
+                        "extraDamage": {
+                            "name": "致命",
+                            "description": "重傷値を与えたとき、対象は追加でHPを1マークします。"
+                        }
+                    }
+                },
+                "deflecting": {
+                    "name": "偏向",
+                    "description": "攻撃を受けたとき、鎧スロットを1マークして、その攻撃に対する回避値に鎧値に等しいボーナスを得られます。",
+                    "actions": {
+                        "deflect": {
+                            "name": "逸らす",
+                            "description": "攻撃を受けたとき、鎧スロットを1マークして、その攻撃に対する回避値に鎧値に等しいボーナスを得られます。"
+                        }
+                    },
+                    "effects": {
+                        "deflecting": {
+                            "name": "偏向",
+                            "description": "その攻撃に対する回避値に、鎧値に等しいボーナスを得る"
+                        }
+                    }
+                },
+                "destructive": {
+                    "name": "破壊的",
+                    "description": "素早さ−1。攻撃成功時、至近にいるすべての敵対者はストレスを1マークします。",
+                    "actions": {
+                        "attack": {
+                            "name": "破壊",
+                            "description": "攻撃成功時、至近にいるすべての敵対者はストレスを1マークします。"
+                        }
+                    },
+                    "effects": {
+                        "agility": {
+                            "name": "破壊的",
+                            "description": "素早さ−1"
+                        }
+                    }
+                },
+                "devastating": {
+                    "name": "壊滅的",
+                    "description": "攻撃ロールの前に、ストレスを1マークしてダメージダイスをd20にできます。",
+                    "actions": {
+                        "devastate": {
+                            "name": "壊滅させる",
+                            "description": "攻撃ロールの前に、ストレスを1マークしてダメージダイスをd20にできます。"
+                        }
+                    }
+                },
+                "disturbing": {
+                    "name": "戦慄",
+                    "description": "この武器でクリーチャーを倒したとき、近距離内のすべての敵対者はストレスを1マークしなければなりません。",
+                    "actions": {
+                        "disturbing": {
+                            "name": "戦慄",
+                            "description": "この武器でクリーチャーを倒したとき、近距離内のすべての敵対者はストレスを1マークしなければなりません。"
+                        }
+                    }
+                },
+                "doubleDuty": {
+                    "name": "兼務",
+                    "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1",
+                    "effects": {
+                        "doubleDuty": {
+                            "name": "兼務",
+                            "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1"
+                        }
+                    }
+                },
+                "doubledUp": {
+                    "name": "二刀",
+                    "description": "メイン武器で攻撃するとき、近接射程内の別の対象にもダメージを与えられます。",
+                    "actions": {
+                        "doubleUp": {
+                            "name": "二刀にする",
+                            "description": "メイン武器で攻撃するとき、近接射程内の別の対象にもダメージを与えられます。"
+                        }
+                    }
+                },
+                "draining": {
+                    "name": "吸収",
+                    "description": "攻撃が成功したとき、希望を1消費して対象にストレスを1マークさせられます。そうした場合、自分はストレスを1消します。",
+                    "actions": {
+                        "draining": {
+                            "name": "吸収",
+                            "description": "攻撃が成功したとき、希望を1消費して対象にストレスを1マークさせられます。そうした場合、自分はストレスを1消します。"
+                        }
+                    }
+                },
+                "dueling": {
+                    "name": "一騎打ち",
+                    "description": "対象の近距離に他のクリーチャーがいないとき、その対象への攻撃ロールは有利になります。",
+                    "actions": {
+                        "duel": {
+                            "name": "一騎打ち",
+                            "description": "対象の近距離に他のクリーチャーがいないとき、その対象への攻撃ロールは有利になります。"
+                        }
+                    }
+                },
+                "entangling": {
+                    "name": "捕縛",
+                    "description": "至近距離内の対象へのメイン武器による攻撃が成功したとき、希望を1消費して対象を一時的に脆弱にできます。",
+                    "actions": {
+                        "entangling": {
+                            "name": "捕縛",
+                            "description": "至近距離内の対象へのメイン武器による攻撃が成功したとき、希望を1消費して対象を一時的に脆弱にできます。"
+                        }
+                    },
+                    "effects": {
+                        "entangling": {
+                            "name": "捕縛",
+                            "description": ""
+                        }
+                    }
+                },
+                "eruptive": {
+                    "name": "噴出",
+                    "description": "近接射程の対象への攻撃が成功したとき、至近にいる他のすべての敵対者はリアクションロール（14）に成功しなければ、半分のダメージを受けます。",
+                    "actions": {
+                        "erupt": {
+                            "name": "噴出する",
+                            "description": "近接射程の対象への攻撃が成功したとき、至近にいる他のすべての敵対者はリアクションロール（14）に成功しなければ、半分のダメージを受けます。"
+                        }
+                    }
+                },
+                "ethereal": {
+                    "name": "霊妙",
+                    "description": "この武器を召喚するにはストレスを1マークしなければなりません。シーン終了まで持続します。",
+                    "actions": {
+                        "ethereal": {
+                            "name": "霊妙",
+                            "description": "この武器を召喚するにはストレスを1マークしなければなりません。シーン終了まで持続します。"
+                        }
+                    },
+                    "effects": {
+                        "ethereal": {
+                            "name": "霊妙",
+                            "description": "この武器はシーン終了まで持続します。"
+                        }
+                    }
+                },
+                "extending": {
+                    "name": "伸長",
+                    "description": "この武器の射程を超遠距離まで延ばせます。射程を1段階延ばすごとに（近接から至近、至近から近距離、近距離から遠距離など）、攻撃ロールに−1のペナルティを受けます。"
+                },
+                "focused": {
+                    "name": "集束",
+                    "description": "至近距離内の対象へのメイン武器ダメージ＋1。",
+                    "effects": {
+                        "focused": {
+                            "name": "集束",
+                            "description": "至近距離内の対象へのメイン武器ダメージ＋1。"
+                        }
+                    }
+                },
+                "followUp": {
+                    "name": "追撃",
+                    "description": "近接射程内でのメイン武器による攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。",
+                    "actions": {
+                        "followUp": {
+                            "name": "追撃",
+                            "description": "近接射程内でのメイン武器による攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。"
+                        }
+                    },
+                    "effects": {
+                        "followUp": {
+                            "name": "追撃",
+                            "description": "この攻撃の習熟に＋1のボーナスを得ます。"
+                        }
+                    }
+                },
+                "freezing": {
+                    "name": "凍結",
+                    "description": "この武器による攻撃で対象がHPを2点以上マークしたとき、その対象は一時的に拘束状態になります。",
+                    "actions": {
+                        "freezing": {
+                            "name": "凍結",
+                            "description": "この武器による攻撃で対象がHPを2点以上マークしたとき、その対象は一時的に拘束状態になります。"
+                        }
+                    },
+                    "effects": {
+                        "freezing": {
+                            "name": "凍結",
+                            "description": ""
+                        }
+                    }
+                },
+                "grappling": {
+                    "name": "組み付き",
+                    "description": "攻撃が成功したとき、希望を1消費して対象を拘束するか、自分の近接射程へ引き込めます。",
+                    "actions": {
+                        "grapple": {
+                            "name": "組み付く",
+                            "description": "攻撃が成功したとき、希望を1消費して対象を拘束するか、自分の近接射程へ引き込めます。"
+                        }
+                    }
+                },
+                "greedy": {
+                    "name": "貪欲",
+                    "description": "一握りの金貨を消費して、ダメージロールの習熟に＋1します。",
+                    "actions": {
+                        "greed": {
+                            "name": "貪欲",
+                            "description": "一握りの金貨を消費して、ダメージロールの習熟に＋1します。"
+                        }
+                    }
+                },
+                "healing": {
+                    "name": "治癒",
+                    "description": "ダウンタイム中、HPを1自動で消します。",
+                    "actions": {
+                        "heal": {
+                            "name": "治癒する",
+                            "description": "ダウンタイム中、HPを1自動で消します。"
+                        }
+                    }
+                },
+                "heavy": {
+                    "name": "重い",
+                    "description": "回避値−1",
+                    "effects": {
+                        "heavy": {
+                            "name": "重い",
+                            "description": "回避値−1"
+                        }
+                    }
+                },
+                "hooked": {
+                    "name": "鉤",
+                    "description": "攻撃成功時、対象を近接射程へ引き込めます。",
+                    "actions": {
+                        "hook": {
+                            "name": "鉤で引っかける",
+                            "description": "攻撃成功時、対象を近接射程へ引き込めます。"
+                        }
+                    }
+                },
+                "hot": {
+                    "name": "灼熱",
+                    "description": "この武器は固形物を切断します。",
+                    "actions": {
+                        "hot": {
+                            "name": "灼熱",
+                            "description": "この武器は固形物を切断します。"
+                        }
+                    }
+                },
+                "incendiary": {
+                    "name": "焼夷",
+                    "description": "素早さ−1。攻撃が成功したとき、対象の至近距離内のすべてのクリーチャーはHPを1マークしなければなりません。",
+                    "actions": {
+                        "incendiary": {
+                            "name": "焼夷",
+                            "description": "攻撃が成功したとき、対象の至近距離内のすべてのクリーチャーはHPを1マークしなければなりません。"
+                        }
+                    },
+                    "effects": {
+                        "incendiary": {
+                            "name": "焼夷",
+                            "description": "素早さ−1"
+                        }
+                    }
+                },
+                "inverted": {
+                    "name": "反転",
+                    "description": "武器攻撃ロールで恐怖を伴ったとき、希望を1得ます。",
+                    "effects": {
+                        "inverted": {
+                            "name": "反転",
+                            "description": "武器攻撃ロールで恐怖を伴ったとき、希望を1得ます。"
+                        }
+                    }
+                },
+                "invigorating": {
+                    "name": "活力",
+                    "description": "攻撃成功時にd4を振ります。4が出たらストレスを1消します。",
+                    "actions": {
+                        "invigorate": {
+                            "name": "活力を与える",
+                            "description": "攻撃成功時にd4を振ります。4が出たらストレスを1消します。"
+                        }
+                    }
+                },
+                "lifestealing": {
+                    "name": "生命吸収",
+                    "description": "攻撃成功時にd6を振ります。6が出たら、HPを1消すかストレスを1消します。",
+                    "actions": {
+                        "lifesteal": {
+                            "name": "生命吸収",
+                            "description": "攻撃成功時にd6を振ります。6が出たら、HPを1消すかストレスを1消します。"
+                        }
+                    }
+                },
+                "lockedOn": {
+                    "name": "ロックオン",
+                    "description": "攻撃が成功したとき、同じ対象への次のメイン武器攻撃は自動成功します。",
+                    "actions": {
+                        "lockOn": {
+                            "name": "ロックオン",
+                            "description": "攻撃が成功したとき、同じ対象への次のメイン武器攻撃は自動成功します。"
+                        }
+                    }
+                },
+                "long": {
+                    "name": "長射程",
+                    "description": "この武器の攻撃は、射程内の一直線上のすべての敵対者を対象にします。",
+                    "actions": {
+                        "long": {
+                            "name": "長射程",
+                            "description": "この武器の攻撃は、射程内の一直線上のすべての敵対者を対象にします。"
+                        }
+                    }
+                },
+                "lucky": {
+                    "name": "幸運",
+                    "description": "攻撃に失敗したとき、ストレスを1マークして攻撃を振り直せます。",
+                    "actions": {
+                        "luck": {
+                            "name": "幸運",
+                            "description": "攻撃に失敗したとき、ストレスを1マークして攻撃を振り直せます。"
+                        }
+                    }
+                },
+                "magnetic": {
+                    "name": "磁力",
+                    "description": "この武器で攻撃するとき、希望を1消費して、対象の至近距離内のすべての敵対者にリアクションロール（16）を行わせられます。失敗したクリーチャーはストレスを1マークし、対象の近接射程まで引き寄せられます。",
+                    "actions": {
+                        "magnetic": {
+                            "name": "磁力",
+                            "description": "この武器で攻撃するとき、希望を1消費して、対象の至近距離内のすべての敵対者にリアクションロール（16）を行わせられます。失敗したクリーチャーはストレスを1マークし、対象の近接射程まで引き寄せられます。"
+                        }
+                    }
+                },
+                "massive": {
+                    "name": "甚大",
+                    "description": "回避値−1。攻撃成功時、ダメージダイスを追加で1個振り、最も低い出目を捨てます。",
+                    "effects": {
+                        "massive": {
+                            "name": "甚大",
+                            "description": "回避値−1。攻撃成功時、ダメージダイスを追加で1個振り、最も低い出目を捨てます。"
+                        }
+                    }
+                },
+                "nonlethal": {
+                    "name": "非致死",
+                    "description": "この武器による攻撃で対象がHPを何点かマークするとき、代わりに同じ点数のストレスをマークします。"
+                },
+                "omnipresent": {
+                    "name": "遍在",
+                    "description": "超遠距離内の対象を攻撃できますが、不利で行わなければなりません。"
+                },
+                "otherwordly": {
+                    "name": "異界",
+                    "description": "攻撃が成功したとき、物理ダメージか魔法ダメージのどちらを与えるか選べます。"
+                },
+                "padded": {
+                    "name": "緩衝",
+                    "description": "ダメージしきい値に、この武器のティア＋1を得ます。",
+                    "effects": {
+                        "padded": {
+                            "name": "緩衝",
+                            "description": "ダメージしきい値に、この武器のティア＋1を得ます。"
+                        }
+                    }
+                },
+                "painful": {
+                    "name": "苦痛",
+                    "description": "攻撃が成功するたび、ストレスを1マークする必要があります。",
+                    "actions": {
+                        "pain": {
+                            "name": "苦痛",
+                            "description": "攻撃が成功するたび、ストレスを1マークする必要があります。"
+                        }
+                    }
+                },
+                "paired": {
+                    "name": "対",
+                    "description": "@Resolve[@item.tier + 1|sign]{このサブ武器のティア＋1を加算}を、近接射程の対象へのメイン武器ダメージに加える",
+                    "actions": {
+                        "paired": {
+                            "name": "対",
+                            "description": "近接射程の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
+                        }
+                    },
+                    "effects": {
+                        "paired": {
+                            "name": "対",
+                            "description": "近接射程の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
+                        }
+                    }
+                },
+                "parry": {
+                    "name": "受け流し",
+                    "description": "攻撃を受けたとき、この武器のダメージダイスを振ります。攻撃者のダメージダイスに同じ出目があれば、受けるダメージを合計する前に、一致した出目は攻撃者のダメージダイスから取り除かれます。",
+                    "actions": {
+                        "parry": {
+                            "name": "受け流し",
+                            "description": "攻撃を受けたとき、この武器のダメージダイスを振ります。攻撃者のダメージダイスに同じ出目があれば、受けるダメージを合計する前に、一致した出目は攻撃者のダメージダイスから取り除かれます。"
+                        }
+                    }
+                },
+                "persuasive": {
+                    "name": "説得力",
+                    "description": "社交ロールの前に、ストレスを1マークして結果に＋2できます。",
+                    "actions": {
+                        "persuade": {
+                            "name": "説得する",
+                            "description": "社交ロールの前に、ストレスを1マークして結果に＋2できます。"
+                        }
+                    },
+                    "effects": {
+                        "persuasive": {
+                            "name": "説得力",
+                            "description": "社交ロールに＋2します"
+                        }
+                    }
+                },
+                "piercing": {
+                    "name": "貫通",
+                    "description": "この武器によるダメージは、対象の中傷値を−2のペナルティを受けたものとして扱います。",
+                    "effects": {
+                        "piercing": {
+                            "name": "貫通",
+                            "description": "この武器によるダメージは、対象の中傷値を−2のペナルティを受けたものとして扱います。"
+                        }
+                    }
+                },
+                "poisonous": {
+                    "name": "毒性",
+                    "description": "恐怖を伴ってロールした攻撃で対象がHPを何点かマークしたとき、その対象は同じ点数のストレスをマークします。"
+                },
+                "pompous": {
+                    "name": "尊大",
+                    "description": "この武器を使うには、社交が0以下である必要があります。",
+                    "actions": {
+                        "pompous": {
+                            "name": "尊大",
+                            "description": "この武器を使うには、社交が0以下である必要があります。"
+                        }
+                    }
+                },
+                "powerful": {
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを追加で1個振り、最も低い出目を捨てます。",
+                    "effects": {
+                        "powerful": {
+                            "name": "強力",
+                            "description": "攻撃成功時、ダメージダイスを追加で1個振り、最も低い出目を捨てます。"
+                        }
+                    }
+                },
+                "protective": {
+                    "name": "防護",
+                    "description": "@Resolve[@item.tier|sign]{アイテムのティアを加算}を鎧値に加える",
+                    "effects": {
+                        "protective": {
+                            "name": "防護",
+                            "description": "アイテムのティアを鎧値に加えます"
+                        }
+                    }
+                },
+                "quick": {
+                    "name": "迅速",
+                    "description": "攻撃するとき、ストレスを1マークして射程内の別のクリーチャーも対象にできます。",
+                    "actions": {
+                        "quick": {
+                            "name": "迅速",
+                            "description": "攻撃するとき、ストレスを1マークして射程内の別のクリーチャーも対象にできます。"
+                        }
+                    }
+                },
+                "rebounding": {
+                    "name": "跳弾",
+                    "description": "この武器を投げると手元に戻ってきます。攻撃が失敗したとき、不利で攻撃を振り直せます。"
+                },
+                "recursive": {
+                    "name": "再帰",
+                    "description": "ダメージダイスで最大値が出たとき、追加のダメージダイスを1個振り、その出目を合計ダメージに加えます。この特徴は繰り返し発動します。",
+                    "effects": {
+                        "recursive": {
+                            "name": "再帰",
+                            "description": "ダメージダイスで最大値が出たとき、追加のダメージダイスを1個振り、その出目を合計ダメージに加えます。この特徴は繰り返し発動します。"
+                        }
+                    }
+                },
+                "reliable": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1",
+                    "effects": {
+                        "reliable": {
+                            "name": "信頼",
+                            "description": "攻撃ロール＋1"
+                        }
+                    }
+                },
+                "reloading": {
+                    "name": "リロード中",
+                    "description": "攻撃したあとd6を振ります。1が出たら、再び撃つ前にストレスを1マークしてこの武器をリロードする必要があります。",
+                    "actions": {
+                        "reload": {
+                            "name": "リロード",
+                            "description": "攻撃したあとd6を振ります。1が出たら、再び撃つ前にストレスを1マークしてこの武器をリロードする必要があります。"
+                        }
+                    },
+                    "errors": {
+                        "missingResource": "リロードを使うには、この武器に最大値1以上のリソースが設定されている必要があります。"
+                    }
+                },
+                "retractable": {
+                    "name": "格納式",
+                    "description": "刃を柄に隠して発見を避けられます。"
+                },
+                "returning": {
+                    "name": "帰還",
+                    "description": "この武器を射程内に投げるとき、攻撃の直後に手元へ戻ります。",
+                    "actions": {
+                        "return": {
+                            "name": "戻す",
+                            "description": "この武器を射程内に投げるとき、攻撃の直後に手元へ戻ります。"
+                        }
+                    }
+                },
+                "ricochet": {
+                    "name": "反射",
+                    "description": "この武器を投げると手元に戻ってきます。攻撃するとき、ストレスを1マークして、その攻撃で最初の対象の至近距離内にいる別のクリーチャーも対象にできます。",
+                    "actions": {
+                        "ricochet": {
+                            "name": "反射",
+                            "description": "攻撃するとき、ストレスを1マークして、その攻撃で最初の対象の至近距離内にいる別のクリーチャーも対象にできます。"
+                        }
+                    }
+                },
+                "scary": {
+                    "name": "恐ろしい",
+                    "description": "攻撃成功時、対象はストレスを1マークします。",
+                    "actions": {
+                        "scare": {
+                            "name": "恐れさせる",
+                            "description": "攻撃成功時、対象はストレスを1マークします。"
+                        }
+                    }
+                },
+                "selfCorrecting": {
+                    "name": "自己補正",
+                    "description": "ダメージダイスで1が出たとき、代わりに6ダメージを与えます。",
+                    "effects": {
+                        "selfCorrecting": {
+                            "name": "自己補正",
+                            "description": "ダメージダイスで1が出たとき、代わりに6ダメージを与えます。"
+                        }
+                    }
+                },
+                "serrated": {
+                    "name": "鋸歯",
+                    "description": "ダメージダイスで1が出たとき、代わりに8ダメージを与えます。",
+                    "effects": {
+                        "serrated": {
+                            "name": "鋸歯",
+                            "description": "ダメージダイスで1が出たとき、代わりに8ダメージを与えます。"
+                        }
+                    }
+                },
+                "sharpwing": {
+                    "name": "鋭翼",
+                    "description": "ダメージロールに素早さに等しいボーナスを得ます。",
+                    "effects": {
+                        "sharpwing": {
+                            "name": "鋭翼",
+                            "description": "ダメージロールに素早さに等しいボーナスを得ます。"
+                        }
+                    }
+                },
+                "sheltering": {
+                    "name": "庇護",
+                    "description": "鎧スロットをマークすると、あなたと、同じダメージを受けた近接射程内のすべての味方のダメージが軽減されます。",
+                    "actions": {
+                        "shelter": {
+                            "name": "庇護する",
+                            "description": "鎧スロットをマークすると、あなたと、同じダメージを受けた近接射程内のすべての味方のダメージが軽減されます。"
+                        }
+                    }
+                },
+                "startling": {
+                    "name": "驚愕",
+                    "description": "ストレスを1マークして鞭を鳴らし、近接にいるすべての敵対者を近距離まで押し戻します。",
+                    "actions": {
+                        "startle": {
+                            "name": "驚かせる",
+                            "description": "ストレスを1マークして鞭を鳴らし、近接にいるすべての敵対者を近距離まで押し戻します。"
+                        }
+                    }
+                },
+                "stockpiled": {
+                    "name": "備蓄",
+                    "description": "この武器は@Lookup[@item.attack.range|type:range|adjustment:2]の射程内に投げられます。常に替えを手元に持っているため、回収する必要はありません。"
+                },
+                "targeted": {
+                    "name": "狙撃",
+                    "description": "武器攻撃に失敗したとき、希望を1消費して次の武器攻撃を成功させられます。",
+                    "actions": {
+                        "targeted": {
+                            "name": "狙撃",
+                            "description": "武器攻撃に失敗したとき、希望を1消費して次の武器攻撃を成功させられます。"
+                        }
+                    }
+                },
+                "timebending": {
+                    "name": "時間湾曲",
+                    "description": "攻撃ロールのあとで、攻撃の対象を選べます。",
+                    "actions": {
+                        "bendTime": {
+                            "name": "時間を曲げる",
+                            "description": "攻撃ロールのあとで、攻撃の対象を選べます。"
+                        }
+                    }
+                },
+                "trusty": {
+                    "name": "愛用",
+                    "description": "メイン武器による攻撃ロール＋1。",
+                    "effects": {
+                        "trusty": {
+                            "name": "愛用",
+                            "description": "メイン武器による攻撃ロール＋1。"
+                        }
+                    }
+                },
+                "venomous": {
+                    "name": "猛毒",
+                    "description": "この武器で中傷値以上のダメージを与えたとき、対象は一時的に脆弱になります。",
+                    "actions": {
+                        "venomous": {
+                            "name": "猛毒",
+                            "description": "この武器で中傷値以上のダメージを与えたとき、対象は一時的に脆弱になります。"
+                        }
+                    },
+                    "effects": {
+                        "venomous": {
+                            "name": "猛毒",
+                            "description": ""
+                        }
+                    }
+                },
+                "volleyed": {
+                    "name": "斉射",
+                    "description": "希望を1消費して、射程内のクリーチャーの集団を対象にします。成功した対象は半分のダメージを受けます。"
+                }
+            }
+        },
+        "EFFECTS": {
+            "AddChange": "変更を追加",
+            "ApplyLocations": {
+                "attackRoll": {
+                    "name": "攻撃ロール"
+                },
+                "damageRoll": {
+                    "name": "ダメージロール"
+                },
+                "healingRoll": {
+                    "name": "治癒ロール"
+                }
+            },
+            "ChangeTypes": {
+                "armor": {
+                    "name": "防具",
+                    "FIELDS": {
+                        "value": {
+                            "current": {
+                                "label": "マーク済み鎧スロット"
+                            },
+                            "max": {
+                                "label": "鎧値"
+                            }
+                        },
+                        "interaction": {
+                            "label": "防具との相互作用"
+                        }
+                    }
+                },
+                "standardAttack": {
+                    "name": "標準攻撃",
+                    "FIELDS": {
+                        "damageFormula": "ダメージ式",
+                        "damageTypes": "ダメージ種別",
+                        "attackRange": "攻撃射程",
+                        "img": "攻撃画像",
+                        "name": "攻撃名",
+                        "trait": "攻撃特性"
+                    }
+                }
+            },
+            "Conditionals": {
+                "phase": "フェーズ",
+                "failureMode": "不成立時の挙動",
+                "dataCompare": {
+                    "comparator": "比較演算子"
+                },
+                "weaponRestriction": {
+                    "weaponType": "武器タイプ"
+                },
+                "actionType": {
+                    "actionTypes": "アクションタイプ"
+                },
+                "damageType": {
+                    "damageType": "ダメージ種別"
+                }
+            },
+            "Duration": {
+                "passive": "パッシブ",
+                "temporary": "一時的"
+            },
+            "Types": {
+                "damage": {
+                    "name": "ダメージ"
+                },
+                "hitPoints": {
+                    "name": "ヒットポイント"
+                },
+                "reach": {
+                    "name": "リーチ"
+                },
+                "stress": {
+                    "name": "ストレス"
+                }
+            },
+            "Attachments": {
+                "attachHint": "アイテムをここにドロップして装着",
+                "transferHint": "チェックすると、この効果の親アイテムを所有するアクターに効果が適用されます。このアイテムが別のアイテムに装着されている場合、効果は常に適用されます。"
+            },
+            "OriginTag": "発生源：{name}"
+        },
+        "GENERAL": {
+            "Ability": {
+                "single": "能力",
+                "plural": "能力"
+            },
+            "Action": {
+                "single": "アクション",
+                "plural": "アクション"
+            },
+            "Advantage": {
+                "full": "有利",
+                "plural": "有利",
+                "short": "有利"
+            },
+            "Adversary": {
+                "singular": "敵対者",
+                "plural": "敵対者"
+            },
+            "Attack": {
+                "hpDamageMultiplier": {
+                    "label": "HPダメージ倍率",
+                    "hint": "自分が与えるダメージをこの数で倍化します"
+                },
+                "hpDamageTakenMultiplier": {
+                    "label": "被HPダメージ倍率",
+                    "hint": "自分が受けるダメージをこの数で倍化します"
+                }
+            },
+            "Battlepoints": {
+                "full": "バトルポイント",
+                "short": "BP"
+            },
+            "Bonuses": {
+                "rest": {
+                    "downtimeAction": "ダウンタイムアクション",
+                    "shortRest": {
+                        "shortRestMoves": {
+                            "label": "小休憩：追加小休憩ムーブ",
+                            "hint": "小休憩中に追加で行える小休憩ムーブの数。"
+                        },
+                        "longRestMoves": {
+                            "label": "小休憩：追加大休憩ムーブ",
+                            "hint": "小休憩中に追加で行える大休憩ムーブの数。"
+                        }
+                    },
+                    "longRest": {
+                        "shortRestMoves": {
+                            "label": "大休憩：追加小休憩ムーブ",
+                            "hint": "大休憩中に追加で行える小休憩ムーブの数。"
+                        },
+                        "longRestMoves": {
+                            "label": "大休憩：追加大休憩ムーブ",
+                            "hint": "大休憩中に追加で行える大休憩ムーブの数。"
+                        }
+                    },
+                    "target": "対象",
+                    "targetSelf": "自身"
+                },
+                "maxLoadout": {
+                    "label": "ロードアウトカード上限ボーナス"
+                }
+            },
+            "Character": {
+                "singular": "キャラクター",
+                "plural": "キャラクター"
+            },
+            "Cost": {
+                "single": "コスト",
+                "plural": "コスト"
+            },
+            "Damage": {
+                "massive": "甚大",
+                "severe": "重傷値",
+                "major": "中傷値",
+                "minor": "軽傷値",
+                "none": "なし",
+                "allDamage": "すべてのダメージ",
+                "physicalDamage": "物理ダメージ",
+                "magicalDamage": "魔法ダメージ",
+                "primaryWeapon": "メイン武器ダメージ",
+                "secondaryWeapon": "サブ武器ダメージ"
+            },
+            "DamageResistance": {
+                "none": "なし",
+                "physicalResistance": {
+                    "label": "ダメージ抵抗：物理",
+                    "hint": "1に設定すると物理ダメージが半減します"
+                },
+                "magicalResistance": {
+                    "label": "ダメージ抵抗：魔法",
+                    "hint": "1に設定すると魔法ダメージが半減します"
+                },
+                "physicalImmunity": {
+                    "label": "ダメージ無効：物理",
+                    "hint": "1に設定すると物理ダメージ無効になります"
+                },
+                "magicalImmunity": {
+                    "label": "ダメージ無効：魔法",
+                    "hint": "1に設定すると魔法ダメージ無効になります"
+                },
+                "physicalReduction": {
+                    "label": "ダメージ軽減：物理",
+                    "hint": "物理ダメージをここで設定した量だけ軽減します"
+                },
+                "magicalReduction": {
+                    "label": "ダメージ軽減：魔法",
+                    "hint": "魔法ダメージをここで設定した量だけ軽減します"
+                }
+            },
+            "DamageThresholds": {
+                "title": "ダメージしきい値",
+                "minor": "軽傷値",
+                "major": "中傷値",
+                "severe": "重傷値",
+                "majorThreshold": "中傷値",
+                "severeThreshold": "重傷値",
+                "with": "{threshold}ダメージしきい値"
+            },
+            "Dice": {
+                "single": "ダイス",
+                "plural": "ダイス"
+            },
+            "Difficulty": {
+                "all": "難易度：すべて",
+                "reaction": "難易度：リアクション"
+            },
+            "Disadvantage": {
+                "full": "不利",
+                "short": "不利"
+            },
+            "Domain": {
+                "single": "ドメイン",
+                "plural": "ドメイン",
+                "arcana": {
+                    "label": "アルカナ",
+                    "description": "生得的・直感的な魔術のドメインです。この道を歩む者は、諸領域の生々しく謎めいた力に触れ、元素と自らのエネルギーを操ります。アルカナは不安定な力ですが、正しく導けば極めて強力です。"
+                },
+                "blade": {
+                    "label": "ブレイド",
+                    "description": "武器の熟達に生涯を捧げる者のドメインです。刃、弓、あるいはより特殊な武装であれ、この道を歩む者は他者の命を絶つ技を持ちます。ブレイドは学びと献身を求め、その見返りに死を支配する抗いがたい力を与えます。"
+                },
+                "bone": {
+                    "label": "ボーン",
+                    "description": "俊敏さと戦術の熟達のドメインです。この道を歩む者は、自らの身体能力を驚くほど制御し、戦闘での他者の動きを見抜きます。ボーンは勤勉な鍛錬と引き換えに、身体とその動きについての比類なき理解を与えます。"
+                },
+                "codex": {
+                    "label": "コーデックス",
+                    "description": "集中的な魔術研究のドメインです。魔術の知識を求める者は、書物、巻物、壁に刻まれたもの、身体に刺青された力の処方に向かいます。コーデックスは、ありふれた知識の先を求める献身者に、統率力があり多彩な魔術の理解を与えます。"
+                },
+                "dread": {
+                    "label": "恐慄",
+                    "description": "恐慄は悪夢と恐怖のドメインです。この道を選んだ者は怪異を呼び出し、敵を衰弱させ、恐るべき魔法を操って敵を滅ぼします。恐慄は、大半の者が恐れて手を出さない力を信奉者に与えます。"
+                },
+                "grace": {
+                    "label": "グレイス",
+                    "description": "カリスマのドメインです。熱狂的な語り、巧みな魅力、あるいは嘘の帳を通して、この力を操る者は敵対者の現実を定義し、認識を意のままに曲げます。グレイスは生の磁力と言語の熟達を与えます。"
+                },
+                "midnight": {
+                    "label": "ミッドナイト",
+                    "description": "影と秘密のドメインです。巧妙な策略であれ夜の帳であれ、この力を操る者は隠蔽の技に長け、届かない隠されたものはありません。ミッドナイトは、謎を操り生み出す驚くべき力を与えます。"
+                },
+                "sage": {
+                    "label": "セージ",
+                    "description": "自然界のドメインです。この道を歩む者は、大地とその生き物の奔放な力に触れ、生の魔術を解き放ちます。セージは、咲き誇る花の生命力と飢えた捕食者の獰猛さを与えます。"
+                },
+                "splendor": {
+                    "label": "スプレンダー",
+                    "description": "生命のドメインです。この魔術により、従う者は治癒の力を得ますが、その力は死もある程度支配します。スプレンダーは、命を与え、終わらせる壮麗な力を弟子に授けます。"
+                },
+                "valor": {
+                    "label": "ヴァラー",
+                    "description": "守護のドメインです。攻撃であれ防御であれ、この道を選ぶ者は戦いの中で味方を守る強大な力を導きます。ヴァラーは、他者を守るために盾を掲げる者に大いなる力を与えます。"
+                }
+            },
+            "Effect": {
+                "single": "効果",
+                "plural": "効果"
+            },
+            "Experience": {
+                "single": "経験",
+                "plural": "経験"
+            },
+            "Healing": {
+                "healingAmount": "治癒量"
+            },
+            "Modifier": {
+                "single": "修正値",
+                "plural": "修正値"
+            },
+            "Neutral": {
+                "full": "なし",
+                "short": "なし"
+            },
+            "Range": {
+                "other": "射程増加：その他",
+                "spell": "射程増加：呪文",
+                "weapon": "射程増加：武器"
+            },
+            "RefreshType": {
+                "scene": "シーン",
+                "session": "セッション",
+                "shortrest": "小休憩",
+                "longrest": "大休憩"
+            },
+            "Resource": {
+                "single": "リソース",
+                "plural": "リソース",
+                "unloaded": "武器が装填されていません",
+                "loaded": "武器は装填されています"
+            },
+            "Roll": {
+                "attack": "攻撃ロール",
+                "basic": "ロール",
+                "difficulty": "ロール（難易度 {difficulty}）",
+                "primaryWeaponAttack": "メイン武器攻撃ロール",
+                "secondaryWeaponAttack": "サブ武器攻撃ロール",
+                "spellcast": "呪文発動ロール",
+                "trait": "特性ロール",
+                "action": "アクションロール",
+                "reaction": "リアクションロール"
+            },
+            "Rules": {
+                "conditionImmunities": {
+                    "hidden": "状態無効：隠密",
+                    "restrained": "状態無効：拘束",
+                    "vulnerable": "状態無効：脆弱"
+                },
+                "damageReduction": {
+                    "disabledArmor": {
+                        "label": "無効な鎧スロット"
+                    },
+                    "increasePerArmorMark": {
+                        "label": "鎧スロットごとのダメージ軽減",
+                        "hint": "使用した鎧スロットは通常、ダメージを1段階軽減します。この値は軽減する段階数を増やします。"
+                    },
+                    "magical": {
+                        "label": "ダメージ軽減：魔法のみ",
+                        "hint": "防具は魔法ダメージの軽減にのみ使えます"
+                    },
+                    "maxArmorMarkedBonus": "使用鎧スロット上限",
+                    "maxArmorMarkedStress": {
+                        "label": "ストレス使用時の最大鎧スロット",
+                        "hint": "この値を設定すると、通常の上限を超えて追加の鎧マークに、その数までストレスを使えます。"
+                    },
+                    "reduceSeverity": {
+                        "magical": {
+                            "label": "ダメージしきい値軽減：魔法",
+                            "hint": "受ける魔法ダメージのしきい値を、設定した段階数だけ下げます"
+                        },
+                        "physical": {
+                            "label": "ダメージしきい値軽減：物理",
+                            "hint": "受ける物理ダメージのしきい値を、設定した段階数だけ下げます"
+                        }
+                    },
+                    "physical": {
+                        "label": "ダメージ軽減：物理のみ",
+                        "hint": "防具は物理ダメージの軽減にのみ使えます"
+                    },
+                    "stress": {
+                        "any": {
+                            "label": "ストレスによるダメージ軽減：すべて",
+                            "hint": "受けるダメージを1段階下げるために支払えるストレスコスト"
+                        },
+                        "severe": {
+                            "label": "ストレスによるダメージ軽減：重傷値",
+                            "hint": "重傷値を中傷値まで下げるために支払えるストレスコスト。"
+                        },
+                        "major": {
+                            "label": "ストレスによるダメージ軽減：中傷値",
+                            "hint": "中傷値を軽傷値まで下げるために支払えるストレスコスト。"
+                        },
+                        "minor": {
+                            "label": "ストレスによるダメージ軽減：軽傷値",
+                            "hint": "軽傷値をなしまで下げるために支払えるストレスコスト。"
+                        }
+                    },
+                    "thresholdImmunities": {
+                        "minor": {
+                            "label": "しきい値無効：軽傷値",
+                            "hint": "1に設定すると軽傷値を自動で無視します"
+                        }
+                    }
+                },
+                "attack": {
+                    "damage": {
+                        "dice": {
+                            "label": "基本攻撃：ダメージダイスインデックス",
+                            "hint": "基本攻撃で使うダメージダイスのインデックス。0=d4、1=d6、2=d8、3=d10、4=d12、5=d20"
+                        },
+                        "bonus": {
+                            "label": "基本攻撃：ダメージボーナス"
+                        }
+                    },
+                    "roll": {
+                        "trait": {
+                            "label": "基本攻撃：特性"
+                        }
+                    }
+                }
+            },
+            "SpotlightRequests": {
+                "singular": "スポットライトリクエスト",
+                "plural": "スポットライトリクエスト"
+            },
+            "Tabs": {
+                "details": "詳細",
+                "attack": "攻撃",
+                "experiences": "経験",
+                "features": "特徴",
+                "actions": "アクション",
+                "potentialAdversaries": "想定される敵対者",
+                "adversaries": "敵対者",
+                "advancement": "レベル成長",
+                "selections": "成長の選択",
+                "summary": "要約",
+                "effects": "効果",
+                "settings": "設定",
+                "description": "説明",
+                "main": "データ",
+                "information": "情報",
+                "itemFeatures": "アイテム特徴",
+                "notes": "メモ",
+                "inventory": "アイテム",
+                "loadout": "ロードアウト",
+                "vault": "保管庫",
+                "heritage": "種族",
+                "story": "物語",
+                "biography": "経歴",
+                "general": "一般",
+                "resources": "リソース",
+                "foundation": "基盤",
+                "specialization": "特化",
+                "mastery": "熟達",
+                "optional": "任意",
+                "recovery": "回復",
+                "setup": "セットアップ",
+                "equipment": "装備",
+                "attachments": "装着",
+                "advanced": "上級",
+                "tier1": "ティア1",
+                "tier2": "ティア2",
+                "tier3": "ティア3",
+                "tier4": "ティア4",
+                "domains": "ドメイン",
+                "downtime": "ダウンタイム",
+                "roll": "ロール",
+                "rules": "ルール",
+                "partyMembers": "パーティメンバー",
+                "projects": "プロジェクト",
+                "types": "タイプ",
+                "questions": "質問",
+                "configuration": "設定",
+                "base": "基本",
+                "triggers": "トリガー",
+                "deathMoves": "デスムーブ",
+                "sources": "ソース",
+                "packs": "パック",
+                "conditionals": "条件"
+            },
+            "Tiers": {
+                "1": "ティア1",
+                "2": "ティア2",
+                "3": "ティア3",
+                "4": "ティア4",
+                "singular": "ティア",
+                "typed": "ティア{tier} {type}"
+            },
+            "Trait": {
+                "single": "特性",
+                "plural": "特性"
+            },
+            "Transformation": {
+                "single": "変身",
+                "plural": "変身"
+            },
+            "actorName": "アクター名",
+            "amount": "量",
+            "any": "すべて",
+            "armor": "防具",
+            "armorFeatures": "防具特徴",
+            "armors": "防具",
+            "armorScore": "鎧値",
+            "activeEffects": "アクティブ効果",
+            "armorSlots": "鎧スロット",
+            "artistAttribution": "イラスト：{artist}",
+            "attack": "攻撃",
+            "automation": "自動化",
+            "basics": "基本",
+            "bonus": "ボーナス",
+            "burden": "負荷",
+            "condition": "状態",
+            "continue": "続ける",
+            "criticalSuccess": "クリティカル成功",
+            "criticalShort": "クリティカル",
+            "currentLevel": "現在のレベル",
+            "custom": "カスタム",
+            "d20Roll": "D20ロール",
+            "damage": "ダメージ",
+            "damageRoll": "ダメージロール",
+            "damageType": "ダメージ種別",
+            "description": "説明",
+            "difficulty": "難易度",
+            "downtime": "ダウンタイム",
+            "dropActorsHere": "アクターをここにドロップ",
+            "dropFeaturesHere": "特徴をここにドロップ",
+            "duality": "デュアリティ",
+            "dualityDice": "デュアリティダイス",
+            "dualityRoll": "デュアリティロール",
+            "effect": "効果",
+            "enabled": "有効",
+            "evasion": "回避値",
+            "equipment": "装備",
+            "experience": {
+                "single": "経験",
+                "plural": "経験"
+            },
+            "failure": "失敗",
+            "fate": "運命",
+            "fateRoll": "運命ロール",
+            "fear": "恐怖",
+            "features": "特徴",
+            "formula": "式",
+            "general": "一般",
+            "gm": "GM",
+            "guaranteedCriticalSuccess": "確定クリティカル成功",
+            "healing": "治癒",
+            "healingRoll": "治癒ロール",
+            "hit": {
+                "single": "命中",
+                "plural": "命中"
+            },
+            "HitPoints": {
+                "single": "ヒットポイント",
+                "plural": "ヒットポイント",
+                "short": "HP"
+            },
+            "hope": "希望",
+            "hordeHp": "群れHP",
+            "icon": "アイコン",
+            "identify": "アイデンティティ",
+            "imagePath": "画像パス",
+            "immune": "無効",
+            "inactiveEffects": "無効な効果",
+            "initial": "初期",
+            "inventory": "アイテム",
+            "itemResource": "アイテムリソース",
+            "itemQuantity": "アイテム数量",
+            "items": "アイテム",
+            "key": "キー",
+            "label": "ラベル",
+            "level": "レベル",
+            "levelShort": "Lv",
+            "levelUp": "レベルアップ",
+            "loadout": "ロードアウト",
+            "max": "最大",
+            "miss": {
+                "single": "外れ",
+                "plural": "外れ"
+            },
+            "missingX": "{x}がありません",
+            "missingItemDescription": "参照先のアイテムはもう存在しません",
+            "maxWithThing": "最大{thing}",
+            "missingDragDropThing": "{thing} をここにドロップ",
+            "multiclass": "マルチクラス",
+            "name": "名前",
+            "newCategory": "新しいカテゴリ",
+            "newThing": "新しい{thing}",
+            "next": "次へ",
+            "none": "なし",
+            "noTarget": "現在の対象なし",
+            "opacity": "不透明度",
+            "optionalThing": "任意の{thing}",
+            "partner": "パートナー",
+            "player": {
+                "single": "プレイヤー",
+                "plural": "プレイヤー"
+            },
+            "portrait": "肖像",
+            "preview": "プレビュー",
+            "proficiency": "習熟",
+            "quantity": "数量",
+            "range": "射程",
+            "reactionRoll": "リアクションロール",
+            "recovery": "回復",
+            "refresh": "回復",
+            "reroll": "振り直し",
+            "rerolled": "振り直し済み",
+            "rerollThing": "{thing} を振り直す",
+            "resistant": "抵抗",
+            "result": {
+                "single": "結果",
+                "plural": "結果"
+            },
+            "roll": "ロール",
+            "rollAll": "すべて振る",
+            "rollDamage": "ダメージを振る",
+            "rollWith": "{roll}ロール",
+            "save": "保存",
+            "saveSettings": "設定を保存",
+            "scalable": "可変",
+            "scars": "傷跡",
+            "situationalBonus": "状況ボーナス",
+            "searchPlaceholder": "検索...",
+            "spellcastTrait": "呪文発動特性",
+            "spent": "消費済み",
+            "step": "段階",
+            "stress": "ストレス",
+            "subclasses": "サブクラス",
+            "subType": "サブタイプ",
+            "success": "成功",
+            "summon": {
+                "single": "召喚",
+                "plural": "召喚"
+            },
+            "take": "取る",
+            "Target": {
+                "single": "対象",
+                "plural": "対象"
+            },
+            "thingsAndThing": "{things}と{thing}",
+            "title": "タイトル",
+            "tokenSize": "トークンサイズ",
+            "total": "合計",
+            "traitModifier": "特性修正",
+            "true": "はい",
+            "type": "タイプ",
+            "typeSheet": "システム{type}シート",
+            "unarmed": "素手",
+            "unarmedAttack": "素手攻撃",
+            "unarmored": "非装甲",
+            "use": "使う",
+            "used": "使用済み",
+            "uses": "使用回数",
+            "value": "値",
+            "weaponFeatures": "武器特徴",
+            "weapons": "武器",
+            "withThing": "{thing}付き"
+        },
+        "ITEMS": {
+            "FIELDS": {
+                "attribution": {
+                    "source": {
+                        "label": "ソース"
+                    },
+                    "page": {
+                        "label": "ページ"
+                    },
+                    "artist": {
+                        "label": "アーティスト"
+                    }
+                },
+                "resource": {
+                    "amount": {
+                        "label": "量"
+                    },
+                    "dieFaces": {
+                        "label": "ダイス面"
+                    },
+                    "icon": {
+                        "label": "アイコン"
+                    },
+                    "max": {
+                        "label": "最大"
+                    },
+                    "progression": {
+                        "label": "進行"
+                    },
+                    "recovery": {
+                        "label": "回復"
+                    },
+                    "type": {
+                        "label": "タイプ"
+                    },
+                    "value": {
+                        "label": "値"
+                    }
+                },
+                "identifier": {
+                    "label": "識別子"
+                },
+                "gmNotes": {
+                    "label": "GMノート"
+                },
+                "loreReference": {
+                    "label": "ロア参照",
+                    "hint": "詳細説明ジャーナルページのパスまたはID"
+                }
+            },
+            "Ancestry": {
+                "primaryFeature": "主特徴",
+                "secondaryFeature": "副特徴",
+                "featuresLabel": "種族特徴"
+            },
+            "Armor": {
+                "baseScore": "基礎鎧値",
+                "baseThresholds": {
+                    "base": "基礎しきい値",
+                    "major": "中傷値",
+                    "severe": "重傷値"
+                }
+            },
+            "Base": {
+                "addGMNote": "GMノートを追加",
+                "viewReference": "詳細を表示",
+                "Refresh": {
+                    "Title": "コンペンディウムから再取得",
+                    "AreYouSure": "このアイテムを新しい内容で更新してよろしいですか？",
+                    "Error": {
+                        "doesNotExist": "このドキュメントはコンペンディウムに対応するものがありません",
+                        "invalidTier": "このドキュメントは元データと異なるティアです。ティアが変更されている可能性があります",
+                        "invalidType": "元のドキュメントのタイプが正しくありません"
+                    }
+                }
+            },
+            "Beastform": {
+                "FIELDS": {
+                    "beastformType": {
+                        "label": "ビーストフォームタイプ"
+                    },
+                    "tier": {
+                        "label": "ティア"
+                    },
+                    "mainTrait": {
+                        "label": "主特性"
+                    },
+                    "examples": {
+                        "label": "例"
+                    },
+                    "advantageOn": {
+                        "label": "有利になる対象"
+                    },
+                    "tokenImg": {
+                        "label": "トークン画像"
+                    },
+                    "tokenRingImg": {
+                        "label": "サブジェクトテクスチャ"
+                    },
+                    "tokenSize": {
+                        "placeholder": "トークンサイズ",
+                        "disabledPlaceholder": "トークンサイズ",
+                        "height": {
+                            "label": "高さ"
+                        },
+                        "width": {
+                            "label": "幅"
+                        },
+                        "depth": {
+                            "label": "奥行き"
+                        },
+                        "scale": {
+                            "label": "トークンスケール"
+                        }
+                    },
+                    "evolved": {
+                        "maximumTier": {
+                            "label": "最大ティア"
+                        },
+                        "mainTraitBonus": {
+                            "label": "主特性ボーナス"
+                        },
+                        "damageBonus": {
+                            "label": "ダメージボーナス"
+                        },
+                        "evasionBonus": {
+                            "label": "回避値ボーナス"
+                        },
+                        "increaseDamageDice": {
+                            "label": "ダメージダイスサイズ上昇"
+                        }
+                    },
+                    "hybrid": {
+                        "beastformOptions": {
+                            "label": "ビーストフォーム数"
+                        },
+                        "advantages": {
+                            "label": "有利の数"
+                        },
+                        "features": {
+                            "label": "特徴の数"
+                        }
+                    }
+                },
+                "attackName": "ビースト攻撃",
+                "beastformEffect": "ビーストフォーム変身",
+                "dialogTitle": "ビーストフォーム選択",
+                "tokenTitle": "ビーストフォームトークン",
+                "transform": "変身",
+                "evolve": "進化する",
+                "evolvedFeatureTitle": "進化",
+                "evolvedDrag": "形態をここにドラッグして進化させます。",
+                "hybridize": "ハイブリッド化",
+                "hybridizeFeatureTitle": "ハイブリッド特徴",
+                "hybridizeDrag": "形態をここにドラッグしてハイブリッド化します。",
+                "mainTrait": "主特性",
+                "traitBonus": "特性ボーナス",
+                "evolvedTokenHint": "進化したビーストフォームのトークンは、進化元の形態のトークンに基づきます",
+                "evolvedImagePlaceholder": "進化に選んだ形態の画像が使われます"
+            },
+            "Class": {
+                "startingEvasionScore": "開始回避値",
+                "startingHitPoints": "開始HP",
+                "classItems": "クラスアイテム",
+                "hopeFeatureLabel": "{class}の希望特徴",
+                "hopeFeatures": "希望特徴",
+                "classFeature": "クラス特徴",
+                "classFeatures": "クラス特徴",
+                "guide": {
+                    "suggestedEquipment": "推奨装備",
+                    "suggestedPrimaryWeaponTitle": "メイン武器",
+                    "suggestedSecondaryWeaponTitle": "サブ武器",
+                    "suggestedArmorTitle": "防具",
+                    "inventory": {
+                        "thenChoose": "次のいずれかを選ぶ",
+                        "andEither": "または"
+                    }
+                }
+            },
+            "Community": {
+                "featuresLabel": "コミュニティ特徴"
+            },
+            "Consumable": {
+                "consumeOnUse": "使用時に消費"
+            },
+            "DomainCard": {
+                "type": "タイプ",
+                "recallCost": "リコールコスト",
+                "vaultActive": "保管庫でも有効",
+                "loadoutIgnore": "ロードアウト上限を無視",
+                "domainTouched": "ドメイン接触",
+                "foundationTitle": "基盤",
+                "specializationTitle": "特化",
+                "masteryTitle": "熟達"
+            },
+            "Feature": {
+                "activeWhenEvolved": "進化時に有効",
+                "evolutionFeature": "進化特徴",
+                "evolutionLocked": "進化アクションを持つ特徴は進化タイプでなければなりません",
+                "actorResources": "アクターリソース"
+            },
+            "Subclass": {
+                "spellcastingTrait": "呪文発動特性",
+                "spellcastTrait": "呪文発動特性",
+                "foundationFeatures": "基盤特徴",
+                "specializationFeature": "特化特徴",
+                "masteryFeature": "熟達特徴"
+            },
+            "Transformation": {
+                "featuresLabel": "変身特徴"
+            },
+            "Weapon": {
+                "weaponType": "武器タイプ",
+                "configureAttack": "攻撃を設定",
+                "primaryWeapon": {
+                    "full": "メイン武器",
+                    "short": "メイン"
+                },
+                "secondaryWeapon": {
+                    "full": "サブ武器",
+                    "short": "サブ"
+                }
+            }
+        },
+        "MACROS": {
+            "Spotlight": {
+                "errors": {
+                    "noTokenSelected": "スポットライトを当てるには、キャンバス上のトークンを選択またはホバーする必要があります"
+                }
+            }
+        },
+        "ROLLTABLES": {
+            "FIELDS": {
+                "formulaName": {
+                    "label": "式の名前"
+                }
+            },
+            "formula": "式"
+        },
+        "SETTINGS": {
+            "Appearance": {
+                "FIELDS": {
+                    "displayFear": {
+                        "label": "恐怖を表示"
+                    },
+                    "fearPosition": {
+                        "label": "恐怖の位置"
+                    },
+                    "displayCountdownUI": {
+                        "label": "カウントダウンUIを表示"
+                    },
+                    "showGenericStatusEffects": {
+                        "label": "Foundryの状態効果を表示"
+                    },
+                    "showTokenDistance": {
+                        "label": "ホバー時にトークン距離を表示",
+                        "choices": {
+                            "always": "常に",
+                            "encounters": "遭遇",
+                            "never": "しない"
+                        }
+                    },
+                    "expandedTitle": "説明を自動展開",
+                    "extendCharacterDescriptions": {
+                        "label": "キャラクター"
+                    },
+                    "extendAdversaryDescriptions": {
+                        "label": "敵対者"
+                    },
+                    "extendEnvironmentDescriptions": {
+                        "label": "環境"
+                    },
+                    "extendItemDescriptions": {
+                        "label": "アイテム"
+                    },
+                    "expandRollMessage": {
+                        "title": "メッセージ欄を自動展開",
+                        "desc": {
+                            "label": "説明"
+                        },
+                        "roll": {
+                            "label": "式"
+                        },
+                        "damage": {
+                            "label": "ダメージ／治癒"
+                        },
+                        "target": {
+                            "label": "対象"
+                        }
+                    },
+                    "useResourcePips": {
+                        "label": "リソースをピップ表示"
+                    },
+                    "tooltipCardTheme": {
+                        "label": "ツールチップカードのテーマ"
+                    }
+                },
+                "fearDisplay": {
+                    "token": "トークン",
+                    "bar": "バー",
+                    "hide": "非表示"
+                },
+                "fearPosition": {
+                    "free": "自由",
+                    "topCenter": "上＋中央",
+                    "bottomCenter": "下＋中央",
+                    "rightTop": "右＋上",
+                    "leftBottom": "左＋下"
+                }
+            },
+            "Automation": {
+                "fear": {
+                    "name": "恐怖",
+                    "hint": "デュアリティロールが恐怖結果のとき、GMの恐怖プールを自動で増やします。"
+                },
+                "FIELDS": {
+                    "autoExpireActiveEffects": {
+                        "label": "アクティブ効果を自動期限切れ",
+                        "hint": "持続時間が設定されたアクティブ効果は、時間が切れると自動的に削除されます"
+                    },
+                    "damageReductionRulesDefault": {
+                        "label": "ダメージ軽減ルールの既定",
+                        "hint": "防具と軽減のルールを既定でオンにするか"
+                    },
+                    "defeated": {
+                        "enabled": {
+                            "label": "有効"
+                        },
+                        "overlay": {
+                            "label": "オーバーレイ効果"
+                        },
+                        "characterDefault": {
+                            "label": "キャラクターの既定撃破状態"
+                        },
+                        "adversaryDefault": {
+                            "label": "敵対者の既定撃破状態"
+                        },
+                        "companionDefault": {
+                            "label": "相棒の既定撃破状態"
+                        },
+                        "deathMove": {
+                            "label": "デスムーブ"
+                        },
+                        "dead": {
+                            "label": "死亡"
+                        },
+                        "defeated": {
+                            "label": "撃破"
+                        },
+                        "unconscious": {
+                            "label": "気絶"
+                        }
+                    },
+                    "hopeFear": {
+                        "label": "希望と恐怖",
+                        "gm": {
+                            "label": "GM"
+                        },
+                        "players": {
+                            "label": "プレイヤー"
+                        }
+                    },
+                    "vulnerableAutomation": {
+                        "label": "脆弱の自動化",
+                        "hint": "アクターのストレスが最大になったとき、脆弱状態を自動付与します"
+                    },
+                    "countdownAutomation": {
+                        "label": "カウントダウン自動化",
+                        "hint": "進行設定に基づいてカウントダウンを自動進行します"
+                    },
+                    "levelupAuto": {
+                        "label": "レベルアップ自動化",
+                        "hint": "選択を終えてレベルアップを完了すると、数値の変更がキャラクターに自動適用されます。"
+                    },
+                    "hordeDamage": {
+                        "label": "群れダメージ自動化",
+                        "hint": "HPが半分以下になったとき、群れ効果を自動発動してダメージを下げます。"
+                    },
+                    "effects": {
+                        "rangeDependent": {
+                            "label": "効果の射程依存",
+                            "hint": "射程依存が定義された効果は、距離に応じて自動でオン／オフされます"
+                        }
+                    },
+                    "reload": {
+                        "label": "リロード判定",
+                        "hint": "システムがリロード判定を自動で振るか、チャットのボタン手動押下を待つか"
+                    },
+                    "resourceScrollTexts": {
+                        "label": "リソース変化のスクロールテキストを表示",
+                        "hint": "キャラクターがダメージを受けたり防具を使ったりすると、トークン際にスクロールテキストが一瞬表示されます。"
+                    },
+                    "roll": {
+                        "damage": {
+                            "label": "ダメージ／治癒ロール",
+                            "hint": "攻撃／呪文発動のあとのダメージ＆治癒ロールの自動動作。"
+                        },
+                        "save": {
+                            "label": "リアクションロール",
+                            "hint": "リアクションロールが必要な場合の自動動作。行動前に対象を選択する必要があります"
+                        },
+                        "damageApply": {
+                            "label": "ダメージ／治癒を適用",
+                            "hint": "ダメージと治癒を自動適用します。行動前に対象を選択する必要があり、リアクションロール自動化は「しない」以外である必要があります。ユーザー権限をバイパスします。"
+                        },
+                        "effect": {
+                            "label": "効果を適用",
+                            "hint": "効果を自動適用します。行動前に対象を選択する必要があり、リアクションロール自動化は「しない」以外である必要があります。ユーザー権限をバイパスします。"
+                        }
+                    },
+                    "triggers": {
+                        "enabled": {
+                            "label": "有効",
+                            "hint": "ウィザードの奇妙な模様などのポップアップを出す高度な自動化"
+                        }
+                    },
+                    "summaryMessages": {
+                        "label": "要約メッセージ"
+                    }
+                },
+                "defeated": {
+                    "title": "撃破時の処理"
+                },
+                "roll": {
+                    "title": "アクション"
+                },
+                "trigger": {
+                    "title": "トリガー"
+                }
+            },
+            "Metagaming": {
+                "FIELDS": {
+                    "hideObserverPermissionInChat": {
+                        "label": "プレイヤーからチャット情報を隠す",
+                        "hint": "敵対者への攻撃ロールの命中／外れなどの情報が非表示になります"
+                    },
+                    "hidePartyStats": {
+                        "label": "パーティ数値を隠す",
+                        "hint": "パーティシートのメンバー一覧のリソースと数値は、同じパーティのユーザーでも、次のユーザーには非表示になります",
+                        "choices": {
+                            "never": "しない（常に表示）",
+                            "players": "プレイヤーから隠す",
+                            "always": "全員から隠す"
+                        }
+                    }
+                }
+            },
+            "Homebrew": {
+                "newDowntimeMove": "ダウンタイムムーブ",
+                "downtimeMove": "ダウンタイムムーブ",
+                "armorFeature": "防具特徴",
+                "weaponFeature": "武器特徴",
+                "newFeature": "新しいアイテム特徴",
+                "downtimeMoves": "ダウンタイムムーブ",
+                "itemFeatures": "アイテム特徴",
+                "nrChoices": "休憩ごとのムーブ数",
+                "resetMovesTitle": "{type}のダウンタイムムーブをリセット",
+                "resetItemFeaturesTitle": "{type} をリセット",
+                "resetMovesText": "リセットしますか？",
+                "deleteItemTitle": "ホームブリューアイテムを削除",
+                "deleteItemText": "このアイテムを削除しますか？",
+                "deleteResourceTitle": "ホームブリューリソースを削除",
+                "deleteResourceText": "このリソースを削除しますか？",
+                "FIELDS": {
+                    "domains": {
+                        "color": {
+                            "label": "バナー色"
+                        },
+                        "invertText": {
+                            "label": "文字色を反転"
+                        }
+                    },
+                    "maxFear": {
+                        "label": "最大恐怖"
+                    },
+                    "maxHope": {
+                        "label": "最大希望"
+                    },
+                    "traitArray": {
+                        "label": "初期特性修正値"
+                    },
+                    "maxLoadout": {
+                        "label": "ロードアウトのカード上限",
+                        "hint": "無制限にするには空白または0にしてください"
+                    },
+                    "resources": {
+                        "resources": {
+                            "value": {
+                                "label": "アイコン"
+                            },
+                            "isIcon": {
+                                "label": "Font Awesomeアイコン"
+                            },
+                            "noColorFilter": {
+                                "label": "カラーフィルターを無効化"
+                            }
+                        }
+                    },
+                    "maxDomains": {
+                        "label": "クラスドメイン上限",
+                        "hint": "クラスに設定できるドメインの上限"
+                    },
+                    "tokenSizes": {
+                        "label": "トークンサイズ"
+                    }
+                },
+                "currency": {
+                    "title": "通貨の上書き",
+                    "changeIcon": "通貨アイコンを変更",
+                    "currencyName": "通貨名",
+                    "coinName": "コイン名",
+                    "handfulName": "一握りの名前",
+                    "iconName": "アイコン名",
+                    "iconNameHint": "アイコンはFont Awesomeです",
+                    "bagName": "袋の名前",
+                    "chestName": "箱の名前",
+                    "denomination": "通貨単位",
+                    "initialAmount": "開始量"
+                },
+                "domains": {
+                    "domainsTitle": "基本ドメイン",
+                    "homebrewDomains": "ホームブリュードメイン",
+                    "newDomain": "新しいドメイン",
+                    "newDomainInputTitle": "ホームブリュードメインを作成",
+                    "newDomainInputLabel": "新しいドメイン名",
+                    "newDomainInputHint": "後から変更できません",
+                    "editDomain": "有効なドメイン",
+                    "deleteDomain": "ドメインを削除",
+                    "deleteDomainText": "ドメイン「{name}」を削除しますか？このワールドで使用中のすべてのアクターから直ちに削除されます。辞典はクリアされません。",
+                    "duplicateDomain": "この識別子のドメインはすでにあります。"
+                },
+                "adversaryType": {
+                    "title": "カスタム敵対者タイプ",
+                    "newType": "敵対者タイプ"
+                },
+                "resources": {
+                    "typeTitle": "{type}リソース",
+                    "filledIcon": "充填アイコン",
+                    "emptyIcon": "空アイコン",
+                    "resourceIdentifier": "リソース識別子",
+                    "setResourceIdentifier": "リソース識別子を設定"
+                }
+            },
+            "Keybindings": {
+                "partySheet": {
+                    "name": "パーティシートを切り替え",
+                    "hint": "アクティブなパーティのシートを開閉します"
+                },
+                "spotlight": {
+                    "name": "戦闘参加者にスポットライト",
+                    "hint": "ホバーまたは選択中で、進行中の遭遇にいるトークンへスポットライトを移します"
+                }
+            },
+            "Menu": {
+                "title": "ダガーハートのゲーム設定",
+                "automation": {
+                    "name": "自動化設定",
+                    "label": "自動化を設定",
+                    "hint": "リソース管理などを自動化する各種設定"
+                },
+                "metagaming": {
+                    "name": "メタ情報設定",
+                    "label": "メタ情報を設定",
+                    "hint": "プレイヤーへの情報の流れを制御する各種設定"
+                },
+                "homebrew": {
+                    "name": "ホームブリュー設定",
+                    "label": "ホームブリューを設定",
+                    "hint": "タイプの拡張やルール変更を可能にする各種設定"
+                },
+                "range": {
+                    "name": "射程設定",
+                    "label": "射程の扱いを設定",
+                    "hint": "ダガーハートの射程表示用ルーラー設定"
+                },
+                "appearance": {
+                    "label": "外観設定",
+                    "hint": "システムの各所の見た目を変更します",
+                    "duality": "デュアリティロール"
+                },
+                "variantRules": {
+                    "title": "選択ルール",
+                    "label": "選択ルール",
+                    "hint": "ダガーハートシステムの選択ルールを適用します",
+                    "name": "選択ルール",
+                    "actionTokens": "アクショントークン"
+                },
+                "SpotlightRequestQueue": {
+                    "name": "スポットライトリクエストキュー",
+                    "label": "スポットライトリクエストキュー",
+                    "hint": "スポットライトリクエストを古い順に並べ、より構造化します"
+                }
+            },
+            "Resources": {
+                "fear": {
+                    "name": "恐怖",
+                    "hint": "GMの恐怖プール。"
+                }
+            },
+            "VariantRules": {
+                "FIELDS": {
+                    "actionTokens": {
+                        "enabled": {
+                            "label": "有効"
+                        },
+                        "tokens": {
+                            "label": "トークン"
+                        },
+                        "automation": {
+                            "label": "自動化",
+                            "hint": "戦闘参加者がターンを取るたびに、アクションポイントを自動で与え／奪います。"
+                        }
+                    },
+                    "massiveDamage": {
+                        "title": "甚大ダメージ",
+                        "enabled": {
+                            "label": "有効"
+                        }
+                    }
+                }
+            },
+            "ResetSettings": {
+                "resetConfirmationTitle": "設定をリセット",
+                "resetConfirmationText": "{settings} をリセットしますか？"
+            },
+            "Scene": {
+                "FIELDS": {
+                    "rangeMeasurement": {
+                        "setting": {
+                            "label": "設定"
+                        }
+                    }
+                },
+                "disabledText": "ダガーハートの計測はシステム設定の選択ルールで無効になっています",
+                "rangeMeasurement": "射程計測",
+                "sceneEnvironments": "シーンの環境",
+                "dragEnvironmentHere": "環境をここにドラッグ"
+            }
+        },
+        "UI": {
+            "Chat": {
+                "action": {
+                    "title": "アクション"
+                },
+                "appliedTo": "適用先",
+                "applyEffect": {
+                    "title": "効果を適用 - {name}"
+                },
+                "attackRoll": {
+                    "title": "攻撃 - {attack}",
+                    "rollDamage": "ダメージを振る",
+                    "rollHealing": "治癒を振る",
+                    "applyEffect": "効果を適用"
+                },
+                "clearResource": "{quantity} {resource} を消す",
+                "clearResourceFully": "{resource}を完全に消す",
+                "damageSummary": {
+                    "title": "ダメージを適用しました",
+                    "healingTitle": "治癒を適用しました",
+                    "undoDamage": "{type}を取り消す"
+                },
+                "damageRoll": {
+                    "title": "ダメージ - {damage}",
+                    "dealDamageToTargets": "命中した対象にダメージ",
+                    "dealDamage": "ダメージを与える",
+                    "rollDamage": "ダメージを振る",
+                    "hitTarget": "命中",
+                    "targetingInitial": "対象",
+                    "targetingSelected": "選択中",
+                    "totalTargetedTokens": "{total}件選択",
+                    "noTokensSelected": "トークン未選択",
+                    "setSelectedAsTargets": "選択中を対象に設定"
+                },
+                "deathMove": {
+                    "title": "デスムーブ",
+                    "gainScar": "傷跡を得ました。",
+                    "avoidScar": "新たな傷跡を免れました。",
+                    "journeysEnd": "傷跡が{scars}あり、最後の希望スロットを消しました。キャラクターの旅は終わります。",
+                    "riskItAllCritical": "クリティカルが出ました。マーク済みのストレスとHPをすべて消します。",
+                    "riskItAllFailure": "恐怖ダイスのほうが高かった。あなたは死の帳を越えました。",
+                    "blazeOfGlory": "栄光の炎の効果を追加しました！",
+                    "riskItAllDialogButton": "ストレスとHPを消す。",
+                    "riskItAllSuccessWithEnoughHope": "希望の値が、マーク済みストレスとHPの合計を上回っています。両方とも完全に消されます。",
+                    "riskItAllSuccess": "希望ダイスのほうが高かった。ストレスとHPを最大{hope}まで消せます。"
+                },
+                "dicePool": {
+                    "title": "ダイスプール"
+                },
+                "domainCard": {
+                    "title": "能力カード"
+                },
+                "dualityRoll": {
+                    "abilityCheckTitle": "{ability}ロール"
+                },
+                "effectSummary": {
+                    "title": "効果を適用しました",
+                    "immunityTo": "無効：{immunities}"
+                },
+                "featureTitle": "クラス特徴",
+                "healingRoll": {
+                    "title": "治癒 - {damage}",
+                    "heal": "治癒する",
+                    "applyHealing": "治癒を適用"
+                },
+                "markResource": "{quantity} {resource} をマーク",
+                "reloadWeapon": "{weapon} をリロード",
+                "restoreWeaponResource": "{weapon} の {quantity} を回復",
+                "refreshMessage": {
+                    "title": "特徴の回復",
+                    "header": "回復済み"
+                },
+                "reroll": {
+                    "confirmTitle": "ダイスを振り直す",
+                    "confirmText": "振り直しますか？"
+                },
+                "resourceRoll": {
+                    "playerMessage": "{user} が {name} を振り直しました"
+                },
+                "saveRoll": {
+                    "reactionRollAllTargets": "全対象にリアクションロール"
+                },
+                "tagTeam": {
+                    "title": "タッグチーム",
+                    "membersTitle": "メンバー"
+                }
+            },
+            "ChatLog": {
+                "rerollActionRoll": "アクションを振り直す",
+                "rerollDamage": "ダメージを振り直す",
+                "assignTagRoll": "タッグロールとして割り当て"
+            },
+            "ConsoleLogs": {
+                "triggerRun": "DH TRIGGER | アクター「{actor}」のアイテム「{item}」がトリガー「{trigger}」を実行しました。"
+            },
+            "Countdowns": {
+                "title": "カウントダウン",
+                "toggleIconMode": "アイコンのみ表示を切り替え",
+                "hidden": "このカウントダウンは全プレイヤーに非表示です。",
+                "hiddenPartial": "このカウントダウンは {players} 以外のプレイヤーには非表示です。",
+                "reveal": "カウントダウンを公開",
+                "hide": "カウントダウンを隠す",
+                "loop": "ループ",
+                "decreasingLoop": "減少ループ",
+                "increasingLoop": "増加ループ",
+                "inherit": "基本"
+            },
+            "EffectsDisplay": {
+                "removeThing": "[右クリック] {thing} を削除",
+                "increaseStacks": "[左クリック] スタックを増やす",
+                "decreaseStacks": "[右クリック] スタックを減らす",
+                "appliedBy": "付与者：{by}"
+            },
+            "ItemBrowser": {
+                "title": "ダガーハート辞典ブラウザ",
+                "windowTitle": "辞典ブラウザ",
+                "hint": "サイドバーのフォルダを選んで、辞典の閲覧を開始します",
+                "browserSettings": "ブラウザ設定",
+                "columnName": "名前",
+                "tooltipFilters": "フィルター",
+                "tooltipErase": "消去",
+                "difficultyMin": "難易度（最小）",
+                "difficultyMax": "難易度（最大）",
+                "hitPointsMin": "HP（最小）",
+                "hitPointsMax": "HP（最大）",
+                "stressMin": "ストレス（最小）",
+                "stressMax": "ストレス（最大）",
+                "armorScoreMin": "鎧値（最小）",
+                "armorScoreMax": "鎧値（最大）",
+                "levelMin": "レベル（最小）",
+                "levelMax": "レベル（最大）",
+                "recallCostMin": "リコールコスト（最小）",
+                "recallCostMax": "リコールコスト（最大）",
+                "evasionMin": "回避値（最小）",
+                "evasionMax": "回避値（最大）",
+                "subtype": "サブタイプ",
+                "missing": "<i>なし</i>",
+                "folders": {
+                    "characters": "キャラクター",
+                    "adversaries": "敵対者",
+                    "ancestries": "種族",
+                    "equipment": "装備",
+                    "classes": "クラス",
+                    "subclasses": "サブクラス",
+                    "domainCards": "能力カード",
+                    "communities": "コミュニティ",
+                    "environments": "環境",
+                    "beastforms": "ビーストフォーム",
+                    "features": "特徴",
+                    "items": "アイテム",
+                    "weapons": "武器",
+                    "armors": "防具",
+                    "consumables": "消耗品",
+                    "loots": "戦利品",
+                    "transformations": "変身"
+                }
+            },
+            "Notifications": {
+                "adversaryMissing": "リンクされた敵対者がワールドに存在しません。",
+                "beastformInapplicable": "ビーストフォームはキャラクターにのみ適用できます。",
+                "beastformAlreadyApplied": "キャラクターにはすでにビーストフォームが適用されています！",
+                "noTargetsSelected": "対象が選択されていません。",
+                "noTargetsHit": "命中した対象がありません",
+                "attackTargetDoesNotExist": "対象のトークンはもう存在しません",
+                "insufficentAdvancements": "残りの成長選択が足りません。",
+                "noAssignedPlayerCharacter": "担当キャラクターがありません。",
+                "noSelectedToken": "選択中のトークンがありません",
+                "onlyUseableByPC": "PCトークンでのみ使用できます",
+                "dualityParsing": "デュアリティロールの形式が正しくありません",
+                "fateParsing": "運命ロールの形式が正しくありません",
+                "fateTypeParsing": "運命ロールの形式が正しくありません。運命タイプが不正です。有効なタイプは「Hope」と「Fear」です",
+                "attributeFaulty": "指定された能力は存在しません",
+                "domainCardWrongDomain": "そのドメインにはアクセスできません",
+                "domainCardToHighLevel": "その能力カードはレベルが高すぎて選べません",
+                "domainCardDuplicate": "その能力カードはすでに持っています！",
+                "noSelectionsLeft": "これ以上選ぶものはありません！",
+                "alreadySelectedClass": "そのクラスはすでに持っています！",
+                "classAlreadySelected": "キャラクターはすでにクラスを持っています",
+                "subclassAlreadySelected": "そのクラスのサブクラスはすでに持っています。",
+                "noClassSelected": "キャラクターにクラスが選ばれていません！",
+                "lacksDomain": "キャラクターはそのカードのドメインを持っていません！",
+                "duplicateDomainCard": "その名前の能力カードはすでに持っています！",
+                "missingClassOrSubclass": "キャラクターにクラスとサブクラスがありません",
+                "tooHighLevel": "キャラクターレベルを最大を超えて上げられません",
+                "tooLowLevel": "開始レベルより下には下げられません",
+                "subclassNotInClass": "このサブクラスは選択中のクラスに属していません。",
+                "subclassNotInMulticlass": "このサブクラスは選択中のマルチクラスに属していません。",
+                "missingClass": "まだクラスが選ばれていません。",
+                "missingMulticlass": "マルチクラスがありません",
+                "wrongDomain": "そのカードはクラスのドメインのものではありません。",
+                "cardTooHighLevel": "そのカードはレベルが高すぎます！",
+                "duplicateCard": "同じカードを複数回選べません。",
+                "duplicateCharacter": "このアクターはすでにパーティメンバー一覧に登録されています。",
+                "limitedActorsInPartySheet": "パーティシートにドラッグできるのは{allowedTypes}タイプのアクターのみです。",
+                "notPrimary": "その武器はメイン武器ではありません！",
+                "notSecondary": "その武器はサブ武器ではありません！",
+                "itemTooHighTier": "アイテムはティア1である必要があります",
+                "primaryIsTwoHanded": "両手持ちのメイン武器ではサブ武器を選べません！",
+                "noMoreMoves": "これ以上ダウンタイムムーブを選べません",
+                "damageAlreadyNone": "ダメージはすでになしまで軽減されています",
+                "noAvailableArmorMarks": "使える鎧マークが残っていません",
+                "notEnoughStress": "ストレスが足りません",
+                "damageIgnore": "{character} はダメージを受けませんでした",
+                "featureIsMissing": "特徴がありません",
+                "actionIsMissing": "アクションがありません",
+                "attackIsMissing": "攻撃がありません",
+                "unownedActionMacro": "自分のキャラクターにないアクションの使用マクロは作成できません",
+                "unownedAttackMacro": "自分のキャラクターに属さない攻撃の使用マクロは作成できません",
+                "featureNotHope": "この特徴は希望特徴以外として使われているため、ここでは使用できません。",
+                "featureNotClass": "この特徴はクラス特徴以外として使われているため、ここでは使用できません。",
+                "featureNotPrimary": "この特徴は主特徴以外として使われているため、ここでは使用できません。",
+                "featureNotSecondary": "この特徴は副特徴以外として使われているため、ここでは使用できません。",
+                "featureNotFoundation": "この特徴は基盤特徴以外として使われているため、ここでは使用できません。",
+                "featureNotSpecialization": "この特徴は特化特徴以外として使われているため、ここでは使用できません。",
+                "featureNotMastery": "この特徴は熟達特徴以外として使われているため、ここでは使用できません。",
+                "beastformMissingEffect": "ビーストフォームにビーストフォーム効果がありません。使用できません。",
+                "beastformToManyAdvantages": "これ以上有利を選べません。",
+                "beastformToManyFeatures": "これ以上特徴を選べません。",
+                "beastformEquipWeapon": "ビーストフォーム中は武器を使えません。",
+                "loadoutMaxReached": "ロードアウトの上限に達しています。追加するには、能力カードを1枚以上保管庫へ移してください。",
+                "domainMaxReached": "クラスのドメイン上限に達しています。必要ならホームブリュー設定で上限を上げてください。",
+                "insufficientResources": "そのアクションを使うリソースが足りません。",
+                "actionNoUsesRemaining": "そのアクションの残り使用回数がありません。",
+                "multiclassAlreadyPresent": "クラスとマルチクラスをすでに持っています",
+                "subclassesAlreadyPresent": "クラスとマルチクラスのサブクラスをすでに持っています",
+                "noDiceSystem": "選択中のダイス {system} には {faces} 面ダイスがありません",
+                "gmMenuRefresh": "すべてのアクションとリソース {types} を回復しました",
+                "gmRequired": "この操作にはオンラインのGMが必要です",
+                "gmOnly": "GMのみアクセスできます",
+                "noActorOwnership": "このキャラクターの権限がありません",
+                "documentIsMissing": "ワールドに {documentType} がありません。",
+                "tokenActorMissing": "{name} にアクターがありません",
+                "tokenActorsMissing": "[{names}] にアクターがありません",
+                "domainTouchRequirement": "この能力カードを使うには、ロードアウトに{domain}カードが{nr}枚必要です",
+                "knowTheTide": "潮流を知るがトークンを得ました",
+                "lackingItemTransferPermission": "ユーザー {user} には {target} へアイテムを移す所有者権限がありません",
+                "noTokenTargeted": "トークンが対象になっていません",
+                "behaviorRegionRequiresGM": "ビヘイビア付きのリージョンを作成するには、オンラインのGMが必要です",
+                "comboDiceOnlyTwoDiceError": "コンボダイス機能は、2個1組のダイスに対してのみ動作します",
+                "reloadRequired": "{weapon} を使うにはリロードが必要です！",
+                "partnerRequired": "このアクションを使うにはパートナーを指定する必要があります。"
+            },
+            "Progress": {
+                "migrationLabel": "システムの移行を実行中です。Foundryを閉じずに待ってください。"
+            },
+            "Sidebar": {
+                "actorDirectory": {
+                    "tier": "ティア{tier} {type}",
+                    "character": "レベル{level} キャラクター",
+                    "companion": "レベル{level} - {partner}",
+                    "companionNoPartner": "パートナーなし",
+                    "duplicateToNewTier": "新しいティアへ複製",
+                    "activateParty": "アクティブパーティにする",
+                    "partyIsActive": "アクティブ",
+                    "createAdversary": "敵対者を作成",
+                    "pickTierTitle": "この敵対者の新しいティアを選ぶ"
+                },
+                "daggerheartMenu": {
+                    "title": "ダガーハートメニュー",
+                    "startSession": "セッション開始",
+                    "startScene": "シーン開始"
+                }
+            },
+            "Tooltip": {
+                "disableEffect": "効果を無効化",
+                "enableEffect": "効果を有効化",
+                "edit": "編集",
+                "openItemWorld": "アイテムワールドを開く",
+                "openActorWorld": "アクターワールドを開く",
+                "sendToChat": "チャットに送る",
+                "maxEvasionClassBound": "回避値の基本値はクラスで決まります。これはその上乗せ分です。",
+                "maxHPClassBound": "最大HPの基本値はクラスで決まります。これはその上乗せ分です。",
+                "moreOptions": "その他のオプション",
+                "equip": "装備",
+                "unequip": "装備解除",
+                "sendToVault": "保管庫へ送る",
+                "sendToLoadout": "ロードアウトへ送る",
+                "makeDeathMove": "デスムーブを行う",
+                "rangeAndTarget": "射程と対象",
+                "dragApplyEffect": "効果をドラッグしてアクターに適用",
+                "appliedEvenIfSuccessful": "セーヴ成功時でも適用",
+                "pendingSaves": "未処理のリアクションロール",
+                "openSheetSettings": "設定を開く",
+                "compendiumBrowser": "辞典ブラウザ",
+                "rulesOn": "ルールオン",
+                "rulesOff": "ルールオフ",
+                "remainingUses": "使用回数は{type}で回復",
+                "rightClickExtend": "右クリックで展開",
+                "companionPartnerLevelBlock": "相棒のレベルアップには、担当パートナーの指定が必要です。",
+                "configureAttribution": "帰属を設定",
+                "configureLevelupOptions": "レベルアップ選択肢を設定",
+                "deleteItem": "アイテムを削除",
+                "immune": "無効",
+                "middleClick": "[中クリック] ツールチップを表示したままにする",
+                "tokenSize": "キャンバスで使うトークンサイズ",
+                "previewTokenHelp": "左クリックで配置、右クリックでキャンセル",
+                "suppressedEffect": {
+                    "general": "このエフェクトは抑制されています",
+                    "invalid": "条件によりこのエフェクトは抑制されています",
+                    "unequipped": "このアイテムが装備されていないため、このエフェクトは抑制されています"
+                }
+            }
+        }
+    }
+}

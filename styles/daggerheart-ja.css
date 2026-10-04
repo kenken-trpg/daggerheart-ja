@@ -1,0 +1,64 @@
+/*
+ * 日本語で崩れるレイアウトの修正。
+ *
+ * Foundry は v14 の CSS カスケードレイヤで、システムの styles を `system`
+ * レイヤ、モジュールの styles を `modules` レイヤに入れる。`modules` のほうが
+ * 後なので、ここの宣言は詳細度に関わらずシステム側に勝つ。@layer の指定は不要。
+ *
+ * セレクタは公式システムのコンパイル後 CSS から実測したもので、`daggerheart`
+ * と `dh-style` のクラス名に依存している。上流がクラス名やセレクタ構造を
+ * 変えると、エラーを出さずに静かに効かなくなる。上流追従のたびに実機で
+ * 確認すること。検出手順は lang/translation/README.md にある。
+ *
+ * 崩れの原因は2つしかない:
+ *   1. 英語より横に長い日本語が、折り返して縦積みになる  → white-space: nowrap
+ *   2. flex: 0 で潰れる (flex-basis が 0 になる)          → flex: 0 0 auto
+ */
+
+/* 1. 見出しが縦積みになる。
+ *    上流の styles/less/utils/mixin.less の h3 がアクタ3種で使い回されている。 */
+.application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .attack-section .title h3,
+.application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .experience-section .title h3,
+.application.sheet.dh-style .character-sidebar-sheet .experience-section .title h3,
+.application.sheet.daggerheart.actor.dh-style.companion .tab.details.active .experience-list .title h3 {
+    white-space: nowrap;
+}
+
+/* ダイスロール選択ダイアログのダイス名 */
+.application.daggerheart.dialog.dh-style.views.roll-selection
+    .roll-dialog-container
+    .dices-section
+    .dice-option
+    .dice-select
+    .label {
+    white-space: nowrap;
+}
+
+/* 2. 伴獣シートの状態ラベル。
+ *    width: 100% だと日本語が入らず溢れるので、中身に合わせて伸ばす。
+ *    min-width で元の 100% を下限として残す。 */
+.application.sheet.daggerheart.actor.dh-style.companion
+    .companion-header-sheet
+    .status-section
+    .status-number
+    .status-label {
+    width: auto;
+    min-width: 100%;
+}
+
+.application.sheet.daggerheart.actor.dh-style.companion
+    .companion-header-sheet
+    .status-section
+    .status-number
+    .status-label
+    h4 {
+    white-space: nowrap;
+}
+
+/* 3. flex: 0 で潰れるラベル。
+ *    flex: 0 は flex-basis: 0% を意味するので、英語では内容幅で収まっていても
+ *    日本語では潰れる。flex: 0 0 auto で内容幅を基準にする。 */
+.daggerheart.levelup .levelup-selections-container .levelup-radio-choices label,
+.daggerheart.dh-style.dialog.item-transfer label {
+    flex: 0 0 auto;
+}
