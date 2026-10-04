@@ -148,6 +148,37 @@ const check = (label, actual, expected) =>
     check('at least one scalar change was probed', probed > 0, true);
 }
 
+/* --- rolltables: Babele's own defaults, plus what must NOT be written ---- */
+{
+    const table = JSON.parse(
+        await fs.readFile(new URL('rolltables/tables_Random_Objectives_I5L1dlgxXTNrCCkL.json', REFERENCE), 'utf8')
+    );
+    const entry = await translationsFor('daggerheart.rolltables', 'I5L1dlgxXTNrCCkL');
+    const out = translate('RollTable', table, entry);
+    check('table name', out.name, 'ランダム目標');
+    const first = out.results.find(r => r._id === 'LDuVbmdvhJiEOe7U');
+    check('text result description', first.description, '<p>重要なアイテムを入手する（手に入れる、または盗む）。</p>');
+    check('text result range untouched', first.range, table.results.find(r => r._id === 'LDuVbmdvhJiEOe7U').range);
+    check('untranslated result left alone', out.results.find(r => r._id === 'bTkZgxqEr4lNxzeK').description,
+        table.results.find(r => r._id === 'bTkZgxqEr4lNxzeK').description);
+    check('result count', out.results.length, table.results.length);
+}
+{
+    /*
+     * The 240 results that point at a document must stay out of the translation
+     * file: their name follows the referenced document, so writing one here
+     * would duplicate the items packs and could contradict them.
+     */
+    const items = JSON.parse(
+        await fs.readFile(new URL('rolltables/tables_Core_Set_Items_S61Shlt2I5CbLRjz.json', REFERENCE), 'utf8')
+    );
+    const entry = await translationsFor('daggerheart.rolltables', 'S61Shlt2I5CbLRjz');
+    check('no result names were exported', Object.keys(entry.results ?? {}).length, 0);
+    check('every result of this table is a reference', items.results.every(r => !!r.documentUuid), true);
+    const out = translate('RollTable', items, entry);
+    check('table description', out.description, '<p>以下の表には、ダガーハート・コアセットのアイテムが含まれます。</p>');
+}
+
 let failed = 0;
 for (const { label, pass, actual, expected } of checks) {
     console.log(`${pass ? 'ok  ' : 'FAIL'}  ${label}`);

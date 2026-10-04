@@ -73,12 +73,20 @@ const ENABLED = [
     'items/weapons',
     'items/armors',
     'items/consumables',
-    'items/loot'
+    'items/loot',
+    'rolltables'
 ];
 
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 
 const ENRICHER = /@[A-Za-z]+\[[^\]]*\]|\[\[[^\]]*\]\]/g;
+
+/*
+ * Folders are keyed by their English NAME, not by an id, so they cannot live
+ * beside the documents in a pending file keyed by id. This reserved key holds
+ * them; a document id is 16 characters and can never collide with it.
+ */
+const FOLDERS = '_folders';
 
 /**
  * Read one source pack directory, splitting the folder definitions out of the
@@ -204,6 +212,29 @@ function effectFields(effect) {
  */
 function translatableFields(document) {
     const fields = { name: document.name ?? '' };
+
+    /*
+     * A RollTable is not an Actor or an Item and has no `system`. Its results
+     * are keyed by _id, and the 240 that carry a `documentUuid` are left out on
+     * purpose: Babele's `referencedDocumentField` resolves their name from the
+     * document they point at, so translating the items packs covers them and
+     * writing a name here would only duplicate -- and could contradict -- it.
+     */
+    if (Array.isArray(document.results)) {
+        if (document.description) fields.description = document.description;
+
+        const results = document.results.reduce((acc, result) => {
+            if (result.documentUuid) return acc;
+            const entry = {};
+            if (result.name) entry.name = result.name;
+            if (result.description) entry.description = result.description;
+            if (Object.keys(entry).length) acc[result._id] = entry;
+            return acc;
+        }, {});
+        if (Object.keys(results).length) fields.results = results;
+
+        return fields;
+    }
     const system = document.system ?? {};
 
     for (const field of ['description', 'motivesAndTactics', 'impulses', 'notes']) {
@@ -402,7 +433,7 @@ const commands = {
         let count = 0;
 
         for (const pack of ENABLED) {
-            const { collection, file, documents } = await buildPack(pack);
+            const { collection, file, documents, folderNames } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
             const entries = {};
 
@@ -422,6 +453,20 @@ const commands = {
                     entries[document._id] = { _note: document.name, ...missing };
                 }
             }
+
+            /*
+             * Folder names are shown in the compendium browser but were never
+             * offered for translation: `prepare` only walked the documents, so
+             * 89 names across the enabled packs could only ever be filled in by
+             * editing the translation file by hand.
+             */
+            const folders = {};
+            for (const [name, value] of Object.entries(folderNames)) {
+                if (value) continue;
+                folders[name] = { en: name, ja: '' };
+                count += 1;
+            }
+            if (Object.keys(folders).length) entries[FOLDERS] = { _note: 'folders', ...folders };
 
             if (Object.keys(entries).length) pending[collection] = entries;
         }
@@ -444,6 +489,15 @@ const commands = {
             const filled = pending[collection] ?? {};
 
             for (const [id, fields] of Object.entries(filled)) {
+                if (id === FOLDERS) {
+                    for (const [name, value] of Object.entries(fields)) {
+                        if (name === '_note' || !value?.ja) continue;
+                        folderNames[name] = value.ja;
+                        applied += 1;
+                    }
+                    continue;
+                }
+
                 for (const [where, value] of Object.entries(fields)) {
                     if (where === '_note' || !value?.ja) continue;
                     /* "actions.<id>.name" -> entries[id].actions.<id>.name */
@@ -497,7 +551,7 @@ const commands = {
     async report() {
         let totals = { translated: 0, untranslated: 0, retired: 0 };
         for (const pack of ENABLED) {
-            const { collection, file, documents } = await buildPack(pack);
+            const { collection, file, documents, folderNames } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
             let translated = 0;
             let untranslated = 0;
@@ -514,6 +568,12 @@ const commands = {
                     else untranslated += 1;
                 }
             }
+            /* Folder names count too: they are shown in the compendium browser. */
+            for (const value of Object.values(folderNames)) {
+                if (value) translated += 1;
+                else untranslated += 1;
+            }
+
             const ids = new Set(documents.map(d => d._id));
             const retired = Object.keys(current.entries ?? {}).filter(id => !ids.has(id)).length;
             totals.retired += retired;

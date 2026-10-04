@@ -44,7 +44,7 @@ Foundry の言語設定を日本語にしてください。
 
 1. 公式の Daggerheart システムをインストールする。
 2. このモジュールをインストールして有効化する。
-3. 既存のワールドを開くには、ワールドの `world.json` の `"system"` を
+3. 既存の daggerheart-ja ワールドを開くには、ワールドの `world.json` の `"system"` を
    `"daggerheart-ja"` から `"daggerheart"` に書き換える。
 4. システム版 (`daggerheart-ja` システム) をアンインストールする。
 

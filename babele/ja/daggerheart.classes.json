@@ -2,6 +2,9 @@
     "label": "classes",
     "collection": "daggerheart.classes",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Brawler": "ブロウラー"
+    },
     "entries": {
         "0EFzupppM47Bl6Yw": {
             "_note": "Assassin"

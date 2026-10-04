@@ -1,0 +1,37 @@
+{
+    "label": "rolltables",
+    "collection": "daggerheart.rolltables",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Core Rules": "コアルール",
+        "Hope & Fear": "希望と恐怖"
+    },
+    "entries": {
+        "4SaO1I5qsUOoDGrE": {
+            "_note": "Additional Consumables"
+        },
+        "SEFcv9kGssQ5KbP8": {
+            "_note": "Additional Items"
+        },
+        "tF04P02yVN1YDVel": {
+            "_note": "Core Set Consumables"
+        },
+        "S61Shlt2I5CbLRjz": {
+            "_note": "Core Set Items",
+            "name": "コアセット・アイテム",
+            "description": "<p>以下の表には、ダガーハート・コアセットのアイテムが含まれます。</p>"
+        },
+        "I5L1dlgxXTNrCCkL": {
+            "_note": "Random Objectives",
+            "name": "ランダム目標",
+            "results": {
+                "LDuVbmdvhJiEOe7U": {
+                    "description": "<p>重要なアイテムを入手する（手に入れる、または盗む）。</p>"
+                },
+                "FxYpST4nQUTBp1mN": {
+                    "description": "<p>敵対者を1体以上捕らえる。</p>"
+                }
+            }
+        }
+    }
+}
