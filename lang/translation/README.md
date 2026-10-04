@@ -1754,6 +1754,29 @@ npm run packs:probe -- <.../Data/modules/babele>
 `journals` (SRD 本文 208,012字、ライセンス判断が先) と `rolltables`
 (既定マッピングで足り、参照先の訳に追従する) が未有効。
 
-**ブラウザでの見た目の確認は残っている。** 日本語が入った状態でのレイアウト
-崩れの走査 (工程1で6種のアクター・12種のアイテムに対して回したもの) は、
-ライセンスを一度通さないと回せない。
+### 実機でも全部通した (ライセンス確認後)
+
+本人にライセンスを通してもらい、公式システム 2.10.9 + 本モジュール +
+Babele 2.9.1 + libWrapper で確認した。**13パックすべての翻訳ファイルが
+ロードされ、エラーも deprecation 警告も0件。**
+
+| 確認した経路 | 実機の値 |
+| --- | --- |
+| `attack.name` (武器) | `攻撃`。`range`/ダメージ式は無傷 |
+| `areas[].name` | `グリンの書`。`shape`/`size` は無傷 |
+| `countdown[].name` | `集団変装` |
+| `examples` | `タカ、フクロウ、カラスなど` (シートの「例」欄) |
+| `advantageOn` | `欺く` / `発見する` / `威嚇する` (Tagify のタグとして表示) |
+| `backgroundQuestions` / `connections` | 3件目だけ日本語、1・2件目は英語のまま。添字照合が効いている |
+| `levelupOptionTiers.<tier>.<id>.label` | tier 4 だけ日本語、tier 2 は英語。`subType`/`minCost` は無傷 |
+| `changes[].value.name` | `ブロウラーの一撃`。`damageFormula` (`@profd8 + @profd6`) と `trait` は無傷 |
+| `durationDescription` | `<p>HPをマークするまで。</p>`。エフェクトシートの4タブすべてで表示 |
+
+**i18n キーを除外した判断も実機で裏が取れた。** ビーストフォームの
+`changes[2].value.name` は `DAGGERHEART.ITEMS.Beastform.attackName` のまま残り、
+`game.i18n.localize()` が `ビースト攻撃` を返す。訳していたらキー文字列が
+出ていた。
+
+レイアウト崩れの走査 (葉要素・日本語・24文字以下・2行以上・幅不足) を
+武器 / ビーストフォーム / クラス (質問タブを含む) / ドメインカード /
+消耗品 / エフェクトシート4タブに回して **0件**。
