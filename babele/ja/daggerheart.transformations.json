@@ -6,13 +6,13 @@
         "Transformation Features": "変身の特徴"
     },
     "entries": {
-        "P1sdtkECFSdLz02W": {
+        "Change Shape": {
             "_note": "Change Shape"
         },
-        "ma7W7ZS1Ro02b7cZ": {
+        "Corpse": {
             "_note": "Corpse"
         },
-        "ha5HN1sk0JpCG6us": {
+        "Ephemeral": {
             "_note": "Ephemeral",
             "name": "儚き身",
             "description": "<p>あなたの身体は実体と非実体のあいだで揺らぎます。物理ダメージに耐性を得て、魔法ダメージを2倍受け、<strong>ストレスを2マーク</strong>して一瞬だけ固体をすり抜けられます。</p>",
@@ -22,12 +22,12 @@
                 }
             }
         },
-        "ohtlJOWsGtPumnt3": {
+        "Fangs": {
             "_note": "Fangs",
             "name": "牙",
             "description": "<p>好きな特性で攻撃を行い、近接射程内の対象に噛みつきます。成功したら、習熟を使って<strong>d6</strong>の物理ダメージを与えます。</p>"
         },
-        "zVXqx9HWIIhwky6I": {
+        "Feed": {
             "_note": "Feed",
             "name": "捕食",
             "description": "<p>出血しうるクリーチャーへの「牙」の攻撃に成功したとき、<strong>ストレスを1マーク</strong>して捕食できます。対象がマークしたHPと同じ数のトークンをこのカードに置きます。トークンは同時に6個まで保持できます。アクションロールを行う前に、トークンを1つ消費して恐怖ダイスを<strong>d20</strong>にできます。長期休憩を取ったとき、トークンを1つ取り除きます。このカードにトークンが無い間、アクションロールとリアクションロールを不利で行います。</p>",
@@ -38,43 +38,43 @@
                 }
             }
         },
-        "mVRmsFUyoULPH3Ku": {
+        "Gifted": {
             "_note": "Gifted"
         },
-        "po9tIudU8LBRb3um": {
+        "Howling Rampage": {
             "_note": "Howling Rampage"
         },
-        "qXA130mgMnvPZfNF": {
+        "Only Skin Deep": {
             "_note": "Only Skin Deep"
         },
-        "Kz85MBLkNbcZB3Us": {
+        "Unfinished Business": {
             "_note": "Unfinished Business"
         },
-        "S03wpIyK6S6qENlu": {
+        "Weight of Divinity": {
             "_note": "Weight of Divinity"
         },
-        "m0lRcWjXdqGW4StE": {
+        "Wolf Form": {
             "_note": "Wolf Form"
         },
-        "vbNJ7JMrVXThS6rf": {
+        "Won't Stay Dead": {
             "_note": "Won't Stay Dead"
         },
-        "F3zNFGDbtnnvl3QO": {
+        "Demigod": {
             "_note": "Demigod"
         },
-        "RPWodzW2U43Oy8V6": {
+        "Ghost": {
             "_note": "Ghost"
         },
-        "xPhDxFEaLc4ybhzS": {
+        "Reanimated": {
             "_note": "Reanimated"
         },
-        "MDGd5nTyjjL9NGb2": {
+        "Shapeshifter": {
             "_note": "Shapeshifter"
         },
-        "nhK5pIYJxVblMxCe": {
+        "Vampire": {
             "_note": "Vampire"
         },
-        "2BDDqyqUpDF3JxPN": {
+        "Werewolf": {
             "_note": "Werewolf"
         }
     }

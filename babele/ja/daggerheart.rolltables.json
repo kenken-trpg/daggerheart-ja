@@ -7,21 +7,21 @@
         "Hope & Fear": "希望と恐怖"
     },
     "entries": {
-        "4SaO1I5qsUOoDGrE": {
+        "Additional Consumables": {
             "_note": "Additional Consumables"
         },
-        "SEFcv9kGssQ5KbP8": {
+        "Additional Items": {
             "_note": "Additional Items"
         },
-        "tF04P02yVN1YDVel": {
+        "Core Set Consumables": {
             "_note": "Core Set Consumables"
         },
-        "S61Shlt2I5CbLRjz": {
+        "Core Set Items": {
             "_note": "Core Set Items",
             "name": "コアセット・アイテム",
             "description": "<p>以下の表には、ダガーハート・コアセットのアイテムが含まれます。</p>"
         },
-        "I5L1dlgxXTNrCCkL": {
+        "Random Objectives": {
             "_note": "Random Objectives",
             "name": "ランダム目標",
             "results": {

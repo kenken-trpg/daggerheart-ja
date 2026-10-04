@@ -2,6 +2,7 @@
     "Actor": {
         "_identity": {
             "export": [
+                "name",
                 "_id"
             ],
             "match": [
@@ -74,6 +75,7 @@
     "Item": {
         "_identity": {
             "export": [
+                "name",
                 "_id"
             ],
             "match": [
@@ -165,6 +167,7 @@
     "ActiveEffect": {
         "_identity": {
             "export": [
+                "name",
                 "_id"
             ],
             "match": [

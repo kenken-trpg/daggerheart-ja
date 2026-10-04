@@ -6,13 +6,13 @@
         "Brawler": "ブロウラー"
     },
     "entries": {
-        "0EFzupppM47Bl6Yw": {
+        "Assassin": {
             "_note": "Assassin"
         },
-        "vegl3bFOq3pcFTWT": {
+        "Bard": {
             "_note": "Bard"
         },
-        "0Qw2heB75eXNV4SM": {
+        "Brawler": {
             "_note": "Brawler",
             "name": "ブロウラー",
             "backgroundQuestions": [
@@ -33,82 +33,82 @@
                 }
             }
         },
-        "ZNwUTCyGCEcidZFv": {
+        "Druid": {
             "_note": "Druid"
         },
-        "nRAyoC0fOzXPDa4z": {
+        "Guardian": {
             "_note": "Guardian"
         },
-        "BTyfve69LKqoOi9S": {
+        "Ranger": {
             "_note": "Ranger"
         },
-        "CvHlkHZfpMiCz5uT": {
+        "Rogue": {
             "_note": "Rogue"
         },
-        "5ZnlJ5bEoyOTkUJv": {
+        "Seraph": {
             "_note": "Seraph"
         },
-        "DchOzHcWIJE9FKcR": {
+        "Sorcerer": {
             "_note": "Sorcerer"
         },
-        "cgq9QzytVs6uyaBW": {
+        "Warlock": {
             "_note": "Warlock"
         },
-        "xCUWwJz4WSthvLfy": {
+        "Warrior": {
             "_note": "Warrior"
         },
-        "HHAmaNZDicgkill5": {
+        "Witch": {
             "_note": "Witch"
         },
-        "5LwX4m8ziY3F1ZGC": {
+        "Wizard": {
             "_note": "Wizard"
         },
-        "CHK32dfCTTyuxV1A": {
+        "Arcane Sense": {
             "_note": "Arcane Sense"
         },
-        "3hNVqD1c0VIw2Nj5": {
+        "Attack Of Opportunity": {
             "_note": "Attack Of Opportunity"
         },
-        "P1K0jcnH2RiS6TLd": {
+        "Beastform": {
             "_note": "Beastform"
         },
-        "P02cbN50LIoD662z": {
+        "Channel Raw Power": {
             "_note": "Channel Raw Power"
         },
-        "5IT8wYa0m1EFw8Zp": {
+        "Cloaked": {
             "_note": "Cloaked"
         },
-        "eoSmuAJmgHUyULtp": {
+        "Combat Training": {
             "_note": "Combat Training"
         },
-        "LtG3pKzd4gtfLgFJ": {
+        "Combo Strike": {
             "_note": "Combo Strike"
         },
-        "koq6qy5n7alp7kcb": {
+        "Commune": {
             "_note": "Commune"
         },
-        "lO3Xyd21qYimrWBs": {
+        "Deadly Determination": {
             "_note": "Deadly Determination"
         },
-        "6rlxhrRwFaVgq9fe": {
+        "Evolution": {
             "_note": "Evolution"
         },
-        "OGPn7DUJoJwAXh8o": {
+        "Favor": {
             "_note": "Favor"
         },
-        "YS1g7YdWwOaS629x": {
+        "Frontline Tank": {
             "_note": "Frontline Tank"
         },
-        "D3hK5ub4uuZqjRDR": {
+        "Get In & Get Out": {
             "_note": "Get In & Get Out"
         },
-        "EFgQVcDiADsKxG3T": {
+        "Hex": {
             "_note": "Hex"
         },
-        "2Cyb9ZeuAesf5Sb3": {
+        "Hold Them Off": {
             "_note": "Hold Them Off"
         },
-        "WgUrpNTlX92k0Xs3": {
+        "I Am the Weapon": {
             "_note": "I Am the Weapon",
             "effects": {
                 "bGHd7NfUn4fL6u1g": {
@@ -121,151 +121,151 @@
                 }
             }
         },
-        "lSlvSUHbOoX36q2j": {
+        "Life Support": {
             "_note": "Life Support"
         },
-        "N9E5skDDK2VgvohR": {
+        "Make a Scene": {
             "_note": "Make a Scene"
         },
-        "XxS0Li1P6SqIho7T": {
+        "Marked for Death": {
             "_note": "Marked for Death"
         },
-        "cshTYdtz9yoXYYB3": {
+        "Minor Illusion": {
             "_note": "Minor Illusion"
         },
-        "njj2C3tMDeCHHOoh": {
+        "No Mercy": {
             "_note": "No Mercy"
         },
-        "h3VE0jhcM5xHKBs4": {
+        "Not This Time": {
             "_note": "Not This Time"
         },
-        "QmFMbJzPV7DPLvjk": {
+        "Patron's Boon": {
             "_note": "Patron's Boon"
         },
-        "IOWBzweDFPoAHtQW": {
+        "Patron's Pact": {
             "_note": "Patron's Pact"
         },
-        "Xd7RYhfTxIj9aWI2": {
+        "Prayer Dice": {
             "_note": "Prayer Dice"
         },
-        "SG2uw8h5YuwDviCn": {
+        "Prestidigitation": {
             "_note": "Prestidigitation"
         },
-        "PydiMnNCKpd44SGS": {
+        "Rally": {
             "_note": "Rally"
         },
-        "ncLx2P8BOUtrAD38": {
+        "Ranger's Focus": {
             "_note": "Ranger's Focus"
         },
-        "hVaaPIjxoextIgSL": {
+        "Rogue's Dodge": {
             "_note": "Rogue's Dodge"
         },
-        "5QqpEwmwkPfZHpMW": {
+        "Sneak Attack": {
             "_note": "Sneak Attack"
         },
-        "pPP9dHHa00lekbuu": {
+        "Square Up": {
             "_note": "Square Up"
         },
-        "6YsfFjmCGuFYVhT4": {
+        "Strange Patterns": {
             "_note": "Strange Patterns"
         },
-        "PnD2UCgzIlwX6cY3": {
+        "Unstoppable": {
             "_note": "Unstoppable"
         },
-        "ieiQlD0joWSqt53D": {
+        "Volatile Magic": {
             "_note": "Volatile Magic"
         },
-        "fqSdfUYUK9QUcVE4": {
+        "Wildtouch": {
             "_note": "Wildtouch"
         },
-        "7nIDpcWOGzO8Y6gq": {
+        "Witch's Charm": {
             "_note": "Witch's Charm"
         },
-        "hMST9iizQP1yz0MG": {
+        "50ft of Rope": {
             "_note": "50ft of Rope"
         },
-        "Bvr6wjf44EvCdidC": {
+        "A Romance Novel": {
             "_note": "A Romance Novel"
         },
-        "LoQH7wpfyKsuMJ5l": {
+        "A Sharpening Stone": {
             "_note": "A Sharpening Stone"
         },
-        "JqqUpW7aqMuNoqXc": {
+        "A small, harmless pet": {
             "_note": "A small, harmless pet"
         },
-        "uoG5iq09mxJPXfmk": {
+        "Basic Supplies": {
             "_note": "Basic Supplies"
         },
-        "73XdemkRkYNFiMqN": {
+        "Book about your secret hobby": {
             "_note": "Book about your secret hobby"
         },
-        "8k76EgktQXFWHf8r": {
+        "Broken Compass": {
             "_note": "Broken Compass"
         },
-        "aLvek22hb5kNg9MF": {
+        "Bundle of Offerings": {
             "_note": "Bundle of Offerings"
         },
-        "c1jomE48GRyNeXMY": {
+        "Carving that symbolizes your patron": {
             "_note": "Carving that symbolizes your patron"
         },
-        "KuPuEAbUK4VKpS2O": {
+        "Drawing Of A Lover": {
             "_note": "Drawing Of A Lover"
         },
-        "Yum0uBtnEtTBcpax": {
+        "Family Heirloom": {
             "_note": "Family Heirloom"
         },
-        "J1c708r5L9TYckER": {
+        "Grappling Hook": {
             "_note": "Grappling Hook"
         },
-        "wVYM6LqwYCKwwbh4": {
+        "Hand wraps from a mentor": {
             "_note": "Hand wraps from a mentor"
         },
-        "XGWVVkHlVrF5fGm6": {
+        "Letter(Never Opened)": {
             "_note": "Letter(Never Opened)"
         },
-        "a4MyV9MZZFY4dKCZ": {
+        "List of names with several marked off": {
             "_note": "List of names with several marked off"
         },
-        "KGnwxeMYR4V7LJVi": {
+        "Ring you can't remove": {
             "_note": "Ring you can't remove"
         },
-        "x9H46Uwlq85bqRaU": {
+        "Rusted blade inscribed with an insignia": {
             "_note": "Rusted blade inscribed with an insignia"
         },
-        "l787jY8NXcccj6GA": {
+        "Scrying stone": {
             "_note": "Scrying stone"
         },
-        "VVvIPx1cduyAb8jr": {
+        "Secret Key": {
             "_note": "Secret Key"
         },
-        "yqoO5aqDd4aD13pc": {
+        "Set of Forgery Tools": {
             "_note": "Set of Forgery Tools"
         },
-        "o3G6szWvPoz7fo6T": {
+        "Sigil of Your God": {
             "_note": "Sigil of Your God"
         },
-        "todlyATSZzLPTqnU": {
+        "Small Bag (Rocks & Bones)": {
             "_note": "Small Bag (Rocks & Bones)"
         },
-        "LriTeh9hkwzEaCr1": {
+        "Strange Dirty Pendant": {
             "_note": "Strange Dirty Pendant"
         },
-        "UUp0YGFj7E4x7Z6Z": {
+        "Tiny Elemental Pet": {
             "_note": "Tiny Elemental Pet"
         },
-        "zqeXrJTd1geX73Pw": {
+        "Torch": {
             "_note": "Torch"
         },
-        "d3VdAtW65oO8j14Y": {
+        "Totem from Mentor": {
             "_note": "Totem from Mentor"
         },
-        "eslejbiZRH6ODh9U": {
+        "Trophy from your First Kill": {
             "_note": "Trophy from your First Kill"
         },
-        "fhg3NK99tcgYQxdY": {
+        "Untranslated Book": {
             "_note": "Untranslated Book"
         },
-        "9AM1YsPeuWSysdDo": {
+        "Whispering Orb": {
             "_note": "Whispering Orb"
         }
     }

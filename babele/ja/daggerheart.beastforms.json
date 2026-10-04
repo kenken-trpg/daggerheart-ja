@@ -3,76 +3,76 @@
     "collection": "daggerheart.beastforms",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "a9UoCwtrbgKk02mK": {
+        "Agile Scout": {
             "_note": "Agile Scout"
         },
-        "ItBVeCl2u5uetgy7": {
+        "Aquatic Predator": {
             "_note": "Aquatic Predator"
         },
-        "qqzdFCxyYupWZK23": {
+        "Aquatic Scout": {
             "_note": "Aquatic Scout"
         },
-        "8pUHJv3BYdjA4Qdf": {
+        "Armored Sentry": {
             "_note": "Armored Sentry"
         },
-        "wT4xbF99I55yjKZV": {
+        "Epic Aquatic Beast": {
             "_note": "Epic Aquatic Beast"
         },
-        "afbMt4Ld6nY3mw0N": {
+        "Great Predator": {
             "_note": "Great Predator"
         },
-        "b4BMnTbJ3iPPidSb": {
+        "Great Winged Beast": {
             "_note": "Great Winged Beast"
         },
-        "iDmOtiHJJ80AIAVT": {
+        "Household Friend": {
             "_note": "Household Friend"
         },
-        "mqP6z4Wg4K3oDAom": {
+        "Legendary Beast": {
             "_note": "Legendary Beast"
         },
-        "rRUtgcUjimlpPhnn": {
+        "Legendary Hybrid": {
             "_note": "Legendary Hybrid"
         },
-        "qjwMzPn33aKZACkv": {
+        "Massive Behemoth": {
             "_note": "Massive Behemoth"
         },
-        "94tvcC3D5Kp4lzuN": {
+        "Mighty Lizard": {
             "_note": "Mighty Lizard"
         },
-        "zRLjqKx4Rn2TjivL": {
+        "Mighty Strider": {
             "_note": "Mighty Strider"
         },
-        "jV6EuEacyQlHW4SN": {
+        "Mythic Aerial Hunter": {
             "_note": "Mythic Aerial Hunter"
         },
-        "kObobka52JdpWBSu": {
+        "Mythic Beast": {
             "_note": "Mythic Beast"
         },
-        "WAbxCf2An8qmxyJ1": {
+        "Mythic Hybrid": {
             "_note": "Mythic Hybrid"
         },
-        "CItO8yX6amQaqyk7": {
+        "Nimble Grazer": {
             "_note": "Nimble Grazer"
         },
-        "YLisKYYhAGca50WM": {
+        "Pack Predator": {
             "_note": "Pack Predator"
         },
-        "33oFSZ1PwFqInHPe": {
+        "Pouncing Predator": {
             "_note": "Pouncing Predator"
         },
-        "m8BVTuJI1wCvzTcf": {
+        "Powerful Beast": {
             "_note": "Powerful Beast"
         },
-        "A4TVRY0D5r9EiVwA": {
+        "Stalking Arachnid": {
             "_note": "Stalking Arachnid"
         },
-        "1XrZWGDttBAAUxR1": {
+        "Striking Serpent": {
             "_note": "Striking Serpent"
         },
-        "5BABxRe2XVrYTj8N": {
+        "Terrible Lizard": {
             "_note": "Terrible Lizard"
         },
-        "mZ4Wlqtss2FlNNvL": {
+        "Winged Beast": {
             "_note": "Winged Beast",
             "name": "有翼の獣",
             "examples": "タカ、フクロウ、カラスなど",
@@ -88,22 +88,22 @@
                 }
             }
         },
-        "xLS5YT1B6yeCiNTg": {
+        "Agile": {
             "_note": "Agile"
         },
-        "kQWWx9P3fCyGSVOI": {
+        "Aquatic": {
             "_note": "Aquatic"
         },
-        "nDQZdIF2epKlhauX": {
+        "Armored Shell": {
             "_note": "Armored Shell"
         },
-        "FNKQlWQcArSorMPK": {
+        "Bird's-Eye View": {
             "_note": "Bird's-Eye View"
         },
-        "jp5KpPRBFBOIs46Q": {
+        "Cannonball": {
             "_note": "Cannonball"
         },
-        "EVOJTskJYf4rpuga": {
+        "Carrier": {
             "_note": "Carrier"
         },
         "KAl5lxAaEfu21ukQ": {
@@ -112,79 +112,79 @@
         "TME5cvuTk0TW3yiJ": {
             "_note": "Carrier"
         },
-        "jhWSC5bNZyYUAA5Q": {
+        "Companion": {
             "_note": "Companion"
         },
-        "QQtQ77tos8ijTHag": {
+        "Deadly Raptor": {
             "_note": "Deadly Raptor"
         },
-        "DfBXO8jTchwFG8dZ": {
+        "Demolish": {
             "_note": "Demolish"
         },
-        "HJbQcKWcFZ9NoFxs": {
+        "Devastating Strikes": {
             "_note": "Devastating Strikes"
         },
-        "a7Qvmm14nx9BCysA": {
+        "Elusive Prey": {
             "_note": "Elusive Prey"
         },
-        "GhHsSHOa509cwCvr": {
+        "Fleet": {
             "_note": "Fleet"
         },
-        "QFg1hNCEoKVDd9Zo": {
+        "Fragile": {
             "_note": "Fragile"
         },
-        "8u0HkK3WgtU9lWYs": {
+        "Hobbling Strike": {
             "_note": "Hobbling Strike"
         },
-        "xVgmXhj2YgeqS1KK": {
+        "Hollow Bones": {
             "_note": "Hollow Bones"
         },
-        "9QkZSeuEKgXtlpHc": {
+        "Massive Stride": {
             "_note": "Massive Stride"
         },
-        "tGDdEH40wyOCsFmH": {
+        "Ocean Master": {
             "_note": "Ocean Master"
         },
-        "d3q8lfeiEMyTjusT": {
+        "Pack Hunting": {
             "_note": "Pack Hunting"
         },
-        "StabkQ3BzWRZa8Tz": {
+        "Physical Defense": {
             "_note": "Physical Defense"
         },
-        "8upqfcZvi7b5hRLE": {
+        "Rampage": {
             "_note": "Rampage"
         },
-        "Ky3rZD3sJMXYZOBC": {
+        "Snapping Strike": {
             "_note": "Snapping Strike"
         },
-        "0ey4kM9ssj2otHvb": {
+        "Takedown": {
             "_note": "Takedown"
         },
-        "ZYbdXaWVj2zdcmaK": {
+        "Thick Hide": {
             "_note": "Thick Hide"
         },
-        "A0lgd6eVEfX6oqSB": {
+        "Trample": {
             "_note": "Trample"
         },
-        "ODudjX88Te4vDP57": {
+        "Undaunted": {
             "_note": "Undaunted"
         },
-        "vEAQ4cfsoPmOv2Gg": {
+        "Unyielding": {
             "_note": "Unyielding"
         },
-        "2KlTnfzO03vneVS8": {
+        "Venomous Bite": {
             "_note": "Venomous Bite"
         },
-        "uW3853pViM9VAfHb": {
+        "Venomous Strike": {
             "_note": "Venomous Strike"
         },
-        "jYUBi7yLHap5ljpa": {
+        "Vicious Maul": {
             "_note": "Vicious Maul"
         },
-        "cTlqpQZPy5TvdDAT": {
+        "Warning Hiss": {
             "_note": "Warning Hiss"
         },
-        "D73fS1iM4SZPFimu": {
+        "Webslinger": {
             "_note": "Webslinger"
         }
     }

@@ -3,484 +3,484 @@
     "collection": "daggerheart.subclasses",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "0wCctRupJAv5hTuE": {
+        "Accomplished": {
             "_note": "Accomplished"
         },
-        "k7vvMJtEcxMWUUrW": {
+        "Act of Reprisal": {
             "_note": "Act of Reprisal"
         },
-        "gpyx5lf1yWjCMVyl": {
+        "Adder's Blessing": {
             "_note": "Adder's Blessing"
         },
-        "v511C6GMShsBblah": {
+        "Adept": {
             "_note": "Adept"
         },
-        "uByM34yQlw38yf1V": {
+        "Adrenaline": {
             "_note": "Adrenaline"
         },
-        "uGcs785h94RMtueH": {
+        "Advanced Training": {
             "_note": "Advanced Training"
         },
-        "RoG3RZWVnTK6TYFI": {
+        "Aggressive": {
             "_note": "Aggressive"
         },
-        "WkrwX3w8K4wLpaY8": {
+        "Ambush": {
             "_note": "Ambush"
         },
-        "uLRkOyvk0n9QpZSi": {
+        "Anchored": {
             "_note": "Anchored"
         },
-        "lwH3E0Zyf4gbVOd0": {
+        "Apex Predator": {
             "_note": "Apex Predator"
         },
-        "yA4MKQ1tbKFiJoDB": {
+        "Arcane Charge": {
             "_note": "Arcane Charge"
         },
-        "fefLgx6kcYWusjBb": {
+        "Ascendant": {
             "_note": "Ascendant"
         },
-        "xPWFvGvtUjIcqgJq": {
+        "At Ease": {
             "_note": "At Ease"
         },
-        "1x1EBrNOPdlWhIAZ": {
+        "Backstab": {
             "_note": "Backstab"
         },
-        "hWsKyed1vfILg0I8": {
+        "Battle-Bonded": {
             "_note": "Battle-Bonded"
         },
-        "qqb5acyUSl1sCpWW": {
+        "Battle Ritual": {
             "_note": "Battle Ritual"
         },
-        "Y9eGMewnFZgPvX0M": {
+        "Battlemage": {
             "_note": "Battlemage"
         },
-        "2A0HBDxGc4gEARou": {
+        "Brilliant": {
             "_note": "Brilliant"
         },
-        "VmX3uaONxYo3wzsU": {
+        "Circle of Power": {
             "_note": "Circle of Power"
         },
-        "etaQ01yGJhBLDUqZ": {
+        "Clarity of Nature": {
             "_note": "Clarity of Nature"
         },
-        "dArl2cxKIEGTicXU": {
+        "Comaraderie": {
             "_note": "Comaraderie"
         },
-        "MBFXxIEwc0Dl4kJg": {
+        "Companion": {
             "_note": "Companion"
         },
-        "oirsCnN66GOlK3Fa": {
+        "Conjure Shield": {
             "_note": "Conjure Shield"
         },
-        "cXbRm744mW6UXGam": {
+        "Contacts Everywhere": {
             "_note": "Contacts Everywhere"
         },
-        "o5j2vjXU8NicYlXx": {
+        "Courage": {
             "_note": "Courage"
         },
-        "3IT4w3WExpGFD3Mm": {
+        "Crushing": {
             "_note": "Crushing"
         },
-        "ykvPRG06i68bxV0Y": {
+        "Damage Sink": {
             "_note": "Damage Sink"
         },
-        "wx4I8MnEJbkgMmeY": {
+        "Dark Aegis": {
             "_note": "Dark Aegis"
         },
-        "frBTtNMX9Y2gkuPz": {
+        "Dark Cloud": {
             "_note": "Dark Cloud"
         },
-        "DKNkqvCMReqPRnS6": {
+        "Deadly Vengeance": {
             "_note": "Deadly Vengeance"
         },
-        "hdy7nz7hnYkN0tGF": {
+        "Death Strike": {
             "_note": "Death Strike"
         },
-        "pEPIud1nwUb8wxiL": {
+        "Deathless Embrace": {
             "_note": "Deathless Embrace"
         },
-        "Jdktv5p1K2PfgxrT": {
+        "Defender": {
             "_note": "Defender"
         },
-        "YGQ7hhRGrYm8BFDP": {
+        "Defensive": {
             "_note": "Defensive"
         },
-        "J3A7ycmj65hlhWnI": {
+        "Devout": {
             "_note": "Devout"
         },
-        "MEpNIeVPWz0RjEos": {
+        "Diminish My Foes": {
             "_note": "Diminish My Foes"
         },
-        "8INvTVCRkDoCbbih": {
+        "Draining Bane": {
             "_note": "Draining Bane"
         },
-        "2JH9NaOh69yN80Gw": {
+        "Elemental Aura": {
             "_note": "Elemental Aura"
         },
-        "EFUJHrkTuyv8uA9l": {
+        "Elemental Dominion": {
             "_note": "Elemental Dominion"
         },
-        "f37TTgCc0Q3Ih1A1": {
+        "Elemental Incarnation": {
             "_note": "Elemental Incarnation"
         },
-        "dPcqKN5NeDkjB1HW": {
+        "Elementalist": {
             "_note": "Elementalist"
         },
-        "5bmB1YcxiJVNVXDM": {
+        "Eloquent": {
             "_note": "Eloquent"
         },
-        "Cjtc43V3IzAmfIFG": {
+        "Elusive Predator": {
             "_note": "Elusive Predator"
         },
-        "4pVBN8cuKePI423V": {
+        "Enchanted Aid": {
             "_note": "Enchanted Aid"
         },
-        "4jnGL4ENGs2AR1p1": {
+        "Enchanted Talisman": {
             "_note": "Enchanted Talisman"
         },
-        "eCoEWkWuZPMZ9C6a": {
+        "Epic Poetry": {
             "_note": "Epic Poetry"
         },
-        "tyGB6wRKjYdIBK1i": {
+        "Ethereal Visage": {
             "_note": "Ethereal Visage"
         },
-        "hzDDTkBp1cqMOq7z": {
+        "Exacting": {
             "_note": "Exacting"
         },
-        "iCXtOWBKv1FdKdWz": {
+        "Expert Training": {
             "_note": "Expert Training"
         },
-        "mHuqYsV0a2MYnLej": {
+        "Eye for an Eye": {
             "_note": "Eye for an Eye"
         },
-        "D3ffFWSXCza4WGcM": {
+        "Face Your Fear": {
             "_note": "Face Your Fear"
         },
-        "W95PSU4iXjg2v5B5": {
+        "Favored": {
             "_note": "Favored"
         },
-        "voLbSV1fvpAQdt3y": {
+        "Fearsome Attack": {
             "_note": "Fearsome Attack"
         },
-        "CapfuUdLhzqer78i": {
+        "First Strike": {
             "_note": "First Strike"
         },
-        "EY7Eo6hNGppVL3dR": {
+        "Fleeting Shadow": {
             "_note": "Fleeting Shadow"
         },
-        "iuqAzugTIf7Ipcmb": {
+        "Flow State": {
             "_note": "Flow State"
         },
-        "fMiu9xPbBVDizZEB": {
+        "Focus Cannon": {
             "_note": "Focus Cannon"
         },
-        "hNqLf3zEfKRzSbvq": {
+        "Fueled by Fear": {
             "_note": "Fueled by Fear"
         },
-        "99U7YWNCxFZHCiT0": {
+        "Gifted Performer": {
             "_note": "Gifted Performer"
         },
-        "aN9OhwIJXTCDc11u": {
+        "Grappling": {
             "_note": "Grappling"
         },
-        "aLL9AQUVBnpGfO2T": {
+        "Harrowing Invocation": {
             "_note": "Harrowing Invocation"
         },
-        "8TH6h6a36h09mf6d": {
+        "Have No Fear": {
             "_note": "Have No Fear"
         },
-        "Ce0sn0kqAw3PFe0k": {
+        "Heart of a Poet": {
             "_note": "Heart of a Poet"
         },
-        "HE0slu6jR0Io2x84": {
+        "Herbal Remedies": {
             "_note": "Herbal Remedies"
         },
-        "w1BwNKxbQOSizLmZ": {
+        "Honed Expertise": {
             "_note": "Honed Expertise"
         },
-        "aJKTuq1Ja5o9lB16": {
+        "Honed": {
             "_note": "Honed"
         },
-        "ewgpPblJAcHCHPUO": {
+        "Invigorating": {
             "_note": "Invigorating"
         },
-        "A8VBqkOtH8gEJCvv": {
+        "Ire of Pale Light": {
             "_note": "Ire of Pale Light"
         },
-        "7AVRNyBcd1Nffjtn": {
+        "Iron Will": {
             "_note": "Iron Will"
         },
-        "QVKgnF8eUwbX8K9H": {
+        "Isolating": {
             "_note": "Isolating"
         },
-        "pv1hw4kJ1Q28xSiG": {
+        "Keen Defenses": {
             "_note": "Keen Defenses"
         },
-        "zrBAilBZuk9e4R1C": {
+        "Limit Breaker": {
             "_note": "Limit Breaker"
         },
-        "xjZHD5Yo3Tu26rLm": {
+        "Loyal Friend": {
             "_note": "Loyal Friend"
         },
-        "hd7UeBPr86Mz21Pe": {
+        "Loyal Protector": {
             "_note": "Loyal Protector"
         },
-        "6HGlS2CvR9NBsVg5": {
+        "Lunar Phases": {
             "_note": "Lunar Phases"
         },
-        "ZFkCz8XV1EtMoJ1w": {
+        "Maestro": {
             "_note": "Maestro"
         },
-        "UNg4eyNfEQrMdD7G": {
+        "Manipulate Magic": {
             "_note": "Manipulate Magic"
         },
-        "dHgAnbt9m1KsQFmp": {
+        "Martial Preparation": {
             "_note": "Martial Preparation"
         },
-        "SVqDAwdpTNjUwe64": {
+        "Menacing Reach": {
             "_note": "Menacing Reach"
         },
-        "KtkCySTmYjN2uXF4": {
+        "Moonbeam": {
             "_note": "Moonbeam"
         },
-        "TnuLBtHQGbqyzn82": {
+        "Natural Evasion": {
             "_note": "Natural Evasion"
         },
-        "DPKmipNRlSAMs2Cg": {
+        "Nemesis": {
             "_note": "Nemesis"
         },
-        "YlKPNBkoSOCLm1Yo": {
+        "Night's Glamour": {
             "_note": "Night's Glamour"
         },
-        "kKdC6wJ7YAF4F12p": {
+        "Not Done Yet": {
             "_note": "Not Done Yet"
         },
-        "K2R2i8dhtNnY9MYR": {
+        "Otherwordly": {
             "_note": "Otherwordly"
         },
-        "0ZLYqCcnlhQYd6hw": {
+        "Otherworldly Ire": {
             "_note": "Otherworldly Ire"
         },
-        "36POMgbO969M38Ky": {
+        "Overwhelm": {
             "_note": "Overwhelm"
         },
-        "G54qY96XK62hgoK9": {
+        "Partner-in-Arms": {
             "_note": "Partner-in-Arms"
         },
-        "uPPBOpoulUmSLlzr": {
+        "Path Forward": {
             "_note": "Path Forward"
         },
-        "K6dQzaeZJHfRu87I": {
+        "Patron's Fury": {
             "_note": "Patron's Fury"
         },
-        "LZQ2LeUg9HPjzLR6": {
+        "Patron's Mantle": {
             "_note": "Patron's Mantle"
         },
-        "HzPa5U0EQhDfFTqW": {
+        "Perfect Recall": {
             "_note": "Perfect Recall"
         },
-        "RrYxuotaN5JAjHdT": {
+        "Poison Compendium": {
             "_note": "Poison Compendium"
         },
-        "Yij5sNyP1Ii7BAbc": {
+        "Power of the Gods": {
             "_note": "Power of the Gods"
         },
-        "YS52ZGdce605wNVT": {
+        "Prepared": {
             "_note": "Prepared"
         },
-        "vAZFKiSCZYHBbmtb": {
+        "Pummeljoy": {
             "_note": "Pummeljoy"
         },
-        "bGXfEQV5TLujvgp7": {
+        "Quick": {
             "_note": "Quick"
         },
-        "KRyrbSLVGreIOTZe": {
+        "Regeneration": {
             "_note": "Regeneration"
         },
-        "oLO3VjGkMcK1uvB9": {
+        "Regenerative Reach": {
             "_note": "Regenerative Reach"
         },
-        "QYNGdH37fsGuxS7L": {
+        "Reliable Backup": {
             "_note": "Reliable Backup"
         },
-        "zNyqL7wzm1W4dUjN": {
+        "Reliable": {
             "_note": "Reliable"
         },
-        "oNfA5F9cKwNR7joq": {
+        "Revenge": {
             "_note": "Revenge"
         },
-        "dcutk8RVOJ2sEkO1": {
+        "Rise to the Challenge": {
             "_note": "Rise to the Challenge"
         },
-        "PCmYTX02JLzBpgml": {
+        "Rousing Speech": {
             "_note": "Rousing Speech"
         },
-        "izu8r8Qi8Rd2D8ML": {
+        "Rugged": {
             "_note": "Rugged"
         },
-        "Qny2J3R35bvC0Cey": {
+        "Ruthless Predator": {
             "_note": "Ruthless Predator"
         },
-        "DxOAkDBfIMpXxAUD": {
+        "Sacred Resonance": {
             "_note": "Sacred Resonance"
         },
-        "b16QLSE6UYZExF76": {
+        "Scary": {
             "_note": "Scary"
         },
-        "lg7f25bLIJWWLOcB": {
+        "Scorpion's Poise": {
             "_note": "Scorpion's Poise"
         },
-        "hAwTXjhyphiE3aeW": {
+        "Shadow Stepper": {
             "_note": "Shadow Stepper"
         },
-        "1hF5KGKQc2VKT5O8": {
+        "Slayer": {
             "_note": "Slayer"
         },
-        "GfOSgVJW8bS1OjNq": {
+        "Sparing Touch": {
             "_note": "Sparing Touch"
         },
-        "McoS0RxNLOg3SfSt": {
+        "Spirit Weapon": {
             "_note": "Spirit Weapon"
         },
-        "mfuYkv8RpcSh8SfG": {
+        "Stable": {
             "_note": "Stable"
         },
-        "EVEP9G6lNF8nR5f3": {
+        "Stance Fighter": {
             "_note": "Stance Fighter"
         },
-        "OWh9ztIVW6P0gve0": {
+        "Surrounded": {
             "_note": "Surrounded"
         },
-        "1nmFmkNXY6OYyyju": {
+        "Thrive in Chaos": {
             "_note": "Thrive in Chaos"
         },
-        "UNn0fdVUezD9rRJu": {
+        "Toxic Concoctions": {
             "_note": "Toxic Concoctions"
         },
-        "th6HZwEFnVBjUtqm": {
+        "Transcendence": {
             "_note": "Transcendence"
         },
-        "D0Kno09So9aRO2Lf": {
+        "True Strike": {
             "_note": "True Strike"
         },
-        "i4iY1IBTBWEI01QU": {
+        "Twin Fang": {
             "_note": "Twin Fang"
         },
-        "866b2jjyzXP8nPRQ": {
+        "Undaunted": {
             "_note": "Undaunted"
         },
-        "4qP7bNyxVHBmr4Rb": {
+        "Unrelenting": {
             "_note": "Unrelenting"
         },
-        "WBiFZaYNoQNhysmN": {
+        "Unwavering": {
             "_note": "Unwavering"
         },
-        "iyIg1VLwO8C6jvFZ": {
+        "Vanishing Act": {
             "_note": "Vanishing Act"
         },
-        "WAkxLnKbtic1O6pC": {
+        "Venomancer": {
             "_note": "Venomancer"
         },
-        "h29DyM9jwY8E7AdM": {
+        "Vexing Malison": {
             "_note": "Vexing Malison"
         },
-        "4bLcpljjJylzM5xg": {
+        "Vigilant": {
             "_note": "Vigilant"
         },
-        "kn2t409o0FDFQieo": {
+        "Virtuoso": {
             "_note": "Virtuoso"
         },
-        "VMjYY6MPqVhyKgM7": {
+        "Walk Between Worlds": {
             "_note": "Walk Between Worlds"
         },
-        "2F1bUFY80oce97C9": {
+        "Warden's Protection": {
             "_note": "Warden's Protection"
         },
-        "HAqtoKUTrk8Mip1n": {
+        "Weapon Specialist": {
             "_note": "Weapon Specialist"
         },
-        "7KnSOazixXXSnspj": {
+        "Well-Connected": {
             "_note": "Well-Connected"
         },
-        "KkQH0tYhagIqe2MT": {
+        "Wings of Light": {
             "_note": "Wings of Light"
         },
-        "TIUsIlTS1WkK5vr2": {
+        "Beastbound": {
             "_note": "Beastbound"
         },
-        "NAFU9roaVG7f3RNJ": {
+        "Call Of The Brave": {
             "_note": "Call Of The Brave"
         },
-        "bcNe5qP3o6CKadhK": {
+        "Call Of The Slayer": {
             "_note": "Call Of The Slayer"
         },
-        "M5mpGoAj8LRkylrY": {
+        "Divine Wielder": {
             "_note": "Divine Wielder"
         },
-        "wg1H0hROc2acHwZh": {
+        "Elemental Origin": {
             "_note": "Elemental Origin"
         },
-        "F8uUCjTnvw57oNuQ": {
+        "Executioners Guild": {
             "_note": "Executioners Guild"
         },
-        "7dU2iosTyQaig0Sc": {
+        "Hedge": {
             "_note": "Hedge"
         },
-        "9zyjac09CXquXQSo": {
+        "Juggernaut": {
             "_note": "Juggernaut"
         },
-        "QdoKFfErTEgx6326": {
+        "Martial Artist": {
             "_note": "Martial Artist"
         },
-        "icIkkMKmVmq1WgRz": {
+        "Moon": {
             "_note": "Moon"
         },
-        "h161OSIK24Up4qNd": {
+        "Nightwalker": {
             "_note": "Nightwalker"
         },
-        "yA10Wf90HYb0DTbK": {
+        "Pact of the Endless": {
             "_note": "Pact of the Endless"
         },
-        "TsJSGjecybUfKfpP": {
+        "Pact of the Wrathful": {
             "_note": "Pact of the Wrathful"
         },
-        "4x8jiolc2hhs41dt": {
+        "Poisoners Guild": {
             "_note": "Poisoners Guild"
         },
-        "GLpRVxnY5E82khxH": {
+        "Primal Origin": {
             "_note": "Primal Origin"
         },
-        "qqQlgCqhOivUFoQn": {
+        "School Of Knowledge": {
             "_note": "School Of Knowledge"
         },
-        "4y9Ph7RsCIAbkwTk": {
+        "School Of War": {
             "_note": "School Of War"
         },
-        "rKRxFBlkbh9cDK8K": {
+        "Stalwart": {
             "_note": "Stalwart"
         },
-        "95QxNZwgyEm1LqdG": {
+        "Syndicate": {
             "_note": "Syndicate"
         },
-        "ld8MIvk0xVJydSBz": {
+        "Troubadour": {
             "_note": "Troubadour"
         },
-        "SUo8NPBPO8aN193u": {
+        "Vengeance": {
             "_note": "Vengeance"
         },
-        "xp0XMjYT85Q7E90o": {
+        "Warden of Renewal": {
             "_note": "Warden of Renewal"
         },
-        "W9hs5kxOWeY7eA4Q": {
+        "Warden of the Elements": {
             "_note": "Warden of the Elements"
         },
-        "zsUglcU4NgZ8tNgZ": {
+        "Wayfinder": {
             "_note": "Wayfinder"
         },
-        "y7ERWRIpJsdP9Re4": {
+        "Winged Sentinel": {
             "_note": "Winged Sentinel"
         },
-        "XTSODVM8st75Os8M": {
+        "Wordsmith": {
             "_note": "Wordsmith"
         }
     }

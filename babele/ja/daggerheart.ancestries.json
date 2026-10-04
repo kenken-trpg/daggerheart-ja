@@ -3,220 +3,222 @@
     "collection": "daggerheart.ancestries",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "MOe9Lf4CeK3FKNyL": {
+        "Aetheris": {
             "_note": "Aetheris"
         },
-        "ed8BoLR4SHOpeV00": {
+        "Clank": {
             "_note": "Clank"
         },
-        "VLeOEqkLS0RbF0tB": {
+        "Drakona": {
             "_note": "Drakona"
         },
-        "pDt6fI6otv2E2odf": {
+        "Dwarf": {
             "_note": "Dwarf"
         },
-        "UfSkmzJu8trnSbJW": {
+        "Earthkin": {
             "_note": "Earthkin"
         },
-        "q2l6g3Ssa04K84GO": {
+        "Elf": {
             "_note": "Elf"
         },
-        "moNuI4qFehGE1ZgV": {
+        "Emberkin": {
             "_note": "Emberkin"
         },
-        "XzJVbb5NT9k79ykR": {
+        "Faerie": {
             "_note": "Faerie"
         },
-        "HaYhe6WqoXW5EbRl": {
+        "Faun": {
             "_note": "Faun"
         },
-        "hzKmydI8sR3uk4CO": {
+        "Firbolg": {
             "_note": "Firbolg"
         },
-        "J1hX7nBBc5jQiHli": {
+        "Fungril": {
             "_note": "Fungril"
         },
-        "eZNG5Iv0yfbHs5CO": {
+        "Galapa": {
             "_note": "Galapa"
         },
-        "3U8CncG92a7ERIJ0": {
+        "Giant": {
             "_note": "Giant"
         },
-        "RkSFOANAzYlAVv91": {
+        "Gnome": {
             "_note": "Gnome"
         },
-        "EKPEdIz9lA9grPqH": {
+        "Goblin": {
             "_note": "Goblin"
         },
-        "CtL2jDjvPOJxNJKm": {
+        "Halfling": {
             "_note": "Halfling"
         },
-        "wtJ5V5qRppLQn61n": {
+        "Human": {
             "_note": "Human"
         },
-        "hyxcuF2I0xcZSGkm": {
+        "Infernis": {
             "_note": "Infernis"
         },
-        "yyW0UM8srD9WuwW7": {
+        "Katari": {
             "_note": "Katari"
         },
-        "D1RbUsRV9HpTrPuF": {
+        "Orc": {
             "_note": "Orc"
         },
-        "HwOoBKXOL9Tf5j85": {
+        "Ribbet": {
             "_note": "Ribbet"
         },
-        "2yMLxxn7CHEvmShj": {
+        "Simiah": {
             "_note": "Simiah"
         },
-        "8j6sTY4Y2hfeUHyi": {
+        "Skykin": {
             "_note": "Skykin"
         },
-        "whKWzHY0cC4fAsLs": {
+        "Tidekin": {
             "_note": "Tidekin"
         },
-        "BNofV1UC4ZbdFTkb": {
+        "Adaptability": {
             "_note": "Adaptability"
         },
-        "GVhmLouGq9GWCsN8": {
-            "_note": "Amphibious"
+        "Amphibious": {
+            "_note": "Amphibious",
+            "name": "両生"
         },
         "kFuNdXalIInsFRlh": {
-            "_note": "Amphibious"
+            "_note": "Amphibious",
+            "name": "両生"
         },
-        "nLL2zuDDDbbyxlrQ": {
+        "Caprine Leap": {
             "_note": "Caprine Leap"
         },
-        "TfolXWFG2W2hx6sK": {
+        "Celestial Trance": {
             "_note": "Celestial Trance"
         },
-        "qNoIvEtDIA8JkOiq": {
+        "Celestial Wings": {
             "_note": "Celestial Wings"
         },
-        "AA2CZlJSWW8GPhrR": {
+        "Charge": {
             "_note": "Charge"
         },
-        "AXqcoxnRoWBbbKpK": {
+        "Danger Sense": {
             "_note": "Danger Sense"
         },
-        "WuwXH2r2uM9sDJtj": {
+        "Death Connection": {
             "_note": "Death Connection"
         },
-        "i92lYjDhVB0LyPid": {
+        "Dread Visage": {
             "_note": "Dread Visage"
         },
-        "2xlqKOkDxWHbuj4t": {
+        "Efficient": {
             "_note": "Efficient"
         },
-        "sRaE3CgkgjBF1UpV": {
+        "Elemental Breath": {
             "_note": "Elemental Breath"
         },
-        "tXWEMdLXafUSZTbK": {
+        "Endurance": {
             "_note": "Endurance"
         },
-        "H18ab3im0cn6gYdC": {
+        "Eye of the Storm": {
             "_note": "Eye of the Storm"
         },
-        "IlWvn5kCqCBMuUJn": {
+        "Fearless": {
             "_note": "Fearless"
         },
-        "lNgbbYnCKgrdvA85": {
+        "Feline Instincts": {
             "_note": "Feline Instincts"
         },
-        "zmTuxjHiNDsW4VYa": {
+        "Fireproof": {
             "_note": "Fireproof"
         },
-        "puDdIetm05O8andm": {
+        "Flicker Step": {
             "_note": "Flicker Step"
         },
-        "9tmeXm623hl4Qnws": {
+        "Fungril Network": {
             "_note": "Fungril Network"
         },
-        "hgFrDlmnPjhRUxOg": {
+        "Gale Force": {
             "_note": "Gale Force"
         },
-        "k9hwCXpESBx326PC": {
+        "Hallowed Aura": {
             "_note": "Hallowed Aura"
         },
-        "HMXNJZ7ynzajR2KT": {
+        "High Stamina": {
             "_note": "High Stamina"
         },
-        "FaHu2yAthY6ZvM2d": {
+        "Ignition": {
             "_note": "Ignition"
         },
-        "CvUVZRfxgxhmRQ9I": {
+        "Immovable": {
             "_note": "Immovable"
         },
-        "0RN0baBxh95GT1cm": {
+        "Increased Fortitude": {
             "_note": "Increased Fortitude"
         },
-        "e2Cu6exxtvfQzc1e": {
+        "Internal Compass": {
             "_note": "Internal Compass"
         },
-        "gpW19TfJk0WWFh1S": {
+        "Kick": {
             "_note": "Kick"
         },
-        "HCyMnY3yW1PBTZvc": {
+        "Lifespring": {
             "_note": "Lifespring"
         },
-        "oWbdlh51ajn1Q5kL": {
+        "Long Tongue": {
             "_note": "Long Tongue"
         },
-        "U6iFjZgLYawlOlQZ": {
+        "Luckbender": {
             "_note": "Luckbender"
         },
-        "8O6SQQMxKWr430QA": {
+        "Luckbringer": {
             "_note": "Luckbringer"
         },
-        "soQvPL0MrTLLcc31": {
+        "Natural Climber": {
             "_note": "Natural Climber"
         },
-        "3lNqft3LmOlEIEkw": {
+        "Nimble": {
             "_note": "Nimble"
         },
-        "tsX9rZ2JRkzgF8DR": {
+        "Nimble Fingers": {
             "_note": "Nimble Fingers"
         },
-        "g6I4tRUQNgL4vZ6H": {
+        "Purposeful Design": {
             "_note": "Purposeful Design"
         },
-        "0NSPSuB8KSEYTJIP": {
+        "Quick Reactions": {
             "_note": "Quick Reactions"
         },
-        "WRs2jvwM0STmkWIW": {
+        "Reach": {
             "_note": "Reach"
         },
-        "UFR67BUOhNGLFyg9": {
+        "Retract": {
             "_note": "Retract"
         },
-        "Zj69cAeb3NjIa8Hn": {
+        "Retracting Claws": {
             "_note": "Retracting Claws"
         },
-        "u8ZhV962rNmUlzkp": {
+        "Scales": {
             "_note": "Scales"
         },
-        "A6a87OWA3tx16g9V": {
+        "Shell": {
             "_note": "Shell"
         },
-        "THm8khYAtu2vQrdd": {
+        "Stoneskin": {
             "_note": "Stoneskin"
         },
-        "60o3cKUZzxO9EDQF": {
+        "Sturdy": {
             "_note": "Sturdy"
         },
-        "YsJticxv8OFndd4D": {
+        "Surefooted": {
             "_note": "Surefooted"
         },
-        "S0Ww7pYOSREt8qKg": {
+        "Thick Skin": {
             "_note": "Thick Skin"
         },
-        "YhxD1ujZpftPu19w": {
+        "Tusks": {
             "_note": "Tusks"
         },
-        "G5pE8FW94V1W9jJx": {
+        "Unshakeable": {
             "_note": "Unshakeable"
         },
-        "WquAjoOcso8lwySW": {
+        "Wings": {
             "_note": "Wings"
         }
     }

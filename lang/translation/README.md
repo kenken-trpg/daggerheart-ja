@@ -1823,3 +1823,60 @@ Item でもなく `system` を持たないので、`document.results` が配列�
 
 `npm run packs:probe` は40件に増えた。rolltables では「参照結果の名前が
 書き出されていないこと」自体も検査している。
+
+### 訂正: 「参照結果は自動で付いてくる」は実機では成立していなかった
+
+上で「items パックを訳せば rolltables の240件は自動で付いてくる」と書き、
+`packs:probe` でも通した。**実機では追従しなかった。**
+
+テーブルが参照している loot アイテム 1件 (`Premium Bedroll` → `高級寝袋`) だけを
+訳して確認したところ、テーブルの結果は `Premium Bedroll` のままだった。
+
+原因は `ReferencedDocumentFieldConverter.translate` の呼び出し方。参照先パックに
+
+```js
+referencedPack.translateField(referencedField, { [referencedField]: context.value }, runtime);
+```
+
+と、**名前だけを渡す**。id が無いので、照合候補は名前1つに絞られる。
+一方こちらの訳文ファイルは `_identity.export: ["_id"]` で **id をキーにして
+いた**ので、名前では永久に引けない。実機のコンソールで確認:
+
+```
+tc.translateField('name', { name: 'Premium Bedroll' })                        → "Premium Bedroll"
+tc.translateField('name', { _id: 'QGYPNBIufpBguwjC', name: 'Premium Bedroll' }) → "高級寝袋"
+```
+
+**Node のハーネスでは出なかった。** ハーネスは文書型ごとのマッピングを直接
+叩いていて、参照解決に必要な「他パックの MappedCompendium」が無いため、
+`referencedDocumentField` は `undefined` を返して**失敗せずに素通りする**。
+「落ちない」ことと「効いている」ことの差で、実機でしか出ない類の穴だった。
+
+### 訳文ファイルのキーを名前に変えた
+
+`_identity.export` を `["name", "_id"]` に変更し、`packs-sync` の書き出しも
+同じ規則にした。**名前が重複するときだけ id に落ちる**。Babele 自身の
+`ExportKeys` と同じ順序で、Babele の既定の流儀でもある。
+
+id キーは上流のリネームに強いという利点があったが、その代償が
+`referencedDocumentField` の全面不成立 (240件) だった。リネームされた場合は
+`report` の "retired upstream" に出るので、黙って古い訳が残るよりは見える。
+
+衝突は2パックだけ: `ancestries` の `Amphibious` ×2 と `beastforms` の
+`Carrier` ×3。実機で**同名2件に別々の訳を入れて確認**し、文書もインデックスも
+取り違えなしに別々の訳が出た (`_identity.match` が `_id` を先に見るため、
+id キー側は id で、名前キー側は名前で引かれる)。
+
+移行は `buildPack` が旧 id キーも見るようにして自動化した。既存の訳は
+全件引き継がれている (56件)。
+
+### 実機で確認したこと
+
+| 項目 | 結果 |
+| --- | --- |
+| 参照結果の追従 | `高級寝袋`。隣の未訳の結果は `Piper Whistle` のまま |
+| テーブル名・説明 | `ランダム目標` / `コアセット・アイテム` + 説明文 |
+| `text` 型結果の説明 | 2件が日本語、残り10件は英語のまま |
+| **フォルダ名** | コンペンディウムブラウザに `コアルール` / `希望と恐怖` |
+| 同名文書の衝突 | 2件が別々に訳され、インデックスでも別 |
+| キー変更後の回帰 | 工程の全プローブが健在。文書数も 324 / 121 / 210 で不変 |

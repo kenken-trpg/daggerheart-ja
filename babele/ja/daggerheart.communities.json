@@ -3,72 +3,72 @@
     "collection": "daggerheart.communities",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "7hCkORII05slZW3c": {
+        "Duneborne": {
             "_note": "Duneborne"
         },
-        "XLaNJvrahs9rRraZ": {
+        "Freeborne": {
             "_note": "Freeborne",
             "name": "自由民",
             "description": "<p>自由民のコミュニティの一員であるということは、かつて圧政下にあったが今は解放された共同体の出身だということです。</p>"
         },
-        "YHfNavuBRxvyqeNO": {
+        "Frostborne": {
             "_note": "Frostborne"
         },
-        "wbI1Im48QmZA1UIE": {
+        "Hearthborne": {
             "_note": "Hearthborne"
         },
-        "DVw2mOCHB8i0XeBz": {
+        "Highborne": {
             "_note": "Highborne"
         },
-        "YsvlyqYoi8QQ8kwm": {
+        "Loreborne": {
             "_note": "Loreborne"
         },
-        "TY2TejenASXtS484": {
+        "Orderborne": {
             "_note": "Orderborne"
         },
-        "Mv4TfmbbgKyOj1rt": {
+        "Reborne": {
             "_note": "Reborne"
         },
-        "WHLA4qrdszXQHOuo": {
+        "Ridgeborne": {
             "_note": "Ridgeborne"
         },
-        "o5AA5J05N7EvH1rN": {
+        "Seaborne": {
             "_note": "Seaborne"
         },
-        "rGwCPMqZtky7SE6d": {
+        "Slyborne": {
             "_note": "Slyborne"
         },
-        "eX0I1ZNMyD3nfaL1": {
+        "Underborne": {
             "_note": "Underborne"
         },
-        "82mDY2EIBfLkNwQj": {
+        "Wanderborne": {
             "_note": "Wanderborne"
         },
-        "fB2lEkodBCuyyMs1": {
+        "Warborne": {
             "_note": "Warborne"
         },
-        "CRJ5pzJj4FjCtIlx": {
+        "Wildborne": {
             "_note": "Wildborne"
         },
-        "E7QiHAoOxQIZEVR1": {
+        "Brave Face": {
             "_note": "Brave Face"
         },
-        "u5OSsvjcD8tvf5Gc": {
+        "Close-Knit": {
             "_note": "Close-Knit"
         },
-        "7aXWdH3gzaYREK0X": {
+        "Dedicated": {
             "_note": "Dedicated"
         },
-        "3Q6bQ73PdGz2Bmcz": {
+        "Found Family": {
             "_note": "Found Family"
         },
-        "z8HhzWZUZCSrbzTc": {
+        "Hardy": {
             "_note": "Hardy"
         },
-        "07x6Qe6qMzDw2xN4": {
+        "Know the Tide": {
             "_note": "Know the Tide"
         },
-        "TQ1AIQjndC4mYmmU": {
+        "Lightfoot": {
             "_note": "Lightfoot",
             "name": "軽やかな足",
             "description": "<p>あなたの動きは自然と静かです。音を立てずに移動するロールに有利を得ます。</p>",
@@ -79,28 +79,28 @@
                 }
             }
         },
-        "aMla3xQuCHEwORGD": {
+        "Low-Light Living": {
             "_note": "Low-Light Living"
         },
-        "2RSrQouA2zEJ5Xee": {
+        "Nomadic Pack": {
             "_note": "Nomadic Pack"
         },
-        "DOrvaVrES1HYhG2u": {
+        "Oasis": {
             "_note": "Oasis"
         },
-        "C7NR6qRatawZusmg": {
+        "Privilege": {
             "_note": "Privilege"
         },
-        "ZmEuBdL0JrvuA8le": {
+        "Scoundrel": {
             "_note": "Scoundrel"
         },
-        "DYmmr5CknLtHnwuj": {
+        "Steady": {
             "_note": "Steady"
         },
-        "OyzEkHdHYwmoofQx": {
+        "Unbound": {
             "_note": "Unbound"
         },
-        "JBZJmywisJg5X3tH": {
+        "Well-Read": {
             "_note": "Well-Read"
         }
     }

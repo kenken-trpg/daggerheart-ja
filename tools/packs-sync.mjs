@@ -360,6 +360,30 @@ function* leaves(original, translated, trail = []) {
     }
 }
 
+/**
+ * The key each document gets in its translation file: its English name, falling
+ * back to its id when two documents in the pack share a name.
+ *
+ * Keying by id reads better and survives upstream renames, and that is how this
+ * started -- but it quietly broke Babele's `referencedDocumentField`, which is
+ * how a rolltable result takes its name from the item it points at. That
+ * converter looks the referenced document up with `{ name }` alone, with no id
+ * to match on, so an id-keyed file can never answer it. Babele's own exporter
+ * prefers the name for the same reason.
+ *
+ * Only `ancestries` (Amphibious x2) and `beastforms` (Carrier x3) collide.
+ */
+function entryKeys(documents) {
+    const used = new Set();
+    const keys = new Map();
+    for (const document of documents) {
+        const key = document.name && !used.has(document.name) ? document.name : document._id;
+        used.add(key);
+        keys.set(document._id, key);
+    }
+    return keys;
+}
+
 async function buildPack(pack) {
     const collection = PACKS[pack];
     const file = path.join(BABELE_DIR, `${collection}.json`);
@@ -369,13 +393,16 @@ async function buildPack(pack) {
     });
 
     const { documents, folders } = await readPack(pack);
+    const keys = entryKeys(documents);
     const entries = {};
     for (const document of documents) {
         const original = translatableFields(document);
-        entries[document._id] = {
+        /* Files written before the switch to name keys are still keyed by id. */
+        const carried = previous.entries?.[keys.get(document._id)] ?? previous.entries?.[document._id];
+        entries[keys.get(document._id)] = {
             /* Not a mapped field: it is here so a diff of this file can be read. */
             _note: document.name,
-            ...(carryOver(original, previous.entries?.[document._id]) ?? {})
+            ...(carryOver(original, carried) ?? {})
         };
     }
 
@@ -385,9 +412,9 @@ async function buildPack(pack) {
     );
 
     /* The original shape, so `apply` can tell a keyed container from an array. */
-    const originals = Object.fromEntries(documents.map(d => [d._id, translatableFields(d)]));
+    const originals = Object.fromEntries(documents.map(d => [keys.get(d._id), translatableFields(d)]));
 
-    return { collection, file, previous, documents, entries, folderNames, originals };
+    return { collection, file, previous, documents, entries, folderNames, originals, keys };
 }
 
 /** Drop the not-yet-translated entries of a flat name->translation map. */
@@ -433,13 +460,13 @@ const commands = {
         let count = 0;
 
         for (const pack of ENABLED) {
-            const { collection, file, documents, folderNames } = await buildPack(pack);
+            const { collection, file, documents, folderNames, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
             const entries = {};
 
             for (const document of documents) {
                 const original = translatableFields(document);
-                const translation = current.entries?.[document._id] ?? {};
+                const translation = current.entries?.[keys.get(document._id)] ?? {};
                 const missing = {};
 
                 for (const [where, source, value] of leaves(original, translation)) {
@@ -450,7 +477,7 @@ const commands = {
                 }
 
                 if (Object.keys(missing).length) {
-                    entries[document._id] = { _note: document.name, ...missing };
+                    entries[keys.get(document._id)] = { _note: document.name, ...missing };
                 }
             }
 
@@ -551,7 +578,7 @@ const commands = {
     async report() {
         let totals = { translated: 0, untranslated: 0, retired: 0 };
         for (const pack of ENABLED) {
-            const { collection, file, documents, folderNames } = await buildPack(pack);
+            const { collection, file, documents, folderNames, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
             let translated = 0;
             let untranslated = 0;
@@ -561,7 +588,7 @@ const commands = {
              */
             for (const document of documents) {
                 const original = translatableFields(document);
-                const translation = current.entries?.[document._id] ?? {};
+                const translation = current.entries?.[keys.get(document._id)] ?? {};
                 for (const [, source, value] of leaves(original, translation)) {
                     if (!source) continue;
                     if (value) translated += 1;
@@ -574,8 +601,8 @@ const commands = {
                 else untranslated += 1;
             }
 
-            const ids = new Set(documents.map(d => d._id));
-            const retired = Object.keys(current.entries ?? {}).filter(id => !ids.has(id)).length;
+            const live = new Set(keys.values());
+            const retired = Object.keys(current.entries ?? {}).filter(key => !live.has(key)).length;
             totals.retired += retired;
             totals.translated += translated;
             totals.untranslated += untranslated;
@@ -597,12 +624,12 @@ const commands = {
     async check() {
         let problems = 0;
         for (const pack of ENABLED) {
-            const { collection, file, documents } = await buildPack(pack);
+            const { collection, file, documents, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
 
             for (const document of documents) {
                 const original = translatableFields(document);
-                const translation = current.entries?.[document._id] ?? {};
+                const translation = current.entries?.[keys.get(document._id)] ?? {};
 
                 for (const [where, source, value] of leaves(original, translation)) {
                     if (!value) continue;

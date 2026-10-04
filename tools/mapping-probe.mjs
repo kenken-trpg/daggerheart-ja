@@ -11,18 +11,28 @@ import { translate, mergeObject } from './babele-harness.mjs';
 const REFERENCE = new URL('../lang/.reference/packs/', import.meta.url);
 const TRANSLATIONS = new URL('../babele/ja/', import.meta.url);
 
-async function document(pack, id) {
+/** Find a pack document by id or, since entries are name-keyed, by name. */
+async function document(pack, key) {
     const dir = new URL(`${pack}/`, REFERENCE);
+    let byName = null;
     for (const file of await fs.readdir(dir)) {
         if (!file.endsWith('.json')) continue;
         const data = JSON.parse(await fs.readFile(new URL(file, dir), 'utf8'));
-        if (data._id === id) return data;
+        if (data._id === key) return data;
+        if (data.name === key && !byName) byName = data;
     }
-    throw new Error(`${id} not in ${pack}`);
+    if (byName) return byName;
+    throw new Error(`${key} not in ${pack}`);
 }
 
-const translationsFor = async (collection, id) =>
-    JSON.parse(await fs.readFile(new URL(`${collection}.json`, TRANSLATIONS), 'utf8')).entries[id] ?? {};
+/*
+ * Entries are keyed by English name, with the id as the fallback when two
+ * documents in a pack share one -- the same rule packs-sync writes by.
+ */
+async function translationsFor(collection, id, name) {
+    const entries = JSON.parse(await fs.readFile(new URL(`${collection}.json`, TRANSLATIONS), 'utf8')).entries;
+    return entries[id] ?? (name ? entries[name] : undefined) ?? {};
+}
 
 const checks = [];
 const check = (label, actual, expected) =>
@@ -31,7 +41,7 @@ const check = (label, actual, expected) =>
 /* --- weapons: system.attack on the Item ------------------------------- */
 {
     const data = await document('items/weapons', 'ijodu5yNBoMxpkHV');
-    const out = translate('Item', data, await translationsFor('daggerheart.weapons', 'ijodu5yNBoMxpkHV'));
+    const out = translate('Item', data, await translationsFor('daggerheart.weapons', 'ijodu5yNBoMxpkHV', data.name));
     check('weapon name', out.name, 'アーンタリ・ボウ');
     check('weapon attack.name', out.system.attack.name, '攻撃');
     check('weapon attack.range untouched', out.system.attack.range, data.system.attack.range);
@@ -46,7 +56,7 @@ const check = (label, actual, expected) =>
 /* --- domains: a name two converters deep inside a keyed action -------- */
 {
     const data = await document('domains', 'R0LNheiZycZlZzV3');
-    const out = translate('Item', data, await translationsFor('daggerheart.domains', 'R0LNheiZycZlZzV3'));
+    const out = translate('Item', data, await translationsFor('daggerheart.domains', 'R0LNheiZycZlZzV3', data.name));
     const action = out.system.actions.K26kfjmTEH9zPMMO;
     const before = data.system.actions.K26kfjmTEH9zPMMO;
     check('area name', action.areas[0].name, 'グリンの書');
@@ -55,7 +65,7 @@ const check = (label, actual, expected) =>
 }
 {
     const data = await document('domains', 'dT95m0Jam8sWbeuC');
-    const out = translate('Item', data, await translationsFor('daggerheart.domains', 'dT95m0Jam8sWbeuC'));
+    const out = translate('Item', data, await translationsFor('daggerheart.domains', 'dT95m0Jam8sWbeuC', data.name));
     const action = out.system.actions.ZM96wFu3YuAeUXel;
     check('countdown name', action.countdown[0].name, '集団変装');
     check(
@@ -68,7 +78,7 @@ const check = (label, actual, expected) =>
 /* --- beastforms: a bare string field and a keyed free-text container -- */
 {
     const data = await document('beastforms', 'mZ4Wlqtss2FlNNvL');
-    const out = translate('Item', data, await translationsFor('daggerheart.beastforms', 'mZ4Wlqtss2FlNNvL'));
+    const out = translate('Item', data, await translationsFor('daggerheart.beastforms', 'mZ4Wlqtss2FlNNvL', data.name));
     check('beastform examples', out.system.examples, 'タカ、フクロウ、カラスなど');
     check('advantageOn values', Object.values(out.system.advantageOn).map(a => a.value).sort(), [
         '威嚇する',
@@ -82,7 +92,7 @@ const check = (label, actual, expected) =>
 /* --- classes: bare string arrays and a twice-keyed tree --------------- */
 {
     const data = await document('classes', '0Qw2heB75eXNV4SM');
-    const out = translate('Item', data, await translationsFor('daggerheart.classes', '0Qw2heB75eXNV4SM'));
+    const out = translate('Item', data, await translationsFor('daggerheart.classes', '0Qw2heB75eXNV4SM', data.name));
     check('backgroundQuestions[2] translated', out.system.backgroundQuestions[2], 'あなたが最近敗れ、どうしても再戦したい相手は誰ですか？');
     check('backgroundQuestions[0] left alone', out.system.backgroundQuestions[0], data.system.backgroundQuestions[0]);
     check('backgroundQuestions length', out.system.backgroundQuestions.length, data.system.backgroundQuestions.length);
@@ -99,7 +109,7 @@ const check = (label, actual, expected) =>
 /* --- effects: an object-valued change, and duration prose ------------- */
 {
     const data = await document('classes', 'WgUrpNTlX92k0Xs3');
-    const entry = await translationsFor('daggerheart.classes', 'WgUrpNTlX92k0Xs3');
+    const entry = await translationsFor('daggerheart.classes', 'WgUrpNTlX92k0Xs3', data.name);
     const effect = data.effects.find(e => e._id === 'bGHd7NfUn4fL6u1g');
     const out = translate('ActiveEffect', effect, entry.effects.bGHd7NfUn4fL6u1g);
     check('granted weapon name', out.system.changes[1].value.name, 'ブローラーの一撃'.replace('ロー', 'ロウ'));
@@ -109,7 +119,7 @@ const check = (label, actual, expected) =>
 }
 {
     const data = await document('items/consumables', 'eAXHdzA5qNPldOpn');
-    const entry = await translationsFor('daggerheart.consumables', 'eAXHdzA5qNPldOpn');
+    const entry = await translationsFor('daggerheart.consumables', 'eAXHdzA5qNPldOpn', data.name);
     const effect = data.effects.find(e => e._id === 'nryJhrF26hyFQUxH');
     const out = translate('ActiveEffect', effect, entry.effects.nryJhrF26hyFQUxH);
     check('duration description', out.system.duration.description, '<p>HPをマークするまで。</p>');
@@ -153,7 +163,7 @@ const check = (label, actual, expected) =>
     const table = JSON.parse(
         await fs.readFile(new URL('rolltables/tables_Random_Objectives_I5L1dlgxXTNrCCkL.json', REFERENCE), 'utf8')
     );
-    const entry = await translationsFor('daggerheart.rolltables', 'I5L1dlgxXTNrCCkL');
+    const entry = await translationsFor('daggerheart.rolltables', 'I5L1dlgxXTNrCCkL', table.name);
     const out = translate('RollTable', table, entry);
     check('table name', out.name, 'ランダム目標');
     const first = out.results.find(r => r._id === 'LDuVbmdvhJiEOe7U');
@@ -172,11 +182,29 @@ const check = (label, actual, expected) =>
     const items = JSON.parse(
         await fs.readFile(new URL('rolltables/tables_Core_Set_Items_S61Shlt2I5CbLRjz.json', REFERENCE), 'utf8')
     );
-    const entry = await translationsFor('daggerheart.rolltables', 'S61Shlt2I5CbLRjz');
+    const entry = await translationsFor('daggerheart.rolltables', 'S61Shlt2I5CbLRjz', items.name);
     check('no result names were exported', Object.keys(entry.results ?? {}).length, 0);
     check('every result of this table is a reference', items.results.every(r => !!r.documentUuid), true);
     const out = translate('RollTable', items, entry);
     check('table description', out.description, '<p>以下の表には、ダガーハート・コアセットのアイテムが含まれます。</p>');
+}
+
+/* --- the two documents that share a name must not share an entry ------- */
+{
+    const file = JSON.parse(await fs.readFile(new URL('daggerheart.ancestries.json', TRANSLATIONS), 'utf8'));
+    const dir = new URL('ancestries/', REFERENCE);
+    const amphibious = [];
+    for (const name of await fs.readdir(dir)) {
+        if (!name.endsWith('.json')) continue;
+        const data = JSON.parse(await fs.readFile(new URL(name, dir), 'utf8'));
+        if (data.name === 'Amphibious') amphibious.push(data._id);
+    }
+    check('two documents are named Amphibious', amphibious.length, 2);
+    check('the name key exists', typeof file.entries['Amphibious'], 'object');
+    const idKeyed = amphibious.filter(id => file.entries[id]);
+    check('the second one fell back to an id key', idKeyed.length, 1);
+    check('they are separate entries',
+        file.entries['Amphibious'] !== file.entries[idKeyed[0]], true);
 }
 
 let failed = 0;

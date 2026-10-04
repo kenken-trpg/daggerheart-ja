@@ -3,7 +3,7 @@
     "collection": "daggerheart.environments",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "pGEdzdLkqYtBhxnG": {
+        "Abandoned Grove": {
             "_note": "Abandoned Grove",
             "name": "急流の川",
             "impulses": "押し流す、孤立させる、渡る者を試す",
@@ -16,142 +16,142 @@
                 }
             }
         },
-        "wNfqitfA2Gq3SrF8": {
+        "Abandoned Mine": {
             "_note": "Abandoned Mine"
         },
-        "zgfq7QcPm5VFbjEe": {
+        "Alchemist's Abandoned Workshop": {
             "_note": "Alchemist's Abandoned Workshop"
         },
-        "uGEdNYERCTJBEjc5": {
+        "Ambushed": {
             "_note": "Ambushed"
         },
-        "uXZpebPR77YQ1oXI": {
+        "Ambushers": {
             "_note": "Ambushers"
         },
-        "W8BEoqK1zlK6THPz": {
+        "Archmage's Tower": {
             "_note": "Archmage's Tower"
         },
-        "m1RJ6Iic7WfYX02N": {
+        "Astral Realm": {
             "_note": "Astral Realm"
         },
-        "76bXzfiKjbFpIDuf": {
+        "Beach Day": {
             "_note": "Beach Day"
         },
-        "oY69NN4rYxoRE4hl": {
+        "Burning Heart of the Woods": {
             "_note": "Burning Heart of the Woods"
         },
-        "HZKA7hkej7JJY503": {
+        "Bustling Marketplace": {
             "_note": "Bustling Marketplace"
         },
-        "1eZ32Esq7rfZOjlu": {
+        "Castle Siege": {
             "_note": "Castle Siege"
         },
-        "2Z1mKc65LxNk2PqR": {
+        "Chaos Realm": {
             "_note": "Chaos Realm"
         },
-        "LPpfdlNKqiZIl04w": {
+        "Cliffside Ascent": {
             "_note": "Cliffside Ascent"
         },
-        "5S3sSvvuXp15MMAR": {
+        "Convergence, The City Of Portals": {
             "_note": "Convergence, The City Of Portals"
         },
-        "dOlH1waNE5Jb5ZEj": {
+        "Corrupted Swamp": {
             "_note": "Corrupted Swamp"
         },
-        "4ySAAwwc8tddZJSi": {
+        "Crystal Wasteland": {
             "_note": "Crystal Wasteland"
         },
-        "QAXXiOKBDmCTauHD": {
+        "Cult Ritual": {
             "_note": "Cult Ritual"
         },
-        "0OPEz1scGX8gJFPi": {
+        "Cursed Graveyard": {
             "_note": "Cursed Graveyard"
         },
-        "tQpntfbUjUjmXc3e": {
+        "Deadly Dungeon": {
             "_note": "Deadly Dungeon"
         },
-        "4DLYez7VbMCFDAuZ": {
+        "Divine Usurpation": {
             "_note": "Divine Usurpation"
         },
-        "ta028s8hP4kvKTaw": {
+        "Dragon's Lair": {
             "_note": "Dragon's Lair"
         },
-        "mLnGz7Fy9d0ttT9F": {
+        "Duel": {
             "_note": "Duel"
         },
-        "9ltQfUbt4rP6m1Bn": {
+        "Grand Feast": {
             "_note": "Grand Feast"
         },
-        "dsA6j69AnaJhUyqH": {
+        "Hallowed Temple": {
             "_note": "Hallowed Temple"
         },
-        "OzYbizKraK92FDiI": {
+        "Haunted City": {
             "_note": "Haunted City"
         },
-        "7e8T9O0JSj6QzY9P": {
+        "Heist": {
             "_note": "Heist"
         },
-        "E1m1Gw1yQ86QCGuf": {
+        "Hold The Line": {
             "_note": "Hold The Line"
         },
-        "jr1xAoXzVwVblzxI": {
+        "Imperial Court": {
             "_note": "Imperial Court"
         },
-        "ChrSSjjTPmzCWGrZ": {
+        "Local Festival": {
             "_note": "Local Festival"
         },
-        "cM4X81DOyvxNIi52": {
+        "Local Tavern": {
             "_note": "Local Tavern"
         },
-        "2LTMLwpFCDE9Ih88": {
+        "Masquerade Ball": {
             "_note": "Masquerade Ball"
         },
-        "E6xf7TTN2GeWyfv3": {
+        "Megastorm": {
             "_note": "Megastorm"
         },
-        "qPo3w2ag677zAAa4": {
+        "Moon Kingdom": {
             "_note": "Moon Kingdom"
         },
-        "acMu9wJrMZZzLSTJ": {
+        "Mountain Pass": {
             "_note": "Mountain Pass"
         },
-        "h3KyRL7AshhLAmcH": {
+        "Necromancer's Ossuary": {
             "_note": "Necromancer's Ossuary"
         },
-        "NPup5xz3eYkB4Vhc": {
+        "Ocean Voyage": {
             "_note": "Ocean Voyage"
         },
-        "YezryR32uo39xRxW": {
+        "Outpost Town": {
             "_note": "Outpost Town"
         },
-        "EWD3ZsLoK6VMVOf7": {
+        "Pitched Battle": {
             "_note": "Pitched Battle"
         },
-        "t4cdqTfzcqP3H1vJ": {
+        "Raging River": {
             "_note": "Raging River"
         },
-        "6vhekzax9PxL8TgX": {
+        "Raiding Party": {
             "_note": "Raiding Party"
         },
-        "sstO8KJz1VeYv2hZ": {
+        "Realm Of The Dead": {
             "_note": "Realm Of The Dead"
         },
-        "5vOcK3I6ei6WnbKO": {
+        "Sunken Citadel": {
             "_note": "Sunken Citadel"
         },
-        "QbGEzb5Gvq36qYDj": {
+        "Time Court": {
             "_note": "Time Court"
         },
-        "m2xG46JFpCw5YHRX": {
+        "Upscale Casino": {
             "_note": "Upscale Casino"
         },
-        "qSfnKodJHZWYsYKF": {
+        "Vast Desert": {
             "_note": "Vast Desert"
         },
-        "tBXKfR9yQ2zypqWt": {
+        "Volcanic Eruption": {
             "_note": "Volcanic Eruption"
         },
-        "HnJrh1GLJfu2nBbY": {
+        "Witch's Hut": {
             "_note": "Witch's Hut"
         }
     }

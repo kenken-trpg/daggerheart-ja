@@ -3,7 +3,7 @@
     "collection": "daggerheart.adversaries",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "89yAh30vaNQOALlz": {
+        "Acid Burrower": {
             "_note": "Acid Burrower",
             "name": "酸性穴掘り",
             "description": "<p>掘削用の爪と酸性の血を持つ、馬ほどの大きさの昆虫。</p>",
@@ -38,19 +38,19 @@
                 }
             }
         },
-        "G7jiltRjgvVhZewm": {
+        "Adult Flickerfly": {
             "_note": "Adult Flickerfly"
         },
-        "C9vt09lsAa6AeXeg": {
+        "Ahuizotl": {
             "_note": "Ahuizotl"
         },
-        "vNIbYQ4YSzNf0WPE": {
+        "Apprentice Assassin": {
             "_note": "Apprentice Assassin"
         },
-        "WPEOIGfclNJxWb87": {
+        "Arch-Necromancer": {
             "_note": "Arch-Necromancer"
         },
-        "JRhrrEg5UroURiAD": {
+        "Archer Guard": {
             "_note": "Archer Guard",
             "items": {
                 "DMtd1EXQPlPaoRmV": {
@@ -64,778 +64,778 @@
                 }
             }
         },
-        "0ts6CGd93lLqGZI5": {
+        "Archer Squadron": {
             "_note": "Archer Squadron"
         },
-        "FNNt42hhwvuOc4XO": {
+        "Archmage": {
             "_note": "Archmage"
         },
-        "h5RuhzGL17dW5FBT": {
+        "Assassin Poisoner": {
             "_note": "Assassin Poisoner"
         },
-        "bXuRtHS6diPWAJKA": {
+        "Atototl": {
             "_note": "Atototl"
         },
-        "4bUnTk3t4VuZZmc7": {
+        "Banshee": {
             "_note": "Banshee"
         },
-        "SkSS7dNTebMaancS": {
+        "Basilisk": {
             "_note": "Basilisk"
         },
-        "dgH3fW9FTYLaIDvS": {
+        "Battle Box": {
             "_note": "Battle Box"
         },
-        "71qKDLKO3CsrNkdy": {
+        "Bear": {
             "_note": "Bear"
         },
-        "12TRnUh7RzLIn30r": {
+        "Berserker Alpha": {
             "_note": "Berserker Alpha"
         },
-        "CaFmEX2ccQfgIRja": {
+        "Berserker Initiate": {
             "_note": "Berserker Initiate"
         },
-        "B4LZcGuBAHzyVdzy": {
+        "Bladed Guard": {
             "_note": "Bladed Guard"
         },
-        "2UeZ0tEe7AzgSJNd": {
+        "Brawny Zombie": {
             "_note": "Brawny Zombie"
         },
-        "IwliIAsSth5pKGU4": {
+        "Bugboar": {
             "_note": "Bugboar"
         },
-        "UxOoHSEzxIjTpZws": {
+        "Catrin": {
             "_note": "Catrin"
         },
-        "8Zkqk1jU09nKL2fy": {
+        "Cave Ogre": {
             "_note": "Cave Ogre"
         },
-        "tGHjaLIGEUzFygN7": {
+        "Centaur Warden": {
             "_note": "Centaur Warden"
         },
-        "XEZbNjjrhyioE7YP": {
+        "Cephilith Abomination": {
             "_note": "Cephilith Abomination"
         },
-        "I8ClqowcEUMUNVdn": {
+        "Cephilith Hatchling": {
             "_note": "Cephilith Hatchling"
         },
-        "kA7erU1gkzB84PDY": {
+        "Cephilith Novitiate": {
             "_note": "Cephilith Novitiate"
         },
-        "2G7IfajsxWczY04t": {
+        "Cephilith Priest": {
             "_note": "Cephilith Priest"
         },
-        "702jiZPmXM5Hucwj": {
+        "Cephilith Titan": {
             "_note": "Cephilith Titan"
         },
-        "jDmHqGvzg5wjgmxE": {
+        "Chaos Skull": {
             "_note": "Chaos Skull"
         },
-        "pOtg2aQs8iI3GzMV": {
+        "Chicken-foot Hut": {
             "_note": "Chicken-foot Hut"
         },
-        "RV9j8V7CcuZYEhec": {
+        "Chimera": {
             "_note": "Chimera"
         },
-        "HFpYk4dxDMx9emHs": {
+        "Cipactli": {
             "_note": "Cipactli"
         },
-        "O9b1SOGmjhRszm75": {
+        "Cloud Titan": {
             "_note": "Cloud Titan"
         },
-        "JQN5j1AB0VwV0AWN": {
+        "Common Ruffian": {
             "_note": "Common Ruffian"
         },
-        "99TqczuQipBmaB8i": {
+        "Conscript": {
             "_note": "Conscript"
         },
-        "uOP5oT9QzXPlnf3p": {
+        "Construct": {
             "_note": "Construct"
         },
-        "ZxWaWPdzFIUPNC62": {
+        "Courtesan": {
             "_note": "Courtesan"
         },
-        "CBBuEXAlLKFMJdjg": {
+        "Courtier": {
             "_note": "Courtier"
         },
-        "vpzDW0774xXJhNHy": {
+        "Crimson Lepus": {
             "_note": "Crimson Lepus"
         },
-        "nrcRGYmyMy2vBJXl": {
+        "Cryptimoth": {
             "_note": "Cryptimoth"
         },
-        "0NxCSugvKQ4W8OYZ": {
+        "Cult Adept": {
             "_note": "Cult Adept"
         },
-        "tyBOpLfigAhI9bU3": {
+        "Cult Fang": {
             "_note": "Cult Fang"
         },
-        "zx99sOGTXicP4SSD": {
+        "Cult Initiate": {
             "_note": "Cult Initiate"
         },
-        "vw7PTv0hdDRCXhus": {
+        "Cursed Merfolk": {
             "_note": "Cursed Merfolk"
         },
-        "Z16fYvCNRlD4XZij": {
+        "Darkweave Crawler": {
             "_note": "Darkweave Crawler"
         },
-        "PcBt4ggimibM7DCp": {
+        "Darkweave Queen": {
             "_note": "Darkweave Queen"
         },
-        "YdGTyYI6bBXh5lgV": {
+        "Darkweave Spinner": {
             "_note": "Darkweave Spinner"
         },
-        "ADiUlCE0woMcvnzv": {
+        "Darkweave Swarmlings": {
             "_note": "Darkweave Swarmlings"
         },
-        "Wy9Dx05ulqeybn4h": {
+        "Deep Dweller": {
             "_note": "Deep Dweller"
         },
-        "9x2xY9zwc3xzbXo5": {
+        "Deeproot Defender": {
             "_note": "Deeproot Defender"
         },
-        "FeIMCgQ5ZMRRDo4d": {
+        "Demon Lord Berzug": {
             "_note": "Demon Lord Berzug"
         },
-        "pnyjIGxxvurcWmTv": {
+        "Demon of Avarice": {
             "_note": "Demon of Avarice"
         },
-        "kE4dfhqmIQpNd44e": {
+        "Demon of Despair": {
             "_note": "Demon of Despair"
         },
-        "2VN3BftageoTTIzu": {
+        "Demon of Hubris": {
             "_note": "Demon of Hubris"
         },
-        "SxSOkM4bcVOFyjbo": {
+        "Demon of Jealousy": {
             "_note": "Demon of Jealousy"
         },
-        "5lphJAgzoqZI3VoG": {
+        "Demon of Wrath": {
             "_note": "Demon of Wrath"
         },
-        "NoRZ1PqB8N5wcIw0": {
+        "Demonic Hound Pack": {
             "_note": "Demonic Hound Pack"
         },
-        "tBWHW00epmMnkawe": {
+        "Dire Bat": {
             "_note": "Dire Bat"
         },
-        "BTapjzeIvySheRqF": {
+        "Dire Pangolati": {
             "_note": "Dire Pangolati"
         },
-        "wNzeuQLfLUMvgHlQ": {
+        "Dire Wolf": {
             "_note": "Dire Wolf"
         },
-        "cQ3IQkxfRhmLMySF": {
+        "Doppelhound": {
             "_note": "Doppelhound"
         },
-        "qmiZk8Q9DGibINem": {
+        "Dragon Knight": {
             "_note": "Dragon Knight"
         },
-        "FGnHhvctM9bka3Zj": {
+        "Dragon Mother Mitera": {
             "_note": "Dragon Mother Mitera"
         },
-        "VQjfu6GFyNlFSMgH": {
+        "Drake": {
             "_note": "Drake"
         },
-        "wR7cFKrHvRzbzhBT": {
+        "Dryad": {
             "_note": "Dryad"
         },
-        "ldbXoTbf1lnZzXjt": {
+        "Dullahan": {
             "_note": "Dullahan"
         },
-        "TLzY1nDw0Bu9Ud40": {
+        "Electric Eels": {
             "_note": "Electric Eels"
         },
-        "P7h54ZePFPHpYwvB": {
+        "Elemental Spark": {
             "_note": "Elemental Spark"
         },
-        "y0bPXxZES9huK9f5": {
+        "Elephant": {
             "_note": "Elephant"
         },
-        "bfhVWMBUh61b9J6n": {
+        "Elite Soldier": {
             "_note": "Elite Soldier"
         },
-        "VhPEpRkCZKOwK3me": {
+        "Elk": {
             "_note": "Elk"
         },
-        "0QPn79SMU6C0b1qi": {
+        "Entombed Cat Beast": {
             "_note": "Entombed Cat Beast"
         },
-        "etsuHXoRHqWBRI8N": {
+        "Entombed Elite Guard": {
             "_note": "Entombed Elite Guard"
         },
-        "L6QLw1rYK4qtdf1F": {
+        "Entombed Empress": {
             "_note": "Entombed Empress"
         },
-        "BUjYC5kDjBoqNrC3": {
+        "Entombed Necropriest": {
             "_note": "Entombed Necropriest"
         },
-        "BSLBG7hQ9K1HGlU6": {
+        "Entombed Skin Beetles": {
             "_note": "Entombed Skin Beetles"
         },
-        "cugsaVxMi9UCUNku": {
+        "Entombed Stonemason": {
             "_note": "Entombed Stonemason"
         },
-        "ChwwVqowFw8hJQwT": {
+        "Failed Experiment": {
             "_note": "Failed Experiment"
         },
-        "53xmu2ZYzjIOy4Td": {
+        "Falcon": {
             "_note": "Falcon"
         },
-        "OsLG2BjaEdTZUJU9": {
+        "Fallen Shock Troop": {
             "_note": "Fallen Shock Troop"
         },
-        "PELRry1vqjBzSAlr": {
+        "Fallen Sorcerer": {
             "_note": "Fallen Sorcerer"
         },
-        "hxZ0sgoFJubh5aj6": {
+        "Fallen Warlord: Realm-Breaker": {
             "_note": "Fallen Warlord: Realm-Breaker"
         },
-        "RXkZTwBRi4dJ3JE5": {
+        "Fallen Warlord: Undefeated Champion": {
             "_note": "Fallen Warlord: Undefeated Champion"
         },
-        "q3BOz4DSAIAvvJGK": {
+        "Fellmounted Shadow King": {
             "_note": "Fellmounted Shadow King"
         },
-        "PjkvJjlljFIg6Ae9": {
+        "Fire Titan Warlord": {
             "_note": "Fire Titan Warlord"
         },
-        "borKEokmyZ8gOkK3": {
+        "Fire Titan": {
             "_note": "Fire Titan"
         },
-        "vWHynB75iGfOhTjn": {
+        "Flock Of Feather Fiends": {
             "_note": "Flock Of Feather Fiends"
         },
-        "diyNjiVzyZEwYg1V": {
+        "Fowlbear": {
             "_note": "Fowlbear"
         },
-        "qdmY1ZJcnAaVvJQD": {
+        "Frost Titan": {
             "_note": "Frost Titan"
         },
-        "55oYzFQRmrXCqNxn": {
+        "Fungispunj Sporeling": {
             "_note": "Fungispunj Sporeling"
         },
-        "5BKK7pDRjRAgN3Nm": {
+        "Fungispunj Sporophore": {
             "_note": "Fungispunj Sporophore"
         },
-        "mXXYdmgqAKKZD4tB": {
+        "Gargantuan Sea Turtle": {
             "_note": "Gargantuan Sea Turtle"
         },
-        "iCiRtuBhVfojXOj5": {
+        "Gargantuan War Machine": {
             "_note": "Gargantuan War Machine"
         },
-        "rTdLnKnuI8lu0kfv": {
+        "Gargoyle": {
             "_note": "Gargoyle"
         },
-        "Tg1F1PthQWeKdLJT": {
+        "Ghastly Legion": {
             "_note": "Ghastly Legion"
         },
-        "8VZIgU12cB3cvlyH": {
+        "Giant Beastmaster": {
             "_note": "Giant Beastmaster"
         },
-        "YnObCleGjPT7yqEc": {
+        "Giant Brawler": {
             "_note": "Giant Brawler"
         },
-        "OMQ0v6PE8s1mSU0K": {
+        "Giant Eagle": {
             "_note": "Giant Eagle"
         },
-        "IIWV4ysJPFPnTP7W": {
+        "Giant Mosquitoes": {
             "_note": "Giant Mosquitoes"
         },
-        "TqL5DLSbGFI8RsLd": {
+        "Giant Octopus": {
             "_note": "Giant Octopus"
         },
-        "4PfLnaCrOcMdb4dK": {
+        "Giant Rat": {
             "_note": "Giant Rat"
         },
-        "5s8wSvpyC5rxY5aD": {
+        "Giant Recruit": {
             "_note": "Giant Recruit"
         },
-        "fmfntuJ8mHRCAktP": {
+        "Giant Scorpion": {
             "_note": "Giant Scorpion"
         },
-        "8KWVLWXFhlY2kYx0": {
+        "Glass Snake": {
             "_note": "Glass Snake"
         },
-        "Nx7LCcitOvQvXb8X": {
+        "Gobstalker": {
             "_note": "Gobstalker"
         },
-        "8mJYMpbLTb8qIOrr": {
+        "Gorgon": {
             "_note": "Gorgon"
         },
-        "dsfB3YhoL5SudvS2": {
+        "Greater Earth Elemental": {
             "_note": "Greater Earth Elemental"
         },
-        "xIICT6tEdnA7dKDV": {
+        "Greater Water Elemental": {
             "_note": "Greater Water Elemental"
         },
-        "SHXedd9zZPVfUgUa": {
+        "Green Ooze": {
             "_note": "Green Ooze"
         },
-        "CJtnIPvyAmv6PFsu": {
+        "Griffin": {
             "_note": "Griffin"
         },
-        "lzu6TNdRtCLoo3fN": {
+        "Grimmling Warband": {
             "_note": "Grimmling Warband"
         },
-        "AagRRy7uZr9k7tDH": {
+        "Guahalan Alebrujo": {
             "_note": "Guahalan Alebrujo"
         },
-        "YFPpMT6zZQwzIJIu": {
+        "Guahalan Fang Lord": {
             "_note": "Guahalan Fang Lord"
         },
-        "cRujJUHzQvzwWZtj": {
+        "Guahalan Shifter": {
             "_note": "Guahalan Shifter"
         },
-        "PV0FTOWQWLw3PDlY": {
+        "Guahalan Spirit Beast": {
             "_note": "Guahalan Spirit Beast"
         },
-        "9K39Wga6Lj5y0g8M": {
+        "Guahalan Spirit Singer": {
             "_note": "Guahalan Spirit Singer"
         },
-        "kabueAo6BALApWqp": {
+        "Hallowed Archer": {
             "_note": "Hallowed Archer"
         },
-        "68xDUa9Ls48O825Z": {
+        "Hallowed Choir": {
             "_note": "Hallowed Choir"
         },
-        "VENwg7xEFcYObjmT": {
+        "Hallowed Soldier": {
             "_note": "Hallowed Soldier"
         },
-        "unuX3PZSkhlNUdVF": {
+        "Harbinger Of Death": {
             "_note": "Harbinger Of Death"
         },
-        "2dmAOdPMFN6e4BV6": {
+        "Harbinger Of Famine": {
             "_note": "Harbinger Of Famine"
         },
-        "PwAVKf3IhLYD8JTJ": {
+        "Harbinger Of Pestilence": {
             "_note": "Harbinger Of Pestilence"
         },
-        "G7LS7f4StFvtPPG7": {
+        "Harbinger Of War": {
             "_note": "Harbinger Of War"
         },
-        "c6WgrpzgbgSpEiyA": {
+        "Harpy": {
             "_note": "Harpy"
         },
-        "uRtghKE9mHlII4rs": {
+        "Harrier": {
             "_note": "Harrier"
         },
-        "mK3A5FTx6k8iPU3F": {
+        "Head Guard": {
             "_note": "Head Guard"
         },
-        "i2UNbRvgyoSs07M6": {
+        "Head Vampire": {
             "_note": "Head Vampire"
         },
-        "r1mbfSSwKWdcFdAU": {
+        "High Seraph": {
             "_note": "High Seraph"
         },
-        "321E0ZexRT4zjpKu": {
+        "Hill Titan": {
             "_note": "Hill Titan"
         },
-        "MydEcpmRKsHt1snu": {
+        "Hive Walker": {
             "_note": "Hive Walker"
         },
-        "6hbqmxDXFOzZJDk4": {
+        "Huge Green Ooze": {
             "_note": "Huge Green Ooze"
         },
-        "MI126iMOOobQ1Obn": {
+        "Hydra": {
             "_note": "Hydra"
         },
-        "qhMbIUVeD7BWuRKJ": {
+        "Jack-o'-lantern": {
             "_note": "Jack-o'-lantern"
         },
-        "5Lh1T0zaT8Pkr2U2": {
+        "Jagged Knife Bandit": {
             "_note": "Jagged Knife Bandit"
         },
-        "MbBPIOxaxXYNApXz": {
+        "Jagged Knife Hexer": {
             "_note": "Jagged Knife Hexer"
         },
-        "CBKixLH3yhivZZuL": {
+        "Jagged Knife Kneebreaker": {
             "_note": "Jagged Knife Kneebreaker"
         },
-        "C0OMQqV7pN6t7ouR": {
+        "Jagged Knife Lackey": {
             "_note": "Jagged Knife Lackey"
         },
-        "aTljstqteGoLpCBq": {
+        "Jagged Knife Lieutenant": {
             "_note": "Jagged Knife Lieutenant"
         },
-        "XF4tYTq9nPJAy2ox": {
+        "Jagged Knife Shadow": {
             "_note": "Jagged Knife Shadow"
         },
-        "1zuyof1XuIfi3aMG": {
+        "Jagged Knife Sniper": {
             "_note": "Jagged Knife Sniper"
         },
-        "MYXmTx2FHcIjdfYZ": {
+        "Juvenile Flickerfly": {
             "_note": "Juvenile Flickerfly"
         },
-        "Eii92UHVhFXh59kL": {
+        "Kelpie": {
             "_note": "Kelpie"
         },
-        "7ai2opemrclQe3VF": {
+        "Knight of the Realm": {
             "_note": "Knight of the Realm"
         },
-        "4nqv3ZwJGjnmic8j": {
+        "Kraken": {
             "_note": "Kraken"
         },
-        "pMZxHeu79iXFV9FR": {
+        "Lamia": {
             "_note": "Lamia"
         },
-        "Z94eIkkO3msHVU0R": {
+        "Lamplight Beguiler": {
             "_note": "Lamplight Beguiler"
         },
-        "A9EuHHWa6UmN7khR": {
+        "Landshark": {
             "_note": "Landshark"
         },
-        "87vG6DpVjMuRMR8Q": {
+        "Landshark Behemoth": {
             "_note": "Landshark Behemoth"
         },
-        "OoxQXYk6UDb5MNhx": {
+        "Manticore": {
             "_note": "Manticore"
         },
-        "niBpVU7yeo5ccskE": {
+        "Masked Thief": {
             "_note": "Masked Thief"
         },
-        "DtpTGuzeLlcZ43ID": {
+        "Masque Muerte": {
             "_note": "Masque Muerte"
         },
-        "dNta0cUzr96xcFhf": {
+        "Master Assassin": {
             "_note": "Master Assassin"
         },
-        "MmK6Sn51uikou7wI": {
+        "Mechanorb": {
             "_note": "Mechanorb"
         },
-        "Al3w2CgjfdT3p9ma": {
+        "Merchant": {
             "_note": "Merchant"
         },
-        "Vy02IhGhkJLuezu4": {
+        "Merchant Baron": {
             "_note": "Merchant Baron"
         },
-        "sRn4bqerfARvhgSV": {
+        "Minor Chaos Elemental": {
             "_note": "Minor Chaos Elemental"
         },
-        "3tqCjDwJAQ7JKqMb": {
+        "Minor Demon": {
             "_note": "Minor Demon"
         },
-        "DscWkNVoHak6P4hh": {
+        "Minor Fire Elemental": {
             "_note": "Minor Fire Elemental"
         },
-        "G62k4oSkhkoXEs2D": {
+        "Minor Treant": {
             "_note": "Minor Treant"
         },
-        "rM9qCIYeWg9I0B4l": {
+        "Minotaur Wrecker": {
             "_note": "Minotaur Wrecker"
         },
-        "yx0vK2yfNVZKWUUi": {
+        "Monarch": {
             "_note": "Monarch"
         },
-        "mVV7a7KQAORoPMgZ": {
+        "Mortal Hunter": {
             "_note": "Mortal Hunter"
         },
-        "iwhTb5AUvNFV3dU5": {
+        "Mountain Troll": {
             "_note": "Mountain Troll"
         },
-        "woVws0rcFaedtW3g": {
+        "Night Children": {
             "_note": "Night Children"
         },
-        "XK78QUfY8c8Go8Uv": {
+        "Oak Treant": {
             "_note": "Oak Treant"
         },
-        "ptWgFVRErxkPbYcs": {
+        "Octopus": {
             "_note": "Octopus"
         },
-        "befIqd5IYKg6eUz2": {
+        "Oracle of Doom": {
             "_note": "Oracle of Doom"
         },
-        "A0SeeDzwjvqOsyof": {
+        "Outer Realms Abomination": {
             "_note": "Outer Realms Abomination"
         },
-        "ms6nuOl3NFkhPj1k": {
+        "Outer Realms Corrupter": {
             "_note": "Outer Realms Corrupter"
         },
-        "moJhHgKqTKPS2WYS": {
+        "Outer Realms Thrall": {
             "_note": "Outer Realms Thrall"
         },
-        "DJTVWE5AuWKsAdLZ": {
+        "Owl Witch": {
             "_note": "Owl Witch"
         },
-        "RKdp5SOjwx1CHtaZ": {
+        "Pain Priest": {
             "_note": "Pain Priest"
         },
-        "fD6W32riWZbtakYc": {
+        "Panther": {
             "_note": "Panther"
         },
-        "EQTOAOUrkIvS2z88": {
+        "Patchwork Zombie Hulk": {
             "_note": "Patchwork Zombie Hulk"
         },
-        "CP6iRfHdyFWniTHY": {
+        "Perfected Zombie": {
             "_note": "Perfected Zombie"
         },
-        "wycLpvebWdUqRhpP": {
+        "Petty Noble": {
             "_note": "Petty Noble"
         },
-        "T2kyHFC68VKtIXir": {
+        "Phantom": {
             "_note": "Phantom"
         },
-        "OmhCH4TmAEiQx9he": {
+        "Phoenix": {
             "_note": "Phoenix"
         },
-        "OROJbjsqagVh7ECV": {
+        "Pirate Captain": {
             "_note": "Pirate Captain"
         },
-        "5YgEajn0wa4i85kC": {
+        "Pirate Raiders": {
             "_note": "Pirate Raiders"
         },
-        "mhcVkVFrzIJ18FDm": {
+        "Pirate Tough": {
             "_note": "Pirate Tough"
         },
-        "KUevwJakVF7byrgT": {
+        "Plesiosaurus": {
             "_note": "Plesiosaurus"
         },
-        "ytj3VDog4hrC4TkO": {
+        "Poltergeist": {
             "_note": "Poltergeist"
         },
-        "lKmBNV3Sgpq9sTtp": {
+        "Rabble Mawb": {
             "_note": "Rabble Mawb"
         },
-        "Nj9E7DLb7UakiKz6": {
+        "Ravenous Mockery": {
             "_note": "Ravenous Mockery"
         },
-        "9rVlbJVrDNn1x7PS": {
+        "Red Ooze": {
             "_note": "Red Ooze"
         },
-        "NWhnMXGWzAVUyelj": {
+        "Redcap Biters": {
             "_note": "Redcap Biters"
         },
-        "eTmojyT07ekYRAIV": {
+        "Redcap Breaker": {
             "_note": "Redcap Breaker"
         },
-        "w5ZBoxm8mq9wQz6l": {
+        "Redcap Butcher": {
             "_note": "Redcap Butcher"
         },
-        "YDgorr8UO4uxptAC": {
+        "Redcap Candlemaker": {
             "_note": "Redcap Candlemaker"
         },
-        "lbXcMWCYhsCVWYNO": {
+        "Redcap Skinner": {
             "_note": "Redcap Skinner"
         },
-        "c0ivcxYHIW2t1cXV": {
+        "Roc": {
             "_note": "Roc"
         },
-        "gP3fWTLzSFnpA8EJ": {
+        "Rotted Zombie": {
             "_note": "Rotted Zombie"
         },
-        "EtLJiTsilPPZvLUX": {
+        "Royal Advisor": {
             "_note": "Royal Advisor"
         },
-        "trcxftEx6fFKDNk0": {
+        "Ruby Dragon": {
             "_note": "Ruby Dragon"
         },
-        "6Js480Q5SOGRGySm": {
+        "Rugaru": {
             "_note": "Rugaru"
         },
-        "y6dI50LstfCrlVfY": {
+        "Rust Eater": {
             "_note": "Rust Eater"
         },
-        "GGljGjIJzx1WKLfD": {
+        "Sandwyrm": {
             "_note": "Sandwyrm"
         },
-        "htdthg1pCYrovP0T": {
+        "Sawtoothed Gillbeast": {
             "_note": "Sawtoothed Gillbeast"
         },
-        "lOIaoJscG3he5thc": {
+        "Scarecrow": {
             "_note": "Scarecrow"
         },
-        "sLAccjvCWfeedbpI": {
+        "Secret-Keeper": {
             "_note": "Secret-Keeper"
         },
-        "bgreCaQ6ap2DVpCr": {
+        "Sellsword": {
             "_note": "Sellsword"
         },
-        "k70HuYjjFhd2L9Dg": {
+        "Severed Shadow": {
             "_note": "Severed Shadow"
         },
-        "2nXz4ilAY4xuhKLm": {
+        "Shambling Zombie": {
             "_note": "Shambling Zombie"
         },
-        "C652lQ56oZWBhdNz": {
+        "Shapeshifting Fiend": {
             "_note": "Shapeshifting Fiend"
         },
-        "fa50qKab3hPt9gkV": {
+        "Shapeshifting Fiend Revealed": {
             "_note": "Shapeshifting Fiend Revealed"
         },
-        "YmVAkdNsyuXWTtYp": {
+        "Shark": {
             "_note": "Shark"
         },
-        "BK4jwyXSRx7IOQiO": {
+        "Siren": {
             "_note": "Siren"
         },
-        "7X5q7a6ueeHs5oA9": {
+        "Skeleton Archer": {
             "_note": "Skeleton Archer"
         },
-        "6l1a3Fazq8BoKIcc": {
+        "Skeleton Dredge": {
             "_note": "Skeleton Dredge"
         },
-        "Q9LaVTyXF9NF12C7": {
+        "Skeleton Knight": {
             "_note": "Skeleton Knight"
         },
-        "10YIQl0lvCJXZLfX": {
+        "Skeleton Warrior": {
             "_note": "Skeleton Warrior"
         },
-        "QGtJtlNo0ACZUjE8": {
+        "Soul-shattered Mage": {
             "_note": "Soul-shattered Mage"
         },
-        "5tCkhnBByUIN5UdG": {
+        "Spectral Archer": {
             "_note": "Spectral Archer"
         },
-        "65cSO3EQEh6ZH6Xk": {
+        "Spectral Captain": {
             "_note": "Spectral Captain"
         },
-        "UFVGl1osOsJTneLf": {
+        "Spectral Guardian": {
             "_note": "Spectral Guardian"
         },
-        "ldbWEL7uZs84vyrR": {
+        "Spellblade": {
             "_note": "Spellblade"
         },
-        "jTFawThYqDS5sOnH": {
+        "Spellbound Armor": {
             "_note": "Spellbound Armor"
         },
-        "iQL0zE7vRLZSZ2TI": {
+        "Sprite": {
             "_note": "Sprite"
         },
-        "8zlynOhnVA59KpKT": {
+        "Spy": {
             "_note": "Spy"
         },
-        "KGVwnLq85ywP9xvB": {
+        "Stag Knight": {
             "_note": "Stag Knight"
         },
-        "ufQMOWgcGspqyGln": {
+        "Stone Titan": {
             "_note": "Stone Titan"
         },
-        "3aAS2Qm3R6cgaYfE": {
+        "Stonewraith": {
             "_note": "Stonewraith"
         },
-        "tLHNONmalytgnngv": {
+        "Storm Titan": {
             "_note": "Storm Titan"
         },
-        "cARWKseJwjskn23n": {
+        "Supreme Demiurge Adonix": {
             "_note": "Supreme Demiurge Adonix"
         },
-        "qNgs3AbLyJrY19nt": {
+        "Swarm of Rats": {
             "_note": "Swarm of Rats"
         },
-        "VtFBt9XBE0WrGGxP": {
+        "Sylvan Soldier": {
             "_note": "Sylvan Soldier"
         },
-        "PKSXFuaIHUCoH63A": {
+        "Tangle Bramble Swarm": {
             "_note": "Tangle Bramble Swarm"
         },
-        "XcAGOSmtCFLT1unN": {
+        "Tangle Bramble": {
             "_note": "Tangle Bramble"
         },
-        "VSdS3N5Kh6uratv9": {
+        "Temporal Enforcer": {
             "_note": "Temporal Enforcer"
         },
-        "aLkLFuVoKz2NLoBK": {
+        "Tiny Green Ooze": {
             "_note": "Tiny Green Ooze"
         },
-        "1fkLQXVtmILqfJ44": {
+        "Tiny Red Ooze": {
             "_note": "Tiny Red Ooze"
         },
-        "o63nS0k3wHu6EgKP": {
+        "Treant Sapling": {
             "_note": "Treant Sapling"
         },
-        "nbdEW8HTS25uEiWZ": {
+        "Triceratops": {
             "_note": "Triceratops"
         },
-        "IrWRZcwshGOppa5K": {
+        "Tyrannosaurus": {
             "_note": "Tyrannosaurus"
         },
-        "GwEwP2FnWOT6ONZw": {
+        "Unicorn": {
             "_note": "Unicorn"
         },
-        "6kvqeoKIIFEcEHNQ": {
+        "Urco": {
             "_note": "Urco"
         },
-        "Xq00qigdsoB2b3gJ": {
+        "Valdenhax": {
             "_note": "Valdenhax"
         },
-        "2OjMAjcG3xbbsrIV": {
+        "Vampire Bat Swarm": {
             "_note": "Vampire Bat Swarm"
         },
-        "TVnr955huZCjXrHM": {
+        "Vampire Lord": {
             "_note": "Vampire Lord"
         },
-        "WWyUp6Mxl1S3KYUG": {
+        "Vampire": {
             "_note": "Vampire"
         },
-        "JqYraOqNmmhHk4Yy": {
+        "Vault Guardian Gaoler": {
             "_note": "Vault Guardian Gaoler"
         },
-        "FVgYb28fhxlVcGwA": {
+        "Vault Guardian Sentinel": {
             "_note": "Vault Guardian Sentinel"
         },
-        "c5hGdvY5UnSjlHws": {
+        "Vault Guardian Turret": {
             "_note": "Vault Guardian Turret"
         },
-        "u5DJUhMewgOwfc3U": {
+        "Viper": {
             "_note": "Viper"
         },
-        "IQzeEU2nWWlBhBrX": {
+        "Viscera Sucker": {
             "_note": "Viscera Sucker"
         },
-        "pMuXGCSOQaxpi5tb": {
+        "Volcanic Dragon: Ashen Tyrant": {
             "_note": "Volcanic Dragon: Ashen Tyrant"
         },
-        "eArAPuB38CNR0ZIM": {
+        "Volcanic Dragon: Molten Scourge": {
             "_note": "Volcanic Dragon: Molten Scourge"
         },
-        "ladm7wykhZczYzrQ": {
+        "Volcanic Dragon: Obsidian Predator": {
             "_note": "Volcanic Dragon: Obsidian Predator"
         },
-        "noDdT0tsN6FXSmC8": {
+        "War Wizard": {
             "_note": "War Wizard"
         },
-        "vXYRAVdCo7812o1g": {
+        "Water Mother": {
             "_note": "Water Mother"
         },
-        "QPTR2clyJ30idX3c": {
+        "Waxwork Creation": {
             "_note": "Waxwork Creation"
         },
-        "ZNbQ2jg35LG4t9eH": {
+        "Weaponmaster": {
             "_note": "Weaponmaster"
         },
-        "iT3pDkKEtPTqM8kw": {
+        "Whisper Wraith": {
             "_note": "Whisper Wraith"
         },
-        "XuGDFgTjn1vFQhyA": {
+        "Will-o'-the-wisps": {
             "_note": "Will-o'-the-wisps"
         },
-        "wZA5KQUjIRhnUFrl": {
+        "Wyrmfiend": {
             "_note": "Wyrmfiend"
         },
-        "qEzuNntzQ1fRInTm": {
+        "Wyrmlings": {
             "_note": "Wyrmlings"
         },
-        "h5SPwKivPFqMgOrW": {
+        "Wyvern": {
             "_note": "Wyvern"
         },
-        "K0VZLi95DzTfdfso": {
+        "Xero The Castle Killer": {
             "_note": "Xero The Castle Killer"
         },
-        "8yUj2Mzvnifhxegm": {
+        "Young Dryad": {
             "_note": "Young Dryad"
         },
-        "qe2bhZCyVou4lTO5": {
+        "Young Fire Dragon": {
             "_note": "Young Fire Dragon"
         },
-        "UGPiPLJsPvMTSKEF": {
+        "Young Ice Dragon": {
             "_note": "Young Ice Dragon"
         },
-        "RIrQcvhlSmXTqFxr": {
+        "Yufo": {
             "_note": "Yufo"
         },
-        "YhJrP7rTBiRdX5Fp": {
+        "Zombie Legion": {
             "_note": "Zombie Legion"
         },
-        "Nf0v43rtflV56V2T": {
+        "Zombie Pack": {
             "_note": "Zombie Pack"
         }
     }

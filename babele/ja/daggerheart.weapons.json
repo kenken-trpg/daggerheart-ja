@@ -3,980 +3,980 @@
     "collection": "daggerheart.weapons",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
-        "ijodu5yNBoMxpkHV": {
+        "Aantari Bow": {
             "_note": "Aantari Bow",
             "name": "アーンタリ・ボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
-        "n0qB948TRIJ8nRtP": {
+        "Adder's Fang": {
             "_note": "Adder's Fang"
         },
-        "la3sAWgnvadc4NvP": {
+        "Advanced Arcane-Frame Wheelchair": {
             "_note": "Advanced Arcane-Frame Wheelchair"
         },
-        "hXR56fTKwZ6s1obs": {
+        "Advanced Arcane Gauntlets": {
             "_note": "Advanced Arcane Gauntlets"
         },
-        "oqoS55ZzmFnC6V4N": {
+        "Advanced Arcane Rifle": {
             "_note": "Advanced Arcane Rifle"
         },
-        "FcbvY1ydbNVMjKvk": {
+        "Advanced Battleaxe": {
             "_note": "Advanced Battleaxe"
         },
-        "tFlxfwZtBOFFMK3j": {
+        "Advanced Brass Knuckles": {
             "_note": "Advanced Brass Knuckles"
         },
-        "RPBABgpMFJK9YNQh": {
+        "Advanced Brightsword": {
             "_note": "Advanced Brightsword"
         },
-        "WtQAGz0TUgz8Xg70": {
+        "Advanced Broadsword": {
             "_note": "Advanced Broadsword"
         },
-        "uSyHzVERPRRQif2S": {
+        "Advanced Casting Dagger": {
             "_note": "Advanced Casting Dagger"
         },
-        "3HGs0AgVrdIBTaKG": {
+        "Advanced Crossbow": {
             "_note": "Advanced Crossbow"
         },
-        "bw9WO9lxkM9bWZxQ": {
+        "Advanced Cutlass": {
             "_note": "Advanced Cutlass"
         },
-        "mrioysDjNQEIE8hN": {
+        "Advanced Dagger": {
             "_note": "Advanced Dagger"
         },
-        "X5x3sC7v2f3L9sjL": {
+        "Advanced Dualstaff": {
             "_note": "Advanced Dualstaff"
         },
-        "0knd0ijjH4b6Fnbe": {
+        "Advanced Enchanted Chakram": {
             "_note": "Advanced Enchanted Chakram"
         },
-        "lZtzz2BmJZkXCFXk": {
+        "Advanced Fighting Cloak": {
             "_note": "Advanced Fighting Cloak"
         },
-        "IsMet0lIMWoSfqYd": {
+        "Advanced Focus Runes": {
             "_note": "Advanced Focus Runes"
         },
-        "InQoh8mZPnwarQkX": {
+        "Advanced Glowing Rings": {
             "_note": "Advanced Glowing Rings"
         },
-        "7vvhVl4TDJHtjpFK": {
+        "Advanced Grappler": {
             "_note": "Advanced Grappler"
         },
-        "4UzxqfkwF8gDSdu7": {
+        "Advanced Greatstaff": {
             "_note": "Advanced Greatstaff"
         },
-        "MAC6YWTo4lzSotQc": {
+        "Advanced Greatsword": {
             "_note": "Advanced Greatsword"
         },
-        "C8gQn7onAc9wsrCs": {
+        "Advanced Halberd": {
             "_note": "Advanced Halberd"
         },
-        "BiyXKX2Mo1TQbKgk": {
+        "Advanced Hallowed Axe": {
             "_note": "Advanced Hallowed Axe"
         },
-        "Lsvocst8aGqkBj7g": {
+        "Advanced Hand Crossbow": {
             "_note": "Advanced Hand Crossbow"
         },
-        "PQACczSghZIVTdgZ": {
+        "Advanced Hand Runes": {
             "_note": "Advanced Hand Runes"
         },
-        "QA1yUoB3UCO3ZWhQ": {
+        "Advanced Hatchet": {
             "_note": "Advanced Hatchet"
         },
-        "eT2Qwb0RdrLX2hH1": {
+        "Advanced Heavy-Frame Wheelchair": {
             "_note": "Advanced Heavy-Frame Wheelchair"
         },
-        "PwDFeMAKBnWYzzIB": {
+        "Advanced Katana": {
             "_note": "Advanced Katana"
         },
-        "BuMfupnCzHbziQ8o": {
+        "Advanced Light-Frame Wheelchair": {
             "_note": "Advanced Light-Frame Wheelchair"
         },
-        "M5CywMAyPKGgebsJ": {
+        "Advanced Longbow": {
             "_note": "Advanced Longbow"
         },
-        "9xkB3MWXahrsVP4N": {
+        "Advanced Longsword": {
             "_note": "Advanced Longsword"
         },
-        "WreMYiH5uhVDaoVw": {
+        "Advanced Mace": {
             "_note": "Advanced Mace"
         },
-        "7Db8gq9j5iHWA37p": {
+        "Advanced Offhand Brass Knuckles": {
             "_note": "Advanced Offhand Brass Knuckles"
         },
-        "zJtm2f9ZFKZRtCRg": {
+        "Advanced Quarterstaff": {
             "_note": "Advanced Quarterstaff"
         },
-        "KxFne76d7cak15dO": {
+        "Advanced Rapier": {
             "_note": "Advanced Rapier"
         },
-        "sIGXA4KMeYBUjcEO": {
+        "Advanced Returning Blade": {
             "_note": "Advanced Returning Blade"
         },
-        "bsb5aoDGXyAAExkB": {
+        "Advanced Rope Dart": {
             "_note": "Advanced Rope Dart"
         },
-        "hiEOGF2reabGLUoi": {
+        "Advanced Round Shield": {
             "_note": "Advanced Round Shield"
         },
-        "YmTXwjVpXrnKTVso": {
+        "Advanced Rune Shield": {
             "_note": "Advanced Rune Shield"
         },
-        "EWYp0UcRA2g0hT8t": {
+        "Advanced Runelock Pistol": {
             "_note": "Advanced Runelock Pistol"
         },
-        "2Khzuj768yoWN9QK": {
+        "Advanced Scepter": {
             "_note": "Advanced Scepter"
         },
-        "4maJHuMTgjBHX1Ij": {
+        "Advanced Scimitar": {
             "_note": "Advanced Scimitar"
         },
-        "VzzjS5BjASNYKaqc": {
+        "Advanced Shadowblade": {
             "_note": "Advanced Shadowblade"
         },
-        "JpSlJvDR0X8VFDns": {
+        "Advanced Shortbow": {
             "_note": "Advanced Shortbow"
         },
-        "T5exRCqOXhrjSYnI": {
+        "Advanced Shortstaff": {
             "_note": "Advanced Shortstaff"
         },
-        "p3nz5CaGUoyuGVg0": {
+        "Advanced Shortsword": {
             "_note": "Advanced Shortsword"
         },
-        "0thN0BpN05KT8Avx": {
+        "Advanced Small Dagger": {
             "_note": "Advanced Small Dagger"
         },
-        "pK6dsNABKKp1CIGN": {
+        "Advanced Spear": {
             "_note": "Advanced Spear"
         },
-        "u9fkV1hfjZ6OWX9W": {
+        "Advanced Throwing Knives": {
             "_note": "Advanced Throwing Knives"
         },
-        "OfOzQbs4hg6QbfTG": {
+        "Advanced Tower Shield": {
             "_note": "Advanced Tower Shield"
         },
-        "LDOzJ72iAWShxnf3": {
+        "Advanced Twisted Dagger": {
             "_note": "Advanced Twisted Dagger"
         },
-        "jU9jWIardjtdAQcs": {
+        "Advanced Wand": {
             "_note": "Advanced Wand"
         },
-        "8Lipw3RRKDgBVP0p": {
+        "Advanced Warhammer": {
             "_note": "Advanced Warhammer"
         },
-        "01izMUSJcAUo79IX": {
+        "Advanced Whip": {
             "_note": "Advanced Whip"
         },
-        "jcgagJ7GGljD8YbP": {
+        "Advanced Whipsword": {
             "_note": "Advanced Whipsword"
         },
-        "m90xP486Xvp9EFZN": {
+        "Arc Wand": {
             "_note": "Arc Wand"
         },
-        "XRChepscgr75Uug7": {
+        "Arcane-Frame Wheelchair": {
             "_note": "Arcane-Frame Wheelchair"
         },
-        "PC5EyEIq7NWBV0n5": {
+        "Arcane Gauntlets": {
             "_note": "Arcane Gauntlets"
         },
-        "8GWoISr6blBG04fg": {
+        "Arcane Rifle": {
             "_note": "Arcane Rifle"
         },
-        "x3DzIAi2drwE5bCt": {
+        "Arquebus": {
             "_note": "Arquebus"
         },
-        "YcS1rHgfnSlla8Xf": {
+        "Axe of Fortunis": {
             "_note": "Axe of Fortunis"
         },
-        "fbDYUja3ll9vCtrB": {
+        "Battleaxe": {
             "_note": "Battleaxe"
         },
-        "6D4MKcr4GUfv3LDa": {
+        "Bec de Corbin": {
             "_note": "Bec de Corbin"
         },
-        "AokqTusPzn0hghkE": {
+        "Black Powder Revolver": {
             "_note": "Black Powder Revolver"
         },
-        "6subq9ZgtKcnHB6u": {
+        "Black Powder Serpentine": {
             "_note": "Black Powder Serpentine"
         },
-        "S0O1eZWhSWCeBD57": {
+        "Blackblood Tendril": {
             "_note": "Blackblood Tendril"
         },
-        "sg2W5XLnKduRaxL8": {
+        "Bladed Fan": {
             "_note": "Bladed Fan"
         },
-        "XRlUeXn4nAqS8Dzp": {
+        "Bladed Star": {
             "_note": "Bladed Star"
         },
-        "5faflfNz20cFW1EM": {
+        "Bladed Whip": {
             "_note": "Bladed Whip"
         },
-        "n1oPTk5czTIGTkVj": {
+        "Blessed Anlace": {
             "_note": "Blessed Anlace"
         },
-        "cVbepsU3c9Ql3Y4y": {
+        "Blitz Hammer": {
             "_note": "Blitz Hammer"
         },
-        "IoMVDz92WVvfGGdc": {
+        "Bloodstaff": {
             "_note": "Bloodstaff"
         },
-        "SLFrK0WmldPo0shz": {
+        "Blunderbuss": {
             "_note": "Blunderbuss"
         },
-        "ApZzGZQWlDOWID7y": {
+        "Brass Knuckles": {
             "_note": "Brass Knuckles"
         },
-        "QEvgVoz9xKBSKsGi": {
+        "Braveshield": {
             "_note": "Braveshield"
         },
-        "QZrWAkprA2tL2MOI": {
+        "Bravesword": {
             "_note": "Bravesword"
         },
-        "gD15rWRlYoLN91PF": {
+        "Brightsword": {
             "_note": "Brightsword"
         },
-        "1cwWNt4sqlgA8gCT": {
+        "Broadsword": {
             "_note": "Broadsword"
         },
-        "EmFTp9wzT6MHSaNz": {
+        "Buckler": {
             "_note": "Buckler"
         },
-        "UEZa5P7YyHelPx8r": {
+        "Cane Sword": {
             "_note": "Cane Sword"
         },
-        "eCEf5ysz8Eq0ma9u": {
+        "Casting Dagger": {
             "_note": "Casting Dagger"
         },
-        "2Fbf2cxLfbdGkU4I": {
+        "Casting Sword": {
             "_note": "Casting Sword"
         },
-        "bPqZJxtIbSpp6QV4": {
+        "Chained Scythe": {
             "_note": "Chained Scythe"
         },
-        "gv82jmiMn6bmHmci": {
+        "Clockwork Crossbow": {
             "_note": "Clockwork Crossbow"
         },
-        "MTG07z1KX5QTxcod": {
+        "Collapsible Baton": {
             "_note": "Collapsible Baton"
         },
-        "cw7HG1Z7hp7OOLD0": {
+        "Crossbow": {
             "_note": "Crossbow"
         },
-        "wHWKdgOayBwRB8R3": {
+        "Crystal Spear": {
             "_note": "Crystal Spear"
         },
-        "Fk69R40svV0kanZD": {
+        "Curved Dagger": {
             "_note": "Curved Dagger"
         },
-        "CWrbnethuILXrEpA": {
+        "Cutlass": {
             "_note": "Cutlass"
         },
-        "eCVgwpuPOwG5jV0H": {
+        "Cyrurgien's Scalpel": {
             "_note": "Cyrurgien's Scalpel"
         },
-        "iStO0BbeMTTR0rQi": {
+        "Dagger": {
             "_note": "Dagger"
         },
-        "WQYrz7LfARoiV7hl": {
+        "Demon's Edge": {
             "_note": "Demon's Edge"
         },
-        "C5wSGglR8e0euQnY": {
+        "Devouring Dagger": {
             "_note": "Devouring Dagger"
         },
-        "f9zRMK2bHuJ90Gqz": {
+        "Displacement Razor": {
             "_note": "Displacement Razor"
         },
-        "xm1yU7k58fMgXxRR": {
+        "Double Flail": {
             "_note": "Double Flail"
         },
-        "nXjuBa215H1sTUK3": {
+        "Dual-Ended Sword": {
             "_note": "Dual-Ended Sword"
         },
-        "j8cdNeIUYxxzFVji": {
+        "Dualstaff": {
             "_note": "Dualstaff"
         },
-        "XW2FKsZKPEev9QLw": {
+        "Echo Blade": {
             "_note": "Echo Blade"
         },
-        "G7rH31KQ5eEZXcv0": {
+        "Ego Blade": {
             "_note": "Ego Blade"
         },
-        "JdWcn9W1edhAEInL": {
+        "Elder Bow": {
             "_note": "Elder Bow"
         },
-        "ADQ8kuCcRnHVWUcT": {
+        "Eldritch Vambrace": {
             "_note": "Eldritch Vambrace"
         },
-        "zdFjT5qchP9X4TjA": {
+        "Enchanted Chakram": {
             "_note": "Enchanted Chakram"
         },
-        "JMVPiFhDLwIYZCbI": {
+        "Enchanted Lute": {
             "_note": "Enchanted Lute"
         },
-        "3D7dl8odrgR89rDE": {
+        "Enchanted Shillelagh": {
             "_note": "Enchanted Shillelagh"
         },
-        "kMiQsmN915TpcUJI": {
+        "Ethereal Zweihänder": {
             "_note": "Ethereal Zweihänder"
         },
-        "fJHKMxZokVP34MCi": {
+        "Extended Polearm": {
             "_note": "Extended Polearm"
         },
-        "A3kISypsGh9MNndo": {
+        "Fighting Cloak": {
             "_note": "Fighting Cloak"
         },
-        "ykF3jouxHZ6YR8Bg": {
+        "Finehair Bow": {
             "_note": "Finehair Bow"
         },
-        "BtCm2RhWEfs00g38": {
+        "Firestaff": {
             "_note": "Firestaff"
         },
-        "xLJ5RRpUoTRmAC3G": {
+        "Flickerfly Blade": {
             "_note": "Flickerfly Blade"
         },
-        "3vti3xfo0wJND7ew": {
+        "Floating Bladeshards": {
             "_note": "Floating Bladeshards"
         },
-        "Wiw0SSLwwYxCVNpq": {
+        "Focus Runes": {
             "_note": "Focus Runes"
         },
-        "lXbtuAYtlxtXsyf9": {
+        "Fury Gem": {
             "_note": "Fury Gem"
         },
-        "uK1RhtYAsDeoPNGx": {
+        "Fusion Gloves": {
             "_note": "Fusion Gloves"
         },
-        "6gFvOFTE97QZ74Zr": {
+        "Ghostblade": {
             "_note": "Ghostblade"
         },
-        "ctTgFfMbM3YtmsYU": {
+        "Gilded Bow": {
             "_note": "Gilded Bow"
         },
-        "VwcOgqnzjf9LBj2S": {
+        "Gilded Falchion": {
             "_note": "Gilded Falchion"
         },
-        "wG9f5NpCwSbaLy8t": {
+        "Glowing Rings": {
             "_note": "Glowing Rings"
         },
-        "iEzPscUc18GuFoB6": {
+        "Grappler": {
             "_note": "Grappler"
         },
-        "cfgMziqiiOdkTTJe": {
+        "Gravity Arbalest": {
             "_note": "Gravity Arbalest"
         },
-        "MXBpbqQsZFln4rZk": {
+        "Greatbow": {
             "_note": "Greatbow"
         },
-        "Yk8pTEmyLLi4095S": {
+        "Greatstaff": {
             "_note": "Greatstaff"
         },
-        "70ysaFJDREwTgvZa": {
+        "Greatsword": {
             "_note": "Greatsword"
         },
-        "TREpAv9pWVrZbwMc": {
+        "Gunblade": {
             "_note": "Gunblade"
         },
-        "qT7FfmauAumOjJoq": {
+        "Halberd": {
             "_note": "Halberd"
         },
-        "Vayg7CnRTFBrunjM": {
+        "Hallowed Axe": {
             "_note": "Hallowed Axe"
         },
-        "0lAkBEUvbM9Osmqb": {
+        "Hammer of Exota": {
             "_note": "Hammer of Exota"
         },
-        "1R4uzOpWD8bkYRUm": {
+        "Hammer of Wrath": {
             "_note": "Hammer of Wrath"
         },
-        "MyGz8nd5sieRQ7zl": {
+        "Hand Cannon": {
             "_note": "Hand Cannon"
         },
-        "zxKt6qXe7uZB6ljm": {
+        "Hand Crossbow": {
             "_note": "Hand Crossbow"
         },
-        "3whiedn0jBMNRdIb": {
+        "Hand Runes": {
             "_note": "Hand Runes"
         },
-        "RAIaoMi6iO1PKIlK": {
+        "Hand Sling": {
             "_note": "Hand Sling"
         },
-        "QagT47tp01Smsmbx": {
+        "Hatchet": {
             "_note": "Hatchet"
         },
-        "XjPQjhRCH08VUIbr": {
+        "Heavy-Frame Wheelchair": {
             "_note": "Heavy-Frame Wheelchair"
         },
-        "TMrUzVC3KvcHmdt8": {
+        "Ilmari's Rifle": {
             "_note": "Ilmari's Rifle"
         },
-        "Zg6IutksQVOqAg8K": {
+        "Impact Gauntlet": {
             "_note": "Impact Gauntlet"
         },
-        "N9P695V5KKlJbAY5": {
+        "Improved Arcane-Frame Wheelchair": {
             "_note": "Improved Arcane-Frame Wheelchair"
         },
-        "kENTDpa1hr5LDhIT": {
+        "Improved Arcane Gauntlets": {
             "_note": "Improved Arcane Gauntlets"
         },
-        "AOCUK2L4JgPD8FtY": {
+        "Improved Arcane Rifle": {
             "_note": "Improved Arcane Rifle"
         },
-        "nxGUpuHLmuKdKsDC": {
+        "Improved Battleaxe": {
             "_note": "Improved Battleaxe"
         },
-        "i5urj6MQORFev4qK": {
+        "Improved Brass Knuckles": {
             "_note": "Improved Brass Knuckles"
         },
-        "C22glLmoQUNrKJ7W": {
+        "Improved Brightsword": {
             "_note": "Improved Brightsword"
         },
-        "OcKeLJxvmdT81VBc": {
+        "Improved Broadsword": {
             "_note": "Improved Broadsword"
         },
-        "xKnGSccF7x5GIK0E": {
+        "Improved Casting Dagger": {
             "_note": "Improved Casting Dagger"
         },
-        "55NwHIIZHUeKSE3M": {
+        "Improved Crossbow": {
             "_note": "Improved Crossbow"
         },
-        "ddRjXnp2vbohu7rJ": {
+        "Improved Cutlass": {
             "_note": "Improved Cutlass"
         },
-        "ScjTkb9qrndhlk9S": {
+        "Improved Dagger": {
             "_note": "Improved Dagger"
         },
-        "f7hhHlZ5nL3AhYEM": {
+        "Improved Dualstaff": {
             "_note": "Improved Dualstaff"
         },
-        "vAy5fho5zm1bL7Pk": {
+        "Improved Enchanted Chakram": {
             "_note": "Improved Enchanted Chakram"
         },
-        "MHFwmKDp5H1iaYEY": {
+        "Improved Fighting Cloak": {
             "_note": "Improved Fighting Cloak"
         },
-        "eRfEi6a3Pb2dDrLP": {
+        "Improved Focus Runes": {
             "_note": "Improved Focus Runes"
         },
-        "N5amhkxR1xn3B7r2": {
+        "Improved Glowing Rings": {
             "_note": "Improved Glowing Rings"
         },
-        "3T3o9zfe61t22L1H": {
+        "Improved Grappler": {
             "_note": "Improved Grappler"
         },
-        "LCuTrYXi4lhg6LqW": {
+        "Improved Greatstaff": {
             "_note": "Improved Greatstaff"
         },
-        "FPX4ouDrxXiQ5MDf": {
+        "Improved Greatsword": {
             "_note": "Improved Greatsword"
         },
-        "F9PETfCQGwczBPif": {
+        "Improved Halberd": {
             "_note": "Improved Halberd"
         },
-        "wFOXMN2uiX4j6Gd9": {
+        "Improved Hallowed Axe": {
             "_note": "Improved Hallowed Axe"
         },
-        "XEDRkuw3BhMoVBn9": {
+        "Improved Hand Crossbow": {
             "_note": "Improved Hand Crossbow"
         },
-        "jMEukC3VpNDz5AOD": {
+        "Improved Hand Runes": {
             "_note": "Improved Hand Runes"
         },
-        "Lquj9WY3GLEd2gUE": {
+        "Improved Hatchet": {
             "_note": "Improved Hatchet"
         },
-        "L5KeCtrs768PmYWW": {
+        "Improved Heavy-Frame Wheelchair": {
             "_note": "Improved Heavy-Frame Wheelchair"
         },
-        "HWGeZQxnutfiYUF4": {
+        "Improved Katana": {
             "_note": "Improved Katana"
         },
-        "ZJsetdHKV77ygtCE": {
+        "Improved Light-Frame Wheelchair": {
             "_note": "Improved Light-Frame Wheelchair"
         },
-        "NacNonjbzyoVMNhI": {
+        "Improved Longbow": {
             "_note": "Improved Longbow"
         },
-        "QyBZ5NxM8F9nCL9s": {
+        "Improved Longsword": {
             "_note": "Improved Longsword"
         },
-        "zSLx52U4Yltqx8F1": {
+        "Improved Mace": {
             "_note": "Improved Mace"
         },
-        "0t0clWlZgJ7oXZNM": {
+        "Improved Offhand Brass Knuckles": {
             "_note": "Improved Offhand Brass Knuckles"
         },
-        "BEmAR60PM3ZaiNXa": {
+        "Improved Quarterstaff": {
             "_note": "Improved Quarterstaff"
         },
-        "LFPH8nD2f4Blv3AM": {
+        "Improved Rapier": {
             "_note": "Improved Rapier"
         },
-        "SKNwkW23eVQjN4Zy": {
+        "Improved Returning Blade": {
             "_note": "Improved Returning Blade"
         },
-        "7zNMhpWFYULpOCCw": {
+        "Improved Rope Dart": {
             "_note": "Improved Rope Dart"
         },
-        "DlinEBGZfIlvreO3": {
+        "Improved Round Shield": {
             "_note": "Improved Round Shield"
         },
-        "7knsbFzLyNEgFK4K": {
+        "Improved Rune Shield": {
             "_note": "Improved Rune Shield"
         },
-        "X1nSSQb64b8inJg3": {
+        "Improved Runelock Pistol": {
             "_note": "Improved Runelock Pistol"
         },
-        "tj26lbNkwy8bORF4": {
+        "Improved Scepter": {
             "_note": "Improved Scepter"
         },
-        "833yZWe1aJGxUH0M": {
+        "Improved Scimitar": {
             "_note": "Improved Scimitar"
         },
-        "00Cz6w2hSlb4ccrR": {
+        "Improved Shadowblade": {
             "_note": "Improved Shadowblade"
         },
-        "6ZWl6ARfvYBaAMwY": {
+        "Improved Shortbow": {
             "_note": "Improved Shortbow"
         },
-        "Mn8ja5Oi1sXvvPSk": {
+        "Improved Shortstaff": {
             "_note": "Improved Shortstaff"
         },
-        "rSyBNRwemBVuTo3H": {
+        "Improved Shortsword": {
             "_note": "Improved Shortsword"
         },
-        "nMuF8ZDZ2aXZVTg6": {
+        "Improved Small Dagger": {
             "_note": "Improved Small Dagger"
         },
-        "j5Pt1thLfcvopBij": {
+        "Improved Spear": {
             "_note": "Improved Spear"
         },
-        "IGSI6Ez0NhbC6NsL": {
+        "Improved Throwing Knives": {
             "_note": "Improved Throwing Knives"
         },
-        "bxt3NsbMqTSdI5ab": {
+        "Improved Tower Shield": {
             "_note": "Improved Tower Shield"
         },
-        "rLQqUhtDXphRwS49": {
+        "Improved Twisted Dagger": {
             "_note": "Improved Twisted Dagger"
         },
-        "6d9B2b5X2d2U56jt": {
+        "Improved Wand": {
             "_note": "Improved Wand"
         },
-        "pxaN4ZK4eqKrjtWj": {
+        "Improved Warhammer": {
             "_note": "Improved Warhammer"
         },
-        "ftTp8VlsBQ1r4LFD": {
+        "Improved Whip": {
             "_note": "Improved Whip"
         },
-        "av9MsZ7cdQFnVPy3": {
+        "Improved Whipsword": {
             "_note": "Improved Whipsword"
         },
-        "ESRFti01kkNdi1Y4": {
+        "Infinite Staff": {
             "_note": "Infinite Staff"
         },
-        "DT1lcITh681IiDoC": {
+        "Javelins": {
             "_note": "Javelins"
         },
-        "ykuXSEA6GLjrApt3": {
+        "Katana": {
             "_note": "Katana"
         },
-        "q382JqMkqLaaFLIr": {
+        "Keeper's Staff": {
             "_note": "Keeper's Staff"
         },
-        "U8gfyvxoHm024inM": {
+        "Knuckle Blades": {
             "_note": "Knuckle Blades"
         },
-        "SFqganS8Du4aEKjQ": {
+        "Knuckle Claws": {
             "_note": "Knuckle Claws"
         },
-        "ijWppQzSOqVCb3rE": {
+        "Labrys Axe": {
             "_note": "Labrys Axe"
         },
-        "jRNJ6Td4HD4tnzVc": {
+        "Lance": {
             "_note": "Lance"
         },
-        "gA2tiET9VHGhwMoO": {
+        "Legendary Arcane-Frame Wheelchair": {
             "_note": "Legendary Arcane-Frame Wheelchair"
         },
-        "umADDPYCaykXDc1v": {
+        "Legendary Arcane Gauntlets": {
             "_note": "Legendary Arcane Gauntlets"
         },
-        "jmRtj4MwJCuSQUx7": {
+        "Legendary Arcane Rifle": {
             "_note": "Legendary Arcane Rifle"
         },
-        "1nztpLzoHGfbKf5x": {
+        "Legendary Battleaxe": {
             "_note": "Legendary Battleaxe"
         },
-        "8fI83sPiphLrFTEV": {
+        "Legendary Brass Knuckles": {
             "_note": "Legendary Brass Knuckles"
         },
-        "PLcIKxRe6Cz4nfpZ": {
+        "Legendary Brightsword": {
             "_note": "Legendary Brightsword"
         },
-        "y3hfTPfZhMognyaJ": {
+        "Legendary Broadsword": {
             "_note": "Legendary Broadsword"
         },
-        "g0N4M8oEQX0vs7tU": {
+        "Legendary Casting Dagger": {
             "_note": "Legendary Casting Dagger"
         },
-        "1G6xX2QL9O0Rsgz7": {
+        "Legendary Crossbow": {
             "_note": "Legendary Crossbow"
         },
-        "Rpyz0jbFJ1SwqfyD": {
+        "Legendary Cutlass": {
             "_note": "Legendary Cutlass"
         },
-        "GmTg3Fdne1UPNs8t": {
+        "Legendary Dagger": {
             "_note": "Legendary Dagger"
         },
-        "o3rsLvImcLAx5TvD": {
+        "Legendary Dualstaff": {
             "_note": "Legendary Dualstaff"
         },
-        "9r1Ah2X49BoYjduH": {
+        "Legendary Enchanted Chakram": {
             "_note": "Legendary Enchanted Chakram"
         },
-        "AXYN3a2sYXaNhtYX": {
+        "Legendary Fighting Cloak": {
             "_note": "Legendary Fighting Cloak"
         },
-        "hpKzXkr33yxA8bKh": {
+        "Legendary Focus Runes": {
             "_note": "Legendary Focus Runes"
         },
-        "PReWrfuPjoNQuieo": {
+        "Legendary Glowing Rings": {
             "_note": "Legendary Glowing Rings"
         },
-        "IrtUj0UntBMNn49G": {
+        "Legendary Grappler": {
             "_note": "Legendary Grappler"
         },
-        "jDtvEabkHY1GFgfc": {
+        "Legendary Greatstaff": {
             "_note": "Legendary Greatstaff"
         },
-        "zMZ46F9VR7zdTxb9": {
+        "Legendary Greatsword": {
             "_note": "Legendary Greatsword"
         },
-        "1AuMNiJz96Ez9fur": {
+        "Legendary Halberd": {
             "_note": "Legendary Halberd"
         },
-        "0HmhnZnv1I6uX69c": {
+        "Legendary Hallowed Axe": {
             "_note": "Legendary Hallowed Axe"
         },
-        "32nYyMaeDWaakSxz": {
+        "Legendary Hand Crossbow": {
             "_note": "Legendary Hand Crossbow"
         },
-        "DWLkswhluXuMy3bB": {
+        "Legendary Hand Runes": {
             "_note": "Legendary Hand Runes"
         },
-        "OSfGNf9RQMbwf0Wm": {
+        "Legendary Hatchet": {
             "_note": "Legendary Hatchet"
         },
-        "S6nB0CNlzdU05o5U": {
+        "Legendary Heavy-Frame Wheelchair": {
             "_note": "Legendary Heavy-Frame Wheelchair"
         },
-        "Gcv63k64TPyOHADo": {
+        "Legendary Katana": {
             "_note": "Legendary Katana"
         },
-        "Xt8tVSn5Fu6ly6LF": {
+        "Legendary Light-Frame Wheelchair": {
             "_note": "Legendary Light-Frame Wheelchair"
         },
-        "Utt1GpoH1fhaTOtN": {
+        "Legendary Longbow": {
             "_note": "Legendary Longbow"
         },
-        "14abPqQcROJfDChR": {
+        "Legendary Longsword": {
             "_note": "Legendary Longsword"
         },
-        "RsDsy7tIhrhaAQQc": {
+        "Legendary Mace": {
             "_note": "Legendary Mace"
         },
-        "iq6IwvqchkJO0IOH": {
+        "Legendary Offhand Brass Knuckles": {
             "_note": "Legendary Offhand Brass Knuckles"
         },
-        "1ZciqG7vIKLYpKsP": {
+        "Legendary Quarterstaff": {
             "_note": "Legendary Quarterstaff"
         },
-        "BakN97v4jTePcXiZ": {
+        "Legendary Rapier": {
             "_note": "Legendary Rapier"
         },
-        "mcj3CPkcSSDdAcBB": {
+        "Legendary Returning Blade": {
             "_note": "Legendary Returning Blade"
         },
-        "21CYHEkNQBzKDrKF": {
+        "Legendary Rope Dart": {
             "_note": "Legendary Rope Dart"
         },
-        "A28WL9E2lJ3iLZHW": {
+        "Legendary Round Shield": {
             "_note": "Legendary Round Shield"
         },
-        "xEUOz7gIfw3eTD1r": {
+        "Legendary Rune Shield": {
             "_note": "Legendary Rune Shield"
         },
-        "aXUIWaTDOYbp7aMa": {
+        "Legendary Runelock Pistol": {
             "_note": "Legendary Runelock Pistol"
         },
-        "IZ4CWNxfuM46JeCN": {
+        "Legendary Scepter": {
             "_note": "Legendary Scepter"
         },
-        "EsFsgaEUdJJRCklS": {
+        "Legendary Scimitar": {
             "_note": "Legendary Scimitar"
         },
-        "vt7KdwDdPHJKHcFt": {
+        "Legendary Shadowblade": {
             "_note": "Legendary Shadowblade"
         },
-        "j7kp36jaetfn5jb3": {
+        "Legendary Shortbow": {
             "_note": "Legendary Shortbow"
         },
-        "D3SbNvNJZAFuzfhg": {
+        "Legendary Shortstaff": {
             "_note": "Legendary Shortstaff"
         },
-        "dEumq3BIZBk5xYTk": {
+        "Legendary Shortsword": {
             "_note": "Legendary Shortsword"
         },
-        "Px3Rh3kIvAqyISxJ": {
+        "Legendary Small Dagger": {
             "_note": "Legendary Small Dagger"
         },
-        "4e5pWxi2qohuGsWh": {
+        "Legendary Spear": {
             "_note": "Legendary Spear"
         },
-        "dSIYc8RYX4el8IXg": {
+        "Legendary Throwing Knives": {
             "_note": "Legendary Throwing Knives"
         },
-        "MaJIROht7A9LxIZx": {
+        "Legendary Tower Shield": {
             "_note": "Legendary Tower Shield"
         },
-        "ayhbVOYel64OfAf0": {
+        "Legendary Twisted Dagger": {
             "_note": "Legendary Twisted Dagger"
         },
-        "wPjg0LufJH9vUfVM": {
+        "Legendary Wand": {
             "_note": "Legendary Wand"
         },
-        "W9ymfEDck2icfvla": {
+        "Legendary Warhammer": {
             "_note": "Legendary Warhammer"
         },
-        "Wcdbf6yS3LEt7nsg": {
+        "Legendary Whip": {
             "_note": "Legendary Whip"
         },
-        "LRCNRIWaS7Akio1t": {
+        "Legendary Whipsword": {
             "_note": "Legendary Whipsword"
         },
-        "iaGnlUkShBgdeMo0": {
+        "Light-Frame Wheelchair": {
             "_note": "Light-Frame Wheelchair"
         },
-        "YfVs6Se903az4Yet": {
+        "Longbow": {
             "_note": "Longbow"
         },
-        "Iv8BZM1R24QMT72M": {
+        "Longsword": {
             "_note": "Longsword"
         },
-        "HBoBo6aPc32Sp23n": {
+        "Möbius Orb": {
             "_note": "Möbius Orb"
         },
-        "cKQCDyM2UopDL9zF": {
+        "Mace": {
             "_note": "Mace"
         },
-        "XKBmBUEoGLdLcuqQ": {
+        "Mage Orb": {
             "_note": "Mage Orb"
         },
-        "jGykNGQiKm63tCiE": {
+        "Magus Revolver": {
             "_note": "Magus Revolver"
         },
-        "Gi26Zk9VqlAAgx3E": {
+        "Meridian Cutlass": {
             "_note": "Meridian Cutlass"
         },
-        "BdLfy5i488VZgkjP": {
+        "Midas Scythe": {
             "_note": "Midas Scythe"
         },
-        "D3Be5TzOLF4T08De": {
+        "Offhand Brass Knuckles": {
             "_note": "Offhand Brass Knuckles"
         },
-        "taAZDkDCpeNgxhnn": {
+        "Parrying Dagger": {
             "_note": "Parrying Dagger"
         },
-        "y5eF0ORiMmJLlKvz": {
+        "Platinum Estoc": {
             "_note": "Platinum Estoc"
         },
-        "bW3xw5S9DbaLCN3E": {
+        "Powered Gauntlet": {
             "_note": "Powered Gauntlet"
         },
-        "SxcblanBvqaest3A": {
+        "Primer Shard": {
             "_note": "Primer Shard"
         },
-        "mlIj88p1wcQNjEDG": {
+        "Quarterstaff": {
             "_note": "Quarterstaff"
         },
-        "zkAgEW6zMkRZalEm": {
+        "Rapier": {
             "_note": "Rapier"
         },
-        "P6Mw0SNcbLzsUGsl": {
+        "Razor Wire": {
             "_note": "Razor Wire"
         },
-        "i8CqVTzqoRoCewNe": {
+        "Retractable Saber": {
             "_note": "Retractable Saber"
         },
-        "FtsQGwOg3r8uUCST": {
+        "Returning Axe": {
             "_note": "Returning Axe"
         },
-        "4fQpVfQ3NVwTHStA": {
+        "Returning Blade": {
             "_note": "Returning Blade"
         },
-        "E9QDh5o9eQ1Qx0kH": {
+        "Ricochet Axes": {
             "_note": "Ricochet Axes"
         },
-        "xK7Qo8WuldU8BhY0": {
+        "Rime Scepter": {
             "_note": "Rime Scepter"
         },
-        "2wKH8UalLK4UDYHV": {
+        "Rocket Maul": {
             "_note": "Rocket Maul"
         },
-        "DvImRaqS9aW4WWSn": {
+        "Rope Dart": {
             "_note": "Rope Dart"
         },
-        "mxwWKDujgsRcZWPT": {
+        "Round Shield": {
             "_note": "Round Shield"
         },
-        "nuTwQsR2XTOsVfbR": {
+        "Rune Shield": {
             "_note": "Rune Shield"
         },
-        "g0dQGIQONpSoYtOa": {
+        "Runelock Pistol": {
             "_note": "Runelock Pistol"
         },
-        "EG6mZhr3ib56r974": {
+        "Runes of Ruination": {
             "_note": "Runes of Ruination"
         },
-        "GZh345N8fmuS4Jeh": {
+        "Scepter": {
             "_note": "Scepter"
         },
-        "acPGwIaUhx3R0mTq": {
+        "Scepter of Elias": {
             "_note": "Scepter of Elias"
         },
-        "813nH6tqOjBEvJMV": {
+        "Scimitar": {
             "_note": "Scimitar"
         },
-        "OymmLywAhtBbjYjP": {
+        "Segmented Staff": {
             "_note": "Segmented Staff"
         },
-        "bMgJ1MBDbcr5H6nZ": {
+        "Severed Dragon Claw": {
             "_note": "Severed Dragon Claw"
         },
-        "GnllSqInVOWFX3qW": {
+        "Shadowblade": {
             "_note": "Shadowblade"
         },
-        "p9tdjQr2AZP19RYm": {
+        "Shortbow": {
             "_note": "Shortbow"
         },
-        "vHDHG3STcxTEfYAM": {
+        "Shortstaff": {
             "_note": "Shortstaff"
         },
-        "cjGZpXCoshEqi1FI": {
+        "Shortsword": {
             "_note": "Shortsword"
         },
-        "DdJFKHZ6UqG1X2oR": {
+        "Singing Sword": {
             "_note": "Singing Sword"
         },
-        "1N1jggda5DfdzdMj": {
+        "Siphoning Gauntlets": {
             "_note": "Siphoning Gauntlets"
         },
-        "OxsEmffWriiQmqJK": {
+        "Sledge Axe": {
             "_note": "Sledge Axe"
         },
-        "wKklDxs5nkzILNp4": {
+        "Small Dagger": {
             "_note": "Small Dagger"
         },
-        "IneW8aOnetrUsM8r": {
+        "Soldier's Pike": {
             "_note": "Soldier's Pike"
         },
-        "VpvBLIW3ilRr5cSA": {
+        "Soul Chain": {
             "_note": "Soul Chain"
         },
-        "TF85tKJetUjLwh54": {
+        "Spear": {
             "_note": "Spear"
         },
-        "mLbmYF15wm1kckMk": {
+        "Spellbound Bangles": {
             "_note": "Spellbound Bangles"
         },
-        "O1w8KPYH85ZS8X64": {
+        "Spiked Bow": {
             "_note": "Spiked Bow"
         },
-        "vzyzFwLUniWZV1rt": {
+        "Spiked Shield": {
             "_note": "Spiked Shield"
         },
-        "xHpu0U3qcx81aKR6": {
+        "Splintershaft Bow": {
             "_note": "Splintershaft Bow"
         },
-        "tGWGWeNeEhnjTzif": {
+        "Staff of Augma": {
             "_note": "Staff of Augma"
         },
-        "U6bYGiG1NqvBbMzE": {
+        "Starmetal Blade": {
             "_note": "Starmetal Blade"
         },
-        "6bkbw4Ap644KZGvJ": {
+        "Steelforged Halberd": {
             "_note": "Steelforged Halberd"
         },
-        "bzXbKmU27hs1eVkB": {
+        "Storm God's Greataxe": {
             "_note": "Storm God's Greataxe"
         },
-        "1jOJHHKdtk3s2jaY": {
+        "Swinging Ropeblade": {
             "_note": "Swinging Ropeblade"
         },
-        "TVPCWnSELOVBv6G1": {
+        "Sword of Light & Flame": {
             "_note": "Sword of Light & Flame"
         },
-        "jlLtgK468rO5IssR": {
+        "Talon Blades": {
             "_note": "Talon Blades"
         },
-        "I1nDGpulg29GpWOW": {
+        "Thistlebow": {
             "_note": "Thistlebow"
         },
-        "0Hn5RQP1zXKCAxq9": {
+        "Throwing Knives": {
             "_note": "Throwing Knives"
         },
-        "EaivcnHXjPcQr4OM": {
+        "Tinker's Hammer": {
             "_note": "Tinker's Hammer"
         },
-        "C9aWpK1shVMWP4m5": {
+        "Tower Shield": {
             "_note": "Tower Shield"
         },
-        "DEKB75Vz2SW76Y4g": {
+        "Twisted Dagger": {
             "_note": "Twisted Dagger"
         },
-        "zGm6Wa1fGF6cECY5": {
+        "Urok Broadsword": {
             "_note": "Urok Broadsword"
         },
-        "DspK6DRi6AjobBqQ": {
+        "Void Needle": {
             "_note": "Void Needle"
         },
-        "A7fiGMpCTZxecElO": {
+        "Vorpal Shard": {
             "_note": "Vorpal Shard"
         },
-        "ItWisJFNGMNWeaCV": {
+        "Wand": {
             "_note": "Wand"
         },
-        "tP6vmnrmTq2h5sj7": {
+        "Wand of Enthrallment": {
             "_note": "Wand of Enthrallment"
         },
-        "ZrRGNjGCgZTTfgDG": {
+        "Wand of Essek": {
             "_note": "Wand of Essek"
         },
-        "Bm5jlRxmF5Yn72DV": {
+        "War Dart": {
             "_note": "War Dart"
         },
-        "XQR4yGeYBtdu5sQz": {
+        "War Pick": {
             "_note": "War Pick"
         },
-        "z6yEdFYQJ5IzgTX3": {
+        "War Scythe": {
             "_note": "War Scythe"
         },
-        "ZXh1GQahBiODfSTC": {
+        "Warhammer": {
             "_note": "Warhammer"
         },
-        "CmtWqw6DwoePnX7W": {
+        "Whip": {
             "_note": "Whip"
         },
-        "ZGMykIDd2vqwACMF": {
+        "Whipsword": {
             "_note": "Whipsword"
         },
-        "8Z5QrThfwkYPXNco": {
+        "Widogast Pendant": {
             "_note": "Widogast Pendant"
         },
-        "0XpSBYXxtywvBFQi": {
+        "Yutari Bloodbow": {
             "_note": "Yutari Bloodbow"
         }
     }
