@@ -20,7 +20,17 @@
 .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .attack-section .title h3,
 .application.sheet.daggerheart.actor.dh-style.adversary .adversary-sidebar-sheet .experience-section .title h3,
 .application.sheet.dh-style .character-sidebar-sheet .experience-section .title h3,
+.application.sheet.dh-style .character-sidebar-sheet .equipment-section .title h3,
+.application.sheet.dh-style .character-sidebar-sheet .loadout-section .title h3,
 .application.sheet.daggerheart.actor.dh-style.companion .tab.details.active .experience-list .title h3 {
+    white-space: nowrap;
+}
+
+/* 伴獣シートの「パートナー」「攻撃」。
+ * フォーク時代の修正から漏れていた2か所で、実機確認 (2026-10-04) で見つけた。
+ * 同じシートの「経験」だけが直っていたので、他の2つも同じ形で潰れていた。 */
+.application.sheet.daggerheart.actor.dh-style.companion .tab.details.active .partner-section .title h3,
+.application.sheet.daggerheart.actor.dh-style.companion .tab.details.active .attack-section .title h3 {
     white-space: nowrap;
 }
 

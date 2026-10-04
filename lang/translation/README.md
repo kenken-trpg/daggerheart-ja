@@ -53,6 +53,85 @@ diff <(git show HEAD:lang/.reference/en.json) lang/.reference/en.json
 *2026-10-04 時点: 上流 2.10.7 と 2.10.9 の `en.json` は内容が完全一致で、
 訳の追従は不要だった (全 2,285 キー、未訳 0)。*
 
+## モジュール版の実機確認 (2026-10-04・済)
+
+公式システム **2.10.9** + 本モジュール + 本家 mod 2本を、専用データパス
+(core 14.365、ポート 30100) で起動して確認した。
+
+| 確認項目 | 結果 |
+| --- | --- |
+| モジュールが認識される | 0.1.0、`unavailable: false` |
+| `languages[].system` で公式システムの訳を上書きできる | **成立**。`回避値` `恐怖` 等が公式システム上で日本語になる |
+| CSS が `modules` レイヤに入る | `@import url("modules/daggerheart-ja/styles/daggerheart-ja.css") layer(modules)` |
+| CSS がシステムに勝つ | `flex: 0` → 計算値 `flex-basis: auto`、`white-space: nowrap` |
+| **本家 mod が有効化できる** | `daggerheart-fear-tracker` 1.2.5、`daggerheart-distances` 0.2.7。**両方 active、`unavailable: false`**。どちらも `relationships.systems: [{id: "daggerheart"}]` を宣言している |
+| コンソールエラー | なし |
+
+**これが移行の目的そのものの確認。** 同じ mod は `daggerheart-ja` システムでは
+宣言したシステムが合わず有効化できない。
+
+### 実機走査で CSS の漏れが4か所見つかった
+
+フォーク時代の CSS 修正は**不完全だった**。コンパイル後 CSS の差分から機械的に
+移した10宣言では、下の4か所が直っていなかった。フォークでも同じく崩れていた
+はずで、移行で持ち込んだ不具合ではない。
+
+| シート | 見出し | 状態 |
+| --- | --- | --- |
+| 伴獣 | パートナー | 5行に縦積み (高さ 100px) |
+| 伴獣 | 攻撃 | 2行に縦積み (高さ 40px) |
+| キャラクター | 装備 | 2行に縦積み |
+| キャラクター | ロードアウト | 3行に縦積み |
+
+同じ伴獣シートの「経験」だけが直っていた。**フォーク時代の修正は目視で、
+見つけたものだけを直していた**ことがここで分かる。
+
+### 走査は目視ではなくスクリプトで回す
+
+上の4か所は、崩れを機械的に検出して見つけた。判定は「葉要素・日本語を含む・
+20文字以内・2行以上・幅が文字数に対して不足」。これをアクタ6種とアイテム12種、
+および画面全体に当てた。
+
+```js
+// ブラウザのコンソールで実行する
+window.__scan = function (root) {
+    const bad = [];
+    root.querySelectorAll('*').forEach(el => {
+        if (el.children.length) return;            // 葉要素だけ
+        const t = el.textContent.trim();
+        if (!t || t.length > 20) return;
+        if (!/[ぁ-んァ-ン一-龥]/.test(t)) return;   // 日本語を含むものだけ
+        const cs = getComputedStyle(el);
+        const r = el.getBoundingClientRect();
+        if (!r.height) return;
+        const lines = Math.round(r.height / (parseFloat(cs.lineHeight) || parseFloat(cs.fontSize) * 1.2));
+        if (lines >= 2 && r.width < t.length * parseFloat(cs.fontSize) * 0.9)
+            bad.push({ text: t, lines, w: Math.round(r.width), ws: cs.whiteSpace });
+    });
+    return bad;
+};
+
+for (const type of ['character', 'companion', 'adversary', 'npc', 'environment', 'party']) {
+    const a = await Actor.create({ name: '走査_' + type, type }, { renderSheet: false });
+    await a.sheet.render(true);
+    await new Promise(r => setTimeout(r, 1200));
+    console.log(type, window.__scan(a.sheet.element));
+    await a.sheet.close();
+    await a.delete();
+}
+```
+
+**上流を追従するたびにこれを回す。** モジュールの CSS は上流がセレクタを
+変えると静かに効かなくなるので、崩れていないことを毎回確かめる必要がある。
+
+修正後の再走査では、アクタ6種・アイテム12種・画面全体のいずれも検出ゼロ。
+
+### まだ確認していないもの
+
+ダイアログ (レベルアップ、アイテム譲渡、ダイスロール選択) は、開くのに
+キャラクターの作り込みが要るので未走査。CSS 修正のうち `flex: 0 0 auto` の
+2件はここに当たるもので、計算値では効いていることだけ確認済み。
+
 ## 翻訳同期ツール (`tools/lang-sync.mjs`)
 
 ```bash
