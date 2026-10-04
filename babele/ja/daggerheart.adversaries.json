@@ -1,0 +1,842 @@
+{
+    "label": "adversaries",
+    "collection": "daggerheart.adversaries",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "89yAh30vaNQOALlz": {
+            "_note": "Acid Burrower",
+            "name": "酸性穴掘り",
+            "description": "<p>掘削用の爪と酸性の血を持つ、馬ほどの大きさの昆虫。</p>",
+            "motivesAndTactics": "穴を掘る、引きずり込む、捕食する、位置を変える",
+            "attack": {
+                "name": "爪"
+            },
+            "experiences": {
+                "pe7OIoJsqlpMXEvs": {
+                    "name": "振動感知"
+                }
+            },
+            "items": {
+                "MFmGN6Tbf5GYxrQ9": {
+                    "name": "執拗（3）",
+                    "actions": {
+                        "3lGGgkxnzgUwHGIp": {
+                            "name": "スポットライト：執拗"
+                        }
+                    }
+                },
+                "ctXYwil2D1zfsekT": {
+                    "name": "大地の噴出",
+                    "effects": {
+                        "9PsnogEPsp1OOK64": {
+                            "name": "大地の噴出"
+                        }
+                    }
+                },
+                "UpFsnlbZkyvM2Ftv": {
+                    "description": "<p>@Lookup[@name]の正面にいる近距離内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d6</strong>の物理ダメージを受け、恩恵を受けずに鎧スロットを1つマークしなければなりません（ダメージ軽減のために鎧を使うことは依然として可能です）。鎧スロットをマークできない場合、HPを追加で1マークし、あなたは恐怖を1得ます。</p><p>@Template[type:inFront|range:c]</p>"
+                }
+            }
+        },
+        "G7jiltRjgvVhZewm": {
+            "_note": "Adult Flickerfly"
+        },
+        "C9vt09lsAa6AeXeg": {
+            "_note": "Ahuizotl"
+        },
+        "vNIbYQ4YSzNf0WPE": {
+            "_note": "Apprentice Assassin"
+        },
+        "WPEOIGfclNJxWb87": {
+            "_note": "Arch-Necromancer"
+        },
+        "JRhrrEg5UroURiAD": {
+            "_note": "Archer Guard",
+            "items": {
+                "DMtd1EXQPlPaoRmV": {
+                    "effects": {
+                        "wGuxOLokMqdxVSOo": {
+                            "changes": [
+                                "敏捷ロール"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "0ts6CGd93lLqGZI5": {
+            "_note": "Archer Squadron"
+        },
+        "FNNt42hhwvuOc4XO": {
+            "_note": "Archmage"
+        },
+        "h5RuhzGL17dW5FBT": {
+            "_note": "Assassin Poisoner"
+        },
+        "bXuRtHS6diPWAJKA": {
+            "_note": "Atototl"
+        },
+        "4bUnTk3t4VuZZmc7": {
+            "_note": "Banshee"
+        },
+        "SkSS7dNTebMaancS": {
+            "_note": "Basilisk"
+        },
+        "dgH3fW9FTYLaIDvS": {
+            "_note": "Battle Box"
+        },
+        "71qKDLKO3CsrNkdy": {
+            "_note": "Bear"
+        },
+        "12TRnUh7RzLIn30r": {
+            "_note": "Berserker Alpha"
+        },
+        "CaFmEX2ccQfgIRja": {
+            "_note": "Berserker Initiate"
+        },
+        "B4LZcGuBAHzyVdzy": {
+            "_note": "Bladed Guard"
+        },
+        "2UeZ0tEe7AzgSJNd": {
+            "_note": "Brawny Zombie"
+        },
+        "IwliIAsSth5pKGU4": {
+            "_note": "Bugboar"
+        },
+        "UxOoHSEzxIjTpZws": {
+            "_note": "Catrin"
+        },
+        "8Zkqk1jU09nKL2fy": {
+            "_note": "Cave Ogre"
+        },
+        "tGHjaLIGEUzFygN7": {
+            "_note": "Centaur Warden"
+        },
+        "XEZbNjjrhyioE7YP": {
+            "_note": "Cephilith Abomination"
+        },
+        "I8ClqowcEUMUNVdn": {
+            "_note": "Cephilith Hatchling"
+        },
+        "kA7erU1gkzB84PDY": {
+            "_note": "Cephilith Novitiate"
+        },
+        "2G7IfajsxWczY04t": {
+            "_note": "Cephilith Priest"
+        },
+        "702jiZPmXM5Hucwj": {
+            "_note": "Cephilith Titan"
+        },
+        "jDmHqGvzg5wjgmxE": {
+            "_note": "Chaos Skull"
+        },
+        "pOtg2aQs8iI3GzMV": {
+            "_note": "Chicken-foot Hut"
+        },
+        "RV9j8V7CcuZYEhec": {
+            "_note": "Chimera"
+        },
+        "HFpYk4dxDMx9emHs": {
+            "_note": "Cipactli"
+        },
+        "O9b1SOGmjhRszm75": {
+            "_note": "Cloud Titan"
+        },
+        "JQN5j1AB0VwV0AWN": {
+            "_note": "Common Ruffian"
+        },
+        "99TqczuQipBmaB8i": {
+            "_note": "Conscript"
+        },
+        "uOP5oT9QzXPlnf3p": {
+            "_note": "Construct"
+        },
+        "ZxWaWPdzFIUPNC62": {
+            "_note": "Courtesan"
+        },
+        "CBBuEXAlLKFMJdjg": {
+            "_note": "Courtier"
+        },
+        "vpzDW0774xXJhNHy": {
+            "_note": "Crimson Lepus"
+        },
+        "nrcRGYmyMy2vBJXl": {
+            "_note": "Cryptimoth"
+        },
+        "0NxCSugvKQ4W8OYZ": {
+            "_note": "Cult Adept"
+        },
+        "tyBOpLfigAhI9bU3": {
+            "_note": "Cult Fang"
+        },
+        "zx99sOGTXicP4SSD": {
+            "_note": "Cult Initiate"
+        },
+        "vw7PTv0hdDRCXhus": {
+            "_note": "Cursed Merfolk"
+        },
+        "Z16fYvCNRlD4XZij": {
+            "_note": "Darkweave Crawler"
+        },
+        "PcBt4ggimibM7DCp": {
+            "_note": "Darkweave Queen"
+        },
+        "YdGTyYI6bBXh5lgV": {
+            "_note": "Darkweave Spinner"
+        },
+        "ADiUlCE0woMcvnzv": {
+            "_note": "Darkweave Swarmlings"
+        },
+        "Wy9Dx05ulqeybn4h": {
+            "_note": "Deep Dweller"
+        },
+        "9x2xY9zwc3xzbXo5": {
+            "_note": "Deeproot Defender"
+        },
+        "FeIMCgQ5ZMRRDo4d": {
+            "_note": "Demon Lord Berzug"
+        },
+        "pnyjIGxxvurcWmTv": {
+            "_note": "Demon of Avarice"
+        },
+        "kE4dfhqmIQpNd44e": {
+            "_note": "Demon of Despair"
+        },
+        "2VN3BftageoTTIzu": {
+            "_note": "Demon of Hubris"
+        },
+        "SxSOkM4bcVOFyjbo": {
+            "_note": "Demon of Jealousy"
+        },
+        "5lphJAgzoqZI3VoG": {
+            "_note": "Demon of Wrath"
+        },
+        "NoRZ1PqB8N5wcIw0": {
+            "_note": "Demonic Hound Pack"
+        },
+        "tBWHW00epmMnkawe": {
+            "_note": "Dire Bat"
+        },
+        "BTapjzeIvySheRqF": {
+            "_note": "Dire Pangolati"
+        },
+        "wNzeuQLfLUMvgHlQ": {
+            "_note": "Dire Wolf"
+        },
+        "cQ3IQkxfRhmLMySF": {
+            "_note": "Doppelhound"
+        },
+        "qmiZk8Q9DGibINem": {
+            "_note": "Dragon Knight"
+        },
+        "FGnHhvctM9bka3Zj": {
+            "_note": "Dragon Mother Mitera"
+        },
+        "VQjfu6GFyNlFSMgH": {
+            "_note": "Drake"
+        },
+        "wR7cFKrHvRzbzhBT": {
+            "_note": "Dryad"
+        },
+        "ldbXoTbf1lnZzXjt": {
+            "_note": "Dullahan"
+        },
+        "TLzY1nDw0Bu9Ud40": {
+            "_note": "Electric Eels"
+        },
+        "P7h54ZePFPHpYwvB": {
+            "_note": "Elemental Spark"
+        },
+        "y0bPXxZES9huK9f5": {
+            "_note": "Elephant"
+        },
+        "bfhVWMBUh61b9J6n": {
+            "_note": "Elite Soldier"
+        },
+        "VhPEpRkCZKOwK3me": {
+            "_note": "Elk"
+        },
+        "0QPn79SMU6C0b1qi": {
+            "_note": "Entombed Cat Beast"
+        },
+        "etsuHXoRHqWBRI8N": {
+            "_note": "Entombed Elite Guard"
+        },
+        "L6QLw1rYK4qtdf1F": {
+            "_note": "Entombed Empress"
+        },
+        "BUjYC5kDjBoqNrC3": {
+            "_note": "Entombed Necropriest"
+        },
+        "BSLBG7hQ9K1HGlU6": {
+            "_note": "Entombed Skin Beetles"
+        },
+        "cugsaVxMi9UCUNku": {
+            "_note": "Entombed Stonemason"
+        },
+        "ChwwVqowFw8hJQwT": {
+            "_note": "Failed Experiment"
+        },
+        "53xmu2ZYzjIOy4Td": {
+            "_note": "Falcon"
+        },
+        "OsLG2BjaEdTZUJU9": {
+            "_note": "Fallen Shock Troop"
+        },
+        "PELRry1vqjBzSAlr": {
+            "_note": "Fallen Sorcerer"
+        },
+        "hxZ0sgoFJubh5aj6": {
+            "_note": "Fallen Warlord: Realm-Breaker"
+        },
+        "RXkZTwBRi4dJ3JE5": {
+            "_note": "Fallen Warlord: Undefeated Champion"
+        },
+        "q3BOz4DSAIAvvJGK": {
+            "_note": "Fellmounted Shadow King"
+        },
+        "PjkvJjlljFIg6Ae9": {
+            "_note": "Fire Titan Warlord"
+        },
+        "borKEokmyZ8gOkK3": {
+            "_note": "Fire Titan"
+        },
+        "vWHynB75iGfOhTjn": {
+            "_note": "Flock Of Feather Fiends"
+        },
+        "diyNjiVzyZEwYg1V": {
+            "_note": "Fowlbear"
+        },
+        "qdmY1ZJcnAaVvJQD": {
+            "_note": "Frost Titan"
+        },
+        "55oYzFQRmrXCqNxn": {
+            "_note": "Fungispunj Sporeling"
+        },
+        "5BKK7pDRjRAgN3Nm": {
+            "_note": "Fungispunj Sporophore"
+        },
+        "mXXYdmgqAKKZD4tB": {
+            "_note": "Gargantuan Sea Turtle"
+        },
+        "iCiRtuBhVfojXOj5": {
+            "_note": "Gargantuan War Machine"
+        },
+        "rTdLnKnuI8lu0kfv": {
+            "_note": "Gargoyle"
+        },
+        "Tg1F1PthQWeKdLJT": {
+            "_note": "Ghastly Legion"
+        },
+        "8VZIgU12cB3cvlyH": {
+            "_note": "Giant Beastmaster"
+        },
+        "YnObCleGjPT7yqEc": {
+            "_note": "Giant Brawler"
+        },
+        "OMQ0v6PE8s1mSU0K": {
+            "_note": "Giant Eagle"
+        },
+        "IIWV4ysJPFPnTP7W": {
+            "_note": "Giant Mosquitoes"
+        },
+        "TqL5DLSbGFI8RsLd": {
+            "_note": "Giant Octopus"
+        },
+        "4PfLnaCrOcMdb4dK": {
+            "_note": "Giant Rat"
+        },
+        "5s8wSvpyC5rxY5aD": {
+            "_note": "Giant Recruit"
+        },
+        "fmfntuJ8mHRCAktP": {
+            "_note": "Giant Scorpion"
+        },
+        "8KWVLWXFhlY2kYx0": {
+            "_note": "Glass Snake"
+        },
+        "Nx7LCcitOvQvXb8X": {
+            "_note": "Gobstalker"
+        },
+        "8mJYMpbLTb8qIOrr": {
+            "_note": "Gorgon"
+        },
+        "dsfB3YhoL5SudvS2": {
+            "_note": "Greater Earth Elemental"
+        },
+        "xIICT6tEdnA7dKDV": {
+            "_note": "Greater Water Elemental"
+        },
+        "SHXedd9zZPVfUgUa": {
+            "_note": "Green Ooze"
+        },
+        "CJtnIPvyAmv6PFsu": {
+            "_note": "Griffin"
+        },
+        "lzu6TNdRtCLoo3fN": {
+            "_note": "Grimmling Warband"
+        },
+        "AagRRy7uZr9k7tDH": {
+            "_note": "Guahalan Alebrujo"
+        },
+        "YFPpMT6zZQwzIJIu": {
+            "_note": "Guahalan Fang Lord"
+        },
+        "cRujJUHzQvzwWZtj": {
+            "_note": "Guahalan Shifter"
+        },
+        "PV0FTOWQWLw3PDlY": {
+            "_note": "Guahalan Spirit Beast"
+        },
+        "9K39Wga6Lj5y0g8M": {
+            "_note": "Guahalan Spirit Singer"
+        },
+        "kabueAo6BALApWqp": {
+            "_note": "Hallowed Archer"
+        },
+        "68xDUa9Ls48O825Z": {
+            "_note": "Hallowed Choir"
+        },
+        "VENwg7xEFcYObjmT": {
+            "_note": "Hallowed Soldier"
+        },
+        "unuX3PZSkhlNUdVF": {
+            "_note": "Harbinger Of Death"
+        },
+        "2dmAOdPMFN6e4BV6": {
+            "_note": "Harbinger Of Famine"
+        },
+        "PwAVKf3IhLYD8JTJ": {
+            "_note": "Harbinger Of Pestilence"
+        },
+        "G7LS7f4StFvtPPG7": {
+            "_note": "Harbinger Of War"
+        },
+        "c6WgrpzgbgSpEiyA": {
+            "_note": "Harpy"
+        },
+        "uRtghKE9mHlII4rs": {
+            "_note": "Harrier"
+        },
+        "mK3A5FTx6k8iPU3F": {
+            "_note": "Head Guard"
+        },
+        "i2UNbRvgyoSs07M6": {
+            "_note": "Head Vampire"
+        },
+        "r1mbfSSwKWdcFdAU": {
+            "_note": "High Seraph"
+        },
+        "321E0ZexRT4zjpKu": {
+            "_note": "Hill Titan"
+        },
+        "MydEcpmRKsHt1snu": {
+            "_note": "Hive Walker"
+        },
+        "6hbqmxDXFOzZJDk4": {
+            "_note": "Huge Green Ooze"
+        },
+        "MI126iMOOobQ1Obn": {
+            "_note": "Hydra"
+        },
+        "qhMbIUVeD7BWuRKJ": {
+            "_note": "Jack-o'-lantern"
+        },
+        "5Lh1T0zaT8Pkr2U2": {
+            "_note": "Jagged Knife Bandit"
+        },
+        "MbBPIOxaxXYNApXz": {
+            "_note": "Jagged Knife Hexer"
+        },
+        "CBKixLH3yhivZZuL": {
+            "_note": "Jagged Knife Kneebreaker"
+        },
+        "C0OMQqV7pN6t7ouR": {
+            "_note": "Jagged Knife Lackey"
+        },
+        "aTljstqteGoLpCBq": {
+            "_note": "Jagged Knife Lieutenant"
+        },
+        "XF4tYTq9nPJAy2ox": {
+            "_note": "Jagged Knife Shadow"
+        },
+        "1zuyof1XuIfi3aMG": {
+            "_note": "Jagged Knife Sniper"
+        },
+        "MYXmTx2FHcIjdfYZ": {
+            "_note": "Juvenile Flickerfly"
+        },
+        "Eii92UHVhFXh59kL": {
+            "_note": "Kelpie"
+        },
+        "7ai2opemrclQe3VF": {
+            "_note": "Knight of the Realm"
+        },
+        "4nqv3ZwJGjnmic8j": {
+            "_note": "Kraken"
+        },
+        "pMZxHeu79iXFV9FR": {
+            "_note": "Lamia"
+        },
+        "Z94eIkkO3msHVU0R": {
+            "_note": "Lamplight Beguiler"
+        },
+        "A9EuHHWa6UmN7khR": {
+            "_note": "Landshark"
+        },
+        "87vG6DpVjMuRMR8Q": {
+            "_note": "Landshark Behemoth"
+        },
+        "OoxQXYk6UDb5MNhx": {
+            "_note": "Manticore"
+        },
+        "niBpVU7yeo5ccskE": {
+            "_note": "Masked Thief"
+        },
+        "DtpTGuzeLlcZ43ID": {
+            "_note": "Masque Muerte"
+        },
+        "dNta0cUzr96xcFhf": {
+            "_note": "Master Assassin"
+        },
+        "MmK6Sn51uikou7wI": {
+            "_note": "Mechanorb"
+        },
+        "Al3w2CgjfdT3p9ma": {
+            "_note": "Merchant"
+        },
+        "Vy02IhGhkJLuezu4": {
+            "_note": "Merchant Baron"
+        },
+        "sRn4bqerfARvhgSV": {
+            "_note": "Minor Chaos Elemental"
+        },
+        "3tqCjDwJAQ7JKqMb": {
+            "_note": "Minor Demon"
+        },
+        "DscWkNVoHak6P4hh": {
+            "_note": "Minor Fire Elemental"
+        },
+        "G62k4oSkhkoXEs2D": {
+            "_note": "Minor Treant"
+        },
+        "rM9qCIYeWg9I0B4l": {
+            "_note": "Minotaur Wrecker"
+        },
+        "yx0vK2yfNVZKWUUi": {
+            "_note": "Monarch"
+        },
+        "mVV7a7KQAORoPMgZ": {
+            "_note": "Mortal Hunter"
+        },
+        "iwhTb5AUvNFV3dU5": {
+            "_note": "Mountain Troll"
+        },
+        "woVws0rcFaedtW3g": {
+            "_note": "Night Children"
+        },
+        "XK78QUfY8c8Go8Uv": {
+            "_note": "Oak Treant"
+        },
+        "ptWgFVRErxkPbYcs": {
+            "_note": "Octopus"
+        },
+        "befIqd5IYKg6eUz2": {
+            "_note": "Oracle of Doom"
+        },
+        "A0SeeDzwjvqOsyof": {
+            "_note": "Outer Realms Abomination"
+        },
+        "ms6nuOl3NFkhPj1k": {
+            "_note": "Outer Realms Corrupter"
+        },
+        "moJhHgKqTKPS2WYS": {
+            "_note": "Outer Realms Thrall"
+        },
+        "DJTVWE5AuWKsAdLZ": {
+            "_note": "Owl Witch"
+        },
+        "RKdp5SOjwx1CHtaZ": {
+            "_note": "Pain Priest"
+        },
+        "fD6W32riWZbtakYc": {
+            "_note": "Panther"
+        },
+        "EQTOAOUrkIvS2z88": {
+            "_note": "Patchwork Zombie Hulk"
+        },
+        "CP6iRfHdyFWniTHY": {
+            "_note": "Perfected Zombie"
+        },
+        "wycLpvebWdUqRhpP": {
+            "_note": "Petty Noble"
+        },
+        "T2kyHFC68VKtIXir": {
+            "_note": "Phantom"
+        },
+        "OmhCH4TmAEiQx9he": {
+            "_note": "Phoenix"
+        },
+        "OROJbjsqagVh7ECV": {
+            "_note": "Pirate Captain"
+        },
+        "5YgEajn0wa4i85kC": {
+            "_note": "Pirate Raiders"
+        },
+        "mhcVkVFrzIJ18FDm": {
+            "_note": "Pirate Tough"
+        },
+        "KUevwJakVF7byrgT": {
+            "_note": "Plesiosaurus"
+        },
+        "ytj3VDog4hrC4TkO": {
+            "_note": "Poltergeist"
+        },
+        "lKmBNV3Sgpq9sTtp": {
+            "_note": "Rabble Mawb"
+        },
+        "Nj9E7DLb7UakiKz6": {
+            "_note": "Ravenous Mockery"
+        },
+        "9rVlbJVrDNn1x7PS": {
+            "_note": "Red Ooze"
+        },
+        "NWhnMXGWzAVUyelj": {
+            "_note": "Redcap Biters"
+        },
+        "eTmojyT07ekYRAIV": {
+            "_note": "Redcap Breaker"
+        },
+        "w5ZBoxm8mq9wQz6l": {
+            "_note": "Redcap Butcher"
+        },
+        "YDgorr8UO4uxptAC": {
+            "_note": "Redcap Candlemaker"
+        },
+        "lbXcMWCYhsCVWYNO": {
+            "_note": "Redcap Skinner"
+        },
+        "c0ivcxYHIW2t1cXV": {
+            "_note": "Roc"
+        },
+        "gP3fWTLzSFnpA8EJ": {
+            "_note": "Rotted Zombie"
+        },
+        "EtLJiTsilPPZvLUX": {
+            "_note": "Royal Advisor"
+        },
+        "trcxftEx6fFKDNk0": {
+            "_note": "Ruby Dragon"
+        },
+        "6Js480Q5SOGRGySm": {
+            "_note": "Rugaru"
+        },
+        "y6dI50LstfCrlVfY": {
+            "_note": "Rust Eater"
+        },
+        "GGljGjIJzx1WKLfD": {
+            "_note": "Sandwyrm"
+        },
+        "htdthg1pCYrovP0T": {
+            "_note": "Sawtoothed Gillbeast"
+        },
+        "lOIaoJscG3he5thc": {
+            "_note": "Scarecrow"
+        },
+        "sLAccjvCWfeedbpI": {
+            "_note": "Secret-Keeper"
+        },
+        "bgreCaQ6ap2DVpCr": {
+            "_note": "Sellsword"
+        },
+        "k70HuYjjFhd2L9Dg": {
+            "_note": "Severed Shadow"
+        },
+        "2nXz4ilAY4xuhKLm": {
+            "_note": "Shambling Zombie"
+        },
+        "C652lQ56oZWBhdNz": {
+            "_note": "Shapeshifting Fiend"
+        },
+        "fa50qKab3hPt9gkV": {
+            "_note": "Shapeshifting Fiend Revealed"
+        },
+        "YmVAkdNsyuXWTtYp": {
+            "_note": "Shark"
+        },
+        "BK4jwyXSRx7IOQiO": {
+            "_note": "Siren"
+        },
+        "7X5q7a6ueeHs5oA9": {
+            "_note": "Skeleton Archer"
+        },
+        "6l1a3Fazq8BoKIcc": {
+            "_note": "Skeleton Dredge"
+        },
+        "Q9LaVTyXF9NF12C7": {
+            "_note": "Skeleton Knight"
+        },
+        "10YIQl0lvCJXZLfX": {
+            "_note": "Skeleton Warrior"
+        },
+        "QGtJtlNo0ACZUjE8": {
+            "_note": "Soul-shattered Mage"
+        },
+        "5tCkhnBByUIN5UdG": {
+            "_note": "Spectral Archer"
+        },
+        "65cSO3EQEh6ZH6Xk": {
+            "_note": "Spectral Captain"
+        },
+        "UFVGl1osOsJTneLf": {
+            "_note": "Spectral Guardian"
+        },
+        "ldbWEL7uZs84vyrR": {
+            "_note": "Spellblade"
+        },
+        "jTFawThYqDS5sOnH": {
+            "_note": "Spellbound Armor"
+        },
+        "iQL0zE7vRLZSZ2TI": {
+            "_note": "Sprite"
+        },
+        "8zlynOhnVA59KpKT": {
+            "_note": "Spy"
+        },
+        "KGVwnLq85ywP9xvB": {
+            "_note": "Stag Knight"
+        },
+        "ufQMOWgcGspqyGln": {
+            "_note": "Stone Titan"
+        },
+        "3aAS2Qm3R6cgaYfE": {
+            "_note": "Stonewraith"
+        },
+        "tLHNONmalytgnngv": {
+            "_note": "Storm Titan"
+        },
+        "cARWKseJwjskn23n": {
+            "_note": "Supreme Demiurge Adonix"
+        },
+        "qNgs3AbLyJrY19nt": {
+            "_note": "Swarm of Rats"
+        },
+        "VtFBt9XBE0WrGGxP": {
+            "_note": "Sylvan Soldier"
+        },
+        "PKSXFuaIHUCoH63A": {
+            "_note": "Tangle Bramble Swarm"
+        },
+        "XcAGOSmtCFLT1unN": {
+            "_note": "Tangle Bramble"
+        },
+        "VSdS3N5Kh6uratv9": {
+            "_note": "Temporal Enforcer"
+        },
+        "aLkLFuVoKz2NLoBK": {
+            "_note": "Tiny Green Ooze"
+        },
+        "1fkLQXVtmILqfJ44": {
+            "_note": "Tiny Red Ooze"
+        },
+        "o63nS0k3wHu6EgKP": {
+            "_note": "Treant Sapling"
+        },
+        "nbdEW8HTS25uEiWZ": {
+            "_note": "Triceratops"
+        },
+        "IrWRZcwshGOppa5K": {
+            "_note": "Tyrannosaurus"
+        },
+        "GwEwP2FnWOT6ONZw": {
+            "_note": "Unicorn"
+        },
+        "6kvqeoKIIFEcEHNQ": {
+            "_note": "Urco"
+        },
+        "Xq00qigdsoB2b3gJ": {
+            "_note": "Valdenhax"
+        },
+        "2OjMAjcG3xbbsrIV": {
+            "_note": "Vampire Bat Swarm"
+        },
+        "TVnr955huZCjXrHM": {
+            "_note": "Vampire Lord"
+        },
+        "WWyUp6Mxl1S3KYUG": {
+            "_note": "Vampire"
+        },
+        "JqYraOqNmmhHk4Yy": {
+            "_note": "Vault Guardian Gaoler"
+        },
+        "FVgYb28fhxlVcGwA": {
+            "_note": "Vault Guardian Sentinel"
+        },
+        "c5hGdvY5UnSjlHws": {
+            "_note": "Vault Guardian Turret"
+        },
+        "u5DJUhMewgOwfc3U": {
+            "_note": "Viper"
+        },
+        "IQzeEU2nWWlBhBrX": {
+            "_note": "Viscera Sucker"
+        },
+        "pMuXGCSOQaxpi5tb": {
+            "_note": "Volcanic Dragon: Ashen Tyrant"
+        },
+        "eArAPuB38CNR0ZIM": {
+            "_note": "Volcanic Dragon: Molten Scourge"
+        },
+        "ladm7wykhZczYzrQ": {
+            "_note": "Volcanic Dragon: Obsidian Predator"
+        },
+        "noDdT0tsN6FXSmC8": {
+            "_note": "War Wizard"
+        },
+        "vXYRAVdCo7812o1g": {
+            "_note": "Water Mother"
+        },
+        "QPTR2clyJ30idX3c": {
+            "_note": "Waxwork Creation"
+        },
+        "ZNbQ2jg35LG4t9eH": {
+            "_note": "Weaponmaster"
+        },
+        "iT3pDkKEtPTqM8kw": {
+            "_note": "Whisper Wraith"
+        },
+        "XuGDFgTjn1vFQhyA": {
+            "_note": "Will-o'-the-wisps"
+        },
+        "wZA5KQUjIRhnUFrl": {
+            "_note": "Wyrmfiend"
+        },
+        "qEzuNntzQ1fRInTm": {
+            "_note": "Wyrmlings"
+        },
+        "h5SPwKivPFqMgOrW": {
+            "_note": "Wyvern"
+        },
+        "K0VZLi95DzTfdfso": {
+            "_note": "Xero The Castle Killer"
+        },
+        "8yUj2Mzvnifhxegm": {
+            "_note": "Young Dryad"
+        },
+        "qe2bhZCyVou4lTO5": {
+            "_note": "Young Fire Dragon"
+        },
+        "UGPiPLJsPvMTSKEF": {
+            "_note": "Young Ice Dragon"
+        },
+        "RIrQcvhlSmXTqFxr": {
+            "_note": "Yufo"
+        },
+        "YhJrP7rTBiRdX5Fp": {
+            "_note": "Zombie Legion"
+        },
+        "Nf0v43rtflV56V2T": {
+            "_note": "Zombie Pack"
+        }
+    }
+}

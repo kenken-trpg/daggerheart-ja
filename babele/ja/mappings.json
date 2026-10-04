@@ -1,4 +1,53 @@
 {
+    "Actor": {
+        "_identity": {
+            "export": ["_id"],
+            "match": ["_id", "name"]
+        },
+        "name": "name",
+        "description": "system.description",
+        "motivesAndTactics": "system.motivesAndTactics",
+        "impulses": "system.impulses",
+        "notes": "system.notes",
+        "attack": {
+            "path": "system.attack",
+            "converter": "structured",
+            "cardinality": "one",
+            "mapping": {
+                "name": "name",
+                "description": "description"
+            }
+        },
+        "experiences": {
+            "path": "system.experiences",
+            "converter": "structured",
+            "container": "keyed",
+            "mapping": {
+                "name": "name",
+                "description": "description"
+            }
+        },
+        "potentialAdversaries": {
+            "path": "system.potentialAdversaries",
+            "converter": "structured",
+            "container": "keyed",
+            "mapping": {
+                "label": "label"
+            }
+        },
+        "items": {
+            "path": "items",
+            "converter": "document",
+            "documentType": "Item",
+            "cardinality": "many"
+        },
+        "effects": {
+            "path": "effects",
+            "converter": "document",
+            "documentType": "ActiveEffect",
+            "cardinality": "many"
+        }
+    },
     "Item": {
         "_identity": {
             "export": ["_id"],
@@ -22,6 +71,13 @@
             "match": ["_id", "name"]
         },
         "name": "name",
-        "description": "description"
+        "description": "description",
+        "changes": {
+            "path": "system.changes",
+            "converter": "structured",
+            "container": "array",
+            "cardinality": "many",
+            "valuePath": "value"
+        }
     }
 }

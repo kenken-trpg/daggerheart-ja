@@ -725,6 +725,86 @@ npm run packs:check          # エンリッチャ (@UUID/@Lookup) の整合性
 | `system.loreReference` | `warborne` / `frostborne` など小文字スラグ | 同上 |
 | `system.features` | `Compendium....Item.<id>` | 参照。訳すと壊れる |
 
+### 工程5の下ごしらえ済み — `adversaries` / `environments` の機構を全部通した (翻訳はまだ)
+
+5パック有効 (`transformations` / `communities` / `ancestries` / `adversaries` /
+`environments`)。機構を1つずつ踏むプローブ訳だけを入れて実機確認した。
+
+| 機構 | マッピング | 結果 |
+| --- | --- | --- |
+| **埋め込み `items[]`** (912+197件) | `document` / `Item` / many | 成立。アイテム名・説明・`actions`・`effects` まで再帰 |
+| `system.attack` | `structured` / `cardinality: one` | 成立。他21キー無傷 |
+| `system.experiences.<id>` | `structured` / `keyed` | 成立 |
+| `system.motivesAndTactics` / `impulses` / `notes` | 既定 | 成立 |
+| `system.potentialAdversaries.<id>.label` | `structured` / `keyed` | 成立。参照 UUID 3件は無傷 |
+| **`effects[].system.changes[]`** | `structured` / `array` | 成立。位置指定で当たる |
+| 数式 29件 | — | 1件も訳されていない |
+| 名前の欠落 | — | 0件 (431/431) |
+| レイアウト崩れ | — | 0件 (実データの日本語で再走査) |
+
+#### `changes` のパスが違っていた — 既定マッピングは最初から空振りしていた
+
+設計では「Babele 既定の `ActiveEffect.changes` が数式を訳してしまう」ことを
+リスクとしていたが、**このシステムに `effects[].changes` は1件も存在しない**。
+実際のパスは **`effects[].system.changes[]`**。既定は空振りするだけで無害だった。
+
+#### 訳すべき change は2キーだけ (全パック走査で確定)
+
+`system.changes[].value` を全パックで集計し、キー別に自由文の有無を数えた:
+
+| キー | 件数 | 自由文 |
+| --- | --- | --- |
+| `system.advantageSources` | 43 | **43** |
+| `system.disadvantageSources` | 23 | **23** |
+| `system.evasion` | 85 | 0 |
+| `system.bonuses.damage.bonus` | 63 | 0 |
+| `system.damageThresholds.*` | 76 | 0 |
+| その他50キー | — | 0 |
+
+**この2キー以外はすべて数値・ダイス式・ロール式。** 残りの値は
+`1 + @system.tier` / `ceil(@system.traits.agility.value / 2)` / `d10` / `2` など。
+
+→ **許可リストにした** (`TRANSLATABLE_CHANGE_KEYS`)。設計にあった
+「`@` を含む値を数式として弾く」ヒューリスティックは**不採用**。
+`d10` や `2` を通してしまうので、キーで決めるほうが安全で検証もできる。
+
+#### `changes` は位置で照合する
+
+1つのエフェクト内に同じキーの change が複数ある例が5件ある
+(`Steady` の advantageSources は3件)。キー照合では潰れる。
+`structured-data-converter.js` の `_entries` / `_translations` を読むと、
+`container: "array"` のときは **translation が配列なら添字で対応付ける**。
+そこで訳ファイルは**元配列と同じ長さの配列**にし、訳さない位置は `null` を置く。
+`null` の位置は `_translateValue` が原文をそのまま返す。
+
+```json
+"effects": { "wGuxOLokMqdxVSOo": { "changes": ["敏捷ロール"] } }
+```
+
+#### 訳さないと判断したフィールド (追加分・実データで確認)
+
+| フィールド | 実際の値 |
+| --- | --- |
+| `system.type` (敵役) | `solo` / `horde` / `skulk` / `minion` ほか10種の列挙 |
+| `system.size` | `tiny` 〜 `gargantuan` の6種 |
+| `potentialAdversaries.<id>.adversaries` | `Compendium.daggerheart.adversaries.Actor.<id>` の配列 |
+
+#### `check` が実際に取りこぼしを捕まえた
+
+プローブ訳で `@Template[type:inFront|range:c]` を落としたまま書いたところ、
+`packs:check` が原文と訳文のエンリッチャ不一致として報告した。
+**この検査は飾りではない。** `@Lookup[@name]` は敵役の説明文に多数あり、
+落とすと名前が出なくなる。
+
+#### `carryOver` のバグ — 入れ子を2段と決め打ちしていた
+
+`export` が訳を引き継ぐ処理が、コンテナを「2段の入れ子」と決め打ちしていた。
+`experiences.<id>.name` のような2段では正しく動くが、**1段の `attack.name` では
+文字列 "Claws" を1文字ずつ走査し、`{"0": "爪"}` を書き出していた。**
+Babele から見ると `name` が文字列でないので黙って無視され、
+**実機で「attack だけ訳が当たらない」という形で出た。**
+原文の形に従って任意の深さで再帰するように書き直した。
+
 ### 残っている未検証項目
 
 - **既存ワールドへの影響。** Babele は閲覧・インポート時にのみ訳を当てる。

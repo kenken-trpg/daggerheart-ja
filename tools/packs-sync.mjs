@@ -60,7 +60,7 @@ const PACKS = {
 };
 
 /* Which packs `export` currently writes. Widened one at a time as each is proven. */
-const ENABLED = ['transformations', 'communities', 'ancestries'];
+const ENABLED = ['transformations', 'communities', 'ancestries', 'adversaries', 'environments'];
 
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 
@@ -82,41 +82,99 @@ async function readPack(pack) {
     };
 }
 
+/*
+ * The only two effect-change keys that hold prose. Every other key carries a
+ * number, a dice expression or a roll formula ("1 + @system.tier",
+ * "ceil(@system.traits.agility.value / 2)"), and translating one would break the
+ * effect rather than localize it. This is an allowlist on purpose: a heuristic
+ * that tried to spot formulas would still let "d10" and "2" through.
+ */
+const TRANSLATABLE_CHANGE_KEYS = new Set(['system.advantageSources', 'system.disadvantageSources']);
+
+/** Collect name/description off a plain object, skipping what is empty. */
+function nameAndDescription(source = {}) {
+    const entry = {};
+    if (source.name) entry.name = source.name;
+    if (source.description) entry.description = source.description;
+    return entry;
+}
+
+/** Map over a keyed container, keeping only the members with something to translate. */
+function keyedFields(container = {}, pick = nameAndDescription) {
+    return Object.entries(container ?? {}).reduce((acc, [key, value]) => {
+        const entry = pick(value);
+        if (Object.keys(entry).length) acc[key] = entry;
+        return acc;
+    }, {});
+}
+
+/**
+ * An ActiveEffect's translatable shape. `changes` is positional: Babele matches
+ * an array translation by index, so the array must stay the same length as the
+ * original and carry null where nothing is translated.
+ */
+function effectFields(effect) {
+    const entry = nameAndDescription(effect);
+
+    const changes = effect.system?.changes ?? [];
+    if (changes.some(change => TRANSLATABLE_CHANGE_KEYS.has(change.key) && change.value)) {
+        entry.changes = changes.map(change =>
+            TRANSLATABLE_CHANGE_KEYS.has(change.key) && change.value ? change.value : null
+        );
+    }
+
+    return entry;
+}
+
 /**
  * The translatable shape of one document, as the Babele mapping sees it.
  * Field names here must match babele/ja/mappings.json.
+ *
+ * Fields deliberately left out, checked against the data rather than assumed:
+ *   system.featureForm       the enum 'passive'
+ *   system.loreReference     lowercase slugs (warborne, frostborne, ...)
+ *   system.type / size       enums (solo, horde, ... / large, medium, ...)
+ *   system.features          UUIDs pointing at other documents
+ *   potentialAdversaries[].adversaries  the same, as a list
+ * Translating any of these breaks the reference rather than localizing it.
  */
 function translatableFields(document) {
     const fields = { name: document.name ?? '' };
+    const system = document.system ?? {};
 
-    if (document.system?.description) fields.description = document.system.description;
+    for (const field of ['description', 'motivesAndTactics', 'impulses', 'notes']) {
+        if (system[field]) fields[field] = system[field];
+    }
 
-    /*
-     * Fields deliberately left out, checked against the data rather than assumed:
-     *   system.featureForm    always the enum 'passive'
-     *   system.loreReference  lowercase slugs (warborne, frostborne, ...)
-     *   system.features       UUIDs pointing at other documents in the same pack
-     * Translating any of these breaks the reference rather than localizing it.
-     */
+    const attack = nameAndDescription(system.attack ?? {});
+    if (Object.keys(attack).length) fields.attack = attack;
+
+    const experiences = keyedFields(system.experiences);
+    if (Object.keys(experiences).length) fields.experiences = experiences;
+
+    const potentialAdversaries = keyedFields(system.potentialAdversaries, group =>
+        group?.label ? { label: group.label } : {}
+    );
+    if (Object.keys(potentialAdversaries).length) fields.potentialAdversaries = potentialAdversaries;
+
+    const actions = keyedFields(system.actions);
+    if (Object.keys(actions).length) fields.actions = actions;
 
     const effects = (document.effects ?? []).reduce((acc, effect) => {
-        const entry = {};
-        if (effect.name) entry.name = effect.name;
-        if (effect.description) entry.description = effect.description;
+        const entry = effectFields(effect);
         if (Object.keys(entry).length) acc[effect._id] = entry;
         return acc;
     }, {});
     if (Object.keys(effects).length) fields.effects = effects;
 
-    const actions = document.system?.actions ?? {};
-    const translatableActions = Object.entries(actions).reduce((acc, [id, action]) => {
-        const entry = {};
-        if (action.name) entry.name = action.name;
-        if (action.description) entry.description = action.description;
-        if (Object.keys(entry).length) acc[id] = entry;
+    /* Embedded items are documents in their own right, so they recurse. */
+    const items = (document.items ?? []).reduce((acc, item) => {
+        const entry = translatableFields(item);
+        /* `name` is always present; an item with only a name still needs translating. */
+        if (Object.keys(entry).length) acc[item._id] = entry;
         return acc;
     }, {});
-    if (Object.keys(translatableActions).length) fields.actions = translatableActions;
+    if (Object.keys(items).length) fields.items = items;
 
     return fields;
 }
@@ -124,28 +182,44 @@ function translatableFields(document) {
 /**
  * Keep the translations that exist for one document, dropping everything else.
  * Fields with no translation must be absent, not empty -- see the header.
+ *
+ * It recurses on whatever the ORIGINAL says is a container, at any depth. An
+ * earlier version assumed containers were always exactly two levels deep, which
+ * worked for `experiences.<id>.name` and quietly shredded the one-level
+ * `attack.name`: it walked the string "Claws" character by character and wrote
+ * {"0": "\u722a"}.
  */
-function carryOver(original, existing = {}) {
-    const kept = {};
-    for (const [field, value] of Object.entries(original)) {
-        if (value && typeof value === 'object' && !Array.isArray(value)) {
-            const inner = Object.entries(value).reduce((acc, [key, child]) => {
-                const carried = carryOver(child, existing?.[field]?.[key]);
-                if (Object.keys(carried).length) acc[key] = carried;
-                return acc;
-            }, {});
-            if (Object.keys(inner).length) kept[field] = inner;
-        } else if (existing?.[field]) {
-            kept[field] = existing[field];
-        }
+function carryOver(original, existing) {
+    if (Array.isArray(original)) {
+        /*
+         * Positional (effect changes): keep the length, carry over only the
+         * positions that have a translation, null everywhere else.
+         */
+        const carried = original.map((slot, index) => (slot ? existing?.[index] || null : null));
+        return carried.some(Boolean) ? carried : undefined;
     }
-    return kept;
+
+    if (original && typeof original === 'object') {
+        const kept = {};
+        for (const [field, value] of Object.entries(original)) {
+            const carried = carryOver(value, existing?.[field]);
+            if (typeof carried !== 'undefined') kept[field] = carried;
+        }
+        return Object.keys(kept).length ? kept : undefined;
+    }
+
+    return typeof existing === 'string' && existing ? existing : undefined;
 }
 
 /** Walk a nested entry, yielding [path, originalText, translatedText]. */
 function* leaves(original, translated, trail = []) {
     for (const [field, value] of Object.entries(original)) {
-        if (value && typeof value === 'object' && !Array.isArray(value)) {
+        if (Array.isArray(value)) {
+            /* Only the positions holding text count; the nulls are untranslatable slots. */
+            for (const [index, slot] of value.entries()) {
+                if (slot) yield [[...trail, field, index].join('.'), slot, translated?.[field]?.[index] ?? ''];
+            }
+        } else if (value && typeof value === 'object') {
             yield* leaves(value, translated?.[field] ?? {}, [...trail, field]);
         } else {
             yield [[...trail, field].join('.'), value, translated?.[field] ?? ''];
@@ -168,7 +242,7 @@ async function buildPack(pack) {
         entries[document._id] = {
             /* Not a mapped field: it is here so a diff of this file can be read. */
             _note: document.name,
-            ...carryOver(original, previous.entries?.[document._id])
+            ...(carryOver(original, previous.entries?.[document._id]) ?? {})
         };
     }
 
@@ -268,10 +342,20 @@ const commands = {
                 for (const [where, value] of Object.entries(fields)) {
                     if (where === '_note' || !value?.ja) continue;
                     /* "actions.<id>.name" -> entries[id].actions.<id>.name */
+                    /*
+                     * "effects.<id>.changes.2" -> entries[id].effects[<id>].changes[2].
+                     * A numeric segment means the container must be an array, not an
+                     * object: Babele matches array translations by index, and an
+                     * object there would silently translate nothing.
+                     */
                     const trail = where.split('.');
+                    const isIndex = segment => /^\d+$/.test(segment);
                     const last = trail.pop();
-                    const target = trail.reduce((node, key) => (node[key] ??= {}), (entries[id] ??= {}));
-                    target[last] = value.ja;
+                    const target = trail.reduce(
+                        (node, key, position) => (node[key] ??= isIndex(trail[position + 1] ?? last) ? [] : {}),
+                        (entries[id] ??= {})
+                    );
+                    target[isIndex(last) ? Number(last) : last] = value.ja;
                     applied += 1;
                 }
             }
