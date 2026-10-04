@@ -126,11 +126,68 @@ for (const type of ['character', 'companion', 'adversary', 'npc', 'environment',
 
 修正後の再走査では、アクタ6種・アイテム12種・画面全体のいずれも検出ゼロ。
 
-### まだ確認していないもの
+### ダイアログ3種も走査した (2026-10-04・済)
 
-ダイアログ (レベルアップ、アイテム譲渡、ダイスロール選択) は、開くのに
-キャラクターの作り込みが要るので未走査。CSS 修正のうち `flex: 0 0 auto` の
-2件はここに当たるもので、計算値では効いていることだけ確認済み。
+残していたダイアログを開いて走査した。**いずれも崩れなし。**
+
+| ダイアログ | 出しかた | 結果 |
+| --- | --- | --- |
+| ダイスロール選択 (`d20RollDialog`) | キャラクターシートの特性をクリック | 崩れなし。`希望` `恐怖` のラベルが `nowrap` で1行 |
+| アイテム譲渡 (`ItemTransferDialog`) | `new ItemTransferDialog({originActor, targetActor, max: 5, initial: 1})` | 崩れなし。`数量` ラベルの計算値が `flex-basis: auto` |
+| レベルアップ (キャラクター) | 下記 | 成長・選択・要約の3タブとも崩れなし |
+| レベルアップ (伴獣) | 下記 | 崩れなし。`.levelup-radio-choices` の `ダメージ` `射程` が `flex-basis: auto` |
+
+CSS 修正の `flex: 0 0 auto` 2件は、これで**実際に当たっている要素の上で確認できた**。
+
+#### レベルアップダイアログの出しかた
+
+素のアクタでは開かない。`nrSelections` で落ちる。
+
+```js
+// キャラクター: クラスとサブクラスを持たせ、changed > current にする
+const pc = await Actor.create({ name: '走査_pc', type: 'character' });
+const cls = (await game.packs.get('daggerheart.classes').getDocuments()).find(d => d.type === 'class');
+const sub = (await game.packs.get('daggerheart.subclasses').getDocuments()).find(d => d.type === 'subclass');
+await pc.createEmbeddedDocuments('Item', [cls.toObject(), sub.toObject()]);
+await pc.update({ 'system.levelData.level.changed': 2 });
+await new game.system.api.applications.levelup.CharacterLevelup(pc).render({ force: true });
+```
+
+**伴獣のレベルは相棒から導出される。** `levelData.level.changed` を直接書いても
+`prepareData` が `this.partner.system.levelData.level.current` で上書きするので、
+**相棒の `current` を上げてから相棒を結ぶ**。
+
+```js
+const comp = await Actor.create({ name: '走査_伴獣', type: 'companion' });
+await pc.update({ 'system.levelData.level.current': 3, 'system.levelData.level.changed': 3 });
+await comp.update({ 'system.partner': pc.uuid });   // これで comp の changed が 3 になる
+await new game.system.api.applications.levelup.CompanionLevelup(game.actors.get(comp.id)).render({ force: true });
+```
+
+`.levelup-radio-choices` は**伴獣のレベルアップにしか出ない**。
+`selections.hbs` で `vicious` (ダメージダイス/射程の強化) のときだけ描画されるため、
+「相棒のダメージダイスまたはお得意を1段階上げます」を選んでから「成長の選択」タブへ移る。
+
+要約タブは最終レベルに達するまで出ない。「要約へ」ボタンから進む。
+
+### 翻訳機構を通っていない文字列: 実例が1つ見つかった
+
+伴獣のレベルアップの見出し **`Companion Choices` が英語のまま**出る。
+
+```js
+// build/daggerheart.js:14434
+const defaultCompanionTier = {
+    tiers: { 2: { tier: 2, name: 'Companion Choices', ... } }
+};
+```
+
+`game.i18n` を通っていないただの文字列リテラルで、`ja.json` に足しても効かない。
+`CONFIG.DH` と `game.system.api` の両方を再帰的に探したが**到達できない**
+(モジュール内の const)。つまり**モジュールからは直せない**。
+
+これが「A を選ぶ代償」の具体例。上流の AI Policy で PR も出せないので、
+**英語のまま残す**。`renderApplication` フックで DOM の文字列を置換することは
+技術的には可能だが、英文のマッチに頼るので上流が変えると静かに壊れる。やらない。
 
 ## 翻訳同期ツール (`tools/lang-sync.mjs`)
 
