@@ -2352,3 +2352,48 @@ to translate:     8600
 ```
 
 次は classes、その後 adversaries / environments、items/*、最後に journals。
+
+## 工程10: classes パックを訳し切った
+
+78エントリ / 281フィールド。13クラスの紹介文・背景の問い・つながりの問い、
+クラス特徴、そしてクラスアイテム（「50フィートのロープ」「外せない指輪」など
+30点）。フォルダ16種（クラス名13＋クラス特徴・クラスアイテム・標準版）。
+
+### 名詞と同じ英語の動詞ボタン
+
+`Hex` と `Commune` は、カード名（名詞）とアクションボタン（動詞）が同じ英語。
+最初は 呪詛 / 呪詛する のように訳し分けたが、原文が同一なら訳語も同一にする
+のが筋なので、どちらも名詞形に揃えた。terms がこれを拾った。
+
+### 新しく決めた用語
+
+| 原語 | 訳語 |
+| --- | --- |
+| Combo Die | コンボダイス |
+| Unstoppable Die | 止められぬ者ダイス |
+| Patron Die | 庇護者ダイス |
+| Burden | 負荷（lang/ja.json） |
+| Duality Dice | デュアリティダイス（lang/ja.json） |
+| Downtime Move | ダウンタイムムーブ（lang/ja.json） |
+| Loadout / Vault | ロードアウト / 保管庫（lang/ja.json） |
+
+### 実機確認
+
+```
+classes 78件: 英語のまま残った名前 0件
+フォルダ16種すべて日本語
+ウィッチ: 紹介文・背景の問い3つ・つながりの問い3つすべて日本語
+```
+
+`packs:check` 問題なし、`packs:terms` 一致。
+
+### 現状
+
+```
+packs enabled:    15/15
+translated:       2159
+to translate:     8325
+```
+
+次は adversaries（4,781フィールド、最大のパック）と environments、
+その後 items/*、最後に journals。
