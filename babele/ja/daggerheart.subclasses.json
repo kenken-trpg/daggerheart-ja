@@ -2,72 +2,258 @@
     "label": "subclasses",
     "collection": "daggerheart.subclasses",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Assassin": "アサシン",
+        "Bard": "バード",
+        "Brawler": "ブロウラー",
+        "Druid": "ドルイド",
+        "Foundation Features": "基盤特徴",
+        "Guardian": "ガーディアン",
+        "Martial Stances": "武術の構え",
+        "Mastery Features": "熟達特徴",
+        "Ranger": "レンジャー",
+        "Rogue": "ローグ",
+        "Seraph": "セラフ",
+        "Sorcerer": "ソーサラー",
+        "Specialization Features": "特化特徴",
+        "Subclass Features": "サブクラス特徴",
+        "Tier 1": "ティア1",
+        "Tier 2": "ティア2",
+        "Tier 3": "ティア3",
+        "Tier 4": "ティア4",
+        "Warlock": "ウォーロック",
+        "Warrior": "ウォリアー",
+        "Witch": "ウィッチ",
+        "Wizard": "ウィザード"
+    },
     "entries": {
         "Accomplished": {
-            "_note": "Accomplished"
+            "_note": "Accomplished",
+            "name": "熟達者",
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
         },
         "Act of Reprisal": {
-            "_note": "Act of Reprisal"
+            "_note": "Act of Reprisal",
+            "name": "報復の一撃",
+            "description": "<p>近接射程内の味方が敵対者からダメージを受けたとき、その敵対者に対する次の攻撃が成功するまで、習熟に＋1のボーナスを得ます。</p>",
+            "actions": {
+                "yalzg4VRmZvakshJ": {
+                    "name": "敵対者をマーク"
+                }
+            },
+            "effects": {
+                "9Uo0yOYGn3vandPp": {
+                    "name": "報復の一撃",
+                    "durationDescription": "<p>その敵対者に対する次の攻撃が成功するまで。</p>"
+                }
+            }
         },
         "Adder's Blessing": {
-            "_note": "Adder's Blessing"
+            "_note": "Adder's Blessing",
+            "name": "蝮の祝福",
+            "description": "<p>毒およびその他の毒物に対して耐性を持ちます。</p>"
         },
         "Adept": {
-            "_note": "Adept"
+            "_note": "Adept",
+            "name": "練達",
+            "description": "<p>経験を活用するとき、希望を消費する代わりに<strong>ストレスを1マーク</strong>できます。そうした場合、そのロールの経験修正値を2倍にします。</p>",
+            "actions": {
+                "FOl7kaOG6DFWIpMm": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Adrenaline": {
-            "_note": "Adrenaline"
+            "_note": "Adrenaline",
+            "name": "アドレナリン",
+            "description": "<p>脆弱である間、ダメージロールに自分のレベルを加えます。</p>",
+            "effects": {
+                "HMx9uZ54mvMiH95x": {
+                    "name": "アドレナリン",
+                    "description": "<p>脆弱である間、ダメージロールに自分のレベルを加えます。</p>"
+                }
+            }
         },
         "Advanced Training": {
-            "_note": "Advanced Training"
+            "_note": "Advanced Training",
+            "name": "上級訓練",
+            "description": "<p>相棒のレベルアップ選択肢を追加で2つ選びます。</p>",
+            "effects": {
+                "bKOuMxhB2Jth3j2T": {
+                    "name": "上級訓練",
+                    "description": "<p>相棒のレベルアップ選択肢を追加で2つ選びます。</p>"
+                }
+            }
         },
         "Aggressive": {
-            "_note": "Aggressive"
+            "_note": "Aggressive",
+            "name": "攻撃的",
+            "description": "<p>回避値に－1のペナルティを得ます。攻撃が成功したとき、ダメージダイスを1つ追加で振り、最も低い結果を捨てます。</p>",
+            "actions": {
+                "9AsdA0xwYlajciA0": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "SbL1r4YtyDX6eYLe": {
+                    "name": "構え：攻撃的",
+                    "description": "<p>回避値に－1のペナルティを得ます。攻撃が成功したとき、ダメージダイスを1つ追加で振り、最も低い結果を捨てます。</p>"
+                }
+            }
         },
         "Ambush": {
-            "_note": "Ambush"
+            "_note": "Ambush",
+            "name": "待ち伏せ",
+            "description": "<p>「死の標」特徴は、d4ではなく<strong>d6</strong>を使用します。</p>"
         },
         "Anchored": {
-            "_note": "Anchored"
+            "_note": "Anchored",
+            "name": "不動",
+            "description": "<p>ダメージしきい値に＋2のボーナスを得ます。この構えをとっている間、自分の意志に反して移動させられることはありません。</p>",
+            "actions": {
+                "ZwzPSA5XCwLCzUJw": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "lIOscgRKYhFlGa9y": {
+                    "name": "構え：不動",
+                    "description": "<p>ダメージしきい値に＋2のボーナスを得ます。この構えをとっている間、自分の意志に反して移動させられることはありません。</p>"
+                }
+            }
         },
         "Apex Predator": {
-            "_note": "Apex Predator"
+            "_note": "Apex Predator",
+            "name": "頂点捕食者",
+            "description": "<p>集中に対する攻撃ロールを行う前に、希望を1消費できます。攻撃が成功したとき、GMの恐怖プールから恐怖を1つ取り除きます。</p>",
+            "actions": {
+                "LHDsuveQznbcFUhV": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Arcane Charge": {
-            "_note": "Arcane Charge"
+            "_note": "Arcane Charge",
+            "name": "秘術の充填",
+            "description": "<p>魔法のエネルギーを集めて自らの能力を高められます。魔法ダメージを受けたとき、充填状態になります。あるいは、希望を2消費して充填状態になることもできます。充填状態の間に魔法ダメージを与える攻撃が成功したとき、充填を消して、そのダメージロールに＋10のボーナスを得るか、その呪文が対象に行わせるリアクションロールの難易度に＋3のボーナスを得るかのいずれかを選べます。次の大休憩で充填状態は終わります。</p>",
+            "effects": {
+                "z49V45ir45HGHOBB": {
+                    "name": "充填",
+                    "description": "<p>充填状態の間に魔法ダメージを与える攻撃が成功したとき、充填を消して、そのダメージロールに＋10のボーナスを得るか、その呪文が対象に行わせるリアクションロールの難易度に＋3のボーナスを得るかのいずれかを選べます。次の大休憩で充填状態は終わります。</p>"
+                }
+            }
         },
         "Ascendant": {
-            "_note": "Ascendant"
+            "_note": "Ascendant",
+            "name": "超越者",
+            "description": "<p>重傷値に永続＋4のボーナスを得ます。</p>",
+            "effects": {
+                "7M8UsvVweRtT3E85": {
+                    "name": "超越者",
+                    "description": "<p>重傷値に永続＋4のボーナスを得ます。</p>"
+                }
+            }
         },
         "At Ease": {
-            "_note": "At Ease"
+            "_note": "At Ease",
+            "name": "泰然",
+            "description": "<p>ストレススロットを1つ追加で得ます。</p>",
+            "effects": {
+                "xbS4Lr3dWpXUCHEi": {
+                    "name": "泰然",
+                    "description": "<p>ストレススロットを1つ追加で得ます。</p>"
+                }
+            }
         },
         "Backstab": {
-            "_note": "Backstab"
+            "_note": "Backstab",
+            "name": "背後からの一刺し",
+            "description": "<p>「死の標」特徴は、d6ではなく<strong>d8</strong>を使用します。</p>"
         },
         "Battle-Bonded": {
-            "_note": "Battle-Bonded"
+            "_note": "Battle-Bonded",
+            "name": "戦の絆",
+            "description": "<p>敵対者が相棒の近接射程内にいる状態で自分を攻撃したとき、その攻撃に対する回避値に＋2のボーナスを得ます。</p>",
+            "effects": {
+                "IZhakv6EuG8DO4a3": {
+                    "name": "戦の絆",
+                    "description": "<p>敵対者が相棒の近接射程内にいる状態で自分を攻撃したとき、その攻撃に対する回避値に＋2のボーナスを得ます。</p>",
+                    "durationDescription": "<p>その攻撃に対して。</p>"
+                }
+            }
         },
         "Battle Ritual": {
-            "_note": "Battle Ritual"
+            "_note": "Battle Ritual",
+            "name": "戦いの儀式",
+            "description": "<p>大休憩ごとに1回、とてつもなく危険なことに挑む前、または明らかに自分より格上の敵と対峙する前に、どんな儀式を行うか、どんな準備をするかを描写します。そうしたとき、ストレスを2つ消し、希望を2得ます。</p>",
+            "actions": {
+                "UdZx74Vcz6ip4Plh": {
+                    "name": "備える"
+                }
+            }
         },
         "Battlemage": {
-            "_note": "Battlemage"
+            "_note": "Battlemage",
+            "name": "戦闘魔道士",
+            "description": "<p>戦場で征服されざる力となるべく研究を重ねてきました。HPスロットを1つ追加で得ます。</p>",
+            "effects": {
+                "6jjKzvBxAJTHHGoX": {
+                    "name": "戦闘魔道士",
+                    "description": "<p>HPスロットを1つ追加で得ます。</p>"
+                }
+            }
         },
         "Brilliant": {
-            "_note": "Brilliant"
+            "_note": "Brilliant",
+            "name": "英明",
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
         },
         "Circle of Power": {
-            "_note": "Circle of Power"
+            "_note": "Circle of Power",
+            "name": "力の円陣",
+            "description": "<p>休憩ごとに1回、自分を中心とした至近範囲を縁取る円を地面に描き、呪文発動特性に等しい数のトークンをこのカードに置きます。この円内にいる間、自分と味方はダメージしきい値、攻撃ロール、回避値に＋2のボーナスを得ます。自分または円内の味方がアクションロールを行うか攻撃を回避するたびに、トークンを1つ取り除きます。この呪文は最後のトークンが取り除かれるか、自分が円から出るまで持続します。</p>",
+            "actions": {
+                "eakpQUeo64jPWjaU": {
+                    "name": "円陣を描く",
+                    "areas": [
+                        {
+                            "name": "力の円陣"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "YMhiEmt31R0s5MH0": {
+                    "name": "力の円陣",
+                    "description": "<p>この円内にいる間、自分と味方はダメージしきい値、攻撃ロール、回避値に＋2のボーナスを得ます。自分または円内の味方がアクションロールを行うか攻撃を回避するたびに、トークンを1つ取り除きます。この呪文は最後のトークンが取り除かれるか、自分が円から出るまで持続します。</p>"
+                }
+            }
         },
         "Clarity of Nature": {
-            "_note": "Clarity of Nature"
+            "_note": "Clarity of Nature",
+            "name": "自然の明澄",
+            "description": "<p>大休憩ごとに1回、近距離内に自然の静寂に満ちた空間を作り出せます。その空間で数分間休息したとき、直感に等しい数のストレスを、自分と味方の間で好きなように分配して消します。</p>",
+            "actions": {
+                "az7YUpxy1ysn12tO": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Comaraderie": {
-            "_note": "Comaraderie"
+            "_note": "Comaraderie",
+            "name": "戦友の絆",
+            "description": "<p>揺るがぬ勇敢さが味方の結集点となります。セッションごとに1回追加でタッグチームロールを開始できます。さらに、味方が自分とのタッグチームロールを開始するとき、必要な希望の消費は2だけになります。</p>",
+            "actions": {
+                "eBSXC0l2IrRb1F8f": {
+                    "name": "戦友の絆",
+                    "description": "<p>セッションごとに1回追加でタッグチームロールを開始できます。</p>"
+                }
+            }
         },
         "Companion": {
-            "_note": "Companion"
+            "_note": "Companion",
+            "name": "相棒",
+            "description": "<p>（GMの裁定のもと）好きな動物の相棒を持ちます。別の指示をしない限り、相棒は自分の傍を離れません。レンジャー相棒シートを取ります。キャラクターがレベルアップするとき、このシートからも相棒のレベルアップ選択肢を1つ選びます。</p>"
         },
         "Conjure Shield": {
             "_note": "Conjure Shield"
@@ -181,7 +367,13 @@
             "_note": "Gifted Performer"
         },
         "Grappling": {
-            "_note": "Grappling"
+            "_note": "Grappling",
+            "name": "組み付き",
+            "actions": {
+                "ruHvEPZuzierWilg": {
+                    "name": "組み付く"
+                }
+            }
         },
         "Harrowing Invocation": {
             "_note": "Harrowing Invocation"
@@ -202,7 +394,8 @@
             "_note": "Honed"
         },
         "Invigorating": {
-            "_note": "Invigorating"
+            "_note": "Invigorating",
+            "name": "活力"
         },
         "Ire of Pale Light": {
             "_note": "Ire of Pale Light"
@@ -226,7 +419,15 @@
             "_note": "Loyal Protector"
         },
         "Lunar Phases": {
-            "_note": "Lunar Phases"
+            "_note": "Lunar Phases",
+            "effects": {
+                "7V75lzCjChYmZaZ5": {
+                    "name": "満月"
+                },
+                "b60bHY67KMfRJOrU": {
+                    "description": "<p>回避値＋1</p>"
+                }
+            }
         },
         "Maestro": {
             "_note": "Maestro"
@@ -250,13 +451,27 @@
             "_note": "Nemesis"
         },
         "Night's Glamour": {
-            "_note": "Night's Glamour"
+            "_note": "Night's Glamour",
+            "actions": {
+                "X4ifJfMZe9ywj6U5": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Not Done Yet": {
-            "_note": "Not Done Yet"
+            "_note": "Not Done Yet",
+            "actions": {
+                "wRaYxWWJklfQnGkE": {
+                    "name": "希望を得る"
+                },
+                "adUe1ZFmH1JWW0b3": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Otherwordly": {
-            "_note": "Otherwordly"
+            "_note": "Otherwordly",
+            "name": "異界"
         },
         "Otherworldly Ire": {
             "_note": "Otherworldly Ire"
@@ -277,7 +492,12 @@
             "_note": "Patron's Mantle"
         },
         "Perfect Recall": {
-            "_note": "Perfect Recall"
+            "_note": "Perfect Recall",
+            "actions": {
+                "rFZj0ZsnJCc0PS3h": {
+                    "name": "想起する"
+                }
+            }
         },
         "Poison Compendium": {
             "_note": "Poison Compendium"
@@ -292,7 +512,8 @@
             "_note": "Pummeljoy"
         },
         "Quick": {
-            "_note": "Quick"
+            "_note": "Quick",
+            "name": "迅速"
         },
         "Regeneration": {
             "_note": "Regeneration"
@@ -304,7 +525,8 @@
             "_note": "Reliable Backup"
         },
         "Reliable": {
-            "_note": "Reliable"
+            "_note": "Reliable",
+            "name": "信頼"
         },
         "Revenge": {
             "_note": "Revenge"
@@ -325,7 +547,14 @@
             "_note": "Sacred Resonance"
         },
         "Scary": {
-            "_note": "Scary"
+            "_note": "Scary",
+            "name": "恐ろしい",
+            "description": "<p>攻撃成功時、対象はストレスを1マークします。</p>",
+            "effects": {
+                "r0feAH80Gh2x6Hta": {
+                    "description": "<p>攻撃成功時、対象はストレスを1マークします。</p>"
+                }
+            }
         },
         "Scorpion's Poise": {
             "_note": "Scorpion's Poise"
@@ -337,7 +566,12 @@
             "_note": "Slayer"
         },
         "Sparing Touch": {
-            "_note": "Sparing Touch"
+            "_note": "Sparing Touch",
+            "actions": {
+                "cWdzCQJv8RFfi2NR": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Spirit Weapon": {
             "_note": "Spirit Weapon"
@@ -358,7 +592,12 @@
             "_note": "Toxic Concoctions"
         },
         "Transcendence": {
-            "_note": "Transcendence"
+            "_note": "Transcendence",
+            "actions": {
+                "RIbyJjEkCgqoDmyn": {
+                    "name": "変身"
+                }
+            }
         },
         "True Strike": {
             "_note": "True Strike"
@@ -385,19 +624,35 @@
             "_note": "Vexing Malison"
         },
         "Vigilant": {
-            "_note": "Vigilant"
+            "_note": "Vigilant",
+            "name": "警戒"
         },
         "Virtuoso": {
             "_note": "Virtuoso"
         },
         "Walk Between Worlds": {
-            "_note": "Walk Between Worlds"
+            "_note": "Walk Between Worlds",
+            "actions": {
+                "KPwMmCHMYD1ByXDt": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Warden's Protection": {
-            "_note": "Warden's Protection"
+            "_note": "Warden's Protection",
+            "actions": {
+                "ozYzhQfRt5sp19di": {
+                    "name": "治癒"
+                }
+            }
         },
         "Weapon Specialist": {
-            "_note": "Weapon Specialist"
+            "_note": "Weapon Specialist",
+            "actions": {
+                "1bBFfxmywJpx5tfk": {
+                    "name": "振り直し"
+                }
+            }
         },
         "Well-Connected": {
             "_note": "Well-Connected"

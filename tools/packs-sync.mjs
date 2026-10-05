@@ -649,7 +649,15 @@ const commands = {
         const known = source => {
             const text = plain(source);
             if (!text || text.length > 60) return '';
-            return (approved.get(normalize(text)) ?? glossary.get(normalize(text)))?.japanese ?? '';
+            const japanese = (approved.get(normalize(text)) ?? glossary.get(normalize(text)))?.japanese ?? '';
+            if (!japanese) return '';
+            /*
+             * The dictionaries hold plain wordings, but a compendium field is
+             * often a one-paragraph document. Dropping a pre-filled wording in
+             * bare would lose the `<p>`, so put the source's own wrapper back.
+             */
+            const wrapped = /^<p>(?:(?!<p>)[\s\S])*<\/p>$/.test(source.trim());
+            return wrapped ? `<p>${japanese}</p>` : japanese;
         };
 
         for (const pack of packs) {
@@ -981,6 +989,14 @@ const commands = {
         const established = establishedWordings(en, ja);
         const { glossary, sources } = await loadGlossaries();
 
+        /*
+         * A handful of English strings are genuinely two words -- the lunar
+         * phase `Full` is not the UI's full restore. Left unlisted, each one
+         * reports forever, and a report with permanent noise in it stops being
+         * read. The exemption is per field and carries its reason.
+         */
+        const exempt = await readJson(path.join('lang', 'translation', 'terms-exempt.json')).catch(() => ({}));
+
         /* Longer than this is prose, where an exact-string comparison says nothing. */
         const SHORT = 60;
 
@@ -1003,6 +1019,7 @@ const commands = {
                  * are not a difference in wording.
                  */
                 const here = plain(value);
+                if (exempt[`${collection} / ${key}`]) continue;
                 const approved = established.get(term) ?? glossary.get(term);
                 if (approved && normalize(approved.japanese) !== normalize(here)) {
                     problems += 1;
