@@ -947,23 +947,30 @@ const commands = {
                 if (!text || text.length > SHORT) continue;
                 const term = normalize(text);
 
+                /*
+                 * Compared through plain() on both sides. Comparing the raw
+                 * value instead reported `<p>一時的に脆弱。</p>` against
+                 * 一時的に脆弱 as a disagreement: markup and a trailing stop
+                 * are not a difference in wording.
+                 */
+                const here = plain(value);
                 const approved = established.get(term) ?? glossary.get(term);
-                if (approved && normalize(approved.japanese) !== normalize(value)) {
+                if (approved && normalize(approved.japanese) !== normalize(here)) {
                     problems += 1;
                     console.log(`${collection} / ${key}`);
                     console.log(`   en:       ${text}`);
-                    console.log(`   here:     ${plain(value)}`);
+                    console.log(`   here:     ${here}`);
                     console.log(`   ${approved.file}: ${approved.japanese}`);
                 }
 
                 const first = seen.get(term);
-                if (!first) seen.set(term, { collection, key, value });
-                else if (normalize(first.value) !== normalize(value)) {
+                if (!first) seen.set(term, { collection, key, value: here });
+                else if (normalize(first.value) !== normalize(here)) {
                     problems += 1;
                     console.log(`${collection} / ${key}`);
                     console.log(`   en:   ${text}`);
-                    console.log(`   here: ${plain(value)}`);
-                    console.log(`   ${first.collection} / ${first.key}: ${plain(first.value)}`);
+                    console.log(`   here: ${here}`);
+                    console.log(`   ${first.collection} / ${first.key}: ${first.value}`);
                 }
             }
         }
