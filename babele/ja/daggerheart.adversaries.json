@@ -11645,7 +11645,8 @@
                         "PZNJgyomR7MK2xUP": {
                             "name": "ダメージ"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]が対象より高い位置からの通常の攻撃に成功したとき、通常のダメージの代わりに<strong>3d12+3</strong>の物理ダメージを与えます。</p>"
                 },
                 "CYaSykD9BUxpiOxg": {
                     "name": "森の刃",
@@ -11658,15 +11659,24 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、超近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は、<strong>[[/r 3d4]]</strong>＋その対象の中傷値に等しい物理ダメージを受けます。</p>"
                 },
                 "1LHHdn4ToSwSznuP": {
                     "actions": {
                         "b5KO7xpWspZS0swK": {
                             "name": "ダメージ"
                         }
-                    }
+                    },
+                    "name": "茨の鎧",
+                    "description": "<p>@Lookup[@name]が近接距離以内からの攻撃でダメージを受けたとき、<strong>ストレスを1マーク</strong>して、その攻撃者に<strong>1d10+5</strong>の物理ダメージを与えられます。</p>"
                 }
+            },
+            "name": "牡鹿の騎士",
+            "description": "<p>巨大で堂々とした枝角を持ち、危険な茨でできた鎧をまとった騎士。</p>",
+            "motivesAndTactics": "孤立させる、立ち回る、森を守る、招かれぬ者を抜き取る",
+            "attack": {
+                "name": "茨の剣"
             }
         },
         "Stone Titan": {
@@ -11681,6 +11691,14 @@
                         "vetQO8oqCCKuPL1M": {
                             "name": "ストレスをマーク"
                         }
+                    },
+                    "name": "巧みな一撃",
+                    "description": "<p>タイタンが攻撃を行う前に、<strong>ストレスを1マーク</strong>して<strong>d6</strong>をロールできます。結果が3以上の場合、この攻撃に対する対象の回避値は半減します。</p>",
+                    "effects": {
+                        "zAWo04FkNNOrujcR": {
+                            "name": "技で上回られた",
+                            "description": "<p>この攻撃に対するあなたの回避値は半減します。</p>"
+                        }
                     }
                 },
                 "Xoddbd1VoPNcLgE5": {
@@ -11692,16 +11710,34 @@
                     },
                     "effects": {
                         "Hpk6tlMaFn6tTqIo": {
-                            "name": "日光の病"
+                            "name": "日光の病",
+                            "description": "<p>タイタンは、マークしたストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>タイタンが初めて地上に現れたとき、<strong>[[/r d4]]</strong>をロールします。その結果と同じ数のストレスをマークします。タイタンは、マークしたストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。</p>"
                 },
                 "L8NmHjefixhO07zx": {
                     "actions": {
                         "Rt0IuvhgJOCU1Mpz": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "鎚の叩きつけ",
+                    "description": "<p>PCがタイタンの通常の攻撃でHPをマークしたとき、<strong>恐怖を1消費</strong>して、その対象に恩恵を得られないまま鎧スロットを1つマークさせられます（なおダメージを減らすために防具を使うことはできます）。</p>"
+                }
+            },
+            "name": "石のタイタン",
+            "description": "<p>地下に住み、魔法のルーンを象嵌した強力な品を作ることに長けた、灰色の肌の巨人。</p>",
+            "motivesAndTactics": "岩に溶け込む、作り、思索する、預言と孤独を追う",
+            "attack": {
+                "name": "石の鎚"
+            },
+            "experiences": {
+                "G3BTf5ubXiMnm83f": {
+                    "name": "工作"
+                },
+                "qm2LRWdET80XEK7Q": {
+                    "name": "ルーン"
                 }
             }
         },
@@ -11722,7 +11758,8 @@
                         "6UgMuuJ8ZygbCsDh": {
                             "name": "岩場の待ち伏せ"
                         }
-                    }
+                    },
+                    "description": "<p><em>隠密</em>の間、<strong>ストレスを1マーク</strong>して、超近距離以内の対象の近接距離まで跳びかかります。その対象は敏捷または直感リアクションロール（15）に成功しなければ、<strong>2d8</strong>の物理ダメージを受け、一時的に拘束されます。</p>"
                 },
                 "9Z0i0uURfBMVIapJ": {
                     "name": "雪崩の咆哮",
@@ -11741,9 +11778,11 @@
                                 {
                                     "name": "雪崩の咆哮"
                                 }
-                            ]
+                            ],
+                            "description": "<p>その瓦礫は<em>進行カウントダウン（8）</em>で取り除けます。</p>"
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、洞窟の中で吼えて落盤を起こします。近距離以内のすべての対象は、敏捷リアクションロール（14）に成功しなければ<strong>2d10</strong>の物理ダメージを受けます。その瓦礫は進行カウントダウン（8）で取り除けます。</p>"
                 },
                 "faM1UzclP0X3ZrkJ": {
                     "name": "勢い",
@@ -11753,6 +11792,18 @@
                             "name": "恐怖を得る"
                         }
                     }
+                },
+                "SL5JOOefJEeWJCSz": {
+                    "name": "石渡り",
+                    "description": "<p>@Lookup[@name]は空気の中と同じ手軽さで石と土の中を移動できます。石または土の中にいる間、隠密であり、すべてのダメージに無効です。</p>"
+                }
+            },
+            "name": "石の亡霊",
+            "description": "<p>忍び歩くピューマのような、粘板岩色の石の体を持つ徘徊する狩人。</p>",
+            "motivesAndTactics": "縄張りを守る、獲物を孤立させる、忍び寄る",
+            "experiences": {
+                "lRo2QTdqPE3kwCHW": {
+                    "name": "石の感覚"
                 }
             }
         },
@@ -11775,7 +11826,9 @@
                         "0ygDf9v05hVcLnyu": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "球電",
+                    "description": "<p><strong>恐怖を1消費</strong>して、タイタンに近距離以内へ電気エネルギーの球を<strong>1d4</strong>個呼び出させます。タイタンにスポットライトが当たったとき、各球を近距離まで動かせます。球がPCの超近距離以内まで動いたとき、そのPCは<strong>4d6</strong>の魔法ダメージを受け、その球は消えます。各球はタイタンと同じ難易度を持ち、クリーチャーが魔法ダメージを与えると消えます。</p>"
                 },
                 "eAHzRE18UJknHhzj": {
                     "name": "嵐を呼ぶ者",
@@ -11794,7 +11847,8 @@
                             "name": "嵐を呼ぶ者",
                             "description": "<p>スポットライトが当たるまで<em>脆弱</em>です。</p>"
                         }
-                    }
+                    },
+                    "description": "<p><strong>ストレスを1マーク</strong>して、タイタンに荒れ狂う嵐を呼び出させます。タイタンから近距離以内の各PCは頑強リアクションロールを行わなければなりません。失敗した対象は<strong>3d12</strong>の魔法ダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。成功した対象はダメージを半分受けます。</p>"
                 },
                 "wYagPWvyGOrwkc4s": {
                     "name": "雷鳴",
@@ -11805,9 +11859,19 @@
                     },
                     "effects": {
                         "KcxGJ33ynRLyZKJC": {
-                            "description": "<p>希望とともにロールするまで<em>脆弱</em>です。</p>"
+                            "description": "<p>希望とともにロールするまで<em>脆弱</em>です。</p>",
+                            "name": "雷鳴に打たれた"
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、タイタンの前方、近距離以内の最大3人のPCを対象にします。各対象はストレスを1マークし、希望とともにロールするまで<em>脆弱</em>になります。</p>"
+                }
+            },
+            "name": "嵐のタイタン",
+            "description": "<p>霧でできた髪を持ち、肌に電気を走らせる、古く賢く気性の激しい巨人。</p>",
+            "motivesAndTactics": "激しく噴き出す、待つ、見守る",
+            "experiences": {
+                "yPVvbwNUYqSIB5Qe": {
+                    "name": "嵐の力"
                 }
             }
         },
@@ -11815,7 +11879,8 @@
             "_note": "Supreme Demiurge Adonix",
             "items": {
                 "LqmWQ1M1OAp8CRRs": {
-                    "name": "リレントレス（4）"
+                    "name": "リレントレス（4）",
+                    "description": "<p>アドニクスはGMのターンごとに4回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "vFcVQJIwxf5zPjeo": {
                     "name": "元素のアルコーン",
@@ -11828,7 +11893,9 @@
                                 {
                                     "name": "元素のアルコーン"
                                 }
-                            ]
+                            ],
+                            "name": "炎の光線",
+                            "description": "<p>アドニクスは、自身から戦場の端まで超近距離の幅を持つ元素の炎の光線を顕します。その光線の進路上の各対象は敏捷リアクションロールを行わなければなりません。失敗した対象は重傷ダメージを受けます。成功した対象は軽傷ダメージを受けます。</p>"
                         },
                         "GSbT8eCnIsID2JGK": {
                             "name": "雷鳴",
@@ -11836,7 +11903,8 @@
                                 {
                                     "name": "元素のアルコーン"
                                 }
-                            ]
+                            ],
+                            "description": "<p>遠距離以内のすべてのクリーチャーはストレスを1マークし、攻撃ロールに成功するかデミウルゴスが倒されるまで<em>脆弱</em>になります。</p>"
                         },
                         "fKsYjDiecMyUQktG": {
                             "name": "電撃",
@@ -11851,21 +11919,31 @@
                                 {
                                     "name": "元素のアルコーン"
                                 }
-                            ]
+                            ],
+                            "name": "氷の嵐",
+                            "description": "<p>近距離以内の各PCは、頑強リアクションロールに成功しなければストレスを<strong>1d4</strong>マークし、<strong>希望を1消費</strong>して逃れるまで<em>拘束</em>されます。</p>"
                         }
                     },
                     "effects": {
                         "k6X7oa6QOsiY2d2R": {
-                            "name": "氷結"
+                            "name": "氷結",
+                            "description": "<p><strong>希望を1消費</strong>して逃れるまで<em>拘束</em>されています。</p>"
+                        },
+                        "LH8q1LvVSBuP0guY": {
+                            "name": "雷鳴に打たれた",
+                            "description": "<p>攻撃ロールに成功するかデミウルゴスが倒されるまで<em>脆弱</em>です。</p>"
                         }
-                    }
+                    },
+                    "description": "<p><strong>ストレスを1マーク</strong>して<strong>d4</strong>をロールします。アドニクスは対応する効果を発動します：</p><ol><li><p><strong>炎の光線。</strong>アドニクスは、自身から戦場の端まで超近距離の幅を持つ元素の炎の光線を顕します。その光線の進路上の各対象は敏捷リアクションロールを行わなければなりません。失敗した対象は重傷ダメージを受けます。成功した対象は軽傷ダメージを受けます。</p></li><li><p><strong>雷鳴。</strong>遠距離以内のすべてのクリーチャーはストレスを1マークし、攻撃ロールに成功するかデミウルゴスが倒されるまで<em>脆弱</em>になります。</p></li><li><p><strong>雷撃。</strong>超遠距離以内の対象に攻撃を行い、成功した場合<strong>4d8</strong>の魔法ダメージを与えます。出目がすべて偶数の場合、別の対象に同じ攻撃を行い、奇数の結果が出るか対象が尽きるまでこれを繰り返します。</p></li><li><p><strong>氷の嵐。</strong>近距離以内の各PCは、頑強リアクションロールに成功しなければストレスを<strong>1d4</strong>マークし、<strong>希望を1消費</strong>して逃れるまで<em>拘束</em>されます。</p></li></ol>"
                 },
                 "RQvkIhWDLNf1nruQ": {
                     "actions": {
                         "bYTI3aiRNSi6puZh": {
                             "name": "リアクションロール"
                         }
-                    }
+                    },
+                    "name": "アルファからオメガへ",
+                    "description": "<p>アドニクスが倒されたとき、HPとストレスをすべて消した状態でオメガの姿として復活します。超遠距離以内の各PCは、社交リアクションロールに成功しなければ希望を1失います。この方法で失われた希望1つごとに、あなたは恐怖を1得ます。</p><section id=\"secret-kaHS0tXk5Kj9qy75\" class=\"secret\"><p>アドニクスは「見捨てられし者」と「終末」の特徴を得ます。</p></section>"
                 },
                 "AJicsX6t4G8r6pX9": {
                     "name": "見捨てられた者",
@@ -11878,7 +11956,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCを1人選び、そのPCに見捨てられしカウントダウン（1d8）を開始します。これはアドニクスにスポットライトが当たったときに進みます。発動したとき、そのPCはHPをすべてマークしなければなりません。アドニクスが重傷ダメージを受けた場合、このカウントダウンは終了します。見捨てられしカウントダウンは同時に1つしか動かせません。</p>"
                 },
                 "D56q8j9zqjTlkCPy": {
                     "name": "終末",
@@ -11886,7 +11965,22 @@
                         "P2EJERCMegGEMBmz": {
                             "name": "終末"
                         }
-                    }
+                    },
+                    "description": "<p>アドニクスが再び倒されたとき、諸領域を根底から揺るがす現実の嵐を解き放ちます。<strong>d6</strong>をロールします。結果が5〜6の場合、各PCはデスムーブを行わなければなりません。</p>"
+                }
+            },
+            "name": "至高のデミウルゴス、アドニクス",
+            "description": "<p>上なる聖域から来た四つの顔を持つ天使。定命の領域では、無数の目と金属の羽毛の翼を幾組も備えた浮遊する四面体として顕れる。</p>",
+            "motivesAndTactics": "支配を確立する、現実から追放する、すべての上に浮かぶ、言葉で存在せしめる",
+            "attack": {
+                "name": "翼の一撃"
+            },
+            "experiences": {
+                "jbe8bRuyUJAiArfS": {
+                    "name": "全能"
+                },
+                "UacQqnT53CuMQDo3": {
+                    "name": "恐れるなかれ"
                 }
             }
         },
@@ -11904,8 +11998,15 @@
                             "name": "群れ"
                         }
                     }
+                },
+                "0O6ckwZE34RBnjpB": {
+                    "name": "顔面に取りつく",
+                    "description": "<p>近接距離以内のすべての対象は、@Lookup[@name]以外の対象への攻撃に不利を得ます。</p>"
                 }
-            }
+            },
+            "name": "ネズミの大群",
+            "description": "<p>飢えた波のように一体となって動く、ごく普通の齧歯類のうごめく塊。</p>",
+            "motivesAndTactics": "喰らう、視界を覆う、群がる"
         },
         "Sylvan Soldier": {
             "_note": "Sylvan Soldier",
@@ -11919,7 +12020,8 @@
                         "dmlz83o2JOAoGiuK": {
                             "name": "攻撃"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]が通常の攻撃を行い、別の@Lookup[@name]が対象の近接距離以内にいる場合、通常のダメージの代わりに<strong>1d8+5</strong>の物理ダメージを与えます。</p>"
                 },
                 "1dmKoSnV82sLc8xZ": {
                     "name": "溶け込む",
@@ -11930,9 +12032,28 @@
                     },
                     "effects": {
                         "xyXPmPIOtqXYF1TJ": {
-                            "name": "溶け込む"
+                            "name": "溶け込む",
+                            "description": "<p>兵士の次の攻撃まで、またはPCが直感ロール（14）に成功して見つけるまで隠密になります。</p>"
+                        }
+                    },
+                    "description": "<p>@Lookup[@name]の攻撃が成功したとき、<strong>ストレスを1マーク</strong>して、@Lookup[@name]の次の攻撃まで、またはPCが直感ロール（14）に成功して見つけるまで隠密になれます。</p>"
+                },
+                "phtxvgptyvT3WoeK": {
+                    "name": "森の操り",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の木を引き倒します。その木に当たったクリーチャーは、敏捷リアクションロール（15）に成功しなければ<strong>1d10</strong>の物理ダメージを受けます。</p>",
+                    "actions": {
+                        "UyL02IaAO3m8LgWI": {
+                            "name": "木を引き倒す"
                         }
                     }
+                }
+            },
+            "name": "森の兵士",
+            "description": "<p>葉と樹皮でできた鎧を身にまとった妖精の戦士。</p>",
+            "motivesAndTactics": "待ち伏せる、隠れる、圧倒する、守る、跡を追う",
+            "experiences": {
+                "3HwCDcCvzVnicJKe": {
+                    "name": "追跡者"
                 }
             }
         },
@@ -11953,13 +12074,21 @@
                         "CiA4K6py0eW6eihU": {
                             "name": "ダメージ"
                         }
-                    }
+                    },
+                    "description": "<p><strong>ストレスを1マーク</strong>して、茨トークンを3つ以上持つ対象に<strong>2d6+8</strong>の直接物理ダメージを与えます。</p>"
                 },
                 "JRSGc3ozDnKCAvCj": {
                     "name": "重圧",
                     "effects": {
                         "PdkhaTw2j15KJwBf": {
-                            "name": "重圧"
+                            "name": "重圧",
+                            "description": "<p>対象が茨トークンを1つ以上持っている場合、その対象は拘束されています。対象が茨トークンを3つ以上持っている場合、脆弱にもなります。茨トークンはすべて、器用ロール（12＋茨トークンの数）に成功するか、大群に中傷以上のダメージを与えることで取り除けます。器用ロールで対象から茨トークンを取り除いた場合、取り除いたトークンの数と同じ数の絡み茨のミニオンが近接距離以内に生まれます。</p>"
+                        }
+                    },
+                    "description": "<p>@Lookup[@name]が攻撃に成功したとき、その対象に茨トークンを1つ与えます。対象が茨トークンを1つ以上持っている場合、その対象は拘束されています。対象が茨トークンを3つ以上持っている場合、脆弱にもなります。茨トークンはすべて、器用ロール（12＋茨トークンの数）に成功するか、大群に中傷以上のダメージを与えることで取り除けます。器用ロールで対象から茨トークンを取り除いた場合、取り除いたトークンの数と同じ数の@Lookup[@name]のミニオンが近接距離以内に生まれます。</p>",
+                    "actions": {
+                        "Cdw2XxA5NhAQhQse": {
+                            "name": "トークンを与える"
                         }
                     }
                 },
@@ -11972,7 +12101,10 @@
                         }
                     }
                 }
-            }
+            },
+            "name": "絡み茨の大群",
+            "description": "<p>大きな瓜ほどの大きさの、血を吸う動く回転草の一団。</p>",
+            "motivesAndTactics": "消化する、絡めとる、動きを止める"
         },
         "Tangle Bramble": {
             "_note": "Tangle Bramble",
@@ -11998,15 +12130,21 @@
                         "g1OQ5xlMHFWsoktd": {
                             "name": "召喚"
                         }
-                    }
+                    },
+                    "name": "吸って増える",
+                    "description": "<p>@Lookup[@name]の攻撃で対象がHPをマークし、近距離以内に@Lookup[@name]のミニオンが3体以上いるとき、それらのミニオンを1体の@UUID[Compendium.daggerheart.adversaries.Actor.PKSXFuaIHUCoH63A]{絡み茨の大群（群れ）}に合わせられます。その群れのHPは、合わせたミニオンの数と同じです。</p>"
                 }
-            }
+            },
+            "name": "絡み茨",
+            "description": "<p>血を吸う動く回転草。</p>",
+            "motivesAndTactics": "合わさる、吸い取る、絡めとる"
         },
         "Temporal Enforcer": {
             "_note": "Temporal Enforcer",
             "items": {
                 "MMbIERlxi7DsVlXx": {
-                    "name": "リレントレス（2）"
+                    "name": "リレントレス（2）",
+                    "description": "<p>執行者はGMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "wBfRwWNwBkJALC5s": {
                     "name": "時を巡らす者",
@@ -12019,28 +12157,46 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "description": "<p>カウントダウン（ループ 2d6）。執行者が最初に現れたとき、カウントダウンを開始します。これは執行者にスポットライトが当たったときに進みます。発動したとき、執行者はHP、ストレス、状態をすべて消します。執行者が重傷ダメージを受けたとき、カウントダウンを振り直します。</p>"
                 },
                 "SZKbrbzW9ITQuELW": {
                     "actions": {
                         "HgV00O2iDEOZYZDe": {
                             "name": "ストレスをマーク"
                         }
-                    }
+                    },
+                    "name": "瞬間の間を移る",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、執行者を超遠距離以内の一点へ転移させ、その後再びスポットライトを当てます。</p>"
                 },
                 "TubY8u9hJy8MbDEK": {
                     "actions": {
                         "AZMtZ5kqFTcXBZ2N": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "即時の巻き戻し",
+                    "description": "<p>執行者が攻撃に失敗したとき、<strong>恐怖を1消費</strong>してそのダイスを振り直せます。</p>"
                 },
                 "VUmRd6qE30M7wy7v": {
                     "actions": {
                         "aDM9B189dj0PFVhK": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "極性反転",
+                    "description": "<p>シーンごとに3回まで、<strong>恐怖を1消費</strong>して、振られたダイスを裏の面の結果へ反転できます。この効果はクリティカル成功を変えるためには使えません。</p>"
+                }
+            },
+            "name": "時間の執行者",
+            "description": "<p>時の外にある次元から来た巨大な機械の存在。聖なる連続体を守るため、時の守り手たちによって造られた。</p>",
+            "motivesAndTactics": "時間軸を修復する、時の異端者を探し出す、連続性の君主たちに仕える",
+            "attack": {
+                "name": "アダマンティンの鎚"
+            },
+            "experiences": {
+                "bthZnZ7zB8qwQ5Qu": {
+                    "name": "時間の異常"
                 }
             }
         },
@@ -12059,7 +12215,10 @@
                         }
                     }
                 }
-            }
+            },
+            "name": "小さな緑のウーズ",
+            "description": "<p>半透明の緑の粘液が動く小さな塊。</p>",
+            "motivesAndTactics": "擬態する、忍び寄る"
         },
         "Tiny Red Ooze": {
             "_note": "Tiny Red Ooze",
@@ -12071,11 +12230,16 @@
                     "name": "燃焼",
                     "actions": {
                         "cHaEnBwinVKmoS9s": {
-                            "name": "ダメージ"
+                            "name": "ダメージ",
+                            "description": "<p>近接距離以内のクリーチャーがウーズにダメージを与えたとき、そのクリーチャーは<strong>1d6</strong>の直接魔法ダメージを受けます。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>近接距離以内のクリーチャーが@Lookup[@name]にダメージを与えたとき、そのクリーチャーは<strong>1d6</strong>の直接魔法ダメージを受けます。</p>"
                 }
-            }
+            },
+            "name": "小さな赤のウーズ",
+            "description": "<p>半透明の燃えるような赤い粘液が動く小さな塊</p>",
+            "motivesAndTactics": "燃え上がる、擬態する"
         },
         "Treant Sapling": {
             "_note": "Treant Sapling",
