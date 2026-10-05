@@ -256,52 +256,226 @@
             "description": "<p>（GMの裁定のもと）好きな動物の相棒を持ちます。別の指示をしない限り、相棒は自分の傍を離れません。レンジャー相棒シートを取ります。キャラクターがレベルアップするとき、このシートからも相棒のレベルアップ選択肢を1つ選びます。</p>"
         },
         "Conjure Shield": {
-            "_note": "Conjure Shield"
+            "_note": "Conjure Shield",
+            "name": "盾の召喚",
+            "description": "<p>魔法による守りの障壁を維持できます。希望を2以上持っている間、回避値に習熟を加えます。</p>",
+            "effects": {
+                "0i7GVOvjH6bK5AUM": {
+                    "name": "盾の召喚",
+                    "description": "<p>希望を2以上持っている間、回避値に習熟を加えます。</p>"
+                }
+            }
         },
         "Contacts Everywhere": {
-            "_note": "Contacts Everywhere"
+            "_note": "Contacts Everywhere",
+            "name": "どこにでも伝手",
+            "description": "<p>セッションごとに1回、裏社会の伝手を短時間呼び出せます。以下の恩恵から1つを選び、その人物がこの瞬間に助けに来た理由を描写してください。</p><ul><li><p>一握りの金貨、特別な道具、または状況に必要なありふれた物品を1つ提供してくれます。</p></li><li><p>次のアクションロールで、その助けにより希望ダイスまたは恐怖ダイスの結果に＋3のボーナスを得ます。</p></li><li><p>次にダメージを与えるとき、物陰から狙撃し、ダメージロールに2d8を加えます。</p></li></ul>",
+            "actions": {
+                "GZDYjtPh0lCJ5VNq": {
+                    "name": "特徴を使用"
+                }
+            }
         },
         "Courage": {
-            "_note": "Courage"
+            "_note": "Courage",
+            "name": "勇気",
+            "description": "<p>恐怖でロールに失敗したとき、希望を1得ます。</p>"
         },
         "Crushing": {
-            "_note": "Crushing"
+            "_note": "Crushing",
+            "name": "圧砕",
+            "description": "<p>重傷ダメージを与えたとき、<strong>希望を1消費</strong>して対象にHPを1つ追加でマークさせられます。</p>",
+            "actions": {
+                "TAnFMnKyuU8AvRvm": {
+                    "name": "構えをとる"
+                },
+                "SNQbyaTZxSfPUjyx": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "wTLu5PCb5tVANoXR": {
+                    "name": "構え：圧砕",
+                    "description": "<p>重傷ダメージを与えたとき、<strong>希望を1消費</strong>して対象にHPを1つ追加でマークさせられます。</p>"
+                }
+            }
         },
         "Damage Sink": {
-            "_note": "Damage Sink"
+            "_note": "Damage Sink",
+            "name": "ダメージの受け皿",
+            "description": "<p>休憩ごとに1回、<strong>恩寵を1消費</strong>して受けるダメージを半減できます。</p>",
+            "actions": {
+                "3F3GvruTdowsgQAU": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Dark Aegis": {
-            "_note": "Dark Aegis"
+            "_note": "Dark Aegis",
+            "name": "暗黒の加護",
+            "description": "<p>大休憩ごとに1回、ダメージを受けるとき、HPをマークする代わりに<strong>恩寵を1消費</strong>できます。</p>",
+            "actions": {
+                "2mZaz1jTPjAQK6ZM": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Dark Cloud": {
-            "_note": "Dark Cloud"
+            "_note": "Dark Cloud",
+            "name": "暗雲",
+            "description": "<p><strong>呪文発動ロール（15）</strong>を行います。成功した場合、近距離以内の任意の範囲を覆う一時的な暗雲を作り出します。この雲の中にいる者は外を見ることができず、外にいる者は中を見ることができません。雲によって視線を遮られた敵対者からは<em>隠身</em>とみなされます。</p>",
+            "actions": {
+                "nIgBwYfAVAJ98lzb": {
+                    "name": "呪文発動：暗雲"
+                }
+            }
         },
         "Deadly Vengeance": {
-            "_note": "Deadly Vengeance"
+            "_note": "Deadly Vengeance",
+            "name": "死の報復",
+            "description": "<p>攻撃によってHPを1つ以上マークしたとき、<strong>恩寵を1消費</strong>して、同じ数の庇護者ダイスを振れます。結果が4以上のダイス1つにつき、攻撃者はHPを1つマークします。</p>",
+            "actions": {
+                "g1nxHBuHbeRc60qc": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Death Strike": {
-            "_note": "Death Strike"
+            "_note": "Death Strike",
+            "name": "致死の一撃",
+            "description": "<p>クリーチャーに重傷ダメージを与えたとき、<strong>ストレスを1マーク</strong>して、そのクリーチャーにHPを1つ追加でマークさせられます。</p>",
+            "actions": {
+                "9oSm12oXjIl7Xi6m": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Deathless Embrace": {
-            "_note": "Deathless Embrace"
+            "_note": "Deathless Embrace",
+            "name": "不死の抱擁",
+            "description": "<p>休憩ごとに1回、<strong>任意の数の恩寵を消費</strong>して、同じ数の庇護者ダイスを振ります。結果が4以上のダイス1つにつき、HPを1つ消します。</p>",
+            "actions": {
+                "MESGNBGIReGomg5u": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Defender": {
-            "_note": "Defender"
+            "_note": "Defender",
+            "name": "守護者",
+            "description": "<p>あなたの動物への変身は、癒しの守護霊を体現します。ビーストフォーム中に近距離以内の味方がHPを2つ以上マークしたとき、ストレスを1マークして、その味方がマークするHPの数を1つ減らせます。</p>",
+            "actions": {
+                "9WxcZ3BuXUKfqUMz": {
+                    "name": "ストレスをマーク",
+                    "description": "<p>ビーストフォーム中に近距離以内の味方がHPを2つ以上マークしたとき、ストレスを1マークして、その味方がマークするHPの数を1つ減らせます。</p>"
+                }
+            }
         },
         "Defensive": {
-            "_note": "Defensive"
+            "_note": "Defensive",
+            "name": "防御的",
+            "description": "<p>近接射程内からあなたを対象とする攻撃ロールは、攻撃者がストレスを1マークして打ち消さない限り、不利になります。</p>",
+            "actions": {
+                "syX0fPaPNwVqpwBP": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "cEi6RO2te92zNqm2": {
+                    "name": "構え：防御的",
+                    "description": "<p>近接射程内からあなたを対象とする攻撃ロールは、攻撃者がストレスを1マークして打ち消さない限り、不利になります。</p>"
+                }
+            }
         },
         "Devout": {
-            "_note": "Devout"
+            "_note": "Devout",
+            "name": "篤信",
+            "description": "<p>祈りのダイスを振るとき、ダイスを1つ追加で振り、最も低い結果を捨てられます。さらに、「救いの手」の特徴を大休憩ごとに1回ではなく2回使用できます。</p>"
         },
         "Diminish My Foes": {
-            "_note": "Diminish My Foes"
+            "_note": "Diminish My Foes",
+            "name": "我が敵を削れ",
+            "description": "<p>対象へのアクションロールで希望とともに成功したとき、<strong>任意の数の恩寵を消費</strong>して、対象に同じ数のストレスをマークさせられます。</p>",
+            "actions": {
+                "kE9BQUrMetyVIMw4": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Draining Bane": {
-            "_note": "Draining Bane"
+            "_note": "Draining Bane",
+            "name": "枯渇の呪い",
+            "description": "<p>敵対者があなたまたは至近以内の味方を攻撃の対象としたとき、<strong>恩寵を1消費</strong>してその敵対者を<em>枯渇</em>させられます。そうしたとき、その敵対者はストレスを1マークし、あなたはストレスを1つ消せます。<em>枯渇</em>している間、対象は攻撃ロール（有利・不利のロールを含む）にd20ではなく<strong>d12</strong>を使用し、これはロールに失敗するまで続きます。</p>",
+            "actions": {
+                "9uGvYN7h6mlUAsiQ": {
+                    "name": "恩寵を消費する"
+                }
+            },
+            "effects": {
+                "kXd9hPnE1W5SHw1T": {
+                    "name": "枯渇",
+                    "description": "<p><em>枯渇</em>している間、対象は攻撃ロール（有利・不利のロールを含む）にd20ではなく<strong>d12</strong>を使用し、これはロールに失敗するまで続きます。</p>"
+                }
+            }
         },
         "Elemental Aura": {
-            "_note": "Elemental Aura"
+            "_note": "Elemental Aura",
+            "name": "元素のオーラ",
+            "description": "<p>伝導している間、休憩ごとに1回、自分の元素に合致したオーラをまとえます。このオーラは伝導が終わるまで近距離以内の対象に影響します。</p><ul><li><p><strong>火</strong>：敵対者がHPを1つ以上マークしたとき、その敵対者はストレスも1マークしなければなりません。</p></li><li><p><strong>地</strong>：味方は頑強に＋1のボーナスを得ます。</p></li><li><p><strong>水</strong>：敵対者があなたにダメージを与えたとき、ストレスを1マークして、その敵対者を現在地から至近以内の任意の場所へ移動させられます。</p></li><li><p><strong>風</strong>：あなたまたは味方が近接射程を超える攻撃からダメージを受けたとき、そのダメージを1d8減らします。</p></li></ul>",
+            "actions": {
+                "AdOnKhi7g6zQu2iv": {
+                    "name": "火",
+                    "description": "<p>敵対者がHPを1つ以上マークしたとき、その敵対者はストレスも1マークしなければなりません。</p>",
+                    "areas": [
+                        {
+                            "name": "元素のオーラ：火"
+                        }
+                    ]
+                },
+                "xDBLH5TWidvrYF7z": {
+                    "name": "地",
+                    "description": "<p>味方は頑強に＋1のボーナスを得ます。</p>",
+                    "areas": [
+                        {
+                            "name": "元素のオーラ：地"
+                        }
+                    ]
+                },
+                "S4t5HlgxWlHwaBDw": {
+                    "name": "水",
+                    "description": "<p>敵対者があなたにダメージを与えたとき、ストレスを1マークして、その敵対者を現在地から至近以内の任意の場所へ移動させられます。</p>",
+                    "areas": [
+                        {
+                            "name": "元素のオーラ：水"
+                        }
+                    ]
+                },
+                "hAsKFFewtTqd1gg9": {
+                    "name": "風",
+                    "description": "<p>あなたまたは味方が近接射程を超える攻撃からダメージを受けたとき、そのダメージを1d8減らします。</p>",
+                    "areas": [
+                        {
+                            "name": "元素のオーラ：風"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "H7W52ps5d3UGmaFr": {
+                    "name": "元素のオーラ（水）"
+                },
+                "WX5AMEpmUAutB9Hm": {
+                    "name": "元素のオーラ（火）"
+                },
+                "yvpWNCNobg0LLjey": {
+                    "name": "元素のオーラ：地",
+                    "description": "<p>味方は頑強に＋1のボーナスを得ます。</p>"
+                },
+                "vnKV5hsO4DVjURAl": {
+                    "name": "元素のオーラ：風",
+                    "description": "<p>あなたまたは味方が近接射程を超える攻撃からダメージを受けたとき、そのダメージを1d8減らします。</p>"
+                }
+            }
         },
         "Elemental Dominion": {
             "_note": "Elemental Dominion"
