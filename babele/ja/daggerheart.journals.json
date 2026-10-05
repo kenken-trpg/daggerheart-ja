@@ -1,0 +1,24 @@
+{
+    "label": "journals",
+    "collection": "daggerheart.journals",
+    "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "entries": {
+        "Daggerheart SRD": {
+            "_note": "Daggerheart SRD",
+            "name": "Daggerheart SRD（日本語）",
+            "pages": {
+                "INTRODUCTION": {
+                    "name": "はじめに"
+                }
+            }
+        },
+        "Welcome - Information": {
+            "_note": "Welcome - Information",
+            "pages": {
+                "Dice Rolling": {
+                    "name": "ダイスロール"
+                }
+            }
+        }
+    }
+}

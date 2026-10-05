@@ -1,0 +1,76 @@
+Daggerheart 日本語化 (daggerheart-ja) — 第三者コンテンツの表示
+Third-party content notice
+
+
+1. Darrington Press Community Gaming License (DPCGL)
+====================================================
+
+This product includes materials from the Daggerheart System Reference
+Document 1.0, (C) Critical Role, LLC. under the terms of the Darrington
+Press Community Gaming License (DPCGL). More information can be found at
+https://www.daggerheart.com.
+
+These materials have been MODIFIED. This product contains a Japanese
+translation of that content, produced by kenken-trpg. There were previous
+modifications by others: the English text this translation is based on was
+edited, reorganized and extended for Foundry Virtual Tabletop by WBHarry and
+the Foundryborne/daggerheart contributors.
+
+DPCGL: https://darringtonpress.com/wp-content/uploads/2025/07/DPCGL-July-30th-2025.pdf
+
+  本製品には Daggerheart System Reference Document 1.0 (C) Critical Role, LLC
+  の素材が、Darrington Press Community Gaming License (DPCGL) の条件のもとで
+  含まれています。詳細は https://www.daggerheart.com を参照してください。
+
+  これらの素材は改変されています。本製品は kenken-trpg による日本語訳を
+  含みます。他者による先行改変があります: 訳の底本となった英文は、WBHarry
+  および Foundryborne/daggerheart のコントリビューターによって Foundry
+  Virtual Tabletop 向けに編集・再構成・追補されたものです。
+
+A translation is Adaptive Content under DPCGL 1.7. It is shared here under
+2.1(b), in a Permitted Format: Foundry Virtual Tabletop is a whitelisted VTT
+under 1.9.1. That whitelist is maintained by Darrington Press and may change;
+the current list is at https://darringtonpress.com/license/.
+
+Sharing on a whitelisted VTT is permitted SOLELY FOR NON-COMMERCIAL PURPOSES
+and may not be monetized in any form (1.9.1), including selling access,
+subscription fees, paywalling, or soliciting donations tied to access or use.
+This module is and must remain free.
+
+
+2. What this product deliberately does NOT include
+==================================================
+
+The Witherwild Campaign Frame is NOT translated or included here.
+
+DPCGL 1.9.3 permits a Campaign Frame to be shared only via live-streaming,
+video/audio or podcast for actual-play purposes, and states that it "may not
+be Shared in any other format or republished, printed, distributed, or adapted
+into new written works or derivative works without separate written permission
+from DRP". 1.5(c) also lists Campaign Frames under Prohibited Content.
+No such permission has been sought or granted.
+
+This exclusion is enforced in the build: see BLOCKED in tools/packs-sync.mjs,
+which `npm run packs:check` verifies.
+
+  Witherwild Campaign Frame は本製品に含まれず、翻訳もしていません。
+  DPCGL 1.9.3 により、キャンペーンフレームはアクチュアルプレイの配信・動画・
+  ポッドキャスト以外の形式での Share と、派生物への改作が、DRP の個別の書面
+  許諾なしには認められないためです。許諾の申請は行っていません。
+
+
+3. Trademarks
+=============
+
+Darrington Press (TM), Daggerheart (TM) and their respective logos are
+trademarks of Critical Role, LLC. This module is unofficial and is not
+affiliated with, sponsored by or endorsed by Critical Role, LLC, Darrington
+Press, or Foundryborne (DPCGL 2.3).
+
+
+4. Code
+=======
+
+The CSS, JavaScript and tooling in this repository are licensed under the MIT
+License; see LICENSE. Nothing in that license is intended to prevent a user of
+this module from complying with the DPCGL (DPCGL 2.2, 4.4).

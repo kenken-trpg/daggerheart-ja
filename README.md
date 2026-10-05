@@ -59,13 +59,38 @@ npm run lang:report  # 原文との差分状況を確認する
 
 ## ライセンス
 
-- このリポジトリの CSS と JavaScript は [MIT License](LICENSE)。
-- `lang/ja.json` は上流 `lang/en.json` の訳です。Daggerheart System Reference
-  Document 由来のルール文を含むため、その部分は
-  [Darrington Press Community Gaming License](https://darringtonpress.com/wp-content/uploads/2025/07/DPCGL-July-30th-2025.pdf)
-  の許諾範囲に依存します。
+- このリポジトリの CSS・JavaScript・ツール類は [MIT License](LICENSE)。
+- 翻訳したルール文・コンペンディウム内容については [NOTICE](NOTICE) を参照して
+  ください。Daggerheart System Reference Document 1.0 © Critical Role, LLC 由来の
+  素材を、[Darrington Press Community Gaming License](https://darringtonpress.com/wp-content/uploads/2025/07/DPCGL-July-30th-2025.pdf)
+  (DPCGL) の条件のもとで含みます。
 - Darrington Press™, Daggerheart™ およびそれぞれのロゴは Critical Role, LLC の
   商標です。
 
 このモジュールは非公式であり、Critical Role, LLC、Darrington Press、
-Foundryborne のいずれとも関係がありません。
+Foundryborne のいずれとも関係がありません (DPCGL 2.3)。
+
+### 非商用限定
+
+**本モジュールは無償であり、無償でなければなりません。** DPCGL 1.9.1 は
+ホワイトリスト VTT 上での Share を非商用に限り、いかなる形の収益化も
+禁じています — アクセスの販売、サブスクリプション、ペイウォール、そして
+**アクセスや利用に紐づく寄付の募集**も含みます。
+
+### Foundry がホワイトリストから外れたら
+
+DPCGL 1.9.1 のホワイトリスト VTT は Darrington Press が管理しており、
+**随時変更されうる**と明記されています。現在のリストは
+https://darringtonpress.com/license/ にあり、執筆時点では Roll20 / Demiplane /
+Foundry / Alchemy / Fantasy Grounds です。Foundry が外れた場合、コンペンディウム
+翻訳の配布根拠が失われます。上流追従のたびに確認してください。
+
+### 意図的に含めていないもの
+
+**Witherwild Campaign Frame は翻訳も同梱もしていません。** DPCGL 1.9.3 により、
+キャンペーンフレームはアクチュアルプレイの配信・動画・ポッドキャスト以外の
+形式での Share と派生物への改作が、DRP の個別の書面許諾なしには認められない
+ためです。許諾申請は行っていません。
+
+この除外はビルドで強制しています (`tools/packs-sync.mjs` の `BLOCKED`)。
+`npm run packs:check` が、訳文ファイルに紛れ込んでいないことを検査します。

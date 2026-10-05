@@ -38,6 +38,10 @@ jobs:
           manifest["url"] = f"https://github.com/{repo}"
           manifest["manifest"] = f"https://raw.githubusercontent.com/{repo}/main/module.json"
           manifest["download"] = f"https://github.com/{repo}/releases/download/{version}/module.zip"
+          # DPCGL 4.1 wants the notice reachable from what is shared; Foundry
+          # shows these two as links on the module itself.
+          manifest["readme"] = f"https://github.com/{repo}/blob/main/README.md"
+          manifest["license"] = f"https://github.com/{repo}/blob/main/NOTICE"
           # hotReload は開発用。配布物に残すと利用者の環境で監視が走る。
           manifest.pop("flags", None)
           with open("module.json", "w") as f:
@@ -47,7 +51,7 @@ jobs:
 
       # 配布物は翻訳と CSS だけ。ビルドするものが無いので依存関係も要らない。
       - name: Build module.zip
-        run: zip -r ./module.zip module.json lang/ja.json styles/ scripts/ babele/ README.md LICENSE
+        run: zip -r ./module.zip module.json lang/ja.json styles/ scripts/ babele/ README.md LICENSE NOTICE
 
       - name: Attach the files to the release
         uses: ncipollo/release-action@v1

@@ -74,7 +74,8 @@ const ENABLED = [
     'items/armors',
     'items/consumables',
     'items/loot',
-    'rolltables'
+    'rolltables',
+    'journals'
 ];
 
 const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
@@ -88,6 +89,32 @@ const ENRICHER = /@[A-Za-z]+\[[^\]]*\]|\[\[[^\]]*\]\]/g;
  */
 const FOLDERS = '_folders';
 
+/*
+ * Documents that must never be written to a translation file, whatever the
+ * pack's state, with the reason they are blocked.
+ *
+ * The DPCGL treats a translation as Adaptive Content (1.7) and licenses it in
+ * the Permitted Formats (2.1b), and Foundry is a whitelisted VTT (1.9.1) -- but
+ * 1.9.3 carves Campaign Frames out of all of it: they may be shared only as
+ * actual-play streaming, video or podcast, and "may not be Shared in any other
+ * format or republished, printed, distributed, or adapted into new written
+ * works or derivative works without separate written permission from DRP". 1.5c
+ * also lists them under Prohibited Content. A Japanese translation shipped in a
+ * module is both another format and a derivative work.
+ *
+ * This is a list rather than a note in the README because `journals` is enabled
+ * as a pack: without it, one `export` would write the frame out.
+ */
+const BLOCKED = {
+    journals: {
+        'Witherwild Campaign Frame':
+            'DPCGL 1.9.3: a Campaign Frame may not be adapted or shared in this format'
+    }
+};
+
+/** Whether this document is blocked from export, and why. */
+const blockedReason = (pack, document) => BLOCKED[pack]?.[document.name] ?? null;
+
 /**
  * Read one source pack directory, splitting the folder definitions out of the
  * documents. Babele translates folders by NAME under a separate `folders` key,
@@ -98,9 +125,12 @@ async function readPack(pack) {
     const dir = path.join(REFERENCE_PACKS, pack);
     const files = (await fs.readdir(dir)).filter(f => f.endsWith('.json')).sort();
     const all = await Promise.all(files.map(f => readJson(path.join(dir, f))));
+    const documents = all.filter(d => !String(d._key ?? '').startsWith('!folders!'));
+    const blocked = documents.filter(d => blockedReason(pack, d));
     return {
-        documents: all.filter(d => !String(d._key ?? '').startsWith('!folders!')),
-        folders: all.filter(d => String(d._key ?? '').startsWith('!folders!'))
+        documents: documents.filter(d => !blockedReason(pack, d)),
+        folders: all.filter(d => String(d._key ?? '').startsWith('!folders!')),
+        blocked
     };
 }
 
@@ -220,6 +250,24 @@ function translatableFields(document) {
      * document they point at, so translating the items packs covers them and
      * writing a name here would only duplicate -- and could contradict -- it.
      */
+    /*
+     * A JournalEntry's pages are their own documents; Babele's built-in
+     * JournalEntryPage mapping takes `name` and `text.content`, and keys the
+     * pages by their English name.
+     */
+    if (Array.isArray(document.pages)) {
+        const pages = document.pages.reduce((acc, page) => {
+            const entry = {};
+            if (page.name) entry.name = page.name;
+            if (page.text?.content) entry.text = page.text.content;
+            if (Object.keys(entry).length) acc[page.name] = entry;
+            return acc;
+        }, {});
+        if (Object.keys(pages).length) fields.pages = pages;
+
+        return fields;
+    }
+
     if (Array.isArray(document.results)) {
         if (document.description) fields.description = document.description;
 
@@ -392,7 +440,7 @@ async function buildPack(pack) {
         throw error;
     });
 
-    const { documents, folders } = await readPack(pack);
+    const { documents, folders, blocked } = await readPack(pack);
     const keys = entryKeys(documents);
     const entries = {};
     for (const document of documents) {
@@ -414,7 +462,7 @@ async function buildPack(pack) {
     /* The original shape, so `apply` can tell a keyed container from an array. */
     const originals = Object.fromEntries(documents.map(d => [keys.get(d._id), translatableFields(d)]));
 
-    return { collection, file, previous, documents, entries, folderNames, originals, keys };
+    return { collection, file, previous, documents, entries, folderNames, originals, keys, blocked };
 }
 
 /** Drop the not-yet-translated entries of a flat name->translation map. */
@@ -426,7 +474,7 @@ const commands = {
         await fs.mkdir(BABELE_DIR, { recursive: true });
 
         for (const pack of ENABLED) {
-            const { collection, file, previous, documents, entries, folderNames } = await buildPack(pack);
+            const { collection, file, previous, documents, entries, folderNames, blocked } = await buildPack(pack);
             const retired = Object.keys(previous.entries ?? {}).filter(id => !entries[id]);
 
             await fs.writeFile(
@@ -446,7 +494,8 @@ const commands = {
             );
 
             console.log(
-                `${collection}: ${documents.length} entries${retired.length ? `, ${retired.length} dropped by upstream` : ''}`
+                `${collection}: ${documents.length} entries${retired.length ? `, ${retired.length} dropped by upstream` : ''}` +
+                    blocked.map(d => `\n  withheld: ${d.name} -- ${blockedReason(pack, d)}`).join('')
             );
         }
     },
@@ -624,8 +673,22 @@ const commands = {
     async check() {
         let problems = 0;
         for (const pack of ENABLED) {
-            const { collection, file, documents, keys } = await buildPack(pack);
+            const { collection, file, documents, keys, blocked } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
+
+            /*
+             * A withheld document must not be in the file at all, however it got
+             * there -- a stale entry from before it was blocked counts. This is
+             * a licence boundary, so it is checked rather than assumed.
+             */
+            for (const document of blocked) {
+                for (const key of [document.name, document._id]) {
+                    if (!current.entries?.[key]) continue;
+                    problems += 1;
+                    console.log(`${collection}: withheld document '${document.name}' is present as '${key}'`);
+                    console.log(`  ${blockedReason(pack, document)}`);
+                }
+            }
 
             for (const document of documents) {
                 const original = translatableFields(document);
@@ -645,7 +708,7 @@ const commands = {
                 }
             }
         }
-        console.log(problems ? `\n${problems} problem(s)` : 'enrichers match in every translated field');
+        console.log(problems ? `\n${problems} problem(s)` : 'enrichers match, and no withheld document is present');
     }
 };
 

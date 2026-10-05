@@ -207,6 +207,37 @@ const check = (label, actual, expected) =>
         file.entries['Amphibious'] !== file.entries[idKeyed[0]], true);
 }
 
+/* --- journals: pages through Babele's defaults, and what is withheld ----- */
+{
+    const dir = new URL('journals/', REFERENCE);
+    const files = await fs.readdir(dir);
+    const entries = JSON.parse(await fs.readFile(new URL('daggerheart.journals.json', TRANSLATIONS), 'utf8')).entries;
+
+    const welcome = JSON.parse(
+        await fs.readFile(new URL(files.find(f => f.includes('Welcome')), dir), 'utf8')
+    );
+    const out = translate('JournalEntry', welcome, entries['Welcome - Information']);
+    const dice = out.pages.find(p => p.name === 'ダイスロール');
+    check('journal page name', !!dice, true);
+    check('page body left alone', dice?.text?.content,
+        welcome.pages.find(p => p.name === 'Dice Rolling').text.content);
+    check('page count', out.pages.length, welcome.pages.length);
+
+    /*
+     * The licence boundary, asserted rather than trusted: DPCGL 1.9.3 keeps the
+     * campaign frame out of any written derivative, so it must not appear in
+     * the translation file under any key.
+     */
+    const frame = JSON.parse(
+        await fs.readFile(new URL(files.find(f => f.includes('Witherwild')), dir), 'utf8')
+    );
+    check('the campaign frame exists upstream', frame.name, 'Witherwild Campaign Frame');
+    check('and is absent from the translation file',
+        [frame.name, frame._id].some(key => key in entries), false);
+    check('only the two permitted journals were written', Object.keys(entries).sort(),
+        ['Daggerheart SRD', 'Welcome - Information']);
+}
+
 let failed = 0;
 for (const { label, pass, actual, expected } of checks) {
     console.log(`${pass ? 'ok  ' : 'FAIL'}  ${label}`);

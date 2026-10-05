@@ -1880,3 +1880,77 @@ id キー側は id で、名前キー側は名前で引かれる)。
 | **フォルダ名** | コンペンディウムブラウザに `コアルール` / `希望と恐怖` |
 | 同名文書の衝突 | 2件が別々に訳され、インデックスでも別 |
 | キー変更後の回帰 | 工程の全プローブが健在。文書数も 324 / 121 / 210 で不変 |
+
+## journals のライセンス判断を済ませた — 3件を別々に扱う (2026-10-05)
+
+「journals 208,012字のライセンス判断が先」と置いていたものを片付けた。
+DPCGL (2025-07-30 版) を読んだ結果、**判断というより条文で決まっていた**。
+3件のジャーナルは出自が違い、ひとまとめに扱ったのが間違いだった。
+
+| ジャーナル | 文字数 | 出自 | 結論 |
+| --- | --- | --- | --- |
+| Daggerheart SRD | 174,510 | SRD 1.0 | 訳せる |
+| Welcome - Information | 3,756 | Foundryborne の自作文書 | 訳せる (DRP 無関係) |
+| **Witherwild Campaign Frame** | **29,685** | キャンペーンフレーム | **訳せない** |
+
+### 訳せる根拠
+
+- **1.7**: 翻訳は定義上 Adaptive Content (`"translated, altered, rearranged,
+  transformed, or otherwise modified"`)。
+- **2.1(b)**: Adaptive Content の制作と Share を Permitted Formats で許諾。
+- **1.6**: SRD 1.0 は Public Game Content に明示列挙。
+- **1.9.1**: Foundry は Whitelisted VTT。現在のリストは Roll20 / Demiplane /
+  Foundry / Alchemy / Fantasy Grounds。
+
+### Witherwild が止まる根拠
+
+**1.9.3** が明示的:
+
+> Campaign Frames may not be Shared in any other format or republished,
+> printed, distributed, or adapted into new written works or derivative works
+> without separate written permission from DRP.
+
+許可されているのはアクチュアルプレイの配信・動画・ポッドキャストだけ。
+**1.5(c)** も Campaign Frames を Prohibited Content に列挙している。
+日本語訳の同梱は「他の形式での Share」かつ「派生物への改作」の両方に当たる。
+**DRP への許諾申請は行わない方針**なので、恒久的に除外する。
+
+### 除外は運用ではなく仕組みで止める
+
+`journals` はパック単位で有効化するので、注意書きだけでは一度の `export` で
+書き出されてしまう。`BLOCKED` に文書名で登録し、`readPack` が落とす。
+
+- `export` は落とした文書を `withheld: ... -- 理由` として**毎回出力する**。
+  黙って消えるのが一番危ない。
+- `check` は、**どんな経路であれ**訳文ファイルに現れていないかを検査する
+  (ブロック前の古いエントリも含む)。手で書き込んで発火することを確認済み。
+- `packs:probe` でも、上流に存在し、かつ訳文ファイルに無いことを検査する。
+
+### 付随して効く制約2つを明文化した
+
+**非商用限定。** 1.9.1 は Whitelisted VTT 上での Share を非商用に限り、
+`"may not be monetized in any form"` として、アクセスの販売・サブスク・
+ペイウォール・**アクセスに紐づく寄付の募集**を禁じている。無償配布は要件。
+
+**著作権表記が翻訳物として不正確だった。** 上流の `packs/LICENSE` をそのまま
+引くと `"There are no previous modifications by others."` で終わる。4.1(e) は
+自分の改変の有無と**他者による先行改変の有無**の表明を求めており、翻訳は改変、
+Foundryborne による編集・再構成も先行改変なので、**この一文は偽になる**。
+
+`NOTICE` を新設して 4.1(a)-(e) を満たす形に書き直した。`module.json` の
+`readme` / `license` を向け (Foundry がモジュール画面にリンクを出す)、
+リリース zip にも同梱する。release ワークフローはタグごとに manifest を
+書き換えるので、そこでも両フィールドを維持する。
+
+**ホワイトリストは変わりうる。** 1.9.1 に DRP が随時追加・削除できると明記
+されている。Foundry が外れればコンペンディウム翻訳の配布根拠が消えるので、
+README に上流追従のたびに確認する旨を書いた。
+
+### 現状
+
+15/15パック有効、61/10,431フィールド。翻訳対象は journals 込みで
+208,012字 → **178,266字**。`packs:probe` は50件。
+
+**journals の実機確認は未了** (ブラウザ拡張の接続が切れたため)。
+ページ名・本文のマッピングは Babele の既定 (`JournalEntry` → `pages` →
+`JournalEntryPage` の `name` / `text.content`) で、ハーネスでは通っている。
