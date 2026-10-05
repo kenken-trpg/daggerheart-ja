@@ -685,7 +685,7 @@
                 },
                 "0antvuNtKPuppXdr": {
                     "name": "ガリッ！",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に近接射程内の石化したPCを噛み砕かせます。その対象は死の選択を行わなければなりません。</p>",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に近接射程内の石化したPCを噛み砕かせます。その対象はデスムーブを行わなければなりません。</p>",
                     "actions": {
                         "YrU3MfpfBWLHgXKe": {
                             "name": "ストレスをマーク"
@@ -1325,7 +1325,7 @@
                 },
                 "el7eTepwDBzJVJ2z": {
                     "name": "昏睡させる",
-                    "description": "<p><strong>恐怖を1消費</strong>して、孵化体を近接射程内のPCの頭に取り付かせます。孵化体がそのPCの脳に精神化学物質を注ぎ込み、そのPCはストレスを1マークしなければなりません。さらに、いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。そのPCは、自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間にPCが最後のストレスをマークした場合、そのPCは死の選択を行わなければなりません。</p><section id=\"secret-HARNmm4yQbzlxbdw\" class=\"secret\"><p>そのPCが死んだ場合、<strong>恐怖を1消費</strong>してセフィリスの新信者として蘇らせられます。</p></section>",
+                    "description": "<p><strong>恐怖を1消費</strong>して、孵化体を近接射程内のPCの頭に取り付かせます。孵化体がそのPCの脳に精神化学物質を注ぎ込み、そのPCはストレスを1マークしなければなりません。さらに、いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。そのPCは、自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間にPCが最後のストレスをマークした場合、そのPCはデスムーブを行わなければなりません。</p><section id=\"secret-HARNmm4yQbzlxbdw\" class=\"secret\"><p>そのPCが死んだ場合、<strong>恐怖を1消費</strong>してセフィリスの新信者として蘇らせられます。</p></section>",
                     "actions": {
                         "5p9hecdIVDlsJEcD": {
                             "name": "恐怖を消費する"
@@ -1334,7 +1334,7 @@
                     "effects": {
                         "JvTbZJPusa99dZph": {
                             "name": "埋め込まれた孵化体",
-                            "description": "<p>いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。</p><p>自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間に最後のストレスをマークした場合、死の選択を行わなければなりません。</p>"
+                            "description": "<p>いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。</p><p>自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間に最後のストレスをマークした場合、デスムーブを行わなければなりません。</p>"
                         }
                     }
                 },
@@ -3279,7 +3279,22 @@
         },
         "Doppelhound": {
             "_note": "Doppelhound",
+            "name": "ドッペルハウンド",
+            "description": "<p>光る目と、鉤のついた鞭のような二本の尾を持つ、凶暴な魔法の犬。自らの幻影の分身を作り出して敵を惑わせる。</p>",
+            "motivesAndTactics": "獲物を待ち伏せる、遊びで殺す、獲物をいじる、騙し惑わす",
+            "attack": {
+                "name": "鉤尾の鞭打ち"
+            },
+            "experiences": {
+                "J7r5oGQXLjATUBbK": {
+                    "name": "影"
+                }
+            },
             "items": {
+                "HXfGSMFGXKcoizPW": {
+                    "name": "瞬きの獣",
+                    "description": "<p>戦闘が始まったとき、@Lookup[@name]から近距離以内に分身を1体配置します。@Lookup[@name]は自分の位置と分身の位置の両方を占めます。分身は@Lookup[@name]にスポットライトが当たっているときに移動でき、@Lookup[@name]は分身の位置にいるかのように攻撃で敵を対象にできます。@Lookup[@name]または分身が攻撃されたとき、攻撃者は<strong>[[/r d6]]</strong>をロールします。偶数の結果なら@Lookup[@name]を対象とします。奇数の結果なら分身を対象とし、その攻撃は失敗します。@Lookup[@name]への攻撃が成功した場合、分身は<strong>恐怖を1消費</strong>して再び作り出すまで消え去ります。</p>"
+                },
                 "O350tAtfEGyy1X4d": {
                     "name": "二連撃",
                     "description": "<p><strong>ストレスを1マーク</strong>して、標準攻撃を2回行います。両方の攻撃が同じ対象に成功した場合、ダメージを合計します。</p>",
@@ -3293,8 +3308,25 @@
         },
         "Dragon Knight": {
             "_note": "Dragon Knight",
+            "name": "竜の騎士",
+            "description": "<p>竜鱗の鎧をまとい、竜の頭の形をした兜をかぶった騎士。</p>",
+            "motivesAndTactics": "隙を突く、距離を取る、敵の体勢を崩す、上空から襲う",
+            "attack": {
+                "name": "ランス"
+            },
+            "experiences": {
+                "3VzaeKaXCqBXqpwN": {
+                    "name": "馬上槍試合"
+                }
+            },
             "items": {
+                "3rM30lvgTyp5NPyx": {
+                    "name": "高所の利",
+                    "description": "<p>騎士は自分より低い位置にいる対象への攻撃に有利を得ます。</p>"
+                },
                 "qDQbsNq0Rq4OcXoI": {
+                    "name": "跳躍斬り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、騎士を遠距離以内の対象の近接距離まで跳躍させ、その対象に通常の攻撃を行わせます。成功した場合、その攻撃は追加で<strong>1d12</strong>のダメージを与え、対象は鎧スロットを1つマークしなければなりませんが、その恩恵は得られません（なおダメージを減らすために防具を使うことはできます）。</p>",
                     "actions": {
                         "fdN6EmdKTopL54yz": {
                             "name": "ストレスをマーク"
@@ -3302,6 +3334,8 @@
                     }
                 },
                 "WSKl5y3UKAsQR9np": {
+                    "name": "巻き返し",
+                    "description": "<p>騎士が通常の攻撃に失敗したとき、<strong>恐怖を1消費</strong>して、有利を得てその攻撃を振り直せます。</p>",
                     "actions": {
                         "zFdn4gBNfqeKVGWI": {
                             "name": "恐怖を消費する"
@@ -3312,12 +3346,25 @@
         },
         "Dragon Mother Mitera": {
             "_note": "Dragon Mother Mitera",
+            "name": "竜の母ミテラ",
+            "description": "<p>虹のあらゆる色に輝く眩いダイヤの鱗を持つ、巨大な七頭の竜。</p>",
+            "motivesAndTactics": "破壊を産み落とす、戦場を支配する、飛ぶ、侵入者を退ける、使える手をすべて使う",
+            "attack": {
+                "name": "噛みつきと斬撃"
+            },
+            "experiences": {
+                "INs46FrCqLaIoSpR": {
+                    "name": "古代"
+                }
+            },
             "items": {
                 "l9rctm6HcPOyKGsG": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>ミテラはGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "CBxzYJ6yIchg3igO": {
                     "name": "金剛の皮",
+                    "description": "<p>カウントダウン（7）。ミテラが最初に現れたとき、カウントダウンを開始します。ミテラは難易度に、カウントダウンダイスの現在値と同じボーナスを得ます。これはミテラの特徴「七頭」によって進みます。カウントダウンが発動したとき、ミテラは<em>脆弱</em>になり、攻撃ロールに＋2のボーナスを得ます。</p>",
                     "actions": {
                         "70Ppl0IZimDLZnxI": {
                             "name": "カウントダウン開始",
@@ -3327,6 +3374,9 @@
                                 }
                             ]
                         },
+                        "2cFgEjrpIVeFvHad": {
+                            "name": "効果を適用する"
+                        },
                         "eh0mvBS3xBn5c4VG": {
                             "name": "カウントダウン発動",
                             "description": "<p>カウントダウンが発動したとき、ミテラは<em>脆弱</em>になり、攻撃ロールに＋2のボーナスを得ます。</p>"
@@ -3334,20 +3384,25 @@
                     },
                     "effects": {
                         "UwPGruGfG3MviTld": {
-                            "name": "金剛の皮"
+                            "name": "金剛の皮",
+                            "description": "<p>ミテラは難易度に、カウントダウンダイスの現在値と同じボーナスを得ます。</p>"
                         },
                         "ABKEuVoS34ndfCRZ": {
+                            "name": "弱った皮",
                             "description": "<p>カウントダウンが発動したとき、ミテラは<em>脆弱</em>になり、攻撃ロールに＋2のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "xeNAQKBgqiaKJgNR": {
+                    "name": "元素のブレス",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、ミテラに任意の頭1つから元素のエネルギーを放たせます：</p><ol><li><p><strong>火。</strong>近距離以内の対象<strong>1d4+1</strong>体に<strong>4d12</strong>の魔法ダメージを与えます。ダメージを受けた対象は、鎧スロットを1つ、または追加でHPを2つマークしなければなりません。</p></li><li><p><strong>雷。</strong>遠距離以内の対象<strong>1d6</strong>体に<strong>4d12</strong>の魔法ダメージを与えます。ただし最初の1体を除く各対象は、直前の対象から近距離以内にいなければなりません。</p></li><li><p><strong>酸。</strong>ミテラの前方、近距離以内の各PCは敏捷リアクションロールを行います。失敗した対象は鎧スロットを2つとHPを2つマークしなければなりません。成功した対象は鎧スロットを1つとHPを1つマークしなければなりません。</p></li><li><p><strong>毒。</strong>有毒な沼の瘴気が、ミテラから近距離以内のすべての対象を「病み」状態にします。「病み」のあいだ、対象はストレスを<strong>1d4</strong>マークしてこの状態を消すまで、アクションロールに不利を得ます。</p></li><li><p><strong>氷。</strong>ミテラの前方、近距離以内の各対象は<strong>4d8+8</strong>の魔法ダメージを受け、頑強ロールに成功して振り払うまで氷で<em>拘束</em>されます。さらにこの範囲は凍りつき、PCがそこを通って移動するには敏捷リアクションロールに成功しなければなりません。</p></li><li><p><strong>闇。</strong>魔法の影の雲が近距離以内の範囲を満たします。ミテラ以外の、雲の内側にいるクリーチャーは<em>脆弱</em>であり、視覚に頼るアクションロールに不利を得ます。この雲は、この「元素のブレス」の選択肢がミテラの特徴「七頭」によって取り除かれたとき消え去ります。</p></li><li><p><strong>光。</strong>純粋な光のエネルギーの光線が、超遠距離以内の直線上の各クリーチャーに28の直接魔法ダメージを与えます。</p></li></ol>",
                     "actions": {
                         "iFtNtbVLnJD4t0FQ": {
                             "name": "ストレスをマーク"
                         },
                         "kwp7I9dNj43EU8Qx": {
                             "name": "火",
+                            "description": "<p>近距離以内の対象<strong>[[/r 1d4+1]]</strong>体に<strong>4d12</strong>の魔法ダメージを与えます。ダメージを受けた対象は、鎧スロットを1つ、または追加でHPを2つマークしなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "火"
@@ -3356,6 +3411,7 @@
                         },
                         "2vMuQV24hmve5EnE": {
                             "name": "雷",
+                            "description": "<p>遠距離以内の対象<strong>[[/r 1d6]]</strong>体に<strong>4d12</strong>の魔法ダメージを与えます。ただし最初の1体を除く各対象は、直前の対象から近距離以内にいなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "雷"
@@ -3364,6 +3420,7 @@
                         },
                         "ZX6UflWMmO1X12Gg": {
                             "name": "酸",
+                            "description": "<p>ミテラの前方、近距離以内の各PCは敏捷リアクションロールを行います。失敗した対象は鎧スロットを2つとHPを2つマークしなければなりません。成功した対象は鎧スロットを1つとHPを1つマークしなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "酸"
@@ -3372,6 +3429,7 @@
                         },
                         "D4zXLc4cj1XnyX55": {
                             "name": "毒",
+                            "description": "<p>有毒な沼の瘴気が、ミテラから近距離以内のすべての対象を「病み」状態にします。「病み」のあいだ、対象はストレスを<strong>1d4</strong>マークしてこの状態を消すまで、アクションロールに不利を得ます。</p>",
                             "areas": [
                                 {
                                     "name": "毒"
@@ -3380,6 +3438,7 @@
                         },
                         "o8yK8P0sIPGX37C4": {
                             "name": "氷",
+                            "description": "<p>ミテラの前方、近距離以内の各対象は<strong>4d8+8</strong>の魔法ダメージを受け、頑強ロールに成功して振り払うまで氷で<em>拘束</em>されます。さらにこの範囲は凍りつき、PCがそこを通って移動するには敏捷リアクションロールに成功しなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "氷"
@@ -3388,6 +3447,7 @@
                         },
                         "yDGIB2KauwxaMrTl": {
                             "name": "暗闇",
+                            "description": "<p>魔法の影の雲が近距離以内の範囲を満たします。ミテラ以外の、雲の内側にいるクリーチャーは<em>脆弱</em>であり、視覚に頼るアクションロールに不利を得ます。 </p><section id=\"secret-oaEwSVwUvkCi5c6s\" class=\"secret\"><p>この雲は、この「元素のブレス」の選択肢がミテラの特徴「七頭」によって取り除かれたとき消え去ります。</p></section>",
                             "areas": [
                                 {
                                     "name": "暗闇"
@@ -3396,6 +3456,7 @@
                         },
                         "y0gUQyGD8oJE5z6B": {
                             "name": "光",
+                            "description": "<p>純粋な光のエネルギーの光線が、超遠距離以内の直線上の各クリーチャーに28の直接魔法ダメージを与えます。</p>",
                             "areas": [
                                 {
                                     "name": "光"
@@ -3405,17 +3466,21 @@
                     },
                     "effects": {
                         "Yq318fYTybiEMWBN": {
+                            "name": "病み",
+                            "description": "<p>「病み」のあいだ、対象はストレスを<strong>1d4</strong>マークしてこの状態を消すまで、アクションロールに不利を得ます。</p>",
                             "changes": [
                                 "アクションロール"
                             ]
                         },
                         "Tg1709lkod3ExeBV": {
-                            "name": "氷結"
+                            "name": "氷結",
+                            "description": "<p>頑強ロールに成功して振り払うまで、氷で<em>拘束</em>されています。</p>"
                         }
                     }
                 },
                 "OCDeXZ8K5EbT8ywA": {
                     "name": "尾の払い",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内のすべての対象を攻撃します。この攻撃が成功した対象は<strong>2d20+10</strong>の物理ダメージを受け、遠距離まで吹き飛ばされます。この攻撃でHPをマークした対象は、HPを1つ消すまで<em>脆弱</em>になります。この攻撃が失敗した対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "aZSQVMaQiOkrLPHB": {
                             "name": "恐怖を消費する",
@@ -3428,22 +3493,34 @@
                     },
                     "effects": {
                         "P5Ai9OJIQjt2bSTe": {
+                            "name": "払い飛ばされた",
                             "description": "<p>HPを1つ消すまで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "S5VDtif4FxRerSoD": {
                     "name": "畏怖",
+                    "description": "<p>ミテラがPCへの攻撃ロールに成功したとき、または遠距離以内でPCがロールに失敗したとき、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "Myxx8xKehb4I0mzs": {
                             "name": "恐怖を得る"
                         }
                     }
+                },
+                "MfJHdOuuWXCZpiUx": {
+                    "name": "七頭",
+                    "description": "<p>ミテラがダメージを受けたとき、<strong>d8</strong>をロールします。その結果に対応する「元素のブレス」の選択肢を永久に取り除きます。結果が8の場合、または対応する選択肢がすでに取り除かれている場合、ダイヤの皮のカウントダウンを進めます（「ダイヤの皮」参照）。</p>"
                 }
             }
         },
         "Drake": {
             "_note": "Drake",
+            "name": "ドレイク",
+            "description": "<p>鉤爪を持つ四足獣。鱗に覆われた蛇のような体を持ち、同族である竜たちに喜んで仕える。</p>",
+            "motivesAndTactics": "巻きついて締め潰す、主を守る、巣穴と遺跡を這い回る、先手を取る",
+            "attack": {
+                "name": "爪と歯"
+            },
             "experiences": {
                 "JZONgM8gtZYw48fM": {
                     "name": "獰猛"
@@ -3455,6 +3532,8 @@
                     "description": "<p>@Lookup[@name]はGMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "Bbr3ZrCKZVkOBA0G": {
+                    "name": "番犬",
+                    "description": "<p>PCが近距離以内のクリーチャーにダメージを与えようとするとき、<strong>ストレスを1マーク</strong>して、@Lookup[@name]を移動させてその攻撃に割り込ませ、代わりにダメージを受けさせられます。攻撃者が@Lookup[@name]の新しい位置から近接距離以内にいる場合、恐怖を消費せずに直ちに@Lookup[@name]にスポットライトを当てられます。</p>",
                     "actions": {
                         "VCqZXDcEJzs0vfLY": {
                             "name": "ストレスをマーク"
@@ -3465,6 +3544,12 @@
         },
         "Dryad": {
             "_note": "Dryad",
+            "name": "ドライアド",
+            "description": "<p>人型の樹木の姿をとった自然の精霊。</p>",
+            "motivesAndTactics": "命じる、育てる、追い払う、森を守る",
+            "attack": {
+                "name": "枯れ枝の短弓"
+            },
             "experiences": {
                 "H8rksUtFoQJZWnef": {
                     "name": "森の知識"
@@ -3473,6 +3558,7 @@
             "items": {
                 "i9HbArl09dX2BvzY": {
                     "name": "茨の茂み",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の一点を対象にします。その点から近距離以内の範囲を覆う茨の茂みを生み出します。その範囲内のすべての対象は、行動するとき<strong>2d6+2</strong>の物理ダメージを受けます。対象がその範囲から出るには、器用ロールに成功するか、攻撃で@Lookup[@name]に20を超えるダメージを与えなければなりません。</p>",
                     "actions": {
                         "iCJdIs57hfh5Cb0u": {
                             "name": "ストレスをマーク",
@@ -3483,11 +3569,14 @@
                             ]
                         },
                         "cpZ5c9d3opSA4BN9": {
-                            "name": "ダメージ"
+                            "name": "ダメージ",
+                            "description": "<p>その範囲内のすべての対象は、行動するとき<strong>2d6+2</strong>の物理ダメージを受けます。</p>"
                         }
                     }
                 },
                 "yKWQLL3qsEZlQjyb": {
+                    "name": "若木を育てる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.o63nS0k3wHu6EgKP]{トレントの若木のミニオン}を3体育てます。それらは近距離に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "R84DdS0OIx2cUt1w": {
                             "name": "恐怖を消費する"
@@ -3496,6 +3585,7 @@
                 },
                 "z4JbqiHuxrWy6Cpu": {
                     "name": "我らはひとつ",
+                    "description": "<p>近距離以内で味方が死んだとき、恐怖を1消費して、倒れた味方の生命力が森に還るとともにHPを2つとストレスを2つ消せます。</p>",
                     "actions": {
                         "SrhuW3mfOuqg1ys6": {
                             "name": "恐怖を消費する",
@@ -3511,6 +3601,17 @@
         },
         "Dullahan": {
             "_note": "Dullahan",
+            "name": "デュラハン",
+            "description": "<p>馬に乗った幽鬼。片手に自らの切り落とされた頭を抱え、もう片手に人の背骨で作った鞭を振るう。</p>",
+            "motivesAndTactics": "一睨みで破滅させる、水上を駆ける、重い蹄で蹴る",
+            "attack": {
+                "name": "背骨の鞭"
+            },
+            "experiences": {
+                "JbAuXyqzpXhXbrs6": {
+                    "name": "夜行"
+                }
+            },
             "items": {
                 "BubX3LEWu7RkFj1x": {
                     "name": "スペクター",
@@ -3523,24 +3624,46 @@
                     },
                     "effects": {
                         "VBW2S2d1iYOXcAvJ": {
-                            "name": "スペクター"
+                            "name": "スペクター",
+                            "description": "<p>デュラハンは物理ダメージに抵抗を持ちます。</p>"
+                        }
+                    }
+                },
+                "tS4QCspN9hnBeFqb": {
+                    "name": "幽鬼の乗騎",
+                    "description": "<p>乗騎に乗っている間、@Lookup[@name]はアクションを行う前に近距離ではなく遠距離まで移動できます。@Lookup[@name]が落馬した場合、ストレスを1マークして再び召喚するまで乗騎は消えています。@Lookup[@name]は馬に乗っていない間<em>脆弱</em>です。</p>",
+                    "effects": {
+                        "nQ3wfwRPPNfXx8ba": {
+                            "name": "下馬",
+                            "description": "<p>デュラハンは馬に乗っていない間<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "iQ4jwH7KU0BDLFqL": {
+                    "name": "骨鞭の一撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、対象は<strong>4d4+10</strong>の直接物理ダメージを受け、HPを1つ消すまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "IREVgalskrlytiW4": {
                             "name": "ストレスをマーク"
                         }
+                    },
+                    "effects": {
+                        "gwhl5PxjMpsumSxT": {
+                            "name": "鞭打たれた",
+                            "description": "<p>HPを1つ消すまで<em>脆弱</em>です。</p>"
+                        }
                     }
                 },
                 "7AqBPsOoK5KPCY2m": {
+                    "name": "死の睨み",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内のPCを1人選びます。その対象は社交リアクションロール（19）を行います。成功した場合、ストレスを1マークします。失敗した場合、HPを1マークし、破滅カウントダウン（4）を開始します。これは@Lookup[@name]にスポットライトが当たったときに進みます。発動したとき、その対象はデスムーブを行います。@Lookup[@name]が倒されるか、PCたちが休憩を取った場合、すべての破滅カウントダウンは終了します。</p>",
                     "actions": {
                         "Xv9H64VnMd1bqNOl": {
                             "name": "恐怖を消費する"
                         },
                         "eqcmHs9mLhzxYPyG": {
                             "name": "カウントダウン開始",
+                            "description": "<p>破滅カウントダウン（4）を開始します。これは@Lookup[@name]にスポットライトが当たったときに進みます。発動したとき、その対象はデスムーブを行います。@Lookup[@name]が倒されるか、PCたちが休憩を取った場合、すべての破滅カウントダウンは終了します。</p>",
                             "countdown": [
                                 {
                                     "name": "破滅"
@@ -3553,8 +3676,16 @@
         },
         "Electric Eels": {
             "_note": "Electric Eels",
+            "name": "電気ウナギの群れ",
+            "description": "<p>取り囲んで感電させるウナギの群れ。</p>",
+            "motivesAndTactics": "大型の捕食者を避ける、獲物に電撃を与える、食いちぎる",
+            "attack": {
+                "name": "感電する噛みつき"
+            },
             "items": {
                 "u5NL1eUJeAkIEpgt": {
+                    "name": "麻痺の電撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に通常の攻撃を行います。HPをマークした対象1体ごとに、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "L4Rpg7fnFuxpD3im": {
                             "name": "ストレスをマーク"
@@ -3574,7 +3705,17 @@
         },
         "Elemental Spark": {
             "_note": "Elemental Spark",
+            "name": "元素の火花",
+            "description": "<p>元素の炎の、燃え立つ小片。</p>",
+            "motivesAndTactics": "撃つ、焼き尽くす、質量を増す",
+            "attack": {
+                "name": "炎の噴出"
+            },
             "items": {
+                "ZwQ2W90hoMe3KFxk": {
+                    "name": "ミニオン（9）",
+                    "description": "<p>@Lookup[@name]はダメージを受けると倒されます。PCが@Lookup[@name]に与えたダメージ9ごとに、その攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
+                },
                 "13OraSLq2YjpZqbm": {
                     "name": "グループ攻撃",
                     "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その近距離以内のすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接射程内へ移動し、1回の共有の攻撃ロールを行います。成功した場合、それぞれが@Lookup[@system.attack.damageFormula]の物理ダメージを与えます。このダメージは合計します。</p>",
@@ -3588,14 +3729,24 @@
         },
         "Elephant": {
             "_note": "Elephant",
+            "name": "象",
+            "description": "<p>大きな耳と物を掴める鼻を持つ、巨大な厚皮動物。</p>",
+            "motivesAndTactics": "草木を食べる、群れを守る、交わる",
+            "attack": {
+                "name": "足と牙"
+            },
             "experiences": {
                 "7NwvsTANFupQ7vOO": {
                     "name": "巨大"
+                },
+                "Tay4hf68HsWoR2Kz": {
+                    "name": "決して忘れない"
                 }
             },
             "items": {
                 "1VtSVY2AP3yzn9YA": {
                     "name": "踏みつけ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]を遠距離まで一直線に突進させます。その進路上の各対象は、敏捷リアクションロールに成功しなければ<strong>2d10+3</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "1OyOXhfX9jfCasOJ": {
                             "name": "ストレスをマーク",
@@ -3608,6 +3759,8 @@
                     }
                 },
                 "retlIReL4PyUzqhV": {
+                    "name": "投げ飛ばし",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、対象を近距離以内の別の場所へ投げ飛ばさせ、追加で<strong>1d12</strong>のダメージを与えられます。</p>",
                     "actions": {
                         "tnoGrqkVtZnJgNua": {
                             "name": "恐怖を消費する"
@@ -3618,12 +3771,16 @@
         },
         "Elite Soldier": {
             "_note": "Elite Soldier",
+            "name": "精鋭兵",
+            "description": "<p>鎧を着た従騎士、または立身を狙う経験豊かな平民。</p>",
+            "motivesAndTactics": "栄誉を得る、秩序を保つ、同盟を結ぶ",
             "attack": {
                 "name": "スピア"
             },
             "items": {
                 "ojiIZHBd0sMLxSUE": {
                     "name": "補強する",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、味方の近接距離まで移動し、超近距離以内の対象に通常の攻撃を行います。成功した場合、<strong>2d10+2</strong>の物理ダメージを与え、その味方はストレスを1消せます。</p>",
                     "actions": {
                         "XquYMA2xJZUKSmXQ": {
                             "name": "ストレスをマーク"
@@ -3631,6 +3788,8 @@
                     }
                 },
                 "zcfyEY29yWqJtZbl": {
+                    "name": "臣下の忠義",
+                    "description": "<p>@Lookup[@name]が、ダメージを受けようとしている騎士または他の貴人から超近距離以内にいるとき、ストレスを1マークして、その者の近接距離まで移動し、代わりにダメージを受けられます。</p>",
                     "actions": {
                         "dwpQNx63V6hL1mXZ": {
                             "name": "ストレスをマーク"
@@ -7027,6 +7186,7 @@
         },
         "Minor Demon": {
             "_note": "Minor Demon",
+            "name": "下級魔神",
             "attack": {
                 "name": "爪"
             },
@@ -7080,8 +7240,7 @@
                         }
                     }
                 }
-            },
-            "name": "下級魔神"
+            }
         },
         "Minor Fire Elemental": {
             "_note": "Minor Fire Elemental",
@@ -9561,6 +9720,7 @@
         },
         "Treant Sapling": {
             "_note": "Treant Sapling",
+            "name": "トレントの若木",
             "items": {
                 "OlJpLaFanzspeShi": {
                     "name": "ミニオン（6）",
