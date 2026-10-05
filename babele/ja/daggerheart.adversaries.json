@@ -4979,6 +4979,12 @@
         },
         "Fungispunj Sporophore": {
             "_note": "Fungispunj Sporophore",
+            "name": "ファンギスパンジの胞子嚢",
+            "description": "<p>死者を操れる巨大なキノコのクリーチャー。</p>",
+            "motivesAndTactics": "倒れた者を目覚めさせる、コロニーを守る、胞子を広げる",
+            "attack": {
+                "name": "海綿の拳"
+            },
             "experiences": {
                 "S9BTMIE1LW1adet1": {
                     "name": "指揮官"
@@ -4990,6 +4996,7 @@
             "items": {
                 "raqERxpdxTa2On8F": {
                     "name": "神経毒の胞子雲",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、胞子嚢に近距離以内のすべての対象へ胞子の雲を吹きつけさせます。各PCは敏捷リアクションロールに成功しなければ、<strong>希望を1消費</strong>してこの状態を消すまで「毒」状態になります。「毒」のあいだ、対象はアクションロールを行う前に<strong>d6</strong>をロールしなければなりません。結果が4以下の場合、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "4CzUo4eCgBxLoTSm": {
                             "name": "ストレスをマーク",
@@ -5002,34 +5009,66 @@
                     },
                     "effects": {
                         "6z7PQnXHCw3ceCBz": {
-                            "name": "毒"
+                            "name": "毒",
+                            "description": "<p><strong>希望を1消費</strong>してこの状態を消すまで「毒」状態です。</p><p>「毒」のあいだ、アクションロールを行う前にd6をロールしなければなりません。結果が4以下の場合、ストレスを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "Ff7a0Meknufbkby8": {
+                    "name": "再動者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、胞子嚢に超近距離以内の死体へ精神感応の胞子の雲を吹きつけさせます。その死体はHPとストレスをすべて消し、胞子嚢の精神支配のもとで再び動き出します。胞子嚢にスポットライトが当たったとき、それが支配するすべての死体にもスポットライトを当てられます。</p>",
                     "actions": {
                         "X0mMXXT7jsDQuPt8": {
                             "name": "恐怖を消費する"
                         }
+                    },
+                    "effects": {
+                        "THgK0K21X6Qm25Wz": {
+                            "name": "再び動き出した死体",
+                            "description": "<p>胞子嚢にスポットライトが当たったとき、それが支配するすべての死体にもスポットライトを当てられます。</p>"
+                        }
                     }
                 },
                 "CqMQsFGQ1GR6Auii": {
+                    "name": "コロニー",
+                    "description": "<p>任意の数のストレスをマークして、胞子嚢に同じ数の@UUID[Compendium.daggerheart.adversaries.Actor.55oYzFQRmrXCqNxn]{ファンギスパンジの胞子子}を近距離以内に召喚させます。</p>",
                     "actions": {
                         "jPc8q0SPDQeBL7fx": {
                             "name": "ストレスをマーク"
                         }
                     }
+                },
+                "HazO7wNFjep1jAUz": {
+                    "name": "精神融合",
+                    "description": "<p>すべてのファンギスパンジは互いに念話で意思を通わせられます。胞子嚢が攻撃によってストレスをマークさせられるとき、代わりにシーン内のファンギスパンジの味方にそのストレスをマークさせられます。配分は胞子嚢が選びます。</p>"
                 }
             }
         },
         "Gargantuan Sea Turtle": {
             "_note": "Gargantuan Sea Turtle",
+            "name": "巨大海亀",
+            "description": "<p>アダマンティンの甲羅と嘴を持つ、怪物じみた海亀。</p>",
+            "motivesAndTactics": "富を得る、交易船を転覆させる、待ち伏せる、波を遮蔽に使う",
+            "attack": {
+                "name": "噛み砕く顎"
+            },
+            "experiences": {
+                "ea55HkQcIOiZutep": {
+                    "name": "外洋"
+                }
+            },
             "items": {
                 "KSVPOEEmXpt4Pwmy": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>海亀はGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
+                },
+                "ss3Yf9wCL8Qz3Gb6": {
+                    "name": "貫く噛みつき",
+                    "description": "<p>海亀がPCへの通常の攻撃に成功したとき、そのPCは恩恵を得られないまま鎧スロットを1つマークするか、2倍のダメージを受けるかを選ばなければなりません。</p>"
                 },
                 "afz1zt0dMBQwanI0": {
                     "name": "尾の打撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、海亀の背後、超近距離以内のすべてのPCに通常の攻撃を行います。成功した場合、対象は追加で<strong>1d12</strong>の物理ダメージを受け、海亀から近距離まで押しやられます。</p>",
                     "actions": {
                         "bDZaQx5yi8byoosk": {
                             "name": "ストレスをマーク",
@@ -5043,6 +5082,7 @@
                 },
                 "3X0uVX5xsTcrpQ16": {
                     "name": "巨量の水柱",
+                    "description": "<p><strong>恐怖を1消費</strong>して、海亀にその重量で押し止めようのない水の壁を放たせ、遠距離以内のすべてのクリーチャーを対象とします。各PCは、その潮流を乗り切るために頑強リアクションロールを行います。失敗した対象は海亀から近距離まで押しやられ、<strong>4d8</strong>の物理ダメージを受け、一時的に<em>脆弱</em>になります。成功した対象はストレスを1マークしなければなりません。失敗した対象1体ごとに、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "XYestHAfE51JMpnb": {
                             "name": "恐怖を消費する",
@@ -5052,10 +5092,16 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "UoOAdCmvjoGymNr8": {
+                            "name": "ギガトン：直撃"
+                        }
                     }
                 },
                 "XCVuJ4tJP152M5Pr": {
                     "name": "蒸気のブレス",
+                    "description": "<p><strong>恐怖を2消費</strong>して、海亀に超高温の蒸気の噴流を放たせ、その前方、近距離以内のすべてのPCを対象とします。各対象は敏捷リアクションロールを行います。失敗した対象は<strong>4d8</strong>の魔法ダメージを受け、一時的に<em>脆弱</em>になります。成功した対象は、ストレスを1マークするか、ダメージを半分受けるかを選ばなければなりません。</p>",
                     "actions": {
                         "mBNpexpcn9Qko1N8": {
                             "name": "恐怖を消費する",
@@ -5065,17 +5111,40 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "hB7IZ7Momobyhx7F": {
+                            "name": "蒸された"
+                        }
                     }
                 }
             }
         },
         "Gargantuan War Machine": {
             "_note": "Gargantuan War Machine",
+            "name": "巨大戦争機械",
+            "description": "<p>宝石の目を持つ高さ100フィートのアダマンティンの構築物。胸部の元素の炎の坩堝で動いている。</p>",
+            "motivesAndTactics": "叩き潰す、破壊する",
+            "attack": {
+                "name": "鉄の拳"
+            },
+            "experiences": {
+                "zCFl55F1zjNCbS7N": {
+                    "name": "不屈"
+                }
+            },
             "items": {
                 "chIi959EtrJuymsB": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>機械はGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
+                },
+                "Dji8Hfl4evCsiAZv": {
+                    "name": "畏るべき巨体",
+                    "description": "<p>機械が戦場に現れたとき、各PCは希望を1失うか、ストレスを<strong>1d4</strong>マークしなければなりません。</p>"
                 },
                 "mqCuS2uMerHe5YoI": {
+                    "name": "ロケットパンチ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のPCに攻撃を行います。成功した場合、対象は<strong>4d12+10</strong>の直接物理ダメージを受け、恩恵を得られないまま鎧スロットを2つマークします。</p>",
                     "actions": {
                         "w06aL8MR6JOGA5Nm": {
                             "name": "ストレスをマーク"
@@ -5084,6 +5153,7 @@
                 },
                 "z780aZ858HHSiTLz": {
                     "name": "大地を砕く踏みつけ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の一点を選び、その点から近距離以内のすべての敵に攻撃ロールを行います。この攻撃が成功した対象は<strong>4d12</strong>の直接物理ダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。さらにその範囲全体が瓦礫となり、PCがそこを通って移動するには敏捷リアクションロール（16）に成功しなければなりません。</p>",
                     "actions": {
                         "tIVAHRMrd5vUzo9k": {
                             "name": "恐怖を消費する",
@@ -5103,6 +5173,7 @@
                 },
                 "SNc1Tf2WAUKRmVAu": {
                     "name": "過充填",
+                    "description": "<p>カウントダウン（ループ 2d6）。機械に初めてスポットライトが当たったとき、カウントダウンを開始します。これは機械にスポットライトが当たるたびに進みます。発動したとき、機械の胸部の坩堝が魔法の炎を噴き上げ、このステータスブロックにトークンを1つ置きます。このステータスブロック上のトークン1つごとに、機械は難易度と攻撃ロールに＋1のボーナスを得て、通常の攻撃が追加で<strong>1d12</strong>のダメージを与えます。機械が重傷ダメージを受けたとき、トークンを1つ取り除きます。</p>",
                     "actions": {
                         "xccE9F4ovCbuaaUd": {
                             "name": "カウントダウン開始",
@@ -5115,7 +5186,8 @@
                     },
                     "effects": {
                         "KZMrnBbtjlf1coHI": {
-                            "name": "過充填"
+                            "name": "過充填",
+                            "description": "<p>このステータスブロック上のトークン1つごとに、機械は難易度と攻撃ロールに＋1のボーナスを得て、通常の攻撃が追加で<strong>1d12</strong>のダメージを与えます。機械が重傷ダメージを受けたとき、トークンを1つ取り除きます。</p>"
                         }
                     }
                 }
@@ -5123,21 +5195,38 @@
         },
         "Gargoyle": {
             "_note": "Gargoyle",
+            "name": "ガーゴイル",
+            "description": "<p>恐ろしい獣や魔神をかたどった、魔法で動く石像。</p>",
+            "motivesAndTactics": "白昼堂々と隠れる、見張る、急降下する",
+            "attack": {
+                "name": "石の爪"
+            },
             "experiences": {
                 "a1KlvwlhFkOn6KQX": {
                     "name": "擬態"
+                },
+                "pslHotwRn6SsxwH7": {
+                    "name": "遺跡"
                 }
             },
             "items": {
                 "bJHrY6RTqDaqJrsU": {
+                    "name": "生ならざるもの",
                     "description": "<p>@Lookup[@name]は魔法ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "6pc8O9csOhmCFMz4": {
-                            "name": "基本"
+                            "name": "基本",
+                            "description": "<p>ガーゴイルは魔法ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
+                "WLqbQcas7nK0lmWT": {
+                    "name": "急降下の一撃",
+                    "description": "<p>遠距離以内の一点を選びます。@Lookup[@name]はその点まで移動し、その進路上の対象1体に通常の攻撃を行います。</p>"
+                },
                 "tg3JWGZTcJKYUNyz": {
+                    "name": "石化の斬撃",
+                    "description": "<p>@Lookup[@name]がダメージを与えたとき、対象は頑強リアクションロールに成功しなければ<em>脆弱</em>になります。対象がすでに<em>脆弱</em>である場合、<em>拘束</em>されます。対象がすでに<em>脆弱</em>かつ<em>拘束</em>である場合、デスムーブを行わなければなりません。PCは状態1つにつき<strong>希望を1消費</strong>して、それを消せます。</p>",
                     "actions": {
                         "1bt0eRoNsc84J3Gv": {
                             "name": "リアクションロール"
@@ -5148,6 +5237,12 @@
         },
         "Ghastly Legion": {
             "_note": "Ghastly Legion",
+            "name": "幽鬼の軍団",
+            "description": "<p>古き誓いを果たすため、夢なき眠りから呼び起こされた幽霊の大軍。</p>",
+            "motivesAndTactics": "圧倒する、仕える、群がる",
+            "attack": {
+                "name": "幽鬼の武具"
+            },
             "experiences": {
                 "Q2ZqTOuWPGloNhsH": {
                     "name": "戦術"
@@ -5166,6 +5261,7 @@
                 },
                 "1yuuNfi8PkpCQC0U": {
                     "name": "最後の一幕",
+                    "description": "<p>軍団が倒されたとき、消え去る前に近距離以内のすべての対象へ通常の攻撃を行います。</p>",
                     "actions": {
                         "4zOASNDIx1vD2kfU": {
                             "areas": [
@@ -5189,12 +5285,25 @@
         },
         "Giant Beastmaster": {
             "_note": "Giant Beastmaster",
+            "name": "巨人の獣使い",
+            "description": "<p>革をまとい、鞭と巨大な弓を携えた戦士。</p>",
+            "motivesAndTactics": "命じる、生計を立てる、立ち回る、縫い止める、相棒の動物を守る",
             "attack": {
                 "name": "ロングボウ"
             },
+            "experiences": {
+                "YbbqdLfMo5V5yA0J": {
+                    "name": "動物の扱い"
+                }
+            },
             "items": {
+                "oUuUwtHMJidzLN6q": {
+                    "name": "二つで一つ",
+                    "description": "<p>@Lookup[@name]にスポットライトが当たったとき、現在その支配下にあるティア1の動物の敵対者にもスポットライトを当てられます。</p>"
+                },
                 "6ZrDjgnWufJohkp1": {
                     "name": "縫い止める一撃",
+                    "description": "<p>対象に通常の攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して、その対象を近くの面に縫い止められます。縫い止められた対象は、器用ロールまたは頑強ロールに成功して振り払うまで<em>拘束</em>されます。</p>",
                     "actions": {
                         "ErwQgU4dwBcmZIBX": {
                             "name": "攻撃"
@@ -5202,11 +5311,15 @@
                     },
                     "effects": {
                         "vb1sZCOLwDNLsr3j": {
-                            "name": "縫い止める一撃"
+                            "name": "縫い止める一撃",
+                            "description": "<p>器用ロールまたは頑強ロールに成功して振り払うまで<em>拘束</em>されています。</p>",
+                            "durationDescription": "<p>器用ロールまたは頑強ロールに成功して振り払うまで。</p>"
                         }
                     }
                 },
                 "w1oHm0NoEavQgUzl": {
+                    "name": "死をもたらす相棒",
+                    "description": "<p>シーンごとに2回、@Lookup[@name]の支配下にある熊、ダイアウルフ、または同様のティア1の動物の敵対者を召喚します。その敵対者は近距離に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "eSRUMqpQDPRG9leg": {
                             "name": "召喚"
@@ -5217,6 +5330,9 @@
         },
         "Giant Brawler": {
             "_note": "Giant Brawler",
+            "name": "巨人の喧嘩屋",
+            "description": "<p>とりわけ筋骨隆々とした巨人。人よりも大きな戦鎚を振るう。</p>",
+            "motivesAndTactics": "生計を立てる、圧倒する、叩きつける、倒す",
             "attack": {
                 "name": "ウォーハンマー"
             },
@@ -5228,6 +5344,7 @@
             "items": {
                 "ro8AtBdgklyyuydK": {
                     "name": "破城槌",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に近距離以内の、壊せそうな無生物（壁、荷車、市場の屋台など）へ突進させ、それを破壊させます。その物体から超近距離以内のすべての対象は、敏捷リアクションロールに成功しなければ、破片で<strong>2d4+3</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "zns57MqnZ6M1d4r0": {
                             "name": "セーブを振る",
@@ -5240,6 +5357,8 @@
                     }
                 },
                 "kKBbEAffbHxmHo15": {
+                    "name": "血の報い",
+                    "description": "<p>@Lookup[@name]が超近距離以内からの攻撃でHPを2つ以上マークしたとき、その攻撃者に通常の攻撃を行えます。成功した場合、@Lookup[@name]は通常のダメージの代わりに<strong>2d6+15</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "D53yjFXoP5uFXe9M": {
                             "name": "攻撃"
@@ -5259,18 +5378,26 @@
         },
         "Giant Eagle": {
             "_note": "Giant Eagle",
+            "name": "巨大鷲",
+            "description": "<p>血に染まった鉤爪を持つ巨大な猛禽。</p>",
+            "motivesAndTactics": "獲物を狩る、動き続ける、決定的に打つ",
+            "attack": {
+                "name": "爪と嘴"
+            },
             "items": {
                 "wdNrstuoh4MFShYG": {
                     "name": "飛行",
                     "description": "<p>飛行している間、@Lookup[@name]は難易度に＋3のボーナスを得ます。</p>",
                     "effects": {
                         "odAyKY0BSAkcO3Dd": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>飛行している間、鷲は難易度に＋3のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "MabIQE1Kjn60j08J": {
                     "name": "致死の急降下",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の対象を攻撃します。成功した場合、<strong>2d10+2</strong>の物理ダメージを与えて対象を倒し、次に行動するまで<em>脆弱</em>にします。</p>",
                     "actions": {
                         "KwsxjI3jBzmxgkPu": {
                             "name": "攻撃"
@@ -5278,12 +5405,14 @@
                     },
                     "effects": {
                         "m6qqQZxukDPVcGdQ": {
-                            "name": "致死の急降下"
+                            "name": "致死の急降下",
+                            "description": "<p>次に行動するまで<em>脆弱</em>。</p>"
                         }
                     }
                 },
                 "NEOQ0E9AGSSIDm4v": {
                     "name": "飛び立つ",
+                    "description": "<p>超近距離以内の対象に攻撃を行います。成功した場合、<strong>2d4+3</strong>の物理ダメージを与え、対象は敏捷リアクションロールに成功しなければ、@Lookup[@name]の巨大な鉤爪に一時的に拘束されます。対象が拘束された場合、@Lookup[@name]は直ちにその対象を掴んだまま戦場の上空、超遠距離まで舞い上がります。</p>",
                     "actions": {
                         "NtgA9EQPF2Rdb9KK": {
                             "name": "攻撃"
@@ -5296,6 +5425,8 @@
                     }
                 },
                 "jY0ynjYvbS6E3NgJ": {
+                    "name": "死の落下",
+                    "description": "<p>飛行している間、@Lookup[@name]は掴んでいる拘束された対象を落とせます。落とされた対象は拘束を解かれますが、落下を始めます。PCたちの次のアクションまでにその落下が止められなかった場合、対象は着地時に<strong>2d20</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "1tO018UgL0VG51ti": {
                             "name": "ダメージ"
@@ -5306,6 +5437,12 @@
         },
         "Giant Mosquitoes": {
             "_note": "Giant Mosquitoes",
+            "name": "巨大蚊の群れ",
+            "description": "<p>拳ほどの大きさの蚊が数十匹、身を守るために群れ飛んでいる。</p>",
+            "motivesAndTactics": "飛び去る、まとわりつく、血を奪う",
+            "attack": {
+                "name": "口針"
+            },
             "experiences": {
                 "4SUFXKZh33mFvNt9": {
                     "name": "擬態"
@@ -5314,13 +5451,17 @@
             "items": {
                 "gxYV6iTMM1S9Vv5v": {
                     "name": "飛行中",
+                    "description": "<p>飛行している間、@Lookup[@name]は難易度に＋2のボーナスを得ます。</p>",
                     "effects": {
                         "aATxfjeOzUYtKuU6": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>飛行している間、蚊の群れは難易度に＋2のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "BTlMLjG65KQs0Jk2": {
+                    "name": "吸血者",
+                    "description": "<p>@Lookup[@name]の攻撃で対象がHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その対象に追加でHPを1マークさせられます。</p>",
                     "actions": {
                         "7ee6IhkKYDehjLmg": {
                             "name": "ストレスをマーク"
@@ -5340,20 +5481,35 @@
         },
         "Giant Octopus": {
             "_note": "Giant Octopus",
+            "name": "巨大タコ",
+            "description": "<p>吸盤のついた8本の腕と硬い嘴のような顎を持つ、怪物じみた水棲の軟体動物。</p>",
+            "motivesAndTactics": "締め潰して噛む、組み付く、帆船を追い立てる、獲物を狩る",
+            "attack": {
+                "name": "腕の鞭打ち"
+            },
+            "experiences": {
+                "kyyWODZu7Hi2EkeU": {
+                    "name": "知性"
+                }
+            },
             "items": {
                 "L3m1nCmX1G4FU64P": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>タコはGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "1TPFCJEgXEpXti7l": {
+                    "name": "腕こそ凶器",
                     "description": "<p>タコが最初に現れたとき、8の面を上に向けて<strong>d8</strong>をこのステータスブロックに置きます。タコがPCへの標準攻撃に成功したとき、そのダイスの値を与えるダメージに加えられます。ロールにその値を加えたあと、ダイスの値を1減らします。</p>",
                     "effects": {
                         "9nzj5ORCAjHBF9rS": {
+                            "name": "腕こそ凶器",
                             "description": "<p>タコが最初に現れたとき、8の面を上に向けて<strong>d8</strong>をこのステータスブロックに置きます。タコがPCへの標準攻撃に成功したとき、そのダイスの値を与えるダメージに加えられます。ロールにその値を加えたあと、ダイスの値を1減らします。</p>"
                         }
                     }
                 },
                 "7Eiy4PoehsyoMQU2": {
                     "name": "組み付く",
+                    "description": "<p>タコが通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、タコにその対象へ組み付かせられます。組み付かれている間、その対象は頑強ロールまたは器用ロールに成功して振り払うまで<em>拘束</em>かつ<em>脆弱</em>です。</p>",
                     "actions": {
                         "jPORgfoit1Dysm11": {
                             "name": "恐怖を消費する"
@@ -5361,12 +5517,14 @@
                     },
                     "effects": {
                         "RKroGrvQgGYygBzh": {
-                            "name": "組み付かれ"
+                            "name": "組み付かれ",
+                            "description": "<p>組み付かれている間、頑強ロールまたは器用ロールに成功して振り払うまで<em>拘束</em>かつ<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "nfRNTiPwhuAq7J0J": {
                     "name": "圧し潰す",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、タコに組み付かれている対象に<strong>3d8</strong>の直接物理ダメージを与えます。</p>",
                     "actions": {
                         "cqRJPvzRXrMgpyAs": {
                             "name": "ストレスをマーク"
