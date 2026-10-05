@@ -3800,13 +3800,28 @@
         },
         "Elk": {
             "_note": "Elk",
+            "name": "エルク",
+            "description": "<p>大きな鹿。</p>",
+            "motivesAndTactics": "跳ねて逃げる、草を食む、発情する、危険を察する",
+            "attack": {
+                "name": "枝角"
+            },
             "experiences": {
                 "mWolvWSrzcVAQ4YT": {
                     "name": "鋭敏な感覚"
+                },
+                "zU5m9ZVki3AgmhCk": {
+                    "name": "疾走"
                 }
             },
             "items": {
+                "WxeMh4vOkER8kCLr": {
+                    "name": "頭突き",
+                    "description": "<p>@Lookup[@name]が通常の攻撃を行う前に近距離以上の距離から移動した場合、通常のダメージの代わりに<strong>1d12+2</strong>の物理ダメージを与えます。</p>"
+                },
                 "ku7SWV1AXQ1d50sN": {
+                    "name": "逃走",
+                    "description": "<p>@Lookup[@name]がHPまたはストレスをマークしたとき、リアクションロール（10）に成功しなければシーンから逃げ去ります。</p>",
                     "actions": {
                         "6Jfk9gDwaNsRgcWC": {
                             "name": "逃走判定"
@@ -3817,6 +3832,17 @@
         },
         "Entombed Cat Beast": {
             "_note": "Entombed Cat Beast",
+            "name": "埋葬された猫獣",
+            "description": "<p>豹の頭骨を頭に持つ、大きな不死の人型骸骨。</p>",
+            "motivesAndTactics": "突進して攻める、引き裂く、恐れさせる",
+            "attack": {
+                "name": "剃刀の爪"
+            },
+            "experiences": {
+                "qusajYLLa0pHpYow": {
+                    "name": "野性"
+                }
+            },
             "items": {
                 "0SihRH0I9HM3KRSN": {
                     "name": "リレントレス（3）",
@@ -3824,6 +3850,7 @@
                 },
                 "mmcZCBhR6W4vxXk2": {
                     "name": "耳を裂く喚き",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、猫獣から遠距離以内の各PCに社交リアクションロールを行わせます。失敗した対象は、希望とともにロールするまで「動揺」状態になります。猫獣が「動揺」のPCへの攻撃に成功したとき、ダメージを2回振って良い方の結果を採用し、その後対象から「動揺」状態を消します。</p>",
                     "actions": {
                         "hUUU4o5SrnfGmkkk": {
                             "name": "ストレスをマーク",
@@ -3833,27 +3860,73 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "Ts627XOWjV43eY0u": {
+                            "name": "動揺",
+                            "description": "<p>希望とともにロールするまで「動揺」状態です。猫獣があなたへの攻撃に成功したとき、ダメージを2回振って良い方の結果を採用し、その後あなたから「動揺」状態を消します。</p>"
+                        }
                     }
                 },
+                "CcTkSc2j0bxdGH3U": {
+                    "name": "我のみ",
+                    "description": "<p>猫獣が最初に現れたとき、味方たちの精髄を吸収させることを選べます。戦場にいる任意の数の味方を直ちに倒し、この方法で倒した味方1体ごとに恐怖を1得ます。</p>"
+                },
                 "4zTQIHtxwYscyhOV": {
+                    "name": "残虐な報い",
+                    "description": "<p>猫獣が超近距離以内のPCによる攻撃でダメージを受けたとき、<strong>ストレスを1マーク</strong>して、そのPCに通常の攻撃を行えます。</p>",
                     "actions": {
                         "3JArYbYuz6XO75c2": {
                             "name": "ストレスをマーク"
                         }
                     }
+                },
+                "Wzuxw7ICPQD2mYpr": {
+                    "name": "血の一撃",
+                    "description": "<p>猫獣の攻撃でHPを3つ以上マークしたPCは、追加でHPを1マークしなければなりません。</p>"
                 }
             }
         },
         "Entombed Elite Guard": {
             "_note": "Entombed Elite Guard",
+            "name": "埋葬された精鋭衛士",
+            "description": "<p>盗掘と冒涜から墓を守るため、女帝とともに葬られた不死の精鋭兵。</p>",
+            "motivesAndTactics": "隊列を組む、女帝を守る、一斉に打ちかかる",
+            "attack": {
+                "name": "曲刀"
+            },
+            "experiences": {
+                "9JUTD0ULdRBC9N4I": {
+                    "name": "兵士"
+                }
+            },
             "items": {
+                "Xy9bXNzDhO8TLY5E": {
+                    "name": "戦闘隊形",
+                    "description": "<p>衛士は超近距離以内の味方1体ごとに、難易度に＋1のボーナスを得ます。</p>"
+                },
                 "NORqh5sgANVCarpA": {
-                    "name": "ジャベリン"
+                    "name": "ジャベリン",
+                    "description": "<p>超遠距離以内の対象に攻撃を行います。成功した場合、<strong>2d6+2</strong>の物理ダメージを与えます。</p>"
                 }
             }
         },
         "Entombed Empress": {
             "_note": "Entombed Empress",
+            "name": "埋葬された女帝",
+            "description": "<p>忘れられた王国の不死の統治者。魂が先へ旅立たぬよう、冒涜的な葬送の儀を施されている。</p>",
+            "motivesAndTactics": "下位の者に命じる、侵入者を呪う",
+            "attack": {
+                "name": "打ち払い"
+            },
+            "experiences": {
+                "2qoKmKZhcQH7nS3E": {
+                    "name": "統治者"
+                },
+                "O5n8Lj1sTeLntAwc": {
+                    "name": "不死"
+                }
+            },
             "items": {
                 "hIS9mydF6XFRisKA": {
                     "name": "空の殻",
@@ -3865,15 +3938,27 @@
                         }
                     }
                 },
+                "DwTwdGCmAX88d9c7": {
+                    "name": "失われた臓器",
+                    "description": "<p>女帝の内臓は取り出され、墓の各所に隠された6つの水晶の器に納められています。PCたちがそのひとつを見つけて破壊するたび、女帝はHPを1マークします。</p>"
+                },
                 "kaTCdf7p0SVNiW0u": {
+                    "name": "掴みかかる鎖",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、女帝に近距離以内のクリーチャーを対象とさせ、葬送の鎖で念動的に縛ろうとさせます。近距離以内の対象に攻撃を行います。成功した場合、女帝は対象を近接距離まで引き寄せ、<strong>2d8</strong>の物理ダメージを与え、一時的に<em>拘束</em>します。</p>",
                     "actions": {
                         "s7HM2akN04QsMPAw": {
                             "name": "ストレスをマーク"
+                        }
+                    },
+                    "effects": {
+                        "ojAI9vrN1mAwMnig": {
+                            "name": "鎖縛"
                         }
                     }
                 },
                 "Puiqn6JXi12ZCmk2": {
                     "name": "不死の従順",
+                    "description": "<p>シーンごとに3回まで、<strong>恐怖を1消費</strong>して、近距離以内の任意の数の味方にスポットライトを当てられます。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>",
                     "actions": {
                         "iv8tgTHr95tn3yV0": {
                             "name": "恐怖を消費する",
@@ -3887,6 +3972,7 @@
                 },
                 "Y1sKVn8QJGlRC5Uq": {
                     "name": "呪われた抱擁",
+                    "description": "<p>女帝がPCへの通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、そのPCに破滅カウントダウン（1d6+1）を開始できます。これはPCが恐怖とともにロールしたときに進みます。発動したとき、そのPCはHPをすべてマークし、デスムーブを行います。女帝が倒されるか、PCたちが休憩を取った場合、すべての破滅カウントダウンは終了します。</p>",
                     "actions": {
                         "zrq7TXXPXOeYDwyr": {
                             "name": "恐怖を消費する",
@@ -3897,12 +3983,25 @@
                             ]
                         }
                     }
+                },
+                "GWeW9yte8xuvLfZ3": {
+                    "name": "最終変容（形態変化）",
+                    "description": "<p>女帝が最後のHPをマークしたとき、彼女を@UUID[Compendium.daggerheart.adversaries.Actor.0QPn79SMU6C0b1qi]{埋葬された猫獣}に置き換え、直ちにスポットライトを当てます。</p>"
                 }
             }
         },
         "Entombed Necropriest": {
             "_note": "Entombed Necropriest",
+            "name": "埋葬された死霊司祭",
+            "description": "<p>女帝の生を死の先へ保つ役目を負った死霊術師。</p>",
+            "motivesAndTactics": "味方を強める、時を征する、敵を押さえ込む、女帝に仕える、死を武器として振るう",
+            "attack": {
+                "name": "死の矢"
+            },
             "experiences": {
+                "sndkEz5FDNbw4zs2": {
+                    "name": "闇の魔法"
+                },
                 "UESl521W93bpSL9Q": {
                     "name": "庇う"
                 }
@@ -3910,6 +4009,7 @@
             "items": {
                 "fRSuNo1Rvley8TrZ": {
                     "name": "活力を与える",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の味方を最大3体選びます。それぞれ次の攻撃ロールに有利を得ます。</p>",
                     "actions": {
                         "wjAK5nJRjv6mQJYZ": {
                             "name": "ストレスをマーク"
@@ -3917,12 +4017,17 @@
                     },
                     "effects": {
                         "DSqBkfRSr4KHEIjG": {
-                            "name": "新しい効果"
+                            "name": "新しい効果",
+                            "description": "<p>次の攻撃ロールに有利。</p>",
+                            "changes": [
+                                "次の攻撃"
+                            ]
                         }
                     }
                 },
                 "VtcEIeb2QJUBtChC": {
                     "name": "最後の一掴み",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内のPCを1人選びます。そのPCの足元から骸骨の手が地面を破って現れ、そのPCが頑強ロールに成功して振り払うまで<em>拘束</em>します。この方法で<em>拘束</em>された対象が希望を消費したとき、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "TQp9dbp1V7RG2jZk": {
                             "name": "恐怖を消費する"
@@ -3930,12 +4035,14 @@
                     },
                     "effects": {
                         "46cGBFkE9Kziv7FS": {
-                            "name": "最後の一掴み"
+                            "name": "最後の一掴み",
+                            "description": "<p>頑強ロールに成功して振り払うまで拘束されています。希望を消費したとき、GMは恐怖を1得ます。</p>"
                         }
                     }
                 },
                 "dJWi6afZPOGT7ucX": {
                     "name": "冷たい手",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に通常の攻撃を行います。成功した場合、対象は通常のダメージを受け、ストレスを<strong>1d4</strong>マークしなければなりません。対象がこの攻撃で最後のストレスをマークした場合、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "Ag0TDk4tP8bSJUln": {
                             "name": "ストレスをマーク"
@@ -3946,12 +4053,31 @@
         },
         "Entombed Skin Beetles": {
             "_note": "Entombed Skin Beetles",
+            "name": "埋葬された皮喰い甲虫",
+            "description": "<p>皮膚の下に潜り込む、肉を食らう甲虫たち。</p>",
+            "motivesAndTactics": "地面を覆い尽くす、生者を食らう、衣服の下を這う",
             "attack": {
                 "name": "鋏"
             },
+            "experiences": {
+                "LRc5r4uwD6K538NX": {
+                    "name": "墓所"
+                }
+            },
             "items": {
+                "TO8FKfEWHZ29FQh8": {
+                    "name": "生肉喰い",
+                    "description": "<p>HPを1マークして、甲虫5匹を近接距離以内のPCの皮膚の下に潜り込ませます。そのPCはストレスを1マークし、「感染」状態になります。「感染」のあいだ、その対象は恐怖とともにロールするたびに6の直接物理ダメージを受けます。この状態は、そのPCがHPまたはストレスを1つ消したとき消えます。</p>",
+                    "effects": {
+                        "8hHzmmhOU5Ku81eh": {
+                            "name": "感染",
+                            "description": "<p>「感染」のあいだ、恐怖とともにロールするたびに6の直接物理ダメージを受けます。この状態は、HPまたはストレスを1つ消したとき消えます。</p>"
+                        }
+                    }
+                },
                 "MyEPx0FSireKIkxb": {
-                    "name": "勢い"
+                    "name": "勢い",
+                    "description": "<p>甲虫がPCへの攻撃に成功したとき、あなたは恐怖を1得ます。</p>"
                 },
                 "IOpIRkeP2rPc8QoX": {
                     "name": "群れ",
@@ -3966,12 +4092,25 @@
         },
         "Entombed Stonemason": {
             "_note": "Entombed Stonemason",
+            "name": "埋葬された石工",
+            "description": "<p>女帝の墓を内側から塞ぐ役目にくじで選ばれた、不運な不死の労働者。</p>",
+            "motivesAndTactics": "働く手を止めない、女帝のために身を捧げる",
+            "attack": {
+                "name": "鎚と鑿"
+            },
+            "experiences": {
+                "22qiF9mGNKCqxgX9": {
+                    "name": "建造"
+                }
+            },
             "items": {
                 "6huNvvnU8PLKiohT": {
-                    "name": "ミニオン（5）"
+                    "name": "ミニオン（5）",
+                    "description": "<p>石工はダメージを受けると倒されます。PCが石工に与えたダメージ5ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "SLFSJAPmV9LzxgmJ": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが5の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "Q89aAChmuGGsGjxt": {
                             "name": "恐怖を消費する"
@@ -3979,6 +4118,8 @@
                     }
                 },
                 "gf5FRQd9eVjuVlMB": {
+                    "name": "仕事は終わらない",
+                    "description": "<p>石工が物理ダメージを与える攻撃で倒されたとき、<strong>恐怖を1消費</strong>して、石工のHPとストレスを消せます。</p>",
                     "actions": {
                         "76WAmsO9THiGRB1u": {
                             "name": "恐怖を消費する"
@@ -3989,26 +4130,41 @@
         },
         "Failed Experiment": {
             "_note": "Failed Experiment",
+            "name": "失敗した実験体",
+            "description": "<p>死霊術の魔法実験が失敗した産物。歪んだ、ぎこちない体を持つ。</p>",
             "motivesAndTactics": "喰らう、狩る、追跡する",
+            "attack": {
+                "name": "噛みつきと爪"
+            },
+            "experiences": {
+                "e3LDEyTI4bAQgRKI": {
+                    "name": "模写"
+                }
+            },
             "items": {
                 "nCIGFPFOKzyznL0O": {
                     "name": "歪んだ頑強さ",
                     "description": "<p>@Lookup[@name]は物理ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "3QLH2EEtcUEZolFz": {
-                            "name": "歪んだ頑強さ"
+                            "name": "歪んだ頑強さ",
+                            "description": "<p>実験体は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "1fE6xo8yIOmZkGNE": {
                     "name": "圧倒",
+                    "description": "<p>@Lookup[@name]が攻撃する対象の超近距離以内に他の敵対者がいるとき、@Lookup[@name]は2倍のダメージを与えます。</p>",
                     "effects": {
                         "eGB9G0ljYCcdGbOx": {
-                            "name": "圧倒"
+                            "name": "圧倒",
+                            "description": "<p>失敗した実験体が攻撃する対象の超近距離以内に他の敵対者がいるとき、失敗した実験体は2倍のダメージを与えます。</p>"
                         }
                     }
                 },
                 "g0h3Zo6xqgfSlyxi": {
+                    "name": "のたうつ跳びかかり",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、恐怖を消費する代わりに追加のGMムーブとして@Lookup[@name]にスポットライトを当てます。</p>",
                     "actions": {
                         "i3FANnO1t9AzJdTp": {
                             "name": "ストレスをマーク"
@@ -4019,6 +4175,9 @@
         },
         "Falcon": {
             "_note": "Falcon",
+            "name": "ハヤブサ",
+            "description": "<p>長く尖った翼と、切り込みのある嘴を持つ猛禽。</p>",
+            "motivesAndTactics": "旋回する、掴む、急降下する、偵察する",
             "attack": {
                 "name": "鉤爪"
             },
@@ -4032,13 +4191,18 @@
             },
             "items": {
                 "5kMARKUrTyvSUiTB": {
+                    "name": "軽やかな飛翔者",
+                    "description": "<p>飛行している間、@Lookup[@name]は難易度に＋3のボーナスを得ます。</p>",
                     "effects": {
                         "YdGS6Tij5xG6ohm1": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>飛行している間、難易度に＋3のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "UwmsJcqQXt9ZannY": {
+                    "name": "急降下爆撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、上空から対象に通常の攻撃を行います。@Lookup[@name]は攻撃ロールとダメージロールに＋2のボーナスを得ます。</p>",
                     "actions": {
                         "hm2Xd74Rii7Qz6BJ": {
                             "name": "ストレスをマーク"
@@ -4049,11 +4213,20 @@
         },
         "Fallen Shock Troop": {
             "_note": "Fallen Shock Troop",
+            "name": "堕ちた者の突撃兵",
+            "description": "<p>堕ちた者の意志に縛られた呪われた魂。</p>",
+            "motivesAndTactics": "叩き潰す、支配する、安息を得る、罰する",
+            "attack": {
+                "name": "呪われた斧"
+            },
             "items": {
                 "yvyAJTEyCDsDXgkb": {
-                    "name": "ミニオン（12）"
+                    "name": "ミニオン（12）",
+                    "description": "<p>@Lookup[@name]はダメージを受けると倒されます。PCが@Lookup[@name]に与えたダメージ12ごとに、その攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "eW1Z3TTGlgvbgdCD": {
+                    "name": "破滅のオーラ",
+                    "description": "<p>PCが@Lookup[@name]の攻撃でHPをマークしたとき、そのPCは希望を1失います。</p>",
                     "actions": {
                         "HcGa2nD0WziA0lFP": {
                             "name": "希望を失う"
