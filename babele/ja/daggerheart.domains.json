@@ -672,11 +672,11 @@
         "Champion's Edge": {
             "_note": "Champion's Edge",
             "name": "覇者の刃",
-            "description": "<p>攻撃でクリティカル成功したとき、<strong>希望を最大3まで消費</strong>して、消費した希望1つごとに以下の選択肢から1つを選べます。</p><ul><li class=\"vertical-card-list\"><p>HPを1つ消す。</p></li><li class=\"vertical-card-list\"><p>鎧スロットを1つ消す。</p></li><li class=\"vertical-card-list\">対象がHPを追加で1つマークしなければならない。</li></ul><p>同じ選択肢は2回以上選べません。</p>",
+            "description": "<p>攻撃でクリティカル成功したとき、<strong>希望を最大3まで消費</strong>して、消費した希望1つごとに以下の選択肢から1つを選べます。</p><ul><li class=\"vertical-card-list\"><p>HPを1つ消す。</p></li><li class=\"vertical-card-list\"><p>鎧スロットを1つ消す。</p></li><li class=\"vertical-card-list\">対象がHPを追加で1つマークしなければならない。</li></ul><p>同じ選択肢を選べるのは1回までです。</p>",
             "actions": {
                 "CbKKgf1TboGPZitf": {
                     "name": "HPを1つ消す",
-                    "description": "<p>攻撃でクリティカル成功したとき、<strong>希望を最大3まで消費</strong>して、消費した希望1つごとに以下の選択肢から1つを選べます。</p><ul class=\"\"><li class=\"vertical-card-list\"><p>HPを1つ消す。</p></li><li class=\"vertical-card-list\"><p>鎧スロットを1つ消す。</p></li><li class=\"vertical-card-list\">対象がHPを追加で1つマークしなければならない。</li></ul><p>同じ選択肢は2回以上選べません。</p>"
+                    "description": "<p>攻撃でクリティカル成功したとき、<strong>希望を最大3まで消費</strong>して、消費した希望1つごとに以下の選択肢から1つを選べます。</p><ul class=\"\"><li class=\"vertical-card-list\"><p>HPを1つ消す。</p></li><li class=\"vertical-card-list\"><p>鎧スロットを1つ消す。</p></li><li class=\"vertical-card-list\">対象がHPを追加で1つマークしなければならない。</li></ul><p>同じ選択肢を選べるのは1回までです。</p>"
                 },
                 "hsI4QDa6Br52P2mc": {
                     "name": "鎧スロットを1つ消す"
@@ -999,7 +999,7 @@
         "Deathrun": {
             "_note": "Deathrun",
             "name": "死の疾走",
-            "description": "<p><strong>希望を3消費</strong>して、戦場を一直線に駆け抜けて遠距離以内の地点まで走り、その経路上で武器の射程以内にいるすべての敵対者に攻撃を行います。成功した対象のうち、どの順でダメージを与えるかを選びます。最初の対象には、習熟に＋1のボーナスを付けて武器ダメージをロールします。次に、ダメージロールからダイスを1個取り除き、残りのダメージを次の対象に与えます。以降の対象ごとにダイスを1個取り除き続け、ダメージダイスか敵対者がなくなるまで続けます。</p><p>1回の攻撃で同じ敵対者を2回以上対象にはできません。</p>",
+            "description": "<p><strong>希望を3消費</strong>して、戦場を一直線に駆け抜けて遠距離以内の地点まで走り、その経路上で武器の射程以内にいるすべての敵対者に攻撃を行います。成功した対象のうち、どの順でダメージを与えるかを選びます。最初の対象には、習熟に＋1のボーナスを付けて武器ダメージをロールします。次に、ダメージロールからダイスを1個取り除き、残りのダメージを次の対象に与えます。以降の対象ごとにダイスを1個取り除き続け、ダメージダイスか敵対者がなくなるまで続けます。</p><p>1回の攻撃で同じ敵対者を対象にできるのは1回までです。</p>",
             "actions": {
                 "Eo4z2ns80222m7lO": {
                     "name": "希望を消費する"
@@ -2458,13 +2458,42 @@
             }
         },
         "Second Wind": {
-            "_note": "Second Wind"
+            "_note": "Second Wind",
+            "name": "再びの息",
+            "description": "<p>休憩ごとに1回、敵対者への攻撃に成功したとき、ストレスを3つまたはHPを1つ消せます。希望を伴う成功の場合、近距離以内の仲間1人のストレスも3つまたはHPを1つ消します。</p>",
+            "actions": {
+                "1w6rcNGdI6H9wVIz": {
+                    "name": "ストレスを3つ消す"
+                },
+                "OIrSjtVdt4b2yJ2t": {
+                    "name": "HPを消す"
+                }
+            }
         },
         "Sensory Projection": {
-            "_note": "Sensory Projection"
+            "_note": "Sensory Projection",
+            "name": "感覚投射",
+            "description": "<p>休憩ごとに1回、<strong>呪文発動ロール</strong><strong>（15）</strong>を行います。成功した場合、以前に訪れた任意の場所を、いまその場に立っているかのようにはっきりと見聞きできる幻視に入ります。この幻視の中では自由に動けて、肉体の物理法則や障害に縛られません。この呪文は通常の手段でも魔法的な手段でも検知できません。ダメージを受けるか、別の呪文を発動すると幻視から抜け出します。</p>",
+            "actions": {
+                "DAM8Q4vezuUsz8xG": {
+                    "name": "発動する"
+                }
+            }
         },
         "Shadowbind": {
             "_note": "Shadowbind",
+            "name": "影縛り",
+            "description": "<p>至近以内のすべての敵対者に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、自らの影にその場を縛られ、一時的に<em>拘束</em>となります。</p>",
+            "actions": {
+                "Llr9uIDUCrfsiZNn": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "影縛り"
+                        }
+                    ]
+                }
+            },
             "effects": {
                 "RFB4V0V4bDJ6vCL2": {
                     "name": "拘束"
@@ -2472,10 +2501,26 @@
             }
         },
         "Shadowhunter": {
-            "_note": "Shadowhunter"
+            "_note": "Shadowhunter",
+            "name": "影の狩人",
+            "description": "<p>影に覆われているとき、あなたの技量は高まります。薄暗がりや暗闇に包まれている間、回避値に＋1のボーナスを得て、攻撃ロールに有利がつきます。</p>",
+            "effects": {
+                "A6gMv7TbMu3nV3NT": {
+                    "name": "影の狩人（回避値）",
+                    "description": "<p>薄暗がりや暗闇に包まれている間、回避値に＋1のボーナスを得て、攻撃ロールに有利がつきます。</p>"
+                },
+                "a1hDCNYDvF4dWt58": {
+                    "name": "影の狩人（有利の目安）",
+                    "changes": [
+                        "薄暗がりや暗闇に包まれている間の攻撃ロール。"
+                    ]
+                }
+            }
         },
         "Shape Material": {
             "_note": "Shape Material",
+            "name": "物質成形",
+            "description": "<p><strong>希望を1消費</strong>して、触れている自然の物質（石、氷、木など）の一部を目的に合わせて成形します。成形できる範囲は自分より大きくできません。たとえば、簡素な道具を作ったり、扉を作り出したりできます。</p><p>影響を与えられるのは、触れている箇所から近距離以内の物質だけです。</p>",
             "actions": {
                 "TQ830KcZOKCdTFuD": {
                     "name": "形状"
@@ -2483,72 +2528,258 @@
             }
         },
         "Share the Burden": {
-            "_note": "Share the Burden"
+            "_note": "Share the Burden",
+            "name": "重荷を分かつ",
+            "description": "<p>休憩ごとに1回、近接射程以内の同意する存在からストレスを引き受けます。対象は、あなたとの間のこの一瞬にどんな親密な知識や感情がテレパシーで漏れ出すかを描写します。相手のマークされたストレスを任意の数だけ自分に移し、移したストレス1つごとに希望を1得ます。</p>",
+            "actions": {
+                "MjSx44ovuKBGVKGs": {
+                    "name": "ストレスを引き受ける"
+                }
+            }
         },
         "Shared Trauma": {
-            "_note": "Shared Trauma"
+            "_note": "Shared Trauma",
+            "name": "共有される傷",
+            "description": "<p>苦痛をある存在から別の存在へ移せます。休憩ごとに1回、近接射程以内の同意する存在のHPを任意の数だけマークして、近接射程以内の別の同意する存在のHPを同じ数だけ消します。</p>",
+            "actions": {
+                "LpppPAHrouTkHDyZ": {
+                    "name": "苦痛を移す"
+                }
+            }
         },
         "Shield Aura": {
-            "_note": "Shield Aura"
+            "_note": "Shield Aura",
+            "name": "盾のオーラ",
+            "description": "<p><strong>ストレスを</strong><strong>1マーク</strong>して、至近以内の対象1体に守護のオーラをかけます。対象が鎧スロットをマークしたとき、その攻撃の深刻度をさらにしきい値1段階ぶん下げます。この呪文によって、ダメージを受けるはずだった存在がHPを1つもマークしないことになった場合、効果は終わります。</p><p>盾のオーラは一度に1体にしか保持できません。</p>",
+            "actions": {
+                "vox5fIIFsOnraXgK": {
+                    "name": "守護のオーラを発動する",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、至近以内の対象1体に守護のオーラをかけます。対象が鎧スロットをマークしたとき、その攻撃の深刻度をさらにしきい値1段階ぶん下げます。この呪文によって、ダメージを受けるはずだった存在がHPを1つもマークしないことになった場合、効果は終わります。</p><p>盾のオーラは一度に1体にしか保持できません。</p>"
+                }
+            },
+            "effects": {
+                "OQreUqdAfIt3V6uq": {
+                    "name": "守護のオーラ",
+                    "description": "<p>対象が鎧スロットをマークしたとき、その攻撃の深刻度をさらにしきい値1段階ぶん下げます。この呪文によって、ダメージを受けるはずだった存在がHPを1つもマークしないことになった場合、効果は終わります。</p>"
+                }
+            }
         },
         "Shrug It Off": {
-            "_note": "Shrug It Off"
+            "_note": "Shrug It Off",
+            "name": "受け流して進む",
+            "description": "<p>ダメージを受けることになったとき、<strong>ストレスを1マーク</strong>して、そのダメージの深刻度をしきい値1段階ぶん下げられます。そうしたとき、<strong>d6</strong>をロールします。結果が3以下の場合、このカードを保管庫へ置きます。</p>",
+            "actions": {
+                "h9odg7Tk94O0M5l1": {
+                    "name": "d6をロール"
+                }
+            },
+            "effects": {
+                "5DTQDVU8Jy5Nnp5V": {
+                    "name": "受け流して進む",
+                    "description": "<p>ダメージを受けることになったとき、<strong>ストレスを1マーク</strong>して、そのダメージの深刻度をしきい値1段階ぶん下げられます。そうしたとき、<strong>d6</strong>をロールします。結果が3以下の場合、このカードを保管庫へ置きます。</p>"
+                }
+            }
         },
         "Sigil of Retribution": {
-            "_note": "Sigil of Retribution"
+            "_note": "Sigil of Retribution",
+            "name": "報復の紋章",
+            "description": "<p>近距離以内の敵対者1体に報復の紋章を刻みます。GMは恐怖を1得ます。紋章を刻まれた敵対者があなたまたは仲間にダメージを与えたとき、このカードに<strong>d8</strong>を1個置きます。保持できる<strong>d8</strong>はレベルに等しい数までです。紋章を刻まれた敵対者への攻撃に成功したとき、このカードのダイスをロールしてその合計をダメージロールに加え、その後ダイスを取り除きます。この効果は、紋章を刻まれた敵対者が倒されるか、あなたが再び報復の紋章を発動したときに終わります。</p>",
+            "actions": {
+                "Nhp93LBwnBg5DyY9": {
+                    "name": "紋章を刻む"
+                }
+            },
+            "effects": {
+                "pJntjutNO7bYX6td": {
+                    "name": "報復の紋章",
+                    "description": "<p>紋章を刻まれた敵対者があなたまたは仲間にダメージを与えたとき、このカードに<strong>d8</strong>を1個置きます。保持できる<strong>d8</strong>はレベルに等しい数までです。紋章を刻まれた敵対者への攻撃に成功したとき、このカードのダイスをロールしてその合計をダメージロールに加え、その後ダイスを取り除きます。この効果は、紋章を刻まれた敵対者が倒されるか、あなたが再び報復の紋章を発動したときに終わります。</p>"
+                }
+            }
         },
         "Signature Move": {
-            "_note": "Signature Move"
+            "_note": "Signature Move",
+            "name": "必殺の型",
+            "description": "<p>あなたの必殺の戦闘の型に名前を付け、描写してください。休憩ごとに1回、取っている行動の一部としてこの必殺の型を実行するとき、<strong>d20</strong>を希望ダイスとしてロールできます。成功した場合、ストレスを1つ消します。</p>"
         },
         "Siphon Essence": {
             "_note": "Siphon Essence",
+            "name": "精気吸収",
+            "description": "<p>至近以内の対象に対して<strong>呪文発動ロール</strong>を行います。大休憩ごとに1回、成功した場合、対象は習熟を使った<strong>d12+4</strong>の魔法ダメージを受けます。恐怖を伴う成功の場合、この攻撃に対して習熟に＋1のボーナスを得ます。</p><p>この攻撃で対象がマークしたHPと同じ数のHPを、あなたは消します。</p>",
             "actions": {
                 "atYHfdIRwhIVLVt3": {
                     "name": "呪文発動ロール"
                 },
                 "2WSDK7psPlgjOnSG": {
-                    "name": "恐怖を伴う"
+                    "name": "恐怖を伴う",
+                    "description": "<p>恐怖を伴う成功の場合、この攻撃に対して習熟に＋1のボーナスを得ます。</p>"
                 }
             }
         },
         "Smite": {
-            "_note": "Smite"
+            "_note": "Smite",
+            "name": "聖罰",
+            "description": "<p>休憩ごとに1回、<strong>希望を3消費</strong>して強力な聖罰を溜めます。次に武器による攻撃に成功したとき、ダメージロールの結果を2倍にします。この攻撃は、武器のダメージ種別にかかわらず魔法ダメージを与えます。</p>",
+            "actions": {
+                "GYEbUY5m30Uw8yf5": {
+                    "name": "聖罰を溜める"
+                }
+            },
+            "effects": {
+                "mqZSae8J9d7o3lon": {
+                    "name": "聖罰",
+                    "description": "<p>次に武器による攻撃に成功したとき、ダメージロールの結果を2倍にします。この攻撃は、武器のダメージ種別にかかわらず魔法ダメージを与えます。</p>"
+                }
+            }
         },
         "Soothing Speech": {
-            "_note": "Soothing Speech"
+            "_note": "Soothing Speech",
+            "name": "慰めの言葉",
+            "description": "<p>小休憩の間、「傷の手当て」のダウンタイムムーブを他のキャラクターに使いながら、その相手を慰める時間をとったとき、そのキャラクターのHPを追加で1つ消します。そうしたとき、あなたもHPを2つ消します。</p>",
+            "actions": {
+                "r9mQqwdwL6J15IEf": {
+                    "name": "他者を癒す",
+                    "description": "<p>小休憩の間、「傷の手当て」のダウンタイムムーブを他のキャラクターに使いながら、その相手を慰める時間をとったとき、そのキャラクターのHPを追加で1つ消します。</p>"
+                },
+                "s4KRqnNHNrSsOoNi": {
+                    "name": "自分を癒す",
+                    "description": "<p>そうしたとき、あなたもHPを2つ消します。</p>"
+                }
+            }
         },
         "Specter of the Dark": {
-            "_note": "Specter of the Dark"
+            "_note": "Specter of the Dark",
+            "name": "闇の亡霊",
+            "description": "<p><strong>ストレスを1マーク</strong>して、他の存在を対象とするアクションロールを行うまで<em>幽体</em>になります。<em>幽体</em>の間、物理ダメージへの免疫を得て、浮遊し、固体を通り抜けられます。この姿でも他の存在からは見えています。</p>",
+            "actions": {
+                "K91pB8O1ak8fikUj": {
+                    "name": "幽体になる",
+                    "description": "<p><strong>ストレス</strong>を1マークして、他の存在を対象とするアクションロールを行うまで幽体になります。幽体の間、物理ダメージへの免疫を得て、浮遊し、固体を通り抜けられます。この姿でも他の存在からは見えています。</p>"
+                }
+            },
+            "effects": {
+                "d9bZJl0yZnvOe2f3": {
+                    "name": "幽体"
+                }
+            }
         },
         "Spectral Mist": {
-            "_note": "Spectral Mist"
+            "_note": "Spectral Mist",
+            "name": "幽体の霧",
+            "description": "<p><strong>希望を2消費</strong>して不気味な霧を生み出し、あなたと近距離以内の選んだ仲間を一時的に非実体にします。存在が非実体の間、固体を通り抜けられ、物理ダメージへの免疫を得ます。固体を通り抜けるか、アクションロールを行うと再び実体化します。それ以外の場合、この効果は場面の終わりまで持続します。</p>",
+            "actions": {
+                "Fw0PoX73vPZiDTqT": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "OeVWOdO55y8XpVVy": {
+                    "name": "幽体",
+                    "description": "<p>存在が非実体の間、固体を通り抜けられ、物理ダメージへの免疫を得ます。固体を通り抜けるか、アクションロールを行うと再び実体化します。それ以外の場合、この効果は場面の終わりまで持続します。</p>"
+                }
+            }
         },
         "Spellcharge": {
-            "_note": "Spellcharge"
+            "_note": "Spellcharge",
+            "name": "呪力充填",
+            "description": "<p>魔法ダメージを受けたとき、マークしたHPの数に等しいトークンをこのカードに置きます。保持できるトークンは呪文発動特性に等しい数までです。</p><p>対象への攻撃に成功したとき、任意の数のトークンを消費して、消費したトークン1個ごとに<strong>d6</strong>をダメージロールに加えられます。</p>",
+            "actions": {
+                "jCgZ0yCoIhSAVEw3": {
+                    "name": "トークンを消費する",
+                    "description": "<p>対象への攻撃に成功したとき、任意の数のトークンを消費して、消費したトークン1個ごとにd6をダメージロールに加えられます。</p>"
+                }
+            }
         },
         "Splendor-Touched": {
-            "_note": "Splendor-Touched"
+            "_note": "Splendor-Touched",
+            "name": "スプレンダー接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がスプレンダードメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list\">重傷値に＋3のボーナス</li><li class=\"vertical-card-list\">大休憩ごとに1回、受けるダメージによってHPをマークしなければならないとき、代わりに同じ数のストレスをマークするか、同じ数の希望を消費することを選べます。</li></ul>",
+            "effects": {
+                "u13fiOMD8B36PkiZ": {
+                    "name": "スプレンダー接触",
+                    "description": "<ul><li class=\"vertical-card-list\"><p>重傷値に＋3のボーナス</p></li><li class=\"vertical-card-list\"><p>大休憩ごとに1回、受けるダメージによってHPをマークしなければならないとき、代わりに同じ数のストレスをマークするか、同じ数の希望を消費することを選べます。</p></li></ul>"
+                }
+            }
         },
         "Splintering Strike": {
-            "_note": "Splintering Strike"
+            "_note": "Splintering Strike",
+            "name": "砕裂の一撃",
+            "description": "<p><strong>希望を1消費</strong>して、武器の射程以内にいるすべての敵対者に攻撃を行います。大休憩ごとに1回、いずれかの対象に成功した場合、武器のダメージをロールし、成功した対象の間で好きなように分配します。各対象にダメージを与える前に、追加のダメージダイスを1個ロールし、その出目をその対象に与えるダメージに加えます。</p>",
+            "actions": {
+                "yjEcSlzsWGX79gpB": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Stealth Expertise": {
-            "_note": "Stealth Expertise"
+            "_note": "Stealth Expertise",
+            "name": "隠密の熟達",
+            "description": "<p>危険な場所を気づかれずに移動しようとして恐怖を伴うロールをしたとき、<strong>ストレスを1マーク</strong>して、代わりに希望を伴うロールにできます。</p><p>近距離以内の仲間も気づかれずに移動しようとして恐怖を伴うロールをした場合、<strong>ストレスを1マーク</strong>して、その結果を希望を伴うロールに変えられます。</p>",
+            "actions": {
+                "Auocpi3okFJyXRS5": {
+                    "name": "恐怖を希望に変える"
+                }
+            }
         },
         "Strategic Approach": {
-            "_note": "Strategic Approach"
+            "_note": "Strategic Approach",
+            "name": "戦略的接近",
+            "description": "<p>大休憩の後、知識に等しい数（最低1個）のトークンをこのカードに置きます。敵対者の近距離以内へ移動してその敵対者に攻撃を行う最初の1回、トークンを1個消費して以下の選択肢から1つを選べます。</p><ul><li class=\"vertical-card-list-found\"><p>その攻撃を有利で行う。</p></li><li class=\"vertical-card-list-found\"><p>その敵対者の近接射程以内にいる仲間のストレスを1つ消す。</p></li><li class=\"vertical-card-list-found\"><p>ダメージロールに<strong>d8</strong>を加える。</p></li></ul><p>大休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "jTC0GbsBpGmaQLi7": {
+                    "name": "トークンを消費する",
+                    "description": "<p>敵対者の近距離以内へ移動してその敵対者に攻撃を行う最初の1回、トークンを1個消費して以下の選択肢から1つを選べます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>その攻撃を有利で行う。</p></li><li class=\"vertical-card-list-found\"><p>その敵対者の近接射程以内にいる仲間のストレスを1つ消す。</p></li><li class=\"vertical-card-list-found\"><p>ダメージロールに<strong>d8</strong>を加える。</p></li></ul>"
+                }
+            }
         },
         "Stunning Sunlight": {
-            "_note": "Stunning Sunlight"
+            "_note": "Stunning Sunlight",
+            "name": "眩む陽光",
+            "description": "<p><strong>呪文発動ロール</strong>を行い、正面の遠距離以内にいるすべての敵対者に焼けつく陽光の強烈な光線を放ちます。成功した場合、<strong>希望を任意の数だけ消費</strong>して、成功した対象のうちその数だけにリアクションロール（14）を行わせます。</p><p>成功した対象は<strong>3d20+3</strong>の魔法ダメージを受けます。失敗した対象は<strong>4d20+5</strong>の魔法ダメージを受け、一時的に<em>行動不能</em>となります。<em>行動不能</em>の間、対象はリアクションを使えず、この状態が解消されるまで他のいかなる行動も取れません。</p>",
+            "actions": {
+                "eiUQZbHvPkEV03c1": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "眩む陽光"
+                        }
+                    ]
+                },
+                "AI8sGbUXLw4gG8mW": {
+                    "name": "成功時のダメージ",
+                    "description": "<p>成功した対象は<strong>3d20+3</strong>の魔法ダメージを受けます。</p>"
+                }
+            },
+            "effects": {
+                "kSLuGSI6FLhOJaGp": {
+                    "name": "眩む陽光",
+                    "description": "<p>一時的に行動不能。行動不能の間、対象はリアクションを使えず、この状態が解消されるまで他のいかなる行動も取れません。</p>"
+                }
+            }
         },
         "Summon Horror": {
-            "_note": "Summon Horror"
+            "_note": "Summon Horror",
+            "name": "恐怖の召喚",
+            "description": "<p>場面ごとに1回、<strong>ストレスを1マーク</strong>して異界の存在を召喚し、遠距離以内の対象に呪文発動特性を使った<strong>d8+1</strong>の魔法ダメージを与えます。この攻撃で対象がHPを1つ以上マークした場合、対象はその恐怖に耐えるための<strong>リアクションロール（12）</strong>に成功しなければ、同じ数のストレスをマークします。</p><p>攻撃を行った後、その存在は消散します。</p>",
+            "actions": {
+                "7ymu0WU0EHsyeIDi": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Support Tank": {
-            "_note": "Support Tank"
+            "_note": "Support Tank",
+            "name": "支える壁",
+            "description": "<p>近距離以内の仲間がロールに失敗したとき、<strong>希望を2消費</strong>して、その仲間に希望ダイスまたは恐怖ダイスを振り直させられます。</p>",
+            "actions": {
+                "YEzqOIIV4HqzCKx4": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Swift Step": {
             "_note": "Swift Step",
+            "name": "軽やかな足取り",
+            "description": "<p>あなたへの攻撃が失敗したとき、ストレスを1つ消します。ストレスを消せない場合、希望を1得ます。</p>",
             "actions": {
                 "Yqyfl459M3q3TACB": {
                     "name": "ストレスを消す"
@@ -2559,101 +2790,400 @@
             }
         },
         "Tactician": {
-            "_note": "Tactician"
+            "_note": "Tactician",
+            "name": "戦術家",
+            "description": "<p>仲間を手助けするとき、その仲間は希望を1消費して、あなたの有利ダイスとあわせてあなたの経験1つをロールに加えられます。</p><p>タッグチームロールを行うとき、<strong>d20</strong>を希望ダイスとしてロールできます。</p>"
         },
         "Telekinesis": {
-            "_note": "Telekinesis"
+            "_note": "Telekinesis",
+            "name": "念動力",
+            "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、意思の力で対象を元の位置から遠距離以内のどこへでも動かせます。持ち上げた対象を攻撃として投げつけることもでき、攻撃したい第二の対象に対して追加の呪文発動ロールを行います。成功した場合、習熟を使って第二の対象に<strong>d12+4</strong>の物理ダメージを与えます。その後、この呪文は終わります。</p>",
+            "actions": {
+                "IPtULQVFaBoeWDfz": {
+                    "name": "対象を動かす",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、意思の力で対象を元の位置から遠距離以内のどこへでも動かせます。</p>"
+                },
+                "rgDZzUg8ivTTctsM": {
+                    "name": "対象を投げる",
+                    "description": "<p>持ち上げた対象を攻撃として投げつけることもでき、攻撃したい第二の対象に対して追加の呪文発動ロールを行います。成功した場合、習熟を使って第二の対象に<strong> d12+4</strong>の物理ダメージを与えます。その後、この呪文は終わります。</p>"
+                }
+            }
         },
         "Teleport": {
             "_note": "Teleport",
+            "name": "テレポート",
+            "description": "<p>大休憩ごとに1回、自分と近距離以内の同意する任意の数の対象を、以前に訪れた場所へ瞬時にテレポートさせられます。以下の選択肢から1つを選び、<strong>呪文発動ロール（16）</strong>を行います。</p><ul><li class=\"vertical-card-list\">その場所を非常によく知っている場合、＋3のボーナス。</li><li class=\"vertical-card-list\">その場所をよく訪れている場合、＋1のボーナス。</li><li class=\"vertical-card-list\">その場所をあまり訪れていない場合、修正なし。</li><li class=\"vertical-card-list\">一度しか行ったことがない場合、−2のペナルティ。</li></ul><p>成功した場合、意図した場所に出現します。失敗した場合、目的地から外れた場所に出現し、失敗の度合いがどれだけ外れたかを決めます。</p>",
             "actions": {
                 "Fc38nN8i4z2VYW2T": {
-                    "name": "呪文発動ロール"
+                    "name": "呪文発動ロール",
+                    "description": "<p>大休憩ごとに1回、自分と近距離以内の同意する任意の数の対象を、以前に訪れた場所へ瞬時にテレポートさせられます。以下の選択肢から1つを選び、<strong>呪文発動ロール（16）</strong>を行います。</p><ul class=\"\"><li class=\"vertical-card-list\">その場所を非常によく知っている場合、＋3のボーナス。</li><li class=\"vertical-card-list\">その場所をよく訪れている場合、＋1のボーナス。</li><li class=\"vertical-card-list\">その場所をあまり訪れていない場合、修正なし。</li><li class=\"vertical-card-list\">一度しか行ったことがない場合、−2のペナルティ。</li></ul><p>成功した場合、意図した場所に出現します。失敗した場合、目的地から外れた場所に出現し、失敗の度合いがどれだけ外れたかを決めます。</p>"
                 }
             }
         },
         "Tell No Lies": {
-            "_note": "Tell No Lies"
+            "_note": "Tell No Lies",
+            "name": "偽りを許さず",
+            "description": "<p>至近以内の対象に対して<strong>呪文発動ロール</strong><strong> </strong>を行います。成功した場合、対象は近距離以内にいる間あなたに嘘をつけなくなりますが、話すことを強いられるわけではありません。あなたが質問して対象が答えを拒んだ場合、対象はストレスを1マークし、効果は終わります。対象は通常、真実を口にしてしまうまで、この呪文をかけられたことに気づきません。</p>",
+            "actions": {
+                "Et9JXoAULa2EAZfa": {
+                    "name": "発動する",
+                    "description": "<p>至近以内の対象に対して<strong>呪文発動ロール </strong>を行います。成功した場合、対象は近距離以内にいる間あなたに嘘をつけなくなりますが、話すことを強いられるわけではありません。あなたが質問して対象が答えを拒んだ場合、対象はストレスを1マークし、効果は終わります。対象は通常、真実を口にしてしまうまで、この呪文をかけられたことに気づきません。</p>"
+                }
+            },
+            "effects": {
+                "5L6fC80VfbPfGmcA": {
+                    "name": "嘘をつけない",
+                    "description": "<p>近距離以内にいる間あなたに嘘をつけませんが、話すことを強いられるわけではありません。あなたが質問して対象が答えを拒んだ場合、対象はストレスを1マークし、効果は終わります。対象は通常、真実を口にしてしまうまで、この呪文をかけられたことに気づきません。</p>"
+                }
+            }
         },
         "Tempest": {
             "_note": "Tempest",
+            "name": "大嵐",
+            "description": "<p>以下の嵐から1つを選び、遠距離以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、GMが自分の手番に恐怖を消費してこの呪文を終わらせるまで、その効果を受けます。</p><ul><li class=\"vertical-card-list\"><p><em><strong>吹雪:</strong></em> <strong>2d20+8</strong>の魔法ダメージを与え、対象は一時的に<em>脆弱</em>となります。</p></li><li class=\"vertical-card-list\"><em><strong>暴風: </strong></em><strong>3d10+10</strong>の魔法ダメージを与え、風の吹く方向を1つ選びます。対象は風に逆らって移動できません。</li><li class=\"vertical-card-list\"><p><em><strong>砂嵐:</strong></em> <strong>5d6+9</strong>の魔法ダメージを与えます。近接射程の外から行われる攻撃には不利がつきます。</p></li></ul>",
+            "actions": {
+                "ZqnziDBlh5Re7SKs": {
+                    "name": "吹雪",
+                    "description": "<p>以下の嵐を選び、遠距離以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、GMが自分の手番に恐怖を消費してこの呪文を終わらせるまで、その効果を受けます。</p><ul class=\"\"><li class=\"vertical-card-list\"><p><em><strong>吹雪:</strong></em> <strong>2d20+8</strong>の魔法ダメージを与え、対象は一時的に<em>脆弱</em>となります。</p></li></ul>",
+                    "areas": [
+                        {
+                            "name": "大嵐"
+                        }
+                    ]
+                },
+                "FEPhujGa5lvu5fXr": {
+                    "name": "暴風",
+                    "description": "<p>以下の嵐を選び、遠距離以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、GMが自分の手番に恐怖を消費してこの呪文を終わらせるまで、その効果を受けます。</p><ul class=\"\"><li class=\"vertical-card-list\"><em><strong>暴風: </strong></em><strong>3d10+10</strong>の魔法ダメージを与え、風の吹く方向を1つ選びます。対象は風に逆らって移動できません。</li></ul>",
+                    "areas": [
+                        {
+                            "name": "大嵐"
+                        }
+                    ]
+                },
+                "CzMlqo91kuTgg1As": {
+                    "name": "砂嵐",
+                    "description": "<p>以下の嵐を選び、遠距離以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、GMが自分の手番に恐怖を消費してこの呪文を終わらせるまで、その効果を受けます。</p><ul class=\"\"><li class=\"vertical-card-list\"><p><em><strong>砂嵐:</strong></em> <strong>5d6+9</strong>の魔法ダメージを与えます。近接射程の外から行われる攻撃には不利がつきます。</p></li></ul>",
+                    "areas": [
+                        {
+                            "name": "大嵐"
+                        }
+                    ]
+                }
+            },
             "effects": {
                 "oqPY3I9oO9J6l5Aj": {
                     "name": "脆弱"
+                },
+                "tB7AyDy0pbE9q5hM": {
+                    "name": "風",
+                    "description": "<p>対象は風に逆らって移動できません。</p>"
+                },
+                "S4Vpgf3FMmq8MGrb": {
+                    "name": "砂",
+                    "description": "<p>近接射程の外から行われる攻撃には不利がつきます。</p>"
                 }
             }
         },
         "Terrify": {
             "_note": "Terrify",
+            "name": "恐怖させる",
+            "description": "<p>近距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象はストレスを<strong>1d4</strong>マークし、あなたは対象を自分から射程1段階ぶん遠くへ逃げさせられます（至近から近距離、近距離から遠距離など）。恐怖を伴う成功の場合、対象はさらに一時的に<em>脆弱</em>となります。</p>",
             "actions": {
                 "LL51Prm1G0qJzgdJ": {
                     "name": "呪文発動ロール"
                 }
+            },
+            "effects": {
+                "Mme0myv2a1mZE5nD": {
+                    "name": "恐怖に襲われた"
+                }
             }
         },
         "Thorn Skin": {
-            "_note": "Thorn Skin"
+            "_note": "Thorn Skin",
+            "name": "棘の肌",
+            "description": "<p>休憩ごとに1回、<strong>希望を1消費</strong>して全身に棘を生やします。そうしたとき、呪文発動特性に等しい数のトークンをこのカードに置きます。ダメージを受けたとき、任意の数のトークンを消費して、その数の<strong>d6</strong>をロールできます。出目を合計し、受けるダメージをその分だけ軽減します。攻撃者の近接射程以内にいる場合、同じ量のダメージを攻撃者に返します。</p><p>休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "zuiLXexIzTvLmoKF": {
+                    "name": "トークンを得る",
+                    "description": "<p>休憩ごとに1回、<strong>希望を1消費</strong>して全身に棘を生やします。そうしたとき、呪文発動特性に等しい数のトークンをこのカードに置きます。</p>"
+                },
+                "IVAyyVf8gqFWB7bP": {
+                    "name": "トークンを使う",
+                    "description": "<p>ダメージを受けたとき、任意の数のトークンを消費して、その数の<strong>d6</strong>をロールできます。出目を合計し、受けるダメージをその分だけ軽減します。攻撃者の近接射程以内にいる場合、同じ量のダメージを攻撃者に返します。</p><p>休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>"
+                }
+            },
+            "effects": {
+                "KPA1okccsR7AQH0x": {
+                    "name": "棘の肌"
+                }
+            }
         },
         "Thought Delver": {
-            "_note": "Thought Delver"
+            "_note": "Thought Delver",
+            "name": "思考を探る者",
+            "description": "<p>他者の心を覗けます。<strong>希望を1消費</strong>して、遠距離以内の対象の漠然とした表層思考を読み取ります。より深く隠された思考まで探るには、対象に対して<strong>呪文発動ロール</strong>を行います。</p><p>恐怖を伴うロールの場合、GMの判断により、対象は思考を読まれていることに気づくことがあります。</p>",
+            "actions": {
+                "7ilDNYo2nfRZF1cj": {
+                    "name": "表層思考を読む",
+                    "description": "<p>他者の心を覗けます。<strong>希望を1消費</strong>して、遠距離以内の対象の漠然とした表層思考を読み取ります。</p>"
+                },
+                "nuYCkANsYDtZJO6f": {
+                    "name": "より深く探る",
+                    "description": "<p>より深く隠された思考まで探るには、対象に対して<strong>呪文発動ロール</strong>を行います。恐怖を伴うロールの場合、GMの判断により、対象は思考を読まれていることに気づくことがあります。</p>"
+                }
+            },
+            "effects": {
+                "obbNjDhwN60YhH1s": {
+                    "name": "読心",
+                    "description": "<p>遠距離以内の対象の漠然とした表層思考を読み取ります。より深く隠された思考まで探るには、対象に対して<strong>呪文発動ロール</strong>を行います。</p>"
+                }
+            }
         },
         "Through Your Eyes": {
-            "_note": "Through Your Eyes"
+            "_note": "Through Your Eyes",
+            "name": "汝の目を通して",
+            "description": "<p>超遠距離以内の対象1体を選びます。その対象の目を通して見て、耳を通して聞けます。別の呪文を発動するか、次の休憩までは、自分の感覚と対象の感覚を自由に切り替えられます。</p>",
+            "actions": {
+                "8ACwa5tqAGyNZ0sR": {
+                    "name": "発動する"
+                }
+            },
+            "effects": {
+                "TCOHV7tWpunCZDxn": {
+                    "name": "視覚・聴覚の共有",
+                    "description": "<p>対象の目を通して見て、耳を通して聞けます。</p>"
+                }
+            }
         },
         "Towering Stalk": {
-            "_note": "Towering Stalk"
+            "_note": "Towering Stalk",
+            "name": "そびえる茎",
+            "description": "<p>休憩ごとに1回、近距離以内に、容易に登れる太くねじれた茎を生み出せます。その高さは遠距離まで伸ばせます。</p><p><strong>ストレスを1マーク</strong>して、この呪文を攻撃として使えます。近距離以内の敵対者1体または敵対者の集団に対して<strong>呪文発動ロール</strong>を行います。噴き出した茎は成功した対象を空中へ持ち上げて落とし、習熟を使った<strong>d8</strong>の物理ダメージを与えます。</p>",
+            "actions": {
+                "KzEDeofyjxeg3pV5": {
+                    "name": "攻撃として使う",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、この呪文を攻撃として使えます。近距離以内の敵対者1体または敵対者の集団に対して<strong>呪文発動ロール</strong>を行います。噴き出した茎は成功した対象を空中へ持ち上げて落とし、習熟を使った<strong>d8</strong>の物理ダメージを与えます。</p>",
+                    "areas": [
+                        {
+                            "name": "そびえる茎"
+                        }
+                    ]
+                },
+                "I6eSBTpuYDU1nEgr": {
+                    "name": "茎を生み出す",
+                    "description": "<p>休憩ごとに1回、近距離以内に、容易に登れる太くねじれた茎を生み出せます。その高さは遠距離まで伸ばせます。</p>"
+                }
+            }
         },
         "Transcendent Union": {
-            "_note": "Transcendent Union"
+            "_note": "Transcendent Union",
+            "name": "超越の結合",
+            "description": "<p>大休憩ごとに1回、<strong>希望を5消費</strong>して、同意する存在2体以上にこの呪文をかけます。次の休憩まで、この結合でつながった存在がストレスまたはHPをマークすることになったとき、つながった存在たちは誰がマークするかを選べます。</p>",
+            "actions": {
+                "FhpWZpXoyXxB13BM": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "kMcvp2QKmBP4uinB": {
+                    "name": "超越の結合",
+                    "description": "<p>次の休憩まで、この結合でつながった存在がストレスまたはHPをマークすることになったとき、つながった存在たちは誰がマークするかを選べます。</p>"
+                }
+            }
         },
         "Troublemaker": {
-            "_note": "Troublemaker"
+            "_note": "Troublemaker",
+            "name": "厄介者",
+            "description": "<p>遠距離以内の対象を嘲るか挑発したとき、その対象に対して<strong>社交ロール</strong>を行います。休憩ごとに1回、成功した場合、習熟に等しい数の<strong>d4</strong>をロールします。対象は、その最高の出目に等しいストレスをマークしなければなりません。</p>",
+            "actions": {
+                "8fv9Rk2Nq6kalkEQ": {
+                    "name": "挑発する"
+                }
+            }
         },
         "Twilight Toll": {
-            "_note": "Twilight Toll"
+            "_note": "Twilight Toll",
+            "name": "黄昏の代償",
+            "description": "<p>遠距離以内の対象1体を選びます。その対象に対するアクションロールに成功し、それがダメージロールにつながらなかったとき、このカードにトークンを1個置きます。この対象にダメージを与えるとき、任意の数のトークンを消費して、消費したトークン1個ごとに<strong>d12</strong>をダメージロールに加えます。黄昏の代償は一度に1体にしか保持できません。</p><p>新しい対象を選ぶか休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "hdMFgH17KyxENDAJ": {
+                    "name": "トークンを消費する",
+                    "description": "<p>この対象にダメージを与えるとき、任意の数のトークンを消費して、消費したトークン1個ごとに<strong> d12</strong>をダメージロールに加えます。黄昏の代償は一度に1体にしか保持できません。新しい対象を選ぶか休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>"
+                }
+            },
+            "effects": {
+                "65UMKq0epBx5DbMC": {
+                    "name": "黄昏の代償"
+                }
+            }
         },
         "Umbral Veil": {
-            "_note": "Umbral Veil"
+            "_note": "Umbral Veil",
+            "name": "影のヴェール",
+            "description": "<p>休憩ごとに1回、<strong>ストレスを1マーク</strong>して自分を影のエネルギーで包めます。そうしたとき、GMのプールにある恐怖の数に等しい数のトークンをこのカードに置きます。あなたへの攻撃ロールが行われた後、任意の数のトークンを消費して、消費したトークン1個につき結果に−1のペナルティを与えられます。</p><p>場面の終わりに、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "I2Ifm2A6C1fkcQJS": {
+                    "name": "ストレスをマーク"
+                },
+                "oeuSyzRQ7Qtg6JaT": {
+                    "name": "トークンを消費する",
+                    "description": "<p>あなたへの攻撃ロールが行われた後、任意の数のトークンを消費して、消費したトークン1個につき結果に−1のペナルティを与えられます。</p>"
+                }
+            }
         },
         "Unbreakable": {
-            "_note": "Unbreakable"
+            "_note": "Unbreakable",
+            "name": "不屈",
+            "description": "<p>最後のHPをマークしたとき、デスムーブを行う代わりに、<strong>d6</strong>をロールしてその出目に等しい数のHPを消せます。その後、このカードを保管庫へ置きます。</p>",
+            "actions": {
+                "NXWbijHKKgqgcAMB": {
+                    "name": "d6をロール"
+                }
+            }
         },
         "Uncanny Disguise": {
-            "_note": "Uncanny Disguise"
+            "_note": "Uncanny Disguise",
+            "name": "巧妙な変装",
+            "description": "<p>数分の準備時間があるとき、<strong>ストレスを1マーク</strong>して、心に明確に思い描ける任意の人型種族の見た目をまとえます。変装している間、詮索を避けるための社交ロールに有利がつきます。</p><p>呪文発動特性に等しい数のトークンをこのカードに置きます。変装中に行動を取るとき、このカードからトークンを1個消費します。最後のトークンを消費した行動が解決された後、変装は解けます。</p>",
+            "actions": {
+                "gMdD6cTmUU4qbwq7": {
+                    "name": "見た目をまとう"
+                },
+                "OoNND7VcWoBQdtFK": {
+                    "name": "トークンを消費する",
+                    "description": "<p>呪文発動特性に等しい数のトークンをこのカードに置きます。変装中に行動を取るとき、このカードからトークンを1個消費します。最後のトークンを消費した行動が解決された後、変装は解けます。</p>"
+                }
+            },
+            "effects": {
+                "ZMDyDwI5RHe427O4": {
+                    "name": "変装",
+                    "description": "<p>心に明確に思い描ける任意の人型種族の見た目をまといます。変装している間、詮索を避けるための社交ロールに有利がつきます。</p>",
+                    "changes": [
+                        "詮索を避けるための社交ロール"
+                    ]
+                },
+                "ou3RLeYshTocbNYo": {
+                    "name": "変装",
+                    "description": "<p>変装している間、詮索を避けるための社交ロールに有利がつきます。</p><p>変装中に行動を取るとき、このカードからトークンを1個消費します。最後のトークンを消費した行動が解決された後、変装は解けます。</p>",
+                    "changes": [
+                        "詮索を避けるための社交ロール"
+                    ]
+                }
+            }
         },
         "Unleash Chaos": {
-            "_note": "Unleash Chaos"
+            "_note": "Unleash Chaos",
+            "name": "混沌の解放",
+            "description": "<p>セッションの開始時に、呪文発動特性に等しい数のトークンをこのカードに置きます。</p><p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行い、任意の数のトークンを消費して、自分の内にある生のエネルギーを対象へ解き放ちます。成功した場合、消費したトークンに等しい数の<strong>d10</strong>をロールし、その合計の魔法ダメージを対象に与えます。<strong>ストレスを1マーク</strong>して、このカードにトークンを補充できます（呪文発動特性まで）。</p><p>各セッションの終わりに、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "MWvrKuwejWcQm7N1": {
+                    "name": "発動する",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行い、任意の数のトークンを消費して、自分の内にある生のエネルギーを対象へ解き放ちます。成功した場合、消費したトークンに等しい数のd10をロールし、その合計の魔法ダメージを対象に与えます。</p>"
+                },
+                "OOMICXFmXqlPy80J": {
+                    "name": "トークンを補充する",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、このカードにトークンを補充します（呪文発動特性まで）。</p>"
+                }
+            }
         },
         "Untouchable": {
-            "_note": "Untouchable"
+            "_note": "Untouchable",
+            "name": "触れられぬ者",
+            "description": "<p>素早さの半分に等しいボーナスを回避値に得ます。</p>",
+            "effects": {
+                "H8hazlQe4Wj4JFO6": {
+                    "name": "触れられぬ者",
+                    "description": "<p>素早さの半分に等しいボーナスを回避値に得ます。</p>"
+                }
+            }
         },
         "Unyielding Armor": {
-            "_note": "Unyielding Armor"
+            "_note": "Unyielding Armor",
+            "name": "不屈の防具",
+            "description": "<p>鎧スロットをマークすることになったとき、習熟に等しい数の<strong>d6</strong>をロールします。いずれかが6を出した場合、鎧スロットをマークせずに深刻度をしきい値1段階ぶん下げます。</p>"
         },
         "Valor-Touched": {
             "_note": "Valor-Touched",
+            "name": "ヴァラー接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がヴァラードメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>鎧値に＋1のボーナス</p></li><li class=\"vertical-card-list-found\"><p>鎧スロットをマークせずにHPを1つ以上マークしたとき、鎧スロットを1つ消します。</p></li></ul>",
             "actions": {
                 "F04596OgMgpnhpQp": {
-                    "name": "鎧スロットを消す"
+                    "name": "鎧スロットを消す",
+                    "description": "<p>鎧スロットをマークせずにHPを1つ以上マークしたとき、鎧スロットを1つ消します。</p>"
+                }
+            },
+            "effects": {
+                "Ma8Zp005QYKPWIEN": {
+                    "name": "ヴァラー接触",
+                    "description": "<ul><li class=\"vertical-card-list-found\"><p>鎧値に＋1のボーナス</p></li><li class=\"vertical-card-list-found\"><p>鎧スロットをマークせずにHPを1つ以上マークしたとき、鎧スロットを1つ消します。</p></li></ul>"
                 }
             }
         },
         "Vanishing Dodge": {
             "_note": "Vanishing Dodge",
+            "name": "消え失せる回避",
+            "description": "<p>物理ダメージを与えるはずだったあなたへの攻撃が失敗したとき、<strong>希望を1消費</strong>して自分を影で包み、<em>隠密</em>になって攻撃者の近距離以内の地点へテレポートできます。次にアクションロールを行うまで<em>隠密</em>のままです。</p>",
+            "actions": {
+                "sKF4yJISBeOX8gGH": {
+                    "name": "消え失せる"
+                }
+            },
             "effects": {
                 "kxal5WfDr3hTHYpb": {
-                    "name": "隠密"
+                    "name": "隠密",
+                    "description": "<p>自分を影で包み、隠密になって攻撃者の近距離以内の地点へテレポートします。次にアクションロールを行うまで隠密のままです。</p>"
                 }
             }
         },
         "Veil of Night": {
-            "_note": "Veil of Night"
+            "_note": "Veil of Night",
+            "name": "夜のヴェール",
+            "description": "<p><strong>呪文発動ロール</strong><strong>（13）</strong>を行います。成功した場合、遠距離以内の2点の間に一時的な暗闇の帳を作り出せます。この暗闇を見通せるのはあなただけです。帳の向こう側にいる敵対者からは<em>隠密</em>とみなされ、暗闇を通して行う攻撃には有利がつきます。この帳は、あなたが別の呪文を発動するまで残ります。</p>",
+            "actions": {
+                "br6UQ0toK4ZYpP2s": {
+                    "name": "発動する",
+                    "description": "<p><strong>呪文発動ロール</strong>（13）を行います。成功した場合、遠距離以内の2点の間に一時的な暗闇の帳を作り出せます。この暗闇を見通せるのはあなただけです。帳の向こう側にいる敵対者からは<em>隠密</em>とみなされ、暗闇を通して行う攻撃には有利がつきます。この帳は、あなたが別の呪文を発動するまで残ります。</p>",
+                    "areas": [
+                        {
+                            "name": "夜のヴェール"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "eSfBBZ7IP8qirLu7": {
+                    "name": "帳に覆われた",
+                    "changes": [
+                        "暗闇を通して行う攻撃ロール"
+                    ]
+                }
+            }
         },
         "Versatile Fighter": {
-            "_note": "Versatile Fighter"
+            "_note": "Versatile Fighter",
+            "name": "万能の戦士",
+            "description": "<p>装備している武器について、その武器が求める特性ではなく、別のキャラクター特性を使えます。</p><p>ダメージを与えるとき、<strong>ストレスを1マーク</strong>して、ダメージダイス1個をロールせずに最大値として扱えます。</p>",
+            "actions": {
+                "XAaygVE635axvBX7": {
+                    "name": "ストレスを1マーク"
+                }
+            }
         },
         "Vicious Entangle": {
             "_note": "Vicious Entangle",
+            "name": "荒々しい絡めとり",
+            "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、地面から根と蔓が伸び、<strong>1d8+1</strong>の物理ダメージを与え、対象を一時的に<em>拘束</em>します。</p><p>さらに成功した場合、<strong>希望を1消費</strong>して、対象の至近以内にいる別の敵対者も一時的に<em>拘束</em>できます。</p>",
+            "actions": {
+                "lrA95PnD2vOwwmgN": {
+                    "name": "発動する",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、地面から根と蔓が伸び、<strong>1d8+1</strong>の物理ダメージを与え、対象を一時的に<em>拘束</em>します。</p>"
+                },
+                "vh1IKRvsU4w57lBt": {
+                    "name": "別の対象を拘束する",
+                    "description": "<p>さらに成功した場合、<strong>希望を1消費</strong>して、対象の至近以内にいる別の敵対者も一時的に<em>拘束</em>できます。</p>"
+                }
+            },
             "effects": {
                 "Xh0wrgRUuYpwChBU": {
                     "name": "拘束"
@@ -2664,52 +3194,180 @@
             }
         },
         "Vitality": {
-            "_note": "Vitality"
+            "_note": "Vitality",
+            "name": "生命力",
+            "description": "<p>このカードを選んだとき、以下の利益から2つを恒久的に得ます。</p><ul><li class=\"vertical-card-list-found\"><p>ストレススロット1つ</p></li><li class=\"vertical-card-list-found\"><p>HPスロット1つ</p></li><li class=\"vertical-card-list-found\">ダメージしきい値に＋2のボーナス</li></ul><p>その後、このカードを恒久的に保管庫へ置きます。</p>",
+            "actions": {
+                "W8nmboZ41sij2ybT": {
+                    "name": "効果を適用する",
+                    "description": "<p>以下から選びます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>ストレススロット1つ</p></li><li class=\"vertical-card-list-found\"><p>HPスロット1つ</p></li><li class=\"vertical-card-list-found\">ダメージしきい値に＋2のボーナス</li></ul><p>（効果は無効の状態で適用されます。現時点では、キャラクターシートで2つを手動で有効にする必要があります。</p>"
+                }
+            },
+            "effects": {
+                "1jtgIyFvDpTb0asZ": {
+                    "name": "生命力（HP）",
+                    "description": "<p>HPスロットを1つ恒久的に追加します</p>"
+                },
+                "vj9rm1tLqqsSFOXF": {
+                    "name": "生命力（ストレス）",
+                    "description": "<p>ストレススロットを1つ恒久的に追加します</p>"
+                },
+                "BcqCG9yF6l1LRYqm": {
+                    "name": "生命力（しきい値）",
+                    "description": "<p>ダメージしきい値に＋2のボーナスを恒久的に追加します</p>"
+                }
+            }
         },
         "Voice of Dread": {
             "_note": "Voice of Dread",
+            "name": "恐慄の声",
+            "description": "<p>見えている存在に魔法的に語りかけ、言葉で苛めます。その存在に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象はストレスを1マークし、恐怖で固まって一時的に<em>拘束</em>となります。</p>",
             "actions": {
                 "NEnfKz6ZHlexeLWd": {
                     "name": "呪文発動ロール"
+                }
+            },
+            "effects": {
+                "QX5loby3qcu9IWlc": {
+                    "name": "恐れおののく"
                 }
             }
         },
         "Voice of Reason": {
             "_note": "Voice of Reason",
+            "name": "理性の声",
+            "description": "<p>あなたは並ぶものなき力と威厳をもって語ります。暴力的な状況を収める、あるいは誰かにあなたに従うよう説き伏せるためのアクションロールに有利がつきます。</p><p>さらに、あなたは苦境でこそ気を強くします。ストレススロットをすべてマークしているとき、ダメージロールのための習熟に＋1のボーナスを得ます。</p>",
             "effects": {
                 "qWDojebJXMPIP629": {
-                    "name": "有利"
+                    "name": "有利",
+                    "description": "<p>暴力的な状況を収める、あるいは誰かにあなたに従うよう説き伏せるためのアクションロールに有利がつきます。</p>",
+                    "changes": [
+                        "暴力的な状況を収める。",
+                        "誰かにあなたに従うよう説き伏せる。"
+                    ]
+                },
+                "i5dnpOxTtWV1J46k": {
+                    "name": "気を強くした（手動で有効化）",
+                    "description": "<p>ストレススロットをすべてマークしているとき、ダメージロールのための習熟に＋1のボーナスを得ます。</p>"
                 }
             }
         },
         "Wall Walk": {
-            "_note": "Wall Walk"
+            "_note": "Wall Walk",
+            "name": "壁渡り",
+            "description": "<p><strong>希望を1消費</strong>して、触れられる存在1体が、地面を歩くのと同じ容易さで壁や天井を登れるようにします。これは場面の終わりまで、またはあなたが再び壁渡りを発動するまで持続します。</p>",
+            "actions": {
+                "iqFrWFRVPnR1fYf4": {
+                    "name": "発動する"
+                }
+            },
+            "effects": {
+                "s1q4O65vtoEDvvUF": {
+                    "name": "壁渡り",
+                    "description": "<p>地面を歩くのと同じ容易さで壁や天井を登れます。これは場面の終わりまで、または術者が再び壁渡りを発動するまで持続します。</p>"
+                }
+            }
         },
         "Wall of Hunger": {
             "_note": "Wall of Hunger",
+            "name": "飢えの壁",
+            "description": "<p><strong>呪文発動ロール（10）</strong>を行います。成功した場合、希望を1消費して、遠距離以内の2点の間にうねる死の力でできた、目に見える壁を作り出せます。この壁は、あなたがHPを1つマークするか、この呪文を再び発動するまで持続します。壁が現れたときその中にいた存在、または壁を通り抜けた存在は、ストレスを2マークしなければなりません。</p>",
             "actions": {
                 "J0gVHF0IqvuwsTtt": {
-                    "name": "呪文発動ロール"
+                    "name": "呪文発動ロール",
+                    "areas": [
+                        {
+                            "name": "飢えの壁"
+                        }
+                    ]
+                },
+                "kleemC4p5DTs3YTp": {
+                    "name": "壁のダメージ",
+                    "description": "<p>壁が現れたときその中にいた存在、または壁を通り抜けた存在は、ストレスを2マークしなければなりません。</p>"
                 }
             }
         },
         "Whirlwind": {
-            "_note": "Whirlwind"
+            "_note": "Whirlwind",
+            "name": "旋風",
+            "description": "<p>至近以内の対象への攻撃に成功したとき、<strong>希望を1消費</strong>して、その攻撃を至近以内の他のすべての対象に対しても使えます。この能力で成功した追加の敵対者は、ダメージが半分になります。</p>",
+            "actions": {
+                "g9X0wRuCtAYzF576": {
+                    "name": "希望を1消費する",
+                    "areas": [
+                        {
+                            "name": "旋風"
+                        }
+                    ]
+                }
+            }
         },
         "Wild Fortress": {
-            "_note": "Wild Fortress"
+            "_note": "Wild Fortress",
+            "name": "野生の砦",
+            "description": "<p><strong>呪文発動ロール（13）</strong>を行います。成功した場合、<strong>希望を2消費</strong>して、あなたと仲間1人が身を隠せるドーム状の自然の防壁を生やします。ドームの中にいる間、存在は攻撃の対象にならず、攻撃も行えません。ドームへの攻撃は自動的に成功します。ドームは中傷値15・重傷値30を持ち、HPを3つマークするまで持続します。HPのマークを表すため、このカードにトークンを置きます。</p>",
+            "actions": {
+                "WlcAj8f6THUudbWp": {
+                    "name": "発動する"
+                }
+            }
         },
         "Wild Surge": {
-            "_note": "Wild Surge"
+            "_note": "Wild Surge",
+            "name": "野生の高まり",
+            "description": "<p>大休憩ごとに1回、<strong>ストレスを1マーク</strong>して、周囲の自然界の力を取り込み自身を強化します。姿がどう変わるかを描写し、<strong>d6</strong>を1の面を上にしてこのカードに置きます。</p><p>野生の高まりダイスが有効な間、行うすべてのアクションロールにその値を加えます。ロールにその値を加えた後、野生の高まりダイスの値を1つ上げます。ダイスの値が6を超えることになるか、休憩を取ったとき、この姿は解け、<strong>ストレスを追加で1マーク</strong>しなければなりません。</p>",
+            "actions": {
+                "nYu6LRNVDKfWUJhx": {
+                    "name": "自然を取り込む"
+                }
+            }
         },
         "Words of Discord": {
-            "_note": "Words of Discord"
+            "_note": "Words of Discord",
+            "name": "不和の言葉",
+            "description": "<p>近接射程以内の敵対者に不和の言葉を囁き、<strong>呪文発動ロール（13）</strong>を行います。成功した場合、対象はストレスを1マークし、あなたや仲間ではなく別の敵対者に対して攻撃を行わなければなりません。</p><p>この攻撃が終わると、対象は何が起きたかを悟ります。次にその対象に不和の言葉を発動するとき、呪文発動ロールに−5のペナルティがつきます。</p>",
+            "actions": {
+                "8BKvS2s0IPMA8wF9": {
+                    "name": "発動する"
+                }
+            },
+            "effects": {
+                "DGp7TSriFWotAvP6": {
+                    "name": "不和の言葉",
+                    "description": "<p>対象はあなたや仲間ではなく別の敵対者に対して攻撃を行わなければなりません。この攻撃が終わると、対象は何が起きたかを悟ります。次にその対象に不和の言葉を発動するとき、呪文発動ロールに−5のペナルティがつきます。</p>"
+                }
+            }
         },
         "Wrangle": {
-            "_note": "Wrangle"
+            "_note": "Wrangle",
+            "name": "追い立て",
+            "description": "<p>近距離以内のすべての対象に対して素早さロールを行います。<strong>希望を1消費</strong>して、成功した対象と、近距離以内の同意する仲間を、近距離以内の別の地点へ移動させます。</p>",
+            "actions": {
+                "XKY0LJYmvuILmNNU": {
+                    "name": "素早さロール",
+                    "description": "<p>近距離以内のすべての対象に対して素早さロールを行います。<strong>希望を1消費</strong>して、成功した対象と、近距離以内の同意する仲間を、近距離以内の別の地点へ移動させます。</p><p>@Template[type:emanation|range:c]</p>",
+                    "areas": [
+                        {
+                            "name": "追い立て"
+                        }
+                    ]
+                }
+            }
         },
         "Zone of Protection": {
-            "_note": "Zone of Protection"
+            "_note": "Zone of Protection",
+            "name": "守護の領域",
+            "description": "<p><strong>呪文発動ロール（16）</strong>を行います。大休憩ごとに1回、成功した場合、遠距離以内の地点を1つ選び、その地点の至近以内にいるすべての仲間のために、目に見える守護の領域を作り出します。そうしたとき、<strong>d6</strong>を1の面を上にしてこのカードに置きます。この領域にいる仲間がダメージを受けたとき、そのダイスの値だけダメージを軽減します。その後、ダイスの値を1つ上げます。ダイスの値が6を超えることになったとき、この効果は終わります。</p>",
+            "actions": {
+                "U4faKrfbdN797zJm": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "守護の領域"
+                        }
+                    ]
+                }
+            }
         }
     }
 }

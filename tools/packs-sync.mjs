@@ -92,6 +92,55 @@ const readJson = async file => JSON.parse(await fs.readFile(file, 'utf8'));
 const ENRICHER = /@[A-Za-z]+\[[^\]]*\]|\[\[[^\]]*\]\]/g;
 
 /*
+ * Every number and dice expression in a rules text. These are the mechanics:
+ * a translation may rearrange the sentence around `2d8+4` or a Difficulty of
+ * 15, but it may not drop one or change its value. A lost +1 reads perfectly
+ * and plays wrong, which is the class of error reading the text does not
+ * catch -- so `check` counts them.
+ *
+ * Only numbers the ORIGINAL has are required. Where the original writes a
+ * quantity in words, Japanese writes it in digits -- "spend a Hope" becomes
+ * 希望を1消費, "double your Agility" becomes 2倍, "Clear Three Stress" becomes
+ * ストレスを3つ消す -- so those words count as the digits they name, and a
+ * bare 1 is always allowed for an article. Any other extra digit is reported:
+ * that is an invented quantity.
+ */
+const NUMBERS = /\d+d\d+|\d+/g;
+
+const NUMBER_WORDS = {
+    one: '1',
+    two: '2',
+    three: '3',
+    four: '4',
+    five: '5',
+    six: '6',
+    seven: '7',
+    eight: '8',
+    nine: '9',
+    ten: '10',
+    eleven: '11',
+    twelve: '12',
+    once: '1',
+    twice: '2',
+    double: '2',
+    doubles: '2',
+    triple: '3',
+    single: '1',
+    first: '1',
+    second: '2',
+    third: '3'
+};
+
+/** The digits a translation of this text may contain, as a multiset. */
+function allowedNumbers(source) {
+    const allowed = String(source).match(NUMBERS) ?? [];
+    for (const word of String(source).toLowerCase().match(/[a-z]+/g) ?? []) {
+        if (NUMBER_WORDS[word]) allowed.push(NUMBER_WORDS[word]);
+    }
+    return allowed;
+}
+
+/*
  * Folders are keyed by their English NAME, not by an id, so they cannot live
  * beside the documents in a pending file keyed by id. This reserved key holds
  * them; a document id is 16 characters and can never collide with it.
@@ -1041,6 +1090,35 @@ const commands = {
                         console.log(`${collection} ${document._id} ${where}`);
                         console.log(`  original:    ${inSource.join(' ') || '(none)'}`);
                         console.log(`  translation: ${inValue.join(' ') || '(none)'}`);
+                    }
+
+                    /*
+                     * Compared as multisets, not in order: Japanese puts the die
+                     * before the damage word and the count after the noun, so
+                     * the order legitimately changes. What matters is that every
+                     * number of the original is still there.
+                     */
+                    const remaining = (String(value).match(NUMBERS) ?? []);
+                    const missing = [];
+                    for (const number of String(source).match(NUMBERS) ?? []) {
+                        const at = remaining.indexOf(number);
+                        if (at === -1) missing.push(number);
+                        else remaining.splice(at, 1);
+                    }
+                    /* Whatever the translation has left must be a spelled-out quantity or an article. */
+                    const spare = allowedNumbers(source);
+                    const invented = remaining.filter(number => {
+                        if (number === '1') return false;
+                        const at = spare.indexOf(number);
+                        if (at === -1) return true;
+                        spare.splice(at, 1);
+                        return false;
+                    });
+                    if (missing.length || invented.length) {
+                        problems += 1;
+                        console.log(`${collection} / ${keys.get(document._id)} :: ${where}`);
+                        if (missing.length) console.log(`  missing from the translation: ${missing.join(' ')}`);
+                        if (invented.length) console.log(`  not in the original:          ${invented.join(' ')}`);
                     }
                 }
             }
