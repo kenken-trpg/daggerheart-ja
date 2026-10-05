@@ -16,7 +16,8 @@
             "_note": "Welcome - Information",
             "pages": {
                 "Dice Rolling": {
-                    "name": "ダイスロール"
+                    "name": "ダイスロール",
+                    "text": "<p>このシステムは <a href=\"https://foundryvtt.com/packages/dice-so-nice\" title=\"Dice so Nice! Module\">Dice so Nice!</a> モジュールに対応しています。</p><p>このモジュールの使用は必須ではありませんが、インストールして<em>有効化</em>すると、本システムの設定に「外観設定」が追加され、希望・恐怖・有利・不利の各ダイスの見た目を変更できます。</p>"
                 }
             }
         }

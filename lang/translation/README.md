@@ -1948,9 +1948,32 @@ README に上流追従のたびに確認する旨を書いた。
 
 ### 現状
 
-15/15パック有効、61/10,431フィールド。翻訳対象は journals 込みで
+15/15パック有効、62/10,484フィールド。翻訳対象は journals 込みで
 208,012字 → **178,266字**。`packs:probe` は50件。
 
-**journals の実機確認は未了** (ブラウザ拡張の接続が切れたため)。
-ページ名・本文のマッピングは Babele の既定 (`JournalEntry` → `pages` →
-`JournalEntryPage` の `name` / `text.content`) で、ハーネスでは通っている。
+### 実機で確認した。ついでに Credits ページが訳せないことが分かった
+
+| 項目 | 結果 |
+| --- | --- |
+| ジャーナル3件 | `Daggerheart SRD（日本語）` / `Welcome - Information` / `Witherwild Campaign Frame` |
+| Witherwild | **全ページ英語のまま**。除外が実機で効いている |
+| ページ名 | 目次に `ダイスロール` |
+| ページ本文 | 訳文が表示され、`<a>` も `<em>` も生きている |
+| レイアウト崩れ | 0件 |
+
+確認中に **Foundryborne の Credits ページが DPCGL 4.3 の著作権表記そのものを
+持っている**ことに気づいた。冒頭が
+`"This product includes materials from the Daggerheart System Reference
+Document 1.0, © Critical Role, LLC..."` で、末尾が
+`"There are no previous modifications by others."`。
+
+**このページは訳せない。** 訳せば、要求されている表記を自分の訳文で置き換える
+ことになる。しかもその最後の一文は、本モジュールが何か訳した時点で偽になる。
+上流が置いた場所では英語のまま残し、本モジュール自身の 4.1(a)-(e) 表記は
+`NOTICE` が負う、という分担にした。
+
+文書単位の `BLOCKED` とは別に `BLOCKED_PAGES` を足し、`export` の withheld 出力、
+`check` の検査、`packs:probe` の検査をページ単位でも回るようにした。
+ページ側のガードも、手で書き込んで発火することを確認済み。
+
+`packs:probe` は55件。

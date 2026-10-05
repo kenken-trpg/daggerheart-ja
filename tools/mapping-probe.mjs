@@ -219,8 +219,12 @@ const check = (label, actual, expected) =>
     const out = translate('JournalEntry', welcome, entries['Welcome - Information']);
     const dice = out.pages.find(p => p.name === 'ダイスロール');
     check('journal page name', !!dice, true);
-    check('page body left alone', dice?.text?.content,
-        welcome.pages.find(p => p.name === 'Dice Rolling').text.content);
+    check('page body translated', dice?.text?.content?.includes('希望・恐怖・有利・不利'), true);
+    check('the link inside it survived',
+        dice?.text?.content?.includes('https://foundryvtt.com/packages/dice-so-nice'), true);
+    const untouched = out.pages.find(p => p.name === 'Automation / Manual');
+    check('an untranslated page is left alone', untouched?.text?.content,
+        welcome.pages.find(p => p.name === 'Automation / Manual').text.content);
     check('page count', out.pages.length, welcome.pages.length);
 
     /*
@@ -236,6 +240,18 @@ const check = (label, actual, expected) =>
         [frame.name, frame._id].some(key => key in entries), false);
     check('only the two permitted journals were written', Object.keys(entries).sort(),
         ['Daggerheart SRD', 'Welcome - Information']);
+
+    /*
+     * Upstream's Credits page is where the DPCGL 4.3 notice actually lives, so
+     * it must stay in English and out of the translation file.
+     */
+    check('the credits page exists upstream',
+        welcome.pages.some(page => page.name === 'Credits'), true);
+    check('and is not in the translation file',
+        'Credits' in (entries['Welcome - Information']?.pages ?? {}), false);
+    check('the notice it carries is the one this module had to restate',
+        welcome.pages.find(page => page.name === 'Credits').text.content
+            .includes('There are no previous modifications by others'), true);
 }
 
 let failed = 0;

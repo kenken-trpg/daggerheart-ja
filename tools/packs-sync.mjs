@@ -115,6 +115,26 @@ const BLOCKED = {
 /** Whether this document is blocked from export, and why. */
 const blockedReason = (pack, document) => BLOCKED[pack]?.[document.name] ?? null;
 
+/*
+ * Pages withheld from an otherwise translatable journal.
+ *
+ * Foundryborne's Credits page carries the DPCGL 4.3 copyright notice verbatim,
+ * ending "There are no previous modifications by others". Translating that page
+ * would replace a required notice with our rendering of it, and that sentence is
+ * false the moment this module translates anything. The notice stays in English
+ * where upstream put it; this module's own 4.1(a)-(e) statement lives in NOTICE.
+ */
+const BLOCKED_PAGES = {
+    journals: {
+        'Welcome - Information': {
+            Credits: 'carries the DPCGL 4.3 copyright notice; it stays as upstream wrote it'
+        }
+    }
+};
+
+const blockedPageReason = (pack, document, page) =>
+    BLOCKED_PAGES[pack]?.[document.name]?.[page.name] ?? null;
+
 /**
  * Read one source pack directory, splitting the folder definitions out of the
  * documents. Babele translates folders by NAME under a separate `folders` key,
@@ -240,7 +260,7 @@ function effectFields(effect) {
  *   potentialAdversaries[].adversaries  the same, as a list
  * Translating any of these breaks the reference rather than localizing it.
  */
-function translatableFields(document) {
+function translatableFields(document, pack = null) {
     const fields = { name: document.name ?? '' };
 
     /*
@@ -257,6 +277,7 @@ function translatableFields(document) {
      */
     if (Array.isArray(document.pages)) {
         const pages = document.pages.reduce((acc, page) => {
+            if (blockedPageReason(pack, document, page)) return acc;
             const entry = {};
             if (page.name) entry.name = page.name;
             if (page.text?.content) entry.text = page.text.content;
@@ -340,7 +361,7 @@ function translatableFields(document) {
 
     /* Embedded items are documents in their own right, so they recurse. */
     const items = (document.items ?? []).reduce((acc, item) => {
-        const entry = translatableFields(item);
+        const entry = translatableFields(item, pack);
         /* `name` is always present; an item with only a name still needs translating. */
         if (Object.keys(entry).length) acc[item._id] = entry;
         return acc;
@@ -444,7 +465,7 @@ async function buildPack(pack) {
     const keys = entryKeys(documents);
     const entries = {};
     for (const document of documents) {
-        const original = translatableFields(document);
+        const original = translatableFields(document, pack);
         /* Files written before the switch to name keys are still keyed by id. */
         const carried = previous.entries?.[keys.get(document._id)] ?? previous.entries?.[document._id];
         entries[keys.get(document._id)] = {
@@ -460,7 +481,7 @@ async function buildPack(pack) {
     );
 
     /* The original shape, so `apply` can tell a keyed container from an array. */
-    const originals = Object.fromEntries(documents.map(d => [keys.get(d._id), translatableFields(d)]));
+    const originals = Object.fromEntries(documents.map(d => [keys.get(d._id), translatableFields(d, pack)]));
 
     return { collection, file, previous, documents, entries, folderNames, originals, keys, blocked };
 }
@@ -495,7 +516,12 @@ const commands = {
 
             console.log(
                 `${collection}: ${documents.length} entries${retired.length ? `, ${retired.length} dropped by upstream` : ''}` +
-                    blocked.map(d => `\n  withheld: ${d.name} -- ${blockedReason(pack, d)}`).join('')
+                    blocked.map(d => `\n  withheld: ${d.name} -- ${blockedReason(pack, d)}`).join('') +
+                    documents
+                        .flatMap(d => (d.pages ?? []).map(page => [d, page]))
+                        .filter(([d, page]) => blockedPageReason(pack, d, page))
+                        .map(([d, page]) => `\n  withheld: ${d.name} / ${page.name} -- ${blockedPageReason(pack, d, page)}`)
+                        .join('')
             );
         }
     },
@@ -514,7 +540,7 @@ const commands = {
             const entries = {};
 
             for (const document of documents) {
-                const original = translatableFields(document);
+                const original = translatableFields(document, pack);
                 const translation = current.entries?.[keys.get(document._id)] ?? {};
                 const missing = {};
 
@@ -636,7 +662,7 @@ const commands = {
              * only counts when upstream actually has text there to translate.
              */
             for (const document of documents) {
-                const original = translatableFields(document);
+                const original = translatableFields(document, pack);
                 const translation = current.entries?.[keys.get(document._id)] ?? {};
                 for (const [, source, value] of leaves(original, translation)) {
                     if (!source) continue;
@@ -691,7 +717,18 @@ const commands = {
             }
 
             for (const document of documents) {
-                const original = translatableFields(document);
+                const entry = current.entries?.[keys.get(document._id)];
+                for (const page of document.pages ?? []) {
+                    const reason = blockedPageReason(pack, document, page);
+                    if (!reason || !entry?.pages?.[page.name]) continue;
+                    problems += 1;
+                    console.log(`${collection}: withheld page '${document.name} / ${page.name}' is present`);
+                    console.log(`  ${reason}`);
+                }
+            }
+
+            for (const document of documents) {
+                const original = translatableFields(document, pack);
                 const translation = current.entries?.[keys.get(document._id)] ?? {};
 
                 for (const [where, source, value] of leaves(original, translation)) {
