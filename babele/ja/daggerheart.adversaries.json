@@ -9950,7 +9950,16 @@
         },
         "Ravenous Mockery": {
             "_note": "Ravenous Mockery",
+            "name": "飢えた模造物",
+            "description": "<p>無生物の見た目をとって不用心な獲物を射程内へ誘い込む、姿を変える捕食者。</p>",
+            "motivesAndTactics": "待ち伏せる、潜んで待つ、噛まずに丸呑みする、目立たない姿をとる",
+            "attack": {
+                "name": "噛み鳴らす歯"
+            },
             "experiences": {
+                "J0mSRuVhv69JgrUd": {
+                    "name": "模写"
+                },
                 "yWNC2BtdlQWVwQ2Z": {
                     "name": "飢餓"
                 }
@@ -9958,6 +9967,7 @@
             "items": {
                 "rn2adeYuqdaHFD0v": {
                     "name": "舌の攻撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のクリーチャーを攻撃します。成功した場合、その対象は模造物の近接距離まで引き寄せられ、頑強ロールに成功して逃れるまで<em>拘束</em>されます。また、<strong>恐怖を1消費</strong>して、その対象に対し模造物の「喰らう」特徴を発動できます。</p>",
                     "actions": {
                         "hIIs4Vn2ATC72SnO": {
                             "name": "ストレスをマーク"
@@ -9965,19 +9975,32 @@
                     },
                     "effects": {
                         "6Jfy2dcM2AByqzE1": {
-                            "name": "捕縛"
+                            "name": "捕縛",
+                            "description": "<p>頑強ロールに成功して逃れるまで<em>拘束</em>されています</p>"
                         }
                     }
                 },
                 "G1qVvL0l6KKd7sTs": {
                     "name": "喰らう",
+                    "description": "<p>近接距離以内の対象を攻撃します。成功した場合、模造物はその対象を呑み込みます。「呑まれた」あいだ、その対象は<em>拘束</em>されており、模造物にスポットライトが当たったときHPを1マークします。模造物は中傷または重傷ダメージを受けたとき、呑み込んだすべてのクリーチャーを吐き出します。</p>",
+                    "actions": {
+                        "JWkNxCaR1aBUfeI3": {
+                            "name": "呑み込む"
+                        },
+                        "mEVR59fZyV4bUICm": {
+                            "name": "呑まれたダメージ"
+                        }
+                    },
                     "effects": {
                         "TgY8vZ5fm8EwOaRU": {
-                            "name": "飲み込まれ"
+                            "name": "飲み込まれ",
+                            "description": "<p>拘束されており、模造物にスポットライトが当たるたびHPを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "i2G6IPeYPxI5Yex6": {
+                    "name": "一体では済まない",
+                    "description": "<p><strong>恐怖を1消費</strong>して、戦場にある別の物体が初めからずっと@Lookup[@name]だったことを明らかにし、直ちにそれにスポットライトを当てます。</p>",
                     "actions": {
                         "94KPvNOPX3gbYYa3": {
                             "name": "恐怖を消費する"
@@ -9988,6 +10011,9 @@
         },
         "Red Ooze": {
             "_note": "Red Ooze",
+            "name": "赤のウーズ",
+            "description": "<p>半透明の燃えるような赤い粘液が動く塊。</p>",
+            "motivesAndTactics": "擬態する、食らって増える、燃え上がらせる、火を放つ",
             "attack": {
                 "name": "軟泥の触手"
             },
@@ -9997,15 +10023,33 @@
                 }
             },
             "items": {
+                "QGQTLWXIMMLUvm7c": {
+                    "name": "這い寄る炎",
+                    "description": "<p>@Lookup[@name]は通常の移動として超近距離以内にしか移動できません。触れた燃えやすい物体はすべて燃え上がらせます。</p>"
+                },
                 "JU9uVwZSM0ItnZRq": {
+                    "name": "燃え上がらせる",
+                    "description": "<p>超近距離以内の対象に攻撃を行います。成功した場合、対象は<strong>1d8</strong>の魔法ダメージを受け、器用ロール（14）に成功して消し止めるまで「燃焼」状態になります。「燃焼」のあいだ、対象はアクションロールを行うとき<strong>1d4</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "b4g8XUIKLhxDlUPy": {
                             "name": "攻撃"
+                        },
+                        "6xYE9Zi8ce6bYjV8": {
+                            "name": "燃焼ダメージ",
+                            "description": "<p>「燃焼」のあいだ、対象はアクションロールを行うとき<strong>1d4</strong>の魔法ダメージを受けます。</p>"
+                        }
+                    },
+                    "effects": {
+                        "9UBLk9M87VIUziAQ": {
+                            "name": "燃焼",
+                            "description": "<p>器用ロール（14）に成功して消し止めるまで<em>燃焼</em>状態です。<em>燃焼</em>のあいだ、アクションロールを行うたびに<strong>1d4</strong>の魔法ダメージを受けます。</p><p>[[/dr trait=finesse difficulty=14]]</p>",
+                            "durationDescription": "<p>器用ロール（14）に成功して消し止めるまで</p>"
                         }
                     }
                 },
                 "M9gAcPrgKfSg9Tjb": {
                     "name": "分裂",
+                    "description": "<p>@Lookup[@name]がHPを3つ以上マークしているとき、<strong>恐怖を1消費</strong>して、それを2体の@UUID[Compendium.daggerheart.adversaries.Actor.1fkLQXVtmILqfJ44]{小さな赤のウーズ}（HPとストレスはマークなし）に分裂させられます。直ちに両方にスポットライトを当てます。</p>",
                     "actions": {
                         "BMEr77hDxaQyYBna": {
                             "name": "恐怖を消費する"
@@ -10016,7 +10060,22 @@
         },
         "Redcap Biters": {
             "_note": "Redcap Biters",
+            "name": "レッドキャップの噛みつき衆",
+            "description": "<p>針のように鋭い歯を持ち、蝋で頭に留めた円錐形の赤い帽子をかぶった、拳ほどの大きさの妖精のクリーチャーの一団。</p>",
+            "motivesAndTactics": "引き倒す、小さな勝利を祝う、くすくす笑いチチと鳴く、壁の間を駆け回る",
+            "attack": {
+                "name": "噛み砕き"
+            },
+            "experiences": {
+                "4InpHfJbXuTXiQer": {
+                    "name": "隅と隙間"
+                }
+            },
             "items": {
+                "m1iwZJ8vLcN7LPei": {
+                    "name": "足枷",
+                    "description": "<p>PCが噛みつき衆の近接距離から出るには、ストレスを1マークしなければなりません。</p>"
+                },
                 "cGjDZdramHNK4cum": {
                     "name": "群れ",
                     "description": "@Lookup[@name]がHPの半分以上をマークしているとき、標準攻撃は代わりに@Lookup[@system.typeData.hordeDamage]の@Lookup[@system.attackDamageType]ダメージを与えます。",
@@ -10030,18 +10089,44 @@
         },
         "Redcap Breaker": {
             "_note": "Redcap Breaker",
+            "name": "レッドキャップの打ち砕き",
+            "description": "<p>蝋で頭に留めた円錐形の赤い帽子をかぶった、大きく粗暴な妖精のクリーチャー。</p>",
+            "motivesAndTactics": "胸を叩いて吼える、弱い敵を振り回す、無闇に突き進む",
+            "attack": {
+                "name": "木槌"
+            },
+            "experiences": {
+                "5MOOCyOKl006nGGe": {
+                    "name": "骨"
+                }
+            },
             "items": {
                 "7Hb61RwIDV2By15p": {
+                    "name": "背骨折り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、<strong>3d4+10</strong>の物理ダメージを与えます。この攻撃でHPをマークした対象は、HPを1つ消すまで<em>拘束</em>されます。</p>",
                     "actions": {
                         "kUEd4TvOpuhBdc9f": {
                             "name": "ストレスをマーク"
                         }
+                    },
+                    "effects": {
+                        "MovoV21E6v5WRgw9": {
+                            "name": "折れた背骨",
+                            "description": "<p>HPを1つ消すまで<em>拘束</em>されています。</p>"
+                        }
                     }
                 },
                 "TLhieXiU5Sy4TOy1": {
+                    "name": "膝割り",
+                    "description": "<p>打ち砕きが通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、その対象を一時的に<em>脆弱</em>にできます。</p>",
                     "actions": {
                         "bxiPWlfz7UtZJXSQ": {
                             "name": "恐怖を消費する"
+                        }
+                    },
+                    "effects": {
+                        "RBTFlXeY26W7xSug": {
+                            "name": "膝を割られた"
                         }
                     }
                 }
@@ -10049,8 +10134,21 @@
         },
         "Redcap Butcher": {
             "_note": "Redcap Butcher",
+            "name": "レッドキャップの肉切り",
+            "description": "<p>さまざまな刃物で犠牲者を切り刻む、ハーフリングほどの大きさの妖精のクリーチャー。蝋で頭に留めた円錐形の赤い帽子をかぶっている。</p>",
+            "motivesAndTactics": "不気味に笑う、切り刻む、這い回る",
+            "attack": {
+                "name": "肉切り包丁"
+            },
+            "experiences": {
+                "wHSEZS1xGFU6X8BQ": {
+                    "name": "素早く駆ける"
+                }
+            },
             "items": {
                 "wsHCq553WEQTApjJ": {
+                    "name": "刻むが愉しみ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、最大3体の対象に通常の攻撃を行います。HPをマークした対象1体ごとに、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "gqR4kfAVs7PBIXxn": {
                             "name": "ストレスをマーク"
@@ -10058,6 +10156,8 @@
                     }
                 },
                 "gerrZLjFJnjkHGtu": {
+                    "name": "ナイフ投げ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の対象に通常の攻撃を行います。肉切りが隠密の場合、その攻撃は有利を得て行われます。</p>",
                     "actions": {
                         "OMFknuoKy4XaxKbJ": {
                             "name": "ストレスをマーク"
@@ -10068,9 +10168,31 @@
         },
         "Redcap Candlemaker": {
             "_note": "Redcap Candlemaker",
+            "name": "レッドキャップの蝋燭作り",
+            "description": "<p>蝋で頭に留めた円錐形の赤い帽子をかぶった、青白く痩せた教団の長。絞首された罪人の手で作った蝋燭を先に据えた長い杖を振るう。</p>",
+            "motivesAndTactics": "長い影を落とす、乱戦から離れている、光を見せてやる",
+            "attack": {
+                "name": "燃える燭台"
+            },
+            "experiences": {
+                "DoppsDXPM1PCUXUe": {
+                    "name": "警戒"
+                }
+            },
             "items": {
+                "ogvPI7cMbJiw9fOp": {
+                    "name": "栄光の手",
+                    "description": "<p>蝋燭作りが現れたとき、このステータスブロックにトークンを5つ置きます。蝋燭作りがHPをマークするたびに、トークンを1つ取り除きます。このステータスブロックにトークンが1つ以上ある間、蝋燭作りは隠密です。</p>",
+                    "effects": {
+                        "ROVFeyrE1kkZ4Vou": {
+                            "name": "栄光の手",
+                            "description": "<p>このステータスブロックにトークンが1つ以上ある間、蝋燭作りは隠密です。</p>"
+                        }
+                    }
+                },
                 "oAQweBSYwOqJ3fEx": {
                     "name": "松明持ち",
+                    "description": "<p>蝋燭作りの「栄光の手」の光は、味方に血の渇きを呼び起こします。このステータスブロックにトークンが1つ以上ある間、近距離以内の各レッドキャップの敵対者はダメージロールに＋1のボーナスを得ます。</p>",
                     "actions": {
                         "yeQnELsceYe7UrOI": {
                             "name": "起動する",
@@ -10083,11 +10205,14 @@
                     },
                     "effects": {
                         "FRS0L5U1v6w72yju": {
-                            "name": "松明持ち"
+                            "name": "松明持ち",
+                            "description": "<p>このステータスブロックにトークンが1つ以上ある間、近距離以内の各レッドキャップの敵対者はダメージロールに＋1のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "tNNiTGb8aRB511zm": {
+                    "name": "炎の中で踊れ",
+                    "description": "<p>このステータスブロックからトークンを1つ消費します。蝋燭作りは遠距離以内のPCの集団に火球を呼び出します。各対象は敏捷リアクションロールを行います。失敗した対象は<strong>2d10</strong>の魔法ダメージを受けます。成功した対象はダメージを半分受けます。</p>",
                     "actions": {
                         "Tjld37xVSKIL6n0Q": {
                             "name": "リアクションロール"
@@ -10098,9 +10223,25 @@
         },
         "Redcap Skinner": {
             "_note": "Redcap Skinner",
+            "name": "レッドキャップの皮剥ぎ",
+            "description": "<p>剃刀を振るい、蝋で頭に留めた円錐形の赤い帽子をかぶった、猫ほどの大きさの妖精のクリーチャー。</p>",
+            "motivesAndTactics": "皮を剥ぐ、くすくす笑う、削ぎ取る、切り裂く",
+            "attack": {
+                "name": "剃刀"
+            },
+            "experiences": {
+                "M04qm6n0rxxC3qLH": {
+                    "name": "革細工"
+                }
+            },
             "items": {
                 "Mgkt4CpQBU2OyWmz": {
-                    "name": "ミニオン（4）"
+                    "name": "ミニオン（4）",
+                    "description": "<p>皮剥ぎはダメージを受けると倒されます。PCが皮剥ぎに与えたダメージ4ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
+                },
+                "jaLGm9PxB6KvVTlI": {
+                    "name": "浅い切り傷",
+                    "description": "<p>PCがロールに失敗したとき、そのPCは近接距離以内にいる皮剥ぎ1体ごとに1の物理ダメージを受けます。このダメージを合計します。</p>"
                 },
                 "6nEBkyA013PMWpGj": {
                     "name": "グループ攻撃",
@@ -10115,16 +10256,29 @@
         },
         "Roc": {
             "_note": "Roc",
+            "name": "ロック鳥",
+            "description": "<p>山に巣を作り、嵐を解き放つ巨大なハヤブサ。</p>",
+            "motivesAndTactics": "雷を吐き雷鳴で語る、卵を守る、鉤爪で引き裂く、遠くから見張る",
             "attack": {
                 "name": "嘴と鉤爪"
+            },
+            "experiences": {
+                "SIG0bkhUID51rF0Q": {
+                    "name": "険しい峰"
+                }
             },
             "items": {
                 "Mt5D5PIH7hNVid4I": {
                     "name": "リレントレス（3）",
                     "description": "<p>@Lookup[@name]はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
+                "SvtXB2X6a8abxxpB": {
+                    "name": "猛禽",
+                    "description": "<p>GMターンごとに1回、@Lookup[@name]はアクションを取る前または後に超遠距離まで移動できます。</p>"
+                },
                 "JHpHvFvrJGI2Kwe1": {
                     "name": "衝撃が来る",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に雷と雷鳴の嵐を解き放たせます。遠距離以内の<strong>1d4+1</strong>体の対象に攻撃ロールを行います。@Lookup[@name]が成功した対象は<strong>3d12</strong>の魔法ダメージを受けます。その後、@Lookup[@name]から遠距離以内の各対象は敏捷リアクションロール（20）を行わなければなりません。失敗した対象は<strong>3d8</strong>の物理ダメージを受け、近距離まで押し戻されます。成功した対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "Gpe0jznvJvDjA5YP": {
                             "name": "恐怖を消費する",
@@ -10135,11 +10289,14 @@
                             ]
                         },
                         "glnoG8JVxdGxNoyJ": {
-                            "name": "リアクションロール"
+                            "name": "リアクションロール",
+                            "description": "<p>その後、@Lookup[@name]から遠距離以内の各対象は敏捷リアクションロール（20）を行わなければなりません。失敗した対象は<strong>3d8</strong>の物理ダメージを受け、近距離まで押し戻されます。成功した対象はストレスを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "uYDndZAjve1MmeIh": {
+                    "name": "握り潰す掴み",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、@Lookup[@name]に鉤爪で対象を握り潰させ、ストレスを<strong>1d4</strong>マークさせ、頑強ロール（20）に成功するまで<em>拘束</em>できます。</p>",
                     "actions": {
                         "VaFBiCepU95VcjGr": {
                             "name": "ストレスをマーク"
@@ -10147,11 +10304,17 @@
                     },
                     "effects": {
                         "OYFU3hLG9WbIEwHc": {
-                            "name": "捕縛"
+                            "name": "捕縛",
+                            "description": "<p>頑強ロール（20）に成功するまで<em>拘束</em>されています。</p>"
                         }
                     }
                 },
+                "nrUpskylAzI4yuyF": {
+                    "name": "巣の守り手",
+                    "description": "<p>@Lookup[@name]の卵が脅かされたとき、以下の特徴を得ます：</p><p>憤怒 - パッシブ：@Lookup[@name]は難易度に＋2のボーナスと、マークしているストレスの数と同じダメージロールへのボーナスを得ます。</p><p>帯電のオーラ - パッシブ：@Lookup[@name]は魔法ダメージに抵抗を持ちます。超近距離以内でロールに失敗したPCは、<strong>希望を1消費</strong>するか、ストレスを<strong>1d4</strong>マークしなければなりません。</p>"
+                },
                 "QPzhKkqa0ZD50Zem": {
+                    "name": "憤怒",
                     "description": "<p>ロックは難易度に＋2のボーナスを得て、マークしているストレスの数に等しいボーナスをダメージロールに得ます。</p>",
                     "effects": {
                         "keCiREQB3vd49k0U": {
@@ -10162,9 +10325,16 @@
                 },
                 "BWJJE4K7vnmEYyE5": {
                     "name": "帯電のオーラ",
+                    "description": "<p>ロック鳥は魔法ダメージに抵抗を持ちます。超近距離以内でロールに失敗したPCは、希望を1消費するか、ストレスを<strong>1d4</strong>マークしなければなりません。</p>",
+                    "actions": {
+                        "NxwYBzXc90fO0RH7": {
+                            "description": "<p>超近距離以内でロールに失敗したPCは、希望を1消費するか、ストレスを<strong>1d4</strong>マークしなければなりません。</p>"
+                        }
+                    },
                     "effects": {
                         "ct6djseD8SxVuYOE": {
-                            "name": "帯電のオーラ"
+                            "name": "帯電のオーラ",
+                            "description": "<p>ロック鳥は魔法ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 }
@@ -10172,6 +10342,9 @@
         },
         "Rotted Zombie": {
             "_note": "Rotted Zombie",
+            "name": "腐ったゾンビ",
+            "description": "<p>獲物へよたよたと歩み寄る、腐りゆく死体。</p>",
+            "motivesAndTactics": "肉を食らう、飢える、襲いかかる、取り囲む",
             "attack": {
                 "name": "噛みつき"
             },
@@ -10193,13 +10366,24 @@
         },
         "Royal Advisor": {
             "_note": "Royal Advisor",
+            "name": "王室顧問",
+            "description": "<p>その地の貴族に意見を通せる、高位の宮廷人。</p>",
+            "motivesAndTactics": "取り入る、証拠をこしらえる、策を巡らせる",
+            "attack": {
+                "name": "ワンド"
+            },
             "experiences": {
+                "ivvhwc5gzTaSW3hY": {
+                    "name": "行政"
+                },
                 "fqQ0uTRen2S6WNR7": {
                     "name": "宮廷人"
                 }
             },
             "items": {
                 "XFpF0FfTdqCjbHHF": {
+                    "name": "痛烈な切り返し",
+                    "description": "<p>@Lookup[@name]を対象とするアクションロールで17未満を出したPCは、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "gtM7UPq6xHgJHPPp": {
                             "name": "ストレスダメージ"
@@ -10207,6 +10391,8 @@
                     }
                 },
                 "lG6vMc0zUbijpvCM": {
+                    "name": "耳を傾けさせる",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内のNPCを囁き声で動かします。その対象のある一件についての意見は、その対象の動機に真っ向から反しない限り、@Lookup[@name]の望む方へ傾きます。</p>",
                     "actions": {
                         "JNFTnARlTAKermLx": {
                             "name": "ストレスをマーク"
@@ -10215,6 +10401,7 @@
                 },
                 "iwNrNBbvm3RMgSw5": {
                     "name": "生贄役",
+                    "description": "<p><strong>恐怖を1消費</strong>して、群衆または有力な人物に、対象が直面している何らかの問題の責任が特定の人物や集団にあると信じ込ませます。その対象は、社交ロール（17）に成功してその者の無罪を納得させられるまで、濡れ衣を着せられた者に敵意を持ちます。</p><p>[[/dr trait=presence difficulty=17]]</p>",
                     "actions": {
                         "6oaHwUVWTmF362vI": {
                             "name": "恐怖を消費する"
@@ -10225,6 +10412,9 @@
         },
         "Ruby Dragon": {
             "_note": "Ruby Dragon",
+            "name": "ルビーのドラゴン",
+            "description": "<p>宝石に覆われた煌めく鱗の下に炎が透けて見える、巨大な有翼のドラゴン。その体温は石を融かす。</p>",
+            "motivesAndTactics": "大地を割る、融かす、財宝を守る",
             "attack": {
                 "name": "牙と爪"
             },
@@ -10239,10 +10429,12 @@
                     "description": "<p>ドラゴンはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "NlEFjJYQUwupXAdc": {
-                    "name": "畏怖"
+                    "name": "畏怖",
+                    "description": "<p>ドラゴンがPCへの攻撃に成功したとき、または遠距離以内のPCがアクションロールに失敗したとき、あなたは恐怖を1得ます。</p>"
                 },
                 "V1Ccn0Hi2lKYYGUt": {
                     "name": "溶解のブレス",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、ドラゴンに前方、近距離以内のすべてのPCへ炎の衝撃を放たせます。各対象は敏捷リアクションロールに成功しなければ<strong>4d12+10</strong>の魔法ダメージを受け、恩恵を得られないまま鎧スロットを1つマークします（なおダメージを減らすために防具を使うことはできます）。</p>",
                     "actions": {
                         "wAX4UMu4SSF7oMFn": {
                             "name": "ストレスをマーク",
@@ -10256,6 +10448,7 @@
                 },
                 "yE763wnIGXDZv0vp": {
                     "name": "火山の裂け目",
+                    "description": "<p><strong>恐怖を1消費</strong>して、ドラゴンに尾を地面へ打ちつけさせ、近距離以内の範囲に流れる溶岩の裂け目を開きます。その範囲内の各PCは敏捷リアクションロールを行います。成功した対象は直ちにその範囲から出ます。失敗した対象は<strong>4d8+5</strong>の魔法ダメージを受けます。ドラゴンが倒されるまで、その範囲に入ったクリーチャーは<strong>4d8+5</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "f4JL2PsuT44tBlls": {
                             "name": "恐怖を消費する",
@@ -10264,28 +10457,59 @@
                                     "name": "火山の裂け目"
                                 }
                             ]
+                        },
+                        "IXSJXWOWHQoP3XWg": {
+                            "name": "溶岩ダメージ"
                         }
                     }
+                },
+                "lrZBrdcwa2uBZFn4": {
+                    "name": "熱き血",
+                    "description": "<p>超近距離以内でクリーチャーがドラゴンへの攻撃に成功したとき、ドラゴンの血が傷口から噴き出して攻撃者を焼き、鎧スロットを1つマークさせます。鎧スロットをマークできない場合、HPを<strong>[[/r 1d4]]</strong>マークします。</p>"
                 }
             }
         },
         "Rugaru": {
             "_note": "Rugaru",
+            "name": "ルガルー",
+            "description": "<p>血を求めて沼を歩き回るよう神々に呪われた、狼の頭を持つ人型の存在。</p>",
+            "motivesAndTactics": "神を汚す、喉を狙う、忍び寄る、恐怖を与える",
+            "attack": {
+                "name": "噛み鳴らす顎"
+            },
+            "experiences": {
+                "LRBd1d1s5WGMajLS": {
+                    "name": "沼地"
+                }
+            },
             "items": {
                 "yrjtfPqIJlUDQstX": {
                     "name": "リレントレス（3）",
                     "description": "<p>@Lookup[@name]はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
+                "Qw2l1ncgoz0uhj6g": {
+                    "name": "夜の子",
+                    "description": "<p>月光の中にいる間、@Lookup[@name]は難易度に＋2のボーナスを得ます。</p>",
+                    "effects": {
+                        "ePhg4gf1qZXgXXJ7": {
+                            "name": "夜の子",
+                            "description": "<p>月光の中にいる間、難易度に＋2のボーナスを得ます。</p>"
+                        }
+                    }
+                },
                 "NzKWVP0JBnhF6N1O": {
                     "name": "血に飢えた",
+                    "description": "<p>PCが@Lookup[@name]の通常の攻撃でHPをマークしたとき、このステータスブロックにトークンを1つ加えます。@Lookup[@name]は、このステータスブロック上のトークンの数と同じボーナスを攻撃ロールに得ます。@Lookup[@name]が重傷ダメージを受けたとき、トークンをすべて消します。</p>",
                     "effects": {
                         "WSR7EXOKykrozqU1": {
-                            "name": "血に飢えた"
+                            "name": "血に飢えた",
+                            "description": "<p>ルガルーは、このステータスブロック上のトークンの数と同じボーナスを攻撃ロールに得ます。ルガルーが重傷ダメージを受けたとき、トークンをすべて消します。</p>"
                         }
                     }
                 },
                 "459aNwv1u6Z96MA8": {
                     "name": "月に向かって吠える",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の各PCに社交リアクションロール（15）を行わせます。失敗した対象は希望を1失います。失われた希望1つごとに恐怖を1得ます。PCが希望を持っていない場合、そのPCはストレスを1マークし、希望とともにロールするまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "NfNGK4EZ6remweQJ": {
                             "name": "ストレスをマーク",
@@ -10298,11 +10522,14 @@
                     },
                     "effects": {
                         "xSq3CQhtc9Zd40ED": {
+                            "name": "怯えた",
                             "description": "<p>希望とともにロールするまで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "DtkRr84ignZWz1yy": {
+                    "name": "肉を裂く者",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、<strong>1d12+2</strong>の直接物理ダメージを与えます。</p>",
                     "actions": {
                         "HAnFdxX8aAQC5LTA": {
                             "name": "ストレスをマーク"
