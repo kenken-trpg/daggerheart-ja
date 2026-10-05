@@ -9430,13 +9430,24 @@
         },
         "Patchwork Zombie Hulk": {
             "_note": "Patchwork Zombie Hulk",
+            "name": "継ぎ接ぎゾンビの巨躯",
+            "description": "<p>死体が一体となって動く、そびえ立つ集合体。胴ほどの太さの四肢と、成人したハーフリングほどの大きさの拳を持つ。</p>",
+            "motivesAndTactics": "死体を取り込む、腕を振り回す、飢える、恐れさせる",
+            "attack": {
+                "name": "あまりに多くの腕"
+            },
             "experiences": {
                 "rLPEhboQmaD7QV7T": {
                     "name": "威圧"
+                },
+                "ejtjcqd5oW6eKnav": {
+                    "name": "引き千切る"
                 }
             },
             "items": {
                 "rEJ1kAfhHQZWhrZj": {
+                    "name": "壊れやすい",
+                    "description": "<p>@Lookup[@name]が中傷以上のダメージを受けたとき、追加でHPを1マークします。</p>",
                     "actions": {
                         "Y8LQe5TzbdK2mOG9": {
                             "name": "HPをマーク"
@@ -9445,6 +9456,7 @@
                 },
                 "0fn7rVLwBnyCyvTA": {
                     "name": "振り回される四肢",
+                    "description": "<p>@Lookup[@name]が通常の攻撃を行うとき、超近距離以内のすべての対象を攻撃できます。</p>",
                     "actions": {
                         "ngl1xlJT4IOh3bkJ": {
                             "areas": [
@@ -9456,6 +9468,8 @@
                     }
                 },
                 "gw1Z2VazlRXYCiCK": {
+                    "name": "積み重ねにもう一体",
+                    "description": "<p>@Lookup[@name]が死体から超近距離以内にいるとき、それを自身に取り込み、HPとストレスを1つずつ消せます。</p>",
                     "actions": {
                         "PfaFRZKFnHGg6mU4": {
                             "name": "治癒する"
@@ -9464,6 +9478,7 @@
                 },
                 "uTtQwNg46NAjgzuD": {
                     "name": "苛まれた悲鳴",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内のすべてのPCに社交リアクションロール（13）を行わせます。失敗した対象は希望を1失い、あなたはその対象1人ごとに恐怖を1得ます。成功した対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "2NYC0D7wkBNrUAKl": {
                             "name": "ストレスをマーク",
@@ -9479,6 +9494,12 @@
         },
         "Perfected Zombie": {
             "_note": "Perfected Zombie",
+            "name": "完成されたゾンビ",
+            "description": "<p>魔法で力と技を注ぎ込まれた、そびえ立つ筋骨隆々のゾンビ。</p>",
+            "motivesAndTactics": "喰らう、執念深く追う、傷つける、恐れさせる",
+            "attack": {
+                "name": "大斧"
+            },
             "items": {
                 "xyz5d7QISdB5X5ey": {
                     "name": "恐るべき者",
@@ -9494,8 +9515,13 @@
                         }
                     }
                 },
+                "0viJMAsPBNLq2azj": {
+                    "name": "畏怖の存在感",
+                    "description": "<p>PCは@Lookup[@name]に対して特徴を使うために希望を消費できません。</p>"
+                },
                 "CKy2r6FguyTSO9Fm": {
                     "name": "完全なる一撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に通常の攻撃を行います。@Lookup[@name]が成功した対象は、次の休憩まで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "un9btM1mN53JHIgV": {
                             "name": "ストレスをマーク",
@@ -9508,11 +9534,14 @@
                     },
                     "effects": {
                         "Q5eeh0B6qaXFS1Ck": {
-                            "name": "完全なる一撃"
+                            "name": "完全なる一撃",
+                            "description": "<p>次の休憩まで<em>脆弱</em>。</p>"
                         }
                     }
                 },
                 "hWxjmdc1O5J1otLM": {
+                    "name": "巧みな付け入り",
+                    "description": "<p>他の敵対者が@Lookup[@name]から超近距離以内の対象にダメージを与えたとき、<strong>恐怖を1消費</strong>して、そのダメージロールに@Lookup[@name]の通常の攻撃ダメージを加えられます。</p>",
                     "actions": {
                         "To2z7XQItxcMxKBp": {
                             "name": "恐怖を消費する"
@@ -9523,6 +9552,8 @@
         },
         "Petty Noble": {
             "_note": "Petty Noble",
+            "name": "小貴族",
+            "description": "<p>豪奢に装い飾り立てた、傲慢に満ちた貴族。</p>",
             "motivesAndTactics": "権力を乱用する、資源を集める、手下を動かす",
             "attack": {
                 "name": "レイピア"
@@ -9533,7 +9564,22 @@
                 }
             },
             "items": {
+                "Jbq36nElH6RDacLU": {
+                    "name": "我が土地、我が掟",
+                    "description": "<p>@Lookup[@name]の土地でその者に対して行われる社交的な行動はすべて不利を得ます。</p>"
+                },
+                "ebdAPBso5ROmdFNO": {
+                    "name": "衛兵、こやつらを捕らえよ！",
+                    "description": "<p>シーンごとに1回、<strong>ストレスを1マーク</strong>して、@Lookup[@name]の意を通すために@UUID[Compendium.daggerheart.adversaries.Actor.B4LZcGuBAHzyVdzy]{剣衛兵}を<strong>1d4</strong>体召喚します。それらは遠距離に現れます。</p>",
+                    "actions": {
+                        "tioTtYfIGFIXRITN": {
+                            "name": "衛兵を召喚する"
+                        }
+                    }
+                },
                 "xN09fSsg33nURqpk": {
+                    "name": "追放",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCを1人対象にします。@Lookup[@name]は、その対象とその仲間たちを@Lookup[@name]の領地から追放すると宣します。追放されている間、その対象と仲間たちは@Lookup[@name]の領内での社交的な場面で不利を得ます。</p>",
                     "actions": {
                         "dAHzRxf0iztyc1mI": {
                             "name": "恐怖を消費する"
@@ -9544,6 +9590,9 @@
         },
         "Phantom": {
             "_note": "Phantom",
+            "name": "ファントム",
+            "description": "<p>霊気質の影の姿をとった、失われた魂の残響。</p>",
+            "motivesAndTactics": "冷たい場所を作る、空を舞い降りる、暗い報せを囁く",
             "attack": {
                 "name": "冷たい手"
             },
@@ -9555,16 +9604,20 @@
             "items": {
                 "8X2Jv3VVwXPkt73H": {
                     "name": "非実体",
+                    "description": "<p>@Lookup[@name]は物理ダメージに抵抗を持ち、硬い物体をすり抜けて移動できます。</p>",
                     "effects": {
                         "u1wlbCuZ56HTJrIZ": {
-                            "name": "非実体"
+                            "name": "非実体",
+                            "description": "<p>ファントムは物理ダメージに抵抗を持ち、硬い物体をすり抜けて移動できます。</p>"
                         }
                     }
                 },
                 "M8DGdeEjEqjiwhfs": {
                     "name": "恐怖のオーラ",
+                    "description": "<p>@Lookup[@name]から超近距離以内でスポットライトを得たPCは、社交リアクションロール（10）に成功しなければストレスを1マークします。</p>",
                     "actions": {
                         "YG80PvHf03ODXzDA": {
+                            "name": "オーラを発動する",
                             "areas": [
                                 {
                                     "name": "恐怖のオーラ"
@@ -9578,6 +9631,7 @@
                 },
                 "fjvRO8QadG5kFWV7": {
                     "name": "残り憑く霊",
+                    "description": "<p>カウントダウン（1d6）。@Lookup[@name]が倒されたとき、<strong>恐怖を1消費</strong>してカウントダウンを開始できます。これはPCが恐怖とともにロールしたときに進みます。発動したとき、@Lookup[@name]のHPを消し、直ちにスポットライトを当てます。</p>",
                     "actions": {
                         "J60ZNcqyhHc3dFX6": {
                             "name": "恐怖を消費する",
@@ -9588,17 +9642,55 @@
                             ]
                         },
                         "eLEuZWbjMcwd1Zw5": {
-                            "name": "カウントダウン発動"
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、@Lookup[@name]のHPを消し、直ちにスポットライトを当てます。</p>"
                         }
                     }
                 }
             }
         },
         "Phoenix": {
-            "_note": "Phoenix"
+            "_note": "Phoenix",
+            "name": "フェニックス",
+            "description": "<p>魔法の炎でできた巨大な鷲。殺すことは不可能で、癒しの羽毛を求めて狩られている。</p>",
+            "motivesAndTactics": "追う者から逃げる、輝かしく生きる、天空を舞う、光と炎を操る",
+            "attack": {
+                "name": "火炎の矢"
+            },
+            "experiences": {
+                "yY97ar4HsUY35kw8": {
+                    "name": "輝き"
+                },
+                "jtHEOGEL25pBvEVg": {
+                    "name": "伝説"
+                }
+            },
+            "items": {
+                "YOEWBnOR44OHkdQe": {
+                    "name": "浄化のオーラ",
+                    "description": "<p>@Lookup[@name]の近接距離以内でアクションを取ったPCは、<strong>希望を1消費</strong>してその癒しの温もりで身を浄め、HPまたはストレスを1つと、すべての状態を消せます。</p>"
+                },
+                "FlcR2XWYcCedfLnM": {
+                    "name": "火の種",
+                    "description": "<p>@Lookup[@name]は魔法の炎を流します。@Lookup[@name]がHPを1マークしたとき、超近距離以内に小さな炎の精霊を1体召喚します。</p>"
+                },
+                "L1KzwZQAUDJzEFv0": {
+                    "name": "復活",
+                    "description": "<p>@Lookup[@name]が倒されたとき、それは灰の雲となって吹き散らされ、くすぶる卵が現れます。その卵はすべてのダメージに無効であり、触れた者に<strong>3d4</strong>の直接魔法ダメージを与える熱のオーラを持ちます。卵は7日後に、HPとストレスがすべて消された新たな@Lookup[@name]として孵ります。</p>",
+                    "effects": {
+                        "xJGxzVJTPEDpzAVG": {
+                            "name": "復活中",
+                            "description": "<p>その卵はすべてのダメージに無効であり、触れた者に<strong>3d4</strong>の直接魔法ダメージを与える熱のオーラを持ちます。卵は7日後に、HPとストレスがすべて消された新たなフェニックスとして孵ります。</p>"
+                        }
+                    }
+                }
+            }
         },
         "Pirate Captain": {
             "_note": "Pirate Captain",
+            "name": "海賊船長",
+            "description": "<p>見事な帽子をかぶった人好きのする海の男。襲撃と略奪に意気込んでいる。</p>",
+            "motivesAndTactics": "命じる、板を歩かせる、略奪する、襲撃する",
             "attack": {
                 "name": "カトラス"
             },
@@ -9621,6 +9713,8 @@
                     }
                 },
                 "WGEGO0DSOs5cF0EL": {
+                    "name": "増援",
+                    "description": "<p>シーンごとに1回、<strong>ストレスを1マーク</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.5YgEajn0wa4i85kC]{海賊の襲撃者の群れ}を1つ召喚します。それは遠距離に現れます。</p>",
                     "actions": {
                         "nuYk5WeLLpIKa69q": {
                             "name": "ストレスをマーク"
@@ -9628,6 +9722,8 @@
                     }
                 },
                 "brHnMc0TDiWVT4U6": {
+                    "name": "容赦なし",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近接距離以内に海賊が3体以上いる対象を選びます。@Lookup[@name]は海賊たちを率いて、脅しと水底の墓の約束を浴びせます。その対象は社交リアクションロールを行わなければなりません。失敗した場合、対象はストレスを<strong>1d4+1</strong>マークします。成功した場合、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "h2vM7jDTeFttVJKN": {
                             "name": "恐怖を消費する"
@@ -9647,6 +9743,9 @@
         },
         "Pirate Raiders": {
             "_note": "Pirate Raiders",
+            "name": "海賊の襲撃者",
+            "description": "<p>荒らし回る群れとなって動く、海の悪漢たち。</p>",
+            "motivesAndTactics": "群れで囲む、略奪する、襲撃する",
             "attack": {
                 "name": "カトラス"
             },
@@ -9658,6 +9757,7 @@
             "items": {
                 "N401rF937fLXMuMA": {
                     "name": "剣客",
+                    "description": "<p>@Lookup[@name]が近接距離以内からの攻撃でHPを2つ以下マークしたとき、その攻撃者はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "ejadA9jjMnVNVczS": {
                             "name": "ストレスにダメージ"
@@ -9677,6 +9777,12 @@
         },
         "Pirate Tough": {
             "_note": "Pirate Tough",
+            "name": "海賊の荒くれ",
+            "description": "<p>分厚い筋肉と刺青をまとい、瓜ほどの大きさの拳を持つ海賊。</p>",
+            "motivesAndTactics": "略奪する、襲撃する、叩き潰す、恐怖を与える",
+            "attack": {
+                "name": "巨大な拳"
+            },
             "experiences": {
                 "x0b01e8D0dZ3NIyR": {
                     "name": "船乗り"
@@ -9693,6 +9799,8 @@
                     }
                 },
                 "uzlxE1Cxm9GGmrNs": {
+                    "name": "甲板を片付けろ",
+                    "description": "<p>超近距離以内の対象に攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して対象の近接距離まで移動し、<strong>3d4</strong>の物理ダメージを与え、対象を近距離まで吹き飛ばします。</p>",
                     "actions": {
                         "uJl1NJQ55yd9oCwz": {
                             "name": "攻撃"
@@ -9703,12 +9811,25 @@
         },
         "Plesiosaurus": {
             "_note": "Plesiosaurus",
+            "name": "プレシオサウルス",
+            "description": "<p>長い首と4枚の鰭を持つ、カヌーほどの長さの海棲爬虫類。</p>",
+            "motivesAndTactics": "より深く潜る、魚を食べる、穏やかに泳ぐ",
             "attack": {
                 "name": "噛みつき"
             },
+            "experiences": {
+                "GDvTQUifSVO3DaEd": {
+                    "name": "入江"
+                }
+            },
             "items": {
+                "u1kUGcAPZGXfCTmT": {
+                    "name": "噂にすぎぬもの",
+                    "description": "<p>深い水中にいる間、@Lookup[@name]は位置を特定されることも対象にされることもありません。</p>"
+                },
                 "iGIVBeuyJDKftzrs": {
                     "name": "水の壁",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]を水面から跳ね上げて打ちつけさせ、体の片側から水の壁を送ります。@Lookup[@name]のその側にいる遠距離以内の各PCは、敏捷リアクションロール（18）に成功しなければ<strong>3d10</strong>の物理ダメージを受け、遠距離まで押し戻されます。</p>",
                     "actions": {
                         "e7TW0t39q43UTebY": {
                             "name": "ストレスをマーク",
@@ -9724,6 +9845,12 @@
         },
         "Poltergeist": {
             "_note": "Poltergeist",
+            "name": "ポルターガイスト",
+            "description": "<p>無生物に取り憑く、悪意ある半透明の霊。</p>",
+            "motivesAndTactics": "蝋燭を揺らめかせる、鎖を鳴らす、窓を揺らす、人を部屋中に投げ回す",
+            "attack": {
+                "name": "投げつけられた物体"
+            },
             "experiences": {
                 "u7tDAWJ9Qct3kk7T": {
                     "name": "不気味"
@@ -9741,19 +9868,29 @@
                     },
                     "effects": {
                         "TG5Mkvcvw1JzCnoX": {
-                            "name": "スペクター"
+                            "name": "スペクター",
+                            "description": "<p>ポルターガイストは物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "UugDye75RdeNZw37": {
+                    "name": "憑依する者",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]を近距離以内に完全に収まる非魔法の物体に宿らせ、その物体に幽鬼の輝きを帯びさせます。次に@Lookup[@name]がダメージを受けようとするとき、代わりにその物体が壊され、@Lookup[@name]はそこから追い出されます。</p>",
                     "actions": {
                         "uSQh4bvA9x1Zsod3": {
                             "name": "ストレスをマーク"
+                        }
+                    },
+                    "effects": {
+                        "qX9bmAPqLAU7jhN6": {
+                            "name": "物体に憑依中",
+                            "description": "<p>次にポルターガイストがダメージを受けようとするとき、代わりにその物体が壊され、ポルターガイストはそこから追い出されます。</p>"
                         }
                     }
                 },
                 "sQEVdFOtGR0EEjrM": {
                     "name": "霊の嵐",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に超近距離以内の装備されていない非魔法の物体すべてを激しい渦へ巻き込ませます。その範囲内の各対象は敏捷リアクションロールを行います。失敗した対象は<strong>1d12+2</strong>の物理ダメージを受けます。成功した対象はダメージを半分受けます。</p>",
                     "actions": {
                         "E65jFd43Anfx0Td9": {
                             "name": "恐怖を消費する",
@@ -9769,11 +9906,21 @@
         },
         "Rabble Mawb": {
             "_note": "Rabble Mawb",
+            "name": "ラブル・モーブ",
+            "description": "<p>毛と四肢と歯からなる猫ほどの大きさの球。十数匹の「モーブ」をなして動く。</p>",
+            "motivesAndTactics": "チチと鳴いて噛む、固まり合う、転がり回る",
             "attack": {
                 "name": "食いちぎり"
             },
+            "experiences": {
+                "uZ9eHZKsxe1wa5rQ": {
+                    "name": "地下"
+                }
+            },
             "items": {
                 "jC4ngCoNcUSTuJv9": {
+                    "name": "より悪くなって戻る",
+                    "description": "<p>@Lookup[@name]が倒されたとき、<strong>恐怖を1消費</strong>して、HPとストレスをすべて消した状態で蘇らせられます。@Lookup[@name]は、この@Lookup[@name]がこの特徴を使った回数と同じボーナスをすべてのロールに得ます。</p>",
                     "actions": {
                         "BfxTYVkuJNrK9ola": {
                             "name": "恐怖を消費する"
