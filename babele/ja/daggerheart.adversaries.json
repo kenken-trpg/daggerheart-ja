@@ -8879,6 +8879,12 @@
         },
         "Mountain Troll": {
             "_note": "Mountain Troll",
+            "name": "山のトロル",
+            "description": "<p>巨岩から生まれた醜い巨人。盗んだ鎧をまとい、切り落とした首か頭骨の帯を巻いている。</p>",
+            "motivesAndTactics": "待ち伏せる、吼える、大岩を投げる、叩き潰す、踏みつける",
+            "attack": {
+                "name": "髑髏のフレイル"
+            },
             "experiences": {
                 "Argb8nwTtwZnKAOT": {
                     "name": "山岳"
@@ -8886,10 +8892,12 @@
             },
             "items": {
                 "RWMgJTJU5adTtpXS": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>トロルはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "3xBKHT3vHPmXoIDH": {
                     "name": "奪った鎧",
+                    "description": "<p><em>カウントダウン</em>。戦闘が始まったとき、PCの人数と同じ値でカウントダウンを開始します。トロルがダメージを受けたとき、重傷度をしきい値1段階分下げ、その後カウントダウンを進めます。発動したとき、トロルは変貌します（「激昂した@Lookup[@name]」参照）。</p>",
                     "actions": {
                         "CxueuYXnhqT4EP7l": {
                             "name": "カウントダウン開始",
@@ -8902,12 +8910,14 @@
                     },
                     "effects": {
                         "IeHRd0HSjeDWmMkB": {
-                            "name": "奪った鎧"
+                            "name": "奪った鎧",
+                            "description": "<p>トロルがダメージを受けたとき、重傷度をしきい値1段階分下げます。</p>"
                         }
                     }
                 },
                 "W0YS8rMhgEQQMFRF": {
                     "name": "フレイルの払い",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、トロルの前方、超近距離以内のすべての対象に攻撃を行います。トロルが成功した対象は<strong>2d8+2</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "E6AvUf6zPcTow6ah": {
                             "name": "ストレスをマーク",
@@ -8919,7 +8929,25 @@
                         }
                     }
                 },
+                "c89I2BlpU2nQyWji": {
+                    "name": "激昂した山のトロル",
+                    "description": "<section id=\"secret-j83rCPpPnQWOqDN8\" class=\"secret\"><p>トロルは「奪った鎧」と「フレイルの払い」の特徴を失い、難易度に＋1のボーナスを得ます。さらに「二重の払い」の特徴を得て、「髑髏のフレイル」を次の通常の攻撃に置き換えます：爪の払い：超近距離｜<strong>1d10+3</strong> 物理。</p></section>",
+                    "effects": {
+                        "7D0zNvZQ6H8srwEo": {
+                            "name": "激昂",
+                            "description": "<p>トロルは「奪った鎧」と「フレイルの払い」の特徴を失い、難易度に＋1のボーナスを得ます。さらに「二重の払い」の特徴を得て、「髑髏のフレイル」を次の通常の攻撃に置き換えます：爪の払い：超近距離｜<strong>1d10+3</strong> 物理。</p>",
+                            "changes": [
+                                {
+                                    "name": "爪の払い"
+                                },
+                                null
+                            ]
+                        }
+                    }
+                },
                 "tOz9yigrsPXyrPiK": {
+                    "name": "二重の払い",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離まで移動し、近接距離以内の対象に通常の攻撃を2回行います。両方の攻撃が成功した場合、ダメージを合計し、対象は希望を1失います。</p>",
                     "actions": {
                         "1BeKyLFvU7Dv77Cx": {
                             "name": "恐怖を消費する"
@@ -8930,8 +8958,21 @@
         },
         "Night Children": {
             "_note": "Night Children",
+            "name": "夜の子ら",
+            "description": "<p>古き悪の支配下にある、夜行性の魔物のうごめく群れ。</p>",
+            "motivesAndTactics": "犠牲者を主のもとへ運ぶ、集落を踏み荒らす、影を這い進む",
+            "attack": {
+                "name": "牙と爪"
+            },
+            "experiences": {
+                "GNQ9Q7YWoajhx21w": {
+                    "name": "恐怖を与える"
+                }
+            },
             "items": {
                 "SAbm4NER4YEtrGTG": {
+                    "name": "列を膨らませる",
+                    "description": "<p>シーンごとに1回、任意の数のストレスをマークして、@Lookup[@name]に増援を噴き出す門を開かせ、群れの列を補充します。マークしたストレスと同じ数のHPを消します。</p>",
                     "actions": {
                         "ZUaxRXLMVpdgMmnu": {
                             "name": "ストレスをマーク"
@@ -8940,6 +8981,7 @@
                 },
                 "eXVZweQ7AoZgWMbG": {
                     "name": "圧倒",
+                    "description": "<p>@Lookup[@name]が近接距離以内からの攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その攻撃者に通常の攻撃を行えます。</p>",
                     "actions": {
                         "seZgS1at07DWvXe5": {
                             "name": "ストレスをマーク"
@@ -8959,13 +9001,25 @@
         },
         "Oak Treant": {
             "_note": "Oak Treant",
+            "name": "オークのトレント",
+            "description": "<p>動くことのできる、頑丈な古木。</p>",
+            "motivesAndTactics": "白昼堂々と隠れる、森を守る、根を張る、枝を振る",
+            "attack": {
+                "name": "枝"
+            },
             "experiences": {
                 "SmT41lk9EmP69J4c": {
                     "name": "森の知識"
                 }
             },
             "items": {
+                "ERco8urSuHgrtnzL": {
+                    "name": "ただの木",
+                    "description": "<p>戦いで最初の攻撃を行う前、または隠密になったあと、@Lookup[@name]は次に行動するか、PCが直感ロールに成功して見破るまで、他の木と見分けがつきません。</p>"
+                },
                 "Q2slH9qkBO5SPw43": {
+                    "name": "種の弾幕",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の最大3体の対象に巨大なドングリを浴びせる攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d10+5</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "cM5BBUSFxOHBsV2G": {
                             "name": "ストレスをマーク"
@@ -8974,6 +9028,7 @@
                 },
                 "sqkgw26P2KiQVtXT": {
                     "name": "根を下ろす",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]をその場に根付かせます。根付いている間、@Lookup[@name]は拘束されており、スポットライトが当たっている間は移動する代わりにこの効果を終わらせられます。根付いている間、@Lookup[@name]は物理ダメージに抵抗を持ちます。</p>",
                     "actions": {
                         "008EelRlcs6CKGvM": {
                             "name": "ストレスをマーク",
@@ -8983,7 +9038,8 @@
                     "effects": {
                         "3PY5KIG6d3dr3dty": {
                             "name": "根を下ろす",
-                            "description": "<p><strong>ストレスを1マーク</strong>して、トレントをその場に根付かせます。根付いている間、トレントは拘束されており、スポットライトが当たっている間は移動する代わりにこの効果を終わらせられます。根付いている間、トレントは物理ダメージに抵抗を持ちます。</p>"
+                            "description": "<p><strong>ストレスを1マーク</strong>して、トレントをその場に根付かせます。根付いている間、トレントは拘束されており、スポットライトが当たっている間は移動する代わりにこの効果を終わらせられます。根付いている間、トレントは物理ダメージに抵抗を持ちます。</p>",
+                            "durationDescription": "<p>スポットライトが当たっている間、移動する代わりにこの効果を終わらせられます。</p>"
                         }
                     }
                 }
@@ -8991,17 +9047,34 @@
         },
         "Octopus": {
             "_note": "Octopus",
+            "name": "タコ",
+            "description": "<p>吸盤のついた8本の腕と硬い嘴のような顎を持つ、水棲の軟体動物。</p>",
+            "motivesAndTactics": "海底を這う、魚を食べる、墨を吐いて逃げる",
+            "attack": {
+                "name": "嘴"
+            },
+            "experiences": {
+                "UvjmblSJseofQ8KG": {
+                    "name": "器用さ"
+                },
+                "XjUBea84i0DQpWaO": {
+                    "name": "水"
+                }
+            },
             "items": {
                 "JEsOYtkNPrEjQp9A": {
                     "name": "組み付く",
+                    "description": "<p>近距離以内の対象に攻撃ロールを行います。成功した場合、その対象は頑強ロールに成功して逃れるまで<em>拘束</em>かつ<em>脆弱</em>になります。</p>",
                     "effects": {
                         "dxVvOg6fPXjXKvix": {
-                            "name": "組み付かれ"
+                            "name": "組み付かれ",
+                            "description": "<p>頑強ロールに成功して逃れるまで<em>拘束</em>かつ<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "bw3GFtQ9rdOOmaNs": {
                     "name": "墨を吐く",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に墨を吐かせます。陸上では、墨が超近距離以内の地面を覆います。その範囲を通って移動する各クリーチャーは、敏捷リアクションロールに成功しなければ滑って倒れ、その範囲から出るまで<em>脆弱</em>になります。@Lookup[@name]が水中にいる間にこの特徴を使った場合、代わりに超近距離以内の範囲を満たして視線を遮る暗闇の雲を作り出します。</p>",
                     "actions": {
                         "XLRJT8C61xhJVH7M": {
                             "name": "ストレスをマーク",
@@ -9014,12 +9087,29 @@
                         "ah5Lwv3tDEcZGjmi": {
                             "name": "リアクションロール"
                         }
+                    },
+                    "effects": {
+                        "jr87zJpDybbRCE3f": {
+                            "name": "滑って倒れた",
+                            "description": "<p>墨の範囲から出るまで<em>脆弱</em>です。</p>"
+                        }
                     }
                 }
             }
         },
         "Oracle of Doom": {
             "_note": "Oracle of Doom",
+            "name": "破滅の予言者",
+            "description": "<p>そびえ立つ不死の存在であり、運命の化身。悪い結末しか見えぬよう呪われている。</p>",
+            "motivesAndTactics": "環境を変える、断罪する、気力を奪う、投げ捨てる",
+            "attack": {
+                "name": "精神攻撃"
+            },
+            "experiences": {
+                "xbRa5L8BW3nCmroz": {
+                    "name": "果てなき知識"
+                }
+            },
             "items": {
                 "mKSk2GBYLoATQlVT": {
                     "name": "恐るべき者",
@@ -9036,6 +9126,8 @@
                     }
                 },
                 "8xbzF3kIC6vPF9ya": {
+                    "name": "迫る壁",
+                    "description": "<p>@Lookup[@name]から超遠距離以内でクリーチャーが失敗をロールしたとき、そのクリーチャーはストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "u9iEsvV5ktvOxNp5": {
                             "name": "ストレスをマーク"
@@ -9043,13 +9135,30 @@
                     }
                 },
                 "QoFecwKWBFzrk4Wp": {
+                    "name": "運命を告げる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の対象にその者自身の悪夢の幻視を見せます。その対象は知識リアクションロールを行わなければなりません。失敗した場合、希望をすべて失い、<strong>2d20+4</strong>の直接魔法ダメージを受けます。成功した場合、ダメージを半分受け、希望を1失います。</p>",
                     "actions": {
                         "IiSgpy6Axfqo9f9V": {
                             "name": "セーブを振る"
                         }
                     }
                 },
+                "A4yI2RENCuLk6mg9": {
+                    "name": "苛む者を召喚する",
+                    "description": "<p>1日に1回、<strong>恐怖を2消費</strong>して、PCの1人自身の悪夢に関わるティア2以下のミニオンを<strong>2d4</strong>体召喚します。それらはそのPCから見て近距離に現れます。</p>",
+                    "actions": {
+                        "71UnFo3CBBPtbao3": {
+                            "name": "2d4をロール"
+                        }
+                    }
+                },
+                "IPoWZmSQ2kgWek5T": {
+                    "name": "不吉な知識",
+                    "description": "<p>@Lookup[@name]が定命のクリーチャーを見たとき、直ちにその者自身の悪夢の一つを知ります。</p>"
+                },
                 "kuxTMjy8lOmNSa8e": {
+                    "name": "復讐の運命",
+                    "description": "<p>@Lookup[@name]が超近距離以内からの攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その攻撃者を遠距離まで吹き飛ばし、<strong>2d10+4</strong>の物理ダメージを与えられます。</p>",
                     "actions": {
                         "vJ7kARKL5H87T1BY": {
                             "name": "ダメージ"
@@ -9060,9 +9169,20 @@
         },
         "Outer Realms Abomination": {
             "_note": "Outer Realms Abomination",
+            "name": "外なる領域の忌まわしきもの",
+            "description": "<p>絶えず移ろい続ける、生命の混沌とした模写。</p>",
+            "motivesAndTactics": "打ち壊す、喰らう、足元を崩す",
+            "attack": {
+                "name": "巨大な偽足"
+            },
             "items": {
+                "yGeHxe8Loe21QSgH": {
+                    "name": "混沌の形",
+                    "description": "<p>@Lookup[@name]が攻撃するとき、<strong>2d4</strong>をロールし、その結果を攻撃修正値として使います。</p>"
+                },
                 "CoWjh12FkhDGYIie": {
                     "name": "惑わす存在感",
+                    "description": "<p>対象が@Lookup[@name]からダメージを受けたとき、直感リアクションロールを行わなければなりません。失敗した場合、その対象は次のアクションロールに不利を得て、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "4diIu0AzPjitQ94k": {
                             "name": "セーブを振る"
@@ -9070,12 +9190,17 @@
                     },
                     "effects": {
                         "rpkjVdlJYI5dB99B": {
-                            "name": "惑わす存在感"
+                            "name": "惑わす存在感",
+                            "description": "<p>次のアクションロールに不利。</p>",
+                            "changes": [
+                                "次のアクションロールに。"
+                            ]
                         }
                     }
                 },
                 "K3MQO1I42nmfM2F2": {
                     "name": "現実の震動",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]から遠距離以内の現実の縁を揺さぶります。その範囲内のすべての対象は、知識リアクションロールに成功しなければ、シーンが終わるまで現実から「外れた」状態になります。「外れた」対象が希望を消費するか、鎧スロット・HP・ストレスをマークするとき、その消費量またはマーク量を2倍にしなければなりません。</p>",
                     "actions": {
                         "7apNSLz8m7sxyLhU": {
                             "name": "セーブを振る",
@@ -9085,14 +9210,37 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "edEZER9ImWicMwRb": {
+                            "name": "現実から外れた",
+                            "description": "<p>シーンが終わるまで現実から外れています。希望を消費するか、鎧スロット・HP・ストレスをマークするとき、その消費量またはマーク量を2倍にしなければなりません。</p>"
+                        }
+                    }
+                },
+                "u9dR2Qh3swHZalXj": {
+                    "name": "非現実の形",
+                    "description": "<p>@Lookup[@name]がダメージを受けたとき、そのダメージを<strong>1d20</strong>減らします。@Lookup[@name]が自身への攻撃の成功でヒットポイントを1以下しかマークしなかった場合、あなたは恐怖を1得ます。</p>",
+                    "actions": {
+                        "ohpbyDEgSTVJ7qaF": {
+                            "name": "d20をロール"
+                        }
                     }
                 }
             }
         },
         "Outer Realms Corrupter": {
             "_note": "Outer Realms Corrupter",
+            "name": "外なる領域の汚染者",
+            "description": "<p>虹色の光でできているかに見える、移ろう形なき塊。</p>",
+            "motivesAndTactics": "惑わせる、気を逸らす、圧倒する",
+            "attack": {
+                "name": "腐食する偽足"
+            },
             "items": {
                 "Z4R768thOzKWzqOo": {
+                    "name": "意志を砕く手",
+                    "description": "<p>PCが@Lookup[@name]からダメージを受けたとき、そのPCは希望を1失います。</p>",
                     "actions": {
                         "q2PUiGoUQqsMghtW": {
                             "name": "希望を失う"
@@ -9101,6 +9249,7 @@
                 },
                 "gBLVvHbyekmIUITD": {
                     "name": "現実の漂着物を吐き出す",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、喰らった現実の消化しきれていない断片を近距離以内のすべての対象に吐きかけます。対象は知識リアクションロールに成功しなければ、ストレスを2マークします。</p>",
                     "actions": {
                         "6vX6VHpXX7OiGSWH": {
                             "name": "セーブを振る",
@@ -9116,6 +9265,9 @@
         },
         "Outer Realms Thrall": {
             "_note": "Outer Realms Thrall",
+            "name": "外なる領域の下僕",
+            "description": "<p>記憶と自己を剥ぎ取られた、おぼろげに人型の存在。</p>",
+            "motivesAndTactics": "破壊する、嫌悪させる、方向を失わせる、威圧する",
             "attack": {
                 "name": "爪と歯"
             },
@@ -9137,22 +9289,38 @@
         },
         "Owl Witch": {
             "_note": "Owl Witch",
+            "name": "梟の魔女",
+            "description": "<p>15フィートの翼を広げ、人の顔を持つ巨大で執念深いメンフクロウ。</p>",
+            "motivesAndTactics": "精髄を喰らう、呪う、死を予言する",
+            "attack": {
+                "name": "剃刀の鉤爪"
+            },
             "experiences": {
                 "kK7baYaUYhGwXT6l": {
                     "name": "魔法"
+                },
+                "U0wito1N2EIw0ZX9": {
+                    "name": "夜の忍び寄る者"
                 }
             },
             "items": {
+                "oiBhMfUNn9bCEdmX": {
+                    "name": "凶兆",
+                    "description": "<p>近距離以内のPCがアクションロールを行うとき、そのPCの恐怖ダイスは、あなたが持つ恐怖の数と同じボーナスを得ます。</p>"
+                },
                 "q3k7aTwqNIwjfKTd": {
                     "name": "魔女の障壁",
                     "description": "<p>@Lookup[@name]は魔法ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "hd02VKqWhG2Uu0t8": {
-                            "name": "魔女の障壁"
+                            "name": "魔女の障壁",
+                            "description": "<p>梟の魔女は魔法ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "SDq4QlTBkrX0v5mZ": {
+                    "name": "声の模写",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に、声の届く範囲のクリーチャーへ愛しい者の声で呼びかけさせます。その対象は直感リアクションロールに成功しなければ、@Lookup[@name]に向かって遠距離まで移動します。</p>",
                     "actions": {
                         "AulWyPHAEWpkfk2P": {
                             "name": "恐怖を消費する"
@@ -9160,13 +9328,23 @@
                     }
                 },
                 "JQ0bdv1Gnb0VD4Gm": {
+                    "name": "悪夢の凝視",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に遠距離以内のPCを白昼夢の悪夢で苛ませます。ただし対象が知識リアクションロールに成功した場合は免れます。「苛まれ」のあいだ、その対象はHPもストレスも消せません。この状態は、他のPCがダウンタイムムーブを使って「苛まれ」のクリーチャーを慰めたとき消えます。</p>",
                     "actions": {
                         "yFU9cxd1Rho0sqrB": {
                             "name": "恐怖を消費する"
                         }
+                    },
+                    "effects": {
+                        "0tULtmVqDsZR60oh": {
+                            "name": "苛まれ",
+                            "description": "<p>「苛まれ」のあいだ、HPもストレスも消せません。この状態は、他のPCがダウンタイムムーブを使ってあなたを慰めたとき消えます。</p>"
+                        }
                     }
                 },
                 "0gsas3oxit5vgG8C": {
+                    "name": "惨たらしい終わりの幻視",
+                    "description": "<p>@Lookup[@name]が攻撃の対象になったとき、<strong>恐怖を1消費</strong>して、その攻撃者に社交リアクションロールを行わせられます。失敗した場合、その攻撃者は心を惨たらしい光景で満たされ、ストレスを<strong>1d4</strong>マークしなければなりません。</p>",
                     "actions": {
                         "6MPGu2MhhTMZyUEQ": {
                             "name": "恐怖を消費する"
@@ -9177,8 +9355,21 @@
         },
         "Pain Priest": {
             "_note": "Pain Priest",
+            "name": "苦痛の司祭",
+            "description": "<p>定命の者の苦しみと悦びの境を探ることに身を捧げた、異次元の宗教組織の一員。</p>",
+            "motivesAndTactics": "感情を喰らう、無垢な者や好奇心の強い者を見つける、最も深い望みで誘惑する",
+            "attack": {
+                "name": "拷問具"
+            },
+            "experiences": {
+                "FIokXAqrXMP4L2XN": {
+                    "name": "実験"
+                }
+            },
             "items": {
                 "3OcaZ6mn5hJSqb4g": {
+                    "name": "世界の狭間を歩く",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、司祭を超遠距離以内のどこへでも配置し、直ちに再びスポットライトを当てます。</p>",
                     "actions": {
                         "KDHanmfdvmbKciyT": {
                             "name": "ストレスをマーク"
@@ -9186,7 +9377,12 @@
                     }
                 },
                 "8Jbhoixqt3Bw1i2H": {
+                    "name": "悦びと苦痛",
+                    "description": "<p>司祭から近距離以内のPCが希望を得るか、HPをマークしたとき、<strong>d8</strong>をロールします。結果が8の場合、司祭は元の次元への門を開き、最も近いパーティの一員とともにそこへ逃げ去ります。あなたは恐怖を<strong>1d6</strong>得ます。その門は、司祭が倒されるか再びスポットライトを得るまで開いたままです。</p>",
                     "actions": {
+                        "rkWDWLYON59jcdkw": {
+                            "name": "門への逃走"
+                        },
                         "x8HNi7N3q3JtKkTu": {
                             "name": "恐怖を得る"
                         }
@@ -9196,21 +9392,34 @@
         },
         "Panther": {
             "_note": "Panther",
+            "name": "豹",
+            "description": "<p>影から獲物を狙う、大型のネコ科の捕食者。</p>",
+            "motivesAndTactics": "木に登る、跳びかかる、忍び寄る",
+            "attack": {
+                "name": "歯と爪"
+            },
             "experiences": {
                 "0PUioSylNoiFCLVq": {
                     "name": "鋭敏な感覚"
+                },
+                "9UErV4z0BWpny3eQ": {
+                    "name": "そっと動く"
                 }
             },
             "items": {
                 "HnRyZMTu3m5nalo3": {
                     "name": "影の追跡者",
+                    "description": "<p>隠密の間、@Lookup[@name]は攻撃ロールに＋2のボーナスを得ます。</p>",
                     "effects": {
                         "GDZDLLpRtBvG8F18": {
-                            "name": "影の追跡者"
+                            "name": "影の追跡者",
+                            "description": "<p>隠密の間、攻撃ロールに＋2のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "A9OTgQABHnrtpINC": {
+                    "name": "跳びかかりの一撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]を遠距離以内の対象の近接距離まで跳びかからせ、その対象に攻撃を行います。成功した場合、<strong>1d12+2</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "9c178LlauifFVrIe": {
                             "name": "ストレスをマーク"
