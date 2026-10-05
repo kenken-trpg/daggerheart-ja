@@ -1911,125 +1911,536 @@
             }
         },
         "Midnight Spirit": {
-            "_note": "Midnight Spirit"
+            "_note": "Midnight Spirit",
+            "name": "ミッドナイトの霊",
+            "description": "<p><strong>希望を1消費</strong>して、次の休憩まであなたのために移動したり物を運んだりできる人型大の霊を召喚します。</p><p>敵対者を攻撃させることもできます。そうするとき、超遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、霊はその対象の近接射程へ移動します。呪文発動特性に等しい数の<strong>d6</strong>をロールし、その合計の魔法ダメージを対象に与えます。その後、霊は消散します。霊は一度に1体しか持てません。</p>",
+            "actions": {
+                "BDKCP4FvntHkYqXp": {
+                    "name": "霊を召喚する",
+                    "description": "<p><strong>希望</strong>を1消費して、次の休憩まであなたのために移動したり物を運んだりできる人型大の霊を召喚します。</p>"
+                },
+                "YVSMa2Igxp6DhNpG": {
+                    "name": "敵対者を攻撃する",
+                    "description": "<p>敵対者を攻撃させることもできます。そうするとき、超遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、霊はその対象の近接射程へ移動します。呪文発動特性に等しい数のd6をロールし、その合計の魔法ダメージを対象に与えます。その後、霊は消散します。霊は一度に1体しか持てません。</p>"
+                }
+            }
         },
         "Midnight-Touched": {
             "_note": "Midnight-Touched",
+            "name": "ミッドナイト接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がミッドナイトドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>休憩ごとに1回、希望が0でGMが恐怖を得ることになったとき、代わりにあなたが希望を1得られます。</p></li><li class=\"vertical-card-list-found\"><p>攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、恐怖ダイスの出目をダメージロールに加えられます。</p></li></ul>",
             "actions": {
                 "ksl1CcxcuwYxObiS": {
-                    "name": "希望を得る"
+                    "name": "希望を得る",
+                    "description": "<p>休憩ごとに1回、希望が0でGMが恐怖を得ることになったとき、代わりにあなたが希望を1得られます。</p>"
+                },
+                "Ky5wcwBqgm5bJCK1": {
+                    "name": "ストレスをマーク",
+                    "description": "<p>攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、恐怖ダイスの出目をダメージロールに加えられます。</p>"
+                }
+            },
+            "effects": {
+                "sNBuI2xIZAI4RgZy": {
+                    "name": "ミッドナイト接触",
+                    "description": "<p>ロードアウトにある能力カードのうち4枚以上がミッドナイトドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>休憩ごとに1回、希望が0でGMが恐怖を得ることになったとき、代わりにあなたが希望を1得られます。</p></li><li class=\"vertical-card-list-found\"><p>攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、恐怖ダイスの出目をダメージロールに加えられます。</p></li></ul>"
                 }
             }
         },
         "Natural Familiar": {
-            "_note": "Natural Familiar"
+            "_note": "Natural Familiar",
+            "name": "自然の使い魔",
+            "description": "<p><strong>希望を1消費</strong>して、次の休憩まで、あなたが再び自然の使い魔を発動するまで、または使い魔が攻撃の対象になるまで、小さな自然の精霊か森の小動物を傍らに召喚します。<strong>追加で希望を1消費</strong>すれば、飛行する使い魔を召喚できます。使い魔とは意思を通じ合わせられ、<strong>呪文発動ロール</strong>を行って簡単な作業を命じられ、<strong>ストレスを1マーク</strong>してその目を通して見られます。</p><p>使い魔の近接射程以内にいる敵対者にダメージを与えるとき、ダメージロールに<strong>d6</strong>を加えます。</p>",
+            "actions": {
+                "BhVDgty2nqoOhn97": {
+                    "name": "使い魔を召喚する",
+                    "description": "<p><strong>希望を1消費</strong>して、次の休憩まで、あなたが再び自然の使い魔を発動するまで、または使い魔が攻撃の対象になるまで、小さな自然の精霊か森の小動物を傍らに召喚します。<strong>追加で希望を1消費</strong>すれば、飛行する使い魔を召喚できます。</p>"
+                },
+                "kHAwq8lfsEPd9Qga": {
+                    "name": "作業をさせる",
+                    "description": "<p>使い魔とは意思を通じ合わせられ、<strong>呪文発動ロール</strong>を行って簡単な作業を命じられます。</p>"
+                },
+                "8Y03LcPgXF30DfzZ": {
+                    "name": "目を通して見る",
+                    "description": "<p><strong>ストレスを1マーク</strong>してその目を通して見ます。</p>"
+                }
+            },
+            "effects": {
+                "0BumAWKw2aK4A5al": {
+                    "name": "使い魔のダメージ"
+                }
+            }
         },
         "Nature's Tongue": {
-            "_note": "Nature's Tongue"
+            "_note": "Nature's Tongue",
+            "name": "自然の言葉",
+            "description": "<p>あなたは自然界の言語を話せます。周囲の植物や動物に語りかけたいとき、<strong>直感ロール（12）</strong>を行います。成功した場合、彼らは知っていることを教えてくれます。恐怖を伴うロールの場合、その知識は限られていたり、代償を伴ったりすることがあります。</p><p>さらに、自然環境の中で呪文発動ロールを行う前に、<strong>希望を1消費</strong>して、そのロールに＋2のボーナスを得られます。</p>",
+            "actions": {
+                "qQEeyIGs0wKjW3a1": {
+                    "name": "自然と語る",
+                    "description": "<p>あなたは自然界の言語を話せます。周囲の植物や動物に語りかけたいとき、<strong>直感ロール（12）</strong>を行います。成功した場合、彼らは知っていることを教えてくれます。恐怖を伴うロールの場合、その知識は限られていたり、代償を伴ったりすることがあります。</p>"
+                },
+                "IIJC4HGdilVv3YMo": {
+                    "name": "ボーナスを得る",
+                    "description": "<p>さらに、自然環境の中で呪文発動ロールを行う前に、<strong>希望を1消費</strong>して、そのロールに＋2のボーナスを得られます。</p>"
+                }
+            },
+            "effects": {
+                "0JYDk5CQ66bHGQO0": {
+                    "name": "呪文発動へのボーナス"
+                }
+            }
         },
         "Never Upstaged": {
-            "_note": "Never Upstaged"
+            "_note": "Never Upstaged",
+            "name": "舞台は譲らない",
+            "description": "<p>攻撃によってHPを1つ以上マークしたとき、<strong>ストレスを1マーク</strong>して、マークしたHPの数に等しい数のトークンをこのカードに置けます。次に攻撃が成功したとき、このカードのトークン1個ごとにダメージロールに＋5のボーナスを得て、その後すべてのトークンを取り除きます。</p>",
+            "actions": {
+                "R5wGBhMUcnhCsfH2": {
+                    "name": "ストレスをマーク（トークン1個）"
+                },
+                "Mne0mqkibrTGwPYR": {
+                    "name": "ストレスをマーク（トークン2個）"
+                },
+                "En7AF3g51P9ud9qj": {
+                    "name": "ストレスをマーク（トークン3個）"
+                },
+                "WuPJlQ0wSRlGGIkh": {
+                    "name": "ストレスをマーク（トークン4個）"
+                }
+            },
+            "effects": {
+                "C6e1T2oEx6PFoRUP": {
+                    "name": "舞台は譲らない（トークン1個）",
+                    "description": "<p>ダメージロールに＋5のボーナスを得ます</p>"
+                },
+                "bMMxsBungVYB1rI8": {
+                    "name": "舞台は譲らない（トークン2個）",
+                    "description": "<p>ダメージロールに＋10のボーナスを得ます</p>"
+                },
+                "tsQRbrurzi8iqs0o": {
+                    "name": "舞台は譲らない（トークン3個）",
+                    "description": "<p>ダメージロールに＋15のボーナスを得ます</p>"
+                },
+                "3eTaSgHlmNDcymnW": {
+                    "name": "舞台は譲らない（トークン4個）",
+                    "description": "<p>ダメージロールに＋20のボーナスを得ます</p>"
+                }
+            }
         },
         "Night Terror": {
-            "_note": "Night Terror"
+            "_note": "Night Terror",
+            "name": "夜の恐怖",
+            "description": "<p>大休憩ごとに1回、至近以内の任意の対象を選び、あなたを悪夢のような恐怖として知覚させます。対象はリアクションロール（16）に成功しなければ、一時的に<em>戦慄</em>となります。<em>戦慄</em>している間、対象は<em>脆弱</em>です。<em>戦慄</em>している対象の数に等しい数の恐怖をGMから奪います（GMのプールにある恐怖の数まで）。奪った恐怖の数に等しい数の<strong>d6</strong>をロールし、その合計のダメージを<em>戦慄</em>している各対象に与えます。奪った恐怖は捨てます。</p>",
+            "actions": {
+                "e4A6GQERsn08IBby": {
+                    "name": "戦慄させる",
+                    "areas": [
+                        {
+                            "name": "夜の恐怖"
+                        }
+                    ]
+                },
+                "ELzQvftGxZigPkBH": {
+                    "name": "恐怖を奪う",
+                    "description": "<p>戦慄している対象の数に等しい数の恐怖をGMから奪います（GMのプールにある恐怖の数まで）。奪った恐怖の数に等しい数のd6をロールし、その合計のダメージを戦慄している各対象に与えます。奪った恐怖は捨てます。</p>"
+                }
+            },
+            "effects": {
+                "32j3ZeNMMCk1QLlM": {
+                    "name": "戦慄",
+                    "description": "<p>戦慄している間、対象は脆弱です。</p>"
+                }
+            }
         },
         "Not Good Enough": {
-            "_note": "Not Good Enough"
+            "_note": "Not Good Enough",
+            "name": "それでは足りない",
+            "description": "<p>ダメージダイスをロールしたとき、1と2はすべて振り直せます。</p>"
         },
         "Notorious": {
-            "_note": "Notorious"
+            "_note": "Notorious",
+            "name": "悪名高き",
+            "description": "<p>人々はあなたが誰で何をしてきたかを知っており、そのために扱いが変わります。悪名を利用して望むものを得ようとするとき、ロールの前に<strong>ストレスを1マーク</strong>して、結果に＋10のボーナスを得られます。どこへ行っても飲食は常に無料で、それ以外の買い物はすべて金貨袋1つぶん値引きされます（最低でも一掴みぶんは支払います）。</p><p>このカードはロードアウトの能力カード上限5枚には数えられず、保管庫に置くこともできません。</p>",
+            "actions": {
+                "Cb39VXOUPVWl3ea4": {
+                    "name": "ボーナスを得る",
+                    "description": "<p>悪名を利用して望むものを得ようとするとき、ロールの前に<strong>ストレスを1マーク</strong>して、結果に＋10のボーナスを得られます。</p><p>このカードはロードアウトの能力カード上限5枚には数えられず、保管庫に置くこともできません。</p>"
+                }
+            }
         },
         "On the Brink": {
-            "_note": "On the Brink"
+            "_note": "On the Brink",
+            "name": "瀬戸際",
+            "description": "<p>マークされていないHPが2つ以下のとき、あなたは軽傷値ダメージを受けません。</p>",
+            "effects": {
+                "UJTsJlnhi5Zi0XQ2": {
+                    "name": "瀬戸際",
+                    "description": "<p>マークされていないHPが2つ以下のとき、あなたは軽傷値ダメージを受けません。</p>"
+                }
+            }
         },
         "Onslaught": {
-            "_note": "Onslaught"
+            "_note": "Onslaught",
+            "name": "猛攻",
+            "description": "<p>武器による攻撃に成功したとき、あなたは対象の中傷値を下回るダメージを与えることがありません（対象は必ず最低2つのHPをマークします）。</p><p>さらに、武器の射程以内にいる存在が、あなたを含まない攻撃で仲間にダメージを与えたとき、<strong>ストレスを1マーク</strong>してその存在にリアクションロール（15）を強制できます。失敗した場合、対象はHPを1つマークしなければなりません。</p>",
+            "actions": {
+                "MxaqNvY9IfWnFe5P": {
+                    "name": "ストレスを1マーク",
+                    "description": "<p>武器の射程以内にいる存在が、あなたを含まない攻撃で仲間にダメージを与えたとき、<strong>ストレスを1マーク</strong>してその存在にリアクションロール（15）を強制できます。失敗した場合、対象はHPを1つマークしなければなりません。</p>"
+                }
+            }
         },
         "Overwhelming Aura": {
-            "_note": "Overwhelming Aura"
+            "_note": "Overwhelming Aura",
+            "name": "圧倒のオーラ",
+            "description": "<p><strong>呪文発動ロール（15）</strong>を行い、自分のオーラを魔法的に強めます。成功した場合、<strong>希望を2消費</strong>して、次の大休憩まで社交を呪文発動特性と等しくします。</p><p>この呪文が有効な間、敵対者はあなたを攻撃の対象にするときストレスを1マークしなければなりません。</p>",
+            "actions": {
+                "r2XblKJyZyamOOXq": {
+                    "name": "発動する",
+                    "description": "<p><strong>呪文発動ロール（15）</strong>を行い、自分のオーラを魔法的に強めます。成功した場合、<strong>希望を2消費</strong>して、次の大休憩まで社交を呪文発動特性と等しくします。この呪文が有効な間、敵対者はあなたを攻撃の対象にするときストレスを1マークしなければなりません。</p>"
+                }
+            },
+            "effects": {
+                "ba9GO4NtQHYkaRR9": {
+                    "name": "圧倒のオーラ",
+                    "description": "<p>次の大休憩まで、社交は呪文発動特性と等しくなります。<br>この呪文が有効な間、敵対者はあなたを攻撃の対象にするときストレスを1マークしなければなりません。</p>"
+                }
+            }
         },
         "Phantom Retreat": {
-            "_note": "Phantom Retreat"
+            "_note": "Phantom Retreat",
+            "name": "幻影の退路",
+            "description": "<p><strong>希望を1消費</strong>して、現在立っている場所で幻影の退路を起動します。次の休憩までの任意のときに<strong>さらに希望を1消費</strong>して、現在いる場所から消え、幻影の退路を起動したときに立っていた場所に再出現します。この呪文は再出現した後に終わります。</p>",
+            "actions": {
+                "SE2C9Andtlw3OQLL": {
+                    "name": "起動する",
+                    "description": "<p><strong>希望</strong>を1消費して、現在立っている場所で幻影の退路を起動します。</p>"
+                },
+                "1AJRAbFtDx8Pm26q": {
+                    "name": "退く",
+                    "description": "<p>次の休憩までの任意のときに<strong>さらに希望を1消費</strong>して、現在いる場所から消え、幻影の退路を起動したときに立っていた場所に再出現します。この呪文は再出現した後に終わります。</p>"
+                }
+            }
         },
         "Pick and Pull": {
-            "_note": "Pick and Pull"
+            "_note": "Pick and Pull",
+            "name": "開錠と抜き取り",
+            "description": "<p>魔法でない錠を開ける、魔法でない罠を解除する、対象から物品を盗む（隠密でも力ずくでも）ためのアクションロールに有利がつきます。</p>",
+            "effects": {
+                "6IkjF8qNR0NVvvv8": {
+                    "name": "開錠と抜き取り",
+                    "description": "<p>魔法でない錠を開ける、魔法でない罠を解除する、対象から物品を盗む（隠密でも力ずくでも）ためのアクションロールに有利がつきます。</p>",
+                    "changes": [
+                        "魔法でない錠を開ける",
+                        "魔法でない罠を解除する",
+                        "対象から物品を盗む（隠密でも力ずくでも）"
+                    ]
+                }
+            }
         },
         "Plant Dominion": {
-            "_note": "Plant Dominion"
+            "_note": "Plant Dominion",
+            "name": "植物の支配",
+            "description": "<p><strong>呪文発動ロール（18）</strong>を行います。大休憩ごとに1回、成功した場合、あなたは自然界を作り替え、遠距離以内のどこであれ周囲の植物を変化させます。たとえば、樹木を瞬時に成長させたり、密生した蔓を切り開いて道を作ったり、根の壁を作り出したりできます。</p>",
+            "actions": {
+                "7yUMXSJVnDBB25jP": {
+                    "name": "自然界を作り替える"
+                }
+            }
         },
         "Premonition": {
-            "_note": "Premonition"
+            "_note": "Premonition",
+            "name": "予感",
+            "description": "<p>秘術のエネルギーを通して未来の光景を見られます。大休憩ごとに1回、あなたが行ったロールの結果をGMが告げた直後に、そのムーブと結果をなかったことにして撤回し、代わりに別のムーブを行えます。</p>",
+            "actions": {
+                "OR0EkGeqY25BhO1h": {
+                    "name": "ムーブを撤回する",
+                    "description": "<p>大休憩ごとに1回、あなたが行ったロールの結果をGMが告げた直後に、そのムーブと結果をなかったことにして撤回し、代わりに別のムーブを行えます。</p>"
+                }
+            }
         },
         "Preservation Blast": {
-            "_note": "Preservation Blast"
+            "_note": "Preservation Blast",
+            "name": "保全の衝波",
+            "description": "<p>近接射程以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は遠距離まで押し戻され、呪文発動特性を使った<strong>d8+3</strong>の魔法ダメージを受けます。</p>",
+            "actions": {
+                "QiUrqjOnvkzIymzC": {
+                    "name": "発動する"
+                }
+            }
         },
         "Rage Up": {
-            "_note": "Rage Up"
+            "_note": "Rage Up",
+            "name": "怒りを上げる",
+            "description": "<p>攻撃を行う前に、<strong>ストレスを1マーク</strong>して、頑強の2倍に等しいボーナスをダメージロールに得られます。</p><p>1回の攻撃につき2回まで怒りを上げられます。</p>",
+            "actions": {
+                "LmjwPg03xLnoGTHm": {
+                    "name": "ストレスをマーク",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、頑強の2倍に等しいボーナスをダメージロールに得られます。</p>"
+                }
+            },
+            "effects": {
+                "bq1MhcmoP6Wo5CXF": {
+                    "name": "怒りを上げる",
+                    "description": "<p>次の攻撃で、頑強の2倍に等しいボーナスをダメージロールに得ます。</p>"
+                },
+                "t6SIjQxB6UBUJ98f": {
+                    "name": "怒りを上げる（2回）"
+                }
+            }
         },
         "Rain of Blades": {
-            "_note": "Rain of Blades"
+            "_note": "Rain of Blades",
+            "name": "刃の雨",
+            "description": "<p><strong>希望を1消費</strong>して<strong>呪文発動ロール</strong>を行い、至近以内のすべての対象に襲いかかる投擲の刃を生み出します。成功した対象は、習熟を使った<strong>d8+2</strong>の魔法ダメージを受けます。</p><p>命中した対象が<em>脆弱</em>の場合、追加で<strong>1d8</strong>のダメージを受けます。</p>",
+            "actions": {
+                "WTnjKQs2uI1TuF9r": {
+                    "name": "発動する",
+                    "description": "<p><strong>希望を1消費</strong>して<strong>呪文発動ロール</strong>を行い、至近以内のすべての対象に襲いかかる投擲の刃を生み出します。成功した対象は、習熟を使った<strong>d8+2</strong>の魔法ダメージを受けます。</p>",
+                    "areas": [
+                        {
+                            "name": "刃の雨"
+                        }
+                    ]
+                }
+            }
         },
         "Rapid Riposte": {
-            "_note": "Rapid Riposte"
+            "_note": "Rapid Riposte",
+            "name": "迅速な返し技",
+            "description": "<p>近接射程以内から行われたあなたへの攻撃が失敗したとき、<strong>ストレスを1マーク</strong>してその隙を捉え、使用中の武器1つの武器ダメージを攻撃者に与えられます。</p>",
+            "actions": {
+                "4mdm2rcPDfm8tEIA": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Reaper's Strike": {
-            "_note": "Reaper's Strike"
+            "_note": "Reaper's Strike",
+            "name": "死神の一撃",
+            "description": "<p>大休憩ごとに1回、<strong>希望を1消費</strong>して攻撃ロールを行います。GMは射程内のどの対象に対して成功するかを教えます。その中から1体を選び、HPを5つマークさせます。</p>",
+            "actions": {
+                "bFW8Qgv6fUswbA6s": {
+                    "name": "希望を1消費する"
+                }
+            }
         },
         "Reassurance": {
-            "_note": "Reassurance"
+            "_note": "Reassurance",
+            "name": "励まし",
+            "description": "<p>休憩ごとに1回、仲間がアクションロールを試みた後、結果が発生する前に、手助けや支えの言葉をかけられます。そうしたとき、仲間はダイスを振り直せます。</p>",
+            "actions": {
+                "QZGSuYgLE6BMbFsD": {
+                    "name": "励ます"
+                }
+            }
         },
         "Reckless": {
-            "_note": "Reckless"
+            "_note": "Reckless",
+            "name": "無謀",
+            "description": "<p><strong>ストレスを1マーク</strong>して、攻撃に有利を得ます。</p>",
+            "actions": {
+                "1vOYZjiUbRBmLcVr": {
+                    "name": "ストレスを1マーク"
+                }
+            }
         },
         "Recovery": {
             "_note": "Recovery",
             "name": "回復",
+            "description": "<p>小休憩の間、代わりに大休憩のダウンタイムムーブを選べます。<strong>希望を1消費</strong>して、仲間1人にも同じことをさせられます。</p>",
+            "actions": {
+                "ASZpyf3WqjgbjBl6": {
+                    "name": "希望を消費する"
+                }
+            },
             "effects": {
+                "smTjINqIldErFD3q": {
+                    "name": "回復（仲間）",
+                    "description": "<p>この小休憩の間、代わりに大休憩のダウンタイムムーブを選べます。</p>"
+                },
                 "7GsHTQCtNB8PEVgr": {
-                    "name": "回復"
+                    "name": "回復",
+                    "description": "<p>小休憩の間、代わりに大休憩のダウンタイムムーブを選べます。</p>"
                 }
             }
         },
         "Redirect": {
-            "_note": "Redirect"
+            "_note": "Redirect",
+            "name": "受け流し",
+            "description": "<p>近接射程の外から行われたあなたへの攻撃が失敗したとき、習熟に等しい数の<strong>d6</strong>をロールします。いずれかが6を出した場合、<strong>ストレスを1マーク</strong>して、その攻撃を至近以内の敵対者へのダメージに向け直せます。</p>",
+            "actions": {
+                "DRluINMGyhCR84ok": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Rejuvenation Barrier": {
-            "_note": "Rejuvenation Barrier"
+            "_note": "Rejuvenation Barrier",
+            "name": "再生の障壁",
+            "description": "<p><strong>呪文発動ロール（15）</strong>を行います。休憩ごとに1回、成功した場合、自分の周囲の至近範囲に一時的な守護エネルギーの障壁を作り出します。この呪文を発動したとき障壁の内側にいたあなたとすべての仲間は、HPを<strong>1d4</strong>つ消します。障壁がある間、あなたと内側のすべての仲間は、障壁の外からの物理ダメージに対して抵抗を得ます。</p><p>あなたが移動すると、障壁も追従します。</p>",
+            "actions": {
+                "XdAwXl2uWNinInFe": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "再生の障壁"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "obul9k0P4CjFuxJD": {
+                    "name": "再生の障壁",
+                    "description": "<p>障壁がある間、術者と内側のすべての仲間は、障壁の外からの物理ダメージに対して抵抗を得ます。術者が移動すると、障壁も追従します。</p>"
+                }
+            }
         },
         "Restoration": {
-            "_note": "Restoration"
+            "_note": "Restoration",
+            "name": "回復術",
+            "description": "<p>大休憩の後、呪文発動特性に等しい数のトークンをこのカードに置きます。存在に触れ、任意の数のトークンを消費して、消費したトークン1個ごとにHPを2つまたはストレスを2つ消します。</p><p>存在に触れているとき、このカードからトークンを1個消費して、<em>脆弱</em>状態を解消する、または身体的・魔法的な病苦を治すこともできます（病苦の強さに応じて、GMは追加のトークンを求めることがあります）。</p><p>大休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>",
+            "actions": {
+                "udmHKUtCDClxeB4h": {
+                    "name": "HPを回復する",
+                    "description": "<p>存在に触れ、任意の数のトークンを消費して、消費したトークン1個ごとにHPを2つまたはストレスを2つ消します。</p>"
+                },
+                "TvF88tS5x3Yof8Q1": {
+                    "name": "ストレスを減らす",
+                    "description": "<p>存在に触れ、任意の数のトークンを消費して、消費したトークン1個ごとにHPを2つまたはストレスを2つ消します。</p>"
+                },
+                "LFDgLQ2CjnBEoTH9": {
+                    "name": "状態を解消する",
+                    "description": "<p>存在に触れているとき、このカードからトークンを1個消費して、<em>脆弱</em>状態を解消する、または身体的・魔法的な病苦を治すこともできます（病苦の強さに応じて、GMは追加のトークンを求めることがあります）。</p>"
+                }
+            }
         },
         "Resurrection": {
-            "_note": "Resurrection"
+            "_note": "Resurrection",
+            "name": "復活",
+            "description": "<p><strong>呪文発動ロール</strong><strong>（20）</strong>を行います。成功した場合、死後100年を超えていない存在1体を全快の状態で蘇らせます。その後<strong>d6</strong>をロールします。結果が5以下の場合、このカードを恒久的に保管庫へ置きます。</p><p>失敗した場合、1週間は復活を再発動できません。</p>",
+            "actions": {
+                "znSDInMjOlFZn7Vp": {
+                    "name": "発動する",
+                    "description": "<p><strong>呪文発動ロール（20）</strong>を行います。成功した場合、死後100年を超えていない存在1体を全快の状態で蘇らせます。</p>"
+                },
+                "NurXUfoPDSVptejR": {
+                    "name": "カードを保持する",
+                    "description": "<p>その後<strong>d6</strong>をロールします。結果が5以下の場合、このカードを恒久的に保管庫へ置きます。失敗した場合、1週間は復活を再発動できません。</p>"
+                }
+            }
         },
         "Rift Walker": {
-            "_note": "Rift Walker"
+            "_note": "Rift Walker",
+            "name": "裂け目を歩む者",
+            "description": "<p><strong>呪文発動ロール（15）</strong>を行います。成功した場合、現在立っている地面に秘術の印を刻みます。次に裂け目を歩む者の発動に成功したとき、空間に裂け目が開き、印を刻んだ正確な地点へ安全に戻る道が開かれます。この裂け目は、あなたが閉じることを選ぶか、別の呪文を発動するまで開いたままです。</p><p>いつでもこの呪文を解除して、裂け目を歩む者を再び発動し、新しい場所に印を刻めます。</p>",
+            "actions": {
+                "KV6Vt4prS15q2UV9": {
+                    "name": "発動する"
+                }
+            }
         },
         "Rise Up": {
             "_note": "Rise Up",
+            "name": "立ち上がる",
+            "description": "<p>習熟に等しいボーナスを重傷値に得ます。</p><p>攻撃によってHPを1つ以上マークしたとき、ストレスを1つ消します。</p>",
             "actions": {
                 "DAsnjDomrlupo1aw": {
-                    "name": "ストレスを消す"
+                    "name": "ストレスを消す",
+                    "description": "<p>攻撃によってHPを1つ以上マークしたとき、ストレスを1つ消します。</p>"
+                }
+            },
+            "effects": {
+                "ulQpnnRFwW4BwMlE": {
+                    "name": "立ち上がる",
+                    "description": "<p>習熟に等しいボーナスを重傷値に得ます。</p>"
                 }
             }
         },
         "Rousing Strike": {
-            "_note": "Rousing Strike"
+            "_note": "Rousing Strike",
+            "name": "鼓舞の一撃",
+            "description": "<p>休憩ごとに1回、攻撃でクリティカル成功したとき、あなたとあなたを見聞きできるすべての仲間は、HPを1つまたはストレスを<strong>1d4</strong>つ消せます。</p>",
+            "actions": {
+                "rnt24R8xyeyBrJS0": {
+                    "name": "クリティカル成功する"
+                }
+            }
         },
         "Rune Ward": {
-            "_note": "Rune Ward"
+            "_note": "Rune Ward",
+            "name": "ルーンの守り",
+            "description": "<p>あなたは深く個人的な小物を持っており、守護の魔法を込めて、あなたまたは仲間が守りとして持てます。それが何で、なぜあなたにとって大切なのかを描写してください。守りの持ち主は、希望を1消費して受けるダメージを<strong>1d8</strong>軽減できます。</p><p>守りダイスの結果が8だった場合、このターンのダメージを軽減した後に守りの力は尽きます。次の休憩で無償で再充填できます。</p>",
+            "actions": {
+                "VwtkvnNeU9tZQMDT": {
+                    "name": "ダメージを軽減する",
+                    "description": "<p>守りの持ち主は、希望を1消費して受けるダメージを<strong>1d8</strong>軽減できます。</p><p>守りダイスの結果が8だった場合、このターンのダメージを軽減した後に守りの力は尽きます。次の休憩で無償で再充填できます。</p>"
+                }
+            }
         },
         "Safe Haven": {
-            "_note": "Safe Haven"
+            "_note": "Safe Haven",
+            "name": "安息の地",
+            "description": "<p>数分の落ち着いた時間をとって集中できるとき、<strong>希望を2消費</strong>して安息の地を召喚できます。これはあなたと仲間が身を寄せられる、次元の狭間にある大きな住まいです。そうしたとき、近距離以内のどこかに魔法の扉が現れます。入れるのはあなたが選んだ存在だけです。中に入った後は、入口を不可視にできます。あなたと中にいる誰もが、いつでも外へ出られます。一度出ると、扉は再び召喚し直さなければなりません。</p><p>自分の安息の地の中で休憩を取ったとき、ダウンタイムムーブを1つ追加で選べます。</p>",
+            "actions": {
+                "Q4397FZe96rIto0m": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "UaqohKZnokIPLeYf": {
+                    "name": "安息の地",
+                    "description": "<p>自分の安息の地の中で休憩を取ったとき、ダウンタイムムーブを1つ追加で選べます。</p>"
+                }
+            }
         },
         "Sage-Touched": {
-            "_note": "Sage-Touched"
+            "_note": "Sage-Touched",
+            "name": "セージ接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がセージドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list\"><p>自然環境にいる間、呪文発動ロールに＋2のボーナスを得ます。</p></li><li class=\"vertical-card-list\"><p>休憩ごとに1回、素早さまたは直感を使うロールを行うとき、その特性を2倍にできます。これはロールの前に選ばなければなりません。</p></li></ul>",
+            "actions": {
+                "JVrYhunJ2qr5uOcx": {
+                    "name": "素早さを2倍にする",
+                    "description": "<p>休憩ごとに1回、素早さまたは直感を使うロールを行うとき、その特性を2倍にできます。これはロールの前に選ばなければなりません。</p>"
+                },
+                "zdu8GkVWby3nz8Pa": {
+                    "name": "直感を2倍にする",
+                    "description": "<p>休憩ごとに1回、素早さまたは直感を使うロールを行うとき、その特性を2倍にできます。これはロールの前に選ばなければなりません。</p>"
+                }
+            },
+            "effects": {
+                "7zMpgedPII5GIYUl": {
+                    "name": "呪文発動の強化",
+                    "description": "<p>自然環境にいる間、呪文発動ロールに＋2のボーナスを得ます。</p>"
+                },
+                "Mmax64mlLPYxJPB7": {
+                    "name": "素早さを2倍にする"
+                },
+                "p03IjcyigL4b2WD1": {
+                    "name": "直感を2倍にする",
+                    "description": "<p>休憩ごとに1回、素早さまたは直感を使うロールを行うとき、その特性を2倍にできます。これはロールの前に選ばなければなりません。</p>"
+                }
+            }
         },
         "Salvation Beam": {
-            "_note": "Salvation Beam"
+            "_note": "Salvation Beam",
+            "name": "救済の光線",
+            "description": "<p><strong>呪文発動ロール（16）</strong>を行います。成功した場合、<strong>ストレスを任意の数だけマーク</strong>して、遠距離以内の一列に並ぶ仲間を対象にします。マークしたストレスの数に等しいHPを、好きなように分配して対象から消せます。</p>",
+            "actions": {
+                "dmnB4ZMSk8lsB8Lg": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "救済の光線"
+                        }
+                    ]
+                }
+            }
         },
         "Savor the Anguish": {
             "_note": "Savor the Anguish",
+            "name": "苦悶を味わう",
+            "description": "<p>近距離以内の敵対者が重傷値ダメージを受けたとき、ストレスを1つ消せます。</p>",
             "actions": {
                 "rUzJRn673vfn5VY1": {
                     "name": "ストレスを消す"
@@ -2037,7 +2448,14 @@
             }
         },
         "Scramble": {
-            "_note": "Scramble"
+            "_note": "Scramble",
+            "name": "身をかわす",
+            "description": "<p>休憩ごとに1回、近接射程以内の存在があなたにダメージを与えることになったとき、その攻撃を避け、その敵の近接射程の外へ安全に移動できます。</p>",
+            "actions": {
+                "lcEmS1XXO5wH54cQ": {
+                    "name": "避ける"
+                }
+            }
         },
         "Second Wind": {
             "_note": "Second Wind"
