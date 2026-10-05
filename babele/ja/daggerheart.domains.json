@@ -1356,28 +1356,114 @@
             }
         },
         "Frenzy": {
-            "_note": "Frenzy"
+            "_note": "Frenzy",
+            "name": "狂乱",
+            "description": "<p>大休憩ごとに1回、視界内に敵対者がいなくなるまで<em>狂乱</em>状態に入れます。</p><p><em>狂乱</em>している間、鎧スロットを使えなくなり、ダメージロールに＋10のボーナス、重傷値に＋8のボーナスを得ます。</p>",
+            "actions": {
+                "xEpwnkNppHe3aoEs": {
+                    "name": "狂乱"
+                }
+            },
+            "effects": {
+                "1POoAgObPOWDpUco": {
+                    "name": "狂乱",
+                    "description": "<p>大休憩ごとに1回、視界内に敵対者がいなくなるまで<em>狂乱</em>状態に入れます。</p><p><em>狂乱</em>している間、鎧スロットを使えなくなり、ダメージロールに＋10のボーナス、重傷値に＋8のボーナスを得ます。</p>",
+                    "durationDescription": "<p>視界内に敵対者がいなくなるまで。</p>"
+                }
+            }
         },
         "Full Surge": {
-            "_note": "Full Surge"
+            "_note": "Full Surge",
+            "name": "全開",
+            "description": "<p>大休憩ごとに1回、<strong>ストレスを3マーク</strong>して肉体を限界まで押し上げます。次の休憩まで、すべてのキャラクター特性に＋2のボーナスを得ます。</p>",
+            "actions": {
+                "GB1MKw1nnkSgDhBd": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "H5q5iYImr69TfZcp": {
+                    "name": "全開",
+                    "description": "<p>次の休憩まで、すべてのキャラクター特性に＋2のボーナスを得ます。</p>"
+                }
+            }
         },
         "Get Back Up": {
-            "_note": "Get Back Up"
+            "_note": "Get Back Up",
+            "name": "立ち上がれ",
+            "description": "<p>重傷値ダメージを受けたとき、<strong>ストレスを1マーク</strong>して、その深刻度をしきい値1段階ぶん下げられます。</p>",
+            "effects": {
+                "aV3KUHtXXR86PRMh": {
+                    "name": "立ち上がれ",
+                    "description": "<p>重傷値ダメージを受けたとき、<strong>ストレスを1マーク</strong>して、その深刻度をしきい値1段階ぶん下げられます。</p>"
+                }
+            }
         },
         "Gifted Tracker": {
-            "_note": "Gifted Tracker"
+            "_note": "Gifted Tracker",
+            "name": "天与の追跡者",
+            "description": "<p>通った痕跡をもとに特定の存在または存在の集団を追跡しているとき、<strong>希望を任意の数だけ消費</strong>して、その数だけ以下の一覧から質問をGMに尋ねられます。</p><ul><li class=\"vertical-card-list\">相手はどの方向へ行った？</li><li class=\"vertical-card-list\">どれくらい前に通った？</li><li class=\"vertical-card-list\">この場所で何をしていた？</li><li class=\"vertical-card-list\">何体いた？</li></ul><p>この方法で追跡した存在と遭遇したとき、その相手に対する回避値に＋1のボーナスを得ます。</p>",
+            "actions": {
+                "7rHfF3ck1FuixcIC": {
+                    "name": "質問をする"
+                }
+            },
+            "effects": {
+                "47Oh2weCdmuvKHM9": {
+                    "name": "天与の追跡者",
+                    "description": "<p>この方法で追跡した存在と遭遇したとき、その相手に対する回避値に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Glancing Blow": {
-            "_note": "Glancing Blow"
+            "_note": "Glancing Blow",
+            "name": "かすめる一撃",
+            "description": "<p>攻撃に失敗したとき、<strong>ストレスを1マーク</strong>して、習熟の半分を使って武器ダメージを与えられます。</p>",
+            "actions": {
+                "DUojhK0OtvsotiE6": {
+                    "name": "ストレスを1マーク"
+                }
+            }
         },
         "Glyph of Nightfall": {
-            "_note": "Glyph of Nightfall"
+            "_note": "Glyph of Nightfall",
+            "name": "日没の紋章",
+            "description": "<p>至近以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、<strong>希望を1消費</strong>して対象の体に闇の紋章を刻み、弱点を露わにして、対象の難易度を知識に等しい値（最低1）だけ一時的に下げます。</p>",
+            "actions": {
+                "9jzYsHQc8vlPOL3o": {
+                    "name": "発動する"
+                }
+            },
+            "effects": {
+                "9avDhppIdTqAR56f": {
+                    "name": "日没の紋章",
+                    "description": "<p>対象の体に闇の紋章を刻み、弱点を露わにして、対象の難易度を知識に等しい値（最低1）だけ一時的に下げます。</p>"
+                }
+            }
         },
         "Goad Them On": {
-            "_note": "Goad Them On"
+            "_note": "Goad Them On",
+            "name": "挑発",
+            "description": "<p>近距離以内の対象をどう挑発するかを描写し、その対象に対して<strong>社交ロール</strong>を行います。成功した場合、対象はストレスを1マークし、GMが次にその対象にスポットライトを当てたとき、対象はあなたを攻撃の対象にしなければならず、その攻撃には不利がつきます。</p>",
+            "actions": {
+                "kiKrK30UMopx3izN": {
+                    "name": "挑発する"
+                }
+            },
+            "effects": {
+                "Jccsuc48gmA6QAni": {
+                    "name": "挑発された",
+                    "description": "<p>次にこの敵対者にスポットライトが当たったとき、挑発したキャラクターを攻撃の対象にしなければならず、その攻撃には不利がつきます。</p>",
+                    "changes": [
+                        "挑発した相手への攻撃"
+                    ]
+                }
+            }
         },
         "Gore and Glory": {
             "_note": "Gore and Glory",
+            "name": "血と栄光",
+            "description": "<p>武器攻撃でクリティカル成功したとき、希望を追加で1得るか、ストレスを追加で1つ消します。</p><p>さらに、敵を倒せるだけのダメージを与えたとき、希望を1得るかストレスを1つ消します。</p>",
             "actions": {
                 "crvDbD8V8linpzeg": {
                     "name": "ストレスを消す"
@@ -1388,22 +1474,109 @@
             }
         },
         "Grace-Touched": {
-            "_note": "Grace-Touched"
+            "_note": "Grace-Touched",
+            "name": "グレイス接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がグレイスドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>ストレスをマークする代わりに、<strong>鎧スロットを1つマーク</strong>できます。</p></li><li class=\"vertical-card-list-found\"><p>対象にHPをマークさせることになったとき、代わりに同じ数のストレスをマークさせることを選べます。</p></li></ul>",
+            "actions": {
+                "VkPMSuoowd7hnsR5": {
+                    "name": "鎧スロットをマーク"
+                },
+                "YzrQmUhNZoDYawo0": {
+                    "name": "ストレスを1マーク"
+                }
+            },
+            "effects": {
+                "KK5m2slpFuXDxFaL": {
+                    "name": "グレイス接触",
+                    "description": "<p>ロードアウトにある能力カードのうち4枚以上がグレイスドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>ストレスをマークする代わりに、<strong>鎧スロットを1つマーク</strong>できます。</p></li><li class=\"vertical-card-list-found\"><p>対象にHPをマークさせることになったとき、代わりに同じ数のストレスをマークさせることを選べます。</p></li></ul>"
+                }
+            }
         },
         "Ground Pound": {
-            "_note": "Ground Pound"
+            "_note": "Ground Pound",
+            "name": "大地叩き",
+            "description": "<p><strong>希望を2消費</strong>して、立っている地面を打ち、至近以内のすべての対象に対して<strong>頑強ロール</strong>を行います。成功した対象は遠距離まで吹き飛ばされ、リアクションロール（17）を行わなければなりません。失敗した対象は<strong>4d10+8</strong>のダメージを受けます。成功した対象はダメージが半分になります。</p>",
+            "actions": {
+                "FOrohOCnzfdBl4sM": {
+                    "name": "地面を打つ",
+                    "areas": [
+                        {
+                            "name": "大地叩き"
+                        }
+                    ]
+                }
+            }
         },
         "Healing Field": {
-            "_note": "Healing Field"
+            "_note": "Healing Field",
+            "name": "癒しの野",
+            "description": "<p>大休憩ごとに1回、自分の周囲に癒しの草木の野を生み出せます。あなたの近距離以内の至るところが生命力に満ちた自然で満たされ、あなたとその範囲内のすべての仲間はHPを1つ消せます。</p><p><strong>希望を2消費</strong>して、代わりにあなたとすべての仲間がHPを2つ消せるようにします。</p>",
+            "actions": {
+                "oQ4nCYdwCXqd7NWt": {
+                    "name": "HPを1つ回復",
+                    "areas": [
+                        {
+                            "name": "癒しの野"
+                        }
+                    ]
+                },
+                "EqamWsxO86ZjY8WV": {
+                    "name": "HPを2つ回復",
+                    "areas": [
+                        {
+                            "name": "癒しの野"
+                        }
+                    ]
+                }
+            }
         },
         "Healing Hands": {
-            "_note": "Healing Hands"
+            "_note": "Healing Hands",
+            "name": "癒しの手",
+            "description": "<p><strong>呪文発動ロール（13）</strong>を行い、近接射程以内の自分以外の存在1体を対象にします。成功した場合、<strong>ストレスを1マーク</strong>して、対象のHPを2つまたはストレスを2つ消します。失敗した場合、<strong>ストレスを1マーク</strong>して、対象のHPを1つまたはストレスを1つ消します。次の大休憩まで、同じ対象を再び癒すことはできません。</p>",
+            "actions": {
+                "PjXt807MYg1JbAfO": {
+                    "name": "発動する",
+                    "description": "<p><strong>呪文発動ロール（13）</strong>を行い、近接射程以内の自分以外の存在1体を対象にします。</p>"
+                },
+                "vmWku5XYmakLdwX2": {
+                    "name": "HPを1つ回復",
+                    "description": "<p>失敗した場合、ストレスを1マークして、対象のHPを1つまたはストレスを1つ消します。次の大休憩まで、同じ対象を再び癒すことはできません。</p>"
+                },
+                "FYHLuVtFCR9A6Nvt": {
+                    "name": "HPを2つ回復",
+                    "description": "<p>成功した場合、ストレスを1マークして、対象のHPを2つまたはストレスを2つ消します。次の大休憩まで、同じ対象を再び癒すことはできません。</p>"
+                },
+                "8ElTYMjIM7YI6Kb8": {
+                    "name": "ストレスを1つ回復",
+                    "description": "<p>失敗した場合、ストレスを1マークして、対象のHPを1つまたはストレスを1つ消します。次の大休憩まで、同じ対象を再び癒すことはできません。</p>"
+                },
+                "lQMhidLodJn9Nj7e": {
+                    "name": "ストレスを2つ回復",
+                    "description": "<p>成功した場合、ストレスを1マークして、対象のHPを2つまたはストレスを2つ消します。 次の大休憩まで、同じ対象を再び癒すことはできません。</p>"
+                }
+            },
+            "effects": {
+                "sd5liP4ZcVeTMAoW": {
+                    "name": "癒しの手で癒された",
+                    "description": "<p>大休憩まで、癒しの手の術者による癒しの手で再び癒されることはできません。</p>"
+                }
+            }
         },
         "Healing Strike": {
-            "_note": "Healing Strike"
+            "_note": "Healing Strike",
+            "name": "癒しの一撃",
+            "description": "<p>敵対者にダメージを与えたとき、<strong>希望を2消費</strong>して、近距離以内の仲間1人のHPを1つ消せます。</p>",
+            "actions": {
+                "ECYp5SeXDAQzRTgC": {
+                    "name": "HPを消す"
+                }
+            }
         },
         "Hideous Retribution": {
             "_note": "Hideous Retribution",
+            "name": "醜悪な報復",
+            "description": "<p>近距離以内の仲間が、あなたが見えている対象からダメージを受けたとき、呪文発動特性を使ってその対象に対してリアクションロールを行えます。成功した場合、<strong>ストレスを1マーク</strong>して、習熟を使って<strong>d6</strong>の魔法ダメージを与えます。</p>",
             "actions": {
                 "9pclL7t5Tq5XQAGO": {
                     "name": "リアクションロール"
@@ -1411,64 +1584,214 @@
             }
         },
         "Hold the Line": {
-            "_note": "Hold the Line"
+            "_note": "Hold the Line",
+            "name": "戦線を保て",
+            "description": "<p>あなたが取る防御の構えを描写し、<strong>希望を1消費</strong>します。敵対者が至近以内へ移動した場合、その敵対者は近接射程へ引き寄せられ、<em>拘束</em>されます。</p><p>この状態は、あなたが移動するか恐怖を伴うロールに失敗するか、GMが自分の手番に恐怖を2消費して解消するまで持続します。</p>",
+            "actions": {
+                "hxupFx3czFHz3xfG": {
+                    "name": "希望を消費する"
+                },
+                "SKG6Gu0uJZxtYTnz": {
+                    "name": "拘束する",
+                    "description": "<p>敵対者が至近以内へ移動した場合、その敵対者は近接射程へ引き寄せられ、<em>拘束</em>されます。</p>"
+                }
+            },
+            "effects": {
+                "y82y3nUStyL8DIJL": {
+                    "name": "戦線を保て",
+                    "description": "<p>敵対者が至近以内へ移動した場合、その敵対者は近接射程へ引き寄せられ、<em>拘束</em>されます。</p><p>この状態は、あなたが移動するか恐怖を伴うロールに失敗するか、GMが自分の手番に恐怖を2消費して解消するまで持続します。</p>"
+                },
+                "WTYg0b8nE1XbnMiA": {
+                    "name": "戦線を保て",
+                    "description": "<p>敵対者が至近以内へ移動した場合、その敵対者は近接射程へ引き寄せられ、<em>拘束</em>されます。</p>"
+                }
+            }
         },
         "Hush": {
-            "_note": "Hush"
+            "_note": "Hush",
+            "name": "沈黙",
+            "description": "<p>近距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、<strong>希望を1消費</strong>して対象の周囲に抑圧の魔法を生み出します。その魔法は対象の至近以内のすべてを包み、対象の移動に追従します。</p><p>対象とその範囲内のすべては、GMが自分の手番に恐怖を消費してこの状態を解消するか、あなたが再び沈黙を発動するか、あなたが中傷値ダメージを受けるまで<em>沈黙</em>となります。<em>沈黙</em>している間、音を出せず、呪文を発動できません。</p>",
+            "actions": {
+                "GrblHtCL5fOD2OQ7": {
+                    "name": "発動する"
+                }
+            },
+            "effects": {
+                "pZ5YpjKidaj48IYF": {
+                    "name": "沈黙",
+                    "description": "<p>対象の周囲の抑圧の魔法は、対象の至近以内のすべてを包み、対象の移動に追従します。対象とその範囲内のすべては、GMが自分の手番に恐怖を消費してこの状態を解消するか、あなたが再び沈黙を発動するか、あなたが中傷値ダメージを受けるまで沈黙となります。沈黙している間、音を出せず、呪文を発動できません。</p>",
+                    "durationDescription": "<p>GMが自分の手番に恐怖を消費してこの状態を解消するか、あなたが再び沈黙を発動するか、あなたが中傷値ダメージを受けるまで。</p>"
+                }
+            }
         },
         "Hypnotic Shimmer": {
-            "_note": "Hypnotic Shimmer"
+            "_note": "Hypnotic Shimmer",
+            "name": "幻惑の煌めき",
+            "description": "<p>正面の近距離以内にいるすべての敵対者に対して<strong>呪文発動ロール</strong>を行います。休憩ごとに1回、成功した場合、閃く色彩と光の幻影を作り出し、成功した対象を一時的に<em>行動不能</em>にし、ストレスを1マークさせます。<em>行動不能</em>の間、対象はリアクションを使えず、この状態が解消されるまで他のいかなる行動も取れません。</p>",
+            "actions": {
+                "kLMAuyZktmohOSXa": {
+                    "name": "発動する",
+                    "areas": [
+                        {
+                            "name": "幻惑の煌めき"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "xAG75UWUz3aDZH3m": {
+                    "name": "行動不能",
+                    "description": "<p>閃く色彩と光の幻影が対象を一時的に行動不能にします。行動不能の間、対象はリアクションを使えず、この状態が解消されるまで他のいかなる行動も取れません。</p>"
+                }
+            }
         },
         "I Am Your Shield": {
-            "_note": "I Am Your Shield"
+            "_note": "I Am Your Shield",
+            "name": "我こそは汝の盾",
+            "description": "<p>至近以内の仲間がダメージを受けることになったとき、<strong>ストレスを1マーク</strong>して立ちはだかり、代わりに自分をその攻撃の対象にできます。この攻撃からダメージを受けるとき、鎧スロットを任意の数だけマークできます。</p>",
+            "actions": {
+                "0rLdATV71dviB2MG": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "I See It Coming": {
-            "_note": "I See It Coming"
+            "_note": "I See It Coming",
+            "name": "見えている",
+            "description": "<p>近接射程の外から行われた攻撃の対象になったとき、<strong>ストレスを1マーク</strong>して<strong>d4</strong>をロールし、その攻撃に対して出目と等しいボーナスを回避値に得られます。</p>",
+            "actions": {
+                "lVyTDd44pGJgF3w7": {
+                    "name": "d4をロール"
+                }
+            }
         },
         "Inevitable": {
-            "_note": "Inevitable"
+            "_note": "Inevitable",
+            "name": "必然",
+            "description": "<p>アクションロールに失敗したとき、次のアクションロールに有利がつきます。</p>",
+            "effects": {
+                "wX4BFGaM0bdzHPn2": {
+                    "name": "必然",
+                    "description": "<p>アクションロールに失敗したとき、次のアクションロールに有利がつきます。</p>",
+                    "changes": [
+                        "直前のアクションロールに失敗している場合"
+                    ]
+                }
+            }
         },
         "Inspirational Words": {
             "_note": "Inspirational Words",
+            "name": "鼓舞の言葉",
+            "description": "<p>あなたの言葉には力が宿っています。大休憩の後、社交に等しい数のトークンをこのカードに置きます。仲間と言葉を交わすとき、このカードからトークンを1個消費して、以下の選択肢から1つの利益を相手に与えられます。</p><ul><li class=\"vertical-card-list-found\"><p>仲間がストレスを1つ消す。</p></li><li class=\"vertical-card-list-found\"><p>仲間がHPを1つ消す。</p></li><li class=\"vertical-card-list-found\"><p>仲間が希望を1得る。</p></li></ul><p>大休憩を取ったとき、未消費のトークンはすべて取り除きます。</p>",
             "actions": {
                 "5sGMd6m6Ltahit4h": {
-                    "name": "ストレスを消す"
+                    "name": "ストレスを消す",
+                    "description": "<p>このカードからトークンを1個消費して、以下を相手に与えます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>仲間がストレスを1つ消す。</p></li></ul>"
                 },
                 "QKS3vo3Nf5CK8rkF": {
-                    "name": "HPを消す"
+                    "name": "HPを消す",
+                    "description": "<p>このカードからトークンを1個消費して、以下を相手に与えます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>仲間がHPを1つ消す。</p></li></ul>"
+                },
+                "5xn70wYZW7k9aiVl": {
+                    "name": "希望を与える",
+                    "description": "<p>このカードからトークンを1個消費して、以下を相手に与えます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>仲間が希望を1得る。</p></li></ul>"
                 }
             }
         },
         "Invigoration": {
-            "_note": "Invigoration"
+            "_note": "Invigoration",
+            "name": "鼓舞活性",
+            "description": "<p>あなたまたは近距離以内の仲間が、使用回数の上限がある特徴（休憩ごとに1回、セッションごとに1回など）を使い切ったとき、<strong>希望を任意の数だけ消費</strong>して、その数の<strong>d6</strong>をロールできます。いずれかが6を出した場合、その特徴を再び使えます。</p>",
+            "actions": {
+                "bbWofyWTChZVuW60": {
+                    "name": "ダイスプールをロール"
+                }
+            }
         },
         "Invisibility": {
             "_note": "Invisibility",
+            "name": "不可視化",
+            "description": "<p><strong>呪文発動ロール（10）</strong>を行います。成功した場合、<strong>ストレスを1マーク</strong>して、自分または近接射程以内の仲間1人を<em>不可視</em>にします。<em>不可視</em>の存在は魔法的な手段以外では見えず、その存在への攻撃ロールには不利がつきます。呪文発動特性に等しい数のトークンをこのカードに置きます。<em>不可視</em>の存在が行動を取るとき、このカードからトークンを1個消費します。最後のトークンを消費した行動が解決された後、効果は終わります。</p><p>不可視化は一度に1体にしか保持できません。</p>",
             "actions": {
                 "jD03JDo0H9Q9QV2E": {
                     "name": "呪文発動ロール"
+                }
+            },
+            "effects": {
+                "Mt4qol2YB9uzEKGS": {
+                    "name": "不可視",
+                    "description": "<p><em>不可視</em>の存在は魔法的な手段以外では見えず、その存在への攻撃ロールには不利がつきます。呪文発動特性に等しい数のトークンをこのカードに置きます。<em>不可視</em>の存在が行動を取るとき、このカードからトークンを1個消費します。最後のトークンを消費した行動が解決された後、効果は終わります。</p>"
                 }
             }
         },
         "Invoke Torment": {
             "_note": "Invoke Torment",
+            "name": "苦悶の喚起",
+            "description": "<p>ストレスをすべてマークしている対象に、あなたは2倍のダメージを与えます。</p><p>さらに、近距離以内の敵対者がストレスをすべてマークした状態で倒されたとき、あなたは希望を1得ます。</p>",
             "actions": {
                 "3fABewYlBBP80OiK": {
-                    "name": "希望を得る"
+                    "name": "希望を得る",
+                    "description": "<p>近距離以内の敵対者がストレスをすべてマークした状態で倒されたとき、あなたは希望を1得ます。</p>"
+                }
+            },
+            "effects": {
+                "bGNhmCLMfn7MRJiE": {
+                    "name": "苦悶の喚起",
+                    "description": "<p>ストレスをすべてマークしている対象に、あなたは2倍のダメージを与えます。</p>"
                 }
             }
         },
         "Jump Scare": {
-            "_note": "Jump Scare"
+            "_note": "Jump Scare",
+            "name": "不意打ちの恐怖",
+            "description": "<p>対象に魔法ダメージを与えたとき、<strong>ストレスを1マーク</strong>して、その対象の近接射程へテレポートできます。そうしたとき、対象はHPを1つ以上マークするまで<em>脆弱</em>になります。</p>",
+            "actions": {
+                "PxEbi94Hv9SoVxbY": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "NYO02QXmpMVj5YkV": {
+                    "name": "怯え",
+                    "description": "<p>HPを1つ以上マークするまで<em>脆弱</em>になります。</p>"
+                }
+            }
         },
         "Know Thy Enemy": {
-            "_note": "Know Thy Enemy"
+            "_note": "Know Thy Enemy",
+            "name": "敵を知れ",
+            "description": "<p>存在を観察しているとき、その存在に対して<strong>直感ロール</strong>を行えます。成功した場合、<strong>希望を1消費</strong>して、以下の選択肢から対象についての情報1組をGMに尋ねます。</p><ul><li class=\"vertical-card-list-found\"><p>マークされていないHPとストレス。</p></li><li class=\"vertical-card-list-found\"><p>難易度とダメージしきい値。</p></li><li class=\"vertical-card-list-found\">戦術と標準攻撃のダメージダイス。</li><li class=\"vertical-card-list-found\"><p>特徴と経験。</p></li></ul><p>さらに成功した場合、<strong>ストレスを1マーク</strong>して、GMの恐怖プールから恐怖を1つ取り除けます。</p>",
+            "actions": {
+                "CTIjJn5xFME0DCWm": {
+                    "name": "直感ロール",
+                    "description": "<p>存在を観察しているとき、その存在に対して<strong>直感ロール</strong>を行えます。成功した場合、<strong>希望を1消費</strong>して、以下の選択肢から対象についての情報1組をGMに尋ねます。</p><ul class=\"\"><li class=\"vertical-card-list-found\"><p>マークされていないHPとストレス。</p></li><li class=\"vertical-card-list-found\"><p>難易度とダメージしきい値。</p></li><li class=\"vertical-card-list-found\">戦術と標準攻撃のダメージダイス。</li><li class=\"vertical-card-list-found\"><p>特徴と経験。</p></li></ul>"
+                },
+                "ADRUe0WJktpHFz1o": {
+                    "name": "ストレスをマーク",
+                    "description": "<p>成功した場合、<strong>ストレスを1マーク</strong>して、GMの恐怖プールから恐怖を1つ取り除けます。</p>"
+                }
+            }
         },
         "Lead by Example": {
-            "_note": "Lead by Example"
+            "_note": "Lead by Example",
+            "name": "率先垂範",
+            "description": "<p>敵対者にダメージを与えたとき、<strong>ストレスを1マーク</strong>して、仲間をどう励ますかを描写できます。その敵対者へ次に攻撃を行ったPCは、ストレスを1つ消すか希望を1得られます。</p>",
+            "actions": {
+                "h5j4TcmhwtAhPScT": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "BbBs2XYXMsLwkHKh": {
+                    "name": "率先垂範",
+                    "description": "<p>その敵対者へ次に攻撃を行ったPCは、ストレスを1つ消すか希望を1得られます。</p>"
+                }
+            }
         },
         "Lean on Me": {
             "_note": "Lean on Me",
+            "name": "頼ってくれ",
+            "description": "<p>大休憩ごとに1回、アクションロールに失敗した仲間を慰めるか励ましたとき、あなたと相手はそれぞれストレスを2つ消せます。</p>",
             "actions": {
                 "ByT4FdZX9YSLmKcL": {
                     "name": "治癒"
@@ -1476,32 +1799,116 @@
             }
         },
         "Life Ward": {
-            "_note": "Life Ward"
+            "_note": "Life Ward",
+            "name": "生命の守護",
+            "description": "<p><strong>希望を3</strong><strong>消費</strong>して、近距離以内の仲間1人を選びます。その仲間に輝く守護の印が刻まれます。この仲間がデスムーブを行うことになったとき、代わりにHPを1つ消します。</p><p>この効果は、対象をデスムーブから救ったとき、あなたが別の対象に生命の守護を発動したとき、またはあなたが大休憩を取ったときに終わります。</p>",
+            "actions": {
+                "i99aNWZqVC8PHAIx": {
+                    "name": "印を刻む",
+                    "description": "<p><strong>希望を3消費</strong>して、近距離以内の仲間1人を選びます。その仲間に輝く守護の印が刻まれます。この仲間がデスムーブを行うことになったとき、代わりにHPを1つ消します。</p><p>この効果は、対象をデスムーブから救ったとき、あなたが別の対象に生命の守護を発動したとき、またはあなたが大休憩を取ったときに終わります。</p>"
+                }
+            },
+            "effects": {
+                "E7Ou4OMEy3TeK1Gf": {
+                    "name": "生命の守護",
+                    "description": "<p>輝く守護の印が刻まれています。この仲間がデスムーブを行うことになったとき、代わりにHPを1つ消します。</p><p>この効果は、対象をデスムーブから救ったとき、術者が別の対象に生命の守護を発動したとき、または術者が大休憩を取ったときに終わります。</p>"
+                }
+            }
         },
         "Manifest Wall": {
-            "_note": "Manifest Wall"
+            "_note": "Manifest Wall",
+            "name": "壁の顕現",
+            "description": "<p><strong>呪文発動ロール（15）</strong>を行います。休憩ごとに1回、成功した場合、<strong>希望を1消費</strong>して、遠距離以内の2点の間に一時的な魔法の壁を作り出します。壁は高さ50フィートまで、任意の角度で形成できます。その経路にいる存在や物体は、あなたが選んだ側へ押しのけられます。壁は次の休憩まで、またはあなたが再び壁の顕現を発動するまで残ります。</p>",
+            "actions": {
+                "nFzMCrW7wuXCCmJW": {
+                    "name": "希望を消費する",
+                    "areas": [
+                        {
+                            "name": "壁の顕現"
+                        }
+                    ]
+                }
+            }
         },
         "Mass Disguise": {
             "_note": "Mass Disguise",
+            "name": "集団変装",
+            "description": "<p>数分の静寂をとって集中できるとき、<strong>ストレスを1マーク</strong>して、近距離以内の同意するすべての存在の外見を変えられます。新しい姿は全体的な体格と大きさを共有していなければならず、以前に見た誰か・何か、あるいは完全な創作でもかまいません。変装した存在は、詮索を避けるための社交ロールに有利を得ます。</p><p>カウントダウン（8）を起動します。これはGMが選ぶ結果として減っていきます。発動したとき、変装は解けます。</p>",
             "actions": {
+                "Gl41dsOBTG2p8qwo": {
+                    "name": "発動する"
+                },
                 "ZM96wFu3YuAeUXel": {
                     "name": "カウントダウン開始",
+                    "description": "<p><em>カウントダウン（8）</em>を起動します。これはGMが選ぶ結果として減っていきます。発動したとき、変装は解けます。</p>",
                     "countdown": [
                         {
                             "name": "集団変装"
                         }
                     ]
                 }
+            },
+            "effects": {
+                "HgF4n0idPcdz8Bi7": {
+                    "name": "変装",
+                    "description": "<p>変装した存在は、詮索を避けるための社交ロールに有利を得ます。</p>",
+                    "changes": [
+                        "詮索を避けるための社交ロール。"
+                    ]
+                }
             }
         },
         "Mass Enrapture": {
-            "_note": "Mass Enrapture"
+            "_note": "Mass Enrapture",
+            "name": "集団魅了",
+            "description": "<p>遠距離以内のすべての対象に対して<strong>呪文発動ロール</strong>を行います。成功した対象は一時的に<em>陶酔</em>となります。<em>陶酔</em>している間、対象の注意はあなたに固定され、視野が狭まり、あなたの声以外の音はすべてかき消されます。<strong>ストレスを1マーク</strong>して、<em>陶酔</em>しているすべての対象にストレスを1マークさせ、この呪文を終わらせます。</p>",
+            "actions": {
+                "r5eA3tAH7EplOQCP": {
+                    "name": "魅了",
+                    "areas": [
+                        {
+                            "name": "集団魅了"
+                        }
+                    ]
+                },
+                "QhBaM0LU9tmSI3IO": {
+                    "name": "ストレスをマーク",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、<em>陶酔</em>しているすべての対象にストレスを1マークさせ、この呪文を終わらせます。</p>"
+                }
+            },
+            "effects": {
+                "QNbnelRylVB0yCm0": {
+                    "name": "陶酔",
+                    "description": "<p>陶酔している間、対象の注意はあなたに固定され、視野が狭まり、あなたの声以外の音はすべてかき消されます。</p>"
+                }
+            }
         },
         "Master of the Craft": {
-            "_note": "Master of the Craft"
+            "_note": "Master of the Craft",
+            "name": "技の達人",
+            "description": "<p>経験2つに恒久的な＋2のボーナス、または経験1つに恒久的な＋3のボーナスを得ます。その後、このカードを恒久的に保管庫へ置きます。</p>"
         },
         "Mending Touch": {
-            "_note": "Mending Touch"
+            "_note": "Mending Touch",
+            "name": "治癒の手",
+            "description": "<p>あなたは存在に手を置き、癒しの魔法を通して傷を閉じます。助ける対象に数分間集中できるとき、<strong>希望を2消費</strong>して、対象のHPを1つまたはストレスを1つ消せます。</p><p>大休憩ごとに1回、この癒しの時間を使って相手について何か新しいことを知るか、自分について何かを明かしたとき、代わりに対象のHPを2つまたはストレスを2つ消せます。</p>",
+            "actions": {
+                "sDoL9p1cpIx8Vdbb": {
+                    "name": "HPを1つ回復",
+                    "description": "<p>助ける対象に数分間集中できるとき、希望を2消費して、対象のHPを1つまたはストレスを1つ消せます。</p>"
+                },
+                "NCDSgZBLoq9fQvku": {
+                    "name": "ストレスを1つ回復"
+                },
+                "FsbOSV8eR2PEb1aS": {
+                    "name": "HPを2つ回復",
+                    "description": "<p>助ける対象に数分間集中できるとき、<strong>希望を2消費</strong>して、対象のHPを1つまたはストレスを1つ消せます。</p><p>大休憩ごとに1回、この癒しの時間を使って相手について何か新しいことを知るか、自分について何かを明かしたとき、代わりに対象のHPを2つまたはストレスを2つ消せます。</p>"
+                },
+                "mqDV9s6oMRQjJF4U": {
+                    "name": "ストレスを2つ回復",
+                    "description": "<p>助ける対象に数分間集中できるとき、<strong>希望を2消費</strong>して、対象のHPを1つまたはストレスを1つ消せます。</p><p>大休憩ごとに1回、この癒しの時間を使って相手について何か新しいことを知るか、自分について何かを明かしたとき、代わりに対象のHPを2つまたはストレスを2つ消せます。</p>"
+                }
+            }
         },
         "Midnight Spirit": {
             "_note": "Midnight Spirit"
