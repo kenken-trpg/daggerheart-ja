@@ -12911,18 +12911,40 @@
         },
         "Viper": {
             "_note": "Viper",
+            "name": "毒蛇",
+            "description": "<p>蝶番状の牙で獲物に毒を注ぐ小さな蛇。</p>",
+            "motivesAndTactics": "潜んで待つ、這う、襲う",
             "attack": {
                 "name": "噛みつき"
             },
+            "experiences": {
+                "IxTKhqb9V4iADTqd": {
+                    "name": "地を這う"
+                }
+            },
             "items": {
                 "lVU07NeUhz12ol57": {
-                    "name": "ミニオン（4）"
+                    "name": "ミニオン（4）",
+                    "description": "<p>@Lookup[@name]はダメージを受けると倒されます。PCが@Lookup[@name]に与えたダメージ4ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "7aMURYBDlLuLigme": {
-                    "name": "猛毒"
+                    "name": "猛毒",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功したとき、その対象は一時的に「注毒」状態になります。「注毒」のあいだ、その対象はアクションロールを行うたびにストレスを1マークしなければなりません。</p>",
+                    "actions": {
+                        "zPzUur2G8McCOr7m": {
+                            "name": "毒を注ぐ"
+                        }
+                    },
+                    "effects": {
+                        "ToU4HvQv1Zp48ZtU": {
+                            "name": "注毒",
+                            "description": "<p>「注毒」のあいだ、アクションロールを行うたびにストレスを1マークしなければなりません。</p>"
+                        }
+                    }
                 },
                 "jI2kPd7ivBDRArp7": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが1の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "aEeFuYgtie2b9VqQ": {
                             "name": "恐怖を消費する"
@@ -12933,14 +12955,25 @@
         },
         "Viscera Sucker": {
             "_note": "Viscera Sucker",
+            "name": "臓物を吸う者",
+            "description": "<p>日没に上半身を切り離し、獲物を求めて近隣の村を飛び回る吸血の魔物。翼を持つ上半身から臓物を垂らしている。</p>",
+            "motivesAndTactics": "獲物に食いつく、血を吸う、二つに引き裂く",
+            "attack": {
+                "name": "長い爪"
+            },
             "experiences": {
                 "bAYNqmFSrrubwi0x": {
                     "name": "飛行中"
                 }
             },
             "items": {
+                "RxBlE5YjrtWE5Bzo": {
+                    "name": "繋がるか死ぬか",
+                    "description": "<p>@Lookup[@name]は、夜明けまでに上半身と下半身を繋ぎ直せなければ死にます。</p>"
+                },
                 "JvUiFinQ8enXA8Pu": {
                     "name": "絡みつく腸",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に超近距離以内の対象へ食いつかせ、その対象が頑強ロール（16）に成功して逃れるまで<em>拘束</em>します。</p>",
                     "actions": {
                         "k9a7IFMGF4VvOuXr": {
                             "name": "恐怖を消費する"
@@ -12948,12 +12981,14 @@
                     },
                     "effects": {
                         "NUGvJQQ3xFB3xBPl": {
-                            "name": "絡みつく腸"
+                            "name": "絡みつく腸",
+                            "description": "<p>頑強ロール（16）に成功して逃れるまで<em>拘束</em>されています。</p>"
                         }
                     }
                 },
                 "KllqAajty0xJ3wGK": {
                     "name": "生命吸い",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に近接距離以内の<em>拘束</em>された対象から血を飲ませます。その対象はHPを1マークし、@Lookup[@name]はHPを1つ消します。</p>",
                     "actions": {
                         "sy9Z02tpK4cPCrQ2": {
                             "name": "ストレスをマーク"
@@ -12964,6 +12999,9 @@
         },
         "Volcanic Dragon: Ashen Tyrant": {
             "_note": "Volcanic Dragon: Ashen Tyrant",
+            "name": "火山のドラゴン：灰の暴君",
+            "description": "<p><em>これまで、これほどドラゴンを傷つける不遜を働いた敵はいなかった。溶岩が収まるとき、それはドラゴンのかつての敵たちと同じく灰へと挽かれている。</em></p>",
+            "motivesAndTactics": "息を詰まらせる、飛ぶ、威圧する、殺すか殺されるか",
             "attack": {
                 "name": "爪と歯"
             },
@@ -12983,22 +13021,28 @@
                     }
                 },
                 "8d4bCyFvNq3NymUK": {
+                    "name": "追い詰められて",
+                    "description": "<p>恐怖を消費する代わりに<strong>ストレスを1マーク</strong>して、@Lookup[@name]にスポットライトを当てます。</p>",
                     "actions": {
                         "nIBoqkOFWx0vpbnj": {
-                            "name": "ストレスをマーク"
+                            "name": "ストレスをマーク",
+                            "description": "<p>恐怖を消費する代わりに<strong>ストレスを1マーク</strong>して、灰の暴君にスポットライトを当てます。</p>"
                         }
                     }
                 },
                 "jOojMjb779Kea1ZV": {
                     "name": "傷ついた翼",
+                    "description": "<p>飛行している間、@Lookup[@name]は難易度に＋1のボーナスを得ます。</p>",
                     "effects": {
                         "zCi90lgFAaA7yrJG": {
-                            "name": "傷ついた翼"
+                            "name": "傷ついた翼",
+                            "description": "<p>飛行している間、灰の暴君は難易度に＋1のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "LeOYwp1GhN59NIHa": {
                     "name": "灰は灰に",
+                    "description": "<p>@Lookup[@name]から近距離以内でPCが失敗をロールしたとき、そのPCは希望を1失い、あなたは恐怖を1得ます。そのPCが希望を失えない場合、HPを1マークしなければなりません。</p>",
                     "actions": {
                         "q6gbeIrGMII6IeiM": {
                             "name": "希望を失う",
@@ -13012,6 +13056,7 @@
                 },
                 "AXhSVGL33i0j6DAw": {
                     "name": "死に物狂いの暴走",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d20+2</strong>の物理ダメージを受け、元いた場所から近距離まで吹き飛ばされ、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "3glUQAcsLBcCumnS": {
                             "name": "攻撃",
@@ -13025,6 +13070,7 @@
                 },
                 "ggCol5LQ2ZpeQjly": {
                     "name": "灰の雲",
+                    "description": "<p><strong>恐怖を1消費</strong>して、地面を叩きつけて遠距離以内に灰を巻き上げます。灰の雲の中にいる間、対象はアクションロールに不利を得ます。灰の雲は、次に敵対者にスポットライトが当たったとき消えます。</p>",
                     "actions": {
                         "UrD4A68IBJgyfvvt": {
                             "name": "恐怖を消費する",
@@ -13038,9 +13084,11 @@
                 },
                 "uWiyaJPXcoW06pOM": {
                     "name": "終末の暴れ狂い",
+                    "description": "<p><em>カウントダウン（1d12）</em>。<strong>恐怖を1消費</strong>して開始します。これはPCが恐怖とともにロールしたときに進みます。発動したとき、@Lookup[@name]が暴れ回り、環境へのダメージ（地震、雪崩、崩れる壁など）を引き起こします。遠距離以内のすべての対象は頑強リアクションロールを行わなければなりません。失敗した対象は2d10+10の物理ダメージを受け、頑強ロールに成功して振り払うまで瓦礫に拘束されます。成功した対象はダメージを半分受けます。このカウントダウンが動いている間に@Lookup[@name]が倒された場合、その死の苦しみが引き起こす破壊として、直ちにカウントダウンを発動させます。</p>",
                     "actions": {
                         "OznXxmwiPwzuFPQZ": {
                             "name": "セーブを振る",
+                            "description": "<p>カウントダウンが発動したとき、@Lookup[@name]が暴れ回り、環境へのダメージ（地震、雪崩、崩れる壁など）を引き起こします。遠距離以内のすべての対象は頑強リアクションロールを行わなければなりません。失敗した対象は2d10+10の物理ダメージを受け、頑強ロールに成功して振り払うまで瓦礫に拘束されます。成功した対象はダメージを半分受けます。このカウントダウンが動いている間に@Lookup[@name]が倒された場合、その死の苦しみが引き起こす破壊として、直ちにカウントダウンを発動させます。</p>",
                             "areas": [
                                 {
                                     "name": "終末の暴れ狂い"
@@ -13049,6 +13097,7 @@
                         },
                         "rZ7IwBnDzw7VmBT6": {
                             "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（1d12）</em>。<strong>恐怖を1消費</strong>して開始します。これはPCが恐怖とともにロールしたときに進みます。</p>",
                             "countdown": [
                                 {
                                     "name": "終末の暴れ狂い"
@@ -13059,6 +13108,7 @@
                     "effects": {
                         "YUjdwrEZ4zn7WR9X": {
                             "name": "終末の暴れ狂い",
+                            "description": "<p>頑強ロールに成功して振り払うまで、瓦礫に<em>拘束</em>されています。</p>",
                             "durationDescription": "<p>頑強ロールに成功して振り払うまで。</p>"
                         }
                     }
@@ -13067,6 +13117,12 @@
         },
         "Volcanic Dragon: Molten Scourge": {
             "_note": "Volcanic Dragon: Molten Scourge",
+            "name": "火山のドラゴン：溶けた災厄",
+            "description": "<p><em>傷に激昂し、ドラゴンは溶けた溶岩となって噴き出す。</em></p>",
+            "motivesAndTactics": "溶岩を浴びせる、焼き尽くす、侵入者を退ける、位置を変える",
+            "attack": {
+                "name": "溶岩をまとう爪"
+            },
             "experiences": {
                 "vHEB38ko8sY3S0ox": {
                     "name": "空からの狩り"
@@ -13082,7 +13138,13 @@
                         }
                     }
                 },
+                "Tw3PBsg0Vo74N3pm": {
+                    "name": "割れた鱗",
+                    "description": "<p>@Lookup[@name]がダメージを受けたとき、マークしたHPと同じ数のd6をロールします。4以上の結果1つごとに、あなたは恐怖を1得ます。</p>"
+                },
                 "bpjpHxf6tj4i3H4r": {
+                    "name": "打ち砕く力",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の対象に攻撃を行います。成功した場合、その対象は<strong>4d8+1</strong>の物理ダメージを受け、希望を1失い、近距離まで吹き飛ばされます。@Lookup[@name]はストレスを1つ消します。</p>",
                     "actions": {
                         "YNw3E6309te5JPoM": {
                             "name": "攻撃"
@@ -13091,6 +13153,7 @@
                 },
                 "NuksKUrbf4yj4vR2": {
                     "name": "噴出",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]の鱗の下から溶岩を噴き出させ、超近距離以内の範囲を溶けた溶岩で満たします。その範囲内のすべての対象は、敏捷リアクションロールに成功しなければ<strong>4d6+6</strong>の物理ダメージを受け、近距離まで吹き飛ばされます。この範囲は溶岩のまま残ります。@Lookup[@name]以外のクリーチャーがその範囲に入るか、その内側で行動したとき、HPを6マークしなければなりません。</p>",
                     "actions": {
                         "OpwKa8tQQoaEIZiS": {
                             "name": "セーブを振る",
@@ -13104,12 +13167,15 @@
                 },
                 "2mK8kxfp2WBUeBri": {
                     "name": "火山のブレス",
+                    "description": "<p>@Lookup[@name]が中傷ダメージを受けたとき、<strong>d10</strong>をロールします。結果が8以上の場合、@Lookup[@name]は前方、遠距離以内に溶岩の流れを吐きます。その範囲内のすべての対象は敏捷リアクションロールを行わなければなりません。失敗した対象は<strong>2d10+4</strong>の物理ダメージを受け、ストレスを<strong>1d4</strong>マークし、ストレスを1つ消すまで脆弱になります。成功した対象はダメージを半分受け、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "OhrssSQhmciZt1Rm": {
-                            "name": "d10をロール"
+                            "name": "d10をロール",
+                            "description": "<p>@Lookup[@name]が中傷ダメージを受けたとき、<strong>d10</strong>をロールします。結果が8以上の場合、@Lookup[@name]は前方、遠距離以内に溶岩の流れを吐きます。</p>"
                         },
                         "LBNvfABGWcrygpQM": {
                             "name": "セーブを振る",
+                            "description": "<p>@Lookup[@name]は前方、遠距離以内に溶岩の流れを吐きます。その範囲内のすべての対象は敏捷リアクションロールを行わなければなりません。失敗した対象は2d10+4の物理ダメージを受け、ストレスを1d4マークし、ストレスを1つ消すまで脆弱になります。成功した対象はダメージを半分受け、ストレスを1マークしなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "火山のブレス"
@@ -13119,11 +13185,15 @@
                     },
                     "effects": {
                         "xmzA6NC9zrulhzQs": {
-                            "name": "火山のブレス"
+                            "name": "火山のブレス",
+                            "description": "<p>ストレスを1つ消すまで<em>脆弱</em>です。</p>",
+                            "durationDescription": "<p>ストレスを1つ消すまで。</p>"
                         }
                     }
                 },
                 "3VdQdUDULZCQPvLZ": {
+                    "name": "溶岩の飛沫",
+                    "description": "<p>@Lookup[@name]が超近距離以内からの攻撃で重傷ダメージを受けたとき、溶けた血が傷口から噴き出し、その攻撃者に<strong>2d10+4</strong>の直接物理ダメージを与えます。</p>",
                     "actions": {
                         "WtrAv8peQ71OBoO1": {
                             "name": "ダメージ"
@@ -13131,6 +13201,8 @@
                     }
                 },
                 "qYFoyDSdZ5X2h245": {
+                    "name": "灰の復讐",
+                    "description": "<p>@Lookup[@name]が最後のHPをマークしたとき、それを@UUID[Compendium.daggerheart.adversaries.Actor.pMuXGCSOQaxpi5tb]{灰の暴君}に置き換え、直ちにスポットライトを当てます。</p>",
                     "actions": {
                         "cFqFjemAfAjB0OB0": {
                             "name": "変身"
@@ -13141,6 +13213,12 @@
         },
         "Volcanic Dragon: Obsidian Predator": {
             "_note": "Volcanic Dragon: Obsidian Predator",
+            "name": "火山のドラゴン：黒曜の捕食者",
+            "description": "<p><em>黒曜石の鱗と、あり得ないほど鋭い爪を持つ巨大な有翼のクリーチャー。</em></p>",
+            "motivesAndTactics": "巣を守る、急降下して襲う、飛ぶ、狩る、威圧する",
+            "attack": {
+                "name": "黒曜石の爪"
+            },
             "experiences": {
                 "f1s2ZDASAlkUVnYT": {
                     "name": "空からの狩り"
@@ -13149,6 +13227,7 @@
             "items": {
                 "hnr2drwGFJAXRJLo": {
                     "name": "リレントレス（2）",
+                    "description": "<p>@Lookup[@name]はGMのターンごとに2回までスポットライトを当てられます スポットライトを当てるには通常どおり恐怖を消費します</p>",
                     "actions": {
                         "XuhmupOVJj8ae6q0": {
                             "name": "スポットライト：リレントレス"
@@ -13160,7 +13239,8 @@
                     "description": "<p>飛行している間、@Lookup[@name]は難易度に＋3のボーナスを得ます。</p>",
                     "effects": {
                         "8o8yG73ZfrZ3hb5i": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>飛行している間、黒曜の捕食者は難易度に＋3のボーナスを得ます。</p>"
                         }
                     }
                 },
@@ -13169,12 +13249,14 @@
                     "description": "<p>@Lookup[@name]は物理ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "Jr9SlkRnkroulYhy": {
-                            "name": "黒曜の鱗"
+                            "name": "黒曜の鱗",
+                            "description": "<p>黒曜の捕食者は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "8bMOItTuL7PfAYcJ": {
                     "name": "雪崩の尾",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のすべての対象に攻撃を行います。黒曜の捕食者が成功した対象は<strong>4d6+4</strong>の物理ダメージを受け、遠距離まで吹き飛ばされ、次に希望とともにロールするまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "23y0BoufIgNq62j9": {
                             "name": "攻撃",
@@ -13194,6 +13276,7 @@
                 },
                 "5wLxyaWJuUhkx1EX": {
                     "name": "急降下爆撃",
+                    "description": "<p>@Lookup[@name]が飛行している場合、<strong>ストレス</strong>を1マークして遠距離以内の一点を選びます。その点まで移動し、超近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d10+6</strong>の物理ダメージを受け、ストレスを1マークし、希望を1失わなければなりません。</p>",
                     "actions": {
                         "OpAT9nxlbgvnhdBg": {
                             "name": "攻撃",
@@ -13206,6 +13289,8 @@
                     }
                 },
                 "5llfnRwO7mfzDFgT": {
+                    "name": "噴き出す激昂",
+                    "description": "<p>@Lookup[@name]が最後のHPをマークしたとき、それを@UUID[Compendium.daggerheart.adversaries.Actor.eArAPuB38CNR0ZIM]{溶けた災厄}に置き換え、直ちにスポットライトを当てます。</p>",
                     "actions": {
                         "OxGkCGgIl4vGFufD": {
                             "name": "変身"
@@ -13216,16 +13301,24 @@
         },
         "War Wizard": {
             "_note": "War Wizard",
+            "name": "戦の魔術師",
+            "description": "<p>破壊の魔法を修めた、戦いに鍛えられた魔法使い。</p>",
+            "motivesAndTactics": "新たな呪文を編み出す、力を求める、陣形を打ち砕く",
             "attack": {
                 "name": "スタッフ"
             },
             "experiences": {
                 "OuRfGgT7o5CNerfK": {
                     "name": "魔法の知識"
+                },
+                "Vqu9ggHbSdSXM0XA": {
+                    "name": "戦略を立てる"
                 }
             },
             "items": {
                 "PUUz48dsObawcSgp": {
+                    "name": "戦場転移",
+                    "description": "<p>通常の攻撃を行う前または後に、<strong>ストレスを1マーク</strong>して遠距離以内の場所へ転移できます。</p>",
                     "actions": {
                         "39zC1I5DYozI47lP": {
                             "name": "ストレスをマーク"
@@ -13233,6 +13326,8 @@
                     }
                 },
                 "dI2MGjC7NFAru1Gd": {
+                    "name": "守護の球を回復する",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]の「守護の球」リアクションを回復します。</p>",
                     "actions": {
                         "FCuksmAGRC4061zm": {
                             "name": "ストレスをマーク"
@@ -13241,6 +13336,7 @@
                 },
                 "PnQ0m0FLnpht7oE4": {
                     "name": "噴出",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の一点を選びます。その点を囲む超近距離の範囲が通行不能の地形へと噴き上がります。その範囲内のすべての対象は敏捷リアクションロール（14）を行わなければなりません。失敗した対象は<strong>2d10</strong>の物理ダメージを受け、その範囲の外へ投げ出されます。成功した対象はダメージを半分受け、動かされません。</p>",
                     "actions": {
                         "vnMq4NuQO6GYxWhM": {
                             "name": "セーブを振る",
@@ -13253,6 +13349,8 @@
                     }
                 },
                 "s2luvEVxJLZmOrdh": {
+                    "name": "秘術の砲撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、魔法の衝撃の正確な雨を解き放ちます。シーン内のすべての対象は敏捷リアクションロールを行わなければなりません。失敗した対象は<strong>2d12</strong>の魔法ダメージを受けます。成功した対象はダメージを半分受けます。</p>",
                     "actions": {
                         "DFHR8LtvjZjHP6BL": {
                             "name": "セーブを振る"
@@ -13260,6 +13358,8 @@
                     }
                 },
                 "9cPigHRcUfJC9gD8": {
+                    "name": "守護の球",
+                    "description": "<p>@Lookup[@name]が近距離以内からの攻撃でダメージを受けたとき、その攻撃者に<strong>2d6</strong>の魔法ダメージを与えます。このリアクションは、@Lookup[@name]が「守護の球を回復する」アクションで回復するまで再び使えません。</p>",
                     "actions": {
                         "2fHrpaZW9toi6nin": {
                             "name": "ダメージ"
@@ -13270,12 +13370,25 @@
         },
         "Water Mother": {
             "_note": "Water Mother",
+            "name": "水の母",
+            "description": "<p>大きな水域で狩りをする、毛に覆われた巨大な蛇。</p>",
+            "motivesAndTactics": "世界を締め上げる、戦場を支配する、敵を水中へ引き込む",
             "attack": {
                 "name": "噛みつき"
             },
+            "experiences": {
+                "qFytUFWveEoxr9zb": {
+                    "name": "河川"
+                }
+            },
             "items": {
+                "5cxpr0Fie0sBbZWL": {
+                    "name": "分節",
+                    "description": "<p>@Lookup[@name]の体は頭部・中央部・尾部の3つの部位に分かれています。@Lookup[@name]は常に頭部から移動し、中央部、続いて尾部を後ろに引き連れます。クリーチャーは、その部位が少なくとも1つ射程内にあれば攻撃で@Lookup[@name]を対象にできますが、@Lookup[@name]が通常の攻撃を行えるのは頭部の射程内の対象に対してのみです。攻撃が@Lookup[@name]にダメージを与え、その頭部が射程内にある場合、その攻撃は追加で<strong>1d10</strong>のダメージを与えます。</p>"
+                },
                 "3R0HRksFmQaKyLk4": {
                     "name": "世界を喰らう",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に鋭く息を吸い込ませます。その頭部から近距離以内の各PCは、頑強リアクションロールに成功しなければストレスを1マークし、頭部の近接距離まで引き寄せられます。その後、@Lookup[@name]は頭部の近接距離以内のすべての対象に通常の攻撃を行います。</p>",
                     "actions": {
                         "dMFcOcfg2FPs0yTJ": {
                             "name": "恐怖を消費する",
@@ -13289,6 +13402,7 @@
                 },
                 "2jD66IGYZIZF385K": {
                     "name": "締め上げる",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、中央部の近接距離以内のすべての対象に攻撃を行います。この攻撃が成功した対象は<strong>4d8+8</strong>の物理ダメージを受け、一時的に<em>拘束</em>されます。各GMターンの始めに、<strong>ストレスを1マーク</strong>して、@Lookup[@name]に<em>拘束</em>されているすべての対象にHPを1マークさせられます。</p>",
                     "actions": {
                         "SazYQVwEPYDJQwse": {
                             "name": "ストレスをマーク",
@@ -13297,6 +13411,10 @@
                                     "name": "締め上げる"
                                 }
                             ]
+                        },
+                        "ETaF5f5bWNjbNXy1": {
+                            "name": "締め上げダメージ",
+                            "description": "<p>各GMターンの始めに、<strong>ストレスを1マーク</strong>して、@Lookup[@name]に<em>拘束</em>されているすべての対象にHPを1マークさせられます。</p>"
                         }
                     },
                     "effects": {
@@ -13306,6 +13424,8 @@
                     }
                 },
                 "zL85SlJ9d11PI9mu": {
+                    "name": "毒の高まり",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、その対象をシーンが終わるまで<em>脆弱</em>にできます。</p>",
                     "actions": {
                         "afWkvNCdshLHitfm": {
                             "name": "恐怖を消費する"
@@ -13313,7 +13433,8 @@
                     },
                     "effects": {
                         "5cXRi8ot13KpuWda": {
-                            "name": "新しい効果"
+                            "name": "新しい効果",
+                            "description": "<p>シーンが終わるまで脆弱です。</p>"
                         }
                     }
                 }
@@ -13321,6 +13442,9 @@
         },
         "Waxwork Creation": {
             "_note": "Waxwork Creation",
+            "name": "蝋細工の創造物",
+            "description": "<p>高さ10フィートの、半ば固体で（半ば意識を持つ）蝋の構築物。</p>",
+            "motivesAndTactics": "のしのしと迫る、不死の苦しみに呻く、覆い塞ぐ",
             "attack": {
                 "name": "拳"
             },
@@ -13331,16 +13455,46 @@
             },
             "items": {
                 "S9vdn0BC45USdjoY": {
-                    "name": "リレントレス（2）"
+                    "name": "リレントレス（2）",
+                    "description": "<p>創造物はGMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
+                },
+                "cJWcBnIIzvlJJXXR": {
+                    "name": "急所なし",
+                    "description": "<p>創造物は、自身へのクリティカル成功した攻撃から追加のダメージを受けません。</p>"
                 },
                 "UvSOP0XRfwNbb3AJ": {
+                    "name": "蝋の球",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、創造物に遠距離以内の対象へ蝋の球を投げさせます。その対象に攻撃を行います。成功した場合、その対象は<strong>1d12+2</strong>の物理ダメージを受け、頑強ロール（15）に成功するまで<em>拘束</em>されます。</p>",
                     "actions": {
                         "0nhmVJUlN7m4Xf5N": {
                             "name": "ストレスをマーク"
                         }
+                    },
+                    "effects": {
+                        "BmYvqcNDl5s9IwWG": {
+                            "name": "蝋漬け",
+                            "description": "<p>頑強ロール（15）に成功するまで<em>拘束</em>されています。</p>"
+                        }
+                    }
+                },
+                "gHOZZ13hhgkfoZxT": {
+                    "name": "ぶちゅっ！",
+                    "description": "<p>創造物の近接距離以内のPCがそれへ武器攻撃を行ったとき、<strong>d6</strong>をロールします。5以上の場合、その攻撃者の武器は創造物に突き刺さって抜けなくなり、頑強ロール（15）に成功しなければ取り出せません。</p>",
+                    "actions": {
+                        "2BjbQZBP2LSNcZdC": {
+                            "name": "食い込み判定"
+                        }
+                    },
+                    "effects": {
+                        "r4mjPUNduekltP80": {
+                            "name": "我が武器が！",
+                            "description": "<p>あなたの武器は創造物に突き刺さっており、頑強ロール（15）に成功しなければ取り出せません。</p>"
+                        }
                     }
                 },
                 "SHRHEhHe806ArGEl": {
+                    "name": "覆い塞ぐ組み付き",
+                    "description": "<p>創造物が近接距離以内の対象への通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、その対象を創造物の蝋の体内に閉じ込められます。「閉じ込め」のあいだ、その対象は<em>拘束</em>されており、創造物にスポットライトが当たるたびにストレスを1マークし、創造物とともに移動しなければなりません。閉じ込められたクリーチャーは、創造物が中傷以上のダメージを受けたとき解放されます。</p>",
                     "actions": {
                         "ozPJSv8I8LWoYUHi": {
                             "name": "恐怖を消費する"
@@ -13348,7 +13502,8 @@
                     },
                     "effects": {
                         "40SCDzsRQFQEwcss": {
-                            "name": "捕らわれ"
+                            "name": "捕らわれ",
+                            "description": "<p>「閉じ込め」のあいだ、その対象は<em>拘束</em>されており、創造物にスポットライトが当たるたびにストレスを1マークし、創造物とともに移動しなければなりません。閉じ込められたクリーチャーは、創造物が中傷以上のダメージを受けたとき解放されます。</p>"
                         }
                     }
                 }
@@ -13356,8 +13511,16 @@
         },
         "Weaponmaster": {
             "_note": "Weaponmaster",
+            "name": "武器の達人",
+            "description": "<p>自身の倍の大きさの剣を振るう武術指南役。</p>",
+            "motivesAndTactics": "先に動く、最も弱い者を狙う、威圧する",
+            "attack": {
+                "name": "クレイモア"
+            },
             "items": {
                 "tyGgOqQzDSIypoMz": {
+                    "name": "挑発の一撃",
+                    "description": "<p>対象に通常の攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して、その対象の次の成功した攻撃まで挑発します。「挑発」された対象が次に攻撃するとき、@Lookup[@name]以外の対象に対して不利を得ます。</p>",
                     "actions": {
                         "mlPgZJNL2TjykjUb": {
                             "name": "攻撃"
@@ -13365,11 +13528,15 @@
                     },
                     "effects": {
                         "j2jYmYbtWXvq32yX": {
-                            "name": "挑発され"
+                            "name": "挑発され",
+                            "description": "<p>「挑発」された対象が次に攻撃するとき、武器の達人以外の対象に対して不利を得ます。</p>",
+                            "durationDescription": "<p>次に攻撃が成功するまで</p>"
                         }
                     }
                 },
                 "UsC0vtOBbf9Kut4v": {
+                    "name": "アドレナリンの奔流",
+                    "description": "<p>シーンごとに1回、恐怖を1消費してHPを2つとストレスを2つ消します。</p>",
                     "actions": {
                         "WQ067ZFiG2QMBo2n": {
                             "name": "恐怖を消費する"
@@ -13389,6 +13556,17 @@
         },
         "Whisper Wraith": {
             "_note": "Whisper Wraith",
+            "name": "囁きの亡霊",
+            "description": "<p>破られた約束と果たされなかった夢の残響。おぼろげに人型をした、ぼろぼろの黒いベルベットの帷が浮遊する姿で顕れる。</p>",
+            "motivesAndTactics": "手足を縛る、高所から落ちかかる、地面から浮き上がる、空を渦巻く、頭に巻きつく",
+            "attack": {
+                "name": "影の手触り"
+            },
+            "experiences": {
+                "GuX7CYJhxujbxHHX": {
+                    "name": "夢"
+                }
+            },
             "items": {
                 "3YzhBn75pkj2eaEq": {
                     "name": "上位スペクター",
@@ -13402,6 +13580,7 @@
                 },
                 "KUEN8QB4OPx654Uv": {
                     "name": "不気味",
+                    "description": "<p>亡霊の攻撃が成功したとき、近距離以内のすべてのPCはストレスを1マークしなければならず、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "LhUozslUeT46KVKn": {
                             "areas": [
@@ -13413,6 +13592,8 @@
                     }
                 },
                 "xv9RMHx3YZpoLg28": {
+                    "name": "悪夢の帷",
+                    "description": "<p><strong>恐怖を1消費</strong>して、亡霊に近接距離以内のPCへ巻きつかせ、その対象が頑強ロールに成功して亡霊を振り落とすか、亡霊が中傷以上のダメージを受けるまで「帷」状態にします。「帷」のあいだ、その対象は攻撃ロールに不利を得て、恐怖とともにロールしたときストレスを1マークします。さらに、亡霊に与えられるはずのダメージは、亡霊と「帷」の対象へ均等に分けられます。</p>",
                     "actions": {
                         "rIj9Yr0Z6kQ4sHZR": {
                             "name": "恐怖を消費する"
@@ -13420,6 +13601,8 @@
                     },
                     "effects": {
                         "jrt0gGd5D46DU6sE": {
+                            "name": "帷",
+                            "description": "<p>頑強ロールに成功して亡霊を振り落とすか、亡霊が中傷以上のダメージを受けるまで「帷」状態です。</p><p>「帷」のあいだ、攻撃ロールに不利を得て、恐怖とともにロールしたときストレスを1マークします。さらに、亡霊に与えられるはずのダメージは、亡霊とあなたへ均等に分けられます。</p>",
                             "changes": [
                                 "攻撃ロール"
                             ]
@@ -13430,6 +13613,12 @@
         },
         "Will-o'-the-wisps": {
             "_note": "Will-o'-the-wisps",
+            "name": "ウィル・オ・ウィスプ",
+            "description": "<p>色を変える怪火が、気ままに浮遊する球。</p>",
+            "motivesAndTactics": "目を眩ませて気を逸らす、方向を失わせる、道を誤らせる",
+            "attack": {
+                "name": "閃光"
+            },
             "experiences": {
                 "DUso8T4bsZepzmJV": {
                     "name": "暗闇"
@@ -13438,6 +13627,7 @@
             "items": {
                 "lKtZDU4j2FDWtF38": {
                     "name": "万華鏡の",
+                    "description": "<p>@Lookup[@name]は、見つめる者を誰であれ心を奪う、催眠的に色を変える模様で脈打ち踊ります。@Lookup[@name]から超近距離以内のすべての対象は<em>脆弱</em>です。</p>",
                     "actions": {
                         "5cIdrU9CbFa7o9i4": {
                             "name": "起動する",
@@ -13456,6 +13646,7 @@
                 },
                 "fPWnXgxGnlfZXyto": {
                     "name": "魅惑的",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に空中へ輪を描く光の跡を引かせ、読み解きたくなるような残像を残させます。遠距離以内の各PCは、直感リアクションロール（13）に成功しなければストレスを1マークし、@Lookup[@name]へ向かって近距離まで移動します。</p>",
                     "actions": {
                         "X9zCQTPqfQtYJXJI": {
                             "name": "恐怖を消費する",
@@ -13480,6 +13671,12 @@
         },
         "Wyrmfiend": {
             "_note": "Wyrmfiend",
+            "name": "竜の魔物",
+            "description": "<p>謎めいた古代の竜の魔法によって造られた二足歩行の爬虫類。竜の魔物は、個々の存在というよりも、竜の主の意志の延長として在る。</p>",
+            "motivesAndTactics": "戦線を保つ、身を捧げる、仕える、群がる",
+            "attack": {
+                "name": "財宝から取った武器"
+            },
             "experiences": {
                 "z1UOplxdclVoPuo1": {
                     "name": "竜の絆"
@@ -13487,9 +13684,12 @@
             },
             "items": {
                 "JWxL57vzZ3m1ZTol": {
-                    "name": "ミニオン（13）"
+                    "name": "ミニオン（13）",
+                    "description": "<p>@Lookup[@name]はダメージを受けると倒されます。PCが@Lookup[@name]に与えたダメージ13ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "6pSw0TNcqS5hRJz3": {
+                    "name": "毒の噛みつき",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近接距離以内のPCに攻撃を行います。成功した場合、<strong>4d4+4</strong>の物理ダメージを与え、その対象が頑強ロール（20）に成功するまで「毒」状態にします。「毒」のあいだ、その対象はアクションロールを行う前に<strong>d6</strong>をロールしなければなりません。結果が4以下の場合、その対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "BRa8Urat5JwUGcet": {
                             "name": "恐怖を消費する"
@@ -13497,12 +13697,14 @@
                     },
                     "effects": {
                         "EcfoVtIMihFMRo0a": {
-                            "name": "毒"
+                            "name": "毒",
+                            "description": "<p>頑強ロール（20）に成功するまで「毒」状態です。</p><p>「毒」のあいだ、アクションロールを行う前に<strong>d6</strong>をロールしなければなりません。結果が4以下の場合、ストレスを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "8sEbqLIwwCPYj6Oo": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが11の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "3u2uiXYRufuM5Kmr": {
                             "name": "恐怖を消費する"
@@ -13513,6 +13715,12 @@
         },
         "Wyrmlings": {
             "_note": "Wyrmlings",
+            "name": "竜の仔たち",
+            "description": "<p>孵ったばかりのドラゴンの一腹。生まれたてゆえに、怒りっぽく、飢えており、愚かである。</p>",
+            "motivesAndTactics": "喰らう、引き裂く、群がる",
+            "attack": {
+                "name": "小さな顎と爪"
+            },
             "experiences": {
                 "VAGHi0J0szwhoUOr": {
                     "name": "竜の絆"
@@ -13521,6 +13729,7 @@
             "items": {
                 "0V472TOtSicWIeo5": {
                     "name": "貪欲",
+                    "description": "<p>GMターンごとに1回、PCが@Lookup[@name]の攻撃でHPをマークしたとき、<strong>恐怖を1消費</strong>して、@Lookup[@name]に再びスポットライトを当てられます。</p>",
                     "actions": {
                         "kqihDddZhb4VH6iO": {
                             "name": "恐怖を消費する"
@@ -13529,6 +13738,7 @@
                 },
                 "4YHJFU5RYQJqHK7a": {
                     "name": "圧倒",
+                    "description": "<p>@Lookup[@name]が近接距離以内からの攻撃で軽傷ダメージを受けたとき、<strong>ストレスを1マーク</strong>して、その攻撃者に有利を得て通常の攻撃を行えます。</p>",
                     "actions": {
                         "88Z2Jw944EIKjuG2": {
                             "name": "ストレスをマーク"
@@ -13548,12 +13758,21 @@
         },
         "Wyvern": {
             "_note": "Wyvern",
+            "name": "ワイヴァーン",
+            "description": "<p>山頂の巣から飛び立ち、家畜を喰らう二本足のドラゴン。</p>",
+            "motivesAndTactics": "長い影を落とす、掠め取る、空を旋回する",
             "attack": {
                 "name": "歯と爪"
+            },
+            "experiences": {
+                "AKzdcogY81vT5518": {
+                    "name": "上空からの死"
+                }
             },
             "items": {
                 "6FmuJDEwZ1Yq6Krt": {
                     "name": "二連撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に通常の攻撃を2回行わせます。両方の攻撃が同じ対象に成功した場合、そのダメージを合計します。</p>",
                     "actions": {
                         "FEcYj312fU0AFZ7G": {
                             "name": "ストレスをマーク"
@@ -13562,6 +13781,7 @@
                 },
                 "3yZ5cnA8C3zknz1A": {
                     "name": "恐るべき叫び",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に背筋の凍る叫びを上げさせます。遠距離以内のすべてのPCは、社交ロール（18）に成功してこの状態を消すか、@Lookup[@name]が倒されるまで恐怖に襲われた状態になります。恐怖に襲われている間、PCは希望とともにロールしても希望を得られません。</p>",
                     "actions": {
                         "eF4xOnEEnpVQZIQu": {
                             "name": "恐怖を消費する",
@@ -13574,11 +13794,14 @@
                     },
                     "effects": {
                         "PpDXBf2b5FirQfjI": {
-                            "name": "恐怖に襲われた"
+                            "name": "恐怖に襲われた",
+                            "description": "<p>社交ロール（18）に成功してこの状態を消すか、ワイヴァーンが倒されるまで恐怖に襲われた状態です。恐怖に襲われている間、希望とともにロールしても希望を得られません。</p>"
                         }
                     }
                 },
                 "ERw6SnOIhJA2wWdH": {
+                    "name": "掴み取り",
+                    "description": "<p>@Lookup[@name]がPCへの攻撃に成功したとき、<strong>恐怖を1消費</strong>して、そのPCが頑強ロール（18）に成功するか@Lookup[@name]が中傷以上のダメージを受けるまで、@Lookup[@name]の爪の中にその対象を<em>拘束</em>させられます。この方法で<em>拘束</em>されている間、そのPCは攻撃ロールに不利を得ます。</p>",
                     "actions": {
                         "Cl5dsNGTOVsU7d5F": {
                             "name": "恐怖を消費する"
@@ -13586,6 +13809,8 @@
                     },
                     "effects": {
                         "IRN9xFgqn91fgjag": {
+                            "name": "掴まれた",
+                            "description": "<p>頑強ロール（18）に成功するか、ワイヴァーンが中傷以上のダメージを受けるまで、ワイヴァーンの爪の中に<em>拘束</em>されています。</p><p>この方法で拘束されている間、攻撃ロールに不利を得ます。</p>",
                             "changes": [
                                 "攻撃ロール"
                             ]
