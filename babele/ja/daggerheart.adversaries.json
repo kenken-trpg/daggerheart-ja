@@ -2317,6 +2317,12 @@
         },
         "Cult Initiate": {
             "_note": "Cult Initiate",
+            "name": "教団の入信者",
+            "description": "<p>質素なローブをまとった下位の教団員。力を得ようと躍起になっている。</p>",
+            "motivesAndTactics": "命令に従う、力を得る、禁じられた知識を求める",
+            "attack": {
+                "name": "儀式用短剣"
+            },
             "items": {
                 "oYoMjSd4OKLWUxlP": {
                     "name": "ミニオン（6）",
@@ -2324,23 +2330,23 @@
                 },
                 "WP6xQtYzouPEFr82": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての教団の@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが@Lookup[@system.attack.damageFormula]の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "4M2MvVzEgIQEQHBS": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての教団の@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが@Lookup[@system.attack.damageFormula]の物理ダメージを与えます。このダメージを合計します。</p>"
+                    }
                 }
-            },
-            "name": "教団の入信者",
-            "description": "<p>質素なローブをまとった下位の教団員。力を得ようと躍起になっている。</p>",
-            "motivesAndTactics": "命令に従う、力を得る、禁じられた知識を求める",
-            "attack": {
-                "name": "儀式用短剣"
             }
         },
         "Cursed Merfolk": {
             "_note": "Cursed Merfolk",
+            "name": "呪われた人魚",
+            "description": "<p>半身が魚、半身が人のクリーチャー。精神的な束縛によって深淵の住人に仕えている。</p>",
+            "motivesAndTactics": "敵を引き離す、影から襲う、水中環境を利用する",
+            "attack": {
+                "name": "鎖付き三叉槍"
+            },
             "experiences": {
                 "sUEIg2jbfa0HSYjo": {
                     "name": "水棲"
@@ -2368,6 +2374,8 @@
                     }
                 },
                 "eX0tAOy7TD4wVgEY": {
+                    "name": "「こっちへ来い！」",
+                    "description": "<p>人魚が近接距離の外にいる対象への通常の攻撃に成功したとき、<strong>ストレスを1マーク</strong>してその対象を近接距離まで引き寄せられます。そうした場合、<strong>恐怖を1消費</strong>して、その対象に有利を得て通常の攻撃を行えます。</p>",
                     "actions": {
                         "tx5Hm4RbVVgPTglq": {
                             "name": "ストレスをマーク"
@@ -2375,20 +2383,15 @@
                         "FOBTbOiof2KTjY2d": {
                             "name": "攻撃"
                         }
-                    },
-                    "name": "「こっちへ来い！」",
-                    "description": "<p>人魚が近接距離の外にいる対象への通常の攻撃に成功したとき、<strong>ストレスを1マーク</strong>してその対象を近接距離まで引き寄せられます。そうした場合、<strong>恐怖を1消費</strong>して、その対象に有利を得て通常の攻撃を行えます。</p>"
+                    }
                 }
-            },
-            "name": "呪われた人魚",
-            "description": "<p>半身が魚、半身が人のクリーチャー。精神的な束縛によって深淵の住人に仕えている。</p>",
-            "motivesAndTactics": "敵を引き離す、影から襲う、水中環境を利用する",
-            "attack": {
-                "name": "鎖付き三叉槍"
             }
         },
         "Darkweave Crawler": {
             "_note": "Darkweave Crawler",
+            "name": "闇織りのクローラー",
+            "description": "<p>人の頭ほどの大きさの蜘蛛。影の糸で織り上げられている。</p>",
+            "motivesAndTactics": "影に隠れる、不用心な者を襲う、隙を待つ",
             "attack": {
                 "name": "噛みつき"
             },
@@ -2404,6 +2407,7 @@
                 },
                 "M4AppGMZivFZ4Dya": {
                     "name": "身の毛もよだつ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、クローラーの近接距離以内のすべてのPCにストレスを1マークさせます。</p>",
                     "actions": {
                         "RNpG65GAYvvq0aPP": {
                             "name": "恐怖を消費する",
@@ -2413,8 +2417,7 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して、クローラーの近接距離以内のすべてのPCにストレスを1マークさせます。</p>"
+                    }
                 },
                 "TNGpMcO2qZduHGlU": {
                     "name": "グループ攻撃",
@@ -2426,13 +2429,13 @@
                     }
                 },
                 "OgB9BlmNPURWYzMI": {
+                    "name": "闇織りの毒",
+                    "description": "<p>クローラーの攻撃が成功したとき、<strong>ストレスを1マーク</strong>して、対象が頑強ロール（9）に成功するまでその対象を「衰弱」状態にできます。「衰弱」のあいだ、その対象はアクションロールを行うたびにストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "8g2JmKlfw4qD6wfW": {
                             "name": "ストレスをマーク"
                         }
                     },
-                    "name": "闇織りの毒",
-                    "description": "<p>クローラーの攻撃が成功したとき、<strong>ストレスを1マーク</strong>して、対象が頑強ロール（9）に成功するまでその対象を「衰弱」状態にできます。「衰弱」のあいだ、その対象はアクションロールを行うたびにストレスを1マークしなければなりません。</p>",
                     "effects": {
                         "MpyB6TuH8hWbsMco": {
                             "name": "衰弱",
@@ -2440,13 +2443,16 @@
                         }
                     }
                 }
-            },
-            "name": "闇織りのクローラー",
-            "description": "<p>人の頭ほどの大きさの蜘蛛。影の糸で織り上げられている。</p>",
-            "motivesAndTactics": "影に隠れる、不用心な者を襲う、隙を待つ"
+            }
         },
         "Darkweave Queen": {
             "_note": "Darkweave Queen",
+            "name": "闇織りの女王",
+            "description": "<p>荷車ほどの大きさの蜘蛛。忘れ去られた神が影の糸から織り上げた。その無数の目には、それぞれ別の犠牲者の顔が浮かんでいる。</p>",
+            "motivesAndTactics": "獲物を待ち伏せる、壁と天井を這う、誤誘導する、麻痺させる、死体を後のために蓄える、顔を盗む",
+            "attack": {
+                "name": "蜘蛛の牙"
+            },
             "experiences": {
                 "G6RiEgnPyXUaJRl3": {
                     "name": "巨大な体躯"
@@ -2461,24 +2467,26 @@
                     "description": "<p>女王はGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "X7Fa0Ur0otImyKGP": {
+                    "name": "巣の母",
+                    "description": "<p>シーンごとに1回、<strong>恐怖を2消費</strong>して、闇織りの敵対者（@Lookup[@name]を除く）を最大2体召喚します。それらは近距離以内に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "Evpfh4Phbsiqv6wN": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "巣の母",
-                    "description": "<p>シーンごとに1回、<strong>恐怖を2消費</strong>して、闇織りの敵対者（@Lookup[@name]を除く）を最大2体召喚します。それらは近距離以内に現れ、直ちにスポットライトを得ます。</p>"
+                    }
                 },
                 "UMGKSgbSSypytyKF": {
+                    "name": "見た目より素早い",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離まで移動し、有利を得て通常の攻撃を行います。</p>",
                     "actions": {
                         "zYpsGhG4WRjmPKEi": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "見た目より素早い",
-                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離まで移動し、有利を得て通常の攻撃を行います。</p>"
+                    }
                 },
                 "71yNHGcvRHBXWKVe": {
+                    "name": "闇牙の注毒",
+                    "description": "<p>女王が通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、対象が頑強ロール（12）に成功するか休憩を取るまで、その対象を<em>脆弱</em>かつ<em>拘束</em>状態にできます。</p>",
                     "actions": {
                         "TaPyMVENOhVwlndu": {
                             "name": "恐怖を消費する"
@@ -2489,36 +2497,39 @@
                             "name": "毒",
                             "description": "<p>頑強ロール（12）に成功するか休憩を取るまで、<em>脆弱</em>かつ<em>拘束</em>されています。</p>"
                         }
-                    },
-                    "name": "闇牙の注毒",
-                    "description": "<p>女王が通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、対象が頑強ロール（12）に成功するか休憩を取るまで、その対象を<em>脆弱</em>かつ<em>拘束</em>状態にできます。</p>"
+                    }
                 },
                 "qMDmnUWx48Dbg7IF": {
                     "name": "恐るべき者",
                     "description": "<p>PCが女王への攻撃ロールに失敗したとき、あなたは恐怖を1得ます。</p>"
                 }
-            },
-            "name": "闇織りの女王",
-            "description": "<p>荷車ほどの大きさの蜘蛛。忘れ去られた神が影の糸から織り上げた。その無数の目には、それぞれ別の犠牲者の顔が浮かんでいる。</p>",
-            "motivesAndTactics": "獲物を待ち伏せる、壁と天井を這う、誤誘導する、麻痺させる、死体を後のために蓄える、顔を盗む",
-            "attack": {
-                "name": "蜘蛛の牙"
             }
         },
         "Darkweave Spinner": {
             "_note": "Darkweave Spinner",
+            "name": "闇織りのスピナー",
+            "description": "<p>猪ほどの大きさの蜘蛛類。原初の影の糸から織り上げられている。</p>",
+            "motivesAndTactics": "噛みつく、暗がりに留まる",
             "attack": {
                 "name": "牙"
             },
+            "experiences": {
+                "tTRl92oMyMRbubFx": {
+                    "name": "穴"
+                },
+                "U1aOZCi0rn0JgC3L": {
+                    "name": "蜘蛛の巣"
+                }
+            },
             "items": {
                 "15egsMZB5SaStcBh": {
+                    "name": "影の糸で包む",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、その対象は頑強ロール（10）に成功するまで<em>脆弱</em>かつ<em>拘束</em>状態になります。</p>",
                     "actions": {
                         "6FouYRsQeLENa8Ze": {
                             "name": "ストレスをマーク"
                         }
                     },
-                    "name": "影の糸で包む",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、その対象は頑強ロール（10）に成功するまで<em>脆弱</em>かつ<em>拘束</em>状態になります。</p>",
                     "effects": {
                         "1f1SHhGdOPjDhswm": {
                             "name": "糸に包まれた",
@@ -2527,6 +2538,8 @@
                     }
                 },
                 "c4cCwB00RC5qrOSN": {
+                    "name": "影の牙",
+                    "description": "<p>スピナーが近接距離以内の対象への攻撃に成功したとき、<strong>恐怖を1消費</strong>して、対象が直感ロール（10）に成功するまでその対象を「震え」状態にできます。「震え」のあいだ、その対象は攻撃ロールに不利を得ます。</p>",
                     "actions": {
                         "eKgjkfkYtrbsZqBk": {
                             "name": "恐怖を消費する"
@@ -2540,34 +2553,32 @@
                                 "攻撃ロール"
                             ]
                         }
-                    },
-                    "name": "影の牙",
-                    "description": "<p>スピナーが近接距離以内の対象への攻撃に成功したとき、<strong>恐怖を1消費</strong>して、対象が直感ロール（10）に成功するまでその対象を「震え」状態にできます。「震え」のあいだ、その対象は攻撃ロールに不利を得ます。</p>"
-                }
-            },
-            "name": "闇織りのスピナー",
-            "description": "<p>猪ほどの大きさの蜘蛛類。原初の影の糸から織り上げられている。</p>",
-            "motivesAndTactics": "噛みつく、暗がりに留まる",
-            "experiences": {
-                "tTRl92oMyMRbubFx": {
-                    "name": "穴"
-                },
-                "U1aOZCi0rn0JgC3L": {
-                    "name": "蜘蛛の巣"
+                    }
                 }
             }
         },
         "Darkweave Swarmlings": {
             "_note": "Darkweave Swarmlings",
+            "name": "闇織りの群れ子",
+            "description": "<p>影の糸から織り上げられた、小さな蜘蛛のうごめく群れ。</p>",
+            "motivesAndTactics": "穴から溢れ出る、脚を這い上がる、耳に入り込む、衣服の下に潜り込む",
+            "attack": {
+                "name": "食いつき"
+            },
+            "experiences": {
+                "2d5hMAmMLlfRdHqS": {
+                    "name": "登攀"
+                }
+            },
             "items": {
                 "ca15rqxQtas4Lx6v": {
+                    "name": "「払い落とせ、払い落とせ！」",
+                    "description": "<p>群れ子の攻撃で対象がHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その対象を一時的に「蜘蛛まみれ」状態にできます。「蜘蛛まみれ」のあいだ、その対象はアクションロールを行うとき<strong>[[/r d6]]</strong>をロールしなければなりません。結果が4以上の場合、ストレスを1マークするか、あなたが恐怖を1得ます。</p>",
                     "actions": {
                         "IwfNYUpw38Uiox6M": {
                             "name": "ストレスをマーク"
                         }
                     },
-                    "name": "「払い落とせ、払い落とせ！」",
-                    "description": "<p>群れ子の攻撃で対象がHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その対象を一時的に「蜘蛛まみれ」状態にできます。「蜘蛛まみれ」のあいだ、その対象はアクションロールを行うとき<strong>[[/r d6]]</strong>をロールしなければなりません。結果が4以上の場合、ストレスを1マークするか、あなたが恐怖を1得ます。</p>",
                     "effects": {
                         "tvjvbMCB20eduOI0": {
                             "name": "蜘蛛まみれ",
@@ -2584,24 +2595,28 @@
                         }
                     }
                 }
-            },
-            "name": "闇織りの群れ子",
-            "description": "<p>影の糸から織り上げられた、小さな蜘蛛のうごめく群れ。</p>",
-            "motivesAndTactics": "穴から溢れ出る、脚を這い上がる、耳に入り込む、衣服の下に潜り込む",
-            "attack": {
-                "name": "食いつき"
-            },
-            "experiences": {
-                "2d5hMAmMLlfRdHqS": {
-                    "name": "登攀"
-                }
             }
         },
         "Deep Dweller": {
             "_note": "Deep Dweller",
+            "name": "深淵の住人",
+            "description": "<p>漆黒の目と有毒の触手を持つ、巨大な精神感応のヤツメウナギ。</p>",
+            "motivesAndTactics": "力を振るう、崇拝を求める、沈んだ遺跡を徘徊する",
+            "attack": {
+                "name": "歯と触手"
+            },
+            "experiences": {
+                "ZShKGjFLf92betXU": {
+                    "name": "古代の秘儀"
+                },
+                "9C7Kf7FYrg2WYmXL": {
+                    "name": "闇の水"
+                }
+            },
             "items": {
                 "koabq82mtdwUm0J3": {
                     "name": "精神衝撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の対象を最大3体選び、直感または知識リアクションロールを行わせます。成功した対象はストレスを1マークします。失敗した対象は<strong>3d10+4</strong>の直接魔法ダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "70yNKLiaNqZJaJQ0": {
                             "name": "恐怖を消費する",
@@ -2617,17 +2632,16 @@
                             "name": "精神衝撃",
                             "description": "<p>スポットライトが当たるまで<em>脆弱</em>です。</p>"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の対象を最大3体選び、直感または知識リアクションロールを行わせます。成功した対象はストレスを1マークします。失敗した対象は<strong>3d10+4</strong>の直接魔法ダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。</p>"
+                    }
                 },
                 "EJSZFUchXzCQqGfn": {
+                    "name": "脳の吸い出し",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の<em>脆弱</em>なPCを1人選びます。その対象はストレスを<strong>1d4</strong>マークし、@Lookup[@name]は同じ数のHPを消します。</p>",
                     "actions": {
                         "VOEi2TIkP8Bqt5B9": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "脳の吸い出し",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の<em>脆弱</em>なPCを1人選びます。その対象はストレスを<strong>1d4</strong>マークし、@Lookup[@name]は同じ数のHPを消します。</p>"
+                    }
                 },
                 "x7WN5SgJGj1dv4W1": {
                     "name": "深淵の呼び声",
@@ -2643,24 +2657,16 @@
                         }
                     }
                 }
-            },
-            "name": "深淵の住人",
-            "description": "<p>漆黒の目と有毒の触手を持つ、巨大な精神感応のヤツメウナギ。</p>",
-            "motivesAndTactics": "力を振るう、崇拝を求める、沈んだ遺跡を徘徊する",
-            "attack": {
-                "name": "歯と触手"
-            },
-            "experiences": {
-                "ZShKGjFLf92betXU": {
-                    "name": "古代の秘儀"
-                },
-                "9C7Kf7FYrg2WYmXL": {
-                    "name": "闇の水"
-                }
             }
         },
         "Deeproot Defender": {
             "_note": "Deeproot Defender",
+            "name": "深根の守り手",
+            "description": "<p>掴みかかる蔓を持つ、がっしりした植物人。</p>",
+            "motivesAndTactics": "待ち伏せる、掴む、守る、打ちのめす",
+            "attack": {
+                "name": "蔓"
+            },
             "experiences": {
                 "8ThlnO2VRVTMnfzP": {
                     "name": "巨大"
@@ -2669,6 +2675,7 @@
             "items": {
                 "0DSCzAFXy0hV4afJ": {
                     "name": "地面叩き",
+                    "description": "<p>地面を叩きつけ、超近距離以内のすべての対象を遠距離まで吹き飛ばします。この方法で吹き飛ばされた各対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "55hCZsJQhJNcZ0lX": {
                             "name": "ストレスダメージ",
@@ -2678,11 +2685,11 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p>地面を叩きつけ、超近距離以内のすべての対象を遠距離まで吹き飛ばします。この方法で吹き飛ばされた各対象はストレスを1マークしなければなりません。</p>"
+                    }
                 },
                 "rreGFW5TbhUoZf2T": {
                     "name": "掴んで引きずる",
+                    "description": "<p>近距離以内の対象に攻撃を行います。成功した場合、<strong>恐怖を1消費</strong>して対象を近接距離まで引き寄せ、<strong>1d6+2</strong>の物理ダメージを与え、@Lookup[@name]が重傷ダメージを受けるまでその対象を<em>拘束</em>します。</p>",
                     "actions": {
                         "nQ3vXrrKBizZoaDt": {
                             "name": "攻撃"
@@ -2694,34 +2701,40 @@
                             "description": "<p>守り手が重傷ダメージを受けるまで<em>拘束</em>されています。</p>",
                             "durationDescription": "<p>深根の守り手が重傷ダメージを受けるまで。</p>"
                         }
-                    },
-                    "description": "<p>近距離以内の対象に攻撃を行います。成功した場合、<strong>恐怖を1消費</strong>して対象を近接距離まで引き寄せ、<strong>1d6+2</strong>の物理ダメージを与え、@Lookup[@name]が重傷ダメージを受けるまでその対象を<em>拘束</em>します。</p>"
+                    }
                 }
-            },
-            "name": "深根の守り手",
-            "description": "<p>掴みかかる蔓を持つ、がっしりした植物人。</p>",
-            "motivesAndTactics": "待ち伏せる、掴む、守る、打ちのめす",
-            "attack": {
-                "name": "蔓"
             }
         },
         "Demon Lord Berzug": {
             "_note": "Demon Lord Berzug",
+            "name": "魔神王ベルズグ",
+            "description": "<p>下層環の深い一環を統べる者。蛇の尾、トカゲの後脚、蟹の鉤爪の腕、そして二つの顔を持つ狼の頭を備えた巨大な混成獣。</p>",
+            "motivesAndTactics": "善きものを壊す、混沌を撒く、競争相手を退ける",
+            "attack": {
+                "name": "深淵の爪"
+            },
+            "experiences": {
+                "QQaEv0dOKGVnotdU": {
+                    "name": "地獄の知識"
+                }
+            },
             "items": {
                 "UXBY3dxa5s9PHD4Z": {
                     "name": "リレントレス（3）",
                     "description": "<p>ベルズグはGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "F7DSVj7HDXsWPq16": {
+                    "name": "混沌の鞭打ち",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、ベルズグに近距離以内のPCを最大3人まで打ち払わせ、各対象に敏捷リアクションロールを行わせます。失敗した対象は<strong>4d20</strong>の物理ダメージを受けます。成功した対象はダメージを半分受けます。</p>",
                     "actions": {
                         "TldCgFZ8RIXPPDLM": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "混沌の鞭打ち",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、ベルズグに近距離以内のPCを最大3人まで打ち払わせ、各対象に敏捷リアクションロールを行わせます。失敗した対象は<strong>4d20</strong>の物理ダメージを受けます。成功した対象はダメージを半分受けます。</p>"
+                    }
                 },
                 "0INmBdLaQgZu5Q0V": {
+                    "name": "深淵を覗き込む",
+                    "description": "<p><strong>恐怖を1消費</strong>して、ベルズグに遠距離以内のPCと目を合わせさせます。その対象は社交リアクションロールに成功しなければ、以下の状態のうち1つを得ます（<strong>d6</strong>をロールし、対応する結果を使います）：</p><ul><li><p>1〜2：魅惑。対象は直ちにベルズグの近接距離まで移動し、直感ロールに成功してこの状態を消すまで<em>脆弱</em>かつ<em>拘束</em>状態になります。</p></li><li><p>3〜4：混乱。対象は知識ロールに成功してこの状態を消すまで、アクションロールを行うたびにストレスを1マークしなければなりません。</p></li><li><p>5〜6：隷属。そのPCが社交ロールに成功してこの状態を消すまで、GMターン中にそのPCを敵対者のようにスポットライトできます。そうするとき、「隷属」のPCから近距離以内の対象を1体選びます。「隷属」のPCはその対象の近接距離まで移動し、デュアリティダイスの代わりに<strong>d20</strong>を使って武器攻撃を行います。</p></li></ul>",
                     "actions": {
                         "FrkTuhvEV7Sg2wMm": {
                             "name": "恐怖を消費する"
@@ -2731,12 +2744,12 @@
                             "description": "<p>対象は直ちにベルズグの近接距離まで移動し、直感ロールに成功してこの状態を消すまで脆弱かつ<em>拘束</em>状態になります。</p>"
                         },
                         "LI0rDbkjO3thrpBH": {
-                            "description": "<p>対象は、知識ロールに成功してこの状態を解除するまで、アクションロールを行うたびにストレスを1マークしなければなりません。</p>",
-                            "name": "混乱"
+                            "name": "混乱",
+                            "description": "<p>対象は、知識ロールに成功してこの状態を解除するまで、アクションロールを行うたびにストレスを1マークしなければなりません。</p>"
                         },
                         "ngwMiJqut6MZ4yZK": {
-                            "description": "<p>そのPCが社交ロールに成功してこの状態を解除するまで、GMのターンにそのPCを敵対者のようにスポットライトを当てられます。そうしたとき、魅了されたPCの近距離以内から対象を1体選びます。魅了されたPCは対象の近接射程内へ移動し、デュアリティダイスの代わりに<strong>d20</strong>を使ってその対象に武器攻撃を行います。</p>",
-                            "name": "隷属"
+                            "name": "隷属",
+                            "description": "<p>そのPCが社交ロールに成功してこの状態を解除するまで、GMのターンにそのPCを敵対者のようにスポットライトを当てられます。そうしたとき、魅了されたPCの近距離以内から対象を1体選びます。魅了されたPCは対象の近接射程内へ移動し、デュアリティダイスの代わりに<strong>d20</strong>を使ってその対象に武器攻撃を行います。</p>"
                         }
                     },
                     "effects": {
@@ -2752,59 +2765,89 @@
                             "name": "新しい効果",
                             "description": "<p>そのPCが社交ロールに成功してこの状態を解除するまで、GMのターンにそのPCを敵対者のようにスポットライトを当てられます。そうしたとき、魅了されたPCの近距離以内から対象を1体選びます。魅了されたPCは対象の近接射程内へ移動し、デュアリティダイスの代わりに<strong>d20</strong>を使ってその対象に武器攻撃を行います。</p>"
                         }
-                    },
-                    "name": "深淵を覗き込む",
-                    "description": "<p><strong>恐怖を1消費</strong>して、ベルズグに遠距離以内のPCと目を合わせさせます。その対象は社交リアクションロールに成功しなければ、以下の状態のうち1つを得ます（<strong>d6</strong>をロールし、対応する結果を使います）：</p><ul><li><p>1〜2：魅惑。対象は直ちにベルズグの近接距離まで移動し、直感ロールに成功してこの状態を消すまで<em>脆弱</em>かつ<em>拘束</em>状態になります。</p></li><li><p>3〜4：混乱。対象は知識ロールに成功してこの状態を消すまで、アクションロールを行うたびにストレスを1マークしなければなりません。</p></li><li><p>5〜6：隷属。そのPCが社交ロールに成功してこの状態を消すまで、GMターン中にそのPCを敵対者のようにスポットライトできます。そうするとき、「隷属」のPCから近距離以内の対象を1体選びます。「隷属」のPCはその対象の近接距離まで移動し、デュアリティダイスの代わりに<strong>d20</strong>を使って武器攻撃を行います。</p></li></ul>"
+                    }
                 },
                 "0POrjNdggcbqg4qD": {
+                    "name": "打ち砕く一撃",
+                    "description": "<p>PCがベルズグの通常の攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、そのPCがマークしたHPと同じ数のストレスをマークさせられます。あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "16Vhvr264lTkHt09": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "打ち砕く一撃",
-                    "description": "<p>PCがベルズグの通常の攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、そのPCがマークしたHPと同じ数のストレスをマークさせられます。あなたは恐怖を1得ます。</p>"
+                    }
                 },
                 "Vt6yrotrzvjXcHUi": {
                     "name": "戦慄",
+                    "description": "<p>PCがベルズグへの攻撃に失敗したとき、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "XdJrRAm58l3BYuTq": {
                             "name": "恐怖を得る"
                         }
-                    },
-                    "description": "<p>PCがベルズグへの攻撃に失敗したとき、あなたは恐怖を1得ます。</p>"
-                }
-            },
-            "name": "魔神王ベルズグ",
-            "description": "<p>下層環の深い一環を統べる者。蛇の尾、トカゲの後脚、蟹の鉤爪の腕、そして二つの顔を持つ狼の頭を備えた巨大な混成獣。</p>",
-            "motivesAndTactics": "善きものを壊す、混沌を撒く、競争相手を退ける",
-            "attack": {
-                "name": "深淵の爪"
-            },
-            "experiences": {
-                "QQaEv0dOKGVnotdU": {
-                    "name": "地獄の知識"
+                    }
                 }
             }
         },
         "Demon of Avarice": {
             "_note": "Demon of Avarice",
+            "name": "貪欲の魔神",
+            "description": "<p>王者めいたマントをまとう怪物。環状の角に財宝を飾りつけている。</p>",
+            "motivesAndTactics": "食い尽くす、欲を煽る、不和を撒く",
+            "attack": {
+                "name": "飢えた顎"
+            },
             "experiences": {
                 "nXs1RXkwCvr3O9J0": {
                     "name": "口車"
+                }
+            },
+            "items": {
+                "qoQinutpe4Itohp0": {
+                    "name": "金が物を言う",
+                    "description": "<p>@Lookup[@name]への攻撃は、攻撃者が一握りの金貨を支払わない限り不利を得て行われます。この@Lookup[@name]はPCの人数と同じ数の「一握り」を持って登場します。対象が@Lookup[@name]の通常の攻撃でHPをマークするとき、HPをマークする代わりに一握りの金貨を支払えます（HP1つにつき一握り1つ）。この特徴でPCが支払った一握りの金貨1つごとに、@Lookup[@name]に一握りの金貨を1つ加えます。</p>"
+                },
+                "ILocyy5hvyQXXjhs": {
+                    "name": "数字は増えねばならぬ",
+                    "description": "<p>@Lookup[@name]の攻撃ロールに、持っている一握りの金貨の数と同じボーナスを加えます。</p>",
+                    "effects": {
+                        "iLeiOlUtWvYsgbDQ": {
+                            "name": "数字は増えねばならぬ",
+                            "description": "<p>魔神の攻撃ロールに、持っている一握りの金貨の数と同じボーナスを加えます。</p>"
+                        }
+                    }
+                },
+                "BKgv2D1IdI813R8k": {
+                    "name": "金は時なり",
+                    "description": "<p><strong>一握りの金貨を3つ（または恐怖を1）消費</strong>して、味方[[/r 1d4+1]]体にスポットライトを当てます。</p>"
                 }
             }
         },
         "Demon of Despair": {
             "_note": "Demon of Despair",
+            "name": "絶望の魔神",
+            "description": "<p>長い四肢を持ち、影を滲ませるマント姿の魔神の怪物。</p>",
+            "motivesAndTactics": "恐怖を伝染させる、影に留まる、決意を削ぐ",
+            "attack": {
+                "name": "瘴気の矢"
+            },
             "experiences": {
                 "qRJvn5sBs24dY4FX": {
                     "name": "口車"
                 }
             },
             "items": {
+                "2ESeh4tPhr6DI5ty": {
+                    "name": "絶望の淵",
+                    "description": "<p>@Lookup[@name]は希望0のPCに2倍のダメージを与えます。</p>",
+                    "effects": {
+                        "nofxm1vGZ2TmceA2": {
+                            "name": "絶望の淵",
+                            "description": "<p>絶望の魔神は希望0のPCに2倍のダメージを与えます。</p>"
+                        }
+                    }
+                },
                 "FC8PIf4BVkhmoJX8": {
                     "name": "お前の抵抗は無意味だ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内のすべてのPCの心を重く沈ませます。影響を受けたすべての対象は、希望とともに成功をロールするか次の休憩まで、希望ダイスを<strong>d8</strong>に置き換えます。</p>",
                     "actions": {
                         "n0RYO05pROFU6ov3": {
                             "name": "恐怖を消費する",
@@ -2817,12 +2860,14 @@
                     },
                     "effects": {
                         "6WSx03mFbpbPWnOI": {
-                            "name": "お前の抵抗は無意味だ"
+                            "name": "お前の抵抗は無意味だ",
+                            "description": "<p>影響を受けたすべての対象は、希望とともに成功をロールするか次の休憩まで、希望ダイスを<strong>d8</strong>に置き換えます。</p>"
                         }
                     }
                 },
                 "dlMdfUjy2GaqgeOJ": {
                     "name": "お前の友はお前を見捨てる",
+                    "description": "<p>PCが恐怖とともに失敗したとき、<strong>ストレスを1マーク</strong>して、近距離以内の他のすべてのPCに希望を1失わせられます。</p>",
                     "actions": {
                         "urrp8SCFgqbmSTvm": {
                             "name": "希望を失う",
@@ -2847,6 +2892,12 @@
         },
         "Demon of Hubris": {
             "_note": "Demon of Hubris",
+            "name": "傲慢の魔神",
+            "description": "<p>完璧に美しく、底なしに残酷な魔神。輝く槍と優雅なローブを身につけている。</p>",
+            "motivesAndTactics": "見下す、早々に勝利を宣言する、優越を証明する",
+            "attack": {
+                "name": "完璧なる槍"
+            },
             "experiences": {
                 "MlEBcyaaPU8zLdzC": {
                     "name": "口車"
@@ -2855,6 +2906,7 @@
             "items": {
                 "kgPZs8Vx1FpQi2g1": {
                     "name": "恐るべき者",
+                    "description": "<p>@Lookup[@name]の攻撃が成功したとき、遠距離以内のすべてのPCは希望を1失い、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "v3XbljQeHEyfuSXz": {
                             "name": "希望を失う",
@@ -2868,6 +2920,7 @@
                 },
                 "r5EvkhhvvfNv8wZe": {
                     "name": "倍か無か",
+                    "description": "<p>遠距離以内のPCがロールに失敗したとき、そのPCは恐怖ダイスを振り直して新しい結果を採用することを選べます。それでも失敗した場合、そのPCはストレスを2マークし、魔神はストレスを1消します。</p>",
                     "actions": {
                         "nNfWqBgysVPtFh4w": {
                             "name": "ストレスをマーク"
@@ -2875,14 +2928,26 @@
                     }
                 },
                 "Y3W44ifKIcoYpONN": {
+                    "name": "並ぶ者なき技",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の対象に@Lookup[@name]の通常の攻撃ダメージを与えます。</p>",
                     "actions": {
                         "MYOD2VAfdVC6hMCs": {
                             "name": "ストレスをマーク"
                         }
                     }
                 },
+                "6BKWOTuxQWJd5RP5": {
+                    "name": "悪の根源",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の他の魔神2体にスポットライトを当てます。</p>",
+                    "actions": {
+                        "ozGST8UY2MJnrd3w": {
+                            "name": "魔神にスポットライト"
+                        }
+                    }
+                },
                 "FLp1dPSJz1ezY0gD": {
                     "name": "お前など比べるに及ばない",
+                    "description": "<p>@Lookup[@name]から近距離以内でPCがロールに失敗したとき、そのPCはストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "kuCPWb9cu3pZdAhh": {
                             "name": "ストレスをマーク",
@@ -2898,14 +2963,29 @@
         },
         "Demon of Jealousy": {
             "_note": "Demon of Jealousy",
+            "name": "嫉妬の魔神",
+            "description": "<p>細長い四肢と飽くことなき欲望を持つ、気まぐれなクリーチャー。</p>",
+            "motivesAndTactics": "他者の成功に相乗りする、他者のものを奪う、恨みを抱え続ける",
+            "attack": {
+                "name": "精神攻撃"
+            },
             "experiences": {
                 "sZFPDyoZwnRwPfT4": {
                     "name": "口車"
                 }
             },
             "items": {
+                "m8qmsssYQ3uFHkil": {
+                    "name": "無防備な心",
+                    "description": "<p>@Lookup[@name]の通常の攻撃は直接ダメージを与えます。</p>"
+                },
+                "KVyhgMJSSHTwRISA": {
+                    "name": "次は私の番",
+                    "description": "<p>@Lookup[@name]が攻撃でHPをマークしたとき、<strong>@Lookup[@name]がマークしたHPと同じ数の恐怖を消費</strong>して、攻撃者に同じ数のHPをマークさせられます。</p>"
+                },
                 "pSAupMWw1eYqm84z": {
                     "name": "競い合い",
+                    "description": "<p>近距離以内のクリーチャーが別の敵対者からダメージを受けたとき、<strong>ストレスを1マーク</strong>してそのダメージロールに<strong>d4</strong>を加えられます。</p>",
                     "actions": {
                         "UU3H5aPQejOSoFZw": {
                             "name": "ストレスをマーク",
@@ -2919,6 +2999,7 @@
                 },
                 "589tCxFc8KZ3rdzP": {
                     "name": "お前のものは我のもの",
+                    "description": "<p>@Lookup[@name]から超近距離以内でPCが重傷ダメージを受けたとき、<strong>恐怖を1消費</strong>して、その対象に器用リアクションロールを行わせられます。失敗した場合、@Lookup[@name]は対象の所持品から選んだアイテムまたは消耗品を1つ奪い取ります。</p>",
                     "actions": {
                         "3cGZ2CofM9HUlELH": {
                             "name": "セーブを振る",
@@ -2934,6 +3015,9 @@
         },
         "Demon of Wrath": {
             "_note": "Demon of Wrath",
+            "name": "憤怒の魔神",
+            "description": "<p>巨岩のような拳を持つ巨躯の魔神。尽きることのない怒りに駆られている。</p>",
+            "motivesAndTactics": "怒りを煽る、競争相手に見せつける、破壊をもたらす",
             "attack": {
                 "name": "拳"
             },
@@ -2944,10 +3028,12 @@
             },
             "items": {
                 "QDrOLKVWVjUnDPK3": {
+                    "name": "やまぬ怒り",
                     "description": "<p>@Lookup[@name]の攻撃は直接ダメージを与えます。</p>"
                 },
                 "a33PW8UkziliowlR": {
                     "name": "戦の渇き",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内のすべてのPCの血を沸き立たせます。それらのPCはシーンが終わるまで、恐怖ダイスとしてd20を使います。</p>",
                     "actions": {
                         "jKvzbQT0vp66DDOH": {
                             "name": "恐怖を消費する",
@@ -2960,22 +3046,32 @@
                     },
                     "effects": {
                         "gFeHLGgeRoDdd3VG": {
-                            "name": "戦の渇き"
+                            "name": "戦の渇き",
+                            "description": "<p>シーンが終わるまで、恐怖ダイスとしてd20を使います。</p>"
                         }
                     }
                 },
                 "DjGydqLXT4rDa7Av": {
+                    "name": "報復",
+                    "description": "<p>@Lookup[@name]が近距離以内からの攻撃でダメージを受けたとき、<strong>ストレスを1マーク</strong>して、その攻撃者に通常の攻撃を行えます。</p>",
                     "actions": {
                         "hxrdtBm4dYN7KGZm": {
-                            "name": "攻撃"
+                            "name": "攻撃",
+                            "areas": [
+                                {
+                                    "name": "報復"
+                                }
+                            ]
                         }
                     }
                 },
                 "2F75BO0xEU8Zlj7T": {
                     "name": "血と魂",
+                    "description": "<p><em>カウントダウン（ループ 6）</em>。@Lookup[@name]の視界内で初めて攻撃が行われたときに開始します。PCが暴力的な行動を取ったときに進みます。発動したとき、[[/r 1d4]]体の@UUID[Compendium.daggerheart.adversaries.Actor.3tqCjDwJAQ7JKqMb]{下級魔神}を召喚します。それらは近距離に現れます。</p>",
                     "actions": {
                         "szg3qA09aJUt9WKS": {
                             "name": "カウントダウン",
+                            "description": "<p><em>カウントダウン（ループ 6）</em>。@Lookup[@name]の視界内で初めて攻撃が行われたときに開始します。PCが暴力的な行動を取ったときに進みます。</p>",
                             "countdown": [
                                 {
                                     "name": "血と魂"
@@ -2991,9 +3087,21 @@
         },
         "Demonic Hound Pack": {
             "_note": "Demonic Hound Pack",
+            "name": "魔性の猟犬の群れ",
+            "description": "<p>体の内側から地獄の炎で照らされた、不自然な猟犬たち。</p>",
+            "motivesAndTactics": "恐怖を与える、肉を食らう、主を喜ばせる",
+            "attack": {
+                "name": "爪と牙"
+            },
+            "experiences": {
+                "hJHaPH3178AFdAgT": {
+                    "name": "嗅覚追跡"
+                }
+            },
             "items": {
                 "WEbHwamS5ZBphiKq": {
                     "name": "恐慄の遠吠え",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に希望を1失わせます。希望を失えない対象は、代わりにストレスを2マークしなければなりません。</p>",
                     "actions": {
                         "XyLlX9RWSxciZ7oV": {
                             "name": "希望を失う",
@@ -3027,6 +3135,9 @@
         },
         "Dire Bat": {
             "_note": "Dire Bat",
+            "name": "ダイアバット",
+            "description": "<p>大きな翼を持つ愛玩動物。吸血鬼の主人に限りなく忠実。</p>",
+            "motivesAndTactics": "急降下して襲う、隠れる、頭目を守る",
             "attack": {
                 "name": "爪と歯"
             },
@@ -3041,12 +3152,14 @@
                     "description": "<p>飛行している間、@Lookup[@name]は難易度に＋3のボーナスを得ます。</p>",
                     "effects": {
                         "qZfNiqw1iAIxeuYg": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>飛行している間、バットは難易度に＋3のボーナスを得ます。</p>"
                         }
                     }
                 },
                 "o69lipskvBwGVhe4": {
                     "name": "絶叫",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]の前方、遠距離以内のすべての対象に高周波の叫びを放ちます。それらの対象はストレスを<strong>1d4</strong>マークしなければなりません。</p>",
                     "actions": {
                         "2ILfoiBoMyBCtBsL": {
                             "name": "ストレスをマーク",
@@ -3060,6 +3173,7 @@
                 },
                 "BQPGgbNzKbNkGDJb": {
                     "name": "守護者",
+                    "description": "<p>味方の吸血鬼がHPをマークしたとき、<strong>ストレスを1マーク</strong>して、攻撃者の近接距離まで飛び、その攻撃者に有利を得て攻撃を行えます。成功した場合、<strong>2d6+2</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "wW7WGisUBzyxjsH2": {
                             "name": "ストレスをマーク"
@@ -3070,9 +3184,28 @@
         },
         "Dire Pangolati": {
             "_note": "Dire Pangolati",
+            "name": "ダイアパンゴラティ",
+            "description": "<p>馬車ほどの大きさのセンザンコウとハナグマの混成獣。装甲板に覆われ、刃のような尾で剃刀のごとく鋭い鱗を飛ばす。</p>",
+            "motivesAndTactics": "食事を持って逃げる、切り刻む、危険に踏み込む",
+            "attack": {
+                "name": "尾の斬撃"
+            },
+            "experiences": {
+                "QWBIOS0bR1PhkhcD": {
+                    "name": "登攀"
+                },
+                "lqrY3oG7kbihmZQQ": {
+                    "name": "嗅覚追跡"
+                }
+            },
             "items": {
+                "nhGDUnbnb5npJpgk": {
+                    "name": "装甲喰い",
+                    "description": "<p>パンゴラティがPCへの攻撃に成功したとき、そのPCはダメージの重傷度を下げるために鎧スロットを追加で1つマークしなければなりません。</p>"
+                },
                 "9smIQFmlsAxKwNgy": {
                     "name": "刃の旋回",
+                    "description": "<p><strong>恐怖を1消費</strong>して、パンゴラティを素早く回転させます。超近距離以内の各対象は、敏捷リアクションロールに成功しなければ<strong>2d8</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "S5gN8ig6GKed9K33": {
                             "name": "恐怖を消費する",
@@ -3085,6 +3218,8 @@
                     }
                 },
                 "BqxLyMEDOq1Aqso7": {
+                    "name": "刃飛ばし",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、パンゴラティに尾を振って剃刀のように鋭い装甲板を飛ばさせます。遠距離以内の対象に攻撃を行います。成功した場合、その攻撃は<strong>2d6+10</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "xp53guUcIZPlq7SR": {
                             "name": "ストレスをマーク"
@@ -3092,6 +3227,8 @@
                     }
                 },
                 "IenXLGFox3SHkU5j": {
+                    "name": "ケラチンの鱗",
+                    "description": "<p>パンゴラティが攻撃でHPをマークするとき、<strong>ストレスを1マーク</strong>して、マークするHPの数を1つ減らせます。</p>",
                     "actions": {
                         "CTwAUduCPI9QjWQO": {
                             "name": "ストレスをマーク"
@@ -3102,6 +3239,9 @@
         },
         "Dire Wolf": {
             "_note": "Dire Wolf",
+            "name": "ダイアウルフ",
+            "description": "<p>威嚇するような牙を持つ大きな狼。単独で出会うことはまずない。</p>",
+            "motivesAndTactics": "縄張りを守る、追い立てる、群れを守る、取り囲む、跡を追う",
             "attack": {
                 "name": "爪"
             },
@@ -3113,6 +3253,7 @@
             "items": {
                 "wQXEnMqrl2jo91oy": {
                     "name": "群れの戦術",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功し、別の@Lookup[@name]が対象の近接距離以内にいる場合、通常のダメージの代わりに<strong>1d6+5</strong>の物理ダメージを与え、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "FFQvt3sMfuwXxIrf": {
                             "name": "攻撃"
@@ -3121,6 +3262,7 @@
                 },
                 "85XrqDvLP30YOO43": {
                     "name": "足を奪う一撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に攻撃を行います。成功した場合、<strong>3d4+10</strong>の直接物理ダメージを与え、その対象がHPを1つ以上消すまで<em>脆弱</em>にします。</p>",
                     "actions": {
                         "Tvizq1jEfG8FyfNc": {
                             "name": "攻撃"
@@ -3128,7 +3270,8 @@
                     },
                     "effects": {
                         "YNKHEFQ4ucGr4Rmc": {
-                            "name": "足を奪う一撃"
+                            "name": "足を奪う一撃",
+                            "durationDescription": "<p>HPを1つ以上消すまで。</p>"
                         }
                     }
                 }
@@ -6937,7 +7080,8 @@
                         }
                     }
                 }
-            }
+            },
+            "name": "下級魔神"
         },
         "Minor Fire Elemental": {
             "_note": "Minor Fire Elemental",
