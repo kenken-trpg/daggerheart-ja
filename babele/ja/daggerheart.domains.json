@@ -3,76 +3,354 @@
     "collection": "daggerheart.domains",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "folders": {
-        "Blade": "ブレイド"
+        "Arcana": "アルカナ",
+        "Blade": "ブレイド",
+        "Bone": "ボーン",
+        "Codex": "コーデックス",
+        "Dread": "恐慄",
+        "Grace": "グレイス",
+        "Level 10": "レベル10",
+        "Level 1": "レベル1",
+        "Level 2": "レベル2",
+        "Level 3": "レベル3",
+        "Level 4": "レベル4",
+        "Level 5": "レベル5",
+        "Level 6": "レベル6",
+        "Level 7": "レベル7",
+        "Level 8": "レベル8",
+        "Level 9": "レベル9",
+        "Midnight": "ミッドナイト",
+        "Sage": "セージ",
+        "Splendor": "スプレンダー",
+        "Valor": "ヴァラー"
     },
     "entries": {
         "A Soldier's Bond": {
-            "_note": "A Soldier's Bond"
+            "_note": "A Soldier's Bond",
+            "name": "兵士の絆",
+            "description": "<p>大休憩ごとに1回、あなたが誰かを褒めるか、その人の得意なことについて尋ねたとき、あなたと相手はそれぞれ希望を3得られます。</p>",
+            "actions": {
+                "7Tcn3wYxEIGEfbJ5": {
+                    "name": "希望を3得る"
+                }
+            }
         },
         "Adjust Reality": {
-            "_note": "Adjust Reality"
+            "_note": "Adjust Reality",
+            "name": "現実の調整",
+            "description": "<p>あなたまたは同意する仲間が何らかのロールを行った後、<strong>希望を5消費</strong>して、そのロールの数値結果を任意の結果に変更できます。その結果はダイスの出目の範囲内で妥当なものでなければなりません。</p>",
+            "actions": {
+                "3Aiqds9jVXdlWmfm": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Arcana-Touched": {
-            "_note": "Arcana-Touched"
+            "_note": "Arcana-Touched",
+            "name": "アルカナ接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がアルカナドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>呪文発動ロールに＋1のボーナス</p></li><li class=\"vertical-card-list-found\"><p>休憩ごとに1回、希望ダイスと恐怖ダイスの結果を入れ替えられます。</p></li></ul>",
+            "actions": {
+                "hBh4Lt0Bdd9CtJY7": {
+                    "name": "デュアリティの結果を入れ替える",
+                    "description": "<p>休憩ごとに1回、希望ダイスと恐怖ダイスの結果を入れ替えられます。</p>"
+                }
+            },
+            "effects": {
+                "vTW98Xha0HP8ITrs": {
+                    "name": "アルカナ接触",
+                    "description": "<p>ロードアウトにある能力カードのうち4枚以上がアルカナドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>呪文発動ロールに＋1のボーナス</p></li><li class=\"vertical-card-list-found\"><p>休憩ごとに1回、希望ダイスと恐怖ダイスの結果を入れ替えられます。</p></li></ul>"
+                }
+            }
         },
         "Arcane Reflection": {
-            "_note": "Arcane Reflection"
+            "_note": "Arcane Reflection",
+            "name": "秘術の反射",
+            "description": "<p>魔法ダメージを受けるとき、<strong>希望を任意の数だけ消費</strong>して、その数の<strong>d6</strong>をロールできます。いずれかが6を出した場合、その攻撃は術者へ跳ね返り、代わりに術者にダメージを与えます。</p>",
+            "actions": {
+                "45ywf6Juwz4mmn9j": {
+                    "name": "跳ね返す"
+                }
+            }
         },
         "Armorer": {
-            "_note": "Armorer"
+            "_note": "Armorer",
+            "name": "鎧匠",
+            "description": "<p>防具を着用している間、鎧値に＋1のボーナスを得ます。</p><p>休憩中、ダウンタイムムーブとして防具の修理を選んだとき、仲間も鎧スロットを1つ消します。</p>",
+            "actions": {
+                "Z864RtY6fR5Cnrx9": {
+                    "name": "防具の修理",
+                    "description": "<p>休憩中、ダウンタイムムーブとして防具の修理を選んだとき、仲間も鎧スロットを1つ消します。</p>"
+                }
+            },
+            "effects": {
+                "tJw2JIPcT9hEMRXg": {
+                    "name": "鎧匠",
+                    "description": "<p>防具を着用している間、鎧値に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Astral Projection": {
-            "_note": "Astral Projection"
+            "_note": "Astral Projection",
+            "name": "星幽投射",
+            "description": "<p>大休憩ごとに1回、<strong>ストレスを1マーク</strong>して、以前に訪れたことのある任意の場所に出現できる自分の投射体を作り出します。</p><p>あなたは投射体を通して、自分自身であるかのように見聞きし、その場にいるかのように世界へ働きかけられます。投射体を調べた存在は、それが魔法によるものだと見抜けます。この効果は次の休憩まで、または投射体が何らかのダメージを受けるまで持続します。</p>",
+            "actions": {
+                "jhEOXtmSiwm4AX1R": {
+                    "name": "投射する"
+                }
+            }
         },
         "Avatar of Terror": {
-            "_note": "Avatar of Terror"
+            "_note": "Avatar of Terror",
+            "name": "恐怖の化身",
+            "description": "<p><strong>ストレスを1マーク</strong>して、恐怖を糧とする存在へと変身します。この姿の間、GMのプールにある恐怖1つごとに、ダメージロールへ<strong>1d6</strong>のボーナスを得ます。さらに、GMが恐怖を消費して至近以内の敵対者にスポットライトを当てたとき、あなたは希望を1得ます。</p><p>アクションロールを行う前に、希望を1消費しなければなりません。できない場合、あなたは通常の姿に戻ります。</p>",
+            "actions": {
+                "4ypEFJVq5grqKg5q": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "dn84Mz9qZxt25RXv": {
+                    "name": "恐怖の化身",
+                    "description": "<p>この姿の間、GMのプールにある恐怖1つごとに、ダメージロールへ<strong>1d6</strong>のボーナスを得ます。さらに、GMが恐怖を消費して至近以内の敵対者にスポットライトを当てたとき、あなたは希望を1得ます。</p><p>アクションロールを行う前に、希望を1消費しなければなりません。できない場合、あなたは通常の姿に戻ります。</p>"
+                }
+            }
         },
         "Banish": {
-            "_note": "Banish"
+            "_note": "Banish",
+            "name": "追放",
+            "description": "<p>近距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、呪文発動特性に等しい数の<strong>d20</strong>をロールします。対象は、あなたの最高値に等しい難易度でリアクションロールを行わなければなりません。成功した場合、対象はストレスを1マークしますが追放されません。失敗した場合、休憩ごとに1回、対象はこの世界から追放されます。</p><p>PCが恐怖を伴うロールをしたとき、難易度に−1のペナルティがつき、対象は再度リアクションロールを行います。成功した場合、対象は追放から戻ってきます。</p>",
+            "actions": {
+                "pgBalKb5NeRFQ9rt": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Bare Bones": {
-            "_note": "Bare Bones"
+            "_note": "Bare Bones",
+            "name": "身ひとつ",
+            "description": "<p>防具を装備しないことを選んだ場合、基礎鎧値は3＋頑強となり、基礎ダメージしきい値として以下を使用します。</p><ul><li class=\"vertical-card-list-found\"><p><em><strong>ティア1:</strong></em> 9/19</p></li><li class=\"vertical-card-list-found\"><p><em><strong>ティア2:</strong></em> 11/24</p></li><li class=\"vertical-card-list-found\"><p><em><strong>ティア3:</strong></em> 13/31</p></li><li class=\"vertical-card-list-found\"><p><em><strong>ティア4:</strong></em> 15/38</p></li></ul>",
+            "effects": {
+                "FCsgz7Tdsw6QUzBs": {
+                    "name": "身ひとつ",
+                    "description": "<p>基礎鎧値は3＋頑強となります。</p>"
+                }
+            }
         },
         "Battle Cry": {
-            "_note": "Battle Cry"
+            "_note": "Battle Cry",
+            "name": "戦の叫び",
+            "description": "<p>大休憩ごとに1回、危険へ突き進んでいる間に、仲間を奮い立たせる鼓舞の声を上げられます。あなたの声が聞こえるすべての仲間は、それぞれストレスを1つ消し、希望を1得ます。さらに、あなたか仲間が恐怖を伴う失敗をロールするまで、仲間は攻撃ロールに有利を得ます。</p>",
+            "actions": {
+                "jakoB9n8KSgvYVZv": {
+                    "name": "ストレスを消して希望を得る"
+                }
+            },
+            "effects": {
+                "s7ma4TNgAvt0ZgEW": {
+                    "name": "戦の叫び",
+                    "description": "<p>あなたか仲間が恐怖を伴う失敗をロールするまで、攻撃ロールに有利を得ます。</p>",
+                    "durationDescription": "<p>あなたか仲間が恐怖を伴う失敗をロールするまで。</p>",
+                    "changes": [
+                        "攻撃時"
+                    ]
+                }
+            }
         },
         "Battle-Hardened": {
-            "_note": "Battle-Hardened"
+            "_note": "Battle-Hardened",
+            "name": "戦歴の猛者",
+            "description": "<p>大休憩ごとに1回、デスムーブを行うことになったとき、<strong>希望を1消費</strong>して、代わりにHPを1つ消せます。</p>",
+            "actions": {
+                "iucXKML1P8Q7nmcp": {
+                    "name": "希望を1消費する"
+                }
+            }
         },
         "Battle Monster": {
-            "_note": "Battle Monster"
+            "_note": "Battle Monster",
+            "name": "戦場の怪物",
+            "description": "<p>敵対者への攻撃に成功したとき、<strong>ストレスを4マーク</strong>して、ダメージロールを行う代わりに、あなたが現在マークしているHPと同じ数のHPを対象にマークさせられます。</p>",
+            "actions": {
+                "Zztzsl3sPdss7xDe": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Blade-Touched": {
-            "_note": "Blade-Touched"
+            "_note": "Blade-Touched",
+            "name": "ブレイド接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がブレイドドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>攻撃ロールに＋2のボーナス</p></li><li class=\"vertical-card-list-found\"><p>重傷値に＋4のボーナス</p></li></ul>",
+            "effects": {
+                "fBpLkCWGsB8MbymR": {
+                    "name": "ブレイド接触"
+                }
+            }
         },
         "Blighting Strike": {
-            "_note": "Blighting Strike"
+            "_note": "Blighting Strike",
+            "name": "枯死の一撃",
+            "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、</p><ul><li><p>希望を伴うロールなら、習熟を使って<strong>d6+1</strong>の魔法ダメージを与えます。恐怖を伴うロールなら、習熟を使って<strong>d10+1</strong>の魔法ダメージを与えます。</p></li><li><p>対象の次の成功した攻撃は、ダメージが半分になります。</p></li></ul><p>失敗した場合、希望を1消費するか、ストレスを1マークしなければなりません。</p>",
+            "actions": {
+                "bwqmvRSWdnkxaHLl": {
+                    "name": "呪文発動ロール"
+                },
+                "LM5NdHVJ4fL8jtQQ": {
+                    "name": "希望を伴う",
+                    "description": "<p>希望を伴うロールなら、習熟を使って<strong>d6+1</strong>の魔法ダメージを与えます。</p>"
+                },
+                "w1tVBhrsmCEmAiSD": {
+                    "name": "恐怖を伴う",
+                    "description": "<p>恐怖を伴うロールなら、習熟を使って<strong>d10+1</strong>の魔法ダメージを与えます。</p>"
+                }
+            },
+            "effects": {
+                "5Sk45YMLZWn0kRla": {
+                    "name": "枯死の一撃",
+                    "description": "<p>対象の次の成功した攻撃は、ダメージが半分になります。</p>"
+                }
+            }
         },
         "Blink Out": {
-            "_note": "Blink Out"
+            "_note": "Blink Out",
+            "name": "瞬間消失",
+            "description": "<p><strong>呪文発動ロール</strong><strong>（12）</strong>を行います。成功した場合、<strong>希望を1</strong><strong>消費</strong>して、遠距離以内で見えている別の地点へテレポートします。至近以内に同意する存在がいる場合、1体ごとに<strong>追加で希望を1消費</strong>して一緒に連れていけます。</p>",
+            "actions": {
+                "LsAdmSinOiNr9jH8": {
+                    "name": "テレポート",
+                    "description": "<p><strong>呪文発動ロール（12）</strong>を行います。成功した場合、<strong>希望を1消費</strong>して、遠距離以内で見えている別の地点へテレポートします。至近以内に同意する存在がいる場合、1体ごとに<strong>追加で希望を1消費</strong>して一緒に連れていけます。</p>"
+                }
+            }
         },
         "Body Basher": {
-            "_note": "Body Basher"
+            "_note": "Body Basher",
+            "name": "体当たり",
+            "description": "<p>あなたは戦いで全身の力を使います。近接射程の武器を使った攻撃に成功したとき、ダメージロールに頑強と等しいボーナスを得ます。</p>",
+            "effects": {
+                "8uOMyEczlY2OrKau": {
+                    "name": "体当たり",
+                    "description": "<p>近接射程の武器を使った攻撃に成功したとき、ダメージロールに頑強と等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Bold Presence": {
-            "_note": "Bold Presence"
+            "_note": "Bold Presence",
+            "name": "大胆な存在感",
+            "description": "<p>社交ロールを行うとき、<strong>希望を1消費</strong>して、そのロールに頑強を加えられます。</p><p>さらに、休憩ごとに1回、状態を得ることになったとき、あなたの大胆な存在感がその場面でどう役立ったかを描写して、状態を得ずに済ませられます。</p>",
+            "actions": {
+                "GYXo5c2OYS3v1UBA": {
+                    "name": "希望を消費する",
+                    "description": "<p>社交ロールを行うとき、<strong>希望を1消費</strong>して、そのロールに頑強を加えられます。</p>"
+                },
+                "OdRTXMOXhZFiZHES": {
+                    "name": "状態を回避する",
+                    "description": "<p>さらに、休憩ごとに1回、状態を得ることになったとき、あなたの大胆な存在感がその場面でどう役立ったかを描写して、状態を得ずに済ませられます。</p>"
+                }
+            },
+            "effects": {
+                "2XEYhuAcRGTtqvED": {
+                    "name": "大胆な存在感",
+                    "description": "<p>社交ロールに頑強を加えます。</p>"
+                }
+            }
         },
         "Bolt Beacon": {
-            "_note": "Bolt Beacon"
+            "_note": "Bolt Beacon",
+            "name": "閃光の矢",
+            "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、<strong>希望を1消費</strong>して煌めく光の矢を放ち、習熟を使って<strong>d8+2</strong>の魔法ダメージを与えます。対象は一時的に<em>脆弱</em>となり、この状態が解消されるまで明るく輝きます。</p>",
+            "actions": {
+                "zrGLlwmpuUIBrSXy": {
+                    "name": "発動する",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、<strong>希望</strong>を1消費して煌めく光の矢を放ち、習熟を使ってd8+2の魔法ダメージを与えます。対象は一時的に<em>脆弱</em>となり、この状態が解消されるまで明るく輝きます。</p>"
+                }
+            },
+            "effects": {
+                "veZpnhnF8NRRhKG4": {
+                    "name": "脆弱",
+                    "description": "<p>一時的に脆弱となり、この状態が解消されるまで明るく輝きます。</p>"
+                }
+            }
         },
         "Bone-Touched": {
-            "_note": "Bone-Touched"
+            "_note": "Bone-Touched",
+            "name": "ボーン接触",
+            "description": "<p>ロードアウトにある能力カードのうち4枚以上がボーンドメインのものであるとき、以下の利益を得ます。</p><ul><li class=\"vertical-card-list-found\"><p>素早さに＋1のボーナス</p></li><li class=\"vertical-card-list-found\"><p>休憩ごとに1回、<strong>希望を3消費</strong>して、あなたに対して成功した攻撃を代わりに失敗させられます。</p></li></ul>",
+            "actions": {
+                "pRSiIoh4Bzk5I9ej": {
+                    "name": "希望を消費する",
+                    "description": "<p>休憩ごとに1回、<strong>希望を3消費</strong>して、あなたに対して成功した攻撃を代わりに失敗させられます。</p>"
+                }
+            },
+            "effects": {
+                "P6hYkkI64FqIcMoP": {
+                    "name": "ボーン接触",
+                    "description": "<p>素早さに＋1のボーナス</p>"
+                }
+            }
         },
         "Book of Ava": {
-            "_note": "Book of Ava"
+            "_note": "Book of Ava",
+            "name": "アヴァの書",
+            "description": "<p><em><strong>剛力の突き:</strong></em> 近接射程以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は遠距離まで吹き飛ばされ、習熟を使った<strong>d10+2</strong>の魔法ダメージを受けます。</p><p><em><strong>タヴァの鎧:</strong></em> <strong>希望を1消費</strong>して、触れられる対象1体の鎧値に、次の休憩まで、またはあなたが再びタヴァの鎧を発動するまで＋1のボーナスを与えます。</p><p><em><strong>氷の杭:</strong></em> <strong>呪文発動ロール（12）</strong>を行い、遠距離以内に大きな氷の杭を召喚します。それを武器として使う場合、代わりに対象の難易度に対して呪文発動ロールを行います。成功した場合、習熟を使って<strong>d6</strong>の物理ダメージを与えます。</p>",
+            "actions": {
+                "jX4wg2HR2xkdtbIU": {
+                    "name": "剛力の突き",
+                    "description": "<p>近接射程以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は遠距離まで吹き飛ばされ、習熟を使った<strong>d10+2</strong>の魔法ダメージを受けます。</p>"
+                },
+                "4N7ViDYt9Na3zwzi": {
+                    "name": "タヴァの鎧",
+                    "description": "<p><strong>希望を1消費</strong>して、触れられる対象1体の鎧値に、次の休憩まで、またはあなたが再びタヴァの鎧を発動するまで＋1のボーナスを与えます。</p>"
+                },
+                "XU1joyIDFZrQiToF": {
+                    "name": "氷の杭",
+                    "description": "<p><strong>呪文発動ロール（12）</strong>を行い、遠距離以内に大きな氷の杭を召喚します。それを武器として使う場合、代わりに対象の難易度に対して呪文発動ロールを行います。成功した場合、習熟を使って<strong>d6</strong>の物理ダメージを与えます。</p>"
+                },
+                "enit3ZkPp0nY5lN1": {
+                    "name": "氷の杭（攻撃）",
+                    "description": "<p><strong>呪文発動ロール（12）</strong>を行い、遠距離以内に大きな氷の杭を召喚します。それを武器として使う場合、代わりに対象の難易度に対して呪文発動ロールを行います。成功した場合、習熟を使って<strong>d6</strong>の物理ダメージを与えます。</p>"
+                }
+            },
+            "effects": {
+                "ptYT10JZ2WJHvFMd": {
+                    "name": "タヴァの鎧",
+                    "description": "<p>次の休憩まで、または術者が再びタヴァの鎧を発動するまで、鎧値に＋1のボーナス。</p>"
+                }
+            }
         },
         "Book of Exota": {
-            "_note": "Book of Exota"
+            "_note": "Book of Exota",
+            "name": "エクソータの書",
+            "description": "<p><em><strong>拒絶:</strong></em> 発動しつつある魔法の効果に割り込めます。呪文発動特性を使ってリアクションロールを行います。休憩ごとに1回、成功した場合、その効果は止まり、あらゆる結果が回避されます。</p><p><em><strong>構成体創造:</strong></em> <strong>希望を1消費</strong>して、周囲の物体の集まりを選び、それらから基本的な命令に従う動く構成体を作り出します。<strong>呪文発動ロール</strong>を行って行動を命じます。必要な場合、構成体はあなたの回避値と特性を共有し、その攻撃は<strong>2d10+3</strong>の物理ダメージを与えます。構成体は一度に1体しか維持できず、何らかのダメージを受けると崩れ去ります。</p>",
+            "actions": {
+                "6eioK8CoAPfObBP2": {
+                    "name": "拒絶",
+                    "description": "<p>発動しつつある魔法の効果に割り込めます。呪文発動特性を使ってリアクションロールを行います。休憩ごとに1回、成功した場合、その効果は止まり、あらゆる結果が回避されます。</p>"
+                },
+                "6JWhxevxbL0sOcbv": {
+                    "name": "構成体創造",
+                    "description": "<p><strong>希望を1消費</strong>して、周囲の物体の集まりを選び、それらから基本的な命令に従う動く構成体を作り出します。</p>"
+                },
+                "MGVKJ8wVac1v8eJv": {
+                    "name": "構成体（行動させる）",
+                    "description": "<p><strong>呪文発動ロール</strong>を行って構成体に行動を命じます。必要な場合、構成体はあなたの回避値と特性を共有し、その攻撃は<strong>2d10+3</strong>の物理ダメージを与えます。構成体は一度に1体しか維持できず、何らかのダメージを受けると崩れ去ります。</p>"
+                }
+            }
         },
         "Book of Grynn": {
             "_note": "Book of Grynn",
+            "name": "グリンの書",
+            "description": "<p><em><strong>秘術の偏向:</strong></em> 大休憩ごとに1回、<strong>希望を1消費</strong>して、あなたまたは至近以内の仲間を狙った攻撃のダメージを無効化します。</p><p><em><strong>時間固定:</strong></em> 遠距離以内の物体1つを対象にします。その物体は次の休憩まで、まさにその位置で時空ごと静止します。ある存在がそれを動かそうとした場合、この呪文を維持するために相手に対して<strong>呪文発動ロール</strong>を行います。</p><p><em><strong>炎の壁:</strong></em> <strong>呪文発動ロール（15）</strong>を行います。成功した場合、遠距離以内の2点の間に一時的な魔法の炎の壁を作り出します。その経路にいるすべての存在はどちら側にいるかを選ばなければならず、その後に壁を通り抜けたものは<strong>4d10+3</strong>の魔法ダメージを受けます。</p>",
             "actions": {
+                "2pyqgdVZDCUQPYaj": {
+                    "name": "秘術の偏向",
+                    "description": "<p>大休憩ごとに1回、<strong>希望を1消費</strong>して、あなたまたは至近以内の仲間を狙った攻撃のダメージを無効化します。</p>"
+                },
+                "0vUkyQiGHTFS3Api": {
+                    "name": "時間固定",
+                    "description": "<p>遠距離以内の物体1つを対象にします。その物体は次の休憩まで、まさにその位置で時空ごと静止します。ある存在がそれを動かそうとした場合、この呪文を維持するために相手に対して<strong>呪文発動ロール</strong>を行います。</p>"
+                },
                 "K26kfjmTEH9zPMMO": {
+                    "name": "炎の壁",
+                    "description": "<p><strong>呪文発動ロール（15）</strong>を行います。成功した場合、遠距離以内の2点の間に一時的な魔法の炎の壁を作り出します。その経路にいるすべての存在はどちら側にいるかを選ばなければならず、その後に壁を通り抜けたものは<strong>4d10+3</strong>の魔法ダメージを受けます。</p>",
                     "areas": [
                         {
                             "name": "グリンの書"
@@ -82,34 +360,241 @@
             }
         },
         "Book of Homet": {
-            "_note": "Book of Homet"
+            "_note": "Book of Homet",
+            "name": "ホメットの書",
+            "description": "<p><em><strong>通り抜け:</strong></em> <strong>呪文発動ロール（13）</strong>を行います。休憩ごとに1回、成功した場合、あなたとあなたに触れているすべての存在は、近距離以内の壁または扉を通り抜けられます。全員が反対側に出た時点で効果は終わります。</p><p><em><strong>次元の門:</strong></em> <strong>呪文発動ロール（14）</strong>を行います。大休憩ごとに1回、成功した場合、以前に訪れたことのある別の次元または存在界の場所へ通じる門を開きます。この門は次の休憩まで持続します。</p>",
+            "actions": {
+                "4cKqwH2jWsYylzI7": {
+                    "name": "通り抜け",
+                    "description": "<p><strong>呪文発動ロール（13）</strong>を行います。休憩ごとに1回、成功した場合、あなたとあなたに触れているすべての存在は、近距離以内の壁または扉を通り抜けられます。全員が反対側に出た時点で効果は終わります。</p>"
+                },
+                "RTUxVXUyRM6mNwUX": {
+                    "name": "次元の門",
+                    "description": "<p><strong>呪文発動ロール（14）</strong>を行います。大休憩ごとに1回、成功した場合、以前に訪れたことのある別の次元または存在界の場所へ通じる門を開きます。この門は次の休憩まで持続します。</p>"
+                }
+            }
         },
         "Book of Illiat": {
-            "_note": "Book of Illiat"
+            "_note": "Book of Illiat",
+            "name": "イリアトの書",
+            "description": "<p><em><strong>微睡み:</strong></em> 至近以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象はダメージを受けるか、GMが自分の手番に<strong>恐怖</strong>を消費してこの状態を解消するまで<em>睡眠</em>となります。</p><p><em><strong>秘術の弾幕:</strong></em> 休憩ごとに1回、<strong>希望を任意の数だけ消費</strong>して、近距離以内の任意の対象に命中する魔法の投射物を放ちます。消費した希望と同じ数の<strong>d6</strong>をロールし、その合計の魔法ダメージを対象に与えます。</p><p><em><strong>テレパシー:</strong></em> <strong>希望を1消費</strong>して、見えている対象1体との精神的な通信路を開きます。この接続は次の休憩まで、またはあなたが再びテレパシーを発動するまで持続します。</p>",
+            "actions": {
+                "gd4zjBV1UvXhgAid": {
+                    "name": "微睡み",
+                    "description": "<p><em><strong>微睡み:</strong></em> 至近以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象はダメージを受けるか、GMが自分の手番に<strong>恐怖</strong>を消費してこの状態を解消するまで<em>睡眠</em>となります。</p>"
+                },
+                "tOHoeUFjdPw2TGrw": {
+                    "name": "秘術の弾幕",
+                    "description": "<p>休憩ごとに1回、<strong>希望を任意の数だけ消費</strong>して、近距離以内の任意の対象に命中する魔法の投射物を放ちます。消費した希望と同じ数の<strong>d6</strong>をロールし、その合計の魔法ダメージを対象に与えます。</p>"
+                },
+                "Ya1vttriJRLbuyhk": {
+                    "name": "テレパシー",
+                    "description": "<p><strong>希望を1消費</strong>して、見えている対象1体との精神的な通信路を開きます。この接続は次の休憩まで、またはあなたが再びテレパシーを発動するまで持続します。</p>"
+                }
+            },
+            "effects": {
+                "zAEaETYSOE2fmcyB": {
+                    "name": "テレパシー",
+                    "description": "<p>次の休憩まで、または術者が再びテレパシーを発動するまで持続します。</p>"
+                },
+                "gfZTHSgwYSDKsePW": {
+                    "name": "微睡み",
+                    "description": "<p>ダメージを受けるか、GMが自分の手番に恐怖を消費してこの状態を解消するまで睡眠となります。</p>",
+                    "durationDescription": "<p>ダメージを受けるか、GMが自分の手番に恐怖を消費してこの状態を解消するまで。</p>"
+                }
+            }
         },
         "Book of Korvax": {
-            "_note": "Book of Korvax"
+            "_note": "Book of Korvax",
+            "name": "コルヴァクスの書",
+            "description": "<p><em><strong>浮揚:</strong></em> <strong>呪文発動ロール</strong>を行い、見えている対象1体を一時的に空中へ持ち上げ、元の位置から近距離以内へ移動させます。</p><p><em><strong>撤回:</strong></em> <strong>希望を1消費</strong>して、近接射程以内の対象1体にリアクションロール（15）を強制します。失敗した場合、対象は直前の1分間の会話を忘れます。</p><p><em><strong>ルーン円:</strong></em> <strong>ストレスを1マーク</strong>して、あなたが立っている地面に一時的な魔法の円を描きます。近接射程以内にいる、または近接射程に入ったすべての敵対者は<strong>2d12+4</strong>の魔法ダメージを受け、至近まで吹き飛ばされます。</p>",
+            "actions": {
+                "fgBLkAtuv9okxUd4": {
+                    "name": "浮揚",
+                    "description": "<p><strong>呪文発動ロール</strong>を行い、見えている対象1体を一時的に空中へ持ち上げ、元の位置から近距離以内へ移動させます。</p>"
+                },
+                "m4y7KXhjVNT30wUT": {
+                    "name": "撤回",
+                    "description": "<p><strong>希望を1消費</strong>して、近接射程以内の対象1体にリアクションロール（15）を強制します。失敗した場合、対象は直前の1分間の会話を忘れます。</p>"
+                },
+                "fb2HYD9J759nHKhV": {
+                    "name": "ルーン円",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、あなたが立っている地面に一時的な魔法の円を描きます。近接射程以内にいる、または近接射程に入ったすべての敵対者は<strong>2d12+4</strong>の魔法ダメージを受け、至近まで吹き飛ばされます。</p>",
+                    "areas": [
+                        {
+                            "name": "コルヴァクスの書"
+                        }
+                    ]
+                }
+            }
         },
         "Book of Norai": {
-            "_note": "Book of Norai"
+            "_note": "Book of Norai",
+            "name": "ノライの書",
+            "description": "<p><em><strong>神秘の縛鎖:</strong></em> 遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は一時的に<em>拘束</em>となり、ストレスを1マークしなければなりません。飛行している存在を対象にした場合、この呪文は対象を地上に落とし、一時的に<em>拘束</em>します。</p><p><em><strong>火球:</strong></em> 超遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、炎の球を放ち、着弾と同時に爆発させます。対象とその至近以内のすべての存在はリアクションロール（13）を行わなければなりません。失敗した対象は、習熟を使った<strong>d20+5</strong>の魔法ダメージを受けます。成功した対象はダメージが半分になります。</p>",
+            "actions": {
+                "ywBVT5mbDKr485Jg": {
+                    "name": "神秘の縛鎖",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は一時的に<em>拘束</em>となり、ストレスを1マークしなければなりません。飛行している存在を対象にした場合、この呪文は対象を地上に落とし、一時的に<em>拘束</em>します。</p>"
+                },
+                "GI2VkIcGDOjFRxpT": {
+                    "name": "火球 - 発動",
+                    "description": "<p>超遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、炎の球を放ち、着弾と同時に爆発させます。</p>"
+                },
+                "HJ749c2a8WTjkSHY": {
+                    "name": "火球 - 爆発",
+                    "description": "<p>対象とその至近以内のすべての存在はリアクションロール（13）を行わなければなりません。失敗した対象は、習熟を使った<strong> d20+5</strong>の魔法ダメージを受けます。成功した対象はダメージが半分になります。</p>",
+                    "areas": [
+                        {
+                            "name": "火球"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "iPnT02apql16Zhjf": {
+                    "name": "神秘の縛鎖"
+                }
+            }
         },
         "Book of Ronin": {
-            "_note": "Book of Ronin"
+            "_note": "Book of Ronin",
+            "name": "ローニンの書",
+            "description": "<p><em><strong>変身:</strong></em> <strong>呪文発動ロール（15）</strong>を行います。成功した場合、通常の自分の2倍を超えない大きさの無生物へ変身します。ダメージを受けるまでこの姿のままでいられます。</p><p><em><strong>永遠の衰弱:</strong> </em>大休憩ごとに1回、近距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は恒久的に<em>脆弱</em>となります。対象はいかなる手段でもこの状態を解消できません。</p>",
+            "actions": {
+                "etnR1OKzpLWrx2os": {
+                    "name": "変身",
+                    "description": "<p><strong>呪文発動ロール（15）</strong>を行います。成功した場合、通常の自分の2倍を超えない大きさの無生物へ変身します。ダメージを受けるまでこの姿のままでいられます。</p>"
+                },
+                "h7i4ZuDYuYLnjze6": {
+                    "name": "永遠の衰弱",
+                    "description": "<p>大休憩ごとに1回、近距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象は恒久的に<em>脆弱</em>となります。対象はいかなる手段でもこの状態を解消できません。</p>"
+                }
+            },
+            "effects": {
+                "ntQfpTcXyEL76vCK": {
+                    "name": "変身",
+                    "description": "<p>通常の自分の2倍を超えない大きさの無生物へ変身しています。ダメージを受けるまでこの姿のままでいられます。</p>"
+                },
+                "y44r3c91m06WKSiq": {
+                    "name": "永遠の衰弱",
+                    "description": "<p>恒久的に<em>脆弱</em>。いかなる手段でもこの状態を解消できません。</p>"
+                }
+            }
         },
         "Book of Sitil": {
-            "_note": "Book of Sitil"
+            "_note": "Book of Sitil",
+            "name": "シティルの書",
+            "description": "<p><em><strong>外見の調整:</strong></em> 魔法で自分の外見と服装を変え、見破られないようにします。</p><p><em><strong>パラレラ:</strong></em><strong> 希望を2消費</strong>して、自分または近距離以内の仲間にこの呪文をかけます。次に対象が攻撃を行ったとき、対象は射程内にいて攻撃ロールが成功する別の対象1体にも命中させられます。この呪文は一度に1体にしか保持できません。</p><p><em><strong>幻影:</strong></em> <strong>呪文発動ロール（14）</strong>を行います。成功した場合、近距離以内に自分より大きくない一時的な視覚的幻影を作り出し、あなたが見ている間だけ持続します。観察者が近接射程に入るまでは、精査にも耐えます。</p>",
+            "actions": {
+                "cc1ahwawL16OEu2r": {
+                    "name": "外見の調整",
+                    "description": "<p>魔法で自分の外見と服装を変え、見破られないようにします。</p>"
+                },
+                "wBQkw3P4Esj6kOx2": {
+                    "name": "パラレラ",
+                    "description": "<p><strong>希望を2消費</strong>して、自分または近距離以内の仲間にこの呪文をかけます。次に対象が攻撃を行ったとき、対象は射程内にいて攻撃ロールが成功する別の対象1体にも命中させられます。この呪文は一度に1体にしか保持できません。</p>"
+                },
+                "rsyxORrTH5oU2DkV": {
+                    "name": "幻影",
+                    "description": "<p><strong>呪文発動ロール（14）</strong>を行います。成功した場合、近距離以内に自分より大きくない一時的な視覚的幻影を作り出し、あなたが見ている間だけ持続します。観察者が近接射程に入るまでは、精査にも耐えます。</p>"
+                }
+            },
+            "effects": {
+                "klUaU5KeQCu7KCBI": {
+                    "name": "パラレラ",
+                    "description": "<p>次にあなたが攻撃を行ったとき、射程内にいて攻撃ロールが成功する別の対象1体にも命中させられます。</p>"
+                },
+                "wnrHSvvB6pydTVcC": {
+                    "name": "外見の調整",
+                    "description": "<p>魔法で自分の外見と服装を変え、見破られないようにします。</p>"
+                }
+            }
         },
         "Book of Tyfar": {
-            "_note": "Book of Tyfar"
+            "_note": "Book of Tyfar",
+            "name": "タイファーの書",
+            "description": "<p><em><strong>荒ぶる炎:</strong></em> 近接射程以内の敵対者最大3体に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、あなたの手から噴き出す炎によって<strong>2d6</strong>の魔法ダメージを受け、ストレスを1マークしなければなりません。</p><p><em><strong>魔法の手:</strong></em> 遠距離以内に、自分の手と同じ大きさと力を持つ魔法の手を出現させます。</p><p><em><strong>神秘の霧:</strong></em> <strong>呪文発動ロール（13）</strong>を行い、至近以内の静止した領域に集まる一時的な濃霧を発生させます。この霧はその領域とその中のすべてを著しく覆い隠します。</p>",
+            "actions": {
+                "E3AnyfI7LDL0z9tT": {
+                    "name": "荒ぶる炎",
+                    "description": "<p>近接射程以内の敵対者最大3体に対して<strong>呪文発動ロール</strong>を行います。成功した対象は、あなたの手から噴き出す炎によって<strong>2d6</strong>の魔法ダメージを受け、ストレスを1マークしなければなりません。</p>"
+                },
+                "MYZWoU0clYEcsYDb": {
+                    "name": "魔法の手",
+                    "description": "<p>遠距離以内に、自分の手と同じ大きさと力を持つ魔法の手を出現させます。</p>"
+                },
+                "WQ9XzpbtXl4SmVet": {
+                    "name": "神秘の霧",
+                    "description": "<p><strong>呪文発動ロール（13）</strong>を行い、至近以内の静止した領域に集まる一時的な濃霧を発生させます。この霧はその領域とその中のすべてを著しく覆い隠します。</p><p>@Template[type:emanation|range:vc]</p>"
+                }
+            }
         },
         "Book of Vagras": {
-            "_note": "Book of Vagras"
+            "_note": "Book of Vagras",
+            "name": "ヴァグラスの書",
+            "description": "<p><em><strong>ルーンの封:</strong></em> 触れている、閉じられる物体（錠、櫃、箱など）に対して<strong>呪文発動ロール（15）</strong>を行います。休憩ごとに1回、成功した場合、その物体を封じ、あなたが選んだ存在だけが開けられるようにします。魔法を使える者が1時間かけてこの呪文を研究すれば、破れます。</p><p><em><strong>秘術の扉:</strong></em> 近接射程以内に敵対者がいないとき、<strong>呪文発動ロール（13）</strong>を行います。成功した場合、<strong>希望を1消費</strong>して、現在地から遠距離以内の見えている地点へ通じる門を作り出します。存在が1体通り抜けた時点で閉じます。</p><p><em><strong>看破:</strong></em> <strong>呪文発動ロール</strong>を行います。近距離以内に、そのロールが成功する魔法的に隠されたものがあれば、それが露わになります。</p>",
+            "actions": {
+                "kfJZdT3F4SH1h1dc": {
+                    "name": "ルーンの封",
+                    "description": "<p>触れている、閉じられる物体（錠、櫃、箱など）に対して<strong>呪文発動ロール（15）</strong>を行います。休憩ごとに1回、成功した場合、その物体を封じ、あなたが選んだ存在だけが開けられるようにします。魔法を使える者が1時間かけてこの呪文を研究すれば、破れます。</p>"
+                },
+                "Da3zkKkOljZfu5Xb": {
+                    "name": "秘術の扉",
+                    "description": "<p>近接射程以内に敵対者がいないとき、<strong>呪文発動ロール（13）</strong>を行います。成功した場合、<strong>希望を1消費</strong>して、現在地から遠距離以内の見えている地点へ通じる門を作り出します。存在が1体通り抜けた時点で閉じます。</p>"
+                },
+                "VOOND5icbz1WxUUD": {
+                    "name": "看破",
+                    "description": "<p><strong>呪文発動ロール</strong>を行います。近距離以内に、そのロールが成功する魔法的に隠されたものがあれば、それが露わになります。</p><p>@Template[type:emanation|range:c]</p>"
+                }
+            }
         },
         "Book of Vyola": {
-            "_note": "Book of Vyola"
+            "_note": "Book of Vyola",
+            "name": "ヴィオラの書",
+            "description": "<p><em><strong>記憶探索:</strong></em> 遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象の心を覗き、GMに質問を1つします。GMは、その答えに関わる対象の記憶を描写します。</p><p><em><strong>共有される明晰:</strong> </em>大休憩ごとに1回、<strong>希望を1消費</strong>して、同意する存在2体を選びます。そのうち一方がストレスをマークすることになったとき、2体のどちらがマークするかを選べます。この呪文は彼らの次の休憩まで持続します。</p>",
+            "actions": {
+                "gV6i6Nn6Qolc6PuF": {
+                    "name": "記憶探索",
+                    "description": "<p>遠距離以内の対象に対して<strong>呪文発動ロール</strong>を行います。成功した場合、対象の心を覗き、GMに質問を1つします。GMは、その答えに関わる対象の記憶を描写します。</p>"
+                },
+                "djZ0hQamdwzvYeKc": {
+                    "name": "共有される明晰",
+                    "description": "<p>大休憩ごとに1回、<strong>希望を1消費</strong>して、同意する存在2体を選びます。そのうち一方がストレスをマークすることになったとき、2体のどちらがマークするかを選べます。この呪文は彼らの次の休憩まで持続します。</p>"
+                }
+            },
+            "effects": {
+                "6PPapwuwgKy23oHg": {
+                    "name": "共有される明晰",
+                    "description": "<p>大休憩ごとに1回、<strong>希望を1消費</strong>して、同意する存在2体を選びます。そのうち一方がストレスをマークすることになったとき、2体のどちらがマークするかを選べます。この呪文は彼らの次の休憩まで持続します。</p>"
+                }
+            }
         },
         "Book of Yarrow": {
-            "_note": "Book of Yarrow"
+            "_note": "Book of Yarrow",
+            "name": "ヤローの書",
+            "description": "<p><em><strong>時間妨害:</strong></em> <strong>呪文発動ロール</strong><strong>（18）</strong>を行います。成功した場合、あなた以外の遠距離以内の全員にとって、時間が一時的に止まるまで遅くなります。あなたが他の存在を対象とするアクションロールを次に行ったとき、時間は再び動き出します。</p><p><em><strong>魔法免疫:</strong></em> <strong>希望を5</strong><strong>消費</strong>して、次の休憩まで魔法ダメージへの免疫を得ます。</p>",
+            "actions": {
+                "IxoglRervMx9YdVn": {
+                    "name": "時間妨害",
+                    "description": "<p><strong>呪文発動ロール（18）</strong>を行います。成功した場合、あなた以外の遠距離以内の全員にとって、時間が一時的に止まるまで遅くなります。あなたが他の存在を対象とするアクションロールを次に行ったとき、時間は再び動き出します。</p>",
+                    "areas": [
+                        {
+                            "name": "ヤローの書"
+                        }
+                    ]
+                },
+                "ZcQfbtGet0KQWjWS": {
+                    "name": "魔法免疫",
+                    "description": "<p><strong>希望を5消費</strong>して、次の休憩まで魔法ダメージへの免疫を得ます。</p>"
+                }
+            },
+            "effects": {
+                "HWJYhSegVLeAa3dE": {
+                    "name": "魔法免疫",
+                    "description": "<p>次の休憩まで魔法ダメージへの免疫。</p>"
+                }
+            }
         },
         "Boost": {
             "_note": "Boost"
@@ -130,7 +615,12 @@
             "_note": "Champion's Edge"
         },
         "Chokehold": {
-            "_note": "Chokehold"
+            "_note": "Chokehold",
+            "actions": {
+                "IwiUBldoDTUgT6mh": {
+                    "name": "ダメージ"
+                }
+            }
         },
         "Cinder Grasp": {
             "_note": "Cinder Grasp"
@@ -166,10 +656,23 @@
             "_note": "Cruel Precision"
         },
         "Damnation": {
-            "_note": "Damnation"
+            "_note": "Damnation",
+            "actions": {
+                "oKoNtypnM5rie0rx": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Dark Army": {
-            "_note": "Dark Army"
+            "_note": "Dark Army",
+            "actions": {
+                "040T1iKcp84YM2mp": {
+                    "name": "呪文発動ロール"
+                },
+                "XljvfpVuTZgMGviJ": {
+                    "name": "ダメージを与える"
+                }
+            }
         },
         "Dark Whispers": {
             "_note": "Dark Whispers"
@@ -178,10 +681,26 @@
             "_note": "Darkfire"
         },
         "Deadly Focus": {
-            "_note": "Deadly Focus"
+            "_note": "Deadly Focus",
+            "actions": {
+                "xdNbP1ggDxpXZ1HP": {
+                    "name": "集中"
+                }
+            }
         },
         "Death Grip": {
-            "_note": "Death Grip"
+            "_note": "Death Grip",
+            "effects": {
+                "wMXCIQxqLS9IbsEK": {
+                    "name": "拘束"
+                },
+                "bZ0xgZ6TT2099OYp": {
+                    "name": "拘束"
+                },
+                "Oe95zWWY41nH8y5l": {
+                    "name": "拘束"
+                }
+            }
         },
         "Deathrun": {
             "_note": "Deathrun"
@@ -196,7 +715,12 @@
             "_note": "Dire Strike"
         },
         "Disintegration Wave": {
-            "_note": "Disintegration Wave"
+            "_note": "Disintegration Wave",
+            "actions": {
+                "38A4Q7WVvGCFlRpc": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Divination": {
             "_note": "Divination"
@@ -205,7 +729,12 @@
             "_note": "Dread-Touched"
         },
         "Earthquake": {
-            "_note": "Earthquake"
+            "_note": "Earthquake",
+            "effects": {
+                "Z31XqmGUKWYcZdMY": {
+                    "name": "脆弱"
+                }
+            }
         },
         "Eclipse": {
             "_note": "Eclipse"
@@ -223,7 +752,12 @@
             "_note": "Enrapture"
         },
         "Falling Sky": {
-            "_note": "Falling Sky"
+            "_note": "Falling Sky",
+            "actions": {
+                "xJfXJDVsBayGaqkr": {
+                    "name": "攻撃"
+                }
+            }
         },
         "Fane of the Wilds": {
             "_note": "Fane of the Wilds"
@@ -244,7 +778,12 @@
             "_note": "Forager"
         },
         "Force of Nature": {
-            "_note": "Force of Nature"
+            "_note": "Force of Nature",
+            "actions": {
+                "Yf4L0fo5vq4dIZFM": {
+                    "name": "変身"
+                }
+            }
         },
         "Forceful Push": {
             "_note": "Forceful Push"
@@ -277,7 +816,15 @@
             "_note": "Goad Them On"
         },
         "Gore and Glory": {
-            "_note": "Gore and Glory"
+            "_note": "Gore and Glory",
+            "actions": {
+                "crvDbD8V8linpzeg": {
+                    "name": "ストレスを消す"
+                },
+                "r7MFU8khXqsEpx16": {
+                    "name": "希望を得る"
+                }
+            }
         },
         "Grace-Touched": {
             "_note": "Grace-Touched"
@@ -295,7 +842,12 @@
             "_note": "Healing Strike"
         },
         "Hideous Retribution": {
-            "_note": "Hideous Retribution"
+            "_note": "Hideous Retribution",
+            "actions": {
+                "9pclL7t5Tq5XQAGO": {
+                    "name": "リアクションロール"
+                }
+            }
         },
         "Hold the Line": {
             "_note": "Hold the Line"
@@ -316,16 +868,34 @@
             "_note": "Inevitable"
         },
         "Inspirational Words": {
-            "_note": "Inspirational Words"
+            "_note": "Inspirational Words",
+            "actions": {
+                "5sGMd6m6Ltahit4h": {
+                    "name": "ストレスを消す"
+                },
+                "QKS3vo3Nf5CK8rkF": {
+                    "name": "HPを消す"
+                }
+            }
         },
         "Invigoration": {
             "_note": "Invigoration"
         },
         "Invisibility": {
-            "_note": "Invisibility"
+            "_note": "Invisibility",
+            "actions": {
+                "jD03JDo0H9Q9QV2E": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Invoke Torment": {
-            "_note": "Invoke Torment"
+            "_note": "Invoke Torment",
+            "actions": {
+                "3fABewYlBBP80OiK": {
+                    "name": "希望を得る"
+                }
+            }
         },
         "Jump Scare": {
             "_note": "Jump Scare"
@@ -337,7 +907,12 @@
             "_note": "Lead by Example"
         },
         "Lean on Me": {
-            "_note": "Lean on Me"
+            "_note": "Lean on Me",
+            "actions": {
+                "ByT4FdZX9YSLmKcL": {
+                    "name": "治癒"
+                }
+            }
         },
         "Life Ward": {
             "_note": "Life Ward"
@@ -349,6 +924,7 @@
             "_note": "Mass Disguise",
             "actions": {
                 "ZM96wFu3YuAeUXel": {
+                    "name": "カウントダウン開始",
                     "countdown": [
                         {
                             "name": "集団変装"
@@ -370,7 +946,12 @@
             "_note": "Midnight Spirit"
         },
         "Midnight-Touched": {
-            "_note": "Midnight-Touched"
+            "_note": "Midnight-Touched",
+            "actions": {
+                "ksl1CcxcuwYxObiS": {
+                    "name": "希望を得る"
+                }
+            }
         },
         "Natural Familiar": {
             "_note": "Natural Familiar"
@@ -433,7 +1014,13 @@
             "_note": "Reckless"
         },
         "Recovery": {
-            "_note": "Recovery"
+            "_note": "Recovery",
+            "name": "回復",
+            "effects": {
+                "7GsHTQCtNB8PEVgr": {
+                    "name": "回復"
+                }
+            }
         },
         "Redirect": {
             "_note": "Redirect"
@@ -451,7 +1038,12 @@
             "_note": "Rift Walker"
         },
         "Rise Up": {
-            "_note": "Rise Up"
+            "_note": "Rise Up",
+            "actions": {
+                "DAsnjDomrlupo1aw": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Rousing Strike": {
             "_note": "Rousing Strike"
@@ -469,7 +1061,12 @@
             "_note": "Salvation Beam"
         },
         "Savor the Anguish": {
-            "_note": "Savor the Anguish"
+            "_note": "Savor the Anguish",
+            "actions": {
+                "rUzJRn673vfn5VY1": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Scramble": {
             "_note": "Scramble"
@@ -481,13 +1078,23 @@
             "_note": "Sensory Projection"
         },
         "Shadowbind": {
-            "_note": "Shadowbind"
+            "_note": "Shadowbind",
+            "effects": {
+                "RFB4V0V4bDJ6vCL2": {
+                    "name": "拘束"
+                }
+            }
         },
         "Shadowhunter": {
             "_note": "Shadowhunter"
         },
         "Shape Material": {
-            "_note": "Shape Material"
+            "_note": "Shape Material",
+            "actions": {
+                "TQ830KcZOKCdTFuD": {
+                    "name": "形状"
+                }
+            }
         },
         "Share the Burden": {
             "_note": "Share the Burden"
@@ -508,7 +1115,15 @@
             "_note": "Signature Move"
         },
         "Siphon Essence": {
-            "_note": "Siphon Essence"
+            "_note": "Siphon Essence",
+            "actions": {
+                "atYHfdIRwhIVLVt3": {
+                    "name": "呪文発動ロール"
+                },
+                "2WSDK7psPlgjOnSG": {
+                    "name": "恐怖を伴う"
+                }
+            }
         },
         "Smite": {
             "_note": "Smite"
@@ -547,7 +1162,15 @@
             "_note": "Support Tank"
         },
         "Swift Step": {
-            "_note": "Swift Step"
+            "_note": "Swift Step",
+            "actions": {
+                "Yqyfl459M3q3TACB": {
+                    "name": "ストレスを消す"
+                },
+                "Py9Mx4nMfCRr4tpk": {
+                    "name": "希望を得る"
+                }
+            }
         },
         "Tactician": {
             "_note": "Tactician"
@@ -556,16 +1179,31 @@
             "_note": "Telekinesis"
         },
         "Teleport": {
-            "_note": "Teleport"
+            "_note": "Teleport",
+            "actions": {
+                "Fc38nN8i4z2VYW2T": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Tell No Lies": {
             "_note": "Tell No Lies"
         },
         "Tempest": {
-            "_note": "Tempest"
+            "_note": "Tempest",
+            "effects": {
+                "oqPY3I9oO9J6l5Aj": {
+                    "name": "脆弱"
+                }
+            }
         },
         "Terrify": {
-            "_note": "Terrify"
+            "_note": "Terrify",
+            "actions": {
+                "LL51Prm1G0qJzgdJ": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Thorn Skin": {
             "_note": "Thorn Skin"
@@ -607,10 +1245,20 @@
             "_note": "Unyielding Armor"
         },
         "Valor-Touched": {
-            "_note": "Valor-Touched"
+            "_note": "Valor-Touched",
+            "actions": {
+                "F04596OgMgpnhpQp": {
+                    "name": "鎧スロットを消す"
+                }
+            }
         },
         "Vanishing Dodge": {
-            "_note": "Vanishing Dodge"
+            "_note": "Vanishing Dodge",
+            "effects": {
+                "kxal5WfDr3hTHYpb": {
+                    "name": "隠密"
+                }
+            }
         },
         "Veil of Night": {
             "_note": "Veil of Night"
@@ -619,22 +1267,45 @@
             "_note": "Versatile Fighter"
         },
         "Vicious Entangle": {
-            "_note": "Vicious Entangle"
+            "_note": "Vicious Entangle",
+            "effects": {
+                "Xh0wrgRUuYpwChBU": {
+                    "name": "拘束"
+                },
+                "2xzOqTaPJQzGqFJv": {
+                    "name": "拘束"
+                }
+            }
         },
         "Vitality": {
             "_note": "Vitality"
         },
         "Voice of Dread": {
-            "_note": "Voice of Dread"
+            "_note": "Voice of Dread",
+            "actions": {
+                "NEnfKz6ZHlexeLWd": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Voice of Reason": {
-            "_note": "Voice of Reason"
+            "_note": "Voice of Reason",
+            "effects": {
+                "qWDojebJXMPIP629": {
+                    "name": "有利"
+                }
+            }
         },
         "Wall Walk": {
             "_note": "Wall Walk"
         },
         "Wall of Hunger": {
-            "_note": "Wall of Hunger"
+            "_note": "Wall of Hunger",
+            "actions": {
+                "J0gVHF0IqvuwsTtt": {
+                    "name": "呪文発動ロール"
+                }
+            }
         },
         "Whirlwind": {
             "_note": "Whirlwind"

@@ -576,8 +576,34 @@ const commands = {
     async prepare() {
         const pending = {};
         let count = 0;
+        let prefilled = 0;
 
-        for (const pack of ENABLED) {
+        /*
+         * A 10,423-field working file cannot be translated in one pass, so
+         * --pack=<substring> narrows it to the packs being worked on. The file
+         * is keyed by collection and `apply` only reads the collections it
+         * finds, so a narrowed file applies exactly as a whole one would.
+         */
+        const only = process.argv.find(a => a.startsWith('--pack='))?.slice('--pack='.length);
+        const packs = only ? ENABLED.filter(pack => PACKS[pack].includes(only) || pack.includes(only)) : ENABLED;
+        if (!packs.length) throw new Error(`no enabled pack matches --pack=${only}`);
+
+        /*
+         * Pre-fill from the wordings already approved elsewhere: lang/ja.json
+         * first (the house style), then the glossaries. Only exact matches of a
+         * whole short field, which is what `terms` checks afterwards -- so a
+         * pre-filled value is one `terms` would have demanded anyway.
+         */
+        const uiEn = flatten(await readJson(path.join('lang', '.reference', 'en.json')));
+        const approved = establishedWordings(uiEn, flatten(await readJson(path.join('lang', 'ja.json'))));
+        const { glossary } = await loadGlossaries();
+        const known = source => {
+            const text = plain(source);
+            if (!text || text.length > 60) return '';
+            return (approved.get(normalize(text)) ?? glossary.get(normalize(text)))?.japanese ?? '';
+        };
+
+        for (const pack of packs) {
             const { collection, file, documents, folderNames, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
             const record = await readSources(collection);
@@ -604,7 +630,9 @@ const commands = {
                         continue;
                     }
                     /* `en` is the text to translate; fill `ja` in beside it. */
-                    missing[where] = { en: source, ja: '' };
+                    const suggestion = known(source);
+                    if (suggestion) prefilled += 1;
+                    missing[where] = { en: source, ja: suggestion };
                     count += 1;
                 }
 
@@ -622,7 +650,9 @@ const commands = {
             const folders = {};
             for (const [name, value] of Object.entries(folderNames)) {
                 if (value) continue;
-                folders[name] = { en: name, ja: '' };
+                const suggestion = known(name);
+                if (suggestion) prefilled += 1;
+                folders[name] = { en: name, ja: suggestion };
                 count += 1;
             }
             if (Object.keys(folders).length) entries[FOLDERS] = { _note: 'folders', ...folders };
@@ -631,7 +661,11 @@ const commands = {
         }
 
         await fs.writeFile(PENDING, `${JSON.stringify(pending, null, 4)}\n`);
-        console.log(`${count} field(s) to translate -> ${PENDING}`);
+        console.log(
+            `${count} field(s) to translate -> ${PENDING}` +
+                (only ? ` (${packs.length} pack(s) matching "${only}")` : '') +
+                (prefilled ? `, ${prefilled} pre-filled from lang/ja.json and the glossaries` : '')
+        );
         console.log('Fill in the empty "ja" values, then run: node tools/packs-sync.mjs apply');
     },
 
