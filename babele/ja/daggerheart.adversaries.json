@@ -11120,19 +11120,26 @@
         },
         "Skeleton Archer": {
             "_note": "Skeleton Archer",
+            "name": "骸骨の射手",
+            "description": "<p>短弓と矢を持つ、脆い骸骨。</p>",
+            "motivesAndTactics": "気を逸らした対象を射抜く、死んだふりをする、皮を奪う",
             "attack": {
                 "name": "ショートボウ"
             },
             "items": {
                 "6mL2FQ9pQdfoDNzG": {
                     "name": "機を見る者",
+                    "description": "<p>クリーチャーの超近距離以内に敵対者が2体以上いるとき、@Lookup[@name]がそのクリーチャーに与えるダメージはすべて2倍になります。</p>",
                     "effects": {
                         "O03vYbyNLO3YPZGo": {
-                            "name": "機を見る者"
+                            "name": "機を見る者",
+                            "description": "<p>クリーチャーの超近距離以内に敵対者が2体以上いるとき、骸骨の射手がそのクリーチャーに与えるダメージはすべて2倍になります。</p>"
                         }
                     }
                 },
                 "4w20xpEo6L1fgro3": {
+                    "name": "必殺の一射",
+                    "description": "<p>遠距離以内の脆弱な対象に攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して<strong>3d4+8</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "nKmxl3D7g4p7Zcub": {
                             "name": "攻撃"
@@ -11143,6 +11150,12 @@
         },
         "Skeleton Dredge": {
             "_note": "Skeleton Dredge",
+            "name": "骸骨の寄せ集め",
+            "description": "<p>がらがらと鳴る骨の山。</p>",
+            "motivesAndTactics": "ばらばらになる、圧倒する、死んだふりをする、皮を奪う",
+            "attack": {
+                "name": "骨の爪"
+            },
             "items": {
                 "g9GQ9cMPNETxKXOz": {
                     "name": "ミニオン（4）",
@@ -11161,12 +11174,25 @@
         },
         "Skeleton Knight": {
             "_note": "Skeleton Knight",
+            "name": "骸骨の騎士",
+            "description": "<p>巨大な刃を持つ、鎧をまとった大きな骸骨。</p>",
+            "motivesAndTactics": "生者を斬り倒す、皮を奪う、破壊をもたらす",
+            "attack": {
+                "name": "錆びた大剣"
+            },
             "items": {
                 "OZKEz4eK9h7zCbuf": {
-                    "name": "恐るべき者"
+                    "name": "恐るべき者",
+                    "description": "<p>@Lookup[@name]の攻撃が成功したとき、近距離以内のすべてのPCは希望を1失い、あなたは恐怖を1得ます。</p>",
+                    "actions": {
+                        "9EiPNrGzwLtuf9g0": {
+                            "name": "希望にダメージ"
+                        }
+                    }
                 },
                 "WdVLwy9RNkVlZnCL": {
                     "name": "骨まで断つ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>1d8+2</strong>の物理ダメージを受け、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "vMv4monku9LOSxUZ": {
                             "name": "攻撃",
@@ -11179,6 +11205,8 @@
                     }
                 },
                 "STesKV2KB61PlwCh": {
+                    "name": "墓は二つ掘れ",
+                    "description": "<p>@Lookup[@name]が倒されたとき、超近距離以内の対象に攻撃を行います（自分を倒したクリーチャーを優先します）。成功した場合、その対象は<strong>1d4+8</strong>の物理ダメージを受け、希望を<strong>1d4</strong>失います。</p>",
                     "actions": {
                         "NtGhAVVOJF6ZGBRv": {
                             "name": "攻撃"
@@ -11189,20 +11217,30 @@
         },
         "Skeleton Warrior": {
             "_note": "Skeleton Warrior",
+            "name": "骸骨の戦士",
+            "description": "<p>土に覆われ、錆びた刃で武装した骸骨。</p>",
+            "motivesAndTactics": "死を装う、群れで囲む、皮を奪う",
+            "attack": {
+                "name": "剣"
+            },
             "items": {
                 "ouvJweENF1kLYcOT": {
                     "name": "骨のみ",
                     "description": "<p>@Lookup[@name]は物理ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "zTepuF1Z5OObQdSi": {
-                            "name": "骨のみ"
+                            "name": "骨のみ",
+                            "description": "<p>戦士は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "hYl31ThCmZdc0MFa": {
+                    "name": "死んだままではいない",
+                    "description": "<p>@Lookup[@name]が倒されたとき、それにスポットライトを当てて<strong>d6</strong>をロールできます。結果が6で、戦場に他の敵対者がいる場合、@Lookup[@name]はマーク済みHPなしで再び組み上がります。</p>",
                     "actions": {
                         "QnuFrptj8oARaA3i": {
-                            "name": "使う"
+                            "name": "使う",
+                            "description": "<p>戦士が倒されたとき、それにスポットライトを当てて<strong>d6</strong>をロールできます。結果が6で、戦場に他の敵対者がいる場合、戦士はマーク済みHPなしで再び組み上がります。</p>"
                         }
                     }
                 }
@@ -11210,6 +11248,12 @@
         },
         "Soul-shattered Mage": {
             "_note": "Soul-shattered Mage",
+            "name": "魂砕けた魔法使い",
+            "description": "<p>隠されているべき知識によって精神を砕かれた呪文使い。</p>",
+            "motivesAndTactics": "未知の言葉で喃語を話す、不穏に笑う、制御を超えた力を振るう",
+            "attack": {
+                "name": "苦木の杖"
+            },
             "experiences": {
                 "TjEiWqba1sc8alr5": {
                     "name": "禁じられた知識"
@@ -11217,22 +11261,40 @@
             },
             "items": {
                 "JLBK3NQFk20ZaPZ7": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>魔法使いはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "86ZXTdwwNOtDhkxp": {
+                    "name": "砕けた魔法",
+                    "description": "<p><strong>ストレスを1マーク</strong>して<strong>[[/r d6]]</strong>をロールします。魔法使いは対応するムーブを使います：</p><ul><li><p>1〜2：次元の裂け目。遠距離以内の対象を1体選びます。その対象は、元の位置から近距離以内であなたが選ぶ一点へ転移し、体と心が組み直される際に<strong>2d6</strong>の直接魔法ダメージを受けます。</p></li><li><p>3〜4：時間の遅延。遠距離以内のPCの集団を選びます。各対象は、希望とともにロールするまで「鈍化」状態になります。「鈍化」のあいだ、対象は<em>脆弱</em>であり、移動するときストレスを1マークしなければなりません。</p></li><li><p>5〜6：不協和の幻視。近距離以内の最大3体の対象に攻撃を行います。魔法使いが成功した対象は<strong>2d8</strong>の直接魔法ダメージを受けます。</p></li></ul>",
                     "actions": {
                         "gPSIHi1qLoEhOodY": {
-                            "name": "ストレスをマーク"
+                            "name": "ストレスをマーク",
+                            "description": "<p><strong>ストレスを1マーク</strong>して<strong>[[/r d6]]</strong>をロールします。魔法使いは対応するムーブを使います：</p><ul><li><p>1〜2：次元の裂け目</p></li><li><p>3〜4：時間の遅延</p></li><li><p>5〜6：不協和の幻視</p></li></ul>"
+                        },
+                        "JW4Q8WDDDRyUuSSv": {
+                            "name": "次元の裂け目",
+                            "description": "<p>遠距離以内の対象を1体選びます。その対象は、元の位置から近距離以内であなたが選ぶ一点へ転移し、体と心が組み直される際に<strong>2d6</strong>の直接魔法ダメージを受けます。</p>"
+                        },
+                        "4BsOL1UvlgCXCB5P": {
+                            "name": "時間の遅延",
+                            "description": "<p>遠距離以内のPCの集団を選びます。各対象は、希望とともにロールするまで「鈍化」状態になります。「鈍化」のあいだ、対象は<em>脆弱</em>であり、移動するときストレスを1マークしなければなりません。</p>"
+                        },
+                        "dlfc8B2NMA8AX5NG": {
+                            "name": "不協和の幻視",
+                            "description": "<p>近距離以内の最大3体の対象に攻撃を行います。魔法使いが成功した対象は<strong>2d8</strong>の直接魔法ダメージを受けます。</p>"
                         }
                     },
                     "effects": {
                         "CUoOVC9YnIDuItcz": {
-                            "name": "鈍化"
+                            "name": "鈍化",
+                            "description": "<p>希望とともにロールするまで「鈍化」状態です。「鈍化」のあいだ、<em>脆弱</em>であり、移動するときストレスを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "z471ukb68Ffoza3k": {
                     "name": "我が痛みを知れ",
+                    "description": "<p>魔法使いがHPをマークしたとき、魔法使いがマークしているストレスの数と同じ数の<strong>d6</strong>をロールします。魔法使いは、超近距離以内のすべてのPCに、その合計と同じ直接魔法ダメージを与えます。</p>",
                     "actions": {
                         "ImLD2lQbTdzdgIpM": {
                             "areas": [
@@ -11247,6 +11309,9 @@
         },
         "Spectral Archer": {
             "_note": "Spectral Archer",
+            "name": "幽鬼の射手",
+            "description": "<p>霊気の弓を持つ幽霊の戦士。守るべき者が危うい間は先へ旅立てない。</p>",
+            "motivesAndTactics": "硬い物体をすり抜ける、乱戦から離れている、古い戦いを繰り返す",
             "attack": {
                 "name": "ロングボウ"
             },
@@ -11267,11 +11332,14 @@
                     },
                     "effects": {
                         "xNkkl7nwKFkiB9Rv": {
-                            "name": "ゴースト"
+                            "name": "ゴースト",
+                            "description": "<p>射手は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "0h4IVmCgWXyQngAw": {
+                    "name": "狙いを定めよ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、他のPCが少なくとも2人超近距離以内にいるPCに、遠距離以内から攻撃を行います。成功した場合、その対象は<strong>2d8+12</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "KahJnM94QQfy6oMK": {
                             "name": "攻撃"
@@ -11282,6 +11350,9 @@
         },
         "Spectral Captain": {
             "_note": "Spectral Captain",
+            "name": "幽鬼の隊長",
+            "description": "<p>死を越えて兵を率いる幽霊の指揮官。</p>",
+            "motivesAndTactics": "硬い物体をすり抜ける、兵を鼓舞する、古い戦いを繰り返す",
             "attack": {
                 "name": "ロングボウ"
             },
@@ -11302,11 +11373,14 @@
                     },
                     "effects": {
                         "kZhvwDvfcYQ10reO": {
-                            "name": "ゴースト"
+                            "name": "ゴースト",
+                            "description": "<p>隊長は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "7YVe4DfEWMNLXNvu": {
+                    "name": "終わらぬ戦い",
+                    "description": "<p><strong>恐怖を2消費</strong>して、倒された幽鬼の味方を最大[[/r 1d4+1]]体、最初に現れた地点へ（マーク済みHPとストレスなしで）戦いに戻します。</p>",
                     "actions": {
                         "eHmbN4aPLUuEoDQt": {
                             "name": "恐怖を消費する"
@@ -11314,6 +11388,8 @@
                     }
                 },
                 "X0vtV30ACVVZ6NfF": {
+                    "name": "持ちこたえよ",
+                    "description": "<p>@Lookup[@name]の幽鬼の味方がリアクションロールを行わされるとき、<strong>ストレスを1マーク</strong>して、それらの味方にそのロールへの＋2のボーナスを与えられます。</p>",
                     "actions": {
                         "aRg1bcPGUn69GPyB": {
                             "name": "ストレスをマーク"
@@ -11333,6 +11409,9 @@
         },
         "Spectral Guardian": {
             "_note": "Spectral Guardian",
+            "name": "幽鬼の守護者",
+            "description": "<p>槍と剣を持ち、務めに縛られた幽霊の戦士。</p>",
+            "motivesAndTactics": "硬い物体をすり抜ける、財宝を守る、古い戦いを繰り返す",
             "attack": {
                 "name": "スピア"
             },
@@ -11353,11 +11432,14 @@
                     },
                     "effects": {
                         "QDXyAMk33kJGe6hU": {
-                            "name": "ゴースト"
+                            "name": "ゴースト",
+                            "description": "<p>守護者は物理ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "L48tQmj5O3s2pjBn": {
+                    "name": "幽霊の刃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、超近距離以内の対象に攻撃を行います。成功した場合、<strong>2d10+6</strong>の物理ダメージを与え、対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "AdfULyYsj9YPcCj6": {
                             "name": "攻撃"
@@ -11368,14 +11450,25 @@
         },
         "Spellblade": {
             "_note": "Spellblade",
+            "name": "呪文剣士",
+            "description": "<p>剣技と魔法を組み合わせて必殺の効果を生む傭兵。</p>",
+            "motivesAndTactics": "撃つ、命じる、耐える",
+            "attack": {
+                "name": "力を込めた長剣"
+            },
             "experiences": {
                 "5K7W5e63iQNI0MdQ": {
                     "name": "魔法の知識"
                 }
             },
             "items": {
+                "BwuoAv3EWT0m1apk": {
+                    "name": "秘術の鋼",
+                    "description": "<p>@Lookup[@name]の通常の攻撃が与えるダメージは、物理かつ魔法として扱われます。</p>"
+                },
                 "a76dNCrcoZOH1RRT": {
                     "name": "制圧の衝撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の集団を対象にします。すべての対象は敏捷リアクションロールに成功しなければ<strong>1d8+2</strong>の魔法ダメージを受けます。この攻撃でHPをマークした対象1体ごとに、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "K4VnxigKTiu7hhZx": {
                             "name": "攻撃",
@@ -11389,6 +11482,7 @@
                 },
                 "piyJhdHzztabmZ8I": {
                     "name": "一体となって動く",
+                    "description": "<p><strong>恐怖を2消費</strong>して、遠距離以内の最大5体の味方にスポットライトを当てます。</p>",
                     "actions": {
                         "N42NPEu7fcVDXEvl": {
                             "name": "恐怖を消費する",
@@ -11413,6 +11507,12 @@
         },
         "Spellbound Armor": {
             "_note": "Spellbound Armor",
+            "name": "魔法に縛られた鎧",
+            "description": "<p>幽霊めいた淡い光輪を帯びて光る、空っぽの全身鎧。</p>",
+            "motivesAndTactics": "騒々しく鳴る、歯車仕掛けのように動く、黙って見張る",
+            "attack": {
+                "name": "ツヴァイハンダー"
+            },
             "experiences": {
                 "VMERIDdmeayI8njr": {
                     "name": "守護者"
@@ -11420,11 +11520,18 @@
             },
             "effects": {
                 "IGcCAL3xlCZpCawM": {
-                    "name": "脆弱"
+                    "name": "脆弱",
+                    "description": "脆弱状態のクリーチャーを対象とするロールはすべて有利になります。\nすでに脆弱なクリーチャーに、この状態を重ねて付与することはできません。"
                 }
             },
             "items": {
+                "6mqb7HLSxw2jRXB5": {
+                    "name": "疲れを知らぬ",
+                    "description": "<p>鎧はストレスをマークさせられません。効果によってストレスをマークさせられるとき、鎧はその効果のその部分を無視します。</p>"
+                },
                 "rioPJyaUZtTHWpa1": {
+                    "name": "がらがらと組み直る",
+                    "description": "<p>シーンごとに1回、鎧が倒されたとき、<strong>恐怖を1消費</strong>して再び動き出させられます。HPを2つ消し、直ちにスポットライトを当てます。</p>",
                     "actions": {
                         "pkce7e98R6WHYw5f": {
                             "name": "恐怖を消費する"
@@ -11435,16 +11542,28 @@
         },
         "Sprite": {
             "_note": "Sprite",
+            "name": "スプライト",
+            "description": "<p>毒を塗った矢で侵入者を襲う、小さな有翼の戦士。</p>",
+            "motivesAndTactics": "気づかれぬようにする、毒に仕事をさせる、荒野を守る",
+            "attack": {
+                "name": "針のように鋭い矢"
+            },
             "experiences": {
                 "4M4nDppk6iskH3eC": {
                     "name": "隠密行動"
+                },
+                "M2PbnC816rf2Am4w": {
+                    "name": "復仇"
                 }
             },
             "items": {
                 "M04qpWw3oAmwebn4": {
-                    "name": "ミニオン（5）"
+                    "name": "ミニオン（5）",
+                    "description": "<p>@Lookup[@name]はダメージを受けると倒されます。PCが@Lookup[@name]に与えたダメージ5ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "Uovw42uUT8p4fOub": {
+                    "name": "不可視の術",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]が攻撃するまで隠密にします。</p>",
                     "actions": {
                         "8uGwunoXJxiNqC5B": {
                             "name": "恐怖を消費する"
@@ -11452,14 +11571,23 @@
                     },
                     "effects": {
                         "Rd1B09tEhxNMb0cM": {
-                            "name": "不可視"
+                            "name": "不可視",
+                            "description": "<p>攻撃するまで<em>隠密</em>。</p>"
                         }
                     }
                 },
                 "BeEtOMk2QO2Mxloo": {
+                    "name": "夢花びらの毒",
+                    "description": "<p>@Lookup[@name]が通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、その対象がダメージを受けるまで「眠気」状態にできます。「眠気」のあいだ、対象はアクションロールを行う前に社交リアクションロールを行わなければなりません。失敗した場合、ストレスを2マークするか、ダメージを受けるまで眠り込みます。</p>",
                     "actions": {
                         "HwKdUshajXAPtEVE": {
                             "name": "恐怖を消費する"
+                        }
+                    },
+                    "effects": {
+                        "Nv397pCk0Tcu29vf": {
+                            "name": "眠気",
+                            "description": "<p>「眠気」のあいだ、アクションロールを行う前に社交リアクションロールを行わなければなりません。失敗した場合、ストレスを2マークするか、ダメージを受けるまで眠り込みます。</p>"
                         }
                     }
                 }
@@ -11467,11 +11595,21 @@
         },
         "Spy": {
             "_note": "Spy",
+            "name": "密偵",
+            "description": "<p>秘密を聞きつける場所に居合わせる才のある、熟練の諜報員。</p>",
+            "motivesAndTactics": "手を切って逃げる、姿を偽る、盗み聞く",
             "attack": {
                 "name": "ダガー"
             },
+            "experiences": {
+                "EhtLh4vyQvoZaL83": {
+                    "name": "諜報"
+                }
+            },
             "items": {
                 "csCWQuSqic5ckHeO": {
+                    "name": "秘密を集める",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]がシーン内のPCについての秘密を知っている経緯を描写します。</p>",
                     "actions": {
                         "iq5KzP5hgA4377fO": {
                             "name": "恐怖を消費する"
@@ -11479,12 +11617,15 @@
                     }
                 },
                 "UvgVDn0YjISLdKE4": {
+                    "name": "壁の蠅",
+                    "description": "<p>PCまたは集団が機微な事柄を話しているとき、<strong>ストレスを1マーク</strong>して、@Lookup[@name]がそのシーンに居合わせ、彼らを見張っていたことを明らかにできます。@Lookup[@name]が掴んだことを報告するためにシーンから逃れた場合、あなたは恐怖を<strong>1d4</strong>得ます。</p>",
                     "actions": {
                         "Ml8nt7SPNFc2iQno": {
                             "name": "ストレスをマーク"
                         },
                         "qCA2hTMIYGW0FhGy": {
-                            "name": "恐怖を得る"
+                            "name": "恐怖を得る",
+                            "description": "<p>@Lookup[@name]が掴んだことを報告するためにシーンから逃れた場合、あなたは恐怖を<strong>1d4</strong>得ます。</p>"
                         }
                     }
                 }

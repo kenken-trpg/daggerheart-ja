@@ -135,6 +135,7 @@ const NUMBER_WORDS = {
     once: '1',
     twice: '2',
     double: '2',
+    doubled: '2',
     doubles: '2',
     triple: '3',
     single: '1',
