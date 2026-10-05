@@ -2284,3 +2284,71 @@ to translate:     9260
 
 次は subclasses / classes（domains と語彙が重なる）、その後 adversaries /
 environments、items/*、最後に journals。
+
+## 工程9: subclasses パックを訳し切った
+
+160エントリ / 660フィールド、フォルダ22種（クラス名13＋基盤特徴・特化特徴・
+熟達特徴・サブクラス特徴・武術の構え・ティア1〜4）。クラス名はカタカナに統一
+（アサシン/バード/ブロウラー/ドルイド/ガーディアン/レンジャー/ローグ/セラフ/
+ソーサラー/ウォーロック/ウォリアー/ウィッチ/ウィザード）。
+
+### 新しく決めた用語
+
+ja.json に無い語は domains の訳語か upstream の定義から決めた。
+
+| 原語 | 訳語 | 根拠 |
+| --- | --- | --- |
+| Favor | 恩寵 | lang/ja.json |
+| Patron Dice | 庇護者ダイス | Favor と対になる Warlock 用語 |
+| Prayer Dice | 祈りのダイス | |
+| Slayer Dice | 討伐ダイス | |
+| Channeling | 伝導 | lang/ja.json |
+| Focus（Brawler の資源） | 集中 | lang/ja.json の Focus と同じ |
+| Hexed | 呪詛 | classes の Hex 特徴の定義から |
+| Glamoured | 幻惑 | |
+| Cloaked | 隠身 | domains の Cloaking Blast に合わせた（Hidden は 隠密） |
+| Recall（カード） | リコール | カードUIの「リコール」。知識特性の verb は 想起する |
+| Restrained | 拘束 | lang/ja.json |
+| Martial Stances | 武術の構え | |
+
+Cloaked と Hidden、カードの Recall と知識特性の recall は別語であり、
+ここを一語にまとめるとルールが変わる。
+
+### prepare の事前補完が `<p>` を落としていた
+
+辞書は素のテキストを持つのに、コンペンディウムのフィールドは一段落の文書で
+あることが多い。`Scary` は `<p>` 無しの裸のテキストとして出ていた。原文が
+持っている囲みを戻すようにした。lint の `<p>` 個数チェックが見つけた。
+
+### terms に除外ファイルを足した
+
+`lang/translation/terms-exempt.json`。`Full` は月相の「満月」であり UI の
+全回復の「完全」ではない。`Recall` も同様。本物の同形異義語で、放っておくと
+永久に報告が出続け、恒常的なノイズの入った報告は読まれなくなる。
+除外は1フィールド単位で、理由を併記する。
+
+### terms が空白を差異として報告していた
+
+`plain()` はタグのあった位置に空白を入れる。同じ文を片方は `<strong>` 入りで、
+片方は素で書いただけで、日本語では書かない空白の有無が訳語の不一致として
+報告されていた。空白を抜いて比較するようにした。
+
+### 実機確認
+
+```
+subclasses 160件: 英語のまま残った名前 0件
+フォルダ 61個（22種）すべて日本語
+月相: アクション 新月：希望を消費 / エフェクト 上弦・満月・下弦
+```
+
+`packs:check` 問題なし、`packs:terms` 一致。
+
+### 現状
+
+```
+packs enabled:    15/15
+translated:       1884
+to translate:     8600
+```
+
+次は classes、その後 adversaries / environments、items/*、最後に journals。
