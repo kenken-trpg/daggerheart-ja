@@ -1643,17 +1643,47 @@
             }
         },
         "Vexing Malison": {
-            "_note": "Vexing Malison"
+            "_note": "Vexing Malison",
+            "name": "苛む呪言",
+            "description": "<p>呪詛されたクリーチャーへの攻撃に有利を得ます。</p>",
+            "effects": {
+                "Rmw3sZTEYIejs3Va": {
+                    "name": "苛む呪言",
+                    "description": "<p>呪詛されたクリーチャーへの攻撃に有利を得ます。</p>",
+                    "changes": [
+                        "呪詛されたクリーチャーへの攻撃"
+                    ]
+                }
+            }
         },
         "Vigilant": {
             "_note": "Vigilant",
-            "name": "警戒"
+            "name": "警戒",
+            "description": "<p>攻撃の対象となったとき、<strong>ストレスを1マーク</strong>して、その攻撃に対する回避値に<strong>[[/r d6]]</strong>のボーナスを得られます。</p>",
+            "actions": {
+                "4oZ4pFro1PnCoENs": {
+                    "name": "構えをとる"
+                },
+                "akBB4AYAAZBpxLxA": {
+                    "name": "ストレスを消費"
+                }
+            },
+            "effects": {
+                "3ywLEf7h2TaVzOCf": {
+                    "name": "構え：警戒",
+                    "description": "<p>攻撃の対象となったとき、<strong>ストレスを1マーク</strong>して、その攻撃に対する回避値に<strong>d6</strong>のボーナスを得られます。</p>"
+                }
+            }
         },
         "Virtuoso": {
-            "_note": "Virtuoso"
+            "_note": "Virtuoso",
+            "name": "名手",
+            "description": "<p>あなたはその技において最高峰の一人であり、その腕前は限りを知りません。<strong>「才ある演者」</strong>の特徴の各歌を、<strong>大休憩ごとに2回</strong>演奏できます。</p>"
         },
         "Walk Between Worlds": {
             "_note": "Walk Between Worlds",
+            "name": "世界の狭間を歩く",
+            "description": "<p>平穏なひとときに、<strong>呪文発動ロール（13）</strong>を行います。休憩ごとに1回、成功した場合、<strong>ストレスを1マーク</strong>して死の帳の向こうへ踏み込み、近くの霊と語り合えます。呪文発動特性に等しい数のトークンをこのカードに置き、霊が質問に答えるたびに1つ取り除きます。最後のトークンが取り除かれたとき、またはシーンの終わりに、去ったのと同じ場所で現世に戻ります。</p>",
             "actions": {
                 "KPwMmCHMYD1ByXDt": {
                     "name": "呪文発動ロール"
@@ -1662,103 +1692,190 @@
         },
         "Warden's Protection": {
             "_note": "Warden's Protection",
+            "name": "守護者の加護",
+            "description": "<p>大休憩ごとに1回、希望を2消費して、近距離以内の1d4人の味方のHPを2つ消します。</p>",
             "actions": {
                 "ozYzhQfRt5sp19di": {
-                    "name": "治癒"
+                    "name": "治癒",
+                    "description": "<p>大休憩ごとに1回、希望を2消費して、近距離以内の[[/r 1d4]]人の味方のHPを2つ消します。</p>",
+                    "areas": [
+                        {
+                            "name": "守護者の加護"
+                        }
+                    ]
                 }
             }
         },
         "Weapon Specialist": {
             "_note": "Weapon Specialist",
+            "name": "武器の達人",
+            "description": "<p>複数の武器を危険なほど容易く操れます。攻撃が成功したとき、<strong>希望を1消費</strong>して、サブ武器のダメージダイスを1つダメージロールに加えられます。さらに、大休憩ごとに1回、討伐ダイスを振るとき、1が出たダイスを振り直せます。</p>",
             "actions": {
+                "vay9rVXJS3iksaVR": {
+                    "name": "希望を消費する",
+                    "description": "<p>複数の武器を危険なほど容易く操れます。攻撃が成功したとき、<strong>希望を1消費</strong>して、サブ武器のダメージダイスを1つダメージロールに加えられます。</p>"
+                },
                 "1bBFfxmywJpx5tfk": {
-                    "name": "振り直し"
+                    "name": "振り直し",
+                    "description": "<p>さらに、大休憩ごとに1回、討伐ダイスを振るとき、1が出たダイスを振り直せます。</p>"
                 }
             }
         },
         "Well-Connected": {
-            "_note": "Well-Connected"
+            "_note": "Well-Connected",
+            "name": "顔が広い",
+            "description": "<p>名の知れた町や環境に到着したとき、そこを故郷と呼ぶ知り合いが1人います。その人物に名前を付け、どう役に立ちそうかを書き留め、以下の一覧から事実を1つ選びます。</p><ul><li><p>私に借りがあるが、見つけるのは難しい。</p></li><li><p>見返りに何かを求めてくるだろう。</p></li><li><p>いつも大変な厄介事を抱えている。</p></li><li><p>かつては一緒だった。長い話になる。</p></li><li><p>良い別れ方ではなかった。</p></li></ul>"
         },
         "Wings of Light": {
-            "_note": "Wings of Light"
+            "_note": "Wings of Light",
+            "name": "光の翼",
+            "description": "<p>飛行できます。飛行している間、以下のことができます。</p><ul><li><p>ストレスを1マークして、自分とおおよそ同じ大きさ以下の、同意する他のクリーチャー1体を抱えて運ぶ。</p></li><li><p>希望を1消費して、攻撃が成功したとき1d8のダメージを追加で与える。</p></li></ul>",
+            "actions": {
+                "rg2sLCTqY2rTo861": {
+                    "name": "ストレスをマーク",
+                    "description": "<p>ストレスを1マークして、自分とおおよそ同じ大きさ以下の、同意する他のクリーチャー1体を抱えて運びます。</p>"
+                },
+                "1qjnoz5I7NqrWMkp": {
+                    "name": "希望を消費する",
+                    "description": "<p>希望を1消費して、攻撃が成功したとき1d8のダメージを追加で与えます。</p>"
+                }
+            },
+            "effects": {
+                "PfCwuVbKLxhnrm9X": {
+                    "name": "光の翼",
+                    "description": "<p>攻撃が成功したとき1d8のダメージを追加で与えます。</p>"
+                }
+            }
         },
         "Beastbound": {
-            "_note": "Beastbound"
+            "_note": "Beastbound",
+            "name": "獣契",
+            "description": "<p>動物の仲間と深い絆を結びたいなら、獣契を選びましょう。</p>"
         },
         "Call Of The Brave": {
-            "_note": "Call Of The Brave"
+            "_note": "Call Of The Brave",
+            "name": "勇者の呼び声",
+            "description": "<p>敵の力を自らの力の糧としたいなら、勇者の呼び声を選びましょう。</p>"
         },
         "Call Of The Slayer": {
-            "_note": "Call Of The Slayer"
+            "_note": "Call Of The Slayer",
+            "name": "討伐者の呼び声",
+            "description": "<p>圧倒的な力で敵対者を討ち倒したいなら、討伐者の呼び声を選びましょう。</p>"
         },
         "Divine Wielder": {
-            "_note": "Divine Wielder"
+            "_note": "Divine Wielder",
+            "name": "神器の使い手",
+            "description": "<p>伝説の武器で戦場を支配したいなら、神器の使い手を選びましょう。</p>"
         },
         "Elemental Origin": {
-            "_note": "Elemental Origin"
+            "_note": "Elemental Origin",
+            "name": "元素の出自",
+            "description": "<p>生の魔法を通わせて</p><p>特定の元素の姿をとらせたいなら、元素の出自を選びましょう</p>"
         },
         "Executioners Guild": {
-            "_note": "Executioners Guild"
+            "_note": "Executioners Guild",
+            "name": "処刑人組合",
+            "description": "<p>致死の精確さで標的を討ち倒したいなら、処刑人組合を選びましょう。</p>"
         },
         "Hedge": {
-            "_note": "Hedge"
+            "_note": "Hedge",
+            "name": "野の魔女",
+            "description": "<p>自らの技で自分とパーティを強化したいなら、野の魔女を選びましょう。</p>"
         },
         "Juggernaut": {
-            "_note": "Juggernaut"
+            "_note": "Juggernaut",
+            "name": "粉砕者",
+            "description": "<p>打ち砕く一撃で相手を粉砕したいなら、粉砕者を選びましょう。</p>"
         },
         "Martial Artist": {
-            "_note": "Martial Artist"
+            "_note": "Martial Artist",
+            "name": "武術家",
+            "description": "<p>さまざまな戦闘スタイルを駆使して敵を排除したいなら、武術家を選びましょう。</p>"
         },
         "Moon": {
-            "_note": "Moon"
+            "_note": "Moon",
+            "name": "月",
+            "description": "<p>天の力を体現して魔法を増幅したいなら、月を選びましょう。</p>"
         },
         "Nightwalker": {
-            "_note": "Nightwalker"
+            "_note": "Nightwalker",
+            "name": "夜歩き",
+            "description": "<p>影を操って環境を渡り歩きたいなら、夜歩きを選びましょう。</p>"
         },
         "Pact of the Endless": {
-            "_note": "Pact of the Endless"
+            "_note": "Pact of the Endless",
+            "name": "終わりなき者の契約",
+            "description": "<p>敵に屈せず立ち、死を避けたいなら、終わりなき者の契約を選びましょう。</p>"
         },
         "Pact of the Wrathful": {
-            "_note": "Pact of the Wrathful"
+            "_note": "Pact of the Wrathful",
+            "name": "憤怒の者の契約",
+            "description": "<p>自分に逆らう者を滅ぼしたいなら、憤怒の者の契約を選びましょう。</p>"
         },
         "Poisoners Guild": {
-            "_note": "Poisoners Guild"
+            "_note": "Poisoners Guild",
+            "name": "毒使い組合",
+            "description": "<p>苛烈な病苦で標的を弱らせたいなら、毒使い組合を選びましょう。</p>"
         },
         "Primal Origin": {
-            "_note": "Primal Origin"
+            "_note": "Primal Origin",
+            "name": "原初の出自",
+            "description": "<p>呪文の汎用性を強力な形で広げたいなら、原初の出自を選びましょう。</p>"
         },
         "School Of Knowledge": {
-            "_note": "School Of Knowledge"
+            "_note": "School Of Knowledge",
+            "name": "知識の学派",
+            "description": "<p>周囲の世界への鋭い理解を得たいなら、知識の学派を選びましょう。</p>"
         },
         "School Of War": {
-            "_note": "School Of War"
+            "_note": "School Of War",
+            "name": "戦の学派",
+            "description": "<p>鍛え上げた魔法を戦いに用いたいなら、戦の学派を選びましょう。</p>"
         },
         "Stalwart": {
-            "_note": "Stalwart"
+            "_note": "Stalwart",
+            "name": "堅忍",
+            "description": "<p>重い一撃を受け止めてなお戦い続けたいなら、堅忍を選びましょう。</p>"
         },
         "Syndicate": {
-            "_note": "Syndicate"
+            "_note": "Syndicate",
+            "name": "シンジケート",
+            "description": "<p>どこへ行っても伝手の網を持ちたいなら、シンジケートを選びましょう。</p>"
         },
         "Troubadour": {
-            "_note": "Troubadour"
+            "_note": "Troubadour",
+            "name": "吟遊詩人",
+            "description": "<p>音楽を奏でて味方を鼓舞したいなら、吟遊詩人を選びましょう。</p>"
         },
         "Vengeance": {
-            "_note": "Vengeance"
+            "_note": "Vengeance",
+            "name": "復仇",
+            "description": "<p>自分や味方を傷つけた敵を討ち倒したいなら、復仇を選びましょう。</p>"
         },
         "Warden of Renewal": {
-            "_note": "Warden of Renewal"
+            "_note": "Warden of Renewal",
+            "name": "再生の守護者",
+            "description": "<p>強力な魔法でパーティを癒したいなら、再生の守護者を選びましょう。</p>"
         },
         "Warden of the Elements": {
-            "_note": "Warden of the Elements"
+            "_note": "Warden of the Elements",
+            "name": "元素の守護者",
+            "description": "<p>野生の自然元素を体現したいなら、元素の守護者を選びましょう。</p>"
         },
         "Wayfinder": {
-            "_note": "Wayfinder"
+            "_note": "Wayfinder",
+            "name": "道標",
+            "description": "<p>獲物を狩り、致命の一撃を放ちたいなら、道標を選びましょう。</p>"
         },
         "Winged Sentinel": {
-            "_note": "Winged Sentinel"
+            "_note": "Winged Sentinel",
+            "name": "翼ある守衛",
+            "description": "<p>空へ舞い上がり、天から打ち砕く一撃を放ちたいなら、翼ある守衛を選びましょう。</p>"
         },
         "Wordsmith": {
-            "_note": "Wordsmith"
+            "_note": "Wordsmith",
+            "name": "言葉の匠",
+            "description": "<p>巧みな言葉遊びで人々を魅了したいなら、言葉の匠を選びましょう。</p>"
         }
     }
 }
