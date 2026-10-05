@@ -1161,65 +1161,220 @@
             }
         },
         "Path Forward": {
-            "_note": "Path Forward"
+            "_note": "Path Forward",
+            "name": "進むべき道",
+            "description": "<p>以前に訪れた場所へ向かうとき、またはその場所にあったことのある物を携えているとき、目的地までの最短かつ最も直接的な道を見つけられます。</p>"
         },
         "Patron's Fury": {
-            "_note": "Patron's Fury"
+            "_note": "Patron's Fury",
+            "name": "庇護者の憤怒",
+            "description": "<p><strong>恩寵を1消費</strong>して、重傷ダメージを与えるかシーンが終わるまで、攻撃に庇護者の力を帯びさせます。この効果が有効な間にダメージロールを行うとき、ティアに等しい数の庇護者ダイスも振り、その合計を与えるダメージに加えます。</p>",
+            "actions": {
+                "3oUnlLqQyd0zDHMD": {
+                    "name": "恩寵を消費する"
+                }
+            },
+            "effects": {
+                "A8okI37ZgcpYTIL6": {
+                    "name": "庇護者の憤怒",
+                    "description": "<p>この効果が有効な間にダメージロールを行うとき、ティアに等しい数の庇護者ダイスも振り、その合計を与えるダメージに加えます。</p>"
+                }
+            }
         },
         "Patron's Mantle": {
-            "_note": "Patron's Mantle"
+            "_note": "Patron's Mantle",
+            "name": "庇護者の衣",
+            "description": "<p><strong>恩寵を1消費</strong>して、重傷ダメージを受けるかシーンが終わるまで続く、庇護者の恐るべき相で身を包みます。この効果が有効な間、ダメージしきい値にティアに等しいボーナスを得て、対象を威圧するためのアクションロールに有利を得ます。</p>",
+            "actions": {
+                "4rtdJw7LSUvCzsSm": {
+                    "name": "恩寵を消費する"
+                }
+            },
+            "effects": {
+                "afUbEgMRpjjlmuOw": {
+                    "name": "庇護者の衣",
+                    "description": "<p>この効果が有効な間、ダメージしきい値にティアに等しいボーナスを得て、対象を威圧するためのアクションロールに有利を得ます。</p>",
+                    "changes": [
+                        null,
+                        null,
+                        "対象を威圧するためのアクションロール"
+                    ]
+                }
+            }
         },
         "Perfect Recall": {
             "_note": "Perfect Recall",
+            "name": "完全記憶",
+            "description": "<p>休憩ごとに1回、保管庫にあるドメインカードをリコールするとき、そのリコールコストを1減らせます。</p>",
             "actions": {
                 "rFZj0ZsnJCc0PS3h": {
-                    "name": "想起する"
+                    "name": "リコール"
                 }
             }
         },
         "Poison Compendium": {
-            "_note": "Poison Compendium"
+            "_note": "Poison Compendium",
+            "name": "毒物大全",
+            "description": "<p>以下の毒も知っています。</p><ul><li><p><strong>ミッドナイト・ヴァイン：</strong>対象は、この状態を解除するためにストレスを1マークするまで、攻撃ロールに不利を受けます。</p></li><li><p><strong>ゴーゴン・ルート：</strong>対象は一時的に<em>拘束</em>されます。</p></li></ul>",
+            "actions": {
+                "GUWDhuWJiqwANvR3": {
+                    "name": "ミッドナイト・ヴァイン",
+                    "description": "<p>対象は、この状態を解除するためにストレスを1マークするまで、攻撃ロールに不利を受けます。</p>"
+                },
+                "tuUUVH5JxDjzF4O9": {
+                    "name": "ゴーゴン・ルート",
+                    "description": "<p>対象は一時的に<em>拘束</em>されます。</p>"
+                }
+            },
+            "effects": {
+                "bNPKUrkGNZLkWRoF": {
+                    "name": "ミッドナイト・ヴァイン",
+                    "description": "<p>対象は、この状態を解除するためにストレスを1マークするまで、攻撃ロールに不利を受けます。</p>",
+                    "changes": [
+                        "攻撃ロール"
+                    ]
+                },
+                "8YpVnj2tXjIZr8PG": {
+                    "name": "ゴーゴン・ルート"
+                }
+            }
         },
         "Power of the Gods": {
-            "_note": "Power of the Gods"
+            "_note": "Power of the Gods",
+            "name": "神々の力",
+            "description": "<p>飛行している間、「光の翼」の特徴による追加ダメージが1d8ではなく1d12になります。</p>"
         },
         "Prepared": {
-            "_note": "Prepared"
+            "_note": "Prepared",
+            "name": "備えあり",
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
         },
         "Pummeljoy": {
-            "_note": "Pummeljoy"
+            "_note": "Pummeljoy",
+            "name": "殴打の喜び",
+            "description": "<p>近接武器による攻撃でクリティカル成功したとき、希望を1つ追加で得て、ストレスを1つ追加で消し、その攻撃の習熟に＋1のボーナスを得ます。</p>",
+            "effects": {
+                "vrE41rsFdA9q6so2": {
+                    "name": "殴打の喜び",
+                    "description": "<p>その攻撃の習熟に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Quick": {
             "_note": "Quick",
-            "name": "迅速"
+            "name": "迅速",
+            "description": "<p>攻撃を行うとき、集中を1消費するか<strong>ストレスを1マーク</strong>して、その攻撃で射程内の別のクリーチャーも対象にできます。</p>",
+            "actions": {
+                "PQCbbHf8YZVe6Xqr": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "E3nMTwKEtVGuqaqS": {
+                    "name": "構え：迅速",
+                    "description": "<p>攻撃を行うとき、集中を1消費するか<strong>ストレスを1マーク</strong>して、その攻撃で射程内の別のクリーチャーも対象にできます。</p>"
+                }
+            }
         },
         "Regeneration": {
-            "_note": "Regeneration"
+            "_note": "Regeneration",
+            "name": "再生",
+            "description": "<p>クリーチャーに触れ、希望を3消費します。そのクリーチャーはHPを1d4つ消します。</p>",
+            "actions": {
+                "kD2kWWj0oR7ZxyVs": {
+                    "name": "クリーチャーを癒す"
+                }
+            }
         },
         "Regenerative Reach": {
-            "_note": "Regenerative Reach"
+            "_note": "Regenerative Reach",
+            "name": "再生の届く先",
+            "description": "<p>「再生」の特徴で、至近以内のクリーチャーを対象にできます。</p>"
         },
         "Reliable Backup": {
-            "_note": "Reliable Backup"
+            "_note": "Reliable Backup",
+            "name": "頼れる後ろ盾",
+            "description": "<p>「どこにでも伝手」の特徴をセッションごとに3回使用できます。その特徴を使うときに選べる恩恵の一覧に、以下の選択肢が追加されます。</p><ul><li><p>HPを1つ以上マークしたとき、その人物が駆け出して盾となり、マークするHPを1つ減らします。</p></li><li><p>会話の中で社交ロールを行うとき、その人物が後押ししてくれます。希望ダイスとしてd20を振れます。</p></li></ul>"
         },
         "Reliable": {
             "_note": "Reliable",
-            "name": "信頼"
+            "name": "信頼",
+            "description": "<p>攻撃ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "xjwcxV47Ms9zuZdy": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "fwzWT0E4TeDptHek": {
+                    "name": "構え：信頼",
+                    "description": "<p>攻撃ロールに＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Revenge": {
-            "_note": "Revenge"
+            "_note": "Revenge",
+            "name": "復讐",
+            "description": "<p>近接射程内の敵対者のあなたへの攻撃が成功したとき、ストレスを2マークして、その攻撃者にHPを1つマークさせられます。</p>",
+            "actions": {
+                "e00FXbyXZ8bHRY2t": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Rise to the Challenge": {
-            "_note": "Rise to the Challenge"
+            "_note": "Rise to the Challenge",
+            "name": "試練に立ち上がれ",
+            "description": "<p>高まる危険の前でも警戒を怠りません。未マークのHPが2つ以下の間、希望ダイスとして<strong>d20</strong>を振れます。</p>",
+            "effects": {
+                "1oRkTWqpjbdPJ8XE": {
+                    "name": "試練に立ち上がれ",
+                    "description": "<p>高まる危険の前でも警戒を怠りません。未マークのHPが2つ以下の間、希望ダイスとして<strong>d20</strong>を振れます。</p>"
+                }
+            }
         },
         "Rousing Speech": {
-            "_note": "Rousing Speech"
+            "_note": "Rousing Speech",
+            "name": "鼓舞の演説",
+            "description": "<p><strong>大休憩ごとに1回</strong>、心からの鼓舞に満ちた演説を行えます。<strong>遠距離</strong>以内の<strong>すべての味方</strong>は<strong>ストレスを2つ消します</strong>。</p>",
+            "actions": {
+                "WNtHiko4DRGbxKnm": {
+                    "name": "仲間に語りかけよう！",
+                    "description": "<p><strong>大休憩ごとに1回</strong>、心からの鼓舞に満ちた演説を行えます。<strong>遠距離</strong>以内の<strong>すべての味方</strong>は<strong>ストレスを2つ消します</strong><strong>。</strong></p>",
+                    "areas": [
+                        {
+                            "name": "鼓舞の演説"
+                        }
+                    ]
+                }
+            }
         },
         "Rugged": {
-            "_note": "Rugged"
+            "_note": "Rugged",
+            "name": "剛健",
+            "description": "<p>重傷値に永続＋3のボーナスを得ます。</p>",
+            "effects": {
+                "SbSlCmhpgMii1NNL": {
+                    "name": "剛健",
+                    "description": "<p>重傷値に永続＋3のボーナスを得ます。</p>"
+                }
+            }
         },
         "Ruthless Predator": {
-            "_note": "Ruthless Predator"
+            "_note": "Ruthless Predator",
+            "name": "非情な捕食者",
+            "description": "<p>ダメージロールを行うとき、ストレスを1マークして習熟に＋1のボーナスを得られます。さらに、敵対者に重傷ダメージを与えたとき、その敵対者はストレスを1マークしなければなりません。</p>",
+            "actions": {
+                "0YRLL1HC4XS3tX00": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "8BNwCS7ueIQuvn2M": {
+                    "name": "非情な捕食者",
+                    "description": "<p>ダメージロールを行うとき、ストレスを1マークして習熟に＋1のボーナスを得られます。さらに、敵対者に重傷ダメージを与えたとき、その敵対者はストレスを1マークしなければなりません。</p>"
+                }
+            }
         },
         "Sacred Resonance": {
             "_note": "Sacred Resonance"
