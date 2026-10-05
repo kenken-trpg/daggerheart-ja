@@ -25,6 +25,9 @@
 import fs from 'fs/promises';
 import path from 'path';
 
+import { establishedWordings, flatten, GLOSSARY_DIR, loadGlossaries, normalize } from './glossary.mjs';
+import { freshness, hash, readSources, writeSources } from './sources.mjs';
+
 const LANG = 'lang';
 /*
  * The English original is upstream's, not ours, so it is fetched rather than
@@ -33,7 +36,6 @@ const LANG = 'lang';
  */
 const REFERENCE = path.join(LANG, '.reference', 'en.json');
 const TRANSLATION = path.join(LANG, 'translation');
-const GLOSSARY_DIR = path.join(TRANSLATION, 'glossary');
 const PENDING = path.join(TRANSLATION, 'pending.json');
 
 /* Strings that are the same in both languages by design. */
@@ -51,14 +53,6 @@ async function readReference() {
     }
 }
 
-function flatten(object, prefix = '', out = {}) {
-    for (const [key, value] of Object.entries(object)) {
-        if (value && typeof value === 'object' && !Array.isArray(value)) flatten(value, `${prefix}${key}.`, out);
-        else out[prefix + key] = value;
-    }
-    return out;
-}
-
 /** Rebuild a flat key->value map into en.json's nested shape and key order. */
 function nest(reference, values, prefix = '') {
     const out = {};
@@ -68,73 +62,6 @@ function nest(reference, values, prefix = '') {
         else out[key] = values[full] ?? value;
     }
     return out;
-}
-
-/**
- * Glossaries are matched on the English string rather than the key, so a wording
- * approved once carries over to every key that reuses it. Normalizing absorbs the
- * punctuation drift between the SRD, the CSV exports and en.json.
- */
-const normalize = string =>
-    String(string)
-        .toLowerCase()
-        .replace(/[−–—]/g, '-')
-        .replace(/[‘’]/g, '\'')
-        .replace(/\s+/g, ' ')
-        .replace(/[.。]$/, '')
-        .trim();
-
-function parseCsv(text) {
-    const rows = [];
-    let row = [],
-        field = '',
-        quoted = false;
-    for (let i = 0; i < text.length; i++) {
-        const char = text[i];
-        if (quoted) {
-            if (char !== '"') field += char;
-            else if (text[i + 1] === '"') (field += '"'), i++;
-            else quoted = false;
-        } else if (char === '"') quoted = true;
-        else if (char === ',') (row.push(field), (field = ''));
-        else if (char === '\n') (row.push(field), rows.push(row), (row = []), (field = ''));
-        else if (char !== '\r') field += char;
-    }
-    if (field || row.length) (row.push(field), rows.push(row));
-    return rows;
-}
-
-/**
- * Every CSV in lang/translation/glossary/ maps an English string to a Japanese one
- * in its first two columns. Later files win, so an SRD-wide glossary can be dropped
- * in front of a narrower correction file by name. Each entry remembers which file
- * it came from, so `diff` can attribute a suggested wording to its source.
- *
- * `only` narrows the load to the glossaries whose filename contains it, which is how
- * one external translation gets compared on its own rather than through the merged
- * stack of every glossary present.
- */
-async function loadGlossaries(only) {
-    const glossary = new Map();
-    const sources = [];
-    let files = [];
-    try {
-        files = (await fs.readdir(GLOSSARY_DIR)).filter(f => f.endsWith('.csv')).toSorted();
-    } catch {
-        return { glossary, sources };
-    }
-    if (only) files = files.filter(file => file.includes(only));
-    for (const file of files) {
-        const rows = parseCsv((await fs.readFile(path.join(GLOSSARY_DIR, file), 'utf8')).replace(/^﻿/, ''));
-        let entries = 0;
-        for (const [english, japanese] of rows.slice(1)) {
-            if (!english?.trim() || !japanese?.trim()) continue;
-            glossary.set(normalize(english), { japanese: japanese.trim(), file });
-            entries++;
-        }
-        sources.push({ file, entries });
-    }
-    return { glossary, sources };
 }
 
 async function analyze() {
@@ -148,13 +75,24 @@ async function analyze() {
     );
 
     /* ja.json's own en->ja pairs are the house style, and outrank any glossary. */
-    const established = new Map();
-    for (const key of Object.keys(ja)) {
-        if (typeof en[key] !== 'string' || typeof ja[key] !== 'string' || en[key] === ja[key]) continue;
-        established.set(normalize(en[key]), ja[key]);
+    const established = establishedWordings(en, ja);
+
+    /*
+     * Keys whose English upstream has rewritten since the Japanese was written.
+     * The key set says nothing about these -- see tools/sources.mjs.
+     */
+    const record = await readSources('ui');
+    const reworded = [];
+    const unstamped = [];
+    for (const key of Object.keys(en)) {
+        if (typeof en[key] !== 'string' || typeof ja[key] !== 'string') continue;
+        if (en[key] === ja[key]) continue;
+        const state = freshness(record, key, en[key]);
+        if (state === 'reworded') reworded.push(key);
+        else if (state === 'unstamped') unstamped.push(key);
     }
 
-    return { en, ja, untranslated, retired, fallback, established };
+    return { en, ja, untranslated, retired, fallback, established, reworded, unstamped, record };
 }
 
 const options = process.argv.slice(3);
@@ -165,33 +103,56 @@ const flag = name => {
 
 const commands = {
     async report() {
-        const { en, untranslated, retired, fallback } = await analyze();
+        const { en, ja, untranslated, retired, fallback, reworded, unstamped } = await analyze();
         const { sources } = await loadGlossaries();
-        console.log(`en.json keys:    ${Object.keys(en).length}`);
-        console.log(`to translate:    ${untranslated.length}`);
+        console.log(`en.json keys:     ${Object.keys(en).length}`);
+        console.log(`to translate:     ${untranslated.length}`);
         console.log(`retired upstream: ${retired.length}`);
         console.log(`English fallback: ${fallback.length}`);
+        console.log(`reworded upstream: ${reworded.length}`);
+        if (unstamped.length) console.log(`unstamped:        ${unstamped.length} (run \`lang-sync stamp\`)`);
         console.log(
-            `glossaries:      ${sources.length ? sources.map(s => `${s.file} (${s.entries})`).join(', ') : 'none'}`
+            `glossaries:       ${sources.length ? sources.map(s => `${s.file} (${s.entries})`).join(', ') : 'none'}`
         );
         for (const key of [...untranslated, ...fallback].slice(0, 20)) console.log(`  ${key}: ${en[key]}`);
+        /*
+         * Reworded keys are listed in full, not capped: each one is a shipped
+         * Japanese string that now answers a different English sentence, and
+         * nothing else in this tool will mention it again.
+         */
+        for (const key of reworded) {
+            console.log(`  reworded ${key}`);
+            console.log(`    en: ${en[key]}`);
+            console.log(`    ja: ${ja[key]}`);
+        }
     },
 
     async prepare() {
-        const { en, untranslated, retired, fallback, established } = await analyze();
+        const { en, ja, untranslated, retired, fallback, established, reworded } = await analyze();
         const { glossary, sources } = await loadGlossaries();
 
         const pending = {};
         let prefilled = 0;
         for (const key of [...untranslated, ...fallback]) {
             const english = String(en[key]);
-            const known = established.get(normalize(english)) ?? glossary.get(normalize(english))?.japanese;
+            const known = (established.get(normalize(english)) ?? glossary.get(normalize(english)))?.japanese;
             if (known) prefilled++;
             pending[key] = { en: english, ja: known ?? '' };
         }
 
+        /*
+         * A reworded key already has Japanese, so it carries `was`: the wording
+         * that answered the old English. Leaving `ja` empty keeps the shipped
+         * translation in place until someone decides on the new one -- `apply`
+         * skips empty values -- so this never blanks a string by itself.
+         */
+        for (const key of reworded) pending[key] = { en: String(en[key]), was: ja[key], ja: '' };
+
         await fs.writeFile(PENDING, `${JSON.stringify({ retired, pending }, null, 4)}\n`);
-        console.log(`${PENDING}: ${Object.keys(pending).length} entries, ${prefilled} pre-filled from`);
+        console.log(
+            `${PENDING}: ${Object.keys(pending).length} entries` +
+                `${reworded.length ? ` (${reworded.length} reworded upstream)` : ''}, ${prefilled} pre-filled from`
+        );
         console.log(`  established ja.json wordings and ${sources.length} glossary file(s)`);
         console.log(`Fill in the empty "ja" values, then run: node tools/lang-sync.mjs apply`);
     },
@@ -256,17 +217,56 @@ const commands = {
         const ja = flatten(await readJson(path.join(LANG, 'ja.json')));
         const { pending } = await readJson(PENDING);
 
+        const en = flatten(reference);
+        const record = await readSources('ui');
+
         let applied = 0;
         for (const [key, entry] of Object.entries(pending)) {
             if (!entry.ja?.trim()) continue;
             ja[key] = entry.ja;
+            /* Record which English this wording answers, for `report` to re-check. */
+            if (typeof en[key] === 'string') record[key] = hash(en[key]);
             applied++;
         }
+        /* Keys upstream has dropped keep no record. */
+        for (const key of Object.keys(record)) if (!(key in en)) delete record[key];
+        await writeSources('ui', record);
 
         /* Nesting against en.json drops retired keys and restores upstream ordering. */
         await fs.writeFile(path.join(LANG, 'ja.json'), `${JSON.stringify(nest(reference, ja), null, 4)}\n`);
         const skipped = Object.keys(pending).length - applied;
         console.log(`lang/ja.json updated: ${applied} applied${skipped ? `, ${skipped} left as-is` : ''}`);
+    },
+
+    /**
+     * Declare every translation currently in lang/ja.json correct for the
+     * English it sits against, recording the hash so later rewrites stand out.
+     *
+     * This is a baseline, needed once because the translations predate the
+     * recording. After that `apply` keeps the record up to date on its own, and
+     * running `stamp` again would bless whatever drift has accumulated -- so it
+     * reports what it is about to accept and takes --force to do it.
+     */
+    async stamp() {
+        const { en, ja, reworded, unstamped } = await analyze();
+        if (reworded.length && !flag('force')) {
+            console.error(`${reworded.length} key(s) are reworded upstream; stamping would accept the old Japanese.`);
+            console.error('Retranslate them (prepare/apply), or pass --force to accept them as they are.');
+            process.exit(1);
+        }
+
+        const record = await readSources('ui');
+        let stamped = 0;
+        for (const key of Object.keys(en)) {
+            if (typeof en[key] !== 'string' || typeof ja[key] !== 'string' || en[key] === ja[key]) continue;
+            const next = hash(en[key]);
+            if (record[key] === next) continue;
+            record[key] = next;
+            stamped++;
+        }
+        for (const key of Object.keys(record)) if (!(key in en)) delete record[key];
+        await writeSources('ui', record);
+        console.log(`${stamped} key(s) stamped${unstamped.length ? ` (${unstamped.length} had no record)` : ''}`);
     }
 };
 

@@ -3,7 +3,7 @@
     "collection": "daggerheart.transformations",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "folders": {
-        "Transformation Features": "変身の特徴"
+        "Transformation Features": "変身特徴"
     },
     "entries": {
         "Change Shape": {

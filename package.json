@@ -11,11 +11,14 @@
         "lang:prepare": "node ./tools/lang-sync.mjs prepare",
         "lang:diff": "node ./tools/lang-sync.mjs diff",
         "lang:apply": "node ./tools/lang-sync.mjs apply",
+        "lang:stamp": "node ./tools/lang-sync.mjs stamp",
         "packs:export": "node ./tools/packs-sync.mjs export",
         "packs:prepare": "node ./tools/packs-sync.mjs prepare",
         "packs:apply": "node ./tools/packs-sync.mjs apply",
+        "packs:stamp": "node ./tools/packs-sync.mjs stamp",
         "packs:report": "node ./tools/packs-sync.mjs report",
         "packs:audit": "node ./tools/packs-sync.mjs audit",
+        "packs:terms": "node ./tools/packs-sync.mjs terms",
         "packs:check": "node ./tools/packs-sync.mjs check",
         "packs:probe": "node tools/mapping-probe.mjs"
     }

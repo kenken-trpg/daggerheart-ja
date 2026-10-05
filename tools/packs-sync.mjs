@@ -3,7 +3,7 @@
  *
  * Where lang-sync tracks UI strings against upstream's en.json, this tracks the
  * compendium content against upstream's src/packs, and writes it in the shape
- * Babele loads: babele/ja/<collection>.json, keyed by document `_id`.
+ * Babele loads: babele/ja/<collection>.json, keyed by document name.
  *
  * `export`  rebuilds those files from the fetched upstream packs, carrying every
  *           existing translation over. It never drops a translation, the same
@@ -11,8 +11,13 @@
  * `prepare` writes everything still untranslated to a working file for a
  *           translator to fill in.
  * `apply`   merges that working file back into babele/ja/.
- * `report` shows coverage per pack: translated, untranslated, and entries
- *          upstream has since removed.
+ * `report` shows coverage per pack: translated, untranslated, entries upstream
+ *          has since removed, and fields whose English upstream has rewritten
+ *          since the Japanese was written (tools/sources.mjs).
+ * `stamp`  baselines that record, declaring the translations present correct
+ *          for the English they currently sit against.
+ * `terms`  holds the compendium to the wordings the UI and the glossaries
+ *          already use, and to itself.
  * `check`  verifies that a translation has not broken what must survive it --
  *          Foundry enrichers (@UUID[...], @Lookup[...], [[/dr ...]]) have to
  *          appear in the translation exactly as often as in the original.
@@ -21,16 +26,20 @@
  * applies whatever the file contains, so an empty string blanks the original --
  * the entry renders with no name at all. This cost a live debugging session.
  *
- * Keys are `_id`, not names, because upstream renames entries and adds hundreds
- * per quarter; an id survives a rename. The cost is that the files stop being
- * readable, so each entry carries `_note` with the English original. Babele
- * ignores keys its mapping does not know, so `_note` rides along harmlessly.
+ * Keys are the English document name, with the `_id` as the fallback when two
+ * documents in a pack share one -- see entryKeys(). Names are what Babele's
+ * `referencedDocumentField` looks documents up by, so an id-keyed file cannot
+ * answer it. Each entry also carries `_note` with the English name, so a diff
+ * stays readable; Babele ignores keys its mapping does not know.
  *
  * Nothing here reaches the network; run tools/fetch-reference.mjs first.
  */
 
 import fs from 'fs/promises';
 import path from 'path';
+
+import { establishedWordings, flatten, loadGlossaries, normalize } from './glossary.mjs';
+import { freshness, hash, readSources, writeSources } from './sources.mjs';
 
 const REFERENCE_PACKS = path.join('lang', '.reference', 'packs');
 const PINNED = path.join('lang', '.reference', 'pinned.json');
@@ -497,6 +506,32 @@ const plain = text =>
         .trim()
         .slice(0, 100);
 
+/**
+ * The key one translated field gets in its source-hash record: the document's
+ * entry key and the field path inside it, which is exactly how `audit` names a
+ * field. Folder names use the reserved `_folders` entry key.
+ */
+/* `stamp` collects every pack's record before writing any of them. */
+const pendingStamps = new Map();
+
+const sourceKey = (entry, where) => `${entry} :: ${where}`;
+
+/** Every translated field of one pack, as [recordKey, englishSource] pairs. */
+function* translatedFields(pack, documents, keys, current) {
+    for (const document of documents) {
+        const original = translatableFields(document, pack);
+        const translation = current.entries?.[keys.get(document._id)] ?? {};
+        for (const [where, source, value] of leaves(original, translation)) {
+            if (!source || !value) continue;
+            yield [sourceKey(keys.get(document._id), where), source, value, document];
+        }
+    }
+    for (const [name, value] of Object.entries(current.folders ?? {})) {
+        if (!value) continue;
+        yield [sourceKey(FOLDERS, name), name, value, null];
+    }
+}
+
 const commands = {
     async export() {
         const pinned = await readJson(PINNED);
@@ -545,6 +580,7 @@ const commands = {
         for (const pack of ENABLED) {
             const { collection, file, documents, folderNames, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
+            const record = await readSources(collection);
             const entries = {};
 
             for (const document of documents) {
@@ -553,7 +589,20 @@ const commands = {
                 const missing = {};
 
                 for (const [where, source, value] of leaves(original, translation)) {
-                    if (!source || value) continue;
+                    if (!source) continue;
+                    if (value) {
+                        /*
+                         * A field whose English upstream has rewritten needs a
+                         * translator as much as an empty one does. It carries
+                         * `was`, the wording that answered the old English, and
+                         * an empty `ja` -- so the shipped translation stays put
+                         * until someone replaces it, since `apply` skips empties.
+                         */
+                        if (freshness(record, sourceKey(keys.get(document._id), where), source) !== 'reworded') continue;
+                        missing[where] = { en: source, was: value, ja: '' };
+                        count += 1;
+                        continue;
+                    }
                     /* `en` is the text to translate; fill `ja` in beside it. */
                     missing[where] = { en: source, ja: '' };
                     count += 1;
@@ -595,7 +644,7 @@ const commands = {
 
         let applied = 0;
         for (const pack of ENABLED) {
-            const { collection, file, documents, entries, folderNames, originals } = await buildPack(pack);
+            const { collection, file, documents, entries, folderNames, originals, keys } = await buildPack(pack);
             const filled = pending[collection] ?? {};
 
             for (const [id, fields] of Object.entries(filled)) {
@@ -637,6 +686,20 @@ const commands = {
                 }
             }
 
+            /*
+             * Record which English each field now in the file was translated
+             * from, so a later upstream rewrite shows up in `report` instead of
+             * leaving the Japanese to answer a sentence that is gone. Written
+             * from the file's whole contents, not just this run's additions, so
+             * a field translated by hand gets a record too.
+             */
+            const record = {};
+            const current = { entries, folders: folderNames };
+            for (const [key, source] of translatedFields(pack, documents, keys, current)) {
+                record[key] = hash(source);
+            }
+            await writeSources(collection, record);
+
             const pinned = await readJson(PINNED);
             await fs.writeFile(
                 file,
@@ -659,7 +722,8 @@ const commands = {
     },
 
     async report() {
-        let totals = { translated: 0, untranslated: 0, retired: 0 };
+        let totals = { translated: 0, untranslated: 0, retired: 0, reworded: 0, unstamped: 0 };
+        const rewordings = [];
         for (const pack of ENABLED) {
             const { collection, file, documents, folderNames, keys } = await buildPack(pack);
             const current = await readJson(file).catch(() => ({ entries: {} }));
@@ -684,6 +748,22 @@ const commands = {
                 else untranslated += 1;
             }
 
+            /*
+             * Fields whose English upstream has rewritten since the Japanese was
+             * written. The counts above cannot see these: the field is filled, so
+             * it counts as translated, and the entry is live, so it is not retired.
+             */
+            const record = await readSources(collection);
+            let reworded = 0;
+            for (const [key, source, value] of translatedFields(pack, documents, keys, current)) {
+                const state = freshness(record, key, source);
+                if (state === 'unstamped') totals.unstamped += 1;
+                if (state !== 'reworded') continue;
+                reworded += 1;
+                rewordings.push([collection, key, source, value]);
+            }
+            totals.reworded += reworded;
+
             const live = new Set(keys.values());
             const retired = Object.keys(current.entries ?? {}).filter(key => !live.has(key)).length;
             totals.retired += retired;
@@ -693,15 +773,25 @@ const commands = {
             const percent = total ? Math.round((translated / total) * 100) : 100;
             console.log(
                 `${collection.padEnd(28)} ${String(percent).padStart(3)}%  ${translated}/${total} fields` +
-                    (retired ? `  (${retired} retired upstream)` : '')
+                    (retired ? `  (${retired} retired upstream)` : '') +
+                    (reworded ? `  (${reworded} reworded upstream)` : '')
             );
         }
         console.log(
             `\npacks enabled:    ${ENABLED.length}/${Object.keys(PACKS).length}` +
                 `\ntranslated:       ${totals.translated}` +
                 `\nto translate:     ${totals.untranslated}` +
-                `\nretired upstream: ${totals.retired}`
+                `\nretired upstream: ${totals.retired}` +
+                `\nreworded upstream: ${totals.reworded}` +
+                (totals.unstamped ? `\nunstamped:        ${totals.unstamped} (run \`packs-sync stamp\`)` : '')
         );
+
+        /* Listed in full: nothing else in this tool will mention them again. */
+        for (const [collection, key, source, value] of rewordings) {
+            console.log(`\nreworded ${collection} / ${key}`);
+            console.log(`   en: ${plain(source)}`);
+            console.log(`   ja: ${plain(value)}`);
+        }
     },
 
     /*
@@ -742,6 +832,115 @@ const commands = {
         console.log(`\n${shown} translated field(s) to read`);
     },
 
+    /**
+     * Baseline the source-hash record from the files as they stand, declaring
+     * every translation present correct for the English it sits against.
+     *
+     * Needed once, because the translations predate the recording; after that
+     * `apply` keeps the record current. Running it again would bless whatever
+     * upstream has rewritten in the meantime, so it refuses when `report` would
+     * have something to say, unless --force says to accept it.
+     */
+    async stamp() {
+        const force = process.argv.includes('--force');
+        let stamped = 0;
+        let reworded = 0;
+
+        for (const pack of ENABLED) {
+            const { collection, file, documents, keys } = await buildPack(pack);
+            const current = await readJson(file).catch(() => ({ entries: {} }));
+            const previous = await readSources(collection);
+            const record = {};
+
+            for (const [key, source] of translatedFields(pack, documents, keys, current)) {
+                if (freshness(previous, key, source) === 'reworded') reworded += 1;
+                record[key] = hash(source);
+                stamped += 1;
+            }
+            if (!force) {
+                /* Nothing is written until every pack has been looked at. */
+                pendingStamps.set(collection, record);
+                continue;
+            }
+            await writeSources(collection, record);
+        }
+
+        if (!force && reworded) {
+            console.error(`${reworded} field(s) are reworded upstream; stamping would accept the old Japanese.`);
+            console.error('Retranslate them (prepare/apply), or pass --force to accept them as they are.');
+            process.exit(1);
+        }
+        for (const [collection, record] of pendingStamps) await writeSources(collection, record);
+        console.log(`${stamped} field(s) stamped across ${ENABLED.length} pack(s)`);
+    },
+
+    /**
+     * Hold the compendium to the Japanese the project already uses.
+     *
+     * `report` counts, `audit` prints pairs for reading, and `check` guards the
+     * enrichers and the licence boundary. None of them notices that the same
+     * English term became two different Japanese words in two packs, which is
+     * the mistake a 10,000-field translation makes most often and the one a
+     * reader notices first.
+     *
+     * Three disagreements are reported:
+     *   - against lang/ja.json, whose wordings are the house style
+     *   - against the CSV glossaries in lang/translation/glossary/
+     *   - against the compendium itself, when one English string has two
+     *     translations across the packs
+     *
+     * Only short fields are compared -- names, labels, impulses. Prose repeats
+     * no exact sentences, so comparing it would report nothing but noise.
+     */
+    async terms() {
+        const en = flatten(await readJson(path.join('lang', '.reference', 'en.json')));
+        const ja = flatten(await readJson(path.join('lang', 'ja.json')));
+        const established = establishedWordings(en, ja);
+        const { glossary, sources } = await loadGlossaries();
+
+        /* Longer than this is prose, where an exact-string comparison says nothing. */
+        const SHORT = 60;
+
+        const seen = new Map();
+        let problems = 0;
+
+        for (const pack of ENABLED) {
+            const { collection, file, documents, keys } = await buildPack(pack);
+            const current = await readJson(file).catch(() => ({ entries: {} }));
+
+            for (const [key, source, value] of translatedFields(pack, documents, keys, current)) {
+                const text = plain(source);
+                if (!text || text.length > SHORT) continue;
+                const term = normalize(text);
+
+                const approved = established.get(term) ?? glossary.get(term);
+                if (approved && normalize(approved.japanese) !== normalize(value)) {
+                    problems += 1;
+                    console.log(`${collection} / ${key}`);
+                    console.log(`   en:       ${text}`);
+                    console.log(`   here:     ${plain(value)}`);
+                    console.log(`   ${approved.file}: ${approved.japanese}`);
+                }
+
+                const first = seen.get(term);
+                if (!first) seen.set(term, { collection, key, value });
+                else if (normalize(first.value) !== normalize(value)) {
+                    problems += 1;
+                    console.log(`${collection} / ${key}`);
+                    console.log(`   en:   ${text}`);
+                    console.log(`   here: ${plain(value)}`);
+                    console.log(`   ${first.collection} / ${first.key}: ${plain(first.value)}`);
+                }
+            }
+        }
+
+        console.log(
+            problems
+                ? `\n${problems} disagreement(s) against ${sources.map(s => s.file).join(', ') || 'no glossary'} and lang/ja.json`
+                : `terms agree with lang/ja.json, ${sources.map(s => s.file).join(', ') || 'no glossary'}, and each other`
+        );
+    },
+
     async check() {
         let problems = 0;
         for (const pack of ENABLED) {
@@ -771,6 +970,20 @@ const commands = {
                     console.log(`${collection}: withheld page '${document.name} / ${page.name}' is present`);
                     console.log(`  ${reason}`);
                 }
+            }
+
+            /*
+             * A translation whose English upstream has rewritten is as wrong as
+             * a broken enricher, and harder to see: it reads fine. `report`
+             * lists these; `check` fails on them, because `check` is what runs
+             * before a release.
+             */
+            const record = await readSources(collection);
+            for (const [key, source] of translatedFields(pack, documents, keys, current)) {
+                if (freshness(record, key, source) !== 'reworded') continue;
+                problems += 1;
+                console.log(`${collection}: '${key}' was translated from English that upstream has since rewritten`);
+                console.log(`  now: ${plain(source)}`);
             }
 
             for (const document of documents) {

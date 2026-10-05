@@ -2028,3 +2028,122 @@ npm run packs:audit
 `Daggerheart SRD` ジャーナルの名前に入れていたプローブ訳
 `Daggerheart SRD（日本語）` を外した。中身が英語のままなのに題名だけ「日本語」
 と名乗るのは、利用者に対して端的に嘘になる。
+
+## 工程7: 原文書き換えの検出と訳語の一貫性検査
+
+残作業として挙げていた5件のうち、(3) 原文書き換え検出と、その前段に必要な
+訳語一貫性検査の2つを実装した。どちらも**翻訳本体 (残り10,423フィールド) に
+入る前**に入れておく必要がある種類の仕掛けで、後から足しても遡れない。
+
+### なぜ原文書き換えが見えていなかったか
+
+`lang:report` も `packs:report` もキー集合しか比べていなかった。
+
+| 上流の変化 | 従来の検出 |
+| --- | --- |
+| キーが増えた | `to translate` に出る |
+| キーが消えた | `retired upstream` に出る |
+| **同じキーのまま英文が書き換わった** | **どこにも出ない** |
+
+3つ目の場合、旧訳はそのまま残り、しかもあらゆる検査を通過する。キーは存在し、
+フィールドは埋まっており、エンリッチャも一致する。`Abandoned Grove` に
+`Raging River` の訳が乗っていたのと同じ「全部通るのに内容が違う」型の欠陥で、
+10,000フィールド規模では上流リリースごとに確実に発生する。
+
+### 実装: 訳した原文のハッシュを記録する (`tools/sources.mjs`)
+
+訳を適用するたびに、その訳が答えている英文の sha256 (先頭16桁) を
+`lang/translation/sources/` に記録する。次回 `report` で現在の原文と突き合わせ、
+一致しなければ `reworded` として独立した区分で報告する。未訳 (本文がない) でも
+廃止 (キーがない) でもない、第三の状態として扱う。
+
+記録ファイルは `babele/` の外に置いた。Babele はディレクトリ内の JSON を
+読むので、保守用の記録を同居させない。
+
+```bash
+npm run packs:stamp   # 現在の訳を「今の原文に対して正しい」と宣言する基準づけ
+npm run packs:report  # reworded upstream: n
+npm run packs:prepare # reworded も作業ファイルに出る (was に旧訳が付く)
+npm run packs:check   # reworded があれば失敗する (リリース前の関門)
+```
+
+基準づけ (`stamp`) は一度だけ必要で、以降は `apply` が自動で更新する。2回目以降
+の `stamp` は「その間に上流が書き換えた分を無検証で承認する」操作になるので、
+`report` が報告する状態が残っていれば拒否し、`--force` を要求する。
+
+`prepare` が出す reworded エントリは `ja` を空で出し、旧訳は `was` に添える。
+`apply` は空の `ja` を飛ばすので、**誰かが新しい訳を決めるまで出荷中の訳は
+そのまま残る**。検出が勝手に文字列を消すことはない。
+
+#### 動作確認
+
+上流参照の `environment_Abandoned_Grove` の impulses を書き換えて確認した。
+
+```
+reworded daggerheart.environments / Abandoned Grove :: impulses
+   en: Draw in the curious, echo what the past left behind
+   ja: 好奇心を引き寄せる、過去を響かせる
+```
+
+`check` は `1 problem(s)` で失敗し、`prepare` は `was` 付きで作業ファイルに
+出した。原文を戻すと3つとも静かになった。
+
+なお**ドキュメント名**の書き換えは、エントリキーが名前なので従来どおり
+`retired upstream` として出る (実測で確認)。新しい検出が効くのは名前以外の
+全フィールドで、量としてはそちらが圧倒的に多い。
+
+UI 側 (`lang:report` / `lang:stamp`) も同じ仕組みを入れ、2,256キーを基準づけした。
+
+### 実装: 訳語の一貫性検査 (`npm run packs:terms`)
+
+`report` は数を数え、`audit` は並べて印字し、`check` はエンリッチャとライセンス
+境界を見る。どれも「同じ英語が2つのパックで別の日本語になっている」ことには
+気づかない。10,000フィールドの翻訳で最も起きやすく、読者が最初に気づく種類の
+誤りがこれなので、専用の検査にした。
+
+報告する不一致は3種類:
+
+- `lang/ja.json` の訳語との不一致 (UI の訳が家の作法で、最優先)
+- `lang/translation/glossary/*.csv` との不一致
+- コンペンディウム内部での不一致 (同じ英語に2つの訳)
+
+比較対象は60文字以下の短いフィールド (名前・ラベル・衝動) に限った。散文は
+同一文が再出現しないので、照合してもノイズしか出ない。
+
+CSV 解析・正規化・用語表の読み込みは `lang-sync.mjs` にあった実装を
+`tools/glossary.mjs` に出して共用した。UI と コンペンディウムが**同じ辞書を
+同じ正規化で**引くことが、この検査の前提になる。
+
+#### 61件に対して3件見つかった
+
+```
+daggerheart.transformations / _folders :: Transformation Features
+   en:       Transformation Features
+   here:     変身の特徴
+   lang/ja.json: 変身特徴
+daggerheart.domains / _folders :: Blade
+   en:       Blade
+   here:     ブレード
+   lang/ja.json: ブレイド
+daggerheart.beastforms / Winged Beast :: advantageOn... :: Scare
+   here:     威嚇する
+   lang/ja.json: 恐れさせる
+```
+
+いずれも `lang/ja.json` の訳語に寄せて修正した。とくに `Blade` は UI では
+「ブレイド」、コンペンディウムのフォルダ名では「ブレード」と表示されていた。
+同じ画面に並ぶ語で、プローブ訳61件という極小の母数ですでに発生している。
+本翻訳に入る前に入れる必要があった、というのはこの意味。
+
+### 現状
+
+```
+packs enabled:    15/15
+translated:       61
+to translate:     10423
+retired upstream: 0
+reworded upstream: 0
+```
+
+`packs:terms` 一致、`packs:check` 問題なし。`packs:probe` は Babele の実体を
+参照するので、テスト環境を立て直すまで実行できない (`BABELE_PATH` 未設定)。

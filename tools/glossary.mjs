@@ -1,0 +1,109 @@
+/**
+ * The approved Japanese wordings, shared by lang-sync.mjs and packs-sync.mjs.
+ *
+ * Two things live here because both tools need the same answer to "what do we
+ * call this in Japanese": the CSV glossaries checked in under
+ * lang/translation/glossary/, and the wordings lang/ja.json already ships,
+ * which are the house style and outrank any glossary.
+ *
+ * Matching is on the English string rather than the key, so a wording approved
+ * once carries over to every key -- and every compendium field -- that reuses
+ * it. That is what lets `packs:terms` hold the compendium to the UI's wording.
+ */
+
+import fs from 'fs/promises';
+import path from 'path';
+
+const GLOSSARY_DIR = path.join('lang', 'translation', 'glossary');
+
+export { GLOSSARY_DIR };
+
+/**
+ * Normalizing absorbs the punctuation drift between the SRD, the CSV exports
+ * and en.json, so "Hope." and "hope" are the same term.
+ */
+export const normalize = string =>
+    String(string)
+        .toLowerCase()
+        .replace(/[−–—]/g, '-')
+        .replace(/[‘’]/g, "'")
+        .replace(/\s+/g, ' ')
+        .replace(/[.。]$/, '')
+        .trim();
+
+export function parseCsv(text) {
+    const rows = [];
+    let row = [],
+        field = '',
+        quoted = false;
+    for (let i = 0; i < text.length; i++) {
+        const char = text[i];
+        if (quoted) {
+            if (char !== '"') field += char;
+            else if (text[i + 1] === '"') (field += '"'), i++;
+            else quoted = false;
+        } else if (char === '"') quoted = true;
+        else if (char === ',') (row.push(field), (field = ''));
+        else if (char === '\n') (row.push(field), rows.push(row), (row = []), (field = ''));
+        else if (char !== '\r') field += char;
+    }
+    if (field || row.length) (row.push(field), rows.push(row));
+    return rows;
+}
+
+/**
+ * Every CSV in lang/translation/glossary/ maps an English string to a Japanese
+ * one in its first two columns. Later files win, so an SRD-wide glossary can be
+ * dropped in front of a narrower correction file by name. Each entry remembers
+ * which file it came from, so a disagreement can be attributed to its source.
+ *
+ * `only` narrows the load to the glossaries whose filename contains it, which
+ * is how one external translation gets compared on its own rather than through
+ * the merged stack of every glossary present.
+ */
+export async function loadGlossaries(only) {
+    const glossary = new Map();
+    const sources = [];
+    let files = [];
+    try {
+        files = (await fs.readdir(GLOSSARY_DIR)).filter(f => f.endsWith('.csv')).toSorted();
+    } catch {
+        return { glossary, sources };
+    }
+    if (only) files = files.filter(file => file.includes(only));
+    for (const file of files) {
+        const rows = parseCsv((await fs.readFile(path.join(GLOSSARY_DIR, file), 'utf8')).replace(/^﻿/, ''));
+        let entries = 0;
+        for (const [english, japanese] of rows.slice(1)) {
+            if (!english?.trim() || !japanese?.trim()) continue;
+            glossary.set(normalize(english), { japanese: japanese.trim(), file });
+            entries++;
+        }
+        sources.push({ file, entries });
+    }
+    return { glossary, sources };
+}
+
+/**
+ * The en->ja pairs lang/ja.json itself uses, which are the house style.
+ *
+ * Both arguments are flat key->string maps. A key whose Japanese is still the
+ * English fallback teaches nothing and is skipped.
+ */
+export function establishedWordings(en, ja) {
+    const established = new Map();
+    for (const key of Object.keys(ja)) {
+        if (typeof en[key] !== 'string' || typeof ja[key] !== 'string' || en[key] === ja[key]) continue;
+        established.set(normalize(en[key]), { japanese: ja[key], file: 'lang/ja.json' });
+    }
+    return established;
+}
+
+/** Flatten a nested localization object into dotted keys. */
+export function flatten(object, prefix = '', out = {}) {
+    for (const [key, value] of Object.entries(object)) {
+        if (value && typeof value === 'object' && !Array.isArray(value)) flatten(value, `${prefix}${key}.`, out);
+        else out[prefix + key] = value;
+    }
+    return out;
+}

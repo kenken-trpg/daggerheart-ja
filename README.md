@@ -94,3 +94,5 @@ Foundry / Alchemy / Fantasy Grounds です。Foundry が外れた場合、コン
 
 この除外はビルドで強制しています (`tools/packs-sync.mjs` の `BLOCKED`)。
 `npm run packs:check` が、訳文ファイルに紛れ込んでいないことを検査します。
+また `npm run packs:terms` が訳語の揺れ (同じ英語に別の訳) を、
+`npm run packs:report` が上流の原文書き換えによって古くなった訳を報告します。
