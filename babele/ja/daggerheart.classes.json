@@ -523,19 +523,68 @@
             }
         },
         "Ranger's Focus": {
-            "_note": "Ranger's Focus"
+            "_note": "Ranger's Focus",
+            "name": "レンジャーの集中",
+            "description": "<p>希望を1消費して対象に攻撃を行います。成功した場合、攻撃の通常のダメージを与え、その攻撃の対象を一時的に自分の集中にします。この特徴が終わるか、別のクリーチャーを集中にするまで、集中に対して以下の恩恵を得ます。</p><ul><li><p>その対象がどの方向にいるか正確にわかります。</p></li><li><p>その対象にダメージを与えたとき、その対象はストレスを1マークしなければなりません。</p></li><li><p>その対象への攻撃に失敗したとき、レンジャーの集中の特徴を終わらせてデュアリティダイスを振り直せます。</p></li></ul>",
+            "actions": {
+                "dTkLqUxZpW4xOEKW": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "SXi2dQWqpwY9fap4": {
+                    "name": "レンジャーの集中",
+                    "description": "<p>この特徴が終わるか、レンジャーが別のクリーチャーを集中にするまで、レンジャーはこの敵対者に対して以下の恩恵を得ます。</p><ul><li><p>その敵対者がどの方向にいるか正確にわかります。</p></li><li><p>その敵対者にダメージを与えたとき、その敵対者はストレスを1マークしなければなりません。</p></li><li><p>その敵対者への攻撃に失敗したとき、レンジャーの集中の特徴を終わらせてデュアリティダイスを振り直せます。</p></li></ul>"
+                }
+            }
         },
         "Rogue's Dodge": {
-            "_note": "Rogue's Dodge"
+            "_note": "Rogue's Dodge",
+            "name": "ローグの回避",
+            "description": "<p><strong>希望を3消費</strong>して、次にあなたへの攻撃が成功するまで回避値に＋2のボーナスを得ます。成功しなければ、このボーナスは次の休憩まで続きます。</p>",
+            "actions": {
+                "GbQca7YphTh7skHG": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "hhVjBro2osGDTT5g": {
+                    "name": "ローグの回避",
+                    "description": "<p><strong>希望を3消費</strong>して、次にあなたへの攻撃が成功するまで回避値に＋2のボーナスを得ます。成功しなければ、このボーナスは次の休憩まで続きます。</p>",
+                    "durationDescription": "<p>次にあなたへの攻撃が成功するまで。</p>"
+                }
+            }
         },
         "Sneak Attack": {
-            "_note": "Sneak Attack"
+            "_note": "Sneak Attack",
+            "name": "不意打ち",
+            "description": "<p>隠身の間、または味方が対象の近接射程内にいる間に攻撃が成功したとき、ティアに等しい数のd6をダメージロールに加えます。</p><ul><li><p>レベル1 -&gt; ティア1</p></li><li><p>レベル2–4 -&gt; ティア2</p></li><li><p>レベル5–7 -&gt; ティア3</p></li><li><p>レベル8–10 -&gt; ティア4</p></li></ul>",
+            "effects": {
+                "380jFzw756qSy5ae": {
+                    "name": "不意打ち",
+                    "description": "<p>隠身の間、または味方が対象の近接射程内にいる間に攻撃が成功したとき、ティアに等しい数のd6をダメージロールに加えます。</p><ul><li><p>レベル1 -&gt; ティア1</p></li><li><p>レベル2–4 -&gt; ティア2</p></li><li><p>レベル5–7 -&gt; ティア3</p></li><li><p>レベル8–10 -&gt; ティア4</p></li></ul>"
+                }
+            }
         },
         "Square Up": {
-            "_note": "Square Up"
+            "_note": "Square Up",
+            "name": "身構える",
+            "description": "<p><strong>希望を3消費</strong>して近距離以内の対象を威圧し、一時的に<em>脆弱</em>にします。</p>",
+            "actions": {
+                "XfoeOZCHYYL0phnw": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "h8qyEkcZV8tP9cle": {
+                    "name": "身構える"
+                }
+            }
         },
         "Strange Patterns": {
             "_note": "Strange Patterns",
+            "name": "奇妙な模様",
+            "description": "<p>1から12までの数を1つ選びます。デュアリティダイスでその数が出たとき、希望を1得るかストレスを1つ消します。</p><p>大休憩を取ったとき、この数を変えられます。</p>",
             "actions": {
                 "RkqPzF1bdWzPPMml": {
                     "name": "ストレスを消す"
@@ -543,103 +592,162 @@
             }
         },
         "Unstoppable": {
-            "_note": "Unstoppable"
+            "_note": "Unstoppable",
+            "name": "止められぬ者",
+            "description": "<p>大休憩ごとに1回、止められぬ者になれます。止められぬ者ダイスを1つ得ます。レベル1では止められぬ者ダイスはd4です。1の面を上に向けて、キャラクターシートの所定の欄に置きます。対象にHPを1つ以上与えるダメージロールを行ったあと、止められぬ者ダイスの値を1つ上げます。ダイスの値が最大値を超えるとき、またはシーンが終わったとき、そのダイスを取り除き、止められぬ者を解除します。レベル5で止められぬ者ダイスはd6に上がります。止められぬ者である間、以下の恩恵を得ます。</p><ul><li><p>物理ダメージの重傷度をしきい値1段階分下げます（重傷から中傷、中傷から軽傷、軽傷から無傷）。</p></li><li><p>止められぬ者ダイスの現在の値をダメージロールに加えます。</p></li><li><p>拘束も脆弱にもなりません。</p></li></ul><blockquote><p>補足：止められぬ者ダイスがd4で現在4の面が上を向いている場合、次に値を上げるときにそのダイスを取り除きます。一方、止められぬ者ダイスがd6に上がっていて現在4の面が上を向いている場合、次に値を上げるときには5に向けます。この場合、6より高く上げる必要が生じたあとにダイスを取り除きます。</p></blockquote>",
+            "actions": {
+                "KZiZ8m8uqH5iG96d": {
+                    "name": "止められぬ者になる"
+                }
+            },
+            "effects": {
+                "xzQtFSuDS48kUdAZ": {
+                    "name": "止められぬ者"
+                }
+            }
         },
         "Volatile Magic": {
-            "_note": "Volatile Magic"
+            "_note": "Volatile Magic",
+            "name": "不安定な魔法",
+            "description": "<p><strong>希望を3消費</strong>して、魔法ダメージを与える攻撃で任意の数の自分のダメージダイスを振り直します。</p>",
+            "actions": {
+                "JQPMlMLYMs84rWIy": {
+                    "name": "希望を3消費"
+                }
+            }
         },
         "Wildtouch": {
-            "_note": "Wildtouch"
+            "_note": "Wildtouch",
+            "name": "野の手触り",
+            "description": "<p>花を急に咲かせる、そよ風を呼ぶ、焚き火を起こすといった、自然にまつわる無害でささやかな効果を自在に起こせます。</p>"
         },
         "Witch's Charm": {
-            "_note": "Witch's Charm"
+            "_note": "Witch's Charm",
+            "name": "ウィッチの魅惑",
+            "description": "<p>あなたまたは遠距離以内の味方がアクションロールに失敗したとき、<strong>希望を3消費</strong>して、代わりに恐怖とともに成功したことにできます。</p>",
+            "actions": {
+                "iQwgbgc04oIW6h8p": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "50ft of Rope": {
-            "_note": "50ft of Rope"
+            "_note": "50ft of Rope",
+            "name": "50フィートのロープ"
         },
         "A Romance Novel": {
-            "_note": "A Romance Novel"
+            "_note": "A Romance Novel",
+            "name": "恋愛小説"
         },
         "A Sharpening Stone": {
-            "_note": "A Sharpening Stone"
+            "_note": "A Sharpening Stone",
+            "name": "砥石"
         },
         "A small, harmless pet": {
-            "_note": "A small, harmless pet"
+            "_note": "A small, harmless pet",
+            "name": "小さな無害なペット"
         },
         "Basic Supplies": {
-            "_note": "Basic Supplies"
+            "_note": "Basic Supplies",
+            "name": "基本の物資"
         },
         "Book about your secret hobby": {
-            "_note": "Book about your secret hobby"
+            "_note": "Book about your secret hobby",
+            "name": "秘密の趣味についての本"
         },
         "Broken Compass": {
-            "_note": "Broken Compass"
+            "_note": "Broken Compass",
+            "name": "壊れた方位磁針"
         },
         "Bundle of Offerings": {
-            "_note": "Bundle of Offerings"
+            "_note": "Bundle of Offerings",
+            "name": "捧げ物の束"
         },
         "Carving that symbolizes your patron": {
-            "_note": "Carving that symbolizes your patron"
+            "_note": "Carving that symbolizes your patron",
+            "name": "庇護者を象徴する彫り物"
         },
         "Drawing Of A Lover": {
-            "_note": "Drawing Of A Lover"
+            "_note": "Drawing Of A Lover",
+            "name": "恋人の絵"
         },
         "Family Heirloom": {
-            "_note": "Family Heirloom"
+            "_note": "Family Heirloom",
+            "name": "家宝"
         },
         "Grappling Hook": {
-            "_note": "Grappling Hook"
+            "_note": "Grappling Hook",
+            "name": "鉤縄"
         },
         "Hand wraps from a mentor": {
-            "_note": "Hand wraps from a mentor"
+            "_note": "Hand wraps from a mentor",
+            "name": "師から受け継いだ手の包帯"
         },
         "Letter(Never Opened)": {
-            "_note": "Letter(Never Opened)"
+            "_note": "Letter(Never Opened)",
+            "name": "手紙（未開封）"
         },
         "List of names with several marked off": {
-            "_note": "List of names with several marked off"
+            "_note": "List of names with several marked off",
+            "name": "いくつか消された名前の一覧"
         },
         "Ring you can't remove": {
-            "_note": "Ring you can't remove"
+            "_note": "Ring you can't remove",
+            "name": "外せない指輪"
         },
         "Rusted blade inscribed with an insignia": {
-            "_note": "Rusted blade inscribed with an insignia"
+            "_note": "Rusted blade inscribed with an insignia",
+            "name": "紋章が刻まれた錆びた刃"
         },
         "Scrying stone": {
-            "_note": "Scrying stone"
+            "_note": "Scrying stone",
+            "name": "占視の石"
         },
         "Secret Key": {
-            "_note": "Secret Key"
+            "_note": "Secret Key",
+            "name": "秘密の鍵"
         },
         "Set of Forgery Tools": {
-            "_note": "Set of Forgery Tools"
+            "_note": "Set of Forgery Tools",
+            "name": "偽造道具一式"
         },
         "Sigil of Your God": {
-            "_note": "Sigil of Your God"
+            "_note": "Sigil of Your God",
+            "name": "自らの神の印章"
         },
         "Small Bag (Rocks & Bones)": {
-            "_note": "Small Bag (Rocks & Bones)"
+            "_note": "Small Bag (Rocks & Bones)",
+            "name": "小さな袋（石と骨）"
         },
         "Strange Dirty Pendant": {
-            "_note": "Strange Dirty Pendant"
+            "_note": "Strange Dirty Pendant",
+            "name": "汚れた奇妙なペンダント"
         },
         "Tiny Elemental Pet": {
-            "_note": "Tiny Elemental Pet"
+            "_note": "Tiny Elemental Pet",
+            "name": "小さな元素のペット",
+            "description": "<p>小さな元素のペット</p>"
         },
         "Torch": {
-            "_note": "Torch"
+            "_note": "Torch",
+            "name": "松明"
         },
         "Totem from Mentor": {
-            "_note": "Totem from Mentor"
+            "_note": "Totem from Mentor",
+            "name": "師から受け継いだ護符"
         },
         "Trophy from your First Kill": {
-            "_note": "Trophy from your First Kill"
+            "_note": "Trophy from your First Kill",
+            "name": "最初の獲物の戦利品"
         },
         "Untranslated Book": {
-            "_note": "Untranslated Book"
+            "_note": "Untranslated Book",
+            "name": "未解読の書物",
+            "description": "<p>解読しようとしている書物。</p>"
         },
         "Whispering Orb": {
-            "_note": "Whispering Orb"
+            "_note": "Whispering Orb",
+            "name": "囁く宝珠"
         }
     }
 }
