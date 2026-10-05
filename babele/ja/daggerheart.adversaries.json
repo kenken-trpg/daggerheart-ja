@@ -1885,6 +1885,12 @@
         },
         "Conscript": {
             "_note": "Conscript",
+            "name": "徴集兵",
+            "description": "<p>ほとんど訓練も受けないまま戦争に駆り出された民間人。</p>",
+            "motivesAndTactics": "命令に従う、群れで囲む、生き延びる",
+            "attack": {
+                "name": "槍"
+            },
             "items": {
                 "DgzY4TV3FrxDvhhY": {
                     "name": "ミニオン（6）",
@@ -1903,17 +1909,29 @@
         },
         "Construct": {
             "_note": "Construct",
+            "name": "構築物",
+            "description": "<p>石と鋼でおおよそ人型に組み上げられ、魔法で動かされている存在。</p>",
+            "motivesAndTactics": "環境を壊す、創造主に仕える、対象を叩き潰す、集団を踏み潰す",
+            "attack": {
+                "name": "拳の叩きつけ"
+            },
             "items": {
                 "y3oUmDLGkcSjOO5Q": {
                     "name": "リレントレス（2）",
+                    "description": "<p>@Lookup[@name]はGMターンごとに最大2回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>",
                     "actions": {
                         "bay0pyPsCyDEZKuk": {
                             "name": "スポットライト：リレントレス"
                         }
                     }
                 },
+                "p4HLIkiM3HsglRoA": {
+                    "name": "脆い構造",
+                    "description": "<p>@Lookup[@name]が物理ダメージでHPをマークするとき、追加でHPを1マークしなければなりません。</p>"
+                },
                 "93m085bEaKFzvEWT": {
                     "name": "踏みつけ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]が移動するとき、その進路上のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>1d8</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "OswphW4Z1B5oa4ts": {
                             "name": "攻撃"
@@ -1922,6 +1940,7 @@
                 },
                 "EF6YIDjQ0liFubGA": {
                     "name": "過負荷",
+                    "description": "<p>@Lookup[@name]の攻撃のダメージを振る前に、<strong>ストレスを1マーク</strong>してダメージロールに+10のボーナスを得られます。その後、@Lookup[@name]は再びスポットライトを得られます。</p>",
                     "actions": {
                         "xYACTiZzApmCXXmf": {
                             "name": "ストレスをマーク"
@@ -1929,12 +1948,14 @@
                     },
                     "effects": {
                         "xkDIZk9u2ipDHvOL": {
-                            "name": "過負荷"
+                            "name": "過負荷",
+                            "description": "<p>ダメージロールに+10のボーナスを得る</p>"
                         }
                     }
                 },
                 "UlGLuV1L33tDWkli": {
                     "name": "死の震動",
+                    "description": "<p>@Lookup[@name]が最後のHPをマークしたとき、それを動かしていた魔法が破裂し、力の爆発を起こします。至近距離以内のすべての対象に有利を得て攻撃を行います。@Lookup[@name]が成功した対象は<strong>1d12+2</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "fkIWRdcGPgHgm6VC": {
                             "name": "攻撃",
@@ -1950,6 +1971,9 @@
         },
         "Courtesan": {
             "_note": "Courtesan",
+            "name": "高級娼婦",
+            "description": "<p>社交術を極めた、熟達の操り手。</p>",
+            "motivesAndTactics": "誘惑する、立ち回る、庇護者を確保する",
             "attack": {
                 "name": "ダガー"
             },
@@ -1964,6 +1988,7 @@
             "items": {
                 "rSMUPC5GhR982ifg": {
                     "name": "焼き尽くす一瞥",
+                    "description": "<p>近距離以内のPCが社交ロールを行うとき、<strong>ストレスを1マーク</strong>して、その結末を予感させる視線を投げかけられます。対象が失敗した場合、対象はストレスを2マークし、シーンが終わるか@Lookup[@name]に対する社交的な行動に成功するまで<em>脆弱</em>になります。対象が成功した場合、対象はストレスを1マークします。</p>",
                     "actions": {
                         "dRtDCrAPLc1GYqBs": {
                             "name": "ストレスを消費"
@@ -1971,7 +1996,9 @@
                     },
                     "effects": {
                         "blcRqns0PHqiuPac": {
-                            "name": "焼き尽くす一瞥"
+                            "name": "焼き尽くす一瞥",
+                            "description": "<p>シーンが終わるか高級娼婦に対する社交的な行動に成功するまで<em>脆弱</em>。</p>",
+                            "durationDescription": "<p>シーンが終わるか高級娼婦に対する社交的な行動に成功するまで。</p>"
                         }
                     }
                 }
@@ -1980,6 +2007,8 @@
         "Courtier": {
             "_note": "Courtier",
             "name": "宮廷人",
+            "description": "<p>野心家で、これ見よがしに着飾った社交界の人物。</p>",
+            "motivesAndTactics": "信用を失わせる、取り入る、立ち回る、策を巡らせる",
             "attack": {
                 "name": "ダガー二刀"
             },
@@ -1991,6 +2020,7 @@
             "items": {
                 "LYNaKEYcYMgvF4Rf": {
                     "name": "嘲り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して嘲るような言葉を投げかけ、近距離以内の対象に、面目を保てるかどうかの社交リアクションロール（14）を行わせます。失敗した場合、対象はストレスを2マークし、シーンが終わるまで脆弱になります。</p>",
                     "actions": {
                         "Yi3rvjj0Umqt5Z8j": {
                             "name": "ストレスをマーク"
@@ -2004,6 +2034,7 @@
                 },
                 "Ux42ELBBuSYwm4yW": {
                     "name": "生贄役",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PC1人を対象にします。@Lookup[@name]は、群衆または有力な人物に、いま起きている対立や不運の原因はその対象だと信じ込ませます。</p>",
                     "actions": {
                         "IwuFowlcXyjvfOxp": {
                             "name": "恐怖を消費する"
@@ -2014,6 +2045,12 @@
         },
         "Crimson Lepus": {
             "_note": "Crimson Lepus",
+            "name": "紅のレパス",
+            "description": "<p>殺戮のことしか考えていない、赤い目のウサギ。</p>",
+            "motivesAndTactics": "かわいくある、喉を狙う、跳ね回る",
+            "attack": {
+                "name": "跳躍噛みつき"
+            },
             "experiences": {
                 "Mv3MJSBlHLyGRmeX": {
                     "name": "獰猛"
@@ -2021,17 +2058,27 @@
             },
             "items": {
                 "gYRtsPelHA8TvT0K": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>レパスはGMターンごとに最大3回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "gS3GnrlC4yBT6hz0": {
+                    "name": "「ああ、かわいい……」",
+                    "description": "<p>レパスが最初に現れたとき、それは「かわいすぎる」状態です。「かわいすぎる」クリーチャーを攻撃するには、PCは直感リアクションロール（20）に成功しなければなりません。PCがレパスにダメージを与えるか、レパスがPCを攻撃したとき、「かわいすぎる」状態を消します。</p>",
                     "actions": {
                         "Flxho6WUGrHncyxf": {
                             "name": "リアクションロール"
+                        }
+                    },
+                    "effects": {
+                        "WBdDr9lVJ6TtJ0GG": {
+                            "name": "かわいすぎる",
+                            "description": "<p>PCは直感リアクションロール（20）に成功しなければなりません。PCがレパスにダメージを与えるか、レパスがPCを攻撃したとき、「かわいすぎる」状態を消します。</p>"
                         }
                     }
                 },
                 "KNHB4gxzIj0S4pS6": {
                     "name": "恐るべき者",
+                    "description": "<p>レパスの攻撃が成功したとき、近距離以内のすべてのPCは希望を1失い、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "loE7DjH8VFpcW1Hu": {
                             "areas": [
@@ -2044,6 +2091,7 @@
                 },
                 "vF19a5N2S1OP9Tsr": {
                     "name": "喉元への跳躍斬り",
+                    "description": "<p><strong>恐怖を1消費</strong>して、レパスを遠距離以内の対象の近接距離まで跳躍させ、その対象に攻撃を行います。成功した場合、<strong>3d20</strong>の直接物理ダメージを与えます。対象がこの攻撃でHPをマークした場合、その対象はHPを1つ消すまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "UWAI1Ymlur9yBzJs": {
                             "name": "恐怖を消費する"
@@ -2055,13 +2103,39 @@
                             "description": "<p>HPを1つ消すまで<em>脆弱</em>です。</p>"
                         }
                     }
+                },
+                "DyFTHR3agasbQMcN": {
+                    "name": "回避巧者",
+                    "description": "<p>レパスがダメージを受けるとき、<strong>d6</strong>をロールします。4以上ならダメージを半減します。すでに半減されていた場合、レパスはダメージを受けません。</p>",
+                    "actions": {
+                        "OeUHDRwr0JTkx8HD": {
+                            "name": "回避する"
+                        }
+                    }
+                },
+                "4UAcwdFi0ek4DX5l": {
+                    "name": "「逃げろ！」",
+                    "description": "<p>希望を持たないPCが、レパスから超遠距離以内でスポットライトを得たとき、そのPCは社交リアクションロールに成功しなければ、アクションを使って戦場から逃げ出し、<strong>希望を1消費</strong>して戻るまで戻れません。</p>",
+                    "actions": {
+                        "IoeokEQOzplhw6U5": {
+                            "name": "逃走ロール"
+                        }
+                    }
                 }
             }
         },
         "Cryptimoth": {
             "_note": "Cryptimoth",
+            "name": "クリプティモス",
+            "description": "<p>二本足で歩く、赤い目の大きな蛾の怪物。謎めいた出来事や凶事の前触れとされる。</p>",
+            "motivesAndTactics": "反響定位する、音もなく飛ぶ、影に溶け込む",
             "attack": {
                 "name": "爪"
+            },
+            "experiences": {
+                "goc2CyUpNYhCkwOH": {
+                    "name": "暗い前兆"
+                }
             },
             "items": {
                 "bZcj7Ed3cbLxes8y": {
@@ -2079,6 +2153,7 @@
                 },
                 "kQARtKcsiosM7sgA": {
                     "name": "精神の悲鳴",
+                    "description": "<p><strong>恐怖を2消費</strong>して、@Lookup[@name]に精神エネルギーの波を放たせます。遠距離以内の各PCは、自らの恐るべき末路の幻視に襲われます。各対象は直感リアクションロール（16）を行います。失敗した対象は<strong>3d8</strong>の直接魔法ダメージを受け、次の休憩まで<em>脆弱</em>になります。成功した対象はストレスを1マークするか、ダメージを半分受けます。</p>",
                     "actions": {
                         "7eYqphDlHc8PF3jn": {
                             "name": "恐怖を消費する",
@@ -2091,12 +2166,14 @@
                     },
                     "effects": {
                         "mUv8KihjZNSGPYLa": {
-                            "name": "精神の悲鳴"
+                            "name": "精神の悲鳴",
+                            "description": "<p>次の休憩まで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "WsK2lZoOA7hyVARG": {
                     "name": "影の群れ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に遠距離以内へ蛾のような影のクリーチャーの群れを呼び出させます。群れは近距離の範囲を満たし、視線を遮ります。@Lookup[@name]以外のクリーチャーは、その範囲内にいるあいだ<em>脆弱</em>であり、そこを通って移動するにはストレスを1マークしなければなりません。PCは呪文発動ロール（12）に成功すれば群れを払えます。</p>",
                     "actions": {
                         "V38KKXLatO3jMoko": {
                             "name": "恐怖を消費する",
@@ -2114,9 +2191,17 @@
                     }
                 },
                 "ibGMv1L6QT12LYL9": {
+                    "name": "猜疑の眼光",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に近距離以内のPCの目を覗き込ませ、そのPCを「猜疑」状態にします。「猜疑」のあいだ、そのPCは他のPCを疑い、味方を助けることもタッグチームロールに参加することもできません。この状態を消すには、そのPCは洞察ロール（16）に成功するか、休憩中にパーティの1人以上と一緒にダウンタイムムーブ「備える」を行わなければなりません。</p>",
                     "actions": {
                         "CQHXNZV0cTI4uisa": {
                             "name": "恐怖を消費する"
+                        }
+                    },
+                    "effects": {
+                        "a7kCdiEj9a5k4WFD": {
+                            "name": "猜疑",
+                            "description": "<p>「猜疑」のあいだ、あなたは他のPCを疑い、味方を助けることもタッグチームロールに参加することもできません。この状態を消すには、洞察ロール（16）に成功するか、休憩中にパーティの1人以上と一緒にダウンタイムムーブ「備える」を行わなければなりません。</p>"
                         }
                     }
                 }
@@ -2124,13 +2209,24 @@
         },
         "Cult Adept": {
             "_note": "Cult Adept",
+            "name": "教団の熟達者",
+            "description": "<p>影と恐怖を操る、経験豊かな魔法使い。</p>",
+            "motivesAndTactics": "取り入る、敵を妨げる、知識を掘り起こす",
+            "attack": {
+                "name": "ルーンに覆われた杖"
+            },
             "experiences": {
                 "Lt65O6BraCDSG6A9": {
                     "name": "堕ちた者の伝承"
+                },
+                "zUrYeLaTh26XK19W": {
+                    "name": "儀式"
                 }
             },
             "items": {
                 "kCffzM8rX8NEr9d2": {
+                    "name": "衰弱の衝撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、射程内の対象に通常の攻撃を行います。成功した場合、対象はストレスを1マークします。</p>",
                     "actions": {
                         "TQv3o9sRnlDNbPyu": {
                             "name": "恐怖を消費する"
@@ -2139,6 +2235,7 @@
                 },
                 "IHWDn097sRgjlZXO": {
                     "name": "堕ちた者の帷",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の味方1体を、@Lookup[@name]が最後のHPをマークするまで防護の帷で包みます。「防護」のあいだ、その対象はすべてのダメージに抵抗を得ます。</p>",
                     "actions": {
                         "8yRj7EpEI4PlKNhl": {
                             "name": "庇う"
@@ -2146,12 +2243,15 @@
                     },
                     "effects": {
                         "U9lWz1LgeAiK5L85": {
-                            "name": "堕ちた者の帷"
+                            "name": "堕ちた者の帷",
+                            "description": "<p>熟達者が最後のHPをマークするまで、すべてのダメージに抵抗</p>",
+                            "durationDescription": "<p>教団の熟達者が最後のHPをマークするまで。</p>"
                         }
                     }
                 },
                 "JpSrduK3vjd9h098": {
                     "name": "影の枷",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の一点を選びます。その点から近距離以内のすべての対象は、頑強ロールまたは直感ロールに成功して振り払うまで、煙の鎖で<em>拘束</em>されます。この特徴で拘束された対象は、アクションロールを行うには希望を1消費しなければなりません。</p>",
                     "actions": {
                         "g4RDHrY0AEYXjH52": {
                             "name": "恐怖を消費する",
@@ -2164,11 +2264,15 @@
                     },
                     "effects": {
                         "lNH6srSPyEprXZ4o": {
-                            "name": "影の枷"
+                            "name": "影の枷",
+                            "description": "<p>頑強ロールまたは直感ロールに成功して振り払うまで、煙の鎖で<em>拘束</em>されています。この特徴で拘束された対象は、アクションロールを行うには希望を1消費しなければなりません。</p>",
+                            "durationDescription": "<p>頑強ロールまたは直感ロールに成功して振り払うまで。</p>"
                         }
                     }
                 },
                 "x6FbcrfOscb3er6P": {
+                    "name": "恐怖こそ燃料",
+                    "description": "<p>シーンごとに2回まで、PCが恐怖とともに失敗をロールしたとき、ストレスを1消します。</p>",
                     "actions": {
                         "3tibqB97ooJesxf0": {
                             "name": "ストレスを消す"
@@ -2179,8 +2283,16 @@
         },
         "Cult Fang": {
             "_note": "Cult Fang",
+            "name": "教団の牙",
+            "description": "<p>殺し屋から教団員へと身を転じた者。</p>",
+            "motivesAndTactics": "生贄を捕らえる、獲物を孤立させる、階級を上げる",
+            "attack": {
+                "name": "長刀"
+            },
             "items": {
                 "vX5FHwLvFjuc4JC1": {
+                    "name": "影の抱擁",
+                    "description": "<p>@Lookup[@name]は垂直な面を登り、その上を歩けます。<strong>ストレスを1マーク</strong>して、遠距離以内の影から影へ移動します。</p>",
                     "actions": {
                         "hjuqvsMB7KNLNvjg": {
                             "name": "ストレスをマーク"
@@ -2189,6 +2301,7 @@
                 },
                 "ohASSruBxcvuItIK": {
                     "name": "はぐれ者を狩る",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象に直感リアクションロールを行わせます。失敗した場合、対象はストレスを2マークし、@Lookup[@name]とともに遠距離以内の影へ転移させられ、一時的に脆弱になります。成功した場合、対象はストレスを1マークします。</p>",
                     "actions": {
                         "QjQ04SAwfjrxliNI": {
                             "name": "セーブを振る"
