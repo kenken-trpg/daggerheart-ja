@@ -926,59 +926,180 @@
             }
         },
         "Keen Defenses": {
-            "_note": "Keen Defenses"
+            "_note": "Keen Defenses",
+            "name": "鋭敏な守り",
+            "description": "<p>攻撃の対象となったとき、<strong>集中を1消費</strong>して、その攻撃に対する回避値にティアに等しいボーナスを得られます。</p>",
+            "actions": {
+                "QWp62rFUuDVqGqOe": {
+                    "name": "集中を消費する"
+                }
+            },
+            "effects": {
+                "GxKR2SLh9jsTyC4h": {
+                    "name": "鋭敏な守り",
+                    "description": "<p>その攻撃に対する回避値にティアに等しいボーナスを得ています。</p>"
+                }
+            }
         },
         "Limit Breaker": {
-            "_note": "Limit Breaker"
+            "_note": "Limit Breaker",
+            "name": "限界突破",
+            "description": "<p>休憩ごとに1回、水面を走る、離れた屋根の間を跳び移る、建物を登るといった、信じ難い身体能力の離れ業をロールせずに成し遂げられます。そうしたとき、希望を1得てストレスを1つ消します。</p>",
+            "actions": {
+                "ffLopQU2mXJxig9l": {
+                    "name": "限界を破る"
+                }
+            }
         },
         "Loyal Friend": {
-            "_note": "Loyal Friend"
+            "_note": "Loyal Friend",
+            "name": "忠実な友",
+            "description": "<p>大休憩ごとに1回、攻撃のダメージによって相棒の最後のストレスまたはあなたの最後のHPがマークされるとき、互いが近距離以内にいるなら、あなたまたは相棒は相手のもとへ駆け寄り、代わりにそのダメージを受けられます。</p>",
+            "actions": {
+                "Z82YQzYWo4eektMa": {
+                    "name": "駆け寄る"
+                }
+            }
         },
         "Loyal Protector": {
-            "_note": "Loyal Protector"
+            "_note": "Loyal Protector",
+            "name": "忠実な守り手",
+            "description": "<p>近距離以内の味方のHPが2つ以下でダメージを受けるとき、<strong>ストレスを1マーク</strong>してその味方のもとへ駆けつけ、代わりにそのダメージを受けられます。</p>",
+            "actions": {
+                "Dxnu3gPSTSysJnb8": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Lunar Phases": {
             "_note": "Lunar Phases",
+            "name": "月相",
+            "description": "<p>各セッションの開始時に<strong>[[/r d6]]</strong>を1つ振り、このカードに置きます。セッション終了まで、対応する効果を得ます。</p><table><thead><tr><td><p>出目</p></td><td><p>月相</p></td><td><p>効果</p></td></tr></thead><tbody><tr><td><p><strong>1</strong></p></td><td><p>新月</p></td><td><p>希望を1消費して軽傷ダメージを打ち消す。</p></td></tr><tr><td><p><strong>2–3</strong></p></td><td><p>上弦</p></td><td><p>ダメージロールに＋2</p></td></tr><tr><td><p><strong>4</strong></p></td><td><p>満月</p></td><td><p>ダメージしきい値に＋3</p></td></tr><tr><td><p><strong>5–6</strong></p></td><td><p>下弦</p></td><td><p>回避値＋1</p></td></tr></tbody></table><p>休憩ごとに1回、<strong>希望を1消費</strong>してこのダイスの値を1つ上げられます。6の値を上げた場合、1になります。</p>",
+            "actions": {
+                "k5KPbB12hfutbvTj": {
+                    "name": "新月：希望を消費"
+                }
+            },
             "effects": {
+                "K7xu1KI8zehJ8kkY": {
+                    "name": "上弦",
+                    "description": "<p>ダメージロールに＋2</p>"
+                },
                 "7V75lzCjChYmZaZ5": {
-                    "name": "満月"
+                    "name": "満月",
+                    "description": "<p>ダメージしきい値に＋3</p>"
                 },
                 "b60bHY67KMfRJOrU": {
+                    "name": "下弦",
                     "description": "<p>回避値＋1</p>"
                 }
             }
         },
         "Maestro": {
-            "_note": "Maestro"
+            "_note": "Maestro",
+            "name": "巨匠",
+            "description": "<p>あなたの激励の歌は、聴く者の勇気を鍛え上げます。味方に<strong>激励ダイス</strong>を与えるとき、その味方は<strong>希望を1得る</strong>か<strong>ストレスを1つ消す</strong>ことができます。</p>"
         },
         "Manipulate Magic": {
-            "_note": "Manipulate Magic"
+            "_note": "Manipulate Magic",
+            "name": "魔法の操作",
+            "description": "<p>原初の血統により、魔法そのものの本質を書き換えられます。呪文を発動した後、または魔法ダメージを与える武器で攻撃を行った後、ストレスを1マークして以下のいずれかを行えます。</p><ul><li><p>その呪文または攻撃の届く距離を1段階伸ばす</p></li><li><p>そのアクションロールの結果に＋2のボーナスを得る</p></li><li><p>好きなダメージダイスを1つ2倍にする</p></li><li><p>射程内の対象を1体追加で攻撃する</p></li></ul>",
+            "actions": {
+                "KL5l4QJjPtDiDBSv": {
+                    "name": "操作する"
+                }
+            }
         },
         "Martial Preparation": {
-            "_note": "Martial Preparation"
+            "_note": "Martial Preparation",
+            "name": "戦の備え",
+            "description": "<p>あなたは共に旅する者すべてを鼓舞する戦士です。パーティは「戦の備え」ダウンタイムムーブを使えるようになります。休憩中にこのムーブを使うには、パーティをどう指導し訓練するかを描写します。あなたとこのダウンタイムムーブを選んだ各味方は、<strong>d6</strong>の討伐ダイスを得ます。討伐ダイスを持つPCは、それを消費してダイスを振り、好きな攻撃ロールまたはダメージロールに結果を加えられます。</p>"
         },
         "Menacing Reach": {
-            "_note": "Menacing Reach"
+            "_note": "Menacing Reach",
+            "name": "脅威の間合い",
+            "description": "<p><strong>恩寵を1消費</strong>して、メイン武器の射程を1段階（近接から至近、至近から近距離など）、最大で超遠距離まで伸ばします。この効果は、その武器での攻撃が成功したときに終わります。</p>",
+            "actions": {
+                "9dAy5Pd1zPr7Tda8": {
+                    "name": "恩寵を消費する"
+                }
+            },
+            "effects": {
+                "akwjK1zhFDkePo8z": {
+                    "name": "脅威の間合い",
+                    "description": "<p>メイン武器の射程が1段階（近接から至近、至近から近距離など）、最大で超遠距離まで伸びています。この効果は、その武器での攻撃が成功したときに終わります。</p>"
+                }
+            }
         },
         "Moonbeam": {
-            "_note": "Moonbeam"
+            "_note": "Moonbeam",
+            "name": "月光条",
+            "description": "<p>セッションごとに1回、シーン終了まで近距離以内の範囲を照らす月光の柱を呼び出せます。この月光に浴している間、あなたと味方は<strong>呪文発動ロール</strong>に＋1のボーナスを得て、幻影を見通せます。</p>",
+            "actions": {
+                "Zb9m9fJdc5aR2sTT": {
+                    "areas": [
+                        {
+                            "name": "月光条"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "91YMJHhyGeGj7zwm": {
+                    "name": "月光条",
+                    "description": "<p>この月光に浴している間、あなたと味方は<strong>呪文発動ロール</strong>に＋1のボーナスを得て、幻影を見通せます。</p>"
+                }
+            }
         },
         "Natural Evasion": {
-            "_note": "Natural Evasion"
+            "_note": "Natural Evasion",
+            "name": "自然の回避",
+            "description": "<p>自分の元素を呼び出して危害から身を守れます。あなたへの攻撃ロールが成功したとき、<strong>ストレスを1マーク</strong>して、元素をどう使って身を守るかを描写できます。そうしたとき、<strong>d6</strong>を1つ振り、その結果をその攻撃に対する回避値に加えます。</p>",
+            "actions": {
+                "amJMKDdSgJHsOsOB": {
+                    "name": "回避する"
+                }
+            }
         },
         "Nemesis": {
-            "_note": "Nemesis"
+            "_note": "Nemesis",
+            "name": "宿敵",
+            "description": "<p><strong>希望を2消費</strong>して、次の休憩まで敵対者1体を優先指定します。優先指定した敵対者を攻撃するとき、希望ダイスと恐怖ダイスの結果を入れ替えられます。優先指定できる敵対者は同時に1体だけです。</p>",
+            "actions": {
+                "Rgc7kBmU3kjHKvfx": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "JoBFHkhLbm4JyuZm": {
+                    "name": "宿敵",
+                    "description": "<p>優先指定した敵対者を攻撃するとき、希望ダイスと恐怖ダイスの結果を入れ替えられます。優先指定できる敵対者は同時に1体だけです。</p>"
+                }
+            }
         },
         "Night's Glamour": {
             "_note": "Night's Glamour",
+            "name": "夜の幻惑",
+            "description": "<p><strong>呪文発動ロール（13）</strong>を行い、自らを魅惑的な外見で<em>幻惑</em>に包みます。<em>幻惑</em>している間、その幻影の姿を活かすロールに有利を得ます。さらに、近距離以内の敵対者はあなたを攻撃するためにストレスを1マークしなければなりません。</p><p><strong>ストレスを1マーク</strong>して<em>幻惑</em>を維持しない限り、HPをマークするかダメージを与えたときに解けます。</p>",
             "actions": {
                 "X4ifJfMZe9ywj6U5": {
                     "name": "呪文発動ロール"
+                }
+            },
+            "effects": {
+                "jL8e92ig2yV2KTpJ": {
+                    "name": "幻惑",
+                    "description": "<p><em>幻惑</em>している間、その幻影の姿を活かすロールに有利を得ます。さらに、近距離以内の敵対者はあなたを攻撃するためにストレスを1マークしなければなりません。</p><p><strong>ストレスを1マーク</strong>して<em>幻惑</em>を維持しない限り、HPをマークするかダメージを与えたときに解けます。</p>",
+                    "changes": [
+                        "幻影の姿を活かすロール"
+                    ]
                 }
             }
         },
         "Not Done Yet": {
             "_note": "Not Done Yet",
+            "name": "まだ終わらない",
+            "description": "<p>重傷ダメージを受けたとき、希望を1得るかストレスを1つ消せます。</p>",
             "actions": {
                 "wRaYxWWJklfQnGkE": {
                     "name": "希望を得る"
@@ -990,16 +1111,54 @@
         },
         "Otherwordly": {
             "_note": "Otherwordly",
-            "name": "異界"
+            "name": "異界",
+            "description": "<p>攻撃が成功したとき、物理ダメージと魔法ダメージのどちらを与えるか選べます。</p>",
+            "actions": {
+                "R6KliyvYNNvAzMbz": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "RtscqiOS754ouvOM": {
+                    "name": "構え：異界",
+                    "description": "<p>攻撃が成功したとき、物理ダメージと魔法ダメージのどちらを与えるか選べます。</p>"
+                }
+            }
         },
         "Otherworldly Ire": {
-            "_note": "Otherworldly Ire"
+            "_note": "Otherworldly Ire",
+            "name": "異界の憤り",
+            "description": "<p>休憩ごとに1回、ダメージを受けたとき、<strong>任意の数の恩寵を消費</strong>してその数の庇護者ダイスを振り、最も高い結果に等しい数のクリーチャーを近距離以内から対象に選べます。各対象はHPを1つマークしなければなりません。</p>",
+            "actions": {
+                "r84dWo5C5kKvf9rf": {
+                    "name": "恩寵を消費する",
+                    "areas": [
+                        {
+                            "name": "異界の憤り"
+                        }
+                    ]
+                }
+            }
         },
         "Overwhelm": {
-            "_note": "Overwhelm"
+            "_note": "Overwhelm",
+            "name": "圧倒",
+            "description": "<p>対象への攻撃が成功したとき、<strong>希望を1消費</strong>して対象を近距離以内へ投げるか、対象にストレスを1マークさせられます。</p>",
+            "actions": {
+                "mjIdxGa5T9MzPk3D": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Partner-in-Arms": {
-            "_note": "Partner-in-Arms"
+            "_note": "Partner-in-Arms",
+            "name": "戦場の相方",
+            "description": "<p>至近以内の味方がダメージを受けたとき、鎧スロットを1つマークして重傷度をしきい値1段階分下げられます。</p>",
+            "actions": {
+                "D6ClOGDgu6cLanjE": {
+                    "name": "鎧スロットをマーク"
+                }
+            }
         },
         "Path Forward": {
             "_note": "Path Forward"
