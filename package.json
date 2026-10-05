@@ -15,6 +15,7 @@
         "packs:prepare": "node ./tools/packs-sync.mjs prepare",
         "packs:apply": "node ./tools/packs-sync.mjs apply",
         "packs:report": "node ./tools/packs-sync.mjs report",
+        "packs:audit": "node ./tools/packs-sync.mjs audit",
         "packs:check": "node ./tools/packs-sync.mjs check",
         "packs:probe": "node tools/mapping-probe.mjs"
     }

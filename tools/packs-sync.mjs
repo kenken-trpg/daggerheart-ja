@@ -489,6 +489,14 @@ async function buildPack(pack) {
 /** Drop the not-yet-translated entries of a flat name->translation map. */
 const strip = map => Object.fromEntries(Object.entries(map).filter(([, value]) => value));
 
+/** One readable line: markup out, whitespace collapsed, long text cut. */
+const plain = text =>
+    String(text ?? '')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim()
+        .slice(0, 100);
+
 const commands = {
     async export() {
         const pinned = await readJson(PINNED);
@@ -694,6 +702,44 @@ const commands = {
                 `\nto translate:     ${totals.untranslated}` +
                 `\nretired upstream: ${totals.retired}`
         );
+    },
+
+    /*
+     * Print every translated string next to the English it claims to translate.
+     *
+     * `check` compares enrichers, and `report` counts: neither can tell that a
+     * translation is the right text for the wrong document. One of the step-5
+     * probes put Raging River's name and impulses on Abandoned Grove, and it
+     * survived a live run, a report and a check, because every mechanism it
+     * touched worked. Only reading the pairs finds that.
+     */
+    async audit() {
+        let shown = 0;
+        for (const pack of ENABLED) {
+            const { collection, file, documents, keys } = await buildPack(pack);
+            const current = await readJson(file).catch(() => ({ entries: {} }));
+
+            for (const document of documents) {
+                const original = translatableFields(document, pack);
+                const translation = current.entries?.[keys.get(document._id)] ?? {};
+                for (const [where, source, value] of leaves(original, translation)) {
+                    if (!value) continue;
+                    shown += 1;
+                    console.log(`${collection} / ${keys.get(document._id)} :: ${where}`);
+                    console.log(`   en: ${plain(source)}`);
+                    console.log(`   ja: ${plain(value)}`);
+                }
+            }
+
+            for (const [name, value] of Object.entries(current.folders ?? {})) {
+                if (!value) continue;
+                shown += 1;
+                console.log(`${collection} / folders :: ${name}`);
+                console.log(`   en: ${name}`);
+                console.log(`   ja: ${plain(value)}`);
+            }
+        }
+        console.log(`\n${shown} translated field(s) to read`);
     },
 
     async check() {

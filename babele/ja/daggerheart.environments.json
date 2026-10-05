@@ -5,14 +5,14 @@
     "entries": {
         "Abandoned Grove": {
             "_note": "Abandoned Grove",
-            "name": "急流の川",
-            "impulses": "押し流す、孤立させる、渡る者を試す",
+            "name": "打ち捨てられた木立",
+            "impulses": "好奇心を引き寄せる、過去を響かせる",
             "potentialAdversaries": {
                 "VbbsqTQkmScgraqy": {
-                    "label": "敵役"
+                    "label": "獣"
                 },
                 "oKq6LhpXvSWnmqyS": {
-                    "label": "敵役"
+                    "label": "木立の守護者"
                 }
             }
         },
