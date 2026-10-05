@@ -4246,6 +4246,12 @@
         },
         "Fallen Sorcerer": {
             "_note": "Fallen Sorcerer",
+            "name": "堕ちた者の魔術師",
+            "description": "<p>生前に交わした契約に縛られた、強力な魔法使い。</p>",
+            "motivesAndTactics": "手に入れる、気力を奪う、支配する、苦しめる",
+            "attack": {
+                "name": "汚れた杖"
+            },
             "experiences": {
                 "mLFLSWUgJIUIzrUi": {
                     "name": "古き知識"
@@ -4254,6 +4260,7 @@
             "items": {
                 "s15sNyb3JYMzBLIU": {
                     "name": "大火",
+                    "description": "<p><strong>恐怖を1消費</strong>して、すべてを焼き尽くす火炎嵐を放ち、近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d10+6</strong>の直接魔法ダメージを受けます。</p>",
                     "actions": {
                         "v7zZo52Dnj1e1i2G": {
                             "name": "攻撃",
@@ -4267,6 +4274,7 @@
                 },
                 "ecp9o8t1dQFXGsse": {
                     "name": "悪夢の活画",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の対象を、その者が最も恐れるものの強力な幻影に囚えます。囚われている間、その対象は直感ロールに成功して振り払い、両方の状態を終わらせるまで<em>拘束</em>かつ<em>脆弱</em>です。</p>",
                     "actions": {
                         "mXWOpXcYALYqicTw": {
                             "name": "汎用"
@@ -4274,15 +4282,23 @@
                     },
                     "effects": {
                         "Q99saHj6NOY2PSXf": {
-                            "name": "悪夢の活画"
+                            "name": "悪夢の活画",
+                            "description": "<p>直感ロールに成功して振り払い、両方の状態を終わらせるまで<em>拘束</em>かつ<em>脆弱</em>。</p>",
+                            "durationDescription": "<p>直感ロールに成功して振り払うまで。</p>"
                         }
                     }
                 },
+                "C74czwNeWF5vS1DZ": {
+                    "name": "掴みどころなし",
+                    "description": "<p>@Lookup[@name]が攻撃でダメージを受けたとき、遠距離まで転移できます。</p>"
+                },
                 "gwSgBhkcekCGvXxz": {
                     "name": "罪の枷",
+                    "description": "<p><em>カウントダウン（ループ 2d6）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。発動したとき、遠距離以内のすべての対象は、最大の悔いを追体験して脆弱になり、ストレスを1マークしなければなりません。対象は社交ロールまたは頑強ロールに成功すれば、その悔いから抜け出せます。PCが抜け出せなかったとき、そのPCは希望を1失います。</p>",
                     "actions": {
                         "7b0FkpAnWz9a5EWx": {
                             "name": "ストレスをマーク",
+                            "description": "<p>発動したとき、遠距離以内のすべての対象は、最大の悔いを追体験して脆弱になり、ストレスを1マークしなければなりません。対象は社交ロールまたは頑強ロールに成功すれば、その悔いから抜け出せます。PCが抜け出せなかったとき、そのPCは希望を1失います。</p>",
                             "areas": [
                                 {
                                     "name": "罪の枷"
@@ -4291,6 +4307,7 @@
                         },
                         "11PtfoxbgOXxNlkG": {
                             "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（ループ 2d6）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。</p>",
                             "countdown": [
                                 {
                                     "name": "罪の枷"
@@ -4300,7 +4317,9 @@
                     },
                     "effects": {
                         "pWDg0MADoohKu40O": {
-                            "name": "罪の枷"
+                            "name": "罪の枷",
+                            "description": "<p>社交ロールまたは頑強ロールに成功して悔いから抜け出すまで<em>脆弱</em>です。抜け出せなかった場合、希望を1失います。</p>",
+                            "durationDescription": "<p>対象は社交ロールまたは頑強ロールに成功すれば、その悔いから抜け出せます。</p>"
                         }
                     }
                 }
@@ -4308,6 +4327,12 @@
         },
         "Fallen Warlord: Realm-Breaker": {
             "_note": "Fallen Warlord: Realm-Breaker",
+            "name": "堕ちた軍将：領域を砕く者",
+            "description": "<p><em>怒りと怨恨をまとった堕ちた神。英雄の心を折ることにかけて、千年の経験を積んでいる。</em></p>",
+            "motivesAndTactics": "堕落させる、支配する、罰する、弱き者を砕く",
+            "attack": {
+                "name": "鉤付きの鞭"
+            },
             "experiences": {
                 "xmyO4KEYcwlFc0Xk": {
                     "name": "征服"
@@ -4329,8 +4354,18 @@
                         }
                     }
                 },
+                "onaJxgnUtf0ZDyD4": {
+                    "name": "火焔怨嗟の全身鎧",
+                    "description": "<p>@Lookup[@name]がダメージを受けたとき、そのダメージを<strong>2d10</strong>減らします。</p>",
+                    "actions": {
+                        "djEIhnCsuCUdwC0m": {
+                            "name": "2d10をロール"
+                        }
+                    }
+                },
                 "PVLjJaQLH3LK3svk": {
                     "name": "苛む鞭",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に通常の攻撃を行います。対象がこの攻撃のダメージを減らすために防具を使うとき、その対象は鎧スロットを2つマークしなければなりません。</p>",
                     "actions": {
                         "zMVhUekP8pcyQGFR": {
                             "name": "ストレスをマーク",
@@ -4344,9 +4379,11 @@
                 },
                 "48tIwFQr64IQ5LaY": {
                     "name": "すべてを食らう怒り",
+                    "description": "<p><em>カウントダウン（減少 8）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。発動したとき、肉を骨から引き剥がす、具現した怒りの激流を生み出します。遠距離以内のすべての対象は社交リアクションロールを行います。失敗した対象は<strong>2d6+10</strong>の直接魔法ダメージを受けます。成功した対象はダメージを半分受けます。このダメージでマークされたHP1つごとに、そのHPをマークした対象の超近距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.OsLG2BjaEdTZUJU9]{堕ちた者の突撃兵}を1体召喚します。カウントダウンの最大値が0まで減った場合、@Lookup[@name]は残りのHPをすべてマークし、遠距離以内のすべての対象は残りのHPをすべてマークしてデスムーブを行わなければなりません。</p>",
                     "actions": {
                         "rgy5wXyXJWh6uWxC": {
                             "name": "セーブを振る",
+                            "description": "<p>発動したとき、肉を骨から引き剥がす、具現した怒りの激流を生み出します。遠距離以内のすべての対象は社交リアクションロールを行います。失敗した対象は<strong>2d6+10</strong>の直接魔法ダメージを受けます。成功した対象はダメージを半分受けます。このダメージでマークされたHP1つごとに、そのHPをマークした対象の超近距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.OsLG2BjaEdTZUJU9]{堕ちた者の突撃兵}を1体召喚します。カウントダウンの最大値が0まで減った場合、@Lookup[@name]は残りのHPをすべてマークし、遠距離以内のすべての対象は残りのHPをすべてマークしてデスムーブを行わなければなりません。</p>",
                             "areas": [
                                 {
                                     "name": "すべてを食らう怒り"
@@ -4355,6 +4392,7 @@
                         },
                         "8e3BHmOFLvRwPbTW": {
                             "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（減少 8）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。</p>",
                             "countdown": [
                                 {
                                     "name": "すべてを食らう怒り"
@@ -4365,6 +4403,7 @@
                 },
                 "v74W0MUqVi9vPUEw": {
                     "name": "破滅をもたらす者",
+                    "description": "<p>対象が@Lookup[@name]の攻撃でHPをマークしたとき、その対象から遠距離以内のすべてのPCは希望を1失わなければなりません。</p>",
                     "actions": {
                         "WEBPJCbXfBeyHFJ4": {
                             "name": "希望を失う",
@@ -4375,11 +4414,21 @@
                             ]
                         }
                     }
+                },
+                "RscRTl8U8u6WcwAB": {
+                    "name": "我は敗北を知らぬ",
+                    "description": "<p>@Lookup[@name]が最後のHPをマークしたとき、それを@UUID[Compendium.daggerheart.adversaries.Actor.RXkZTwBRi4dJ3JE5]{堕ちた軍将：不敗の覇者}に置き換え、直ちにスポットライトを当てます。</p>"
                 }
             }
         },
         "Fallen Warlord: Undefeated Champion": {
             "_note": "Fallen Warlord: Undefeated Champion",
+            "name": "堕ちた軍将：不敗の覇者",
+            "description": "<p><em>最も恐れられる者だけが、恐れを知る機会を得る相手。</em></p>",
+            "motivesAndTactics": "容赦なき死を下す、抗う者を罰する、どんな代償を払っても勝利を得る",
+            "attack": {
+                "name": "心を砕く剣"
+            },
             "experiences": {
                 "94xNhHTol94phqUY": {
                     "name": "征服"
@@ -4402,6 +4451,8 @@
                     }
                 },
                 "zypNlBVfuaHVw1M4": {
+                    "name": "崩れかけの鎧",
+                    "description": "<p>@Lookup[@name]がダメージを受けたとき、そのダメージを<strong>1d10</strong>減らします。</p>",
                     "actions": {
                         "REOzNvunSAU3UcEx": {
                             "name": "d10をロール"
@@ -4410,6 +4461,7 @@
                 },
                 "t8yOkGWmPgQ6EbIr": {
                     "name": "砕く一撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に通常の攻撃を行います。@Lookup[@name]が成功したPCは、この攻撃でマークしたHPと同じ数の希望を失います。</p>",
                     "actions": {
                         "t1GhGnEhNYyJ7p2U": {
                             "name": "ストレスをマーク",
@@ -4422,6 +4474,8 @@
                     }
                 },
                 "AP7W9ruUCdTHO69S": {
+                    "name": "尽きぬ軍団",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCの人数の2倍の数の@UUID[Compendium.daggerheart.adversaries.Actor.OsLG2BjaEdTZUJU9]{堕ちた者の突撃兵}を召喚します。突撃兵たちは遠距離に現れます。</p>",
                     "actions": {
                         "SrU7qbh8LcOgfozT": {
                             "name": "恐怖を消費する"
@@ -4430,9 +4484,11 @@
                 },
                 "55P7ZijSbQeVHCw4": {
                     "name": "汚辱の円陣",
+                    "description": "<p><em>カウントダウン（1d8）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。発動したとき、@Lookup[@name]から遠距離以内の範囲を覆う魔法の円陣を発動します。その範囲内の対象は、円陣から出るまで脆弱です。この円は@Lookup[@name]に重傷ダメージを与えることで取り除けます。</p>",
                     "actions": {
                         "mHeYZ8e8MbkGz22d": {
                             "name": "円",
+                            "description": "<p>@Lookup[@name]から遠距離以内の範囲を覆う魔法の円陣を発動します。その範囲内の対象は、円陣から出るまで脆弱です。この円は@Lookup[@name]に重傷ダメージを与えることで取り除けます。</p>",
                             "areas": [
                                 {
                                     "name": "汚辱の円陣"
@@ -4441,11 +4497,18 @@
                         },
                         "4x13WyksHU0u0j20": {
                             "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（1d8）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。</p>",
                             "countdown": [
                                 {
                                     "name": "汚辱の円陣"
                                 }
                             ]
+                        }
+                    },
+                    "effects": {
+                        "KlTKlZXjdXQ9v6qB": {
+                            "name": "汚辱の円陣",
+                            "description": "<p>円陣から出るまで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
@@ -4460,6 +4523,7 @@
                 },
                 "tQRotPLi3eokgUdM": {
                     "name": "破滅をもたらす者",
+                    "description": "<p>対象が@Lookup[@name]の攻撃でHPをマークしたとき、その対象から遠距離以内のすべてのPCは希望を1失います。</p>",
                     "actions": {
                         "liwKSCTmQqZasAf6": {
                             "name": "希望を失う",
@@ -4475,8 +4539,20 @@
         },
         "Fellmounted Shadow King": {
             "_note": "Fellmounted Shadow King",
+            "name": "凶獣に乗る影の王",
+            "description": "<p>忘れられた統治者の亡霊。さらに大きな悪に仕え、有翼のウナギにまたがって空を巡回するよう呪われている。</p>",
+            "motivesAndTactics": "魔法のアイテムを探す、恐怖を抱かせる、空を巡回する",
+            "attack": {
+                "name": "呪われたランス"
+            },
+            "experiences": {
+                "4h5VHlsEnMdJg465": {
+                    "name": "探索者"
+                }
+            },
             "items": {
                 "qGCf81nK10Og7mpt": {
+                    "name": "凶獣の乗騎",
                     "description": "<p>影の王が乗騎に乗っている間、難易度に＋2のボーナスを得ます。影の王が重傷ダメージを受けたとき、乗騎から叩き落とされます。影の王が降りてしまった場合、ストレスを1マークして再び召喚するまで乗騎は消えています。</p>",
                     "effects": {
                         "aVCtG2x7n86Y2cmb": {
@@ -4491,7 +4567,11 @@
                     "effects": {
                         "9tji04kVH0ktx3tN": {
                             "name": "光と影",
-                            "description": "<p>影の王は影や暗闇の中では攻撃ロールに有利を、明るい光の中では攻撃ロールに不利を得ます。</p>"
+                            "description": "<p>影の王は影や暗闇の中では攻撃ロールに有利を、明るい光の中では攻撃ロールに不利を得ます。</p>",
+                            "changes": [
+                                "影または暗闇にいる間の攻撃ロール",
+                                "明るい光の中にいる間の攻撃ロール"
+                            ]
                         }
                     }
                 },
@@ -4501,12 +4581,16 @@
                     "effects": {
                         "7EgiE8lojmXYeFky": {
                             "name": "遺物狩り",
-                            "description": "<p>影の王は、魔法の武器または鎧を装備しているPCへの攻撃ロールに有利を得ます。</p>"
+                            "description": "<p>影の王は、魔法の武器または鎧を装備しているPCへの攻撃ロールに有利を得ます。</p>",
+                            "changes": [
+                                "魔法の武器または防具を装備しているPCへの攻撃ロール。"
+                            ]
                         }
                     }
                 },
                 "c5tmMQ8XqlbWxg1E": {
                     "name": "地獄の歌",
+                    "description": "<p><strong>恐怖を2消費</strong>して、影の王の乗騎に、戦場に響き渡る身も凍る叫びを放たせます。遠距離以内の各PCは社交リアクションロール（18）を行います。成功した対象はストレスを1マークしなければなりません。失敗した対象はストレスを1マークし、希望を1失わなければなりません。PCが希望を失えない場合、あなたは恐怖を2得ます。</p>",
                     "actions": {
                         "FVfVrQa9IcADzRIN": {
                             "name": "恐怖を消費する",
@@ -4519,6 +4603,8 @@
                     }
                 },
                 "I8yfiFN4YPX03wtX": {
+                    "name": "空からの援護",
+                    "description": "<p>シーンごとに3回、<strong>恐怖を1消費</strong>して、遠距離以内の味方に、失敗した攻撃を有利を得て振り直させられます。</p>",
                     "actions": {
                         "WMA7N0kjuno2Qwp5": {
                             "name": "恐怖を消費する"
@@ -4529,6 +4615,12 @@
         },
         "Fire Titan Warlord": {
             "_note": "Fire Titan Warlord",
+            "name": "炎のタイタンの軍将",
+            "description": "<p>くすぶるような、戦いに取り憑かれた巨人。特注の鎧をまとい、巨大な大槌を振るう。</p>",
+            "motivesAndTactics": "競争相手と競う、弱き者を征服する、巨大な戦争機械を造る",
+            "attack": {
+                "name": "大槌"
+            },
             "experiences": {
                 "E9EKwdWaU5eaFoxT": {
                     "name": "戦術"
@@ -4536,10 +4628,12 @@
             },
             "items": {
                 "PxiD2XExe45fHIKM": {
-                    "name": "リレントレス（2）"
+                    "name": "リレントレス（2）",
+                    "description": "<p>軍将はGMターンごとに最大2回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "y23ZdtLiSn0pN2g8": {
                     "name": "巨像の造り手",
+                    "description": "<p>カウントダウン（6）。軍将がシーンに登場したとき、カウントダウンを開始します。これは軍将にスポットライトが当たったときに進みます。発動したとき、巨大戦争機械を召喚します。それは戦場の端に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "XCZQJSvp4yPO1rCh": {
                             "name": "カウントダウン開始",
@@ -4550,11 +4644,14 @@
                             ]
                         },
                         "nFtxBG44eEjAF9uk": {
-                            "name": "カウントダウン発動"
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、巨大戦争機械を召喚します。それは戦場の端に現れ、直ちにスポットライトを得ます。</p>"
                         }
                     }
                 },
                 "jxtN0zwQ0831Esty": {
+                    "name": "猟犬を放て",
+                    "description": "<p><strong>恐怖を1消費</strong>して、軍将に魔性の猟犬の群れを2つ召喚させます。それらは近距離に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "ZBhZ4G32zHIuBELj": {
                             "name": "恐怖を消費する"
@@ -4563,6 +4660,7 @@
                 },
                 "tkErESgXR79emSYb": {
                     "name": "回転斬り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内のすべての対象に通常の攻撃を行い、恐怖を1得ます。</p>",
                     "actions": {
                         "yofgD5CBB3bnC8UJ": {
                             "name": "ストレスをマーク",
@@ -4576,6 +4674,7 @@
                 },
                 "vFO6Ikozm5LzM1eh": {
                     "name": "大地を砕く",
+                    "description": "<p><strong>恐怖を1消費</strong>して、軍将に大槌を振り下ろして大地を割らせ、近距離以内の集団に攻撃を行います。この攻撃が成功した対象は<strong>4d10+10</strong>の直接ダメージを受けます。その範囲は難所となり、PCがそこを通って移動するには敏捷リアクションロール（16）に成功しなければなりません。</p>",
                     "actions": {
                         "JEcOJzlgx0cjztWq": {
                             "name": "恐怖を消費する",
@@ -4591,7 +4690,16 @@
         },
         "Fire Titan": {
             "_note": "Fire Titan",
+            "name": "炎のタイタン",
+            "description": "<p>灰色の肌と燃える髪を持ち、自らの鍛冶場で打った名匠の大剣を振るう、鎧をまとった巨人。</p>",
+            "motivesAndTactics": "勇敢に振る舞う、戦を起こす、戦術的に考える",
+            "attack": {
+                "name": "大剣"
+            },
             "experiences": {
+                "hLL2GJm02OJ5N3qp": {
+                    "name": "鍛冶"
+                },
                 "KZzAn1MwdPazyLLq": {
                     "name": "戦術"
                 }
@@ -4603,6 +4711,7 @@
                 },
                 "YUMQEamNAhygXnBu": {
                     "name": "名工の鎧",
+                    "description": "<p>カウントダウン（3）。タイタンが最初に現れたとき、カウントダウンを開始します。これはタイタンが中傷または重傷ダメージを受けたときに進みます。カウントダウンが発動するまで、受けるダメージを<strong>1d12</strong>減らします。発動したとき、タイタンは難易度と攻撃ロールに＋1のボーナスを得ます。</p>",
                     "actions": {
                         "OF01PgCtbYidpp9i": {
                             "name": "カウントダウン開始",
@@ -4613,7 +4722,14 @@
                             ]
                         },
                         "wjxg7DKqkTMMZQG6": {
-                            "name": "カウントダウン発動"
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、タイタンは難易度と攻撃ロールに＋1のボーナスを得ます。</p>"
+                        }
+                    },
+                    "effects": {
+                        "HTFoLFgErxndgm3a": {
+                            "name": "砕けた鎧",
+                            "description": "<p>タイタンは難易度と攻撃ロールに＋1のボーナスを得ます。</p>"
                         }
                     }
                 },
@@ -4623,6 +4739,7 @@
                 },
                 "JtCBTVjwPIpVg5dO": {
                     "name": "岩投げ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の一点を選び、タイタンとその点の間にいるすべての対象に攻撃を行います。タイタンが成功した対象は<strong>3d12</strong>の物理ダメージを受けます。</p>",
                     "actions": {
                         "gnx8dPKyobSiokfc": {
                             "name": "ストレスをマーク",
@@ -4635,13 +4752,20 @@
                     }
                 },
                 "JU15za0bgkRuliRN": {
+                    "name": "頭蓋割り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、このステータスブロックにトークンを1つ置きます。次にタイタンにスポットライトが当たったとき、このステータスブロックからそのトークンを消費し、近距離以内のPCに攻撃を行わなければなりません。成功した場合、<strong>3d20+5</strong>の直接物理ダメージを与えます。失敗した場合、対象はストレスを1マークします。</p>",
                     "actions": {
                         "beZFL9AvGqIQ7oSo": {
                             "name": "ストレスをマーク"
+                        },
+                        "Fy3CLnChxJEjGNoK": {
+                            "description": "<p>次にタイタンにスポットライトが当たったとき、このステータスブロックからそのトークンを消費し、近距離以内のPCに攻撃を行わなければなりません。成功した場合、<strong>3d20+5</strong>の直接物理ダメージを与えます。失敗した場合、対象はストレスを1マークします。</p>"
                         }
                     }
                 },
                 "HtRxbtqEC5NhueTi": {
+                    "name": "燃える心臓",
+                    "description": "<p>タイタンがHPの半分以上をマークしているとき、<strong>恐怖を1消費</strong>して任意の数のストレスをマークし、マークしたストレスと同じ数のHPを消せます。</p>",
                     "actions": {
                         "C0ZOi3wElD7zOGfx": {
                             "name": "治癒する"
@@ -4652,14 +4776,24 @@
         },
         "Flock Of Feather Fiends": {
             "_note": "Flock Of Feather Fiends",
+            "name": "羽魔の群れ",
+            "description": "<p>死霊質の光で目を輝かせた、不死のカラスの死骸の群れ。</p>",
+            "motivesAndTactics": "絶え間なく鳴く、顔を引っ掻く、空を舞う、目をついばむ",
+            "attack": {
+                "name": "ついばみと引っ掻き"
+            },
             "experiences": {
                 "ZVvcSe8CtK8BaKEo": {
                     "name": "飛ぶ"
+                },
+                "TPbfa5qdAbwixgTS": {
+                    "name": "群れ"
                 }
             },
             "items": {
                 "7QZXOe4FMQDIdKhP": {
                     "name": "狂わせる喧噪",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の各PCに直感リアクションロールを行わせます。失敗した対象は、<strong>希望を1消費</strong>するか、群れにダメージを与えるか群れが倒されるまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "4UexHAqjSKVQ4xET": {
                             "name": "ストレスをマーク",
@@ -4672,7 +4806,8 @@
                     },
                     "effects": {
                         "MxhwZqExJ7zhYczO": {
-                            "name": "狂わせる喧噪"
+                            "name": "狂わせる喧噪",
+                            "description": "<p>群れにダメージを与えるか群れが倒されるまで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
@@ -4689,9 +4824,18 @@
         },
         "Fowlbear": {
             "_note": "Fowlbear",
+            "name": "ファウルベア",
+            "description": "<p>羽毛の皮と巨大なガチョウの頭を持つハイイログマ。</p>",
+            "motivesAndTactics": "獲物を待ち伏せへ追い込む、死ぬまで戦う、二頭で狩る",
+            "attack": {
+                "name": "ガチョウの歯と熊の爪"
+            },
             "experiences": {
                 "C7l5XPHj94LFwWgl": {
                     "name": "鋭敏な感覚"
+                },
+                "YnF8G1AzJ3ZE8lHY": {
+                    "name": "池"
                 }
             },
             "items": {
@@ -4710,6 +4854,7 @@
                 },
                 "XgFxbNdlfIhPkfuo": {
                     "name": "恐慄の警笛",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に恐ろしく耳を裂くようなガチョウの鳴き声を放たせます。近距離以内の各PCは社交リアクションロールを行います。失敗した対象はストレスを1マークし、@Lookup[@name]から遠距離まで離れ、@Lookup[@name]がダメージを与えるまで<em>脆弱</em>になります。成功した対象はストレスを1マークするか、@Lookup[@name]から遠距離まで離れなければなりません。</p>",
                     "actions": {
                         "1C5RPriP5Jj8FCcY": {
                             "name": "恐怖を消費する",
@@ -4722,7 +4867,8 @@
                     },
                     "effects": {
                         "IljzcP1SgGEYK6P2": {
-                            "name": "恐慄の警笛"
+                            "name": "恐慄の警笛",
+                            "description": "<p>ファウルベアがダメージを与えるまで<em>脆弱</em>です。</p>"
                         }
                     }
                 }
@@ -4730,12 +4876,28 @@
         },
         "Frost Titan": {
             "_note": "Frost Titan",
+            "name": "霜のタイタン",
+            "description": "<p>青い肌と霜をまとった髪を持ち、過去の戦いの戦利品を身につけた巨人。</p>",
+            "motivesAndTactics": "戦利品を奪う、襲撃して略奪する、力量を試す",
+            "attack": {
+                "name": "双斧"
+            },
+            "experiences": {
+                "aZ8KLiWkEQoIxG0C": {
+                    "name": "寒冷"
+                },
+                "YvVbeS62FLSreYv0": {
+                    "name": "戦"
+                }
+            },
             "items": {
                 "jcUKQh9HyQ3Sysn4": {
-                    "name": "リレントレス（2）"
+                    "name": "リレントレス（2）",
+                    "description": "<p>タイタンはGMターンごとに最大2回スポットライトを当てられます。スポットライトを当てるには、通常どおり恐怖を消費します。</p>"
                 },
                 "UhGyp4zqdXYhXeQj": {
                     "name": "戦の角笛",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の各PCに、社交リアクションロールに成功しなければストレスを1マークさせ、その対象への次の攻撃が終わるまで<em>脆弱</em>にします。</p>",
                     "actions": {
                         "1AiT9G5RFyuMtfBu": {
                             "name": "ストレスをマーク",
@@ -4748,12 +4910,14 @@
                     },
                     "effects": {
                         "c62wrfqQ6rtHWOUz": {
-                            "name": "戦の角笛"
+                            "name": "戦の角笛",
+                            "description": "<p>その対象への次の攻撃が終わるまで<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "lxMzWFQOIpidX094": {
                     "name": "猛進",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離まで移動し、近接距離以内の対象に攻撃ロールを行います。成功した場合、<strong>4d10+2</strong>の物理ダメージを与え、対象を近距離まで吹き飛ばします。</p>",
                     "actions": {
                         "XfNzlNYwGNaIIdcg": {
                             "name": "ストレスをマーク"
@@ -4761,16 +4925,28 @@
                     }
                 },
                 "bpPjEZDSWM7hE6mt": {
+                    "name": "切り裂く一撃",
+                    "description": "<p>PCがタイタンの通常の攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、その攻撃が成功していたであろう超近距離以内の別のPCに、同じ数のHPをマークさせられます。</p>",
                     "actions": {
                         "Ox1aV96UwKOoTdtx": {
                             "name": "ストレスをマーク"
                         }
                     }
+                },
+                "k679eYeZNOLxd9Dz": {
+                    "name": "戦利品狩り",
+                    "description": "<p>タイタンがPCを倒したとき、タイタンはそのPCの最も価値のある持ち物を戦利品として奪います。</p>"
                 }
             }
         },
         "Fungispunj Sporeling": {
             "_note": "Fungispunj Sporeling",
+            "name": "ファンギスパンジの胞子子",
+            "description": "<p>ハーフリングほどの大きさのキノコのクリーチャー。襲ってくる者に神経毒の胞子を小さく吹きつけて身を守る。</p>",
+            "motivesAndTactics": "暴力を避ける、襲ってくる者に吹きつける",
+            "attack": {
+                "name": "神経胞子"
+            },
             "experiences": {
                 "9pT6tvgfq6o8Msej": {
                     "name": "暗闇"
@@ -4778,10 +4954,12 @@
             },
             "items": {
                 "JnbkY6k2RLOAgCQZ": {
-                    "name": "ミニオン（6）"
+                    "name": "ミニオン（6）",
+                    "description": "<p>胞子子はダメージを受けると倒されます。PCが胞子子に与えたダメージ6ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "WYVSRLqN5A9eZykm": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが4の魔法ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "NHaqB3FTHCRZ42Te": {
                             "name": "恐怖を消費する"
@@ -4789,6 +4967,8 @@
                     }
                 },
                 "KjDHgxHRNrSov4e8": {
+                    "name": "集まれ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離の範囲内にいる胞子子3体を合わせ、ファンギスパンジの胞子嚢に置き換えます。</p>",
                     "actions": {
                         "61vmnHULWdWkOyZY": {
                             "name": "恐怖を消費する"
