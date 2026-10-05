@@ -1307,6 +1307,12 @@
         },
         "Cephilith Hatchling": {
             "_note": "Cephilith Hatchling",
+            "name": "セフィリスの孵化体",
+            "description": "<p>イカに似た寄生体。獲物の頭蓋に取り付き、その脳を異次元の神経毒に浸す。</p>",
+            "motivesAndTactics": "登る、喰らう、孵る、麻痺させる、素早く這う",
+            "attack": {
+                "name": "棘のある吸盤"
+            },
             "experiences": {
                 "4nHrkhwwC5d3jOzY": {
                     "name": "精神"
@@ -1314,17 +1320,27 @@
             },
             "items": {
                 "is4t4iHrOBy2tSuD": {
-                    "name": "ミニオン（12）"
+                    "name": "ミニオン（12）",
+                    "description": "<p>孵化体はダメージを受けると倒されます。PCが孵化体に与えたダメージ12ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "el7eTepwDBzJVJ2z": {
+                    "name": "昏睡させる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、孵化体を近接射程内のPCの頭に取り付かせます。孵化体がそのPCの脳に精神化学物質を注ぎ込み、そのPCはストレスを1マークしなければなりません。さらに、いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。そのPCは、自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間にPCが最後のストレスをマークした場合、そのPCは死の選択を行わなければなりません。</p><section id=\"secret-HARNmm4yQbzlxbdw\" class=\"secret\"><p>そのPCが死んだ場合、<strong>恐怖を1消費</strong>してセフィリスの新信者として蘇らせられます。</p></section>",
                     "actions": {
                         "5p9hecdIVDlsJEcD": {
                             "name": "恐怖を消費する"
+                        }
+                    },
+                    "effects": {
+                        "JvTbZJPusa99dZph": {
+                            "name": "埋め込まれた孵化体",
+                            "description": "<p>いずれかのPCが恐怖とともにロールに失敗するたびに、ストレスを1マークしなければなりません。</p><p>自分がマークしているストレスの数に等しい希望を消費して孵化体を取り除けます。孵化体が取り付いている間に最後のストレスをマークした場合、死の選択を行わなければなりません。</p>"
                         }
                     }
                 },
                 "0ys64jwVIc6yagjB": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その近距離以内のすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接射程内へ移動し、1回の共有の攻撃ロールを行います。成功した場合、それぞれが9の物理ダメージを与えます。このダメージは合計します。</p>",
                     "actions": {
                         "AFZn3x4gJevftvTS": {
                             "name": "恐怖を消費する"
@@ -1335,12 +1351,25 @@
         },
         "Cephilith Novitiate": {
             "_note": "Cephilith Novitiate",
+            "name": "セフィリスの新信者",
+            "description": "<p>現世の名士。異界の力を得る代わりに、自らの精神を異次元の存在に渡した。</p>",
+            "motivesAndTactics": "他者に真実を見せる、「それ」のために道を開く、禁じられた知識を求める",
+            "attack": {
+                "name": "異界の力"
+            },
+            "experiences": {
+                "LtXbT7kPQgrzA1fc": {
+                    "name": "幻視"
+                }
+            },
             "items": {
                 "51jjStc5Lv9zAu14": {
-                    "name": "ミニオン（12）"
+                    "name": "ミニオン（12）",
+                    "description": "<p>新信者はダメージを受けると倒されます。PCが新信者に与えたダメージ12ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "OpPYnhqeYotcyobD": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その近距離以内のすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接射程内へ移動し、1回の共有の攻撃ロールを行います。成功した場合、それぞれが12の物理ダメージを与えます。このダメージは合計します。</p>",
                     "actions": {
                         "rim1gdTzGtmlnYwN": {
                             "name": "恐怖を消費する"
@@ -1348,6 +1377,8 @@
                     }
                 },
                 "bAxGTMuqrqkKcvZP": {
+                    "name": "自らを捧げる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、新信者を遠距離以内の対象へ突進させ、その対象の中へ溶け込ませます。その対象に12の直接魔法ダメージを与え、新信者を倒します。</p>",
                     "actions": {
                         "oFX7G8hcLCgW6UiX": {
                             "name": "恐怖を消費する"
@@ -1358,9 +1389,21 @@
         },
         "Cephilith Priest": {
             "_note": "Cephilith Priest",
+            "name": "セフィリスの司祭",
+            "description": "<p>常に湿った、顔のない外界の人型。長く伸びた指と半透明の皮膚を持ち、その下で蠢く虫が見える。</p>",
+            "motivesAndTactics": "信じぬ者の精神を砕く、セフィリス・タイタンの到来に向けてこの世界を整える、その讃美を歌う",
+            "attack": {
+                "name": "精神の一撃"
+            },
+            "experiences": {
+                "p655EkVGRtLPmFzU": {
+                    "name": "外界"
+                }
+            },
             "items": {
                 "cVDi7HxrpgdaKIps": {
                     "name": "精神衝撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内のPCを3体まで選び、知識リアクションロールを行わせます。成功した対象は<strong>2d10＋5</strong>の直接魔法ダメージを受けます。失敗した対象は<strong>4d10＋10</strong>の直接魔法ダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "15jdZOaS3ejfhb6r": {
                             "name": "恐怖を消費する"
@@ -1374,6 +1417,8 @@
                     }
                 },
                 "WXxRFMvq0LjWyNEj": {
+                    "name": "脳への侵入",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近接射程内の<em>脆弱</em>な対象を1体選びます。司祭はその対象を掴み、長く伸びた指を対象の耳、鼻、口に差し込みます。その対象は頑強リアクションロールに成功しなければストレスを<strong>1d6</strong>マークし、司祭は同じ数のストレスを消します。</p>",
                     "actions": {
                         "9o3WlHvN9db1Aruv": {
                             "name": "恐怖を消費する"
@@ -1381,6 +1426,8 @@
                     }
                 },
                 "DD6c2yZwZGEh9dud": {
+                    "name": "念動の掌握",
+                    "description": "<p>司祭がPCへの標準攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、その対象が<strong>希望を1消費</strong>するまで<em>拘束</em>できます。</p>",
                     "actions": {
                         "1fqaNFtUvzKlZ6h7": {
                             "name": "ストレスをマーク"
@@ -1388,7 +1435,8 @@
                     },
                     "effects": {
                         "aIb49txPodEzSnGS": {
-                            "name": "掴まれ"
+                            "name": "掴まれ",
+                            "description": "<p>希望を1消費するまで<em>拘束</em>されています。</p>"
                         }
                     }
                 }
@@ -1396,17 +1444,28 @@
         },
         "Cephilith Titan": {
             "_note": "Cephilith Titan",
+            "name": "セフィリス・タイタン",
+            "description": "<p>次元を越えた存在。あり得ないほど巨大な有翼の人型で、タコの形の頭と並んだ輝く眼を持つ。</p>",
+            "motivesAndTactics": "信徒を呼び喰らう、現実を堕落させる、現世へ侵攻する、混沌を吐き出す",
+            "attack": {
+                "name": "擬似爪"
+            },
             "experiences": {
+                "3T3pgehOY5p4422L": {
+                    "name": "混沌"
+                },
                 "yF1MBO593WrOm30X": {
                     "name": "精神"
                 }
             },
             "items": {
                 "Ku1IguoeLopi1W50": {
-                    "name": "リレントレス（X）"
+                    "name": "リレントレス（X）",
+                    "description": "<p>タイタンはGMのターンごとにX回までスポットライトを当てられます。XはそのシーンにいるPCの数に等しいです。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "YqANVDSnjcVCK5vm": {
                     "name": "恐るべき者",
+                    "description": "<p>タイタンが攻撃に成功したとき、近距離以内のすべてのPCは希望を1失い、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "QoeNuj825yKVQqbN": {
                             "areas": [
@@ -1429,6 +1488,7 @@
                 },
                 "MXC78VtfVHw6pQ5e": {
                     "name": "精神の叫び",
+                    "description": "<p><strong>恐怖を1消費</strong>して、タイタンに外界からの悪夢のような幻視を、精神を砕く勢いで解き放たせます。遠距離以内の各PCは直感リアクションロール（22）を行わなければなりません。失敗した対象は<strong>4d12</strong>の直接魔法ダメージを受けます。成功した対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "yzrcBjVgD4PxIUpy": {
                             "name": "恐怖を消費する",
@@ -1441,9 +1501,21 @@
                     }
                 },
                 "DKl9G56DwWpLVblv": {
+                    "name": "信徒を召喚",
+                    "description": "<p><strong>恐怖を1消費</strong>して、セフィリスの忌まわしきものを<strong>1d4</strong>体召喚します。遠距離以内に現れ、その後1体を選んで直ちにスポットライトを当てます。</p>",
                     "actions": {
                         "g74MjOlwJaJiYvcn": {
                             "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "SGaUcNeQ3Y7F0Tlf": {
+                    "name": "「それが、来た……」",
+                    "description": "<p>タイタンがHPの半分をマークしたとき、完全な姿で顕現し、すべてのHPを消して「ただの投影」の特徴を失います。タイタンがこの姿である間、タイタンの標準攻撃でHPをマークしたクリーチャーは、HPを1つ追加でマークしなければなりません。</p>",
+                    "effects": {
+                        "thBjAMP3WaNYxyJp": {
+                            "name": "それが、来た……",
+                            "description": "<p>タイタンがこの姿である間、タイタンの標準攻撃でHPをマークしたクリーチャーは、HPを1つ追加でマークしなければなりません。</p>"
                         }
                     }
                 }
@@ -1451,12 +1523,20 @@
         },
         "Chaos Skull": {
             "_note": "Chaos Skull",
+            "name": "混沌の髑髏",
+            "description": "<p>きらめく魔力に動かされ、浮遊する人型の頭蓋骨。</p>",
+            "motivesAndTactics": "けたけたと笑う、魔力を喰らう、創り主に仕える",
+            "attack": {
+                "name": "エネルギーの衝撃"
+            },
             "items": {
                 "m6uPm4vujrUjSFPw": {
                     "name": "浮揚",
+                    "description": "<p>@Lookup[@name]は地面から数フィート浮いており、<em>拘束</em>されません。</p>",
                     "effects": {
                         "k6iaQVfMZhrpwYQj": {
-                            "name": "浮揚"
+                            "name": "浮揚",
+                            "description": "<p>髑髏は地面から数フィート浮いており、<em>拘束</em>されません。</p>"
                         }
                     }
                 },
@@ -1465,12 +1545,14 @@
                     "description": "<p>@Lookup[@name]は魔法ダメージに抵抗を持ちます。</p>",
                     "effects": {
                         "4rj6PM0AGrrlbxSc": {
-                            "name": "結界"
+                            "name": "結界",
+                            "description": "<p>髑髏は魔法ダメージに抵抗を持ちます。</p>"
                         }
                     }
                 },
                 "Zn25zBr96y1hrmnr": {
                     "name": "魔力の爆発",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のすべての対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>2d6＋4</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "iF0PD1t3yovKMTfy": {
                             "name": "攻撃",
@@ -1483,6 +1565,8 @@
                     }
                 },
                 "urXRi4bdBfvl8U6K": {
+                    "name": "魔力を吸い上げる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、至近以内の呪文発動特性を持つPCに攻撃を行います。成功した場合、その対象はストレスを<strong>1d4</strong>マークし、@Lookup[@name]は同じ数のストレスを消します。さらに成功した場合、@Lookup[@name]は直ちに再びスポットライトを得られます。</p>",
                     "actions": {
                         "872Fq88Hitwc6f3W": {
                             "name": "攻撃"
@@ -1493,7 +1577,22 @@
         },
         "Chicken-foot Hut": {
             "_note": "Chicken-foot Hut",
+            "name": "鶏足の小屋",
+            "description": "<p>巨大な鶏の脚で歩き回る、背の高い木造の小屋。</p>",
+            "motivesAndTactics": "引っ掻く、主を守る、走って跳ぶ、踏みつける",
+            "attack": {
+                "name": "爪のある脚"
+            },
+            "experiences": {
+                "LGZNshIAT4Gnm5lC": {
+                    "name": "森林"
+                }
+            },
             "items": {
+                "2GmCyknwoYSebFLO": {
+                    "name": "俊足",
+                    "description": "<p>小屋はスポットライトが当たったとき、遠距離まで移動できます。</p>"
+                },
                 "N9tz3fFJ5DFerV0u": {
                     "name": "二連撃",
                     "description": "<p><strong>ストレスを1マーク</strong>して、標準攻撃を2回行います。両方の攻撃が同じ対象に成功した場合、ダメージを合計します。</p>",
@@ -1504,6 +1603,8 @@
                     }
                 },
                 "TAcEerFCrdmDvKHL": {
+                    "name": "押さえつける",
+                    "description": "<p>小屋が標準攻撃に成功したとき、<strong>ストレスを1マーク</strong>して対象を一時的に<em>拘束</em>できます。小屋は移動するとき、<em>拘束</em>した対象を引きずります。</p>",
                     "actions": {
                         "MrARhvjsWvXX0sn1": {
                             "name": "ストレスをマーク"
@@ -1511,7 +1612,8 @@
                     },
                     "effects": {
                         "TmPOgMEhFSv1ZPIf": {
-                            "name": "押さえつけ"
+                            "name": "押さえつけ",
+                            "description": "<p><em>拘束</em>されています。小屋が移動するとき、あなたは引きずられます。</p>"
                         }
                     }
                 }
@@ -1519,6 +1621,9 @@
         },
         "Chimera": {
             "_note": "Chimera",
+            "name": "キマイラ",
+            "description": "<p>獅子の頭、山羊の胴、蛇の尾を持つ、炎を吐く巨大な怪物。</p>",
+            "motivesAndTactics": "獲物をもてあそぶ、縄張りを巡る、家畜を殺す",
             "attack": {
                 "name": "爪"
             },
@@ -1528,11 +1633,17 @@
                 }
             },
             "items": {
+                "E7QVs9GBQbV36xWM": {
+                    "name": "引き裂く顎",
+                    "description": "<p>@Lookup[@name]がPCへの攻撃に成功したとき、その対象は重傷度をしきい値1段階分下げるために鎧スロットを2つマークしなければなりません。</p>"
+                },
                 "pxSZYIsKirm5mjQc": {
+                    "name": "二重の爪",
                     "description": "<p><strong>ストレスを1マーク</strong>して、標準攻撃を2回行います。両方の攻撃が同じ対象に成功した場合、ダメージを合計します。</p>"
                 },
                 "X8V3EFHkGm1G72w2": {
                     "name": "火炎のブレス",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]の正面の近距離以内のPCを3体まで対象にします。各対象は素早さリアクションロール（20）を行わなければなりません。失敗した対象は<strong>3d12</strong>の魔法ダメージを受けます。成功した対象は、鎧スロットかストレスのいずれかを1つマークすることを選ばなければなりません。</p>",
                     "actions": {
                         "owsdkSOvPqtwCSkB": {
                             "name": "恐怖を消費する",
@@ -1545,6 +1656,8 @@
                     }
                 },
                 "dV6pQgDxmke0KpPH": {
+                    "name": "蛇の一撃",
+                    "description": "<p>近距離以内のPCが@Lookup[@name]を攻撃の対象としたとき、<strong>ストレスを1マーク</strong>して先にそのPCを攻撃できます。成功した場合、<strong>4d4＋10</strong>の物理ダメージを与え、次の休憩まで、または知識ロール（20）に成功するまで毒を与えます。毒を受けている間、その対象はアクションロールを行う前に<strong>d6</strong>を1つ振らなければなりません。結果が3以下の場合、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "sqQugqX8JTZTAew5": {
                             "name": "ストレスをマーク"
@@ -1552,7 +1665,8 @@
                     },
                     "effects": {
                         "Qh9Aso9z9OCoKCUO": {
-                            "name": "毒"
+                            "name": "毒",
+                            "description": "<p>次の休憩まで、または知識ロール（20）に成功するまで毒を受けています。</p><p>毒を受けている間、アクションロールを行う前に<strong>d6</strong>を1つ振らなければなりません。結果が3以下の場合、ストレスを1マークしなければなりません。</p>"
                         }
                     }
                 }
@@ -1560,12 +1674,18 @@
         },
         "Cipactli": {
             "_note": "Cipactli",
+            "name": "シパクトリ",
+            "description": "<p>巨大な鰐。魚の鱗、蟾蜍の皮、そして数十の飢えた口が継ぎ合わされた体を持つ。</p>",
+            "motivesAndTactics": "喰らう、大地を作り変える、踏みつける",
             "attack": {
                 "name": "噛みつき"
             },
             "experiences": {
                 "qjqDDcxLzcyqdEjm": {
                     "name": "飢餓"
+                },
+                "uAFzRtGua0v6sHBY": {
+                    "name": "原初"
                 }
             },
             "items": {
@@ -1575,6 +1695,7 @@
                 },
                 "LW4JURcTsZzpC5Ay": {
                     "name": "多くの口",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、至近以内のすべての対象に標準攻撃を行います。@Lookup[@name]が成功した対象は、ストレスも1マークしなければなりません。</p>",
                     "actions": {
                         "A5jRCVOuw9Wfvfwk": {
                             "name": "ストレスをマーク",
@@ -1588,6 +1709,7 @@
                 },
                 "qkWS8NduN1NUBsg9": {
                     "name": "狂乱の捕食",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内のすべてのPCに直感リアクションロールを行わせ、成功しなければ<strong>4d6</strong>の直接物理ダメージを与えます。@Lookup[@name]は、この攻撃で重傷ダメージを受けたクリーチャー1体につきHPを1つ消します。</p>",
                     "actions": {
                         "rSdl6SV58g5WGgN5": {
                             "name": "恐怖を消費する",
@@ -1601,6 +1723,7 @@
                 },
                 "UGMAHKqr6KGuKx0o": {
                     "name": "地を揺らす足音",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の各PCに素早さリアクションロールを行わせます。失敗した対象はストレスを2マークし、ダメージを受けるまで<em>脆弱</em>になります。成功した対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "km5CfvdRMj6VVC8C": {
                             "name": "ストレスをマーク",
@@ -1613,12 +1736,14 @@
                     },
                     "effects": {
                         "SNVqNrA4gZDN2Loj": {
-                            "name": "地を揺らす足音"
+                            "name": "地を揺らす足音",
+                            "description": "<p>ダメージを受けるまで<em>脆弱</em>です</p>"
                         }
                     }
                 },
                 "a4e7n4uzB7hHlVyW": {
                     "name": "生命を帯びた血",
+                    "description": "<p>@Lookup[@name]が重傷ダメージを受けたとき、その血が地面に飛び散り、たちまち密林となって噴き出します。近距離以内のすべてのクリーチャーは一時的に<em>拘束</em>されます。</p>",
                     "actions": {
                         "vkJPyvxuhVINY5iD": {
                             "areas": [
@@ -1627,19 +1752,39 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "GUWndnEab5P150OH": {
+                            "name": "繁茂"
+                        }
                     }
+                },
+                "FvBoTWCmTlYjRRJU": {
+                    "name": "緑の爆発",
+                    "description": "<p>@Lookup[@name]が最後のHPをマークしたとき、その体から濃密な草木が噴き出し、周囲の土地を覆い尽くします。</p>"
                 }
             }
         },
         "Cloud Titan": {
             "_note": "Cloud Titan",
+            "name": "雲のタイタン",
+            "description": "<p>目を奪うほど魅力的な、青い肌の巨人。最上の絹をまとい、宝飾を身にあふれるほど着けている。贅美を愛し、宝で満ちた天空の宮殿に住む。</p>",
+            "motivesAndTactics": "稀少で高価な物を手に入れる、美を讃える、面白い賭けを決して見逃さない",
+            "attack": {
+                "name": "宝石の刃"
+            },
             "experiences": {
+                "tymE5sY2cv2UdByD": {
+                    "name": "贅美"
+                },
                 "irpt9CO07ENs9sNJ": {
                     "name": "高貴"
                 }
             },
             "items": {
                 "Sp222OsLrxhKnqh6": {
+                    "name": "雷撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の対象に攻撃を行います。成功した場合、<strong>4d10＋14</strong>の魔法ダメージを与え、<strong>[[/r d6]]</strong>を振ります。結果が4以上の場合、雷は跳ね返り、タイタンは直前の対象の至近以内にいる別の対象にこの攻撃を行います。雷が跳ね返るたびに、与えるダメージを<strong>[[/r 1d10]]</strong>減らします。</p>",
                     "actions": {
                         "qE5pQilUjZXIyXMt": {
                             "name": "ストレスをマーク"
@@ -1648,6 +1793,7 @@
                 },
                 "T5YGSmbgKztOSs2Z": {
                     "name": "霧を織る者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の一点を選びます。タイタンはその点の近距離以内の範囲に濃い霧を呼び出します。タイタンは霧の中および霧の向こう側の敵からは隠密となり、霧の中のクリーチャーへの攻撃に有利を得ます。この霧はタイタンがHPをマークするまで続きます。</p>",
                     "actions": {
                         "TXpUIzZLHcb1VG2K": {
                             "name": "恐怖を消費する",
@@ -1661,6 +1807,7 @@
                 },
                 "6X2CCDC4aZtXOovu": {
                     "name": "霧散の変容",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、タイタンを至近の範囲を満たす霧の雲へ変えます。この姿の間、タイタンは魔法ダメージを2倍受け、物理ダメージに無効を持ちます。この姿は、タイタンが自ら解除するか、重傷ダメージを受けるまで続きます。</p>",
                     "actions": {
                         "OKZGftQoMF3KgKcu": {
                             "name": "ストレスをマーク",
@@ -1670,9 +1817,17 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "ClprkXZzAmSb1hsb": {
+                            "name": "霧散",
+                            "description": "<p>この姿の間、タイタンは魔法ダメージを2倍受け、物理ダメージに無効を持ちます。この姿は、タイタンが自ら解除するか、重傷ダメージを受けるまで続きます。</p>"
+                        }
                     }
                 },
                 "i2PdaF37Qm1Xa6mL": {
+                    "name": "珍獣を解き放つ",
+                    "description": "<p>シーンごとに1回、任意の数のストレスをマークして、同じ数の@UUID[Compendium.daggerheart.adversaries.Actor.CJtnIPvyAmv6PFsu]{グリフォン}を召喚します。近距離に現れます。</p>",
                     "actions": {
                         "B9GI7mCWdwxFdXvu": {
                             "name": "ストレスをマーク"
@@ -1680,6 +1835,8 @@
                     }
                 },
                 "HhuXSt7z9vfEQi8k": {
+                    "name": "風を操る者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、タイタンに近距離以内の対象へ風を叩きつけさせます。その対象は<strong>4d6＋8</strong>の物理ダメージを受け、現在地から遠距離まで吹き戻されます。</p>",
                     "actions": {
                         "Oqu4Kzsewrrw9SWJ": {
                             "name": "恐怖を消費する"
@@ -1687,15 +1844,28 @@
                     }
                 },
                 "wfgDF0F6enntq5mk": {
-                    "name": "倍か無か"
+                    "name": "倍か無か",
+                    "description": "<p>タイタンへの攻撃によって恐怖を得るとき、<strong>d6</strong>を1つ振れます。奇数の結果の場合、その恐怖を得ません。偶数の結果の場合、1つではなく2つの恐怖を得ます。</p>"
                 }
             }
         },
         "Common Ruffian": {
             "_note": "Common Ruffian",
+            "name": "並のならず者",
+            "description": "<p>境遇に押されて他者を襲うようになった、土地の労働者や職人。</p>",
+            "motivesAndTactics": "暴力を振るう、安全と生存を求める",
+            "attack": {
+                "name": "即席の武器"
+            },
+            "experiences": {
+                "OD05o4Zfl2hwZLvi": {
+                    "name": "切迫"
+                }
+            },
             "items": {
                 "sLpf8vqxOlxYUHZN": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その近距離以内のすべてのならず者にスポットライトを当てます。それらのならず者は対象の近接射程内へ移動し、1回の共有の攻撃ロールを行います。成功した場合、それぞれが<strong>1d8</strong>の物理ダメージを与えます。このダメージは合計します。</p>",
                     "actions": {
                         "3jD9o4jVcwkmFiLm": {
                             "name": "恐怖を消費する"
@@ -1703,6 +1873,8 @@
                     }
                 },
                 "itwtcnEMaOpl4T8K": {
+                    "name": "生存本能",
+                    "description": "<p>ならず者がHPの半分をマークしたとき、<strong>d6</strong>を1つ振ります。結果が4以上の場合、そのならず者はシーンから逃げ出します。そうでなければ、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "RqGsL4UK1ITsR6ZF": {
                             "name": "逃走判定"
