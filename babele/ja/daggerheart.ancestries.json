@@ -2,6 +2,9 @@
     "label": "ancestries",
     "collection": "daggerheart.ancestries",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Ancestry Features": "種族特徴"
+    },
     "entries": {
         "Aetheris": {
             "_note": "Aetheris"
@@ -96,7 +99,13 @@
             "_note": "Celestial Wings"
         },
         "Charge": {
-            "_note": "Charge"
+            "_note": "Charge",
+            "name": "充填する",
+            "actions": {
+                "KLg0T6I1w24sfIbH": {
+                    "name": "ダメージを与える"
+                }
+            }
         },
         "Danger Sense": {
             "_note": "Danger Sense"
@@ -111,7 +120,12 @@
             "_note": "Efficient"
         },
         "Elemental Breath": {
-            "_note": "Elemental Breath"
+            "_note": "Elemental Breath",
+            "actions": {
+                "a6WROv0OKx0lbYVa": {
+                    "name": "攻撃"
+                }
+            }
         },
         "Endurance": {
             "_note": "Endurance"
@@ -156,7 +170,12 @@
             "_note": "Internal Compass"
         },
         "Kick": {
-            "_note": "Kick"
+            "_note": "Kick",
+            "actions": {
+                "bXbQ57CB1Hfj5XrS": {
+                    "name": "ダメージを与える"
+                }
+            }
         },
         "Lifespring": {
             "_note": "Lifespring"
@@ -168,7 +187,12 @@
             "_note": "Luckbender"
         },
         "Luckbringer": {
-            "_note": "Luckbringer"
+            "_note": "Luckbringer",
+            "actions": {
+                "8sK3t73bFkpb999C": {
+                    "name": "希望を得る"
+                }
+            }
         },
         "Natural Climber": {
             "_note": "Natural Climber"
@@ -186,10 +210,17 @@
             "_note": "Quick Reactions"
         },
         "Reach": {
-            "_note": "Reach"
+            "_note": "Reach",
+            "name": "リーチ"
         },
         "Retract": {
-            "_note": "Retract"
+            "_note": "Retract",
+            "name": "格納する",
+            "effects": {
+                "3V4FPoyjJUnFP9WS": {
+                    "name": "格納する"
+                }
+            }
         },
         "Retracting Claws": {
             "_note": "Retracting Claws"
@@ -216,7 +247,12 @@
             "_note": "Tusks"
         },
         "Unshakeable": {
-            "_note": "Unshakeable"
+            "_note": "Unshakeable",
+            "actions": {
+                "x8xbjyCrJ0okOpIU": {
+                    "name": "使う"
+                }
+            }
         },
         "Wings": {
             "_note": "Wings"

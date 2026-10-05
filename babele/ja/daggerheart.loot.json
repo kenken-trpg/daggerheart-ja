@@ -28,7 +28,12 @@
             "_note": "Ball Bearings"
         },
         "Belt of Unity": {
-            "_note": "Belt of Unity"
+            "_note": "Belt of Unity",
+            "actions": {
+                "SuaYNEUO9U9TIZWb": {
+                    "name": "使う"
+                }
+            }
         },
         "Blackwing Quill": {
             "_note": "Blackwing Quill"
@@ -52,7 +57,12 @@
             "_note": "Brooch"
         },
         "Calming Pendant": {
-            "_note": "Calming Pendant"
+            "_note": "Calming Pendant",
+            "actions": {
+                "wIlkGuUddWSUp4nN": {
+                    "name": "使う"
+                }
+            }
         },
         "Caltrops": {
             "_note": "Caltrops"
@@ -190,13 +200,23 @@
             "_note": "Honing Relic"
         },
         "Hopekeeper Locket": {
-            "_note": "Hopekeeper Locket"
+            "_note": "Hopekeeper Locket",
+            "actions": {
+                "xof31iSNIfxhbZH9": {
+                    "name": "使う"
+                }
+            }
         },
         "Infinite Bag": {
             "_note": "Infinite Bag"
         },
         "Insomniac's Periapt": {
-            "_note": "Insomniac's Periapt"
+            "_note": "Insomniac's Periapt",
+            "actions": {
+                "c4teM6lMrHR7170V": {
+                    "name": "使う"
+                }
+            }
         },
         "Iron Dagger Pendant": {
             "_note": "Iron Dagger Pendant"
@@ -247,7 +267,12 @@
             "_note": "Nighthawker's Ring"
         },
         "Paragon's Chain": {
-            "_note": "Paragon's Chain"
+            "_note": "Paragon's Chain",
+            "actions": {
+                "esnUuqMcvyOvI6PV": {
+                    "name": "使う"
+                }
+            }
         },
         "Phobophage's Circlet": {
             "_note": "Phobophage's Circlet"
@@ -256,7 +281,12 @@
             "_note": "Phoenix Feather"
         },
         "Piercing Arrows": {
-            "_note": "Piercing Arrows"
+            "_note": "Piercing Arrows",
+            "actions": {
+                "DW5AqEM0F8XaUqpn": {
+                    "name": "使う"
+                }
+            }
         },
         "Piper Whistle": {
             "_note": "Piper Whistle"
@@ -272,7 +302,12 @@
             "name": "高級寝袋"
         },
         "Quillshawl": {
-            "_note": "Quillshawl"
+            "_note": "Quillshawl",
+            "actions": {
+                "bOTGYms5yiburnW8": {
+                    "name": "リアクションロール"
+                }
+            }
         },
         "Reliquary of the Sightless Saint": {
             "_note": "Reliquary of the Sightless Saint"
@@ -287,7 +322,12 @@
             "_note": "Ring of Silence"
         },
         "Ring of Unbreakable Resolve": {
-            "_note": "Ring of Unbreakable Resolve"
+            "_note": "Ring of Unbreakable Resolve",
+            "actions": {
+                "R92d0DSVEwmqNJhM": {
+                    "name": "使う"
+                }
+            }
         },
         "Rings of Alliance": {
             "_note": "Rings of Alliance"
@@ -302,7 +342,12 @@
             "_note": "Self-Tying Rope"
         },
         "Shard of Memory": {
-            "_note": "Shard of Memory"
+            "_note": "Shard of Memory",
+            "actions": {
+                "YNRybKQC51muVHYH": {
+                    "name": "使う"
+                }
+            }
         },
         "Silee's Folding Knife": {
             "_note": "Silee's Folding Knife"
@@ -311,7 +356,12 @@
             "_note": "Skeleton Key"
         },
         "Sorcerer's Hat": {
-            "_note": "Sorcerer's Hat"
+            "_note": "Sorcerer's Hat",
+            "actions": {
+                "GqZbEhbCJOCok3Ph": {
+                    "name": "使う"
+                }
+            }
         },
         "Soul-Twin Circlets": {
             "_note": "Soul-Twin Circlets"

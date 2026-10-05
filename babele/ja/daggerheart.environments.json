@@ -2,10 +2,17 @@
     "label": "environments",
     "collection": "daggerheart.environments",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Tier 1": "ティア1",
+        "Tier 2": "ティア2",
+        "Tier 3": "ティア3",
+        "Tier 4": "ティア4"
+    },
     "entries": {
         "Abandoned Grove": {
             "_note": "Abandoned Grove",
             "name": "打ち捨てられた木立",
+            "description": "<p>かつてのドルイドの森。手入れを失い、自然に完全に奪い返されている。</p>",
             "impulses": "好奇心を引き寄せる、過去を響かせる",
             "potentialAdversaries": {
                 "VbbsqTQkmScgraqy": {
@@ -14,145 +21,719 @@
                 "oKq6LhpXvSWnmqyS": {
                     "label": "木立の守護者"
                 }
+            },
+            "items": {
+                "MX4q2xxuWts9gBfT": {
+                    "name": "草生す戦場",
+                    "description": "<p>ここで戦いがあった。PCは直感ロールを行って、その戦いの痕跡を読み取れます。希望とともに成功した場合、以下の3つの情報すべてを得ます。恐怖とともに成功した場合、2つを得ます。失敗した場合、PCはストレスを1マークして1つを得て、この環境を調べる次のアクションロールに有利を得られます。ふさわしい背景または経験を持つPCは、追加の詳細を1つ得て、その場面について追加の質問を1つ行い、（必ずしも完全ではないにせよ）真実の答えを得られます。</p><ul><li><p>戦いの痕跡（折れた武器と枝、地面の削れ跡）が地面に散らばっている。</p></li><li><p>苔に覆われた木の幹は、実はトレントの死体である。</p></li><li><p>まだ立っている木々は、強力な魔法によるかのように奇妙な形に捻れている。</p></li></ul><section id=\"secret-eSdgCltFm45vLh9H\" class=\"secret\"><p><em>これらの集団はなぜ争いになったのか。この森はなぜ今は使われていないのか。</em></p></section>"
+                },
+                "maK5OyfrOxcjCoPt": {
+                    "name": "棘のある蔓",
+                    "description": "<p>森の中の一点を選びます。その点から超近距離以内のすべての対象は、敏捷リアクションロールに成功しなければ<strong>1d8+3</strong>の物理ダメージを受け、棘のある蔓に拘束されます。拘束は、器用または頑強のロールに成功して解放されるか、蔓に6以上のダメージを与えるまで続きます。</p><section id=\"secret-WVGl1YkqOicSEwlf\" class=\"secret\"><p><em>蔓は何本あるのか。どこを掴むのか。引き倒すのか、地面から持ち上げるのか。</em></p></section>",
+                    "actions": {
+                        "47fcdhe1FDdm9rQU": {
+                            "name": "セーブを振る",
+                            "areas": [
+                                {
+                                    "name": "棘のある蔓"
+                                }
+                            ]
+                        }
+                    },
+                    "effects": {
+                        "LSeftEwgBbXXkLw3": {
+                            "name": "棘のある蔓",
+                            "description": "<p><em>拘束</em>は、器用または頑強のロールに成功して解放されるか、蔓に6以上のダメージを与えるまで続きます。</p>",
+                            "durationDescription": "<p>器用または頑強のロールに成功して解放されるか、蔓に6以上のダメージを与えるまで。</p>"
+                        }
+                    }
+                },
+                "uG5A2XQuUcPsXzgP": {
+                    "name": "ここは歓迎されぬ場所だ",
+                    "description": "<p>@UUID[Compendium.daggerheart.adversaries.Actor.8yUj2Mzvnifhxegm]{若いドライアド}1体、@UUID[Compendium.daggerheart.adversaries.Actor.VtFBt9XBE0WrGGxP]{森の兵士}2体、そしてPCの人数と同じ数の@UUID[Compendium.daggerheart.adversaries.Actor.G62k4oSkhkoXEs2D]{小さなトレント}が現れ、侵入を咎めてパーティに対峙します。</p><section id=\"secret-01hkXuVJc5Kei4QW\" class=\"secret\"><p><em>森の守り手たちは何を隠しているのか。PCたちがドライアドをなだめるために立ち向かえる、森への脅威とは何か。</em></p></section>"
+                },
+                "3kkkbnWEvXk5TPK8": {
+                    "name": "汚す者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、暴力と不和の残響に引き寄せられた@UUID[Compendium.daggerheart.adversaries.Actor.sRn4bqerfARvhgSV]{小さな混沌の精霊}を召喚します。それは選んだPCから遠距離以内に現れ、直ちにスポットライトを得ます。</p><section id=\"secret-ChOafrgiTeYqsqoe\" class=\"secret\"><p><em>精霊が現れるとき、草は何色に変わるのか。その混沌は森の虫や小動物をどう歪めるのか。</em></p></section>",
+                    "actions": {
+                        "p6V4k4yMwJ1UPZMz": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                }
             }
         },
         "Abandoned Mine": {
-            "_note": "Abandoned Mine"
+            "_note": "Abandoned Mine",
+            "name": "廃坑",
+            "description": "<p>破滅した採掘団が岩盤を掘り抜いた、使われなくなった坑道の曲がりくねった迷路。</p>",
+            "impulses": "致死のガスでパーティを毒す、鳴動して崩れる、パーティを分断する、方向を失わせる",
+            "potentialAdversaries": {
+                "vGJG6PfuucD4WEsB": {
+                    "label": "闇織りの蜘蛛たち"
+                },
+                "pYwK3J4SaqK0Yiw6": {
+                    "label": "坑夫の幽霊たち"
+                }
+            },
+            "items": {
+                "rK7ZkEUsaqM8gLI5": {
+                    "name": "漆黒の闇",
+                    "description": "<p>この地下の坑道には、自然のものもそれ以外も、光が一切ありません。PCたちに、何を灯りに使うのか、あるいは暗闇の中でどうやって進むのかを尋ねます。頼れる光源を持たないPCは、アクションロールとリアクションロールに不利を得ます。</p><section id=\"secret-2iWVOxm7ZUdQwhZE\" class=\"secret\"><p>パーティの光源は何を燃料にしており、どれだけ持つのか。その光はどんな望まぬ注意を引くのか。</p></section>"
+                },
+                "HfkkL2BpHbNy9wnn": {
+                    "name": "迷宮",
+                    "description": "<p>パーティは坑道を抜ける道を見つけるため、進行カウントダウン（4）を完了させなければなりません。道を探る間にPCが希望とともにロールするたび、以下の珍しいものを1つ見つけます。</p><ul><li><p>掘られていない貴金属または宝石の鉱脈</p></li><li><p>さまざまな採掘道具。アダマンティン製の壊れた（しかし直せる）鉱車を含む</p></li><li><p>坑夫たちの悲劇的な結末の精神的な残響</p></li><li><p>坑道で道を失った坑夫たちの干涸びた死体</p></li><li><p>闇織りの蜘蛛の糸のぼろぼろの残り</p></li></ul><section id=\"secret-xz0zpURL7LpP6Y6n\" class=\"secret\"><p>坑夫たちはここで何を掘り出していたのか。パーティの誰が地下の進み方を知っているのか。PCたちは、ここで自分たちに何が起こることを最も恐れているのか。</p></section>",
+                    "actions": {
+                        "O96PUar3HP8DcW2n": {
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "迷宮"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "M2Iudy8tNp2tR4rO": {
+                    "name": "蜘蛛の巣へ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、薄絹の張り巡らされた巣の中にいる闇織りの女王を召喚します。彼女は天井からPCの近距離以内へ落ちてきて、直ちにスポットライトを得ます。</p><section id=\"secret-i9sSpmMkF7CLcuS9\" class=\"secret\"><p>闇織りの女王は自分の巣をどう利用するのか。パーティは彼女のこれまでの食事の残りをここで何か見つけられるか。</p></section>",
+                    "actions": {
+                        "WiVP4FuFxZTwTQMt": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "FtJmHvPMK3l2dhhO": {
+                    "name": "迫る崩落",
+                    "description": "<p>カウントダウン（2）。PCたちが初めて恐怖とともにロールしたとき、頭上で岩が動き、地面がかすかに震える様子を描写してカウントダウンを開始します。これはPCが恐怖とともにロールしたときに進みます。発動したとき、各PCは敏捷リアクションロールに成功しなければ<strong>1d8+3</strong>の物理ダメージを受け、瓦礫に一時的に<em>拘束</em>されます。</p><section id=\"secret-HE1rGi9t3pctLs3I\" class=\"secret\"><p>この坑道は他にどんな不安定さの兆しをパーティに見せるのか。坑道の形が変わったことで、パーティはどんな新たな危険にさらされるのか。</p></section>",
+                    "actions": {
+                        "mofXrAijYoeUrStc": {
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "迫る崩落"
+                                }
+                            ]
+                        },
+                        "FyWRM3ORf4E3ahy9": {
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、各PCは敏捷リアクションロールに成功しなければ<strong>1d8+3</strong>の物理ダメージを受け、瓦礫に一時的に<em>拘束</em>されます。</p>"
+                        }
+                    },
+                    "effects": {
+                        "ItgXjrMhAXce4x6D": {
+                            "name": "瓦礫"
+                        }
+                    }
+                }
+            }
         },
         "Alchemist's Abandoned Workshop": {
-            "_note": "Alchemist's Abandoned Workshop"
+            "_note": "Alchemist's Abandoned Workshop",
+            "name": "錬金術師の捨てられた工房",
+            "description": "<p>不死の秘密を求めた科学者が建てた、雷で動く実験室。</p>",
+            "impulses": "生と死の隔たりを打ち破る、天から雷を引き下ろす、機械を過剰に回す",
+            "potentialAdversaries": {
+                "wk749LjUruN8wDBK": {
+                    "label": "実験室の残り物"
+                }
+            },
+            "items": {
+                "svSKe6X1U4haD59r": {
+                    "name": "珍品の戸棚",
+                    "description": "<p>工房の棚、戸棚、机は、ホルマリン漬けの体の一部や血のついた手術道具など、不気味な小物で雑然としています。シーンごとに1回、PCは直感ロールを行って、この混沌の中から役立つものを探せます。</p><section id=\"secret-Fs21TFNgkDCks2NO\" class=\"secret\"><p>錬金術師は何を研究していたのか。その持ち物をかき回すとき、どんな匂いが押し寄せてくるのか。</p></section>"
+                },
+                "LuIwzzQ4m9CS5tqh": {
+                    "name": "奇妙な機械",
+                    "description": "<p>工房には、奇怪な技術と科学計測機器が数多く置かれています。PCは知識ロールを行って、その仕組みを解き明かそうと試みられます。成功した場合、それを動かせます。失敗した場合、何かを壊し、電気に撃たれ腐食性の薬品を浴びて<strong>1d8+4</strong>の直接魔法ダメージを受けます。</p><section id=\"secret-dF1kdMeoqmVLM020\" class=\"secret\"><p>これらの機械は何をするのか。これらの計器は何を測るのか。</p></section>",
+                    "actions": {
+                        "z9ZZTMZrDbLWEW1E": {
+                            "name": "ダメージ"
+                        }
+                    }
+                },
+                "09c3wMLREGqzpGUr": {
+                    "name": "生きている！",
+                    "description": "<p>帰結カウントダウン（6）。雷雲が頭上に集まり、工房の上に設えられた避雷針装置を撃とうとしています。カウントダウンを開始し、PCがアクションロールを行って進むたびに、嵐の力が増していく様子を語ります。発動したとき、雷が避雷針装置を撃って工房の機械を過負荷にし、錬金術師が捨てた実験体の1つを蘇らせたのち爆発します。その機械から近距離以内の各対象は、敏捷リアクションロールに成功しなければ<strong>1d10</strong>の魔法ダメージを受けます。工房内の一箇所に失敗した実験体を召喚し、そこから超近距離以内にいるPC1人ごとに恐怖を1得ます。</p><section id=\"secret-gKKXa9HfVC409zMM\" class=\"secret\"><p>錬金術師はこの実験で何を成し遂げようとしていたのか。その材料はどこで手に入れたのか。</p></section>",
+                    "actions": {
+                        "hgQUaAWG1vgxEUUQ": {
+                            "name": "カウントダウン開始",
+                            "description": "<p>帰結カウントダウン（6）。雷雲が頭上に集まり、工房の上に設えられた避雷針装置を撃とうとしています。カウントダウンを開始し、PCがアクションロールを行って進むたびに、嵐の力が増していく様子を語ります。</p>",
+                            "countdown": [
+                                {
+                                    "name": "生きている！"
+                                }
+                            ]
+                        },
+                        "rS4lYkBM58wW9KwC": {
+                            "name": "雷",
+                            "description": "<p>発動したとき、雷が避雷針装置を撃って工房の機械を過負荷にし、錬金術師が捨てた実験体の1つを蘇らせたのち爆発します。その機械から近距離以内の各対象は、敏捷リアクションロールに成功しなければ<strong>1d10</strong>の魔法ダメージを受けます。工房内の一箇所に失敗した実験体を召喚し、そこから超近距離以内にいるPC1人ごとに恐怖を1得ます。</p>"
+                        },
+                        "aSmMvQ8ZIY5yfxkZ": {
+                            "name": "召喚",
+                            "description": "<p>工房内の一箇所に失敗した実験体を召喚し、そこから超近距離以内にいるPC1人ごとに恐怖を1得ます。</p>"
+                        }
+                    }
+                }
+            }
         },
         "Ambushed": {
-            "_note": "Ambushed"
+            "_note": "Ambushed",
+            "name": "待ち伏せ",
+            "description": "<p>警戒していないパーティの不意を突くために張られた待ち伏せ。</p>",
+            "impulses": "圧倒する、散らす、取り囲む",
+            "items": {
+                "NMErq9B4NS3NSiMy": {
+                    "name": "相対的な強さ",
+                    "description": "<p>この環境の難易度は、最も高い難易度を持つ敵対者の難易度と同じです。</p><section class=\"secret\" id=\"secret-FZokhR7CFr2tXkGn\"><p><em>誰が待ち伏せの合図を出すのか。その者が指揮していることは、何から見て取れるのか。</em></p></section>"
+                },
+                "HfuVxgVidIVsapvI": {
+                    "name": "不意打ち",
+                    "description": "<p>待ち伏せていた者たちがパーティに姿を現し、あなたは恐怖を2得て、スポットライトは直ちに待ち伏せていた敵対者の1体へ移ります。</p><section id=\"secret-LcyhfZXPS4MD9dMC\" class=\"secret\"><p><em>待ち伏せた者たちはパーティから何を望んでいるのか。待ち伏せでの戦い方にそれはどう表れるのか。</em></p></section>",
+                    "actions": {
+                        "TRSiqdwc1mYTHv4d": {
+                            "name": "恐怖を得る",
+                            "description": "<p>待ち伏せていた者たちがパーティに姿を現し、あなたは恐怖を2得て、スポットライトは直ちに待ち伏せていた敵対者の1体へ移ります。</p><section class=\"secret\" id=\"secret-HTrPBtn99ANW7ON7\"><p><em>待ち伏せた者たちはパーティから何を望んでいるのか。待ち伏せでの戦い方にそれはどう表れるのか。</em></p></section>"
+                        }
+                    }
+                }
+            }
         },
         "Ambushers": {
             "_note": "Ambushers"
         },
         "Archmage's Tower": {
-            "_note": "Archmage's Tower"
+            "_note": "Archmage's Tower",
+            "potentialAdversaries": {
+                "0UqoeKBq8XdcM2O2": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "iuNPkv0BtBWGcx54": {
+                    "actions": {
+                        "6PKq64PBIOd5ojv1": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Astral Realm": {
-            "_note": "Astral Realm"
+            "_note": "Astral Realm",
+            "potentialAdversaries": {
+                "slL9ro9IoNdBE1Yf": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "y76PmjDZYo1JXqnF": {
+                    "actions": {
+                        "YIFoatmQj0J5rmEI": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Beach Day": {
             "_note": "Beach Day"
         },
         "Burning Heart of the Woods": {
-            "_note": "Burning Heart of the Woods"
+            "_note": "Burning Heart of the Woods",
+            "items": {
+                "kYxuTZjH7HDUGeWh": {
+                    "actions": {
+                        "4XVdHOzycOXM5bh9": {
+                            "name": "ダメージ"
+                        },
+                        "3L0T97ZzTqZU6BE6": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Bustling Marketplace": {
-            "_note": "Bustling Marketplace"
+            "_note": "Bustling Marketplace",
+            "potentialAdversaries": {
+                "ucd2xJvPBS43bybO": {
+                    "label": "その他"
+                }
+            }
         },
         "Castle Siege": {
-            "_note": "Castle Siege"
+            "_note": "Castle Siege",
+            "items": {
+                "eSTq8Y0v4Dwd13XU": {
+                    "actions": {
+                        "udKS3ME8VKuayEyO": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Chaos Realm": {
-            "_note": "Chaos Realm"
+            "_note": "Chaos Realm",
+            "items": {
+                "yXCBy1MQuh5GwH5Q": {
+                    "actions": {
+                        "uZgtjZJVCedm93aJ": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "0OYHJZqT0DlVz5be": {
+                    "actions": {
+                        "FxAFpgPbGcmi3nlh": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Cliffside Ascent": {
-            "_note": "Cliffside Ascent"
+            "_note": "Cliffside Ascent",
+            "potentialAdversaries": {
+                "hWhlWzJ8nNKAMmXx": {
+                    "label": "その他"
+                }
+            },
+            "items": {
+                "bKBwM72OwVnlsHG6": {
+                    "actions": {
+                        "TMEBwqlfvL3mb3hQ": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Convergence, The City Of Portals": {
-            "_note": "Convergence, The City Of Portals"
+            "_note": "Convergence, The City Of Portals",
+            "items": {
+                "LyaalfQw9F2uRj9Z": {
+                    "actions": {
+                        "ZXWbr2YnA6oEUbNA": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Corrupted Swamp": {
             "_note": "Corrupted Swamp"
         },
         "Crystal Wasteland": {
-            "_note": "Crystal Wasteland"
+            "_note": "Crystal Wasteland",
+            "potentialAdversaries": {
+                "ALbfIsyRuqyBQ1AG": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "LgyMzjLLV8C02XUt": {
+                    "effects": {
+                        "fCKrezLHtPnXqWmg": {
+                            "name": "同調"
+                        }
+                    }
+                }
+            }
         },
         "Cult Ritual": {
-            "_note": "Cult Ritual"
+            "_note": "Cult Ritual",
+            "items": {
+                "oFfu3hUhp4ta4qwT": {
+                    "actions": {
+                        "bUIfzuWd1VfiV8sc": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Cursed Graveyard": {
             "_note": "Cursed Graveyard"
         },
         "Deadly Dungeon": {
-            "_note": "Deadly Dungeon"
+            "_note": "Deadly Dungeon",
+            "items": {
+                "G6rUp9taBiyUIQvy": {
+                    "actions": {
+                        "DrDWYorQQD7Z6uwt": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Divine Usurpation": {
-            "_note": "Divine Usurpation"
+            "_note": "Divine Usurpation",
+            "potentialAdversaries": {
+                "IMQDBXkxdUIUSjsm": {
+                    "label": "その他"
+                }
+            },
+            "items": {
+                "IHLJjpOQyWjmCLAL": {
+                    "actions": {
+                        "uJSaDLFcrtvIPFaD": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "AJdG1krRvixBFCZG": {
+                    "actions": {
+                        "KNWpWnJboRIaZ3Yu": {
+                            "name": "カウントダウン"
+                        }
+                    }
+                }
+            }
         },
         "Dragon's Lair": {
-            "_note": "Dragon's Lair"
+            "_note": "Dragon's Lair",
+            "potentialAdversaries": {
+                "o1qnuycew667nPOW": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "pegaB8CRjmGWv9nS": {
+                    "actions": {
+                        "etwUv30ZO9B3fhtB": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "fIMQKSHm44QnzH4J": {
+                    "actions": {
+                        "fivZUD41F3co7mpU": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Duel": {
-            "_note": "Duel"
+            "_note": "Duel",
+            "name": "一騎打ち"
         },
         "Grand Feast": {
-            "_note": "Grand Feast"
+            "_note": "Grand Feast",
+            "potentialAdversaries": {
+                "XVwmaoATfYXwo3B2": {
+                    "label": "敵対者"
+                }
+            }
         },
         "Hallowed Temple": {
-            "_note": "Hallowed Temple"
+            "_note": "Hallowed Temple",
+            "items": {
+                "hgHpS2k1sVxHKiG1": {
+                    "actions": {
+                        "uLCoTKa7Jn2HaRqR": {
+                            "name": "治癒"
+                        }
+                    }
+                },
+                "8tGAuFRyM4onvQ2o": {
+                    "actions": {
+                        "pJVipg7CbA9CB0Um": {
+                            "name": "汎用"
+                        }
+                    }
+                }
+            }
         },
         "Haunted City": {
-            "_note": "Haunted City"
+            "_note": "Haunted City",
+            "items": {
+                "i0FV2Djaq0vB57cq": {
+                    "actions": {
+                        "VhqZKDA4032i8zY3": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Heist": {
-            "_note": "Heist"
+            "_note": "Heist",
+            "potentialAdversaries": {
+                "gzQzvwR4kNa9okSB": {
+                    "label": "敵対者"
+                }
+            }
         },
         "Hold The Line": {
             "_note": "Hold The Line"
         },
         "Imperial Court": {
-            "_note": "Imperial Court"
+            "_note": "Imperial Court",
+            "potentialAdversaries": {
+                "JTuzman711Fqs3u1": {
+                    "label": "その他"
+                }
+            }
         },
         "Local Festival": {
-            "_note": "Local Festival"
+            "_note": "Local Festival",
+            "items": {
+                "RuasHmyv0xhIZyyd": {
+                    "actions": {
+                        "LTzzLhiHJsXvIJrR": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "UkKVWILpbLEpDfpN": {
+                    "actions": {
+                        "s51HEF5OCNml4qQY": {
+                            "name": "希望を得る"
+                        }
+                    }
+                }
+            }
         },
         "Local Tavern": {
-            "_note": "Local Tavern"
+            "_note": "Local Tavern",
+            "potentialAdversaries": {
+                "TzAxfdQKMVRRx5z5": {
+                    "label": "その他"
+                }
+            },
+            "items": {
+                "H3LNvVrUbsAkgjni": {
+                    "actions": {
+                        "4UjyjYaMdcnFmVrL": {
+                            "name": "ダメージ"
+                        }
+                    }
+                }
+            }
         },
         "Masquerade Ball": {
             "_note": "Masquerade Ball"
         },
         "Megastorm": {
-            "_note": "Megastorm"
+            "_note": "Megastorm",
+            "potentialAdversaries": {
+                "hEkx10JrH1v3FFzG": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "KudBK6FBt61ZuaCf": {
+                    "actions": {
+                        "uzEK3NqCE3R3xE0P": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "QvkOrklI6GjzD96R": {
+                    "actions": {
+                        "z8NTM8n3Hc1z8VyS": {
+                            "name": "リアクションロール"
+                        }
+                    }
+                }
+            }
         },
         "Moon Kingdom": {
-            "_note": "Moon Kingdom"
+            "_note": "Moon Kingdom",
+            "potentialAdversaries": {
+                "TGaPRMzMRhCwaj1v": {
+                    "label": "敵対者"
+                }
+            }
         },
         "Mountain Pass": {
-            "_note": "Mountain Pass"
+            "_note": "Mountain Pass",
+            "potentialAdversaries": {
+                "8aqHp1uxtxvnuNSU": {
+                    "label": "その他"
+                }
+            },
+            "items": {
+                "jkm03DXYYajsRk2j": {
+                    "actions": {
+                        "P2fHddwfyEGUwpCH": {
+                            "name": "ダメージ"
+                        }
+                    }
+                },
+                "hkZVEduCWJFR0h2S": {
+                    "actions": {
+                        "88MyOC3IRcct6VLk": {
+                            "name": "召喚"
+                        }
+                    }
+                },
+                "K8ld4m5yTA6WZwUs": {
+                    "actions": {
+                        "yJj6IsNNTEyKndvO": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Necromancer's Ossuary": {
             "_note": "Necromancer's Ossuary"
         },
         "Ocean Voyage": {
-            "_note": "Ocean Voyage"
+            "_note": "Ocean Voyage",
+            "items": {
+                "Zlo11bOuvioULbVJ": {
+                    "actions": {
+                        "GlWdHSDokrOWrLZ9": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "tvisN7BBtyqYfbYm": {
+                    "actions": {
+                        "AM4eoWDdD6FGNdpr": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "A8979rx43bQwftNO": {
+                    "actions": {
+                        "Vl8CVLgqLA5lYIFv": {
+                            "name": "リアクションロール"
+                        }
+                    }
+                }
+            }
         },
         "Outpost Town": {
-            "_note": "Outpost Town"
+            "_note": "Outpost Town",
+            "potentialAdversaries": {
+                "KZSZadT58Pd1kaDH": {
+                    "label": "その他"
+                }
+            }
         },
         "Pitched Battle": {
             "_note": "Pitched Battle"
         },
         "Raging River": {
-            "_note": "Raging River"
+            "_note": "Raging River",
+            "items": {
+                "4ILX7BCinmsGqrJM": {
+                    "actions": {
+                        "91HPIEEcVKPQ5qqn": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Raiding Party": {
-            "_note": "Raiding Party"
+            "_note": "Raiding Party",
+            "items": {
+                "dnSlfFgkd1LPKYJK": {
+                    "actions": {
+                        "raJathH1q7FLOSZm": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                },
+                "ncVzTMqGM3EyK7wZ": {
+                    "actions": {
+                        "YXmX29Zrh0w8urQF": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Realm Of The Dead": {
             "_note": "Realm Of The Dead"
         },
         "Sunken Citadel": {
-            "_note": "Sunken Citadel"
+            "_note": "Sunken Citadel",
+            "potentialAdversaries": {
+                "0xlyOLCOac2BMPBx": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "qzroOipCsq0bUcY2": {
+                    "actions": {
+                        "EzwbQmf6YhLowCd6": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Time Court": {
-            "_note": "Time Court"
+            "_note": "Time Court",
+            "potentialAdversaries": {
+                "Dh1UipXuHjMyzcbU": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "Qc1Mm8cdNfb0fcDg": {
+                    "actions": {
+                        "OuwNR2lTMCWW9xAm": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Upscale Casino": {
             "_note": "Upscale Casino"
         },
         "Vast Desert": {
-            "_note": "Vast Desert"
+            "_note": "Vast Desert",
+            "potentialAdversaries": {
+                "pefTawH0Dv5bd4fz": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "1Cg2NBQwZfDHDtud": {
+                    "actions": {
+                        "sMYXsK2hF5TmFsBP": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         },
         "Volcanic Eruption": {
-            "_note": "Volcanic Eruption"
+            "_note": "Volcanic Eruption",
+            "potentialAdversaries": {
+                "sOYNTMSDlEz1swf7": {
+                    "label": "敵対者"
+                }
+            }
         },
         "Witch's Hut": {
-            "_note": "Witch's Hut"
+            "_note": "Witch's Hut",
+            "potentialAdversaries": {
+                "nwm0MT2J8z6il7m9": {
+                    "label": "敵対者"
+                }
+            },
+            "items": {
+                "unL0gUNjgkunmigs": {
+                    "actions": {
+                        "6SZsaHkhQM9kp8B8": {
+                            "name": "カウントダウン開始"
+                        }
+                    }
+                }
+            }
         }
     }
 }

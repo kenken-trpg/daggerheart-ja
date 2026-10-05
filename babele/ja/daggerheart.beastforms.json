@@ -2,75 +2,317 @@
     "label": "beastforms",
     "collection": "daggerheart.beastforms",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Tier 1": "ティア1",
+        "Tier 2": "ティア2",
+        "Tier 3": "ティア3",
+        "Tier 4": "ティア4"
+    },
     "entries": {
         "Agile Scout": {
-            "_note": "Agile Scout"
+            "_note": "Agile Scout",
+            "advantageOn": {
+                "mtep5GS5Ruj6ZXk1": {
+                    "value": "欺く"
+                }
+            },
+            "effects": {
+                "ehfx2SUKMiM6f5Pd": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Aquatic Predator": {
-            "_note": "Aquatic Predator"
+            "_note": "Aquatic Predator",
+            "advantageOn": {
+                "1AcQrnvX9BKAWb0Y": {
+                    "value": "攻撃"
+                }
+            },
+            "effects": {
+                "7OTbmhQNtKhRAl59": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Aquatic Scout": {
-            "_note": "Aquatic Scout"
+            "_note": "Aquatic Scout",
+            "advantageOn": {
+                "OG0TnlIP9lKye1e9": {
+                    "value": "進路を取る"
+                }
+            },
+            "effects": {
+                "TsXyfEOCk0ma5tp9": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Armored Sentry": {
-            "_note": "Armored Sentry"
+            "_note": "Armored Sentry",
+            "effects": {
+                "hd0uVl6ZZeyPJn9O": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Epic Aquatic Beast": {
-            "_note": "Epic Aquatic Beast"
+            "_note": "Epic Aquatic Beast",
+            "advantageOn": {
+                "0k26pAQLTjfEfviV": {
+                    "value": "恐れさせる"
+                }
+            },
+            "effects": {
+                "zYUexUr2e3k4kzhw": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Great Predator": {
-            "_note": "Great Predator"
+            "_note": "Great Predator",
+            "advantageOn": {
+                "WvQYbcASMk0IwESy": {
+                    "value": "攻撃"
+                },
+                "3wDuhdlzs3gOJ9l9": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "TFzvHClwIAQUFxyP": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Great Winged Beast": {
-            "_note": "Great Winged Beast"
+            "_note": "Great Winged Beast",
+            "advantageOn": {
+                "9J8GmsoqjBiXJLKE": {
+                    "value": "欺く"
+                }
+            },
+            "effects": {
+                "qGSm1QpICpxRZxLn": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Household Friend": {
-            "_note": "Household Friend"
+            "_note": "Household Friend",
+            "effects": {
+                "CzMAMg2q5gL15JrZ": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Legendary Beast": {
-            "_note": "Legendary Beast"
+            "_note": "Legendary Beast",
+            "effects": {
+                "cL4kH57pf2nGIxaK": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Legendary Hybrid": {
-            "_note": "Legendary Hybrid"
+            "_note": "Legendary Hybrid",
+            "effects": {
+                "RbZKFWATkfLZm67j": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Massive Behemoth": {
-            "_note": "Massive Behemoth"
+            "_note": "Massive Behemoth",
+            "advantageOn": {
+                "AoFiYKVbPxGalK8Y": {
+                    "value": "恐れさせる"
+                },
+                "TMzWo667tWr355c9": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "RR6ySJU5zaC7ws6A": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Mighty Lizard": {
-            "_note": "Mighty Lizard"
+            "_note": "Mighty Lizard",
+            "advantageOn": {
+                "f5tUBKOfwDQKPrYP": {
+                    "value": "攻撃"
+                }
+            },
+            "effects": {
+                "d13EzuP8Co04Jk8K": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Mighty Strider": {
-            "_note": "Mighty Strider"
+            "_note": "Mighty Strider",
+            "advantageOn": {
+                "Az0LCAgV6NQMddlz": {
+                    "value": "跳躍する"
+                },
+                "6Povd6wfN4USSgbL": {
+                    "value": "進路を取る"
+                },
+                "wnHlu70U2vvDKNIo": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "IWg2cWUdvucUOLAL": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Mythic Aerial Hunter": {
-            "_note": "Mythic Aerial Hunter"
+            "_note": "Mythic Aerial Hunter",
+            "advantageOn": {
+                "wqIBmWSIbwwJdB07": {
+                    "value": "攻撃"
+                },
+                "wUjIM4ohI1309Qmy": {
+                    "value": "欺く"
+                },
+                "YyyzVE5FOevDKvAP": {
+                    "value": "進路を取る"
+                }
+            },
+            "effects": {
+                "hnKnaOaswWJdaYmf": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Mythic Beast": {
-            "_note": "Mythic Beast"
+            "_note": "Mythic Beast",
+            "effects": {
+                "vhwbPQ2YT64qD1t1": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Mythic Hybrid": {
-            "_note": "Mythic Hybrid"
+            "_note": "Mythic Hybrid",
+            "effects": {
+                "HutJQ9HGtr1Eoibp": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Nimble Grazer": {
-            "_note": "Nimble Grazer"
+            "_note": "Nimble Grazer",
+            "advantageOn": {
+                "pZh7UYwWgdddKX77": {
+                    "value": "跳躍する"
+                },
+                "P9W2JIx0FJgQf6b6": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "lIbJFb5XQ98Eaauu": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Pack Predator": {
-            "_note": "Pack Predator"
+            "_note": "Pack Predator",
+            "advantageOn": {
+                "WwCjWpa7n6KcP3kY": {
+                    "value": "攻撃"
+                },
+                "oNzBOc2bkcb7CrQk": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "amuFS9LlEnzZnaIN": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Pouncing Predator": {
-            "_note": "Pouncing Predator"
+            "_note": "Pouncing Predator",
+            "advantageOn": {
+                "q5bjThxdJ1JAuX2r": {
+                    "value": "攻撃"
+                }
+            },
+            "effects": {
+                "GSmW6nJ3kyIoEK2H": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Powerful Beast": {
-            "_note": "Powerful Beast"
+            "_note": "Powerful Beast",
+            "advantageOn": {
+                "LhmE20iV5HBExx0A": {
+                    "value": "進路を取る"
+                },
+                "lMMv1eTry3N6rZCx": {
+                    "value": "恐れさせる"
+                }
+            },
+            "effects": {
+                "AZGTvqzFVHa4wS1a": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Stalking Arachnid": {
-            "_note": "Stalking Arachnid"
+            "_note": "Stalking Arachnid",
+            "advantageOn": {
+                "udIR54Etg9sx2XbM": {
+                    "value": "攻撃"
+                }
+            },
+            "effects": {
+                "YkZX2yc2X0QDFPBG": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Striking Serpent": {
-            "_note": "Striking Serpent"
+            "_note": "Striking Serpent",
+            "advantageOn": {
+                "j0mztP3MfVkA8KVL": {
+                    "value": "欺く"
+                },
+                "yuIbmhAqfJmtzE6x": {
+                    "value": "疾走する"
+                }
+            },
+            "effects": {
+                "qGhLojWa5430zRd1": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Terrible Lizard": {
-            "_note": "Terrible Lizard"
+            "_note": "Terrible Lizard",
+            "advantageOn": {
+                "onvcDZ0vtg88AjUn": {
+                    "value": "攻撃"
+                },
+                "poo5ToKvpeI1Kvr3": {
+                    "value": "欺く"
+                },
+                "oPA8ogGHNDvxrJps": {
+                    "value": "恐れさせる"
+                }
+            },
+            "effects": {
+                "qPtjZIkRVm68TGHN": {
+                    "name": "ビーストフォーム変身"
+                }
+            }
         },
         "Winged Beast": {
             "_note": "Winged Beast",
@@ -86,16 +328,27 @@
                 "WST3bOmxoIeSHYqX": {
                     "value": "恐れさせる"
                 }
+            },
+            "effects": {
+                "Ln3atrxiqtPA0Wi6": {
+                    "name": "ビーストフォーム変身"
+                }
             }
         },
         "Agile": {
             "_note": "Agile"
         },
         "Aquatic": {
-            "_note": "Aquatic"
+            "_note": "Aquatic",
+            "name": "水棲"
         },
         "Armored Shell": {
-            "_note": "Armored Shell"
+            "_note": "Armored Shell",
+            "actions": {
+                "15XSCpCAZ2JLspmN": {
+                    "name": "格納する"
+                }
+            }
         },
         "Bird's-Eye View": {
             "_note": "Bird's-Eye View"
@@ -113,13 +366,19 @@
             "_note": "Carrier"
         },
         "Companion": {
-            "_note": "Companion"
+            "_note": "Companion",
+            "name": "相棒"
         },
         "Deadly Raptor": {
             "_note": "Deadly Raptor"
         },
         "Demolish": {
-            "_note": "Demolish"
+            "_note": "Demolish",
+            "actions": {
+                "5SXMT39vrZoK7GBM": {
+                    "name": "攻撃"
+                }
+            }
         },
         "Devastating Strikes": {
             "_note": "Devastating Strikes"
@@ -164,7 +423,12 @@
             "_note": "Thick Hide"
         },
         "Trample": {
-            "_note": "Trample"
+            "_note": "Trample",
+            "actions": {
+                "YCOTIv9IVEKpumbJ": {
+                    "name": "攻撃"
+                }
+            }
         },
         "Undaunted": {
             "_note": "Undaunted"
@@ -176,7 +440,12 @@
             "_note": "Venomous Bite"
         },
         "Venomous Strike": {
-            "_note": "Venomous Strike"
+            "_note": "Venomous Strike",
+            "actions": {
+                "igRoXxgaTT9tBQS7": {
+                    "name": "攻撃"
+                }
+            }
         },
         "Vicious Maul": {
             "_note": "Vicious Maul"

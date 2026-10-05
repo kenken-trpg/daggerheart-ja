@@ -4,10 +4,20 @@
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
         "Acidpaste": {
-            "_note": "Acidpaste"
+            "_note": "Acidpaste",
+            "actions": {
+                "FQ2Ty0pP3z6JrBr6": {
+                    "name": "使う"
+                }
+            }
         },
         "Arcticite Shard": {
-            "_note": "Arcticite Shard"
+            "_note": "Arcticite Shard",
+            "actions": {
+                "u61vq2eNNTNpTvGb": {
+                    "name": "使う"
+                }
+            }
         },
         "Armor Stitcher": {
             "_note": "Armor Stitcher"
@@ -33,7 +43,12 @@
             "_note": "Bolster Potion"
         },
         "Bonding Honey": {
-            "_note": "Bonding Honey"
+            "_note": "Bonding Honey",
+            "actions": {
+                "SWrgUGHIWCXpED1b": {
+                    "name": "使う"
+                }
+            }
         },
         "Bridge Seed": {
             "_note": "Bridge Seed"
@@ -45,7 +60,12 @@
             "_note": "Cacophonous Concoction"
         },
         "Channelstone": {
-            "_note": "Channelstone"
+            "_note": "Channelstone",
+            "actions": {
+                "X4KtBG5Uve09hRoj": {
+                    "name": "使う"
+                }
+            }
         },
         "Charm Potion": {
             "_note": "Charm Potion"
@@ -54,7 +74,12 @@
             "_note": "Chimeric Saliva"
         },
         "Circle of the Void": {
-            "_note": "Circle of the Void"
+            "_note": "Circle of the Void",
+            "actions": {
+                "ovR11FWCpXaFMPVx": {
+                    "name": "使う"
+                }
+            }
         },
         "Ciscan Fog Bottle": {
             "_note": "Ciscan Fog Bottle"
@@ -87,13 +112,23 @@
             "_note": "Dragonbloom Tea"
         },
         "Drakemantle": {
-            "_note": "Drakemantle"
+            "_note": "Drakemantle",
+            "actions": {
+                "0QgmfGle8IJYkWv7": {
+                    "name": "使う"
+                }
+            }
         },
         "Dripfang Poison": {
             "_note": "Dripfang Poison"
         },
         "Emberite Shard": {
-            "_note": "Emberite Shard"
+            "_note": "Emberite Shard",
+            "actions": {
+                "Vn84rygVCeQ2wt4S": {
+                    "name": "使う"
+                }
+            }
         },
         "Enlighten Potion": {
             "_note": "Enlighten Potion"
@@ -102,7 +137,12 @@
             "_note": "Feast of Xuria"
         },
         "Featherbone": {
-            "_note": "Featherbone"
+            "_note": "Featherbone",
+            "actions": {
+                "MC0EA6TDZpEHMz11": {
+                    "name": "使う"
+                }
+            }
         },
         "Featherstep Potion": {
             "_note": "Featherstep Potion"
@@ -111,7 +151,12 @@
             "_note": "Formoid Serum"
         },
         "Fulgurite Shard": {
-            "_note": "Fulgurite Shard"
+            "_note": "Fulgurite Shard",
+            "actions": {
+                "EhwvyDwxvg44bKCq": {
+                    "name": "使う"
+                }
+            }
         },
         "Gambler's Fallacy": {
             "_note": "Gambler's Fallacy"
@@ -120,7 +165,12 @@
             "_note": "Gill Salve"
         },
         "Glowmoss Mushroom": {
-            "_note": "Glowmoss Mushroom"
+            "_note": "Glowmoss Mushroom",
+            "actions": {
+                "ZRKQmLZ709uJmwME": {
+                    "name": "使う"
+                }
+            }
         },
         "Godling's Pomelo": {
             "_note": "Godling's Pomelo"
@@ -147,7 +197,12 @@
             "_note": "Homet's Secret Potion"
         },
         "Hopehold Flare": {
-            "_note": "Hopehold Flare"
+            "_note": "Hopehold Flare",
+            "actions": {
+                "hTF2K4uWcrUypLbs": {
+                    "name": "使う"
+                }
+            }
         },
         "Improved Arcane Shard": {
             "_note": "Improved Arcane Shard"
@@ -156,13 +211,23 @@
             "_note": "Improved Grindletooth Venom"
         },
         "Instant Camp": {
-            "_note": "Instant Camp"
+            "_note": "Instant Camp",
+            "actions": {
+                "1UhyM1dgkuxYdcZB": {
+                    "name": "使う"
+                }
+            }
         },
         "Invisibility Potion": {
             "_note": "Invisibility Potion"
         },
         "Iridian Dust": {
-            "_note": "Iridian Dust"
+            "_note": "Iridian Dust",
+            "actions": {
+                "6XX75r85cvvUD1bz": {
+                    "name": "使う"
+                }
+            }
         },
         "Jar of Lost Voices": {
             "_note": "Jar of Lost Voices"
@@ -171,7 +236,12 @@
             "_note": "Jumping Root"
         },
         "Knowledge Stone": {
-            "_note": "Knowledge Stone"
+            "_note": "Knowledge Stone",
+            "actions": {
+                "We38aIuxBrv8zhfr": {
+                    "name": "使う"
+                }
+            }
         },
         "Lionheart Tonic": {
             "_note": "Lionheart Tonic"
@@ -180,7 +250,12 @@
             "_note": "Lyrebird Lozenge"
         },
         "Magic-User's Malison": {
-            "_note": "Magic-User's Malison"
+            "_note": "Magic-User's Malison",
+            "actions": {
+                "I9CPyBfAsQibn5PR": {
+                    "name": "使う"
+                }
+            }
         },
         "Major Arcane Shard": {
             "_note": "Major Arcane Shard"
@@ -210,7 +285,12 @@
             "_note": "Major Stride Potion"
         },
         "Mask of the Echoed Self": {
-            "_note": "Mask of the Echoed Self"
+            "_note": "Mask of the Echoed Self",
+            "actions": {
+                "PAq1qXNxaJSLhaDZ": {
+                    "name": "使う"
+                }
+            }
         },
         "Mesmer's Tonic": {
             "_note": "Mesmer's Tonic"
@@ -225,7 +305,12 @@
             "_note": "Minor Stamina Potion"
         },
         "Mirror of Marigold": {
-            "_note": "Mirror of Marigold"
+            "_note": "Mirror of Marigold",
+            "actions": {
+                "EPN43cQmNC97cCw9": {
+                    "name": "使う"
+                }
+            }
         },
         "Mnemonic Potion": {
             "_note": "Mnemonic Potion"
@@ -234,28 +319,53 @@
             "_note": "Moonlight Orb"
         },
         "Morphing Clay": {
-            "_note": "Morphing Clay"
+            "_note": "Morphing Clay",
+            "actions": {
+                "S4wEG1RzfLNtvcg7": {
+                    "name": "使う"
+                }
+            }
         },
         "Mossmantle Potion": {
             "_note": "Mossmantle Potion"
         },
         "Mythic Dust": {
-            "_note": "Mythic Dust"
+            "_note": "Mythic Dust",
+            "actions": {
+                "oHph7e6VrOwPetbE": {
+                    "name": "使う"
+                }
+            }
         },
         "Necroprancer's Bell": {
             "_note": "Necroprancer's Bell"
         },
         "Night Hag's Dust": {
-            "_note": "Night Hag's Dust"
+            "_note": "Night Hag's Dust",
+            "actions": {
+                "8ElDwnjDsJop9qRi": {
+                    "name": "使う"
+                }
+            }
         },
         "Nightmare Mead": {
             "_note": "Nightmare Mead"
         },
         "Ogre Musk": {
-            "_note": "Ogre Musk"
+            "_note": "Ogre Musk",
+            "actions": {
+                "t0vgSnAuIcj7IevQ": {
+                    "name": "使う"
+                }
+            }
         },
         "Packet of Space Dust": {
-            "_note": "Packet of Space Dust"
+            "_note": "Packet of Space Dust",
+            "actions": {
+                "bVXuZXEmYW6RJwLh": {
+                    "name": "使う"
+                }
+            }
         },
         "Phial of Deep Ink": {
             "_note": "Phial of Deep Ink"
@@ -267,13 +377,28 @@
             "_note": "Potion of Stability"
         },
         "Potion of Vigilance": {
-            "_note": "Potion of Vigilance"
+            "_note": "Potion of Vigilance",
+            "effects": {
+                "G0wMnYEtCryop6IX": {
+                    "name": "警戒"
+                }
+            }
         },
         "Psychopomp's Shroud": {
-            "_note": "Psychopomp's Shroud"
+            "_note": "Psychopomp's Shroud",
+            "actions": {
+                "FrzmFgaqCApbu3Km": {
+                    "name": "使う"
+                }
+            }
         },
         "Quintessential Severant": {
-            "_note": "Quintessential Severant"
+            "_note": "Quintessential Severant",
+            "actions": {
+                "vlPzHqlUT2JLoeKz": {
+                    "name": "使う"
+                }
+            }
         },
         "Red Ooze Oil": {
             "_note": "Red Ooze Oil"
@@ -282,19 +407,34 @@
             "_note": "Redthorn Saliva"
         },
         "Replication Parchment": {
-            "_note": "Replication Parchment"
+            "_note": "Replication Parchment",
+            "actions": {
+                "j5gIVHXvcGu7PEZZ": {
+                    "name": "使う"
+                }
+            }
         },
         "Salamander Salve": {
             "_note": "Salamander Salve"
         },
         "Self-Sewing Thread": {
-            "_note": "Self-Sewing Thread"
+            "_note": "Self-Sewing Thread",
+            "actions": {
+                "dE5BTVbmJ4Yuoy0M": {
+                    "name": "鎧スロットを消す"
+                }
+            }
         },
         "Shrinking Potion": {
             "_note": "Shrinking Potion"
         },
         "Slayer's Salt": {
-            "_note": "Slayer's Salt"
+            "_note": "Slayer's Salt",
+            "actions": {
+                "3IALZdyYjIgAbgea": {
+                    "name": "使う"
+                }
+            }
         },
         "Sleeping Sap": {
             "_note": "Sleeping Sap"
@@ -309,19 +449,34 @@
             "_note": "Snapthorn Seed"
         },
         "Sprite Bottle": {
-            "_note": "Sprite Bottle"
+            "_note": "Sprite Bottle",
+            "actions": {
+                "OaeTodiubEfIhiZe": {
+                    "name": "使う"
+                }
+            }
         },
         "Staff of Reversal": {
             "_note": "Staff of Reversal"
         },
         "Stake of Abjuration": {
-            "_note": "Stake of Abjuration"
+            "_note": "Stake of Abjuration",
+            "actions": {
+                "he7oP28pyrltNq7I": {
+                    "name": "使う"
+                }
+            }
         },
         "Stamina Potion": {
             "_note": "Stamina Potion"
         },
         "Stardrop": {
-            "_note": "Stardrop"
+            "_note": "Stardrop",
+            "actions": {
+                "pt5U6hlyx4T7MUOa": {
+                    "name": "使う"
+                }
+            }
         },
         "Steelskin Salve": {
             "_note": "Steelskin Salve"
@@ -339,7 +494,12 @@
             "_note": "Sunlight Orb"
         },
         "Sweet Moss": {
-            "_note": "Sweet Moss"
+            "_note": "Sweet Moss",
+            "actions": {
+                "IolxVguij8PjHSVt": {
+                    "name": "ストレスを消す"
+                }
+            }
         },
         "Tears of the Undying Hero": {
             "_note": "Tears of the Undying Hero"
@@ -354,7 +514,12 @@
             "_note": "Verglasian Seed"
         },
         "Vial of Darksmoke": {
-            "_note": "Vial of Darksmoke"
+            "_note": "Vial of Darksmoke",
+            "actions": {
+                "4nFnAoyH5dENizsx": {
+                    "name": "使う"
+                }
+            }
         },
         "Vial of Featherfall": {
             "_note": "Vial of Featherfall"
@@ -363,10 +528,20 @@
             "_note": "Vial of Moondrip"
         },
         "Warding Candle": {
-            "_note": "Warding Candle"
+            "_note": "Warding Candle",
+            "actions": {
+                "qKYY5VnmyONGrMTO": {
+                    "name": "使う"
+                }
+            }
         },
         "Wingsprout": {
-            "_note": "Wingsprout"
+            "_note": "Wingsprout",
+            "actions": {
+                "HopgGHn12CHiDNuk": {
+                    "name": "使う"
+                }
+            }
         },
         "Yakamel Milk": {
             "_note": "Yakamel Milk"

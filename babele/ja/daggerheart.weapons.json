@@ -2,982 +2,2815 @@
     "label": "weapons",
     "collection": "daggerheart.weapons",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Tier 1": "ティア1",
+        "Tier 2": "ティア2",
+        "Tier 3": "ティア3",
+        "Tier 4": "ティア4"
+    },
     "entries": {
         "Aantari Bow": {
             "_note": "Aantari Bow",
             "name": "アーンタリ・ボウ",
             "attack": {
                 "name": "攻撃"
+            },
+            "effects": {
+                "c7kaHA5juEZGaGcM": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
             }
         },
         "Adder's Fang": {
-            "_note": "Adder's Fang"
+            "_note": "Adder's Fang",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "1nmjsSNRC9uHl2j4": {
+                    "name": "猛毒"
+                }
+            },
+            "effects": {
+                "t6Qu6nt3bGnkTlXP": {
+                    "name": "猛毒"
+                }
+            }
         },
         "Advanced Arcane-Frame Wheelchair": {
-            "_note": "Advanced Arcane-Frame Wheelchair"
+            "_note": "Advanced Arcane-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "VnV5X9MBMabhz47b": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Advanced Arcane Gauntlets": {
-            "_note": "Advanced Arcane Gauntlets"
+            "_note": "Advanced Arcane Gauntlets",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Arcane Rifle": {
-            "_note": "Advanced Arcane Rifle"
+            "_note": "Advanced Arcane Rifle",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "LlGYNCSjPpaHCgkl": {
+                    "name": "照準"
+                }
+            }
         },
         "Advanced Battleaxe": {
-            "_note": "Advanced Battleaxe"
+            "_note": "Advanced Battleaxe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Brass Knuckles": {
-            "_note": "Advanced Brass Knuckles"
+            "_note": "Advanced Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Brightsword": {
-            "_note": "Advanced Brightsword"
+            "_note": "Advanced Brightsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Broadsword": {
-            "_note": "Advanced Broadsword"
+            "_note": "Advanced Broadsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "wMyzeKXFaM2P4N05": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Advanced Casting Dagger": {
-            "_note": "Advanced Casting Dagger"
+            "_note": "Advanced Casting Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Crossbow": {
-            "_note": "Advanced Crossbow"
+            "_note": "Advanced Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Cutlass": {
-            "_note": "Advanced Cutlass"
+            "_note": "Advanced Cutlass",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Dagger": {
-            "_note": "Advanced Dagger"
+            "_note": "Advanced Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Dualstaff": {
-            "_note": "Advanced Dualstaff"
+            "_note": "Advanced Dualstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Enchanted Chakram": {
-            "_note": "Advanced Enchanted Chakram"
+            "_note": "Advanced Enchanted Chakram",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "avUWKAVzjRuqSuxx": {
+                    "name": "反射"
+                }
+            }
         },
         "Advanced Fighting Cloak": {
-            "_note": "Advanced Fighting Cloak"
+            "_note": "Advanced Fighting Cloak",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "sqvQgVCVUFwF7iEK": {
+                    "name": "緩衝"
+                }
+            }
         },
         "Advanced Focus Runes": {
-            "_note": "Advanced Focus Runes"
+            "_note": "Advanced Focus Runes",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "O9SelXMg3PlMtcnf": {
+                    "name": "集束"
+                }
+            }
         },
         "Advanced Glowing Rings": {
-            "_note": "Advanced Glowing Rings"
+            "_note": "Advanced Glowing Rings",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Grappler": {
-            "_note": "Advanced Grappler"
+            "_note": "Advanced Grappler",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Greatstaff": {
-            "_note": "Advanced Greatstaff"
+            "_note": "Advanced Greatstaff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "sGVVxSM68Fmr1sSM": {
+                    "name": "強力"
+                }
+            }
         },
         "Advanced Greatsword": {
-            "_note": "Advanced Greatsword"
+            "_note": "Advanced Greatsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "E0PjC15OP55vIype": {
+                    "name": "甚大"
+                }
+            }
         },
         "Advanced Halberd": {
-            "_note": "Advanced Halberd"
+            "_note": "Advanced Halberd",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "pdRt0nO1ooGPO3cm": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Advanced Hallowed Axe": {
-            "_note": "Advanced Hallowed Axe"
+            "_note": "Advanced Hallowed Axe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Hand Crossbow": {
-            "_note": "Advanced Hand Crossbow"
+            "_note": "Advanced Hand Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Hand Runes": {
-            "_note": "Advanced Hand Runes"
+            "_note": "Advanced Hand Runes",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Hatchet": {
-            "_note": "Advanced Hatchet"
+            "_note": "Advanced Hatchet",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "6xZol0JjA03kazRt": {
+                    "name": "追撃"
+                }
+            },
+            "effects": {
+                "s5EoYqyCvfuLNEqX": {
+                    "name": "追撃",
+                    "description": "この攻撃の習熟に＋1のボーナスを得ます。"
+                }
+            }
         },
         "Advanced Heavy-Frame Wheelchair": {
-            "_note": "Advanced Heavy-Frame Wheelchair"
+            "_note": "Advanced Heavy-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "1godgiqdDADyR0Tw": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Advanced Katana": {
-            "_note": "Advanced Katana"
+            "_note": "Advanced Katana",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "ioC63eYWrrjhf6fW": {
+                    "name": "迅速"
+                }
+            }
         },
         "Advanced Light-Frame Wheelchair": {
-            "_note": "Advanced Light-Frame Wheelchair"
+            "_note": "Advanced Light-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Longbow": {
-            "_note": "Advanced Longbow"
+            "_note": "Advanced Longbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "CUpkNgCUE6CWAXc3": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Advanced Longsword": {
-            "_note": "Advanced Longsword"
+            "_note": "Advanced Longsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Mace": {
-            "_note": "Advanced Mace"
+            "_note": "Advanced Mace",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Offhand Brass Knuckles": {
-            "_note": "Advanced Offhand Brass Knuckles"
+            "_note": "Advanced Offhand Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "fwIRv0JhgzaawDwF": {
+                    "name": "対"
+                }
+            }
         },
         "Advanced Quarterstaff": {
-            "_note": "Advanced Quarterstaff"
+            "_note": "Advanced Quarterstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Rapier": {
-            "_note": "Advanced Rapier"
+            "_note": "Advanced Rapier",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Returning Blade": {
-            "_note": "Advanced Returning Blade"
+            "_note": "Advanced Returning Blade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Rope Dart": {
-            "_note": "Advanced Rope Dart"
+            "_note": "Advanced Rope Dart",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Round Shield": {
-            "_note": "Advanced Round Shield"
+            "_note": "Advanced Round Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "7285CRGdZfHCEtT2": {
+                    "name": "防護",
+                    "description": "<p>アイテムのティアを鎧値に加えます</p>"
+                }
+            }
         },
         "Advanced Rune Shield": {
-            "_note": "Advanced Rune Shield"
+            "_note": "Advanced Rune Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "TqOWmUMXr5RnE8fY": {
+                    "name": "防護",
+                    "description": "アイテムのティアを鎧値に加えます"
+                }
+            }
         },
         "Advanced Runelock Pistol": {
-            "_note": "Advanced Runelock Pistol"
+            "_note": "Advanced Runelock Pistol",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "a8XXgkfe64zMOY6R": {
+                    "name": "リロード"
+                }
+            }
         },
         "Advanced Scepter": {
-            "_note": "Advanced Scepter"
+            "_note": "Advanced Scepter",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Scimitar": {
-            "_note": "Advanced Scimitar"
+            "_note": "Advanced Scimitar",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Shadowblade": {
-            "_note": "Advanced Shadowblade"
+            "_note": "Advanced Shadowblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Shortbow": {
-            "_note": "Advanced Shortbow"
+            "_note": "Advanced Shortbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Shortstaff": {
-            "_note": "Advanced Shortstaff"
+            "_note": "Advanced Shortstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Shortsword": {
-            "_note": "Advanced Shortsword"
+            "_note": "Advanced Shortsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "zQMaG3JcUWJR9k2L": {
+                    "name": "対"
+                }
+            }
         },
         "Advanced Small Dagger": {
-            "_note": "Advanced Small Dagger"
+            "_note": "Advanced Small Dagger",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "6tJmTBsumbPmEwkY": {
+                    "name": "対"
+                }
+            }
         },
         "Advanced Spear": {
-            "_note": "Advanced Spear"
+            "_note": "Advanced Spear",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Throwing Knives": {
-            "_note": "Advanced Throwing Knives"
+            "_note": "Advanced Throwing Knives",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Tower Shield": {
-            "_note": "Advanced Tower Shield"
+            "_note": "Advanced Tower Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "87gedjJZGdFY81Mt": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                },
+                "J0f7zqqOr61ADpdy": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                }
+            }
         },
         "Advanced Twisted Dagger": {
-            "_note": "Advanced Twisted Dagger"
+            "_note": "Advanced Twisted Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Wand": {
-            "_note": "Advanced Wand"
+            "_note": "Advanced Wand",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Warhammer": {
-            "_note": "Advanced Warhammer"
+            "_note": "Advanced Warhammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "S6jedo3xSQhFBQH0": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Advanced Whip": {
-            "_note": "Advanced Whip"
+            "_note": "Advanced Whip",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Advanced Whipsword": {
-            "_note": "Advanced Whipsword"
+            "_note": "Advanced Whipsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Arc Wand": {
-            "_note": "Arc Wand"
+            "_note": "Arc Wand",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "WbMKifYfcRQpDiP8": {
+                    "name": "跳ねる"
+                }
+            }
         },
         "Arcane-Frame Wheelchair": {
-            "_note": "Arcane-Frame Wheelchair"
+            "_note": "Arcane-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "dXHsy9qr5FWZqsVq": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Arcane Gauntlets": {
-            "_note": "Arcane Gauntlets"
+            "_note": "Arcane Gauntlets",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Arcane Rifle": {
-            "_note": "Arcane Rifle"
+            "_note": "Arcane Rifle",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "0BlWvjZi8EgnT6ln": {
+                    "name": "照準"
+                }
+            }
         },
         "Arquebus": {
-            "_note": "Arquebus"
+            "_note": "Arquebus",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "t1BgFF5IT0L1QHGM": {
+                    "name": "リロード"
+                }
+            }
         },
         "Axe of Fortunis": {
-            "_note": "Axe of Fortunis"
+            "_note": "Axe of Fortunis",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Battleaxe": {
-            "_note": "Battleaxe"
+            "_note": "Battleaxe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Bec de Corbin": {
-            "_note": "Bec de Corbin"
+            "_note": "Bec de Corbin",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "hsPKe9xRQlcMwR9v": {
+                    "name": "壊滅させる"
+                }
+            }
         },
         "Black Powder Revolver": {
-            "_note": "Black Powder Revolver"
+            "_note": "Black Powder Revolver",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Black Powder Serpentine": {
-            "_note": "Black Powder Serpentine"
+            "_note": "Black Powder Serpentine",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "pkg1z8LU5URZsQIe": {
+                    "name": "焼夷"
+                }
+            },
+            "effects": {
+                "DQcdvMkGHEUycaBv": {
+                    "name": "焼夷",
+                    "description": "素早さ−1"
+                }
+            }
         },
         "Blackblood Tendril": {
-            "_note": "Blackblood Tendril"
+            "_note": "Blackblood Tendril",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Bladed Fan": {
-            "_note": "Bladed Fan"
+            "_note": "Bladed Fan",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "KrXsIpyvPDci7gXH": {
+                    "name": "受け流し"
+                }
+            }
         },
         "Bladed Star": {
-            "_note": "Bladed Star"
+            "_note": "Bladed Star",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Bladed Whip": {
-            "_note": "Bladed Whip"
+            "_note": "Bladed Whip",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Blessed Anlace": {
-            "_note": "Blessed Anlace"
+            "_note": "Blessed Anlace",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Blitz Hammer": {
-            "_note": "Blitz Hammer"
+            "_note": "Blitz Hammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "1KG5ZPmXmH5X7GVe": {
+                    "name": "加速"
+                }
+            },
+            "effects": {
+                "pAY6jFShsLHNjnRg": {
+                    "name": "加速",
+                    "description": "<p>この攻撃の習熟に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Bloodstaff": {
-            "_note": "Bloodstaff"
+            "_note": "Bloodstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Blunderbuss": {
-            "_note": "Blunderbuss"
+            "_note": "Blunderbuss",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Brass Knuckles": {
-            "_note": "Brass Knuckles"
+            "_note": "Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Braveshield": {
-            "_note": "Braveshield"
+            "_note": "Braveshield",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Bravesword": {
-            "_note": "Bravesword"
+            "_note": "Bravesword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "lLM5uyDAGk3zVxoa": {
+                    "name": "勇敢",
+                    "description": "回避値−1。重傷値に武器ティアを加算"
+                }
+            }
         },
         "Brightsword": {
-            "_note": "Brightsword"
+            "_note": "Brightsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Broadsword": {
-            "_note": "Broadsword"
+            "_note": "Broadsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "dCE1ee7imaFHNqG5": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Buckler": {
-            "_note": "Buckler"
+            "_note": "Buckler",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "Anbxt99bL9IWnlGh": {
+                    "name": "偏向"
+                }
+            }
         },
         "Cane Sword": {
-            "_note": "Cane Sword"
+            "_note": "Cane Sword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Casting Dagger": {
-            "_note": "Casting Dagger"
+            "_note": "Casting Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Casting Sword": {
-            "_note": "Casting Sword"
+            "_note": "Casting Sword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Chained Scythe": {
-            "_note": "Chained Scythe"
+            "_note": "Chained Scythe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "oS1KZo6N8KzUMxgt": {
+                    "name": "迅速"
+                }
+            }
         },
         "Clockwork Crossbow": {
-            "_note": "Clockwork Crossbow"
+            "_note": "Clockwork Crossbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "L7gm9rLjSswDoeg6": {
+                    "name": "迅速"
+                }
+            }
         },
         "Collapsible Baton": {
-            "_note": "Collapsible Baton"
+            "_note": "Collapsible Baton",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Crossbow": {
-            "_note": "Crossbow"
+            "_note": "Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Crystal Spear": {
-            "_note": "Crystal Spear"
+            "_note": "Crystal Spear",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Curved Dagger": {
-            "_note": "Curved Dagger"
+            "_note": "Curved Dagger",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "X3a0PAJ9Tk4zVyxz": {
+                    "name": "鋸歯"
+                }
+            }
         },
         "Cutlass": {
-            "_note": "Cutlass"
+            "_note": "Cutlass",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Cyrurgien's Scalpel": {
-            "_note": "Cyrurgien's Scalpel"
+            "_note": "Cyrurgien's Scalpel",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "mmsWOr3NPsbUM4TB": {
+                    "name": "恐れさせる",
+                    "description": "攻撃成功時、対象はストレスを1マークします。"
+                }
+            }
         },
         "Dagger": {
-            "_note": "Dagger"
+            "_note": "Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Demon's Edge": {
-            "_note": "Demon's Edge"
+            "_note": "Demon's Edge",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "HZfWsLRQkSlCt8iV": {
+                    "name": "戦慄"
+                }
+            }
         },
         "Devouring Dagger": {
-            "_note": "Devouring Dagger"
+            "_note": "Devouring Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Displacement Razor": {
-            "_note": "Displacement Razor"
+            "_note": "Displacement Razor",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Double Flail": {
-            "_note": "Double Flail"
+            "_note": "Double Flail",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "DCie5eR1dZH2Qvln": {
+                    "name": "強力"
+                }
+            }
         },
         "Dual-Ended Sword": {
-            "_note": "Dual-Ended Sword"
+            "_note": "Dual-Ended Sword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Dualstaff": {
-            "_note": "Dualstaff"
+            "_note": "Dualstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Echo Blade": {
-            "_note": "Echo Blade"
+            "_note": "Echo Blade",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "NO0cfOXGO0Z3vTwd": {
+                    "name": "二刀にする"
+                }
+            }
         },
         "Ego Blade": {
-            "_note": "Ego Blade"
+            "_note": "Ego Blade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Elder Bow": {
-            "_note": "Elder Bow"
+            "_note": "Elder Bow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "sZ1XotFlGdkPPDG4": {
+                    "name": "強力"
+                }
+            }
         },
         "Eldritch Vambrace": {
-            "_note": "Eldritch Vambrace"
+            "_note": "Eldritch Vambrace",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "B3PW3yWLtXAN2bZq": {
+                    "name": "逸らす"
+                }
+            },
+            "effects": {
+                "lWlxUPj4Ma4TPkqb": {
+                    "name": "偏向"
+                }
+            }
         },
         "Enchanted Chakram": {
-            "_note": "Enchanted Chakram"
+            "_note": "Enchanted Chakram",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "oK1CHBxZLcmM37jR": {
+                    "name": "反射"
+                }
+            }
         },
         "Enchanted Lute": {
-            "_note": "Enchanted Lute"
+            "_note": "Enchanted Lute",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "EIwNjlroQWthm07Q": {
+                    "name": "活力を与える"
+                }
+            }
         },
         "Enchanted Shillelagh": {
-            "_note": "Enchanted Shillelagh"
+            "_note": "Enchanted Shillelagh",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "tL0mow5BGsYS4wPp": {
+                    "name": "防護"
+                }
+            }
         },
         "Ethereal Zweihänder": {
-            "_note": "Ethereal Zweihänder"
+            "_note": "Ethereal Zweihänder",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "XdQBnYfIX5Km5KqU": {
+                    "name": "霊妙"
+                }
+            },
+            "effects": {
+                "MnQKsDs3DCwlqUQs": {
+                    "name": "霊妙",
+                    "description": "この武器はシーン終了まで持続します。"
+                }
+            }
         },
         "Extended Polearm": {
-            "_note": "Extended Polearm"
+            "_note": "Extended Polearm",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Fighting Cloak": {
-            "_note": "Fighting Cloak"
+            "_note": "Fighting Cloak",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "CxilXxOVfmo18wTL": {
+                    "name": "緩衝"
+                }
+            }
         },
         "Finehair Bow": {
-            "_note": "Finehair Bow"
+            "_note": "Finehair Bow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "mngO62y3Y6hYH7uB": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Firestaff": {
-            "_note": "Firestaff"
+            "_note": "Firestaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Flickerfly Blade": {
-            "_note": "Flickerfly Blade"
+            "_note": "Flickerfly Blade",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "jMIrOhpPUncn7dWg": {
+                    "name": "鋭翼",
+                    "description": "<p>ダメージロールに素早さに等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Floating Bladeshards": {
-            "_note": "Floating Bladeshards"
+            "_note": "Floating Bladeshards",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "T831j6kZiMnpMNmv": {
+                    "name": "強力"
+                }
+            }
         },
         "Focus Runes": {
-            "_note": "Focus Runes"
+            "_note": "Focus Runes",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "vJzsPmp4JkV4QTDm": {
+                    "name": "集束"
+                }
+            }
         },
         "Fury Gem": {
-            "_note": "Fury Gem"
+            "_note": "Fury Gem",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "XpE38Dn617zBvsiX": {
+                    "name": "燃やす"
+                }
+            }
         },
         "Fusion Gloves": {
-            "_note": "Fusion Gloves"
+            "_note": "Fusion Gloves",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "7ltP049dqxCaedyX": {
+                    "name": "武器の絆",
+                    "description": "<p>ダメージロールにレベルに等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Ghostblade": {
-            "_note": "Ghostblade"
+            "_note": "Ghostblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Gilded Bow": {
-            "_note": "Gilded Bow"
+            "_note": "Gilded Bow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "zoWZsD4ogzfPSPi7": {
+                    "name": "自己補正"
+                }
+            }
         },
         "Gilded Falchion": {
-            "_note": "Gilded Falchion"
+            "_note": "Gilded Falchion",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "ir4iKLIQ4CH1Qckn": {
+                    "name": "強力"
+                }
+            }
         },
         "Glowing Rings": {
-            "_note": "Glowing Rings"
+            "_note": "Glowing Rings",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Grappler": {
-            "_note": "Grappler"
+            "_note": "Grappler",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Gravity Arbalest": {
-            "_note": "Gravity Arbalest"
+            "_note": "Gravity Arbalest",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "R0DsdoMfAJNfGLy5": {
+                    "name": "磁力"
+                }
+            }
         },
         "Greatbow": {
-            "_note": "Greatbow"
+            "_note": "Greatbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "K4VgrDjVj1U1m9Ie": {
+                    "name": "強力"
+                }
+            }
         },
         "Greatstaff": {
-            "_note": "Greatstaff"
+            "_note": "Greatstaff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "904orawScurM9GjG": {
+                    "name": "強力"
+                }
+            }
         },
         "Greatsword": {
-            "_note": "Greatsword"
+            "_note": "Greatsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "cffkpiwGpEGhjiUC": {
+                    "name": "甚大"
+                }
+            }
         },
         "Gunblade": {
-            "_note": "Gunblade"
+            "_note": "Gunblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Halberd": {
-            "_note": "Halberd"
+            "_note": "Halberd",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "YxaGOWcQEesO9zPR": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Hallowed Axe": {
-            "_note": "Hallowed Axe"
+            "_note": "Hallowed Axe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hammer of Exota": {
-            "_note": "Hammer of Exota"
+            "_note": "Hammer of Exota",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hammer of Wrath": {
-            "_note": "Hammer of Wrath"
+            "_note": "Hammer of Wrath",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "b9Nl6rOzaIoGUX5v": {
+                    "name": "壊滅させる"
+                }
+            }
         },
         "Hand Cannon": {
-            "_note": "Hand Cannon"
+            "_note": "Hand Cannon",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hand Crossbow": {
-            "_note": "Hand Crossbow"
+            "_note": "Hand Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hand Runes": {
-            "_note": "Hand Runes"
+            "_note": "Hand Runes",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hand Sling": {
-            "_note": "Hand Sling"
+            "_note": "Hand Sling",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Hatchet": {
-            "_note": "Hatchet"
+            "_note": "Hatchet",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "9rorDndpgEXMAnaf": {
+                    "name": "追撃"
+                }
+            },
+            "effects": {
+                "cLwG6tOV7LaFZDiF": {
+                    "name": "追撃",
+                    "description": "<p>この攻撃の習熟に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Heavy-Frame Wheelchair": {
-            "_note": "Heavy-Frame Wheelchair"
+            "_note": "Heavy-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "1godgiqdDADyR0Tw": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Ilmari's Rifle": {
-            "_note": "Ilmari's Rifle"
+            "_note": "Ilmari's Rifle",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Impact Gauntlet": {
-            "_note": "Impact Gauntlet"
+            "_note": "Impact Gauntlet",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Arcane-Frame Wheelchair": {
-            "_note": "Improved Arcane-Frame Wheelchair"
+            "_note": "Improved Arcane-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "1f6fFhOLwZrmA6e5": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Improved Arcane Gauntlets": {
-            "_note": "Improved Arcane Gauntlets"
+            "_note": "Improved Arcane Gauntlets",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Arcane Rifle": {
-            "_note": "Improved Arcane Rifle"
+            "_note": "Improved Arcane Rifle",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "wfUJ95m1Numktbyc": {
+                    "name": "照準"
+                }
+            }
         },
         "Improved Battleaxe": {
-            "_note": "Improved Battleaxe"
+            "_note": "Improved Battleaxe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Brass Knuckles": {
-            "_note": "Improved Brass Knuckles"
+            "_note": "Improved Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Brightsword": {
-            "_note": "Improved Brightsword"
+            "_note": "Improved Brightsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Broadsword": {
-            "_note": "Improved Broadsword"
+            "_note": "Improved Broadsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "Bq0nh6uMbsLNsKiB": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Improved Casting Dagger": {
-            "_note": "Improved Casting Dagger"
+            "_note": "Improved Casting Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Crossbow": {
-            "_note": "Improved Crossbow"
+            "_note": "Improved Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Cutlass": {
-            "_note": "Improved Cutlass"
+            "_note": "Improved Cutlass",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Dagger": {
-            "_note": "Improved Dagger"
+            "_note": "Improved Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Dualstaff": {
-            "_note": "Improved Dualstaff"
+            "_note": "Improved Dualstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Enchanted Chakram": {
-            "_note": "Improved Enchanted Chakram"
+            "_note": "Improved Enchanted Chakram",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "63LHxPGiZnKndZ6C": {
+                    "name": "反射"
+                }
+            }
         },
         "Improved Fighting Cloak": {
-            "_note": "Improved Fighting Cloak"
+            "_note": "Improved Fighting Cloak",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "CodCGSBBAQufpUJ4": {
+                    "name": "緩衝"
+                }
+            }
         },
         "Improved Focus Runes": {
-            "_note": "Improved Focus Runes"
+            "_note": "Improved Focus Runes",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "EBYlSiZrmwPd5G2J": {
+                    "name": "集束"
+                }
+            }
         },
         "Improved Glowing Rings": {
-            "_note": "Improved Glowing Rings"
+            "_note": "Improved Glowing Rings",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Grappler": {
-            "_note": "Improved Grappler"
+            "_note": "Improved Grappler",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Greatstaff": {
-            "_note": "Improved Greatstaff"
+            "_note": "Improved Greatstaff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "hnayB09P25ZW3gVY": {
+                    "name": "強力"
+                }
+            }
         },
         "Improved Greatsword": {
-            "_note": "Improved Greatsword"
+            "_note": "Improved Greatsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "2nl35v8sPAudiOIb": {
+                    "name": "甚大"
+                }
+            }
         },
         "Improved Halberd": {
-            "_note": "Improved Halberd"
+            "_note": "Improved Halberd",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "POQepSxCro9T9OYT": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Improved Hallowed Axe": {
-            "_note": "Improved Hallowed Axe"
+            "_note": "Improved Hallowed Axe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Hand Crossbow": {
-            "_note": "Improved Hand Crossbow"
+            "_note": "Improved Hand Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Hand Runes": {
-            "_note": "Improved Hand Runes"
+            "_note": "Improved Hand Runes",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Hatchet": {
-            "_note": "Improved Hatchet"
+            "_note": "Improved Hatchet",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "PPMmt3MyqylWoBPQ": {
+                    "name": "追撃"
+                }
+            },
+            "effects": {
+                "bNAAyWfT5h6KTW0b": {
+                    "name": "追撃",
+                    "description": "この攻撃の習熟に＋1のボーナスを得ます。"
+                }
+            }
         },
         "Improved Heavy-Frame Wheelchair": {
-            "_note": "Improved Heavy-Frame Wheelchair"
+            "_note": "Improved Heavy-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "1godgiqdDADyR0Tw": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Improved Katana": {
-            "_note": "Improved Katana"
+            "_note": "Improved Katana",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "Ph7QtVYXhBfHFl0D": {
+                    "name": "迅速"
+                }
+            }
         },
         "Improved Light-Frame Wheelchair": {
-            "_note": "Improved Light-Frame Wheelchair"
+            "_note": "Improved Light-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Longbow": {
-            "_note": "Improved Longbow"
+            "_note": "Improved Longbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "TC4yGDrnOisOpDQu": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Improved Longsword": {
-            "_note": "Improved Longsword"
+            "_note": "Improved Longsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Mace": {
-            "_note": "Improved Mace"
+            "_note": "Improved Mace",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Offhand Brass Knuckles": {
-            "_note": "Improved Offhand Brass Knuckles"
+            "_note": "Improved Offhand Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "K54TvFYeqh9tvGSS": {
+                    "name": "対"
+                }
+            }
         },
         "Improved Quarterstaff": {
-            "_note": "Improved Quarterstaff"
+            "_note": "Improved Quarterstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Rapier": {
-            "_note": "Improved Rapier"
+            "_note": "Improved Rapier",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Returning Blade": {
-            "_note": "Improved Returning Blade"
+            "_note": "Improved Returning Blade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Rope Dart": {
-            "_note": "Improved Rope Dart"
+            "_note": "Improved Rope Dart",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Round Shield": {
-            "_note": "Improved Round Shield"
+            "_note": "Improved Round Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "pZCrWd7zLTarvEQK": {
+                    "name": "防護",
+                    "description": "<p>アイテムのティアを鎧値に加えます</p>"
+                }
+            }
         },
         "Improved Rune Shield": {
-            "_note": "Improved Rune Shield"
+            "_note": "Improved Rune Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "2GJFRy7hXnzFe0Rz": {
+                    "name": "防護",
+                    "description": "アイテムのティアを鎧値に加えます"
+                }
+            }
         },
         "Improved Runelock Pistol": {
-            "_note": "Improved Runelock Pistol"
+            "_note": "Improved Runelock Pistol",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "PP0Je3qdGdhYu53K": {
+                    "name": "リロード"
+                }
+            }
         },
         "Improved Scepter": {
-            "_note": "Improved Scepter"
+            "_note": "Improved Scepter",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Scimitar": {
-            "_note": "Improved Scimitar"
+            "_note": "Improved Scimitar",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Shadowblade": {
-            "_note": "Improved Shadowblade"
+            "_note": "Improved Shadowblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Shortbow": {
-            "_note": "Improved Shortbow"
+            "_note": "Improved Shortbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Shortstaff": {
-            "_note": "Improved Shortstaff"
+            "_note": "Improved Shortstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Shortsword": {
-            "_note": "Improved Shortsword"
+            "_note": "Improved Shortsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "UW2fqbhBqvnK1coG": {
+                    "name": "対"
+                }
+            }
         },
         "Improved Small Dagger": {
-            "_note": "Improved Small Dagger"
+            "_note": "Improved Small Dagger",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "PMXG4l85UkXRf41E": {
+                    "name": "対"
+                }
+            }
         },
         "Improved Spear": {
-            "_note": "Improved Spear"
+            "_note": "Improved Spear",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Throwing Knives": {
-            "_note": "Improved Throwing Knives"
+            "_note": "Improved Throwing Knives",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Tower Shield": {
-            "_note": "Improved Tower Shield"
+            "_note": "Improved Tower Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "tkNEA1PO3jEFhKCa": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                },
+                "XugJeHJdnC6IymSa": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                }
+            }
         },
         "Improved Twisted Dagger": {
-            "_note": "Improved Twisted Dagger"
+            "_note": "Improved Twisted Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Wand": {
-            "_note": "Improved Wand"
+            "_note": "Improved Wand",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Warhammer": {
-            "_note": "Improved Warhammer"
+            "_note": "Improved Warhammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "KvdwqkM3ErLxMzDq": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Improved Whip": {
-            "_note": "Improved Whip"
+            "_note": "Improved Whip",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Improved Whipsword": {
-            "_note": "Improved Whipsword"
+            "_note": "Improved Whipsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Infinite Staff": {
-            "_note": "Infinite Staff"
+            "_note": "Infinite Staff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Javelins": {
-            "_note": "Javelins"
+            "_note": "Javelins",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Katana": {
-            "_note": "Katana"
+            "_note": "Katana",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "gvtWBJWDlKyv1XyC": {
+                    "name": "迅速"
+                }
+            }
         },
         "Keeper's Staff": {
-            "_note": "Keeper's Staff"
+            "_note": "Keeper's Staff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "Ah2Fgx3T8aARNa4N": {
+                    "name": "信頼",
+                    "description": "<p>攻撃ロール＋1</p>"
+                }
+            }
         },
         "Knuckle Blades": {
-            "_note": "Knuckle Blades"
+            "_note": "Knuckle Blades",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Knuckle Claws": {
-            "_note": "Knuckle Claws"
+            "_note": "Knuckle Claws",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Labrys Axe": {
-            "_note": "Labrys Axe"
+            "_note": "Labrys Axe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "vnR4Zhnb0rOqwrFw": {
+                    "name": "防護"
+                }
+            }
         },
         "Lance": {
-            "_note": "Lance"
+            "_note": "Lance",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "zj1ddWCXh6TuGr3c": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Legendary Arcane-Frame Wheelchair": {
-            "_note": "Legendary Arcane-Frame Wheelchair"
+            "_note": "Legendary Arcane-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "TvsoAiqHCwgtYat1": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Legendary Arcane Gauntlets": {
-            "_note": "Legendary Arcane Gauntlets"
+            "_note": "Legendary Arcane Gauntlets",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Arcane Rifle": {
-            "_note": "Legendary Arcane Rifle"
+            "_note": "Legendary Arcane Rifle",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "hYAHv9sRJB8FhWyF": {
+                    "name": "照準"
+                }
+            }
         },
         "Legendary Battleaxe": {
-            "_note": "Legendary Battleaxe"
+            "_note": "Legendary Battleaxe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Brass Knuckles": {
-            "_note": "Legendary Brass Knuckles"
+            "_note": "Legendary Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Brightsword": {
-            "_note": "Legendary Brightsword"
+            "_note": "Legendary Brightsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Broadsword": {
-            "_note": "Legendary Broadsword"
+            "_note": "Legendary Broadsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "7X0E1KJOFj34mC44": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Legendary Casting Dagger": {
-            "_note": "Legendary Casting Dagger"
+            "_note": "Legendary Casting Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Crossbow": {
-            "_note": "Legendary Crossbow"
+            "_note": "Legendary Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Cutlass": {
-            "_note": "Legendary Cutlass"
+            "_note": "Legendary Cutlass",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Dagger": {
-            "_note": "Legendary Dagger"
+            "_note": "Legendary Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Dualstaff": {
-            "_note": "Legendary Dualstaff"
+            "_note": "Legendary Dualstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Enchanted Chakram": {
-            "_note": "Legendary Enchanted Chakram"
+            "_note": "Legendary Enchanted Chakram",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "DgcClkP4KaQpNhUD": {
+                    "name": "反射"
+                }
+            }
         },
         "Legendary Fighting Cloak": {
-            "_note": "Legendary Fighting Cloak"
+            "_note": "Legendary Fighting Cloak",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "GrtsRfCZH1IOkgje": {
+                    "name": "緩衝"
+                }
+            }
         },
         "Legendary Focus Runes": {
-            "_note": "Legendary Focus Runes"
+            "_note": "Legendary Focus Runes",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "urUpY16MvP1UGWyK": {
+                    "name": "集束"
+                }
+            }
         },
         "Legendary Glowing Rings": {
-            "_note": "Legendary Glowing Rings"
+            "_note": "Legendary Glowing Rings",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Grappler": {
-            "_note": "Legendary Grappler"
+            "_note": "Legendary Grappler",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Greatstaff": {
-            "_note": "Legendary Greatstaff"
+            "_note": "Legendary Greatstaff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "OV1Ly7vX4owBUgLQ": {
+                    "name": "強力"
+                }
+            }
         },
         "Legendary Greatsword": {
-            "_note": "Legendary Greatsword"
+            "_note": "Legendary Greatsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "oRCiXSElN5xufUfn": {
+                    "name": "甚大"
+                }
+            }
         },
         "Legendary Halberd": {
-            "_note": "Legendary Halberd"
+            "_note": "Legendary Halberd",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "MmVRlnSLFWBfNJlB": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Legendary Hallowed Axe": {
-            "_note": "Legendary Hallowed Axe"
+            "_note": "Legendary Hallowed Axe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Hand Crossbow": {
-            "_note": "Legendary Hand Crossbow"
+            "_note": "Legendary Hand Crossbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Hand Runes": {
-            "_note": "Legendary Hand Runes"
+            "_note": "Legendary Hand Runes",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Hatchet": {
-            "_note": "Legendary Hatchet"
+            "_note": "Legendary Hatchet",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "sE7LyJkbAZMXTGH3": {
+                    "name": "追撃"
+                }
+            },
+            "effects": {
+                "r37xG24Qrx3q4ObR": {
+                    "name": "追撃",
+                    "description": "この攻撃の習熟に＋1のボーナスを得ます。"
+                }
+            }
         },
         "Legendary Heavy-Frame Wheelchair": {
-            "_note": "Legendary Heavy-Frame Wheelchair"
+            "_note": "Legendary Heavy-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "1godgiqdDADyR0Tw": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Legendary Katana": {
-            "_note": "Legendary Katana"
+            "_note": "Legendary Katana",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "VJCNMcl7MoJWwuFl": {
+                    "name": "迅速"
+                }
+            }
         },
         "Legendary Light-Frame Wheelchair": {
-            "_note": "Legendary Light-Frame Wheelchair"
+            "_note": "Legendary Light-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Longbow": {
-            "_note": "Legendary Longbow"
+            "_note": "Legendary Longbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "004BkCQeQzuMVGS3": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Legendary Longsword": {
-            "_note": "Legendary Longsword"
+            "_note": "Legendary Longsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Mace": {
-            "_note": "Legendary Mace"
+            "_note": "Legendary Mace",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Offhand Brass Knuckles": {
-            "_note": "Legendary Offhand Brass Knuckles"
+            "_note": "Legendary Offhand Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "5vwZnbIvZmUi4tZM": {
+                    "name": "対"
+                }
+            }
         },
         "Legendary Quarterstaff": {
-            "_note": "Legendary Quarterstaff"
+            "_note": "Legendary Quarterstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Rapier": {
-            "_note": "Legendary Rapier"
+            "_note": "Legendary Rapier",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Returning Blade": {
-            "_note": "Legendary Returning Blade"
+            "_note": "Legendary Returning Blade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Rope Dart": {
-            "_note": "Legendary Rope Dart"
+            "_note": "Legendary Rope Dart",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Round Shield": {
-            "_note": "Legendary Round Shield"
+            "_note": "Legendary Round Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "EixxJrRHyc6kj3Wg": {
+                    "name": "防護",
+                    "description": "<p>アイテムのティアを鎧値に加えます</p>"
+                }
+            }
         },
         "Legendary Rune Shield": {
-            "_note": "Legendary Rune Shield"
+            "_note": "Legendary Rune Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "rTFu4NUuHm9UiJr6": {
+                    "name": "防護",
+                    "description": "アイテムのティアを鎧値に加えます"
+                }
+            }
         },
         "Legendary Runelock Pistol": {
-            "_note": "Legendary Runelock Pistol"
+            "_note": "Legendary Runelock Pistol",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "F5YMvafEsSwp8pqU": {
+                    "name": "リロード"
+                }
+            }
         },
         "Legendary Scepter": {
-            "_note": "Legendary Scepter"
+            "_note": "Legendary Scepter",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Scimitar": {
-            "_note": "Legendary Scimitar"
+            "_note": "Legendary Scimitar",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Shadowblade": {
-            "_note": "Legendary Shadowblade"
+            "_note": "Legendary Shadowblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Shortbow": {
-            "_note": "Legendary Shortbow"
+            "_note": "Legendary Shortbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Shortstaff": {
-            "_note": "Legendary Shortstaff"
+            "_note": "Legendary Shortstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Shortsword": {
-            "_note": "Legendary Shortsword"
+            "_note": "Legendary Shortsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "ebloMf4gItx38xkZ": {
+                    "name": "対"
+                }
+            }
         },
         "Legendary Small Dagger": {
-            "_note": "Legendary Small Dagger"
+            "_note": "Legendary Small Dagger",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "WAqE3sZFkTefglDq": {
+                    "name": "対"
+                }
+            }
         },
         "Legendary Spear": {
-            "_note": "Legendary Spear"
+            "_note": "Legendary Spear",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Throwing Knives": {
-            "_note": "Legendary Throwing Knives"
+            "_note": "Legendary Throwing Knives",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Tower Shield": {
-            "_note": "Legendary Tower Shield"
+            "_note": "Legendary Tower Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "lBJMzxdGO2nJdTQS": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                },
+                "1fgUIaXl6VQrhP7j": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                }
+            }
         },
         "Legendary Twisted Dagger": {
-            "_note": "Legendary Twisted Dagger"
+            "_note": "Legendary Twisted Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Wand": {
-            "_note": "Legendary Wand"
+            "_note": "Legendary Wand",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Warhammer": {
-            "_note": "Legendary Warhammer"
+            "_note": "Legendary Warhammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "hKvwLqCltaPV1C7n": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Legendary Whip": {
-            "_note": "Legendary Whip"
+            "_note": "Legendary Whip",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Legendary Whipsword": {
-            "_note": "Legendary Whipsword"
+            "_note": "Legendary Whipsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Light-Frame Wheelchair": {
-            "_note": "Light-Frame Wheelchair"
+            "_note": "Light-Frame Wheelchair",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Longbow": {
-            "_note": "Longbow"
+            "_note": "Longbow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "9gKDF96uId07289w": {
+                    "name": "扱いにくい",
+                    "description": "器用−1"
+                }
+            }
         },
         "Longsword": {
-            "_note": "Longsword"
+            "_note": "Longsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Möbius Orb": {
-            "_note": "Möbius Orb"
+            "_note": "Möbius Orb",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Mace": {
-            "_note": "Mace"
+            "_note": "Mace",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Mage Orb": {
-            "_note": "Mage Orb"
+            "_note": "Mage Orb",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "2J6vzNUel78JFypp": {
+                    "name": "強力"
+                }
+            }
         },
         "Magus Revolver": {
-            "_note": "Magus Revolver"
+            "_note": "Magus Revolver",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Meridian Cutlass": {
-            "_note": "Meridian Cutlass"
+            "_note": "Meridian Cutlass",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Midas Scythe": {
-            "_note": "Midas Scythe"
+            "_note": "Midas Scythe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "A6lC0N6hQhqFTqCx": {
+                    "name": "貪欲"
+                }
+            },
+            "effects": {
+                "zkfYb3BZcBjQJ9Bw": {
+                    "name": "貪欲"
+                }
+            }
         },
         "Offhand Brass Knuckles": {
-            "_note": "Offhand Brass Knuckles"
+            "_note": "Offhand Brass Knuckles",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "I3wflHo4lw4LE4Gu": {
+                    "name": "対"
+                }
+            }
         },
         "Parrying Dagger": {
-            "_note": "Parrying Dagger"
+            "_note": "Parrying Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Platinum Estoc": {
-            "_note": "Platinum Estoc"
+            "_note": "Platinum Estoc",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Powered Gauntlet": {
-            "_note": "Powered Gauntlet"
+            "_note": "Powered Gauntlet",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "n5EB7pI0kv2Zx35G": {
+                    "name": "充填"
+                }
+            }
         },
         "Primer Shard": {
-            "_note": "Primer Shard"
+            "_note": "Primer Shard",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Quarterstaff": {
-            "_note": "Quarterstaff"
+            "_note": "Quarterstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Rapier": {
-            "_note": "Rapier"
+            "_note": "Rapier",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Razor Wire": {
-            "_note": "Razor Wire"
+            "_note": "Razor Wire",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "WEj9asBFTeuvpcgu": {
+                    "name": "捕縛"
+                }
+            },
+            "effects": {
+                "HzbHFY6UixXLRSNu": {
+                    "name": "捕縛"
+                }
+            }
         },
         "Retractable Saber": {
-            "_note": "Retractable Saber"
+            "_note": "Retractable Saber",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Returning Axe": {
-            "_note": "Returning Axe"
+            "_note": "Returning Axe",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Returning Blade": {
-            "_note": "Returning Blade"
+            "_note": "Returning Blade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Ricochet Axes": {
-            "_note": "Ricochet Axes"
+            "_note": "Ricochet Axes",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Rime Scepter": {
-            "_note": "Rime Scepter"
+            "_note": "Rime Scepter",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "LYqVHYFcuJlf6omC": {
+                    "name": "凍結"
+                }
+            },
+            "effects": {
+                "2iYaP8XdKTfwBw6A": {
+                    "name": "凍結"
+                }
+            }
         },
         "Rocket Maul": {
-            "_note": "Rocket Maul"
+            "_note": "Rocket Maul",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "xd2N3IRFkGcy9byh": {
+                    "name": "衝撃を与える"
+                }
+            }
         },
         "Rope Dart": {
-            "_note": "Rope Dart"
+            "_note": "Rope Dart",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Round Shield": {
-            "_note": "Round Shield"
+            "_note": "Round Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "eV4lFIpQMiKERj4U": {
+                    "name": "防護",
+                    "description": "<p>アイテムのティアを鎧値に加えます</p>"
+                }
+            }
         },
         "Rune Shield": {
-            "_note": "Rune Shield"
+            "_note": "Rune Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "fvnsHVPTnaKhNLjH": {
+                    "name": "防護",
+                    "description": "アイテムのティアを鎧値に加えます"
+                }
+            }
         },
         "Runelock Pistol": {
-            "_note": "Runelock Pistol"
+            "_note": "Runelock Pistol",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "BSjjwnxjP7knntm9": {
+                    "name": "リロード"
+                }
+            }
         },
         "Runes of Ruination": {
-            "_note": "Runes of Ruination"
+            "_note": "Runes of Ruination",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Scepter": {
-            "_note": "Scepter"
+            "_note": "Scepter",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Scepter of Elias": {
-            "_note": "Scepter of Elias"
+            "_note": "Scepter of Elias",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Scimitar": {
-            "_note": "Scimitar"
+            "_note": "Scimitar",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Segmented Staff": {
-            "_note": "Segmented Staff"
+            "_note": "Segmented Staff",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "DQ783nkboRdHiAdK": {
+                    "name": "兼務"
+                },
+                "iNCNhj2WdjpeJ0WX": {
+                    "name": "兼務"
+                }
+            }
         },
         "Severed Dragon Claw": {
-            "_note": "Severed Dragon Claw"
+            "_note": "Severed Dragon Claw",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "bWNQYdjog9uNuNfL": {
+                    "name": "破壊"
+                }
+            },
+            "effects": {
+                "vQJCrV4wxxhGUcBX": {
+                    "name": "破壊的"
+                }
+            }
         },
         "Shadowblade": {
-            "_note": "Shadowblade"
+            "_note": "Shadowblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Shortbow": {
-            "_note": "Shortbow"
+            "_note": "Shortbow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Shortstaff": {
-            "_note": "Shortstaff"
+            "_note": "Shortstaff",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Shortsword": {
-            "_note": "Shortsword"
+            "_note": "Shortsword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "djNtNpasgNDRP8Dd": {
+                    "name": "対"
+                }
+            }
         },
         "Singing Sword": {
-            "_note": "Singing Sword"
+            "_note": "Singing Sword",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "tD3OR33TwHpqDyGy": {
+                    "name": "鼓舞"
+                }
+            }
         },
         "Siphoning Gauntlets": {
-            "_note": "Siphoning Gauntlets"
+            "_note": "Siphoning Gauntlets",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Sledge Axe": {
-            "_note": "Sledge Axe"
+            "_note": "Sledge Axe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "dhhIibfRBwCGZ6Ab": {
+                    "name": "破壊的"
+                }
+            }
         },
         "Small Dagger": {
-            "_note": "Small Dagger"
+            "_note": "Small Dagger",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "HKh73AHxImdgxgTg": {
+                    "name": "対"
+                }
+            }
         },
         "Soldier's Pike": {
-            "_note": "Soldier's Pike"
+            "_note": "Soldier's Pike",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "Y5HGiYOQ5Nd3W4zo": {
+                    "name": "受け止め"
+                }
+            }
         },
         "Soul Chain": {
-            "_note": "Soul Chain"
+            "_note": "Soul Chain",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "cGTB3G8sp5XZhucX": {
+                    "name": "吸収"
+                }
+            }
         },
         "Spear": {
-            "_note": "Spear"
+            "_note": "Spear",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Spellbound Bangles": {
-            "_note": "Spellbound Bangles"
+            "_note": "Spellbound Bangles",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Spiked Bow": {
-            "_note": "Spiked Bow"
+            "_note": "Spiked Bow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Spiked Shield": {
-            "_note": "Spiked Shield"
+            "_note": "Spiked Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "gz2f4hmXhl7hbM6p": {
+                    "name": "兼務"
+                },
+                "xLmqw1OcCztX7NI4": {
+                    "name": "兼務"
+                }
+            }
         },
         "Splintershaft Bow": {
-            "_note": "Splintershaft Bow"
+            "_note": "Splintershaft Bow",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Staff of Augma": {
-            "_note": "Staff of Augma"
+            "_note": "Staff of Augma",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "fdXtuFA7Sy6r2GOw": {
+                    "name": "触媒"
+                }
+            },
+            "effects": {
+                "Nqr49MytiiDO6mRq": {
+                    "name": "触媒",
+                    "description": "次の攻撃ロールに＋3のボーナスを得ます。"
+                }
+            }
         },
         "Starmetal Blade": {
-            "_note": "Starmetal Blade"
+            "_note": "Starmetal Blade",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "l3sq4oU9PFSf3voP": {
+                    "name": "鋸歯"
+                }
+            }
         },
         "Steelforged Halberd": {
-            "_note": "Steelforged Halberd"
+            "_note": "Steelforged Halberd",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Storm God's Greataxe": {
-            "_note": "Storm God's Greataxe"
+            "_note": "Storm God's Greataxe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "go6bchi8pFs20jTQ": {
+                    "name": "跳ねる"
+                }
+            }
         },
         "Swinging Ropeblade": {
-            "_note": "Swinging Ropeblade"
+            "_note": "Swinging Ropeblade",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Sword of Light & Flame": {
-            "_note": "Sword of Light & Flame"
+            "_note": "Sword of Light & Flame",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Talon Blades": {
-            "_note": "Talon Blades"
+            "_note": "Talon Blades",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Thistlebow": {
-            "_note": "Thistlebow"
+            "_note": "Thistlebow",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "8ZoLeBzHLXsGMUci": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Throwing Knives": {
-            "_note": "Throwing Knives"
+            "_note": "Throwing Knives",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Tinker's Hammer": {
-            "_note": "Tinker's Hammer"
+            "_note": "Tinker's Hammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "RuT7WwcbaHVqK6it": {
+                    "name": "愛用",
+                    "description": "<p>メイン武器による攻撃ロール＋1。</p>"
+                }
+            }
         },
         "Tower Shield": {
-            "_note": "Tower Shield"
+            "_note": "Tower Shield",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "8r0TcKWXboFV0eqS": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                },
+                "tLRc4UAnGuIq7er3": {
+                    "name": "障壁",
+                    "description": "鎧値に武器ティア＋1。回避値−1"
+                }
+            }
         },
         "Twisted Dagger": {
-            "_note": "Twisted Dagger"
+            "_note": "Twisted Dagger",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Urok Broadsword": {
-            "_note": "Urok Broadsword"
+            "_note": "Urok Broadsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Void Needle": {
-            "_note": "Void Needle"
+            "_note": "Void Needle",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Vorpal Shard": {
-            "_note": "Vorpal Shard"
+            "_note": "Vorpal Shard",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "lwtLR9xWsREAonue": {
+                    "name": "狙撃"
+                }
+            }
         },
         "Wand": {
-            "_note": "Wand"
+            "_note": "Wand",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Wand of Enthrallment": {
-            "_note": "Wand of Enthrallment"
+            "_note": "Wand of Enthrallment",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "weRZBt9v1kjNh6wI": {
+                    "name": "説得する"
+                }
+            },
+            "effects": {
+                "mlgTXtMVMC83kUaZ": {
+                    "name": "説得力",
+                    "description": "社交ロールに＋2します"
+                }
+            }
         },
         "Wand of Essek": {
-            "_note": "Wand of Essek"
+            "_note": "Wand of Essek",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "War Dart": {
-            "_note": "War Dart"
+            "_note": "War Dart",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "War Pick": {
-            "_note": "War Pick"
+            "_note": "War Pick",
+            "attack": {
+                "name": "攻撃"
+            },
+            "actions": {
+                "cLnI9hFkRUgW3VlN": {
+                    "name": "致命"
+                }
+            }
         },
         "War Scythe": {
-            "_note": "War Scythe"
+            "_note": "War Scythe",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "md3xTiCMlyMcKg5S": {
+                    "name": "信頼",
+                    "description": "攻撃ロール＋1"
+                }
+            }
         },
         "Warhammer": {
-            "_note": "Warhammer"
+            "_note": "Warhammer",
+            "attack": {
+                "name": "攻撃"
+            },
+            "effects": {
+                "HT0SAlTBGKwolAOp": {
+                    "name": "重い",
+                    "description": "回避値−1"
+                }
+            }
         },
         "Whip": {
-            "_note": "Whip"
+            "_note": "Whip",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Whipsword": {
-            "_note": "Whipsword"
+            "_note": "Whipsword",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Widogast Pendant": {
-            "_note": "Widogast Pendant"
+            "_note": "Widogast Pendant",
+            "attack": {
+                "name": "攻撃"
+            }
         },
         "Yutari Bloodbow": {
-            "_note": "Yutari Bloodbow"
+            "_note": "Yutari Bloodbow",
+            "attack": {
+                "name": "攻撃"
+            }
         }
     }
 }

@@ -57,7 +57,12 @@
             "_note": "Close-Knit"
         },
         "Dedicated": {
-            "_note": "Dedicated"
+            "_note": "Dedicated",
+            "actions": {
+                "ZBVqSlsDUKf8uGrI": {
+                    "name": "使う"
+                }
+            }
         },
         "Found Family": {
             "_note": "Found Family"
