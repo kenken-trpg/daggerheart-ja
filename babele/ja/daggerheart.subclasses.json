@@ -1377,81 +1377,270 @@
             }
         },
         "Sacred Resonance": {
-            "_note": "Sacred Resonance"
+            "_note": "Sacred Resonance",
+            "name": "聖なる共鳴",
+            "description": "<p>「霊の武器」の特徴のダメージロールを行うとき、出目が一致するダイスがあれば、一致した各ダイスの値を2倍にします。たとえば5が2つ出た場合、10が2つとして扱います。</p>"
         },
         "Scary": {
             "_note": "Scary",
             "name": "恐ろしい",
             "description": "<p>攻撃成功時、対象はストレスを1マークします。</p>",
+            "actions": {
+                "00D4ZUNKiBYvwgL6": {
+                    "name": "構えをとる"
+                },
+                "8RhhH4QorYXMAGOj": {
+                    "name": "ストレスダメージ"
+                }
+            },
             "effects": {
                 "r0feAH80Gh2x6Hta": {
+                    "name": "構え：恐ろしい",
                     "description": "<p>攻撃成功時、対象はストレスを1マークします。</p>"
                 }
             }
         },
         "Scorpion's Poise": {
-            "_note": "Scorpion's Poise"
+            "_note": "Scorpion's Poise",
+            "name": "蠍の構え",
+            "description": "<p><em>死の標</em>を付けたクリーチャーからの攻撃に対して、回避値に＋2のボーナスを得ます。</p>",
+            "effects": {
+                "uNKRX6TRyp4PS7xP": {
+                    "name": "蠍の構え",
+                    "description": "<p><em>死の標</em>を付けたクリーチャーからの攻撃に対して、回避値に＋2のボーナスを得ます。</p>"
+                }
+            }
         },
         "Shadow Stepper": {
-            "_note": "Shadow Stepper"
+            "_note": "Shadow Stepper",
+            "name": "影渡り",
+            "description": "<p>影から影へ移動できます。暗闇の範囲、または他のクリーチャーや物が落とす影の中へ移動したとき、ストレスを1マークしてその場から消え、遠距離以内の別の影の中に現れられます。現れたとき、隠身状態になります。</p>",
+            "actions": {
+                "g1VIG6VjYKkm11qJ": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "RYri0b9z5kq74U5n": {
+                    "name": "影渡り：隠身",
+                    "description": "<p>影から影へ移動できます。暗闇の範囲、または他のクリーチャーや物が落とす影の中へ移動したとき、ストレスを1マークしてその場から消え、遠距離以内の別の影の中に現れられます。現れたとき、隠身状態になります。</p>"
+                }
+            }
         },
         "Slayer": {
-            "_note": "Slayer"
+            "_note": "Slayer",
+            "name": "討伐者",
+            "description": "<p>討伐ダイスと呼ばれるダイスプールを得ます。希望とともに成功したロールで、希望を得る代わりに<strong>d6</strong>をこのカードに置き、そのダイスをプールに加えられます。保持できる討伐ダイスの数は習熟に等しいです。攻撃ロールまたはダメージロールを行うとき、この討伐ダイスを任意の数消費し、それらを振って結果をそのロールに加えられます。各セッションの終わりに、このカードに残った未消費の討伐ダイスをすべて取り除き、取り除いたダイス1つにつき希望を1得ます。</p>"
         },
         "Sparing Touch": {
             "_note": "Sparing Touch",
+            "name": "救いの手",
+            "description": "<p>大休憩ごとに1回、クリーチャーに触れ、そのクリーチャーのHPを2つまたはストレスを2つ消します。</p>",
             "actions": {
+                "aanLNQkeO2ZTIqBl": {
+                    "name": "HPを消す"
+                },
                 "cWdzCQJv8RFfi2NR": {
                     "name": "ストレスを消す"
                 }
             }
         },
         "Spirit Weapon": {
-            "_note": "Spirit Weapon"
+            "_note": "Spirit Weapon",
+            "name": "霊の武器",
+            "description": "<p>近接または至近の射程を持つ武器を装備しているとき、その武器は手から飛び立って近距離以内の敵対者を攻撃し、手元に戻ってきます。<strong>ストレスを1マーク</strong>して、同じ攻撃ロールで射程内の敵対者を1体追加で対象にできます。</p>",
+            "actions": {
+                "TDvWFqAxu7V33UIC": {
+                    "name": "敵対者を追加で対象にする",
+                    "description": "<p>ストレスを1マークして、同じ攻撃ロールで射程内の敵対者を1体追加で対象にできます。</p>"
+                }
+            }
         },
         "Stable": {
-            "_note": "Stable"
+            "_note": "Stable",
+            "name": "安定",
+            "description": "<p>ダメージを減らすために、鎧スロットの代わりに集中を1消費できます。</p>",
+            "actions": {
+                "txkpaqhmPRDGtFV2": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "td74xw7ic4NbaYl0": {
+                    "name": "構え：安定",
+                    "description": "<p>ダメージを減らすために、鎧スロットの代わりに集中を1消費できます。</p>"
+                }
+            }
         },
         "Stance Fighter": {
-            "_note": "Stance Fighter"
+            "_note": "Stance Fighter",
+            "name": "構えの戦士",
+            "description": "<p>内なる覚悟を通わせ、戦闘で特別な恩恵を与える武術の構えへ移れます。</p><p>武術の構えシートを取り、ティア1から武術の構えを2つ選びます。キャラクターがレベルアップするたびに、自分のティア以下の構えを1つ追加で選びます。</p><hr><p><em>現在の実装では、使いたい構えをコンペンディウムの<strong>サブクラス —&gt; サブクラス特徴 —&gt; 武術の構え</strong>から直接取得してください。</em></p>"
         },
         "Surrounded": {
-            "_note": "Surrounded"
+            "_note": "Surrounded",
+            "name": "包囲",
+            "description": "<p>近接武器で攻撃を行うとき、<strong>任意の数の希望を消費</strong>して、近接射程内のクリーチャーを同じ数だけ追加で対象にできます。</p>",
+            "actions": {
+                "fqSsmnCw9JyQ2Zcb": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Thrive in Chaos": {
-            "_note": "Thrive in Chaos"
+            "_note": "Thrive in Chaos",
+            "name": "混沌に栄える",
+            "description": "<p>攻撃が成功したとき、ダメージを振ったあとに<strong>ストレスを1マーク</strong>して、対象にHPを1つ追加でマークさせられます。</p>",
+            "actions": {
+                "7Z9v7GWswIQFD5YH": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Toxic Concoctions": {
-            "_note": "Toxic Concoctions"
+            "_note": "Toxic Concoctions",
+            "name": "毒の調合",
+            "description": "<p><strong>ストレスを1マーク</strong>して、<strong>1d4＋1</strong>個のトークンをこのカードに置きます。武器による攻撃が成功したとき、トークンを1つ消費して対象に毒を与えられます。以下の毒を知っています。</p><ul><li><p><strong>ゴースト・ペタル：</strong>対象は一時的に<em>脆弱</em>になります。</p></li><li><p><strong>グレイヴ・スポア：</strong>対象はストレスも1マークしなければなりません。</p></li><li><p><strong>リーチ・ウィード：</strong>この攻撃で<strong>1d6</strong>のダメージを追加で与えます。</p></li></ul><p>大休憩を取ったとき、未消費のトークンをすべて取り除きます。</p>",
+            "actions": {
+                "muouYqVhSxKflJkl": {
+                    "name": "トークンを得る",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、<strong>1d4＋1</strong>個のトークンをこのカードに置きます。</p>"
+                },
+                "RStmr0d20BrcSQpu": {
+                    "name": "ゴースト・ペタル",
+                    "description": "<p>対象は一時的に<em>脆弱</em>になります。</p>"
+                },
+                "2cu2lGBt48HOvb3Q": {
+                    "name": "グレイヴ・スポア",
+                    "description": "<p>対象はストレスも1マークしなければなりません。</p>"
+                }
+            },
+            "effects": {
+                "RfTbHfc8vxmGMjBq": {
+                    "name": "ゴースト・ペタル",
+                    "description": "<p>対象は一時的に<em>脆弱</em>になります。</p>"
+                }
+            }
         },
         "Transcendence": {
             "_note": "Transcendence",
+            "name": "超越",
+            "description": "<p>大休憩ごとに1回、自分の元素の物質的な顕現へと変身できます。そうしたとき、その変身を描写し、次の休憩まで得る恩恵を以下から2つ選びます。</p><ul><li><p>重傷値に＋4のボーナス</p></li><li><p>好きなキャラクター特性1つに＋1のボーナス</p></li><li><p>習熟に＋1のボーナス</p></li><li><p>回避値に＋2のボーナス</p></li></ul>",
             "actions": {
                 "RIbyJjEkCgqoDmyn": {
                     "name": "変身"
                 }
+            },
+            "effects": {
+                "zFOpzO3tBJPcZcRc": {
+                    "name": "しきい値にボーナス",
+                    "description": "<p>重傷値に＋4のボーナス</p>"
+                },
+                "cTgSmxkTi89y6sbc": {
+                    "name": "特性にボーナス",
+                    "description": "<p>好きなキャラクター特性1つに＋1のボーナス</p>"
+                },
+                "oWf3iXf4dawdbmzd": {
+                    "name": "習熟にボーナス",
+                    "description": "<p>習熟に＋1のボーナス</p>"
+                },
+                "2LCF6lSnWFqNiPs5": {
+                    "name": "回避値にボーナス",
+                    "description": "<p>回避値に＋2のボーナス</p>"
+                }
             }
         },
         "True Strike": {
-            "_note": "True Strike"
+            "_note": "True Strike",
+            "name": "必中の一撃",
+            "description": "<p>大休憩ごとに1回、攻撃に失敗したとき、<strong>希望を1消費</strong>して代わりに成功にできます。</p>",
+            "actions": {
+                "kECUBjkHOxnSOVqE": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Twin Fang": {
-            "_note": "Twin Fang"
+            "_note": "Twin Fang",
+            "name": "双牙",
+            "description": "<p><em>死の標</em>を付けた対象に、知っている毒を与えるとき、トークンを1つ追加で消費して、知っている2つ目の毒の効果も与えられます。</p>"
         },
         "Undaunted": {
-            "_note": "Undaunted"
+            "_note": "Undaunted",
+            "name": "不屈",
+            "description": "<p>ダメージしきい値に永続＋3のボーナスを得ます。</p>",
+            "effects": {
+                "zggFRaerHCj1e5F5": {
+                    "name": "不屈",
+                    "description": "<p>ダメージしきい値に永続＋3のボーナスを得ます。</p>"
+                }
+            }
         },
         "Unrelenting": {
-            "_note": "Unrelenting"
+            "_note": "Unrelenting",
+            "name": "弛まぬ者",
+            "description": "<p>ダメージしきい値に永続＋2のボーナスを得ます。</p>",
+            "effects": {
+                "IKb6yutns8EJZ49M": {
+                    "name": "弛まぬ者",
+                    "description": "<p>ダメージしきい値に永続＋2のボーナスを得ます。</p>"
+                }
+            }
         },
         "Unwavering": {
-            "_note": "Unwavering"
+            "_note": "Unwavering",
+            "name": "揺るがぬ者",
+            "description": "<p>ダメージしきい値に永続＋1のボーナスを得ます。</p>",
+            "effects": {
+                "3wexvo6La4V46aiX": {
+                    "name": "揺るがぬ者",
+                    "description": "<p>ダメージしきい値に永続＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Vanishing Act": {
-            "_note": "Vanishing Act"
+            "_note": "Vanishing Act",
+            "name": "消失の技",
+            "description": "<p><strong>ストレスを1マーク</strong>して、いつでも隠身状態になれます。この特徴で隠身状態になったとき、拘束状態であれば自動的に解除されます。恐怖とともにロールするか次の休憩まで、この隠身状態は続きます。</p>",
+            "actions": {
+                "BjAECQULugmbVqXU": {
+                    "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "czrwqq44sEr0uJ8O": {
+                    "name": "消失の技：隠身",
+                    "description": "<p>この特徴で隠身状態になったとき、拘束状態であれば自動的に解除されます。恐怖とともにロールするか次の休憩まで、この隠身状態は続きます。</p>"
+                }
+            }
         },
         "Venomancer": {
-            "_note": "Venomancer"
+            "_note": "Venomancer",
+            "name": "毒術士",
+            "description": "<p>以下の毒も知っています。</p><ul><li><p><strong>ブライト・シード：</strong>対象はシーン終了までダメージしきい値に－3のペナルティを受けます。この効果は累積しません。</p></li><li><p><strong>フィア・リーフ：</strong>この攻撃で、恐怖ダイスの出目に等しいダメージを追加で与えます。</p></li><li><p><strong>コープス・ソーン：</strong>対象はシーン終了までリアクションロールに不利を受けます。</p></li></ul>",
+            "actions": {
+                "uTNhXJiy5YAG0FdS": {
+                    "name": "ブライト・シード",
+                    "description": "<p>対象はシーン終了までダメージしきい値に－3のペナルティを受けます。この効果は累積しません。</p>"
+                },
+                "8CcarGtcoIg3Dmah": {
+                    "name": "コープス・ソーン",
+                    "description": "<p>対象はシーン終了までリアクションロールに不利を受けます。</p>"
+                }
+            },
+            "effects": {
+                "BAHnbGqeiUj2Eep3": {
+                    "name": "ブライト・シード",
+                    "description": "<p>対象はシーン終了までダメージしきい値に－3のペナルティを受けます。この効果は累積しません。</p>"
+                },
+                "QDYqKyEjiJiTEv6C": {
+                    "name": "コープス・ソーン",
+                    "description": "<p>対象はシーン終了までリアクションロールに不利を受けます。</p>",
+                    "changes": [
+                        "リアクションロール"
+                    ]
+                }
+            }
         },
         "Vexing Malison": {
             "_note": "Vexing Malison"
