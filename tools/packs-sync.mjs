@@ -993,7 +993,10 @@ const commands = {
          * A handful of English strings are genuinely two words -- the lunar
          * phase `Full` is not the UI's full restore. Left unlisted, each one
          * reports forever, and a report with permanent noise in it stops being
-         * read. The exemption is per field and carries its reason.
+         * read. A key is either one field, `<collection> / <entry> :: <field>`,
+         * or `en:<the English>` when the same word recurs across a pack and
+         * naming one field would only move the report to the next one. Each
+         * carries its reason.
          */
         const exempt = await readJson(path.join('lang', 'translation', 'terms-exempt.json')).catch(() => ({}));
 
@@ -1027,7 +1030,7 @@ const commands = {
                  * are not a difference in wording.
                  */
                 const here = plain(value);
-                if (exempt[`${collection} / ${key}`]) continue;
+                if (exempt[`${collection} / ${key}`] || exempt[`en:${text}`]) continue;
                 const approved = established.get(term) ?? glossary.get(term);
                 if (approved && tight(approved.japanese) !== tight(here)) {
                     problems += 1;

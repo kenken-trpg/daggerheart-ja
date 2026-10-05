@@ -1,5 +1,6 @@
 {
     "_note": "Homographs: one English string that is genuinely two different words. Each key is '<collection> / <entry> :: <field>' as `terms` prints it, and the value says why the disagreement is correct. Keep this list short -- every entry is a signal switched off.",
     "daggerheart.subclasses / Lunar Phases :: effects.7V75lzCjChYmZaZ5.name": "A lunar phase (満月), not the UI's 'Full' restore (完全).",
-    "daggerheart.subclasses / Perfect Recall :: actions.rFZj0ZsnJCc0PS3h.name": "Recalling a card from the vault (リコール, as the card UI calls it), not the Knowledge trait's verb (想起する)."
+    "daggerheart.subclasses / Perfect Recall :: actions.rFZj0ZsnJCc0PS3h.name": "Recalling a card from the vault (リコール, as the card UI calls it), not the Knowledge trait's verb (想起する).",
+    "en:Guardian": "An adversary's experience 守護者 ('one who guards'), which is not the Guardian class (ガーディアン)."
 }
