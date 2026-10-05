@@ -812,17 +812,28 @@
         },
         "Bear": {
             "_note": "Bear",
+            "name": "熊",
+            "description": "<p>厚い毛皮と力強い爪を持つ大きな熊。</p>",
+            "motivesAndTactics": "登る、縄張りを守る、殴りつける、追跡する",
             "attack": {
                 "name": "爪"
             },
             "experiences": {
+                "5ASmWCwf7HMplPDT": {
+                    "name": "待ち伏せ"
+                },
                 "rjs6ek5OZP8inYqu": {
                     "name": "鋭敏な感覚"
                 }
             },
             "items": {
+                "2fXzhh2qil8dw3vw": {
+                    "name": "圧倒的な力",
+                    "description": "<p>@Lookup[@name]の標準攻撃でHPをマークした対象は、至近まで吹き飛ばされます。</p>"
+                },
                 "zgR0MEqyobKp2yXr": {
                     "name": "噛みつき",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接射程内の対象に攻撃を行います。成功した場合、<strong>3d4＋10</strong>の物理ダメージを与え、その対象は頑強ロールに成功して振り払うまで<em>拘束</em>されます。</p>",
                     "actions": {
                         "PXL3e51eBYZ4O2lb": {
                             "name": "攻撃"
@@ -838,6 +849,7 @@
                 },
                 "4hJbq9WCwJn78frt": {
                     "name": "勢い",
+                    "description": "<p>熊がPCへの攻撃に成功したとき、恐怖を1得ます。</p>",
                     "actions": {
                         "ZQHGR0IweeWBLokB": {
                             "name": "恐怖を得る"
@@ -848,6 +860,9 @@
         },
         "Berserker Alpha": {
             "_note": "Berserker Alpha",
+            "name": "狂戦士の長",
+            "description": "<p>魔法の霊薬を飲んで獣へと変わり、群れの仲間を率いて狩りに出る熟練の指揮官。</p>",
+            "motivesAndTactics": "変化を受け入れる、月に吠える、群れを率いる、敵を追い詰める",
             "attack": {
                 "name": "牙と爪"
             },
@@ -861,10 +876,12 @@
             },
             "items": {
                 "SEvAYlwvFdLMx0yZ": {
-                    "name": "群れの猛り"
+                    "name": "群れの猛り",
+                    "description": "<p>長は、攻撃の対象の至近以内にいる味方1体につき、攻撃ロールに＋1のボーナスを得ます。</p>"
                 },
                 "ky9NeQ55xa1TdP5j": {
                     "name": "月に吠える",
+                    "description": "<p>シーンごとに1回、<strong>恐怖を1消費</strong>して、長の近距離以内の各味方にHPを1つとストレスを1つ消させます。</p>",
                     "actions": {
                         "4PI47ZKKRktAGlSA": {
                             "name": "恐怖を消費する",
@@ -878,9 +895,16 @@
                 },
                 "GmBst1S1DyM4gxZe": {
                     "name": "狂戦士の激昂",
+                    "description": "<p>シーン中で初めて長が最後のストレスをマークしたとき、ダメージロールに＋6のボーナスを得ます。</p>",
+                    "actions": {
+                        "t667jPuEUjs5d6lu": {
+                            "name": "激昂する"
+                        }
+                    },
                     "effects": {
                         "xTbh9Z2C98dKBd0W": {
-                            "name": "激昂"
+                            "name": "激昂",
+                            "description": "<p>ダメージロールに＋6のボーナスを得ます。</p>"
                         }
                     }
                 }
@@ -888,6 +912,9 @@
         },
         "Berserker Initiate": {
             "_note": "Berserker Initiate",
+            "name": "狂戦士の新参",
+            "description": "<p>儀式の調合薬を飲み、捕食獣の相を帯びて身を強める、激昂した戦士。</p>",
+            "motivesAndTactics": "群れの仲間と連携する、火の周りで踊る、月に吠える",
             "attack": {
                 "name": "牙と爪"
             },
@@ -898,13 +925,16 @@
             },
             "items": {
                 "OQOMsj3lpNIeJryN": {
-                    "name": "群れの猛り"
+                    "name": "群れの猛り",
+                    "description": "<p>新参は、攻撃の対象の至近以内にいる味方1体につき、攻撃ロールに＋1のボーナスを得ます。</p>"
                 },
                 "a3VYAXAv5BC6DgqG": {
                     "name": "狂戦士の激昂",
+                    "description": "<p>シーン中で初めて新参が最後のストレスをマークしたとき、ダメージロールに＋4のボーナスを得ます。</p>",
                     "effects": {
                         "VVf1OKfgMIEUMlKM": {
-                            "name": "激昂"
+                            "name": "激昂",
+                            "description": "<p>ダメージロールに＋4のボーナスを得ます。</p>"
                         }
                     }
                 }
@@ -912,6 +942,8 @@
         },
         "Bladed Guard": {
             "_note": "Bladed Guard",
+            "name": "剣衛兵",
+            "description": "<p>集落の色に塗られた剣と盾を携えた、鎧をまとった衛兵。</p>",
             "motivesAndTactics": "逮捕する、門を閉める、一日を乗り切る、押さえ込む",
             "attack": {
                 "name": "ロングソード"
@@ -922,8 +954,18 @@
                 }
             },
             "items": {
+                "qEn4baWgkjKtmILp": {
+                    "name": "盾の壁",
+                    "description": "<p>@Lookup[@name]の至近以内へ移動しようとするクリーチャーは、素早さロールに成功しなければなりません。最初の1体と並んで他の@Lookup[@name]が一列に立ち、それぞれが列の別の衛兵の近接射程内にいる場合、難易度はその列の衛兵の総数ぶん上がります。</p>",
+                    "actions": {
+                        "3lbeEeJdjzPn0MoG": {
+                            "name": "受け止める"
+                        }
+                    }
+                },
                 "9gizFt9ovKL05DXu": {
                     "name": "拘束する",
+                    "description": "<p>至近以内の対象に攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して、攻撃、器用ロール、または頑強ロールに成功して振り払うまで対象を拘束します。</p>",
                     "actions": {
                         "TK5R00afB1RIA6gp": {
                             "name": "攻撃"
@@ -931,7 +973,9 @@
                     },
                     "effects": {
                         "LmzztuktRkwOCy1a": {
-                            "name": "拘束する"
+                            "name": "拘束する",
+                            "description": "<p>攻撃、器用ロール、または頑強ロールに成功して振り払うまで<em>拘束</em>されています。</p>",
+                            "durationDescription": "<p>攻撃、器用ロール、または頑強ロールに成功して振り払うまで。</p>"
                         }
                     }
                 }
@@ -939,6 +983,9 @@
         },
         "Brawny Zombie": {
             "_note": "Brawny Zombie",
+            "name": "剛腕ゾンビ",
+            "description": "<p>腐敗で膨れ上がり、怒りに満ちた大きな死体。</p>",
+            "motivesAndTactics": "圧し潰す、破壊する、瓦礫を降らせる、叩きつける",
             "attack": {
                 "name": "叩きつけ"
             },
@@ -956,6 +1003,8 @@
                     "description": "<p>@Lookup[@name]にスポットライトを当てたとき、そのステータスブロックにトークンが無ければ、まだ行動できません。ステータスブロックにトークンを1つ置き、何をしようとしているかを描写します。@Lookup[@name]にスポットライトを当てたとき、そのステータスブロックにトークンがあれば、トークンを取り除き、行動できます。</p>"
                 },
                 "LP7xVLMTkJsmiIvl": {
+                    "name": "引き裂く",
+                    "description": "<p>@Lookup[@name]が<em>拘束</em>している対象に、有利で標準攻撃を行います。成功した場合、その攻撃は直接ダメージを与えます。</p>",
                     "actions": {
                         "qCcWw60cPZnEWbpG": {
                             "name": "攻撃"
@@ -964,6 +1013,7 @@
                 },
                 "69reUZ5tv3splqyO": {
                     "name": "引き裂き",
+                    "description": "<p>@Lookup[@name]が標準攻撃に成功したとき、<strong>ストレスを1マーク</strong>して対象を一時的に拘束し、ストレスを2マークさせられます。</p>",
                     "actions": {
                         "xV1z3dk9c7jIkk7v": {
                             "name": "ダメージ"
@@ -979,6 +1029,12 @@
         },
         "Bugboar": {
             "_note": "Bugboar",
+            "name": "バグボア",
+            "description": "<p>牙の生えた鼻面と粗い毛を持つ、大きな二足歩行の生き物。</p>",
+            "motivesAndTactics": "待ち伏せる、いじめる、殺戮と光る物を求める",
+            "attack": {
+                "name": "棘付きメイス"
+            },
             "experiences": {
                 "aKI4ENWPuRpDh9sN": {
                     "name": "罠"
@@ -986,6 +1042,8 @@
             },
             "items": {
                 "1NsdEyGbRIVsyUtw": {
+                    "name": "不意打ちだ！",
+                    "description": "<p>@Lookup[@name]がHPもストレスもマークしていない状態でシーン中の最初の攻撃を行う場合、その攻撃に有利を得て、<strong>1d8</strong>のダメージを追加で与えます。</p>",
                     "actions": {
                         "dBGvHWLAmODHYX3e": {
                             "name": "攻撃"
@@ -994,6 +1052,7 @@
                 },
                 "kk2cwy2BB3qVqEYK": {
                     "name": "残忍",
+                    "description": "<p>@Lookup[@name]が標準攻撃に成功したとき、<strong>ストレスを1マーク</strong>して<strong>1d6</strong>のダメージを追加で与えられます。</p>",
                     "actions": {
                         "zkXJOtVStH9iXwPu": {
                             "name": "ストレスをマーク"
@@ -1001,6 +1060,8 @@
                     }
                 },
                 "iIv8oE9H4wuyg0Jy": {
+                    "name": "戦の心",
+                    "description": "<p>@Lookup[@name]に状態が課されるとき、<strong>恐怖を1消費</strong>してそれを打ち消せます。</p>",
                     "actions": {
                         "eRUcVhryNIBg9ZZq": {
                             "name": "恐怖を消費する"
@@ -1011,11 +1072,28 @@
         },
         "Catrin": {
             "_note": "Catrin",
+            "name": "カトリン",
+            "description": "<p>贅を尽くして飾られた骸骨。金貨への底なしの渇望を持つ。</p>",
+            "motivesAndTactics": "会話を支配する、注目を求める、何でも盗む",
             "attack": {
                 "name": "霊の炎"
             },
+            "experiences": {
+                "opqtFyJUegfnhtDE": {
+                    "name": "豪奢"
+                },
+                "GphQ53nYaUMF72mr": {
+                    "name": "語り手"
+                }
+            },
             "items": {
+                "bWCHZQfgYqwp0Rs9": {
+                    "name": "富に惹かれる",
+                    "description": "<p>袋一杯の金貨以上を持っているPCは、@Lookup[@name]に働きかけるための社交ロールに有利を得ます。</p>"
+                },
                 "bO98mAUQq9W3rWrE": {
+                    "name": "豪奢の重み",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]の視線を最も多くの金貨を持つPCへ向けます。その対象は直感リアクションロールに成功しなければ、持っている袋一杯の金貨1つにつき希望を1失います。そのPCが最後の希望を失うか、失う希望が無い場合、代わりにストレスをマークします。</p>",
                     "actions": {
                         "oD01L5IIX7DEjVlZ": {
                             "name": "恐怖を消費する"
@@ -1023,6 +1101,8 @@
                     }
                 },
                 "xv5ezYG0YFD4nrIq": {
+                    "name": "高くつく失敗",
+                    "description": "<p>近接射程内のPCがアクションロールに失敗したとき、<strong>ストレスを1マーク</strong>して、@Lookup[@name]にそのPCから一握りの金貨を堂々と盗ませられます。</p>",
                     "actions": {
                         "sf0EbTcIURgKJ3JV": {
                             "name": "ストレスをマーク"
@@ -1033,6 +1113,9 @@
         },
         "Cave Ogre": {
             "_note": "Cave Ogre",
+            "name": "洞窟オーガ",
+            "description": "<p>知性ある生命すべてを食物と見なす巨大な人型。</p>",
+            "motivesAndTactics": "頭を食いちぎる、貪り食う、手足を引きちぎる、踏みつける、敵を投げる",
             "attack": {
                 "name": "クラブ"
             },
@@ -1052,10 +1135,12 @@
                     }
                 },
                 "szu5YYQ6klkDbqAT": {
+                    "name": "骨砕き",
                     "description": "<p>@Lookup[@name]の攻撃は直接ダメージを与えます。</p>"
                 },
                 "zGvaBYJPOOnQVQEn": {
                     "name": "巨岩の雨",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、重い物を持ち上げ、@Lookup[@name]の正面の遠距離以内のすべての対象に投げつけます。これらの対象に攻撃を行います。@Lookup[@name]が成功した対象は<strong>1d10＋2</strong>の物理ダメージを受けます。2体以上の対象に成功した場合、あなたは恐怖を1得ます。</p>",
                     "actions": {
                         "3p1qfHy5uHe4H2hB": {
                             "name": "投げつけ",
@@ -1071,6 +1156,8 @@
                     }
                 },
                 "Qxkddj6nQc4RDExW": {
+                    "name": "暴れ狂う怒り",
+                    "description": "<p>@Lookup[@name]がHPを2つ以上マークしたとき、暴れ回れます。@Lookup[@name]を近距離以内の一点へ移動させ、その進路上のすべての対象に<strong>2d6＋3</strong>の直接物理ダメージを与えます。</p>",
                     "actions": {
                         "PtTu9bnCJKMySBSV": {
                             "name": "ダメージ"
@@ -1081,9 +1168,18 @@
         },
         "Centaur Warden": {
             "_note": "Centaur Warden",
+            "name": "ケンタウロスの守り手",
+            "description": "<p>半人半馬の守護者。文明の手に汚されていない理想郷の境を巡回する。</p>",
+            "motivesAndTactics": "自然と調和して生きる、荒野を守る、機動と距離で侵入者を追い払う",
+            "attack": {
+                "name": "反曲弓"
+            },
             "experiences": {
                 "fhK9A5ii9A9q5ShV": {
                     "name": "自然"
+                },
+                "CbkZsek86WFM0adz": {
+                    "name": "哲学"
                 }
             },
             "items": {
@@ -1098,6 +1194,8 @@
                     }
                 },
                 "UtxsNofV59V2WXSN": {
+                    "name": "賢者の眼",
+                    "description": "<p><strong>ストレスを1マーク</strong>して標準攻撃を行います。守り手はその攻撃ロールに有利を得て、19–20の出目でクリティカル成功します。</p>",
                     "actions": {
                         "3QQCAmvmVVXKoAVc": {
                             "name": "ストレスをマーク"
@@ -1106,6 +1204,7 @@
                 },
                 "bb0EOEX68WRKfr20": {
                     "name": "踏みつけ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、守り手を一直線に遠距離まで駆けさせます。その進路上の各対象は素早さリアクションロールを行わなければなりません。成功した対象は<strong>1d6＋2</strong>の物理ダメージを受けます。失敗した対象は2倍のダメージを受け、ストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "VA7XrkrIV6CVVTBa": {
                             "name": "恐怖を消費する",
@@ -1118,6 +1217,8 @@
                     }
                 },
                 "iX7ofHjr4Cdk3PKE": {
+                    "name": "速射の斉射",
+                    "description": "<p>守り手が標準攻撃を行うとき、任意の数のストレスをマークして、同じ数のクリーチャーを射程内から追加で対象にできます。</p>",
                     "actions": {
                         "ocFvxpgZGsfIEj8i": {
                             "name": "ストレスを消費"
@@ -1128,9 +1229,30 @@
         },
         "Cephilith Abomination": {
             "_note": "Cephilith Abomination",
+            "name": "セフィリスの忌まわしきもの",
+            "description": "<p>沼で育った、のしのしと歩く蛙の獣。半透明の皮膚の下でオタマジャクシのような蛭が蠢いているのが見える。</p>",
+            "motivesAndTactics": "力仕事を担う、威圧的に跳ぶ、意外な速さで動く、叩き壊して奪う",
+            "attack": {
+                "name": "肉厚の拳"
+            },
+            "experiences": {
+                "dh7b1OdDJGfvqL7Q": {
+                    "name": "怪力"
+                }
+            },
             "items": {
+                "MFkY0BD2EhKp9lTo": {
+                    "name": "毒の皮膚",
+                    "description": "<p>忌まわしきものに身体で触れたPCは、<strong>d6</strong>を1つ振らなければなりません。結果が3以下の場合、そのPCは鎧スロットを1つ、またはHPを2つマークしなければなりません。</p>",
+                    "actions": {
+                        "6AQOfcmdac8LuV6u": {
+                            "name": "接触"
+                        }
+                    }
+                },
                 "bSG0fOnMCgOFVdpP": {
                     "name": "熊の抱擁",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接射程内の対象に標準攻撃を行います。成功した場合、対象は標準のダメージを受け、頑強ロールに成功して逃れるまで組み付かれます。組み付かれている間、対象は<em>脆弱</em>かつ<em>拘束</em>です。</p>",
                     "actions": {
                         "uAd7ujcTtX7H4qZ3": {
                             "name": "ストレスをマーク"
@@ -1138,11 +1260,14 @@
                     },
                     "effects": {
                         "2PJ338qQ7O8uDiW4": {
-                            "name": "熊の抱擁"
+                            "name": "熊の抱擁",
+                            "description": "<p>頑強ロールに成功して逃れるまで組み付かれています。</p><p>組み付かれている間、対象は<em>脆弱</em>かつ<em>拘束</em>です。</p>"
                         }
                     }
                 },
                 "eNlJcvDxqoyCPtW6": {
+                    "name": "ガリッ！",
+                    "description": "<p><strong>恐怖を1消費</strong>して、忌まわしきものに組み付かれているクリーチャーに<strong>4d12</strong>の直接物理ダメージを与えます。</p>",
                     "actions": {
                         "4viMPxjTK2hUyXpk": {
                             "name": "恐怖を消費する"
@@ -1151,6 +1276,7 @@
                 },
                 "7DSC9gbRVC7j7nKh": {
                     "name": "舌の攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、忌まわしきものに遠距離以内の対象を近接射程へ引き寄せさせ、直ちに忌まわしきものに再びスポットライトを当てます。</p>",
                     "actions": {
                         "ZiKxwdm8EyBvVOid": {
                             "name": "恐怖を消費する"
@@ -1159,6 +1285,7 @@
                 },
                 "EzVuIjxfpU0ySdyq": {
                     "name": "潜り込む蛭杭",
+                    "description": "<p>忌まわしきものが中傷以上のダメージを受けたとき、その皮膚が破れて皮下の蠢く虫が噴き出します。近距離以内の各PCは素早さリアクションロールを行わなければなりません。失敗した対象は<strong>[[/r 2d4]]</strong>匹の蛭杭に覆われ、それらは皮膚の下に潜り込みます。器用ロール（21）に成功して蛭杭を掘り出すまで、その対象が受けるダメージは皮膚の下の蛭杭1匹につき＋1のボーナスを得ます。</p>",
                     "actions": {
                         "SGk7b2M6GYzVA1KC": {
                             "name": "リアクションロール",
@@ -1167,6 +1294,12 @@
                                     "name": "潜り込む蛭杭"
                                 }
                             ]
+                        }
+                    },
+                    "effects": {
+                        "XRFLX5qMJco6vnLG": {
+                            "name": "蛭杭",
+                            "description": "<p>器用ロール（21）に成功して蛭杭を掘り出すまで、その対象が受けるダメージは皮膚の下の蛭杭1匹につき＋1のボーナスを得ます。</p>"
                         }
                     }
                 }
