@@ -234,10 +234,14 @@
             ]
         },
         "Arcane Sense": {
-            "_note": "Arcane Sense"
+            "_note": "Arcane Sense",
+            "name": "秘術感知",
+            "description": "<p>近距離以内の魔法を帯びた人や物の存在を感知できます。</p>"
         },
         "Attack Of Opportunity": {
             "_note": "Attack Of Opportunity",
+            "name": "機会攻撃",
+            "description": "<p>近接射程内の敵対者がその射程から離れようとしたとき、選んだ特性を用いてその敵対者の難易度に対するリアクションロールを行います。成功したら以下の効果を1つ、クリティカル成功したら2つ選びます。</p><ul><li><p>その敵対者はその場から移動できません。</p></li><li><p>その敵対者にメイン武器のダメージに等しいダメージを与えます。</p></li><li><p>あなたもその敵対者と一緒に移動します。</p></li></ul>",
             "actions": {
                 "SOuw91PqJqsFJUVO": {
                     "name": "リアクションロール"
@@ -247,6 +251,7 @@
         "Beastform": {
             "_note": "Beastform",
             "name": "ビーストフォーム",
+            "description": "<p>ストレスを1マークして、ビーストフォーム一覧から自分のティア以下のクリーチャーへ魔法で変身します。この形態はいつでも解除できます。変身している間、武器を使うこともドメインカードから呪文を発動することもできませんが、アクセスを持つ他の特徴や能力は使えます。変身前に発動した呪文は有効なまま通常の持続時間だけ続き、会話や意思疎通も普通に行えます。さらに、ビーストフォームの特徴を得て、その回避値ボーナスを自分の回避値に加え、攻撃にはその数値欄で指定された特性を使います。ビーストフォーム中、鎧は身体の一部となり、鎧スロットは通常どおりマークします。ビーストフォームを解除したとき、マークした鎧スロットはマークされたままです。最後のHPをマークした場合、この形態は自動的に解除されます。</p>",
             "actions": {
                 "MN2U7f7ypnQeg1PY": {
                     "name": "ビーストフォーム"
@@ -254,52 +259,131 @@
             }
         },
         "Channel Raw Power": {
-            "_note": "Channel Raw Power"
+            "_note": "Channel Raw Power",
+            "name": "生の力を通わせる",
+            "description": "<p>大休憩ごとに1回、ロードアウトのドメインカードを1枚保管庫に置き、以下のいずれかを選べます。</p><ul><li><p>そのカードのレベルに等しい希望を得る。</p></li><li><p>ダメージを与える呪文を強化し、そのカードのレベルの2倍に等しいボーナスをダメージロールに得る。</p></li></ul>",
+            "actions": {
+                "YFmqnbMx540su2Ni": {
+                    "name": "通わせる"
+                }
+            }
         },
         "Cloaked": {
-            "_note": "Cloaked"
+            "_note": "Cloaked",
+            "name": "隠身",
+            "description": "<p>隠密になるときはいつでも、代わりに隠身になります。隠密状態の恩恵に加えて、隠身の間は、敵対者が通常ならあなたを見つけられる位置へ移動してきても、あなたが静止していれば見つかりません。攻撃を行うか、敵対者の視線内で移動を終えると、隠身は解けます。</p>"
         },
         "Combat Training": {
-            "_note": "Combat Training"
+            "_note": "Combat Training",
+            "name": "戦闘訓練",
+            "description": "<p>武器を装備するときの負荷を無視します。物理ダメージを与えるとき、ダメージロールに自分のレベルに等しいボーナスを得ます。</p>",
+            "effects": {
+                "Y7sTM0tw0VpgU6pC": {
+                    "name": "戦闘訓練",
+                    "description": "<p>武器を装備するときの負荷を無視します。物理ダメージを与えるとき、ダメージロールに自分のレベルに等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Combo Strike": {
-            "_note": "Combo Strike"
+            "_note": "Combo Strike",
+            "name": "連撃",
+            "description": "<p>近接武器による攻撃が成功してダメージを振ったあと、<strong>ストレスを1マーク</strong>して連撃を始められます。そうしたとき、コンボダイスを振って結果を記録し、直前の出目より低い出目が出るまでコンボダイスを振り続けます。この攻撃で、振ったコンボダイスの結果の合計に等しいダメージを追加で与えます。この結果はいかなる手段でも修正できません。</p><p>コンボダイスは<strong>d4</strong>から始まります。ティアごとに1回、レベル成長の選択肢としてコンボダイスを1段階上げられます。</p>",
+            "actions": {
+                "ZRZ0l8WZQdzg656w": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Commune": {
-            "_note": "Commune"
+            "_note": "Commune",
+            "name": "交信",
+            "description": "<p>大休憩ごとに1回、平穏なひとときに、祖霊、神格、精霊、あるいは異界の存在と交信できます。問いを一つ投げ、呪文発動特性に等しい数の<strong>[[/r d6]]{d6}</strong>を振ります。結果から1つを選び、下の表で効果を参照します。</p><ul><li><p>1–3：答えに関わる味、匂い、あるいは感覚を覚えます。</p></li><li><p>4–5：答えに関わる音を聞くか、光景を見ます。</p></li><li><p>6：答えに関わる場面を、その場にいたかのように霊的に体験します。</p></li></ul>",
+            "actions": {
+                "3KkvH8q9Gq7Rp0mT": {
+                    "name": "交信"
+                }
+            }
         },
         "Deadly Determination": {
-            "_note": "Deadly Determination"
+            "_note": "Deadly Determination",
+            "name": "死をも覚悟した決意",
+            "description": "<p><strong>希望を3消費</strong>して、ストレスを2つ消します。</p>",
+            "actions": {
+                "Fa4zqtVtWA1abjHL": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Evolution": {
             "_note": "Evolution",
             "name": "進化",
+            "description": "<p><strong>希望を3消費</strong>して、ストレスをマークせずにビーストフォームへ変身します。そうしたとき、そのビーストフォームを解除するまで＋1される特性を1つ選びます。</p>",
             "actions": {
                 "bj4m9E8ObFT0xDQ4": {
-                    "name": "ビーストフォーム"
+                    "name": "ビーストフォーム",
+                    "description": "<p>希望を3消費して、ストレスをマークせずにビーストフォームへ変身します。そうしたとき、そのビーストフォームを解除するまで＋1される特性を1つ選びます。</p>"
                 }
             }
         },
         "Favor": {
             "_note": "Favor",
-            "name": "恩寵"
+            "name": "恩寵",
+            "description": "<p>恩寵を3つ持って始めます。ダウンタイムムーブを使って庇護者に捧げ物をできます。その様子を描写し、呪文発動特性に等しい恩寵を得ます。さらに、希望とともにアクションロールに成功したとき、希望の代わりに恩寵を1つ得ることを選べます。</p>"
         },
         "Frontline Tank": {
-            "_note": "Frontline Tank"
+            "_note": "Frontline Tank",
+            "name": "前線の盾",
+            "description": "<p><strong>希望を3消費</strong>して、鎧スロットを2つ消します</p>",
+            "actions": {
+                "pRMSzC9XDSKmmLqT": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Get In & Get Out": {
-            "_note": "Get In & Get Out"
+            "_note": "Get In & Get Out",
+            "name": "忍び込み、忍び出る",
+            "description": "<p><strong>希望を1消費</strong>して、見える場所への素早い、あるいは目立たない出入りの道をGMに尋ねます。この情報をもとに行う次のロールに有利がつきます。</p>",
+            "actions": {
+                "hJ5WWwwlksMze0iP": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Hex": {
-            "_note": "Hex"
+            "_note": "Hex",
+            "name": "呪詛",
+            "description": "<p><strong>ストレスを1マーク</strong>して、遠距離以内の対象を一時的に<em>呪詛</em>します。<em>呪詛</em>されている間、対象はダメージロールと難易度にティアに等しいペナルティを受けます。同時に<em>呪詛</em>できるクリーチャーの最大数は、呪文発動特性に等しいです。</p>",
+            "actions": {
+                "tkcohPwyQpJ2Qj7G": {
+                    "name": "呪詛"
+                }
+            },
+            "effects": {
+                "Pl35ZLKEWDU5nlUj": {
+                    "name": "呪詛",
+                    "description": "<p><em>呪詛</em>されている間、対象はダメージロールと難易度にティアに等しいペナルティを受けます。</p>"
+                }
+            }
         },
         "Hold Them Off": {
-            "_note": "Hold Them Off"
+            "_note": "Hold Them Off",
+            "name": "食い止めろ",
+            "description": "<p>武器による攻撃が成功したとき、<strong>希望を3消費</strong>して、同じロールをその攻撃の射程内の敵対者2体に対しても使えます。</p>",
+            "actions": {
+                "yhVUna5biFAN0o2Y": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "I Am the Weapon": {
             "_note": "I Am the Weapon",
+            "name": "我こそが武器",
+            "description": "<p>素手の攻撃がどんな刃にも劣りません。他に有効な武器がない間、ブロウラーの一撃と呼ばれるメイン武器を装備しています。この武器は選んだ特性を用い、近接射程を持ち、習熟を用いて<strong>d8＋d6</strong>の物理ダメージを与えます（<strong>d8</strong>も<strong>d6</strong>も習熟に応じて増えます）。この武器が有効な間、回避値に＋1のボーナスを得ます。</p>",
             "effects": {
                 "bGHd7NfUn4fL6u1g": {
+                    "name": "我こそが武器",
+                    "description": "<p>素手の攻撃がどんな刃にも劣りません。他に有効な武器がない間、ブロウラーの一撃と呼ばれるメイン武器を装備しています。この武器は選んだ特性を用い、近接射程を持ち、習熟を用いて<strong>d8＋d6</strong>の物理ダメージを与えます（<strong>d8</strong>も<strong>d6</strong>も習熟に応じて増えます）。この武器が有効な間、回避値に＋1のボーナスを得ます。</p>",
                     "changes": [
                         null,
                         {
@@ -311,6 +395,8 @@
         },
         "Life Support": {
             "_note": "Life Support",
+            "name": "生命の支え",
+            "description": "<p><strong>希望を3消費</strong>して、近距離以内の味方のHPを1つ消します。</p>",
             "actions": {
                 "7xzDLC2PrlK1E2XO": {
                     "name": "治癒"
@@ -318,35 +404,118 @@
             }
         },
         "Make a Scene": {
-            "_note": "Make a Scene"
+            "_note": "Make a Scene",
+            "name": "騒ぎを起こす",
+            "description": "<p><strong>希望を3</strong>消費して、<strong>近距離</strong>以内の<strong>対象1体の注意をそらし</strong>、その難易度に<strong>－2のペナルティ</strong>を一時的に与えます。</p>",
+            "actions": {
+                "T6sfMJ9DRvF0IQZ4": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "8G9zDv1gac6dEHmS": {
+                    "name": "騒ぎを起こす",
+                    "description": "<p>その難易度に－2のペナルティを与えます。</p>"
+                }
+            }
         },
         "Marked for Death": {
-            "_note": "Marked for Death"
+            "_note": "Marked for Death",
+            "name": "死の標",
+            "description": "<p>武器による攻撃が成功したとき、<strong>ストレスを1マーク</strong>して対象に<em>死の標</em>を付けられます。<em>死の標</em>を付けた対象にダメージを与えるとき、ティアに等しい数の<strong>d4</strong>をダメージロールに加えます。</p><p><em>死の標</em>を付けられる敵対者は同時に1体だけです。この状態は、休憩を取るか、現在<em>死の標</em>が付いた敵対者が倒されるか、GMがティアに等しい恐怖を消費して解除するまで続きます。</p>",
+            "actions": {
+                "oMIvhtdhs9xi7juE": {
+                    "name": "ストレスをマーク",
+                    "description": "<p>武器による攻撃が成功したとき、<strong>ストレスを1マーク</strong>して対象に<em>死の標</em>を付けられます。<em>死の標</em>を付けた対象にダメージを与えるとき、ティアに等しい数の<strong>d4</strong>をダメージロールに加えます。</p>"
+                }
+            },
+            "effects": {
+                "JLvo5LKRfs0mMHAj": {
+                    "name": "死の標",
+                    "description": "<p><em>死の標</em>を付けた対象にダメージを与えるとき、ティアに等しい数の<strong>d4</strong>をダメージロールに加えます。</p><p><em>死の標</em>を付けられる敵対者は同時に1体だけです。この状態は、休憩を取るか、現在<em>死の標</em>が付いた敵対者が倒されるか、GMがティアに等しい恐怖を消費して解除するまで続きます。</p>"
+                },
+                "DUy0e3sEGIzSdBWA": {
+                    "name": "死の標",
+                    "description": "<p><em>死の標</em>を付けた対象にダメージを与えるとき、ティアに等しい数の<strong>d4</strong>をダメージロールに加えます。</p>"
+                }
+            }
         },
         "Minor Illusion": {
-            "_note": "Minor Illusion"
+            "_note": "Minor Illusion",
+            "name": "小さな幻影",
+            "description": "<p><strong>呪文発動ロール（10）</strong>を行います。成功した場合、近距離以内に自分より大きくない小さな視覚的幻影を作り出します。この幻影は近距離以上離れた者には真に見えます。</p>",
+            "actions": {
+                "gLjqQ6KgxVeJljRt": {
+                    "name": "発動する"
+                }
+            }
         },
         "No Mercy": {
-            "_note": "No Mercy"
+            "_note": "No Mercy",
+            "name": "情け容赦なし",
+            "description": "<p><strong>希望を3消費</strong>して、次の休憩まで攻撃ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "Kwav1cV1xvVO13sR": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "XK4cCcz9sRGDJr0q": {
+                    "name": "情け容赦なし",
+                    "description": "<p>次の休憩まで攻撃ロールに＋1のボーナスを<strong>得</strong>ます。</p>"
+                }
+            }
         },
         "Not This Time": {
-            "_note": "Not This Time"
+            "_note": "Not This Time",
+            "name": "今回はそうはいかない",
+            "description": "<p><strong>希望を3消費</strong>して、遠距離以内の敵対者に攻撃ロールまたはダメージロールを振り直させます。</p>",
+            "actions": {
+                "lX5FtnuXaKOdRlLF": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Patron's Boon": {
-            "_note": "Patron's Boon"
+            "_note": "Patron's Boon",
+            "name": "庇護者の恵み",
+            "description": "<p>ロールに失敗したとき、<strong>希望を3消費</strong>して有利で振り直せます。</p>",
+            "actions": {
+                "zpFHqkrFkUNhB5hB": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Patron's Pact": {
-            "_note": "Patron's Pact"
+            "_note": "Patron's Pact",
+            "name": "庇護者との契約",
+            "description": "<p>あなたは力と引き換えに、神、フェイ、悪魔といった超自然の存在に身を委ねました。その名をキャラクターシートに書き、GMと相談してその影響圏（自然、混沌、知恵、悪戯、愛、戦、正義、死など）を決めます。庇護者の影響圏に関わるアクションロールを行う前に、<strong>恩寵を1消費</strong>してその助力を請い、庇護者ダイスを振って結果を合計に加えられます。庇護者ダイスは<strong>[[/r d6]]</strong>から始まり、レベル5で<strong>[[/r d8]]</strong>に上がります。</p>",
+            "actions": {
+                "7RijWCUdHjGQDkJv": {
+                    "name": "庇護者ダイスを振る",
+                    "description": "<p>庇護者の影響圏に関わるアクションロールを行う前に、<strong>恩寵を1消費</strong>してその助力を請い、庇護者ダイスを振って結果を合計に加えられます。庇護者ダイスは<strong>[[/r d6]]</strong>から始まり、レベル5で<strong>[[/r d8]]</strong>に上がります。</p>"
+                }
+            }
         },
         "Prayer Dice": {
-            "_note": "Prayer Dice"
+            "_note": "Prayer Dice",
+            "name": "祈りのダイス",
+            "description": "<p>各セッションの開始時に、サブクラスの呪文発動特性に等しい数のd4を振り、キャラクターシートの所定の欄に置きます。これが祈りのダイスです。祈りのダイスを任意の数消費して、自分または遠距離以内の味方を助けられます。消費したダイスの値は、受けるダメージの軽減、ロール後の結果への加算、またはその値に等しい希望の獲得に使えます。各セッションの終わりに、未消費の祈りのダイスをすべて取り除きます。</p>"
         },
         "Prestidigitation": {
-            "_note": "Prestidigitation"
+            "_note": "Prestidigitation",
+            "name": "手妻",
+            "description": "<p>無害でささやかな魔法の効果を自在に起こせます。たとえば、物の色を変える、匂いを生む、蝋燭に火を灯す、小さな物を浮かせる、部屋を照らす、小さな物を直すなどです。</p>"
         },
         "Rally": {
             "_note": "Rally",
             "name": "激励",
+            "description": "<p>セッションごとに1回、パーティをどう激励するかを描写し、自分と各味方に激励ダイスを与えます。レベル1では激励ダイスはd6です。PCは激励ダイスを消費して振り、その結果をアクションロール、リアクションロール、ダメージロールに加えるか、その結果に等しい数のストレスを消せます。各セッションの終わりに、未消費の激励ダイスをすべて取り除きます。レベル5で激励ダイスはd8に上がります。</p>",
+            "actions": {
+                "vI4Fph3y9ygsya9e": {
+                    "name": "仲間を激励しよう！"
+                }
+            },
             "effects": {
                 "FrSJH9vzDHkFGYQL": {
                     "name": "激励"
