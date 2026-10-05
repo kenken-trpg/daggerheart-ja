@@ -81,7 +81,7 @@ const check = (label, actual, expected) =>
     const out = translate('Item', data, await translationsFor('daggerheart.beastforms', 'mZ4Wlqtss2FlNNvL', data.name));
     check('beastform examples', out.system.examples, 'タカ、フクロウ、カラスなど');
     check('advantageOn values', Object.values(out.system.advantageOn).map(a => a.value).sort(), [
-        '威嚇する',
+        '恐れさせる',
         '発見する',
         '欺く'
     ].sort());

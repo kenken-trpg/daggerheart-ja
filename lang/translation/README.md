@@ -2145,5 +2145,38 @@ retired upstream: 0
 reworded upstream: 0
 ```
 
-`packs:terms` 一致、`packs:check` 問題なし。`packs:probe` は Babele の実体を
-参照するので、テスト環境を立て直すまで実行できない (`BABELE_PATH` 未設定)。
+`packs:terms` 一致、`packs:check` 問題なし、`packs:probe` 55/55。
+
+### テスト環境は消えていなかった
+
+`packs:probe` が「テスト環境を立て直すまで実行できない」と書いたのは誤りで、
+確認の仕方を間違えていた。`find -type d -name babele` で探したが、
+`Data/modules/babele` は `babele-src/module` への**シンボリックリンク**なので
+`-type d` では一致しない。Babele 2.9.1 は最初から入っていた。
+
+テスト環境そのものも生きていた。工程5で片付けたと思っていたが、スクラッチ
+パッド配下のデータパスで Foundry が起動したままだった:
+
+```
+dataPath=<scratchpad>/fvtt-test --port=30100 --headless --world=dh-ja
+core 14.365 / system daggerheart 2.10.9
+Data/modules: babele, lib-wrapper, daggerheart-ja -> リポジトリへのリンク
+```
+
+モジュールはリポジトリへのリンクなので、リロードするだけで作業中の訳が乗る。
+
+### 実機で訳語修正を確認した
+
+```
+blade フォルダ: ブレイド (ブレード は不在) / UI: ブレイド
+transformations フォルダ: 変身特徴            / UI: 変身特徴
+有翼の獣 advantageOn: 欺く・発見する・恐れさせる / UI: 恐れさせる
+```
+
+コンペンディウムと UI が同じ語になった。`packs:terms` が机上で指摘したことが
+画面でもそのとおりだった、という確認。
+
+なお `packs:probe` は訳語修正で1件落ちた (`advantageOn values` が旧訳
+`威嚇する` を期待していた)。期待値を更新した。訳語を変えるとプローブが
+落ちるのは正しい動作で、**プローブが訳文の内容に対する固定点になっている**
+ことの裏付けでもある。
