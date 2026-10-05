@@ -201,44 +201,176 @@
             }
         },
         "Ambushers": {
-            "_note": "Ambushers"
+            "_note": "Ambushers",
+            "name": "待ち伏せる者たち",
+            "description": "<p>警戒していない敵対者の不意を突くため、PCたちが張った待ち伏せ。</p>",
+            "impulses": "逃げる、固まる、最も弱い者を守る",
+            "items": {
+                "hAGzlRjI3lpadVs7": {
+                    "name": "待ち伏せる者たち",
+                    "description": "<p>この環境の難易度は、最も高い難易度を持つ敵対者の難易度と同じです。</p><section class=\"secret\" id=\"secret-zPYO0951x4IKM5FN\"><p><em>どの敵対者が最も備えていないのか。どの敵対者が最も備えているのか。</em></p></section>"
+                },
+                "b6Qviz1ANG8OrAYq": {
+                    "name": "どこから現れた？",
+                    "description": "<p>PCが警戒していない敵対者に待ち伏せを仕掛けたとき、あなたは恐怖を2失い、PCが最初に行う攻撃ロールは有利を得ます。</p><section class=\"secret\" id=\"secret-0BW2MHYrwlL7iHiR\"><p><em>待ち伏せが始まったとき、敵対者たちは何をしている最中なのか。それは戦いへの臨み方にどう影響するのか。</em></p></section>",
+                    "actions": {
+                        "6DKa1Pm605HpChPd": {
+                            "name": "恐怖を失う"
+                        }
+                    }
+                }
+            }
         },
         "Archmage's Tower": {
             "_note": "Archmage's Tower",
             "potentialAdversaries": {
                 "0UqoeKBq8XdcM2O2": {
                     "label": "敵対者"
+                },
+                "tnf3DtcDpHvsezF0": {
+                    "label": "錬金術の創造物たち"
                 }
             },
             "items": {
                 "iuNPkv0BtBWGcx54": {
                     "actions": {
                         "6PKq64PBIOd5ojv1": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "塔を登る"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "秘術の防備",
+                    "description": "<p>カウントダウン（12）。塔を登るには、PCたちはこのカウントダウンを完了させなければなりません。失敗、または恐怖とともにのロールのとき、大魔道士の数多い秘術の罠と危険の1つを作動させ、<strong>3d10</strong>の魔法ダメージを受けます。恐怖とともに失敗した場合、与えられるダメージはそのPCのレベルと同じボーナスを得ます。</p><section id=\"secret-nspaK2xThGNULFBI\" class=\"secret\"><p>大魔道士の防備の造りは、その者の得意分野について何を物語るのか。罠と危険のすべてに共通する、その者ならではの作風や装飾とは何か。</p></section>"
+                },
+                "ioqwvW4AcpTpyybj": {
+                    "name": "大魔道士の高巣",
+                    "description": "<p>塔の最上階は、いくつもの部屋に分かれた実験室・書庫・工房であり、魔法を最も高い形で研究するために必要なものがすべて揃っています。呪文発動特性を持つPCは、知識ロールを行って大魔道士の研究に加わることができます。成功した場合、次の大休憩まで呪文発動ロールに＋1のボーナスを得ます。失敗した場合、その探究はうまくいかず、<strong>3d8+4</strong>の魔法ダメージを受けます。</p><section id=\"secret-ahV0x7MO1b57M1Gg\" class=\"secret\"><p>この高巣のどこがあなたを呼ぶのか。大魔道士の手記はあなたに何を明かすのか。</p></section>",
+                    "actions": {
+                        "fJlusVJYy4Et88Cn": {
+                            "name": "呪文発動ボーナス"
+                        }
+                    },
+                    "effects": {
+                        "Dtqtv6rdUecUdkyA": {
+                            "name": "新しい効果",
+                            "description": "<p>次の大休憩まで、呪文発動ロールに＋1のボーナスを得ます。</p>"
+                        },
+                        "dVzmZQJVHxy0E5xX": {
+                            "name": "大魔道士の高巣",
+                            "description": "<p>次の大休憩まで、呪文発動ロールに＋1のボーナスを得ます。</p>"
+                        }
+                    }
+                },
+                "5t3BQ5rmvFLOrZca": {
+                    "name": "融合した敵対者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCから近距離以内に敵対者2体を召喚します。各敵対者は、もう一方の特徴を自分のものであるかのように使えます。</p><section id=\"secret-sfsjWC0A8wf8O0d1\" class=\"secret\"><p>大魔道士はどのクリーチャーを組み合わせることを選んだのか。そうすることで何を学ぼうとしているのか。</p></section>",
+                    "actions": {
+                        "8pd0EHvyNlsLwZk5": {
+                            "name": "恐怖を消費する"
                         }
                     }
                 }
-            }
+            },
+            "name": "大魔道士の塔",
+            "description": "<p>天を貫くあり得ないほど高い尖塔。計り知れない力を帯びて鳴り響いている。</p>",
+            "impulses": "魔法のエネルギーを集める、侵入者を疲弊させる、未知を明かす、魔力の爆発を解き放つ"
         },
         "Astral Realm": {
             "_note": "Astral Realm",
             "potentialAdversaries": {
                 "slL9ro9IoNdBE1Yf": {
                     "label": "敵対者"
+                },
+                "UIANRGlgpUvlLzlC": {
+                    "label": "精神吸血者たち"
                 }
             },
             "items": {
                 "y76PmjDZYo1JXqnF": {
                     "actions": {
                         "YIFoatmQj0J5rmEI": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "物質は幻"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "物質は幻",
+                    "description": "<p>カウントダウン（10）。ここでは時間と距離は相対的であり、この空間を移動するだけでも意志の力を要します。星幽界を渡るには、パーティは知識・直感・社交のロールのみを使ってこのカウントダウンを完了させなければなりません。恐怖とともに失敗した場合、そのPCは<strong>3d8</strong>の直接魔法ダメージを受けます。</p><section id=\"secret-Mn5Z8o43Wzq27aTW\" class=\"secret\"><p>あなたはこの場所を思考で進むのか、感覚で進むのか。ここではその違いが何をもたらすのか。</p></section>"
+                },
+                "Fq76Ws72FOecLook": {
+                    "name": "体外離脱",
+                    "description": "<p>パーティはこの領域に肉体としては存在しないため、頑強・敏捷・器用のロールは自動的に失敗します。さらに、キャラクターがHPをマークしようとするとき、代わりに希望を1失うかストレスを1マークしなければなりません。キャラクターがストレスをマークできない場合、デスムーブを行わなければなりません。</p><section id=\"secret-A45bSa6klHKxPj9D\" class=\"secret\"><p>あなたが思い描く自己像の投影は、肉体の見た目とどう違うのか。あなたはどちらを「本当の」自分だと考えるのか。</p></section>"
+                },
+                "7NjcuEJmBXwnljrt": {
+                    "name": "精神の顕現",
+                    "description": "<p>知識ロールに成功すれば、PCは重力を反転させたり、みるみる組み上がる階段を呼び出したりして、この精神の環境を変えられます。PCはシーンごとに1回、精神の顕現を使って、星幽界を進むためのロールに有利を得られます。</p><section id=\"secret-ER9W41lXmtlfbQhF\" class=\"secret\"><p>あなたが顕すその構造物は、現実の記憶なのか、自分の想像の産物なのか。より安定させるために、どの肝心な細部に意識を注ぐのか。</p></section>"
+                },
+                "atXhxNs4Ka7H3wiT": {
+                    "name": "星幽の敵対者",
+                    "description": "<p>星幽界の敵対者は血肉ではなく精神の投影であるため、物理ダメージに無効です。</p><section id=\"secret-O97MIbXqdcZUKa6a\" class=\"secret\"><p>敵対者の星幽の姿は、肉体の姿とどう違うのか。これらの精神の投影は、なぜPCたちに引き寄せられるのか。</p></section>",
+                    "actions": {
+                        "jrj8LfBZGtFNkQpD": {
+                            "name": "星幽を適用"
+                        }
+                    },
+                    "effects": {
+                        "CICdmS2PoBJoR5YF": {
+                            "name": "星幽",
+                            "description": "<p>星幽界の敵対者は血肉ではなく精神の投影であるため、物理ダメージに無効です。</p>"
+                        }
+                    }
+                }
+            },
+            "name": "星幽界",
+            "description": "<p>エネルギーと感情からなる精神の領域。精神の強い者は、現実の規則を作り替えられる。</p>",
+            "impulses": "精神を攻める、潜在意識の恐れを呼び出す、知覚を歪める"
+        },
+        "Beach Day": {
+            "_note": "Beach Day",
+            "name": "浜辺の一日",
+            "description": "<p>パーティは冒険を一休みして、海辺の集落で休息と息抜きを取る。</p>",
+            "impulses": "砂と波の光景を思い起こさせる、一息つかせる、来たる対立に備えさせる",
+            "items": {
+                "32kkC16eXBpiRxkh": {
+                    "name": "休息と息抜き",
+                    "description": "<p>パーティは、外の世界の心配や対立が溶けて消える場所に身を置きます。PCたちがここで休憩するとき、ダウンタイムムーブを追加で1つ得て、GMは恐怖を得ず、長期カウントダウンは進みません。</p><section id=\"secret-UDQmua9neWETFUfG\" class=\"secret\"><p>この場所の何がそれほど心を和ませるのか。かつて訪れたどこかを思い出させるのか。</p></section>"
+                },
+                "BizLkdzVo2YYJdr3": {
+                    "name": "「ここまでの私たちの物語……」",
+                    "description": "<p>シーンごとに1回、PCが他のPCとの会話でキャンペーンの忘れがたい場面を語ったとき、両者は希望を1得ます。</p><section id=\"secret-1lJPRvoXWX92DOk7\" class=\"secret\"><p>その記憶は、あなたの心にどんな音、匂い、感触を呼び起こすのか。その瞬間は、あなた自身を——あるいは仲間への見方を——どう永く変えたのか。</p></section>"
+                },
+                "FRMRgSgEeAt7jT8r": {
+                    "name": "土地のいざこざ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCの休息を小さな面倒事で妨げます。不機嫌な浜辺の遊び人の一団、度を越した熱狂的な崇拝者、ひどい日焼けなどです。そのPCはその場をうまく収めるか、そこから生じた恥や苛立ちでストレスを1マークしなければなりません。</p><section id=\"secret-nKMroQywQ15Itz0a\" class=\"secret\"><p>このPCはなぜ彼らの目を引くのか。地元の人々は、来たばかりの冒険者たちよりも何を気にかけているのか。</p></section>",
+                    "actions": {
+                        "05KoBrt1P0UxaC2t": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "gJSHFvGHs6oVBQtI": {
+                    "name": "ファッションショー",
+                    "description": "<p>パーティが浜辺での初日に備えるとき、各プレイヤーに、自分のPCがこの環境にふさわしい装いへどう変えるのかを描写させます。GMは、最もいけている装いのPCに、任意のアクションロールまたはリアクションロールに加えるために消費できる<strong>d6</strong>のいけてるダイスを渡します。</p><section id=\"secret-21Ozr0QIVF23Y6Cl\" class=\"secret\"><p>この地域で流行っている装いは何か。PCたちは浜辺向けの新しい衣類や小物をどこで手に入れるのか。</p></section>",
+                    "actions": {
+                        "pCkEhFW6eAqSMXVo": {
+                            "name": "いけてるダイスを渡す"
+                        }
+                    },
+                    "effects": {
+                        "hjeRnWtIMLCvBcuj": {
+                            "name": "いけてる",
+                            "description": "<p>GMは、最もいけている装いのPCに、任意のアクションロールまたはリアクションロールに加えるために消費できる<strong>d6</strong>のいけてるダイスを渡します。</p>"
                         }
                     }
                 }
             }
-        },
-        "Beach Day": {
-            "_note": "Beach Day"
         },
         "Burning Heart of the Woods": {
             "_note": "Burning Heart of the Woods",
