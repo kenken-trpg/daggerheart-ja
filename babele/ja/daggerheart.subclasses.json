@@ -478,52 +478,251 @@
             }
         },
         "Elemental Dominion": {
-            "_note": "Elemental Dominion"
+            "_note": "Elemental Dominion",
+            "name": "元素の支配",
+            "description": "<p>自分の元素をさらに深く体現します。伝導している間、以下の恩恵を得ます。</p><ul><li><p><strong>火</strong>：ダメージを与える攻撃と呪文について、習熟に＋1のボーナスを得ます。</p></li><li><p><strong>地</strong>：HPをマークするとき、マークするHP1つにつきd6を1つ振ります。結果が6のダイス1つにつき、マークするHPの数を1つ減らします。</p></li><li><p><strong>水</strong>：あなたへの攻撃が成功したとき、ストレスを1マークして攻撃者を一時的に脆弱にできます。</p></li><li><p><strong>風</strong>：回避値に＋1のボーナスを得て、飛行できます。</p></li></ul>",
+            "actions": {
+                "ofdSzqY7IfAy5ayv": {
+                    "name": "火",
+                    "description": "<p>ダメージを与える攻撃と呪文について、習熟に＋1のボーナスを得ます。</p>"
+                },
+                "knGm3snaplWYDaue": {
+                    "name": "地",
+                    "description": "<p>HPをマークするとき、マークするHP1つにつきd6を1つ振ります。結果が6のダイス1つにつき、マークするHPの数を1つ減らします。</p>"
+                },
+                "MocaqHUdyVwH0ZFu": {
+                    "name": "水",
+                    "description": "<p>あなたへの攻撃が成功したとき、ストレスを1マークして攻撃者を一時的に脆弱にできます。</p>"
+                },
+                "AQMNJRmVyhJTSCfR": {
+                    "name": "風",
+                    "description": "<p>回避値に＋1のボーナスを得て、飛行できます。</p>"
+                }
+            },
+            "effects": {
+                "FoBFRSXRfGa1zkiX": {
+                    "name": "元素の支配（火）",
+                    "description": "<p>ダメージを与える攻撃と呪文について、習熟に＋1のボーナスを得ます。</p>"
+                },
+                "bGwFZZT4juuaIRmZ": {
+                    "name": "元素の支配（水）",
+                    "description": "<p>あなたへの攻撃が成功したとき、ストレスを1マークして攻撃者を一時的に脆弱にできます。</p>"
+                },
+                "edF2zvvlcGf54r2n": {
+                    "name": "元素の支配（風）",
+                    "description": "<p>回避値に＋1のボーナスを得て、飛行できます</p>"
+                },
+                "p5FoUb4JKQFP405d": {
+                    "name": "元素の支配（地）"
+                }
+            }
         },
         "Elemental Incarnation": {
-            "_note": "Elemental Incarnation"
+            "_note": "Elemental Incarnation",
+            "name": "元素の化身",
+            "description": "<p>ストレスを1マークして、重傷ダメージを受けるか次の休憩まで、以下の元素のいずれかを伝導します。</p><ul><li><p><strong>火</strong>：近接射程内の敵対者があなたにダメージを与えたとき、その敵対者は1d10の魔法ダメージを受けます。</p></li><li><p><strong>地</strong>：ダメージしきい値に習熟に等しいボーナスを得ます。</p></li><li><p><strong>水</strong>：近接射程内の敵対者にダメージを与えたとき、至近以内の他のすべての敵対者はストレスを1マークしなければなりません。</p></li><li><p><strong>風</strong>：空中に浮遊でき、素早さロールに有利を得ます。</p></li></ul>",
+            "actions": {
+                "wVGSzAnJGs5eXKqI": {
+                    "name": "火",
+                    "description": "<p>近接射程内の敵対者があなたにダメージを与えたとき、その敵対者は@Damage[type:magical|value:1d10]を受けます。</p>"
+                },
+                "6QXTThhnJpGDIvhJ": {
+                    "name": "地",
+                    "description": "<p>ダメージしきい値に習熟に等しいボーナスを得ます。</p>"
+                },
+                "pY2EdEMoyLGYWjK5": {
+                    "name": "水",
+                    "description": "<p>近接射程内の敵対者にダメージを与えたとき、至近以内の他のすべての敵対者はストレスを1マークしなければなりません。</p><p>@Template[type:emanation|range:vc]</p>"
+                },
+                "uk8EgHMxCgoWENzt": {
+                    "name": "風",
+                    "description": "<p>空中に浮遊でき、素早さロールに有利を得ます。</p>"
+                }
+            },
+            "effects": {
+                "7xyUtUbBk5jbNnqY": {
+                    "name": "元素の化身（地）"
+                },
+                "3ck6CeapLxQVjE2W": {
+                    "name": "元素の化身（風）",
+                    "description": "<p>空中に浮遊でき、素早さロールに有利を得ます。</p>",
+                    "changes": [
+                        "素早さロールに有利"
+                    ]
+                },
+                "Jy6dpEbzkZ2eRDf5": {
+                    "name": "元素の化身（水）"
+                },
+                "ANle8tuOEZIevTWv": {
+                    "name": "元素の化身（火）"
+                }
+            }
         },
         "Elementalist": {
-            "_note": "Elementalist"
+            "_note": "Elementalist",
+            "name": "元素術士",
+            "description": "<p>キャラクター作成時に以下の元素から1つを選びます：風、地、火、雷、水。</p><p>この元素を無害な効果として操れます。さらに、<strong>希望を1消費</strong>して、この元素の制御がこれから行うアクションロールをどう助けるかを描写し、そのロールに＋2のボーナスを得るか、そのロールのダメージに＋3のボーナスを得ます。</p>",
+            "actions": {
+                "rxuFLfHP1FILDpds": {
+                    "name": "ロールにボーナス",
+                    "description": "<p><strong>希望を1消費</strong>して、この元素の制御がこれから行うアクションロールをどう助けるかを描写し、そのロールに＋2のボーナスを得ます。</p>"
+                },
+                "S7HvFD3qIR3ifJRL": {
+                    "name": "ダメージにボーナス",
+                    "description": "<p><strong>希望を1消費</strong>して、この元素の制御がこれから行うアクションロールをどう助けるかを描写し、そのロールのダメージに＋3のボーナスを得ます。</p>"
+                }
+            },
+            "effects": {
+                "EY87mY6ULfIt3XC8": {
+                    "name": "ロールにボーナス",
+                    "description": "<p>アクションロールに＋2</p>"
+                },
+                "WwibpgaO6Kkks7aZ": {
+                    "name": "ダメージにボーナス",
+                    "description": "<p>ダメージに＋3</p>"
+                }
+            }
         },
         "Eloquent": {
-            "_note": "Eloquent"
+            "_note": "Eloquent",
+            "name": "雄弁",
+            "description": "<p>心を動かす言葉が士気を高めます。セッションごとに1回、味方を励ましたとき、以下のいずれかを行えます。</p><ul><li><p>その味方が必要とするありふれた物品や道具を見つけさせる。</p></li><li><p>希望を消費せずに仲間を手助けする。</p></li><li><p>次の休憩で、その味方にダウンタイムムーブを1つ追加で与える。</p></li></ul>",
+            "actions": {
+                "o1MWnafbLsXnvSUl": {
+                    "name": "特徴を使用"
+                }
+            }
         },
         "Elusive Predator": {
-            "_note": "Elusive Predator"
+            "_note": "Elusive Predator",
+            "name": "捕らえ難き捕食者",
+            "description": "<p>集中があなたを攻撃したとき、その攻撃に対する回避値に＋2のボーナスを得ます。</p>",
+            "effects": {
+                "X4llFOcAcdJLbear": {
+                    "name": "捕らえ難き捕食者",
+                    "description": "<p>集中があなたを攻撃したとき、その攻撃に対する回避値に＋2のボーナスを得ます。</p>",
+                    "durationDescription": "<p>その攻撃に対して。</p>"
+                }
+            }
         },
         "Enchanted Aid": {
-            "_note": "Enchanted Aid"
+            "_note": "Enchanted Aid",
+            "name": "魔法の助力",
+            "description": "<p>自らの本質で他者の魔法を高められます。呪文発動ロールで仲間を手助けするとき、有利ダイスとして<strong>d8</strong>を振れます。大休憩ごとに1回、あなたの手助けを受けた味方が呪文発動ロールを行ったあと、その味方のデュアリティダイスの結果を入れ替えられます。</p>",
+            "actions": {
+                "n8wSqR967o0pZDLR": {
+                    "name": "ダイスの結果を入れ替え",
+                    "description": "<p>大休憩ごとに1回、あなたの手助けを受けた味方が呪文発動ロールを行ったあと、その味方のデュアリティダイスの結果を入れ替えられます。</p>"
+                }
+            }
         },
         "Enchanted Talisman": {
-            "_note": "Enchanted Talisman"
+            "_note": "Enchanted Talisman",
+            "name": "魔法の護符",
+            "description": "<p>休憩ごとに1回、小さな品に自らの守りの本質を込められます。<strong>任意の数の希望を消費</strong>して、同じ数のトークンをこのカードに置きます。護符を持つ者がダメージを受けたとき、トークンを1つ消費して、その者がマークするHPの数を1つ減らします。休憩を取ったとき、このカードからすべてのトークンを取り除きます。</p>",
+            "actions": {
+                "9joeFXWM5FAzoRCd": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Epic Poetry": {
-            "_note": "Epic Poetry"
+            "_note": "Epic Poetry",
+            "name": "叙事詩",
+            "description": "<p>激励ダイスがd10に上がります。さらに、仲間を手助けするとき、その英雄的行為を回想録に書き記すかのようにその瞬間を語れます。そうしたとき、有利ダイスとしてd10を振ります。</p>",
+            "effects": {
+                "RSmscgGyuHJucF6C": {
+                    "name": "激励：d10",
+                    "description": "<p>激励ダイスがd10に上昇。</p>"
+                }
+            }
         },
         "Ethereal Visage": {
-            "_note": "Ethereal Visage"
+            "_note": "Ethereal Visage",
+            "name": "幽玄の面貌",
+            "description": "<p>超自然的な面貌が畏敬と恐れを呼び起こします。飛行している間、社交ロールに有利を得ます。社交ロールで希望とともに成功したとき、希望を得る代わりにGMの恐怖プールから恐怖を1つ取り除けます。</p>",
+            "effects": {
+                "Ns1DcQ8wo47LhlL3": {
+                    "name": "幽玄の面貌",
+                    "description": "<p>飛行している間、社交ロールに有利を得ます。</p>",
+                    "changes": [
+                        "飛行中の社交ロール"
+                    ]
+                }
+            }
         },
         "Exacting": {
-            "_note": "Exacting"
+            "_note": "Exacting",
+            "name": "精緻",
+            "description": "<p>ダメージダイスで1を出したとき、代わりにそのダイスの最大値として扱えます。</p>",
+            "actions": {
+                "HJqhV6t6uDlh7aWd": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "lDRAICtZPyjMWKgB": {
+                    "name": "構え：精緻",
+                    "description": "<p>ダメージダイスで1を出したとき、代わりにそのダイスの最大値として扱えます。</p>"
+                }
+            }
         },
         "Expert Training": {
-            "_note": "Expert Training"
+            "_note": "Expert Training",
+            "name": "熟練訓練",
+            "description": "<p>相棒のレベルアップ選択肢を1つ追加で選びます。</p>",
+            "effects": {
+                "rknTONvaUDZ2Yz1W": {
+                    "name": "熟練訓練",
+                    "description": "<p>相棒のレベルアップ選択肢を1つ追加で選びます。</p>"
+                }
+            }
         },
         "Eye for an Eye": {
-            "_note": "Eye for an Eye"
+            "_note": "Eye for an Eye",
+            "name": "目には目を",
+            "description": "<p>休憩ごとに1回、近接射程内の敵対者にHPを1つ以上マークさせられたとき、<strong>ストレスを1マーク</strong>して、その敵対者に同じ数のHPをマークさせられます。</p>",
+            "actions": {
+                "ka7wdfcKZgPaK80a": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Face Your Fear": {
-            "_note": "Face Your Fear"
+            "_note": "Face Your Fear",
+            "name": "恐怖に立ち向かえ",
+            "description": "<p>攻撃ロールで恐怖とともに成功したとき、<strong>1d10</strong>の魔法ダメージを追加で与えます。</p>"
         },
         "Favored": {
-            "_note": "Favored"
+            "_note": "Favored",
+            "name": "恵まれた者",
+            "description": "<p>ダメージロールに、選んだ特性1つに等しいボーナスを得ます。</p>",
+            "actions": {
+                "ohod7ZWfrILMq3dc": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "M3HdEjgCvl15S9HO": {
+                    "name": "構え：恵まれた者",
+                    "description": "<p>ダメージロールに、選んだ特性1つに等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Fearsome Attack": {
-            "_note": "Fearsome Attack"
+            "_note": "Fearsome Attack",
+            "name": "畏怖の攻撃",
+            "description": "<p><strong>恩寵を1消費</strong>して、任意の数の自分のダメージダイスを振り直します。同じダメージロールに対して、恩寵を消費し続けてこの特徴を使えます。</p>",
+            "actions": {
+                "Fp4Gb6o5Ac9nAv9a": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "First Strike": {
-            "_note": "First Strike"
+            "_note": "First Strike",
+            "name": "先手",
+            "description": "<p>シーン中で最初に攻撃が成功したとき、ダメージを2倍にします。</p>"
         },
         "Fleeting Shadow": {
             "_note": "Fleeting Shadow"
