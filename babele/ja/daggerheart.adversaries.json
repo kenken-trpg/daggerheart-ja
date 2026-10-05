@@ -7235,6 +7235,9 @@
         },
         "Huge Green Ooze": {
             "_note": "Huge Green Ooze",
+            "name": "巨大な緑のウーズ",
+            "description": "<p>たいていの人より背の高い、半透明の緑の酸の塊。</p>",
+            "motivesAndTactics": "擬態する、忍び寄る、包み込む、増える",
             "attack": {
                 "name": "軟泥の触手"
             },
@@ -7259,6 +7262,7 @@
                 },
                 "pfXYuH7rtsyVjSXh": {
                     "name": "包み込む",
+                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、@Lookup[@name]はその対象を包み込み、対象はストレスを2マークしなければなりません。包み込まれている間、その対象はアクションロールを行うたびに追加でストレスを1マークしなければなりません。@Lookup[@name]が重傷ダメージを受けたとき、包み込まれているすべての対象は解放され、この状態は消えます。</p>",
                     "actions": {
                         "hQBYPagz5yuTcCQq": {
                             "name": "攻撃"
@@ -7270,44 +7274,48 @@
                             "description": "<p>包み込まれている間、アクションロールを行うたびに追加でストレスを1マークしなければなりません。ウーズが重傷ダメージを受けたとき、包み込まれているすべての対象は解放され、この状態は消えます。</p>",
                             "durationDescription": "<p>巨大な緑のウーズが重傷ダメージを受けたとき、包み込まれているすべての対象は解放され、この状態は消えます。</p>"
                         }
-                    },
-                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、@Lookup[@name]はその対象を包み込み、対象はストレスを2マークしなければなりません。包み込まれている間、その対象はアクションロールを行うたびに追加でストレスを1マークしなければなりません。@Lookup[@name]が重傷ダメージを受けたとき、包み込まれているすべての対象は解放され、この状態は消えます。</p>"
+                    }
                 },
                 "Mq90kFBM5ix2pzzh": {
                     "name": "分裂",
+                    "description": "<p>@Lookup[@name]がHPを4つ以上マークしているとき、<strong>恐怖を1消費</strong>して、それを2体の@UUID[Compendium.daggerheart.adversaries.Actor.SHXedd9zZPVfUgUa]{緑のウーズ}（HPとストレスはマークなし）に分裂させられます。直ちに両方にスポットライトを当てます。</p>",
                     "actions": {
                         "aeRdkiRsDNagTKhp": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "description": "<p>@Lookup[@name]がHPを4つ以上マークしているとき、<strong>恐怖を1消費</strong>して、それを2体の@UUID[Compendium.daggerheart.adversaries.Actor.SHXedd9zZPVfUgUa]{緑のウーズ}（HPとストレスはマークなし）に分裂させられます。直ちに両方にスポットライトを当てます。</p>"
+                    }
                 }
-            },
-            "name": "巨大な緑のウーズ",
-            "description": "<p>たいていの人より背の高い、半透明の緑の酸の塊。</p>",
-            "motivesAndTactics": "擬態する、忍び寄る、包み込む、増える"
+            }
         },
         "Hydra": {
             "_note": "Hydra",
+            "name": "ヒュドラ",
+            "description": "<p>長い首のついた複数の頭を持つ、四足の鱗の獣。どの頭も威嚇するような牙で満ちている。</p>",
+            "motivesAndTactics": "喰らう、再生する、恐れさせる",
             "attack": {
                 "name": "噛みつき"
             },
             "items": {
+                "Lg40vTEegQh2He7A": {
+                    "name": "多頭の脅威",
+                    "description": "<p>@Lookup[@name]は3つの頭で始まり、最大5つまで持てます。@Lookup[@name]が中傷以上のダメージを受けたとき、頭を1つ失います。</p>"
+                },
                 "nwIjDjpLGfuXNYvA": {
                     "name": "リレントレス（X）",
                     "description": "<p>@Lookup[@name]はGMターンごとにX回スポットライトを当てられます。Xは@Lookup[@name]の頭の数です。スポットライトを当てるには、通常どおり恐怖を消費します。</p><section class=\"secret\" id=\"secret-AOW6OiOMzL5FUfWv\"><p><br>注：自動化は組み込まれていないため、本文のとおり手動で恐怖を消費してください。</p></section>"
                 },
                 "b2KflqWoOxHMQf97": {
                     "name": "再生",
+                    "description": "<p>@Lookup[@name]がHPをマークしている場合、<strong>恐怖を1消費</strong>してHPを1つ消し、頭を2つ生やします。</p>",
                     "actions": {
                         "SsRtZwee1mYlPLUy": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "description": "<p>@Lookup[@name]がHPをマークしている場合、<strong>恐怖を1消費</strong>してHPを1つ消し、頭を2つ生やします。</p>"
+                    }
                 },
                 "bCeCu8M25izOAsuY": {
                     "name": "恐るべき合唱",
+                    "description": "<p>遠距離以内のすべてのPCは希望を2失います。</p>",
                     "actions": {
                         "nJxpFR4Ul0e2RrL4": {
                             "name": "希望を失う",
@@ -7317,12 +7325,7 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p>遠距離以内のすべてのPCは希望を2失います。</p>"
-                },
-                "Lg40vTEegQh2He7A": {
-                    "name": "多頭の脅威",
-                    "description": "<p>@Lookup[@name]は3つの頭で始まり、最大5つまで持てます。@Lookup[@name]が中傷以上のダメージを受けたとき、頭を1つ失います。</p>"
+                    }
                 },
                 "sJzjcRBgYRp5f53E": {
                     "name": "魔法への弱点",
@@ -7340,13 +7343,13 @@
                         }
                     }
                 }
-            },
-            "name": "ヒュドラ",
-            "description": "<p>長い首のついた複数の頭を持つ、四足の鱗の獣。どの頭も威嚇するような牙で満ちている。</p>",
-            "motivesAndTactics": "喰らう、再生する、恐れさせる"
+            }
         },
         "Jack-o'-lantern": {
             "_note": "Jack-o'-lantern",
+            "name": "ジャック・オ・ランタン",
+            "description": "<p>顔を刳り抜かれ、浮遊するカボチャなどの瓜。中に囚われた魂が不気味な光を放っている。</p>",
+            "motivesAndTactics": "噛みつく、漂う、笑う、怖い話をする",
             "attack": {
                 "name": "食いちぎり"
             },
@@ -7357,29 +7360,29 @@
                 },
                 "Gs8ZHt8BGz7NHOwq": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが6の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "Jfrfrt2034uuEfnx": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが6の物理ダメージを与えます。このダメージを合計します。</p>"
+                    }
                 },
                 "A4L1b024r7OrZvkx": {
+                    "name": "背筋の凍る哄笑",
+                    "description": "<p>超近距離以内のPCが恐怖とともにロールしたとき、<strong>ストレスを1マーク</strong>して、追加で恐怖を1得られます。</p>",
                     "actions": {
                         "73ZrmyuYdBQLyOLD": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "背筋の凍る哄笑",
-                    "description": "<p>超近距離以内のPCが恐怖とともにロールしたとき、<strong>ストレスを1マーク</strong>して、追加で恐怖を1得られます。</p>"
+                    }
                 }
-            },
-            "name": "ジャック・オ・ランタン",
-            "description": "<p>顔を刳り抜かれ、浮遊するカボチャなどの瓜。中に囚われた魂が不気味な光を放っている。</p>",
-            "motivesAndTactics": "噛みつく、漂う、笑う、怖い話をする"
+            }
         },
         "Jagged Knife Bandit": {
             "_note": "Jagged Knife Bandit",
+            "name": "鋸刃のナイフの山賊",
+            "description": "<p>マントをまとった狡猾な犯罪者。一味の象徴であるナイフを帯びている。</p>",
+            "motivesAndTactics": "逃げる、儲ける、盗む、煙幕を投げる",
             "attack": {
                 "name": "ダガー二刀"
             },
@@ -7389,26 +7392,26 @@
                 }
             },
             "items": {
+                "5VPb3OJDv6Q5150r": {
+                    "name": "登攀者",
+                    "description": "<p>@Lookup[@name]は走るのと同じ手軽さで登れます。</p>"
+                },
                 "V7haVmSLm6vTeffc": {
                     "name": "上空から",
+                    "description": "<p>@Lookup[@name]が対象より高い位置からの通常の攻撃に成功したとき、通常のダメージの代わりに<strong>1d10+1</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "X7xdCLY7ySMpaTHe": {
                             "name": "ダメージ"
                         }
-                    },
-                    "description": "<p>@Lookup[@name]が対象より高い位置からの通常の攻撃に成功したとき、通常のダメージの代わりに<strong>1d10+1</strong>の物理ダメージを与えます。</p>"
-                },
-                "5VPb3OJDv6Q5150r": {
-                    "name": "登攀者",
-                    "description": "<p>@Lookup[@name]は走るのと同じ手軽さで登れます。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの山賊",
-            "description": "<p>マントをまとった狡猾な犯罪者。一味の象徴であるナイフを帯びている。</p>",
-            "motivesAndTactics": "逃げる、儲ける、盗む、煙幕を投げる"
+            }
         },
         "Jagged Knife Hexer": {
             "_note": "Jagged Knife Hexer",
+            "name": "鋸刃のナイフの呪い手",
+            "description": "<p>魔法の装具で飾ったマントをまとい、杖を振るう山賊。呪いで敵を悩ませる。</p>",
+            "motivesAndTactics": "命じる、呪詛をかける、儲ける",
             "attack": {
                 "name": "スタッフ"
             },
@@ -7420,6 +7423,7 @@
             "items": {
                 "Bl8L0RCGOgVUzuXo": {
                     "name": "呪い",
+                    "description": "<p>遠距離以内の対象を1体選び、一時的に「呪い」をかけます。対象が「呪い」を受けている間、その対象が希望とともにロールしたときに<strong>ストレスを1マーク</strong>して、そのロールを恐怖とともにのロールに変えられます。</p>",
                     "actions": {
                         "yzjCJyfGzZrEd0G3": {
                             "name": "使う"
@@ -7430,25 +7434,24 @@
                             "name": "呪い",
                             "description": "<p>希望とともにロールするたび、呪い手は<strong>ストレスを1マーク</strong>して、そのロールを恐怖とともにのロールに変えられます。</p>"
                         }
-                    },
-                    "description": "<p>遠距離以内の対象を1体選び、一時的に「呪い」をかけます。対象が「呪い」を受けている間、その対象が希望とともにロールしたときに<strong>ストレスを1マーク</strong>して、そのロールを恐怖とともにのロールに変えられます。</p>"
+                    }
                 },
                 "d8uVdKpTm9yw6TZS": {
+                    "name": "混沌の流れ",
+                    "description": "<p>超近距離以内の最大3体の対象に攻撃を行います。<strong>ストレスを1マーク</strong>して、@Lookup[@name]が成功した対象に<strong>2d6+3</strong>の魔法ダメージを与えます。</p>",
                     "actions": {
                         "HmvmqoMli6oC2y2a": {
                             "name": "攻撃"
                         }
-                    },
-                    "name": "混沌の流れ",
-                    "description": "<p>超近距離以内の最大3体の対象に攻撃を行います。<strong>ストレスを1マーク</strong>して、@Lookup[@name]が成功した対象に<strong>2d6+3</strong>の魔法ダメージを与えます。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの呪い手",
-            "description": "<p>魔法の装具で飾ったマントをまとい、杖を振るう山賊。呪いで敵を悩ませる。</p>",
-            "motivesAndTactics": "命じる、呪詛をかける、儲ける"
+            }
         },
         "Jagged Knife Kneebreaker": {
             "_note": "Jagged Knife Kneebreaker",
+            "name": "鋸刃のナイフの膝砕き",
+            "description": "<p>大きな棍棒を携えた、威圧的な喧嘩屋。</p>",
+            "motivesAndTactics": "組み付く、威圧する、儲ける、盗む",
             "attack": {
                 "name": "クラブ"
             },
@@ -7461,8 +7464,13 @@
                 }
             },
             "items": {
+                "vipYd2zMFs0i4Ock": {
+                    "name": "捕まえたぞ",
+                    "description": "<p>@Lookup[@name]に<em>拘束</em>されているクリーチャーは、他の敵対者の攻撃から2倍のダメージを受けます。</p>"
+                },
                 "Sa4Nt0eoDjirBKGf": {
                     "name": "押さえつけろ",
+                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、対象はダメージを受けませんが、拘束かつ<em>脆弱</em>になります。対象は頑強ロールに成功すれば両方の状態を消して振り払えます。また、@Lookup[@name]が中傷以上のダメージを受けた場合は自動的に解放されます。</p>",
                     "actions": {
                         "uMNSQzNPVPhHT34T": {
                             "name": "攻撃"
@@ -7473,20 +7481,14 @@
                             "name": "押さえつけろ",
                             "durationDescription": "<p>対象は頑強ロールに成功すれば両方の状態を消して振り払えます。また、鋸刃のナイフの膝砕きが中傷以上のダメージを受けた場合は自動的に解放されます。</p>"
                         }
-                    },
-                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、対象はダメージを受けませんが、拘束かつ<em>脆弱</em>になります。対象は頑強ロールに成功すれば両方の状態を消して振り払えます。また、@Lookup[@name]が中傷以上のダメージを受けた場合は自動的に解放されます。</p>"
-                },
-                "vipYd2zMFs0i4Ock": {
-                    "name": "捕まえたぞ",
-                    "description": "<p>@Lookup[@name]に<em>拘束</em>されているクリーチャーは、他の敵対者の攻撃から2倍のダメージを受けます。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの膝砕き",
-            "description": "<p>大きな棍棒を携えた、威圧的な喧嘩屋。</p>",
-            "motivesAndTactics": "組み付く、威圧する、儲ける、盗む"
+            }
         },
         "Jagged Knife Lackey": {
             "_note": "Jagged Knife Lackey",
+            "name": "鋸刃のナイフの下っ端",
+            "description": "<p>質素な服と小さなダガーを持つ盗人。自分の力を示そうと躍起になっている。</p>",
             "motivesAndTactics": "逃げる、儲ける、煙幕を張る",
             "attack": {
                 "name": "ダガー二刀"
@@ -7503,19 +7505,20 @@
                 },
                 "1k5TmQIAunM7Bv32": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが@Lookup[@system.attack.damageFormula]の物理ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "ferZO3BuiP9zU46m": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが@Lookup[@system.attack.damageFormula]の物理ダメージを与えます。このダメージを合計します。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの下っ端",
-            "description": "<p>質素な服と小さなダガーを持つ盗人。自分の力を示そうと躍起になっている。</p>"
+            }
         },
         "Jagged Knife Lieutenant": {
             "_note": "Jagged Knife Lieutenant",
+            "name": "鋸刃のナイフの副官",
+            "description": "<p>上質な革鎧をまとった熟練の山賊。力強い声と狡猾な目を持つ。</p>",
+            "motivesAndTactics": "いじめる、命じる、儲ける、増援する",
             "attack": {
                 "name": "ジャベリン"
             },
@@ -7527,6 +7530,7 @@
             "items": {
                 "LIAbel7pMzAHpgF3": {
                     "name": "戦術家",
+                    "description": "<p>@Lookup[@name]にスポットライトを当てるとき、<strong>ストレスを1マーク</strong>して、近距離以内の味方2体にもスポットライトを当てます。</p>",
                     "actions": {
                         "IfMFU67g4sfhSYtm": {
                             "name": "ストレスをマーク",
@@ -7536,26 +7540,25 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p>@Lookup[@name]にスポットライトを当てるとき、<strong>ストレスを1マーク</strong>して、近距離以内の味方2体にもスポットライトを当てます。</p>"
+                    }
                 },
                 "Mo91w4ccffcmBPt5": {
+                    "name": "まだいくらでもいるぞ",
+                    "description": "<p>@Compendium[daggerheart.adversaries.Actor.C0OMQqV7pN6t7ouR]を3体召喚します。それらは遠距離に現れます。</p>",
                     "actions": {
                         "MCTBsw9lusUdubj0": {
                             "name": "召喚"
                         }
-                    },
-                    "name": "まだいくらでもいるぞ",
-                    "description": "<p>@Compendium[daggerheart.adversaries.Actor.C0OMQqV7pN6t7ouR]を3体召喚します。それらは遠距離に現れます。</p>"
+                    }
                 },
                 "qe94UdLZb0p3Gvxj": {
+                    "name": "とどめの一撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の脆弱な対象に攻撃を行います。成功した場合、<strong>2d6+12</strong>の物理ダメージを与え、対象はストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "fzVyO0DUwIVEUCtg": {
                             "name": "攻撃"
                         }
-                    },
-                    "name": "とどめの一撃",
-                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内の脆弱な対象に攻撃を行います。成功した場合、<strong>2d6+12</strong>の物理ダメージを与え、対象はストレスを1マークしなければなりません。</p>"
+                    }
                 },
                 "uelnRgGStjJ27VtO": {
                     "name": "勢い",
@@ -7566,13 +7569,13 @@
                         }
                     }
                 }
-            },
-            "name": "鋸刃のナイフの副官",
-            "description": "<p>上質な革鎧をまとった熟練の山賊。力強い声と狡猾な目を持つ。</p>",
-            "motivesAndTactics": "いじめる、命じる、儲ける、増援する"
+            }
         },
         "Jagged Knife Shadow": {
             "_note": "Jagged Knife Shadow",
+            "name": "鋸刃のナイフの影",
+            "description": "<p>邪なナイフを携え、影の魔法で対象を孤立させる身軽な悪漢。</p>",
+            "motivesAndTactics": "待ち伏せる、身を隠す、分断する、儲ける",
             "attack": {
                 "name": "ダガー二刀"
             },
@@ -7583,16 +7586,17 @@
             },
             "items": {
                 "dhycdSd4NYdPOYbP": {
+                    "name": "背後からの一刺し",
+                    "description": "<p>@Lookup[@name]が有利を得た通常の攻撃に成功したとき、通常のダメージの代わりに1d6+6の物理ダメージを与えます。</p>",
                     "actions": {
                         "6G5Dasl1pP8pfYkZ": {
                             "name": "攻撃"
                         }
-                    },
-                    "name": "背後からの一刺し",
-                    "description": "<p>@Lookup[@name]が有利を得た通常の攻撃に成功したとき、通常のダメージの代わりに1d6+6の物理ダメージを与えます。</p>"
+                    }
                 },
                 "ILIogeKbYioPutRw": {
                     "name": "隠身",
+                    "description": "<p>@Lookup[@name]の次の攻撃が終わるまで<em>隠密</em>になります。この特徴による隠密中に行う攻撃は有利を得ます。</p>",
                     "actions": {
                         "s0X44RPg5hA8lVax": {
                             "name": "使う"
@@ -7606,16 +7610,15 @@
                                 "隠密中に行う攻撃"
                             ]
                         }
-                    },
-                    "description": "<p>@Lookup[@name]の次の攻撃が終わるまで<em>隠密</em>になります。この特徴による隠密中に行う攻撃は有利を得ます。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの影",
-            "description": "<p>邪なナイフを携え、影の魔法で対象を孤立させる身軽な悪漢。</p>",
-            "motivesAndTactics": "待ち伏せる、身を隠す、分断する、儲ける"
+            }
         },
         "Jagged Knife Sniper": {
             "_note": "Jagged Knife Sniper",
+            "name": "鋸刃のナイフの狙撃手",
+            "description": "<p>短弓で物陰から狙い撃つ、やせた山賊。</p>",
+            "motivesAndTactics": "待ち伏せる、隠れる、儲ける、位置を変える",
             "attack": {
                 "name": "ショートボウ"
             },
@@ -7626,18 +7629,15 @@
             },
             "items": {
                 "adPXzpvLREjN3len": {
+                    "name": "見えざる一撃",
+                    "description": "<p>@Lookup[@name]が<em>隠密</em>の状態で対象への通常の攻撃に成功した場合、通常のダメージの代わりに<strong>1d10+4</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "2eX7P0wSfbKKu8dJ": {
                             "name": "攻撃"
                         }
-                    },
-                    "name": "見えざる一撃",
-                    "description": "<p>@Lookup[@name]が<em>隠密</em>の状態で対象への通常の攻撃に成功した場合、通常のダメージの代わりに<strong>1d10+4</strong>の物理ダメージを与えます。</p>"
+                    }
                 }
-            },
-            "name": "鋸刃のナイフの狙撃手",
-            "description": "<p>短弓で物陰から狙い撃つ、やせた山賊。</p>",
-            "motivesAndTactics": "待ち伏せる、隠れる、儲ける、位置を変える"
+            }
         },
         "Juvenile Flickerfly": {
             "_note": "Juvenile Flickerfly",
@@ -7651,7 +7651,8 @@
                         "FgoP6tlMUxnv5k4Z": {
                             "name": "スポットライト：リレントレス"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "PHHEvM6IDFFZ8LSl": {
                     "name": "比類なき精度",
@@ -7662,9 +7663,11 @@
                     },
                     "effects": {
                         "pZUEkMkCus4U7h8W": {
-                            "name": "比類なき精度"
+                            "name": "比類なき精度",
+                            "description": "<p>この攻撃に対するあなたの回避値は半減します。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]が攻撃を行う前に、d6をロールします。結果が4以上の場合、この攻撃に対する対象の回避値は半減します。</p>"
                 },
                 "Bt7MqMkPpPpzWksK": {
                     "name": "精神の舞",
@@ -7697,11 +7700,16 @@
                                 {
                                     "name": "幻覚のブレス"
                                 }
-                            ]
+                            ],
+                            "description": "<p>カウントダウン（ループ 1d6）。@Lookup[@name]が初めてダメージを受けたとき、カウントダウンを開始します。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>カウントダウン（ループ 1d6）。@Lookup[@name]が初めてダメージを受けたとき、カウントダウンを開始します。発動したとき、@Lookup[@name]は前方、遠距離までのすべての対象に幻覚のガスを吹きかけます。対象は直感リアクションロールに成功しなければ、恐ろしい幻覚に苛まれます。恐れているものを@Lookup[@name]に知られている対象は、このロールに不利を得ます。失敗した対象はストレスを1マークし、希望を1失わなければなりません。</p>"
                 }
-            }
+            },
+            "name": "若いフリッカーフライ",
+            "description": "<p>玉虫色の鱗と水晶の翅を持つ馬ほどの大きさの昆虫。目で追えない速さで動く。</p>",
+            "motivesAndTactics": "光るものを集める、狩る、急降下する"
         },
         "Kelpie": {
             "_note": "Kelpie",
@@ -7711,7 +7719,9 @@
                         "ATfhAWkGm5zUpMkd": {
                             "name": "ストレスをマーク"
                         }
-                    }
+                    },
+                    "name": "姿を変える者",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]の姿を荷車より小さい任意のクリーチャーまたは物体に変えます。@Lookup[@name]が、あるクリーチャーが好ましく、あるいは魅力的だと感じる姿をとっている間、そのクリーチャーは@Lookup[@name]に対するロールに不利を得ます。</p>"
                 },
                 "c4uXzgVzI95IC7aR": {
                     "actions": {
@@ -7721,9 +7731,34 @@
                     },
                     "effects": {
                         "IfIZYI225LzuJNNK": {
-                            "name": "付呪"
+                            "name": "付呪",
+                            "description": "<p>あなたはケルピーを信頼する友や味方と感じ、自身の最も深い道徳に反しない限りケルピーの言うことに従います。</p>"
                         }
-                    }
+                    },
+                    "name": "魅了する",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に近距離以内のPCを惑わさせます。そのPCは直感リアクションロールに成功しなければ、ダメージを受けるまで「魅了」状態になります。「魅了」のあいだ、そのPCは@Lookup[@name]を信頼する友や味方と感じ、自身の最も深い道徳に反しない限り@Lookup[@name]の言うことに従います。</p>"
+                },
+                "GWoZeTvWRz31pKP3": {
+                    "name": "心を捉える",
+                    "description": "<p>PCが@Lookup[@name]の近接距離から出るには、ストレスを1マークしなければなりません。</p>"
+                },
+                "PxihMdsvGEScJiJZ": {
+                    "name": "心の望み",
+                    "description": "<p>@Lookup[@name]がクリーチャーと関わるか、百の心拍ぶん以上見つめたあと、@Lookup[@name]はそのクリーチャーが最も好ましく、あるいは魅力的だと感じる姿を知ります。</p>"
+                }
+            },
+            "name": "ケルピー",
+            "description": "<p>川に棲む姿を変える者。水中でも陸でも、人を惹きつける馬の姿を好む。</p>",
+            "motivesAndTactics": "魅力的あるいは便利な姿をとる、溺れさせて喰らう、不用心な旅人を誘う",
+            "attack": {
+                "name": "蹄"
+            },
+            "experiences": {
+                "5F4BHvDhFAuetPAV": {
+                    "name": "絡めとり"
+                },
+                "lQClE24x25M7strL": {
+                    "name": "読心"
                 }
             }
         },
@@ -7738,6 +7773,9 @@
                 },
                 "5KpTT5V80T3kNwHG": {
                     "name": "戦術"
+                },
+                "uTh4UDSemwMxZ3wk": {
+                    "name": "上流社会"
                 }
             },
             "items": {
@@ -7745,33 +7783,44 @@
                     "name": "騎士",
                     "effects": {
                         "w8wLcSsTiTU3mS7e": {
-                            "name": "騎士"
+                            "name": "騎士",
+                            "description": "<p>騎士が乗騎に乗っている間、難易度に＋2のボーナスを得ます</p>"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]が乗騎に乗っている間、難易度に＋2のボーナスを得ます。重傷ダメージを受けたとき、乗騎から叩き落とされ、次にスポットライトが当たるまでこの恩恵を失います。</p>"
                 },
                 "ErWO4lqni81aRo7k": {
                     "name": "重装",
                     "effects": {
                         "xZjvrNRRjskY3n3j": {
-                            "name": "重装"
+                            "name": "重装",
+                            "description": "<p>騎士が物理ダメージを受けたとき、そのダメージを3減らします。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]が物理ダメージを受けたとき、そのダメージを3減らします。</p>"
                 },
                 "djKDZawLnGF1zkbY": {
                     "actions": {
                         "Mb079uPkaZgpo9y3": {
                             "name": "攻撃"
                         }
-                    }
+                    },
+                    "name": "騎兵突撃",
+                    "description": "<p>@Lookup[@name]が乗騎に乗っている場合、遠距離まで移動し、対象に通常の攻撃を行います。成功した場合、<strong>2d8+4</strong>の物理ダメージを与え、対象はストレスを1マークしなければなりません。</p>"
                 },
                 "RoxNNIn0m9rHQDH8": {
                     "actions": {
                         "V5fLHHdTOita6u9f": {
                             "name": "ストレスをマーク"
                         }
-                    }
+                    },
+                    "name": "王国のために！",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、<strong>[[/r 1d4+1]]</strong>体の味方にスポットライトを当てます。この方法でスポットライトを得た味方の攻撃は、ダメージを半分与えます。</p>"
                 }
-            }
+            },
+            "name": "王国の騎士",
+            "description": "<p>重装鎧と力強い軍馬を備えた、勲功ある兵士。</p>",
+            "motivesAndTactics": "追い詰めて踏み潰す、栄誉を求める、力を示す"
         },
         "Kraken": {
             "_note": "Kraken",
@@ -7787,7 +7836,8 @@
                         "420LQBs27zQTAXfY": {
                             "name": "スポットライト：リレントレス"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "vz2BWhispgR7mSWF": {
                     "name": "組み付いて溺れさせる",
@@ -7798,9 +7848,12 @@
                     },
                     "effects": {
                         "Xes6ZIE01CCN67KF": {
-                            "name": "組み付いて溺れさせる"
+                            "name": "組み付いて溺れさせる",
+                            "description": "<p>頑強ロールに成功して振り払うか、クラーケンが中傷以上のダメージを受けるまで<em>拘束</em>かつ<em>脆弱</em>です。この方法で<em>拘束</em>かつ<em>脆弱</em>である間、アクションロールを行うときストレスを1マークしなければなりません。</p>",
+                            "durationDescription": "<p>頑強ロールに成功して振り払うか、クラーケンが中傷以上のダメージを受けるまで。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>近距離以内の対象に攻撃ロールを行います。成功した場合、<strong>ストレスを1マーク</strong>して、触手でその対象を掴み、水中へ引きずり込みます。その対象は、頑強ロールに成功して振り払うか、@Lookup[@name]が中傷以上のダメージを受けるまで<em>拘束</em>かつ<em>脆弱</em>です。この方法で<em>拘束</em>かつ<em>脆弱</em>である間、対象はアクションロールを行うときストレスを1マークしなければなりません。</p>"
                 },
                 "eksa3E2ecBgdib6h": {
                     "name": "沸騰の衝撃",
@@ -7813,7 +7866,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離までの直線上にいる任意の数の対象へ煮えたつ水を吐き出します。すべての対象は敏捷リアクションロールに成功しなければ<strong>4d6+9</strong>の物理ダメージを受けます。対象がダメージを減らすために鎧スロットをマークした場合、ストレスも1マークしなければなりません。</p>"
                 },
                 "m4aybzb8tXWHelDU": {
                     "name": "勢い",
@@ -7823,7 +7877,17 @@
                             "name": "恐怖を得る"
                         }
                     }
+                },
+                "z01hq9CKFTupyRwT": {
+                    "name": "多くの触手",
+                    "description": "<p>@Lookup[@name]のマーク済みHPが7つ以下である間、射程内の対象2体に通常の攻撃を行えます。</p>"
                 }
+            },
+            "name": "クラーケン",
+            "description": "<p>最大のガレオン船よりも巨大な、伝説の海の獣。吸盤に覆われた触手と恐ろしい大口を持つ。</p>",
+            "motivesAndTactics": "喰らう、締め潰す、溺れさせる、組み付く",
+            "attack": {
+                "name": "触手"
             }
         },
         "Lamia": {
@@ -7837,23 +7901,47 @@
                     },
                     "effects": {
                         "d5RIO2p6SFAXz7Qp": {
-                            "name": "締め上げられ"
+                            "name": "締め上げられ",
+                            "description": "<p>ラミアが移動するか中傷以上のダメージを受けるまで「締め上げ」状態です。</p><p>「締め上げ」のあいだ、その対象は<em>拘束</em>されており、ラミアがスポットライトを得たときにストレスを1マークしなければなりません。</p>"
                         }
-                    }
+                    },
+                    "name": "締め上げ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]に近接距離以内のPCへ尾を巻きつけ、締め上げさせます。その対象は器用リアクションロールに成功しなければ、@Lookup[@name]が移動するか中傷以上のダメージを受けるまで「締め上げ」状態になります。「締め上げ」のあいだ、その対象は<em>拘束</em>されており、@Lookup[@name]がスポットライトを得たときにストレスを1マークしなければなりません。</p>"
                 },
                 "NC3gWjQQFXqjCYrg": {
                     "actions": {
                         "cBfwk5Lx3DR9QQy4": {
                             "name": "ストレスをマーク"
                         }
-                    }
+                    },
+                    "name": "生命吸収",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の<em>脆弱</em>または<em>拘束</em>された対象に<strong>1d4-1</strong>のHPをマークさせます。その後、@Lookup[@name]は同じ数のHPを消します。</p>"
                 },
                 "PPji2Wiib7ixf30i": {
                     "actions": {
                         "JXxrnAay8HGY335Q": {
                             "name": "恐怖を消費する"
                         }
+                    },
+                    "name": "眠りの毒",
+                    "description": "<p>@Lookup[@name]がPCへの通常の攻撃に成功したとき、<strong>恐怖を1消費</strong>して、そのPCが直感ロール（19）に成功するまで<em>脆弱</em>にできます。</p>",
+                    "effects": {
+                        "5unIqJr52ZzFDvbg": {
+                            "name": "眠気",
+                            "description": "<p>直感ロール（19）に成功するまで<em>脆弱</em>です。</p>"
+                        }
                     }
+                }
+            },
+            "name": "ラミア",
+            "description": "<p>蛇の尾を持つ人型の怪物。眠る者の生命エネルギーを吸うため夜を徘徊する。</p>",
+            "motivesAndTactics": "気づかれぬうちに襲う、日光を避ける、生命力を吸う、眠らせる、丈高い草を這い進む",
+            "attack": {
+                "name": "曲刀のダガー"
+            },
+            "experiences": {
+                "nYFyyeD78QCPNtmc": {
+                    "name": "蛇性"
                 }
             }
         },
@@ -7877,16 +7965,20 @@
                     },
                     "effects": {
                         "Znw9Vf9GrfXm6g8N": {
-                            "name": "影武者釣り"
+                            "name": "影武者釣り",
+                            "description": "<p>そのプレイヤーは、自分のPCが最も信頼するであろう人物をあなたに伝えなければなりません。誘い手の頭部の突起はその人物の姿に変わり、その声で話す能力を得ます。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>誘い手の頭部の突起の先にある膜状の塊は、任意の人型の姿に変われます。<strong>ストレスを1マーク</strong>して、近距離以内のPCを1人選びます。そのプレイヤーは、自分のPCが最も信頼するであろう人物をあなたに伝えなければなりません。誘い手の頭部の突起はその人物の姿に変わり、その声で話す能力を得ます。</p>"
                 },
                 "nbzoUABWDwUdGkFE": {
                     "actions": {
                         "3XHBN6VTG5ETbRRR": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "誘う",
+                    "description": "<p><strong>恐怖を1消費</strong>して、誘い手に近距離以内のPCへ心を惹く誘いかけを行わせます。そのPCは社交リアクションロール（18）に成功しなければ、誘い手の近接距離まで移動します。誘い手の頭部の突起が、そのPCが信頼するであろう人物の姿に変わっている場合、そのリアクションロールに不利を得ます。</p>"
                 },
                 "XDqv8pIUqp8LW0Sh": {
                     "actions": {
@@ -7896,10 +7988,19 @@
                     },
                     "effects": {
                         "JfAXMYK3fSKste6M": {
-                            "name": "飲み込まれ"
+                            "name": "飲み込まれ",
+                            "description": "<p>「呑まれた」あいだ、その対象は拘束されており、誘い手がスポットライトを得たときに<strong>3d6</strong>の物理ダメージを受けます。誘い手は中傷または重傷ダメージを受けたとき、呑み込んだすべてのクリーチャーを吐き出します。</p>"
                         }
-                    }
+                    },
+                    "name": "丸呑み",
+                    "description": "<p>PCが近接距離まで移動したとき、<strong>恐怖を1消費</strong>して、そのPCに攻撃ロールを行えます。攻撃が成功した場合、対象は<strong>3d6</strong>の物理ダメージを受け、「呑まれた」状態になります。「呑まれた」あいだ、その対象は<em>拘束</em>されており、誘い手がスポットライトを得たときに<strong>3d6</strong>の物理ダメージを受けます。誘い手は中傷または重傷ダメージを受けたとき、呑み込んだすべてのクリーチャーを吐き出します。</p>"
                 }
+            },
+            "name": "灯火の誘い手",
+            "description": "<p>巨大な水棲のクリーチャー。垂れ下がる、姿を変える頭部の突起で不用心な獲物を捕食圏まで誘い込む。</p>",
+            "motivesAndTactics": "秘された知識で誘う、罠を一気に閉じる、姿を変えた頭部の突起を通して語る",
+            "attack": {
+                "name": "顎"
             }
         },
         "Landshark": {
@@ -7921,16 +8022,33 @@
                         "kxX8ajLV16wB6EgC": {
                             "name": "ストレスをマーク"
                         }
-                    }
+                    },
+                    "name": "分厚い皮",
+                    "description": "<p>@Lookup[@name]がHPをマークさせられようとするとき、代わりに同じ数のストレスをマークできます。</p>"
                 },
                 "BikRG1s59ZXky7V6": {
                     "actions": {
                         "HtO75slrg3hdLTBf": {
                             "name": "恐怖を消費する"
                         }
+                    },
+                    "name": "引き裂く一噛み",
+                    "description": "<p>@Lookup[@name]が近接距離以内のPCへの攻撃に成功したとき、<strong>恐怖を1消費</strong>して、その対象に恩恵を得られないまま鎧スロットを1つマークさせられます（なおダメージを減らすために防具を使うことはできます）。</p>"
+                },
+                "llcjO2P9jqrhl5vr": {
+                    "name": "潜行",
+                    "description": "<p>@Lookup[@name]は地上を進むのと同じ手軽さで地中を進めます。@Lookup[@name]が移動するとき、潜るか地表に出るかを選べます。地中にいる間、@Lookup[@name]はすべてのダメージに抵抗を持ちますが、攻撃できません。</p>",
+                    "effects": {
+                        "AdpTMp82XSHhGUDA": {
+                            "name": "潜行中",
+                            "description": "<p>地中にいる間、ランドシャークはすべてのダメージに抵抗を持ちますが、攻撃できません。</p>"
+                        }
                     }
                 }
-            }
+            },
+            "name": "ランドシャーク",
+            "description": "<p>地面を泳ぐ四足のサメ。</p>",
+            "motivesAndTactics": "潜り進む、地面から飛び出す、獲物の周りを回る"
         },
         "Landshark Behemoth": {
             "_note": "Landshark Behemoth",
@@ -7947,32 +8065,53 @@
             },
             "items": {
                 "suP10DxENd9ZLfss": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>ベヒモスはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "2tZhGrctXW7d3Wn5": {
                     "name": "深海潜り",
                     "effects": {
                         "uHZW0M3vlRNFppzI": {
-                            "name": "深海潜り"
+                            "name": "深海潜り",
+                            "description": "<p>地中にいる間、ベヒモスはダメージに無効を持ちますが、攻撃できません。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>ベヒモスは地上を進むのと同じ手軽さで地中を進めます。ベヒモスが移動するとき、潜るか地表に出るかを選べます。地中にいる間、ベヒモスはダメージに無効を持ちますが、攻撃できません。</p>"
                 },
                 "mv1UXfyCZ1inA58c": {
                     "description": "<p>ベヒモスが受けるすべてのダメージは、しきい値1段階分軽減されます。</p>",
                     "effects": {
                         "pMlW6q8CzYzTDBls": {
-                            "description": "<p>ベヒモスが受けるすべてのダメージは、しきい値1段階分軽減されます。</p>"
+                            "description": "<p>ベヒモスが受けるすべてのダメージは、しきい値1段階分軽減されます。</p>",
+                            "name": "鋼の皮"
                         }
-                    }
+                    },
+                    "name": "鋼の皮"
                 },
                 "j1mUnngeA5NKBgnZ": {
                     "actions": {
                         "JT0PNpmAqv2Sy0ej": {
-                            "name": "リアクションロール"
+                            "name": "リアクションロール",
+                            "areas": [
+                                {
+                                    "name": "強烈な噴出"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "強烈な噴出",
+                    "description": "<p>ベヒモスが地面から噴き出し、超近距離以内の各PCは敏捷リアクションロールに成功しなければ倒され、アクションロールを行うまで<em>脆弱</em>になります。この方法で<em>脆弱</em>になったPC1人ごとに、あなたは恐怖を1得ます。</p>",
+                    "effects": {
+                        "qc2utRaB2sLvGCv0": {
+                            "name": "倒された",
+                            "description": "<p>アクションロールを行うまで<em>脆弱</em>です</p>"
                         }
                     }
                 }
-            }
+            },
+            "name": "ランドシャーク・ベヒモス",
+            "description": "<p>長く生き延びて、鋼のような皮と剃刀のごとく鋭い歯を持つ大きな怪物となったランドシャーク。</p>",
+            "motivesAndTactics": "噛みつく、潜り進む、地面から飛び出す"
         },
         "Manticore": {
             "_note": "Manticore",
@@ -7987,9 +8126,12 @@
                 "zqDrfCZDk8qNPBSn": {
                     "effects": {
                         "ohIpDGlDSw6m1QED": {
-                            "name": "飛行中"
+                            "name": "飛行中",
+                            "description": "<p>空中にいる間、マンティコアは難易度と攻撃ロールに＋2のボーナスを得ます。</p>"
                         }
-                    }
+                    },
+                    "name": "有翼",
+                    "description": "<p>空中にいる間、@Lookup[@name]は難易度と攻撃ロールに＋2のボーナスを得ます。</p>"
                 },
                 "DtEHBkdcv6z3q7x9": {
                     "actions": {
@@ -8002,9 +8144,12 @@
                             "name": "震え",
                             "changes": [
                                 "攻撃ロール"
-                            ]
+                            ],
+                            "description": "<p>希望を1消費するまで「震え」状態です。「震え」のあいだ、攻撃ロールに不利を得ます。</p>"
                         }
-                    }
+                    },
+                    "name": "跳びかかりの攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]を遠距離以内の対象の近接距離まで跳びかからせ、その対象に攻撃を行います。成功した場合、<strong>3d20+6</strong>の物理ダメージを与え、その対象は<strong>希望を1消費</strong>するまで「震え」状態になります。「震え」のあいだ、その対象は攻撃ロールに不利を得ます。</p>"
                 },
                 "JkAUCfodIaav6mp2": {
                     "actions": {
@@ -8014,9 +8159,12 @@
                     },
                     "effects": {
                         "wxgYIxwQHUMCaU1E": {
-                            "name": "麻痺"
+                            "name": "麻痺",
+                            "description": "<p>頑強ロールに成功して毒に打ち勝つまで<em>拘束</em>されています。</p>"
                         }
-                    }
+                    },
+                    "name": "麻痺の尾棘",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の対象に攻撃ロールを行います。成功した場合、対象は<strong>3d8</strong>の物理ダメージを受け、頑強ロールに成功して毒に打ち勝つまで<em>拘束</em>されます。</p>"
                 },
                 "jKieOD0PkBx38aQS": {
                     "actions": {
@@ -8026,9 +8174,27 @@
                     },
                     "effects": {
                         "wCyKJfNQTx2a62Di": {
-                            "name": "捕らわれ"
+                            "name": "捕らわれ",
+                            "description": "<p>頑強ロール（19）に成功して逃れるまで<em>拘束</em>かつ<em>脆弱</em>です。</p>"
                         }
-                    }
+                    },
+                    "name": "食い込む顎",
+                    "description": "<p>@Lookup[@name]が近接距離以内の対象への通常の攻撃に成功したとき、<strong>ストレスを1マーク</strong>して顎を対象に食い込ませ、その対象が頑強ロール（19）に成功して逃れるまで<em>拘束</em>かつ<em>脆弱</em>にできます。</p>"
+                },
+                "ENHHj25Jmzwl8oKn": {
+                    "name": "この謎を解いてみよ",
+                    "description": "<p>@Lookup[@name]は謎に取り憑かれており、頭の体操や言葉遊び、その他の半ば知的な気晴らしで気を逸らせます。</p>"
+                }
+            },
+            "name": "マンティコア",
+            "description": "<p>人の顔、獅子の体、サソリの尾、竜の翼を持つ伝説の獣。</p>",
+            "motivesAndTactics": "噛みつく、爪で裂く、跳びかかる、謎をかける、払い打つ、急降下する、騙す",
+            "experiences": {
+                "jBTdcSCpRQQuBuIQ": {
+                    "name": "繁茂"
+                },
+                "wT9Gp7EQ92Ola5E8": {
+                    "name": "謎かけ"
                 }
             }
         },
@@ -8040,7 +8206,9 @@
                         "33xlM2ph77SSUfBs": {
                             "name": "攻撃"
                         }
-                    }
+                    },
+                    "name": "素早い手",
+                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、<strong>1d8+2</strong>の物理ダメージを与え、@Lookup[@name]は対象の所持品からアイテムまたは消耗品を1つ盗みます。</p>"
                 },
                 "tP2DD751nOLxFVps": {
                     "name": "逃走計画",
@@ -8056,9 +8224,23 @@
                     },
                     "effects": {
                         "zMut1PRphlwE0xOa": {
-                            "name": "逃走計画"
+                            "name": "逃走計画",
+                            "description": "<p>器用ロールまたは頑強ロール（13）に成功して両方の状態を終わらせて振り払うまで、<em>拘束</em>かつ<em>脆弱</em>です。</p><p>[[/dr trait=finesse difficulty=13]]<br>[[/dr trait=strength difficulty=13]]</p>",
+                            "durationDescription": "<p>器用ロールまたは頑強ロール（13）に成功して振り払うまで。</p>"
                         }
-                    }
+                    },
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]が戦場のどこかに仕掛けた罠縄を露わにします。その罠から超近距離以内のすべての対象は、敏捷リアクションロール（13）に成功しなければ足を取られ、逆さ吊りにされます。対象は器用ロールまたは頑強ロール（13）に成功して両方の状態を終わらせて振り払うまで、拘束かつ脆弱です。</p>"
+                }
+            },
+            "name": "仮面の盗賊",
+            "description": "<p>軽業の技と芝居がかった華を持つ狡猾な盗賊。</p>",
+            "motivesAndTactics": "かわす、隠れる、掠め取る、儲ける",
+            "attack": {
+                "name": "バックソード"
+            },
+            "experiences": {
+                "qJDagILvDYZfo9nI": {
+                    "name": "軽業"
                 }
             }
         },
@@ -8069,9 +8251,11 @@
                     "name": "リブレ",
                     "effects": {
                         "rMrvfUZtgo911vkv": {
-                            "name": "リブレ"
+                            "name": "リブレ",
+                            "description": "<p>マスケ・ムエルテは<em>拘束</em>されません。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]は<em>拘束</em>されません。</p>"
                 },
                 "6o1xTsu1ujGrfABq": {
                     "actions": {
@@ -8083,14 +8267,18 @@
                         "1811deazqsyZEfSn": {
                             "name": "挑発され"
                         }
-                    }
+                    },
+                    "name": "ヒール転向",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内のPCに攻撃を行います。成功した場合、@Lookup[@name]が侮辱の罵声を浴びせ、その対象はストレスを1マークし、一時的に<em>脆弱</em>になります。</p>"
                 },
                 "lPJq72e93dc2ODK3": {
                     "actions": {
                         "ohqoKm9BMxQaMMBK": {
                             "name": "恐怖を消費する"
                         }
-                    }
+                    },
+                    "name": "幽鬼のスープレックス",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に<em>拘束</em>されたPCをスープレックスで投げさせ、<strong>1d10+6</strong>の魔法ダメージを与えます。</p>"
                 },
                 "NPoRVKRQzuLUw0mM": {
                     "name": "仮面を剥ぐ死",
@@ -8103,7 +8291,8 @@
                                 }
                             ]
                         }
-                    }
+                    },
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に一瞬だけ仮面を外させ、その下の恐ろしい顔を露わにします。近距離以内の各PCは、社交リアクションロールに成功しなければストレスを1マークします。</p>"
                 },
                 "pR9baknxxTOr3Vbb": {
                     "name": "タッグチーム",
@@ -8114,9 +8303,25 @@
                     },
                     "effects": {
                         "g1W6cRSGVSteu99P": {
-                            "name": "押さえつけ"
+                            "name": "押さえつけ",
+                            "description": "<p>頑強ロールに成功して逃れるまで「押さえ込み」状態です。「押さえ込み」のあいだ、<em>拘束</em>されており、マスケ・ムエルテの攻撃から追加で<strong>1d12</strong>の魔法ダメージを受けます。</p>"
                         }
-                    }
+                    },
+                    "description": "<p>@Lookup[@name]がPCにダメージを与えたとき、<strong>恐怖を1消費</strong>して、幽鬼のレスラーを現し、その対象が頑強ロールに成功して逃れるまで押さえ込ませられます。「押さえ込み」のあいだ、その対象は<em>拘束</em>されており、@Lookup[@name]の攻撃から追加で<strong>1d12</strong>の魔法ダメージを受けます。</p>"
+                }
+            },
+            "name": "マスケ・ムエルテ",
+            "description": "<p>悪役の仮面レスラーの、怒り狂う魂。</p>",
+            "motivesAndTactics": "名指しで挑む、恥をかかせる、観客を沸かせる、相手を地面に押さえ込む",
+            "attack": {
+                "name": "張り手"
+            },
+            "experiences": {
+                "cGmDmo3SRWaxRM4T": {
+                    "name": "組み技"
+                },
+                "vFd1P0dqWBO4mNvK": {
+                    "name": "見せつけ"
                 }
             }
         },
