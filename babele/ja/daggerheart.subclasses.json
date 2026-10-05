@@ -725,59 +725,205 @@
             "description": "<p>シーン中で最初に攻撃が成功したとき、ダメージを2倍にします。</p>"
         },
         "Fleeting Shadow": {
-            "_note": "Fleeting Shadow"
+            "_note": "Fleeting Shadow",
+            "name": "儚き影",
+            "description": "<p>回避値に永続＋1のボーナスを得ます。「影渡り」の特徴を使って超遠距離以内へ移動できます。</p>",
+            "effects": {
+                "hsEwoHkNr2qVwm2H": {
+                    "name": "儚き影",
+                    "description": "<p>回避値に永続＋1のボーナスを得ます。「影渡り」の特徴を使って超遠距離以内へ移動できます。</p>"
+                }
+            }
         },
         "Flow State": {
-            "_note": "Flow State"
+            "_note": "Flow State",
+            "name": "流水の境地",
+            "description": "<p>別の構えへ移るとき、集中を消費する代わりに<strong>ストレスを1マーク</strong>できます。さらに、連撃を始めるとき、ストレスをマークする代わりに<strong>集中を1消費</strong>できます。</p>"
         },
         "Focus Cannon": {
-            "_note": "Focus Cannon"
+            "_note": "Focus Cannon",
+            "name": "集中砲",
+            "description": "<p><strong>集中を1消費</strong>して、遠距離以内の敵対者に対する直感ロールを行います。成功した場合、習熟を用いて<strong>d20＋3</strong>の魔法ダメージを与えます。</p>",
+            "actions": {
+                "5L3mq00RlEDPC0oQ": {
+                    "name": "集中を消費する"
+                }
+            }
         },
         "Fueled by Fear": {
-            "_note": "Fueled by Fear"
+            "_note": "Fueled by Fear",
+            "name": "恐怖を糧に",
+            "description": "<p>「恐怖に立ち向かえ」の特徴による追加の魔法ダメージが<strong>2d10</strong>に上がります。</p>"
         },
         "Gifted Performer": {
-            "_note": "Gifted Performer"
+            "_note": "Gifted Performer",
+            "name": "才ある演者",
+            "description": "<p>3種類の異なる歌を、大休憩ごとにそれぞれ1回演奏できます。他者のためにどう演じるかを描写し、記載の恩恵を得ます。</p><ul><li><p><strong>安らぎの歌：</strong>あなたと近距離以内のすべての味方はHPを1つ消します。</p></li><li><p><strong>叙事の歌：</strong>近距離以内の対象1体を一時的に脆弱にします。</p></li><li><p><strong>胸を打つ歌：</strong>あなたと近距離以内のすべての味方は希望を1得ます。</p></li></ul>",
+            "actions": {
+                "xvs7ZKm93AlnZD3F": {
+                    "name": "安らぎの歌",
+                    "description": "<p><strong>あなたとすべての味方</strong>は<strong>近距離</strong>以内で<strong>HPを1つ消します</strong>。</p>"
+                },
+                "nvfJ8rOx8baI6POZ": {
+                    "name": "叙事の歌",
+                    "description": "<p><strong>近距離</strong>以内の<strong>対象1体</strong>を一時的に<strong>脆弱</strong>にします。</p>"
+                },
+                "QTTgKnhpNE2XHz4u": {
+                    "name": "胸を打つ歌",
+                    "description": "<p><strong>あなたとすべての味方</strong>は<strong>近距離</strong>以内で<strong>希望を1得ます</strong>。</p>"
+                }
+            },
+            "effects": {
+                "FK4IdbxluRErfYor": {
+                    "name": "叙事の歌",
+                    "description": "<p>近距離以内の対象1体を一時的に脆弱にします。</p>"
+                }
+            }
         },
         "Grappling": {
             "_note": "Grappling",
             "name": "組み付き",
+            "description": "<p>近接射程内での攻撃が成功したとき、<strong>集中を1消費</strong>するか<strong>ストレスを1マーク</strong>して、対象を一時的に<em>拘束</em>するか、対象を近距離まで投げられます。</p>",
             "actions": {
+                "K7VYEEaUWQN0hifO": {
+                    "name": "構えをとる"
+                },
                 "ruHvEPZuzierWilg": {
                     "name": "組み付く"
+                }
+            },
+            "effects": {
+                "zmML95HUwWUM8RqY": {
+                    "name": "構え：組み付き",
+                    "description": "<p>近接射程内での攻撃が成功したとき、<strong>集中を1消費</strong>するか<strong>ストレスを1マーク</strong>して、対象を一時的に<em>拘束</em>するか、対象を近距離まで投げられます。</p>"
+                },
+                "0aPQdN2Anbw7WLph": {
+                    "name": "捕縛"
                 }
             }
         },
         "Harrowing Invocation": {
-            "_note": "Harrowing Invocation"
+            "_note": "Harrowing Invocation",
+            "name": "苛む祈唱",
+            "description": "<p>敵対者があなたまたは至近以内の味方を攻撃の対象としたとき、<strong>恩寵を1消費</strong>してそのロールを不利にできます。その敵対者がロールに失敗した場合、ストレスも1マークしなければなりません。</p>",
+            "actions": {
+                "lFYB6s51xECMdYaB": {
+                    "name": "恩寵を消費する"
+                }
+            }
         },
         "Have No Fear": {
-            "_note": "Have No Fear"
+            "_note": "Have No Fear",
+            "name": "恐れるものなし",
+            "description": "<p>「恐怖に立ち向かえ」の特徴による追加の魔法ダメージが<strong>3d10</strong>に上がります。</p>"
         },
         "Heart of a Poet": {
-            "_note": "Heart of a Poet"
+            "_note": "Heart of a Poet",
+            "name": "詩人の心",
+            "description": "<p>誰かを感嘆させる、説得する、あるいは怒らせるためのアクションロールを行ったあと、希望を1消費してそのロールにd4を加えられます。</p>",
+            "actions": {
+                "pHSfMDmfVQSgqk39": {
+                    "name": "希望を消費する",
+                    "description": "<p>誰かを感嘆させる、説得する、あるいは怒らせるためのアクションロールを行ったあと、希望を1消費してそのロールに[[/r d4]]を加えられます。</p>"
+                }
+            }
         },
         "Herbal Remedies": {
-            "_note": "Herbal Remedies"
+            "_note": "Herbal Remedies",
+            "name": "薬草の療法",
+            "description": "<p>あなたまたはシーン内の味方が消耗品の使用によってHPまたはストレスを1つ以上消すとき、消す数を1つ増やします。</p>"
         },
         "Honed Expertise": {
-            "_note": "Honed Expertise"
+            "_note": "Honed Expertise",
+            "name": "研ぎ澄まされた専門技能",
+            "description": "<p>経験を使用するとき、<strong>d6</strong>を1つ振ります。結果が5以上の場合、希望を消費せずに使用できます。</p>",
+            "actions": {
+                "zCTrqPtGARSZ06CU": {
+                    "name": "d6をロール"
+                }
+            }
         },
         "Honed": {
-            "_note": "Honed"
+            "_note": "Honed",
+            "name": "研磨",
+            "description": "<p>攻撃ロールを行う前に<strong>集中を1消費</strong>して、その攻撃の習熟に＋1のボーナスを得ます。</p>",
+            "actions": {
+                "Xs4xgmFwibfOp6Ky": {
+                    "name": "構えをとる"
+                },
+                "InclNwt5wzExUNUc": {
+                    "name": "集中を消費する"
+                }
+            },
+            "effects": {
+                "HkFjCOTppPwFhoDD": {
+                    "name": "構え：研磨",
+                    "description": "<p>攻撃ロールを行う前に<strong>集中を1消費</strong>して、その攻撃の習熟に＋1のボーナスを得ます。</p>"
+                },
+                "dyHrEgxlTrZPrV0p": {
+                    "name": "研磨",
+                    "description": "<p>その攻撃の習熟に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Invigorating": {
             "_note": "Invigorating",
-            "name": "活力"
+            "name": "活力",
+            "description": "<p>攻撃が成功したとき、d4を1つ振ります。結果が4の場合、集中を1得ます。</p>",
+            "actions": {
+                "1xtWty9JmQwHDr5p": {
+                    "name": "構えをとる"
+                },
+                "8ZmPagKI9BmHtAS6": {
+                    "name": "d4をロール"
+                }
+            },
+            "effects": {
+                "ZW4pQL4QoTFKL7Ry": {
+                    "name": "構え：活力",
+                    "description": "<p>攻撃が成功したとき、d4を1つ振ります。結果が4の場合、集中を1得ます。</p>"
+                }
+            }
         },
         "Ire of Pale Light": {
-            "_note": "Ire of Pale Light"
+            "_note": "Ire of Pale Light",
+            "name": "蒼き光の憤り",
+            "description": "<p>超遠距離以内の<em>呪詛</em>されたクリーチャーが攻撃に失敗したとき、そのクリーチャーはストレスを1マークしなければなりません。</p>",
+            "actions": {
+                "SVwe0haug3EXagQx": {
+                    "name": "ストレスダメージ"
+                }
+            }
         },
         "Iron Will": {
-            "_note": "Iron Will"
+            "_note": "Iron Will",
+            "name": "鉄の意志",
+            "description": "<p>物理ダメージを受けたとき、<strong>鎧スロットを1つ追加でマーク</strong>して重傷度を下げられます。</p>",
+            "effects": {
+                "htEDIjCEWYtznpRV": {
+                    "name": "鉄の意志",
+                    "description": "<p>物理ダメージを受けたとき、<strong>鎧スロットを1つ追加でマーク</strong>して重傷度を下げられます。</p>"
+                }
+            }
         },
         "Isolating": {
-            "_note": "Isolating"
+            "_note": "Isolating",
+            "name": "孤立",
+            "description": "<p>あなたまたは対象の至近以内に他のクリーチャーがいないとき、攻撃ロールに有利を得ます。</p>",
+            "actions": {
+                "ZqZgI5Pc2qFFBt5o": {
+                    "name": "構えをとる"
+                }
+            },
+            "effects": {
+                "GcjxmDtqCU7J0IU3": {
+                    "name": "構え：孤立",
+                    "description": "<p>あなたまたは対象の至近以内に他のクリーチャーがいないとき、攻撃ロールに有利を得ます。</p>",
+                    "changes": [
+                        "あなたまたは対象の至近以内に他のクリーチャーがいないときの攻撃ロール"
+                    ]
+                }
+            }
         },
         "Keen Defenses": {
             "_note": "Keen Defenses"

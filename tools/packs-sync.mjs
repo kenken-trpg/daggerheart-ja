@@ -1000,6 +1000,14 @@ const commands = {
         /* Longer than this is prose, where an exact-string comparison says nothing. */
         const SHORT = 60;
 
+        /*
+         * Compared with the spaces taken out. plain() puts a space where a tag
+         * was, so the same sentence marked up as `<strong>Close</strong> range`
+         * in one field and plainly in another differed only by spaces Japanese
+         * does not write anyway -- reported as a disagreement in wording.
+         */
+        const tight = text => normalize(text).replace(/\s+/g, '');
+
         const seen = new Map();
         let problems = 0;
 
@@ -1021,7 +1029,7 @@ const commands = {
                 const here = plain(value);
                 if (exempt[`${collection} / ${key}`]) continue;
                 const approved = established.get(term) ?? glossary.get(term);
-                if (approved && normalize(approved.japanese) !== normalize(here)) {
+                if (approved && tight(approved.japanese) !== tight(here)) {
                     problems += 1;
                     console.log(`${collection} / ${key}`);
                     console.log(`   en:       ${text}`);
@@ -1031,7 +1039,7 @@ const commands = {
 
                 const first = seen.get(term);
                 if (!first) seen.set(term, { collection, key, value: here });
-                else if (normalize(first.value) !== normalize(here)) {
+                else if (tight(first.value) !== tight(here)) {
                     problems += 1;
                     console.log(`${collection} / ${key}`);
                     console.log(`   en:   ${text}`);
