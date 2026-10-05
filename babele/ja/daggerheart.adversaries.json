@@ -10540,41 +10540,75 @@
         },
         "Rust Eater": {
             "_note": "Rust Eater",
+            "name": "錆喰い",
+            "description": "<p>金属を錆に変える腐食性の甲殻をまとった、仔馬ほどの大きさのゴキブリ。</p>",
+            "motivesAndTactics": "気づかれぬようにする、錆を喰う、金属を嗅ぎ当てる",
             "attack": {
                 "name": "噛みつき"
             },
+            "experiences": {
+                "8NPN3bscgMmj9RWC": {
+                    "name": "嗅ぎ回る"
+                }
+            },
             "items": {
                 "gxRaxj1KC5GCLHJh": {
+                    "name": "息詰まるフェロモン",
+                    "description": "<p>@Lookup[@name]から超近距離以内でアクションロールを行ったPCは、直感リアクションロールに成功しなければストレスを1マークします。</p>",
                     "actions": {
                         "ffLuf3wJVwxluJXT": {
                             "name": "リアクションロール"
                         }
                     }
+                },
+                "O8sBQYNMY0ZbYwgU": {
+                    "name": "錆の手触り",
+                    "description": "<p>@Lookup[@name]の甲殻は、金属を穴だらけにして錆びさせる腐食性の酸に覆われています。錆喰いの近接距離以内のPCが金属の武器でそれへの攻撃に成功したとき、その武器のダメージダイスを1段階下げます（たとえば<strong>d8</strong>から<strong>d6</strong>、または<strong>d6</strong>から<strong>d4</strong>）。武器のダメージダイスが<strong>d4</strong>より下に下がった場合、その武器は錆となって崩れます。その後、@Lookup[@name]はその錆の山を喰らい、HPを1つ消します。</p>"
                 }
             }
         },
         "Sandwyrm": {
             "_note": "Sandwyrm",
+            "name": "砂のワーム",
+            "description": "<p>装甲板と噛み鳴らす顎を持つ巨大な穴掘りの蠕虫。知性があり機を見るこの狩人は、チーターが陸を走るのと同じ速さで砂を泳げる。</p>",
+            "motivesAndTactics": "下から待ち伏せる、喰って去る、穴を掘って噴き出す、両端を使う",
             "attack": {
                 "name": "噛みつき"
             },
+            "experiences": {
+                "5h5VexBnnkpu2uq7": {
+                    "name": "振動感知"
+                }
+            },
             "items": {
                 "LaD80Lyc7hjdTwjJ": {
+                    "name": "毒の尾針",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の対象を攻撃します。成功した場合、対象は<strong>3d10+2</strong>の物理ダメージを受け、頑強リアクションロールに成功しなければ、希望とともにロールするまで<em>拘束</em>かつ<em>脆弱</em>になります。</p>",
                     "actions": {
                         "ko7m9UWK9x2tGukQ": {
                             "name": "ストレスをマーク"
+                        }
+                    },
+                    "effects": {
+                        "6b8YOplmlkPIxkkC": {
+                            "name": "刺された",
+                            "description": "<p>希望とともにロールするまで<em>拘束</em>かつ<em>脆弱</em>です。</p>"
                         }
                     }
                 },
                 "3p7DukovYy3xgCHW": {
                     "name": "喰らう",
+                    "description": "<p>近接距離以内の対象に攻撃を行います。成功した場合、@Lookup[@name]はその対象を呑み込みます。「呑まれた」あいだ、その対象は<em>拘束</em>されており、@Lookup[@name]にスポットライトが当たったときHPを1マークします。@Lookup[@name]は中傷以上のダメージを受けたとき、呑み込んだすべてのクリーチャーを吐き出します。</p>",
                     "effects": {
                         "ApwIguCb3RsAdOSb": {
-                            "name": "飲み込まれ"
+                            "name": "飲み込まれ",
+                            "description": "<p>「呑まれた」あいだ、その対象は<em>拘束</em>されており、砂のワームにスポットライトが当たったときHPを1マークします。砂のワームは中傷以上のダメージを受けたとき、呑み込んだすべてのクリーチャーを吐き出します。</p>"
                         }
                     }
                 },
                 "mU73FWlSsvOOlvHk": {
+                    "name": "飢えてはいるが愚かではない",
+                    "description": "<p>@Lookup[@name]がHPの半分をマークするか、クリーチャーを呑み込んだとき、<strong>d6</strong>をロールします。結果が3以下の場合、@Lookup[@name]は安全な場所へ退きます。</p>",
                     "actions": {
                         "TV6xcppk58x4d5Ty": {
                             "name": "逃走判定"
@@ -10585,6 +10619,12 @@
         },
         "Sawtoothed Gillbeast": {
             "_note": "Sawtoothed Gillbeast",
+            "name": "鋸歯の鰓獣",
+            "description": "<p>剃刀のごとく鋭い歯が並ぶ、がっしりした魚のクリーチャー。</p>",
+            "motivesAndTactics": "岸へ這い上がる、一撃離脱する、水面から覗く",
+            "attack": {
+                "name": "水浸しの武具"
+            },
             "experiences": {
                 "afuKw0dOrPvKUZyz": {
                     "name": "水棲"
@@ -10592,6 +10632,8 @@
             },
             "items": {
                 "yqbWInJewYL1UCg8": {
+                    "name": "ガブリ",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内の対象を攻撃します。成功した場合、対象は<strong>1d12</strong>の物理ダメージを受け、恩恵を得られないまま鎧スロットを1つマークしなければなりません（なおダメージを減らすために防具を使うことはできます）。</p>",
                     "actions": {
                         "JTIH7ThfLBQMrnUz": {
                             "name": "ストレスをマーク"
@@ -10600,6 +10642,7 @@
                 },
                 "ZBpUJaH6CBqiaJUV": {
                     "name": "摂食の狂乱",
+                    "description": "<p>クリーチャーがHPをマークしたとき、<strong>恐怖を1消費</strong>して、そのクリーチャーから超近距離以内にいるすべての@Lookup[@name]にスポットライトを当てられます。それらの鰓獣はそのクリーチャーの近接距離まで移動し、それぞれ通常の攻撃を行います。成功した攻撃があれば、そのダメージを合計します。</p>",
                     "actions": {
                         "KQAEsAgWHAtpNeec": {
                             "name": "恐怖を消費する",
@@ -10610,13 +10653,48 @@
                             ]
                         }
                     }
+                },
+                "qufYjFc6S4uT7tkQ": {
+                    "name": "鱗持ち",
+                    "description": "<p>鰓獣がHPをマークしようとするとき、<strong>d6</strong>をロールします。結果が6の場合、代わりに<strong>ストレスを1マーク</strong>できます。</p>",
+                    "actions": {
+                        "XkIEJugE5JKNYNjt": {
+                            "name": "d6をロール"
+                        }
+                    }
                 }
             }
         },
         "Scarecrow": {
             "_note": "Scarecrow",
+            "name": "案山子",
+            "description": "<p>藁を束ねて人型に縛り、ぼろ布を着せ、囚われた魂で動かしたもの。</p>",
+            "motivesAndTactics": "自分を束ね直す、引っ掻き裂く",
+            "attack": {
+                "name": "鎌"
+            },
+            "experiences": {
+                "SdYYKkydpFxM7TSK": {
+                    "name": "鳥"
+                },
+                "0aD9n4XwU20QniiL": {
+                    "name": "畑"
+                }
+            },
             "items": {
+                "dcHBUQhvxfWNnG7p": {
+                    "name": "藁でできている",
+                    "description": "<p>@Lookup[@name]は物理ダメージに抵抗を持ちますが、火からは2倍のダメージを受けます。</p>",
+                    "effects": {
+                        "nzndziuKhswzNypi": {
+                            "name": "藁でできている",
+                            "description": "<p>案山子は物理ダメージに抵抗を持ちますが、火からは2倍のダメージを受けます。</p>"
+                        }
+                    }
+                },
                 "26hUFK6A4zYMUO0y": {
+                    "name": "恐怖の幻視",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]に超近距離以内のPCと目を合わせさせ、<strong>2d8</strong>の魔法ダメージを与え、希望とともにロールするまで<em>脆弱</em>にします。</p>",
                     "actions": {
                         "4LBwcQxaOl03MaIs": {
                             "name": "恐怖を消費する"
@@ -10633,13 +10711,24 @@
         },
         "Secret-Keeper": {
             "_note": "Secret-Keeper",
+            "name": "秘密の守り手",
+            "description": "<p>堕ちた神々へ直につながる経路を持つ、隠れた指導者。</p>",
+            "motivesAndTactics": "大いなる力を蓄える、企てる、指揮を握る",
+            "attack": {
+                "name": "印を刻んだ杖"
+            },
             "experiences": {
+                "HZTsqb30wDBJANq9": {
+                    "name": "強要"
+                },
                 "GU7IiEUi6m2ZN5ui": {
                     "name": "堕ちた者の伝承"
                 }
             },
             "items": {
                 "WLnguxRo9egh2hfX": {
+                    "name": "好機を掴め",
+                    "description": "<p><strong>恐怖を2消費</strong>して、<strong>1d4</strong>体の味方にスポットライトを当てます。この方法でスポットライトを得た味方の攻撃は、ダメージを半分与えます。</p>",
                     "actions": {
                         "e6DmGF9vOv27BJ6f": {
                             "name": "味方にスポットライト"
@@ -10647,6 +10736,8 @@
                     }
                 },
                 "O5Nn1Slv8RJJpNeT": {
+                    "name": "我らが主の意",
+                    "description": "<p>遠距離以内の味方にスポットライトを当てるとき、<strong>ストレスを1マーク</strong>して恐怖を1得ます。</p>",
                     "actions": {
                         "MUdqLSRIpEEk1Ujc": {
                             "name": "ストレスをマーク"
@@ -10655,9 +10746,11 @@
                 },
                 "4L7aM9NDLbjvuwI3": {
                     "name": "召喚の儀式",
+                    "description": "<p><em>カウントダウン（6）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。HPをマークしたとき、マークしたHPの数だけこのカウントダウンを進めます。発動したとき、@UUID[Compendium.daggerheart.adversaries.Actor.3tqCjDwJAQ7JKqMb]{下級魔神}を1体召喚します。それは近距離に現れます。</p>",
                     "actions": {
                         "ZVXHY2fpomoKV7jG": {
                             "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（6）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。</p>",
                             "countdown": [
                                 {
                                     "name": "召喚の儀式"
@@ -10670,6 +10763,8 @@
                     }
                 },
                 "Q28NPuSMccjzykib": {
+                    "name": "堕ちた猟犬",
+                    "description": "<p>シーンごとに1回、@Lookup[@name]がHPを2つ以上マークしたとき、<strong>ストレスを1マーク</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.NoRZ1PqB8N5wcIw0]{魔性の猟犬の群れ}を1つ召喚できます。それは近距離に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "tfmY6HYkkY27NBaF": {
                             "name": "ストレスをマーク"
@@ -10680,6 +10775,9 @@
         },
         "Sellsword": {
             "_note": "Sellsword",
+            "name": "雇われ剣士",
+            "description": "<p>運を試す武装した傭兵。</p>",
+            "motivesAndTactics": "突進する、切り裂く、圧倒する、儲ける",
             "attack": {
                 "name": "ロングソード"
             },
@@ -10701,19 +10799,35 @@
         },
         "Severed Shadow": {
             "_note": "Severed Shadow",
+            "name": "切り離された影",
+            "description": "<p>平面と表面に縛られた、二次元の生ける影。</p>",
+            "motivesAndTactics": "光を呪う、隙間を抜ける、分かれて再び合わさる",
+            "attack": {
+                "name": "絞め上げ"
+            },
             "items": {
                 "sblLbyK1aQUa3p6I": {
-                    "name": "ミニオン（12）"
+                    "name": "ミニオン（12）",
+                    "description": "<p>影はダメージを受けると倒されます。PCが影に与えたダメージ12ごとに、そのPCはその攻撃が成功する射程内のミニオンを追加で1体倒します。</p>"
                 },
                 "hI0tXM7hL3Tf3oLs": {
+                    "name": "影の組み付き",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近距離以内の対象に攻撃を行います。成功した場合、その対象は<em>脆弱</em>になり、影が倒されるまでアクションを取るときストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "nIBoa0wGpuhVOXw5": {
                             "name": "ストレスをマーク"
+                        }
+                    },
+                    "effects": {
+                        "F2npLpE2LeXlbcna": {
+                            "name": "影に組み付かれた",
+                            "description": "<p><em>脆弱</em>であり、影が倒されるまでアクションを取るときストレスを1マークしなければなりません。</p>"
                         }
                     }
                 },
                 "FWGH5sUYmjPAyESD": {
                     "name": "グループ攻撃",
+                    "description": "<p><strong>恐怖を1消費</strong>して対象を1体選び、その対象から近距離以内にいるすべての@Lookup[@name]にスポットライトを当てます。それらのミニオンは対象の近接距離まで移動し、1回の共同攻撃ロールを行います。成功した場合、それぞれが10の魔法ダメージを与えます。このダメージを合計します。</p>",
                     "actions": {
                         "EKjThIkQwtjphHCJ": {
                             "name": "恐怖を消費する"
@@ -10724,12 +10838,20 @@
         },
         "Shambling Zombie": {
             "_note": "Shambling Zombie",
+            "name": "よたよた歩くゾンビ",
+            "description": "<p>飢えだけに駆られ、おぼつかない足取りで動く動く死体。</p>",
+            "motivesAndTactics": "喰らう、飢える、敵に群がる、肉を引き裂く",
             "attack": {
                 "name": "噛みつき"
             },
             "items": {
+                "IpUWqXjwP2Lp5Zhs": {
+                    "name": "手に負えぬ数",
+                    "description": "<p>@Lookup[@name]がクリーチャーの近接距離以内にいて、他に少なくとも1体の@Lookup[@name]が近距離以内にいるとき、そのクリーチャーへのすべての攻撃は有利を得ます。</p>"
+                },
                 "iiOjamlZIuhpDC8W": {
                     "name": "戦慄",
+                    "description": "<p>@Lookup[@name]の攻撃でHPをマークした対象は、ストレスも1マークしなければなりません。</p>",
                     "actions": {
                         "JUw16Jag9uTfBmKZ": {
                             "name": "ストレスをマーク"
@@ -10740,6 +10862,20 @@
         },
         "Shapeshifting Fiend": {
             "_note": "Shapeshifting Fiend",
+            "name": "姿を変える魔物",
+            "description": "<p>信頼される人物になりすます邪悪な存在。</p>",
+            "motivesAndTactics": "なりすます、不和を撒く、裏切りへ誘う",
+            "attack": {
+                "name": "隠した刃"
+            },
+            "experiences": {
+                "e06WRZ2y63qpQZkp": {
+                    "name": "操作する"
+                },
+                "f6dJfC2Fnv85dlpb": {
+                    "name": "模写する"
+                }
+            },
             "items": {
                 "pnMA6UWprfKjTu5m": {
                     "name": "魔族の性",
@@ -10752,6 +10888,8 @@
                     }
                 },
                 "VrUFHMjVrWUc2JHd": {
+                    "name": "なりすます",
+                    "description": "<p><strong>恐怖を1消費</strong>して、魔物を以前に関わったことのある人型の存在へ魔法で変身させます。そのPCが大切に思う人物の姿をとっている間に魔物を対象にしたPCは、直感リアクションロールに成功しなければ、その攻撃は失敗し、そのPCはストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "0YbIsQx48hQrJM5o": {
                             "name": "恐怖を消費する"
@@ -10759,9 +10897,17 @@
                         "laPYDHfBKv4hKPpe": {
                             "name": "リアクションロール"
                         }
+                    },
+                    "effects": {
+                        "rHcoEUjYExrZuhhR": {
+                            "name": "なりすまし中",
+                            "description": "<p>魔物は、以前に関わったことのある人型の存在へ魔法で変身しています。そのPCが大切に思う人物の姿をとっている間に魔物を対象にしたPCは、直感リアクションロールに成功しなければ、その攻撃は失敗し、そのPCはストレスを1マークしなければなりません。</p>"
+                        }
                     }
                 },
                 "MIvcup4AWUoqBMKq": {
+                    "name": "透明になる",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、魔物がアクションロールを行うかダメージを受けるまで隠密にします。</p>",
                     "actions": {
                         "dkMGDDE2ytkcF1qh": {
                             "name": "ストレスをマーク"
@@ -10769,24 +10915,46 @@
                     },
                     "effects": {
                         "Sny2sOnoxiehgEeI": {
-                            "name": "不可視"
+                            "name": "不可視",
+                            "description": "<p>魔物はアクションロールを行うかダメージを受けるまで<em>隠密</em>です。</p>"
                         }
                     }
                 },
                 "DH3qyIQPoi3soxdU": {
+                    "name": "裏のある助言",
+                    "description": "<p>魔物がシーンにいる間にPCがアクションロールを行ったとき、<strong>ストレスを1マーク</strong>して、その恐怖ダイスの結果に<strong>1d6</strong>を加えられます。</p>",
                     "actions": {
                         "YDNJMyOJX70CtcuJ": {
                             "name": "ストレスをマーク"
                         }
                     }
+                },
+                "KejigtjcSGCBpGh3": {
+                    "name": "露見！（形態変化）",
+                    "description": "<p>魔物が倒されるか、PCたちがその正体を見破ったとき、魔物を「正体を現した@Lookup[@name]」に置き換え、直ちにスポットライトを当てます。</p>"
                 }
             }
         },
         "Shapeshifting Fiend Revealed": {
             "_note": "Shapeshifting Fiend Revealed",
+            "name": "正体を現した姿を変える魔物",
+            "description": "<p>虫のような頭と、赤く光る目を幾組も持つ、そびえ立つ人型の存在。</p>",
+            "motivesAndTactics": "魂を奪う、惑わせて誤らせる、下層環へ逃げる、転移する",
+            "attack": {
+                "name": "カマキリの鉤爪"
+            },
+            "experiences": {
+                "wZYNKV8cDxwUo88O": {
+                    "name": "地獄に縛られた"
+                },
+                "cvYII1wVPrepeZqQ": {
+                    "name": "不死"
+                }
+            },
             "items": {
                 "EK5pZuDxvOPjmRpF": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>魔物はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "ojWa0aodEpnkb9rk": {
                     "name": "魔族の抵抗",
@@ -10799,6 +10967,8 @@
                     }
                 },
                 "jQib1ToeFylSCIOj": {
+                    "name": "魔神の激昂",
+                    "description": "<p><strong>恐怖を1消費</strong>して、魔物がマークしているストレスの数と同じ攻撃ロールへのボーナスを得て通常の攻撃を行います。成功した場合、その攻撃は直接ダメージを与えます。</p>",
                     "actions": {
                         "jkPWsDVDdIRd0B78": {
                             "name": "恐怖を消費する"
@@ -10806,6 +10976,8 @@
                     }
                 },
                 "vavYse3YdfnpjxaD": {
+                    "name": "鏡の間",
+                    "description": "<p>ストレスを2マークして、魔物に幻影の分身を4体召喚させ、分身カウントダウン（4）を開始します。魔物が攻撃の対象になったとき、カウントダウンダイスの現在値と同じボーナスを難易度に得ます。このカウントダウンは、PCが魔物への攻撃に失敗したときに進みます。発動したとき、分身は消え去ります。</p>",
                     "actions": {
                         "0We0RCwivLWIQ3OA": {
                             "name": "カウントダウン開始",
@@ -10816,6 +10988,7 @@
                             ]
                         },
                         "WrFrqYo1ggWNCsa2": {
+                            "name": "分身の効果",
                             "description": "<p>魔族が攻撃の対象となったとき、カウントダウンダイスの現在の値に等しいボーナスを難易度に得ます。PCが魔族への攻撃に失敗したとき、カウントダウンが1つ進みます。発動したとき、分身は消えます。</p>"
                         }
                     },
@@ -10828,6 +11001,7 @@
                 },
                 "HgYCE5gF4IbxD2ue": {
                     "name": "閃光の爪",
+                    "description": "<p><strong>恐怖を1消費</strong>して、魔物に魔法のエネルギーの弧を放たせます。近距離以内のすべての対象に攻撃ロールを行います。この攻撃が成功した対象は<strong>3d20</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "3ncWZTw5mfqhLF1L": {
                             "name": "恐怖を消費する",
@@ -10840,6 +11014,8 @@
                     }
                 },
                 "VoacJyH0xZfyolpc": {
+                    "name": "心の弄び",
+                    "description": "<p>超近距離の外から魔物を対象とする攻撃が恐怖とともに成功したとき、<strong>ストレスを1マーク</strong>して、魔物を超近距離以内のPCと即座に入れ替えられます。そのPCが代わりにダメージを受けます。</p>",
                     "actions": {
                         "mDk0vZGbOC7hx2rf": {
                             "name": "ストレスをマーク"
@@ -10850,8 +11026,16 @@
         },
         "Shark": {
             "_note": "Shark",
+            "name": "サメ",
+            "description": "<p>常に動き続ける、大型の水棲の捕食者。</p>",
+            "motivesAndTactics": "血を見つける、獲物を孤立させる、弱い者を狙う",
             "attack": {
                 "name": "牙の顎"
+            },
+            "experiences": {
+                "lHr0FWThbG3SwYX1": {
+                    "name": "嗅覚"
+                }
             },
             "items": {
                 "w46d3D2gXUIJh2GH": {
@@ -10869,6 +11053,7 @@
                     }
                 },
                 "zT4AOW20LPlDoncy": {
+                    "name": "引き裂く一噛み",
                     "description": "<p>@Lookup[@name]が攻撃に成功したとき、対象は鎧スロットを1つ、その恩恵を受けずにマークしなければなりません（鎧によるダメージ軽減は行えます）。鎧スロットをマークできない場合、HPを1つ追加でマークしなければなりません。</p>",
                     "actions": {
                         "a0gC7uWycUB2NgKS": {
@@ -10877,6 +11062,8 @@
                     }
                 },
                 "LBKPfi8XktBAwbrt": {
+                    "name": "水中の血",
+                    "description": "<p>@Lookup[@name]から近距離以内のクリーチャーが他のクリーチャーの攻撃でHPをマークしたとき、<strong>ストレスを1マーク</strong>して、直ちに@Lookup[@name]にスポットライトを当て、その対象の近接距離まで移動させて通常の攻撃を行わせられます。</p>",
                     "actions": {
                         "K8MhGxVJxLaNRqm1": {
                             "name": "ストレスをマーク"
@@ -10887,8 +11074,21 @@
         },
         "Siren": {
             "_note": "Siren",
+            "name": "セイレーン",
+            "description": "<p>煌めく鱗と抗いがたい声を持つ、半身が魚の人。</p>",
+            "motivesAndTactics": "喰らう、獲物を誘う、歌で抑え込む",
+            "attack": {
+                "name": "大きく開いた顎での噛みつき"
+            },
+            "experiences": {
+                "Tt1Q4CuzohevsgKo": {
+                    "name": "歌の数々"
+                }
+            },
             "items": {
                 "Zc3PFPTgKRX03Fx6": {
+                    "name": "逃げられぬ聴衆",
+                    "description": "<p>@Lookup[@name]が、その歌に聞き惚れている対象へ通常の攻撃を行った場合、その攻撃は通常のダメージの代わりに<strong>2d10+1</strong>のダメージを与えます。</p>",
                     "actions": {
                         "FxWbdt0hRNv2k9Pm": {
                             "name": "攻撃"
@@ -10897,6 +11097,7 @@
                 },
                 "Ks3HpB4W1l5FqR7p": {
                     "name": "魅惑の歌",
+                    "description": "<p><strong>恐怖を1消費</strong>して、近距離以内のすべての対象に影響する歌を歌います。対象は直感リアクションロールに成功しなければ、ストレスを2マークするまで「聞き惚れ」状態になります。その対象から近距離以内にいる他の@Lookup[@name]は、それぞれ<strong>ストレスを1マーク</strong>して、そのリアクションロールの難易度に＋1のボーナスを加えられます。「聞き惚れ」のあいだ、対象は行動できず、<em>脆弱</em>です。</p>",
                     "actions": {
                         "FY8K8Nsg0TKAWok8": {
                             "name": "セーブを振る",
@@ -10909,7 +11110,9 @@
                     },
                     "effects": {
                         "xrm5786ckKbMYHjn": {
-                            "name": "陶酔"
+                            "name": "陶酔",
+                            "description": "<p>「聞き惚れ」のあいだ、行動できず、<em>脆弱</em>です。</p>",
+                            "durationDescription": "<p>ストレスを2マークするまで。</p>"
                         }
                     }
                 }
