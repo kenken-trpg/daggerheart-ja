@@ -6111,6 +6111,9 @@
         },
         "Guahalan Alebrujo": {
             "_note": "Guahalan Alebrujo",
+            "name": "グアハランのアレブルホ",
+            "description": "<p>多くの動物から形づくられた、巨大で色鮮やかな混成獣。</p>",
+            "motivesAndTactics": "破壊する、容赦しない、荒らし回る",
             "attack": {
                 "name": "牙と爪"
             },
@@ -6134,6 +6137,8 @@
                     }
                 },
                 "dEI9ygpdwMr8lijU": {
+                    "name": "グアハランの供犠",
+                    "description": "<p><strong>恐怖を1消費</strong>して、アレブルホに超近距離以内のミニオンを喰らわせ、HPまたはストレスを1つ消します。</p>",
                     "actions": {
                         "kuQUSh5LEqv0Bx9G": {
                             "name": "HPを消す"
@@ -6141,12 +6146,11 @@
                         "khHHskaARNgp0iVf": {
                             "name": "ストレスを消す"
                         }
-                    },
-                    "name": "グアハランの供犠",
-                    "description": "<p><strong>恐怖を1消費</strong>して、アレブルホに超近距離以内のミニオンを喰らわせ、HPまたはストレスを1つ消します。</p>"
+                    }
                 },
                 "UYKbaPpVUFhcuZRw": {
                     "name": "グアハラの遠吠え",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、アレブルホに吠え声を上げさせます。遠距離以内の各PCは、社交リアクションロールに成功しなければ一時的に「恐慌」状態になります。「恐慌」のあいだ、PCはスポットライトを得たときストレスを1マークしなければなりません。</p>",
                     "actions": {
                         "29EzB9hySo3ENaxz": {
                             "name": "ストレスをマーク",
@@ -6162,10 +6166,11 @@
                             "name": "新しい効果",
                             "description": "<p>「恐慌」のあいだ、スポットライトを得たときストレスを1マークしなければなりません。</p>"
                         }
-                    },
-                    "description": "<p><strong>ストレスを1マーク</strong>して、アレブルホに吠え声を上げさせます。遠距離以内の各PCは、社交リアクションロールに成功しなければ一時的に「恐慌」状態になります。「恐慌」のあいだ、PCはスポットライトを得たときストレスを1マークしなければなりません。</p>"
+                    }
                 },
                 "YuGPhd2TzfgkQcUU": {
+                    "name": "裂き、引き千切る",
+                    "description": "<p><strong>恐怖を1消費</strong>して、有利を得て通常の攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して、射程内の別の対象にもう一度通常の攻撃を行えます。アレブルホが攻撃ロールに失敗するまで、ストレスをマークし続けて攻撃を続けられます。</p>",
                     "actions": {
                         "Ya7QHJy9ix2bxH1F": {
                             "name": "恐怖を消費する"
@@ -6173,12 +6178,11 @@
                         "pKkPT8YCoYFOkIms": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "裂き、引き千切る",
-                    "description": "<p><strong>恐怖を1消費</strong>して、有利を得て通常の攻撃を行います。成功した場合、<strong>ストレスを1マーク</strong>して、射程内の別の対象にもう一度通常の攻撃を行えます。アレブルホが攻撃ロールに失敗するまで、ストレスをマークし続けて攻撃を続けられます。</p>"
+                    }
                 },
                 "MWKOMQKsRKY2Kk3Y": {
                     "name": "残虐な見世物",
+                    "description": "<p>アレブルホが重傷ダメージを与えたとき、<strong>恐怖を1消費</strong>して、近距離以内のすべての対象にストレスを1マークさせられます。</p>",
                     "actions": {
                         "nyKqVvmXFQ9TvChE": {
                             "name": "恐怖を消費する",
@@ -6188,16 +6192,15 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p>アレブルホが重傷ダメージを与えたとき、<strong>恐怖を1消費</strong>して、近距離以内のすべての対象にストレスを1マークさせられます。</p>"
+                    }
                 }
-            },
-            "name": "グアハランのアレブルホ",
-            "description": "<p>多くの動物から形づくられた、巨大で色鮮やかな混成獣。</p>",
-            "motivesAndTactics": "破壊する、容赦しない、荒らし回る"
+            }
         },
         "Guahalan Fang Lord": {
             "_note": "Guahalan Fang Lord",
+            "name": "グアハランの牙の君",
+            "description": "<p>戦士の一団を率いて戦場に赴く、姿を変える軍将。</p>",
+            "motivesAndTactics": "味方を強める、群れを率いる、兵を鼓舞する",
             "attack": {
                 "name": "スピア"
             },
@@ -6210,8 +6213,13 @@
                 }
             },
             "items": {
+                "YAEDgiRcxB9Y5Xpv": {
+                    "name": "群れの長",
+                    "description": "<p>プール。牙の君が攻撃に成功したとき、グアハラン・プールにトークンを1つ加えます。近距離以内のグアハランの味方が攻撃を行うとき、グアハラン・プールからトークンを1つ消費して、そのロールに有利を与えられます。</p>"
+                },
                 "rCBSR2N71oJ48cck": {
                     "name": "獣を解き放つ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、牙の君に獣の姿をとらせます。この姿の間、牙の君はマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>",
                     "actions": {
                         "WIylcqyP0lrVHQB6": {
                             "name": "恐怖を消費する"
@@ -6222,34 +6230,31 @@
                             "name": "獣を解き放つ",
                             "description": "<p>この形態の間、マークしているストレスの数に等しいボーナスを攻撃ロールとダメージロールに得ます。さらに、行動する前に近距離ではなく遠距離まで移動できます。</p>"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して、牙の君に獣の姿をとらせます。この姿の間、牙の君はマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>"
+                    }
                 },
                 "yQ5EicZ0Iug3HgOO": {
+                    "name": "グアハラの呼び声",
+                    "description": "<p><strong>恐怖を2消費</strong>して、近距離以内のすべてのグアハランの変身者にスポットライトを当てます。それぞれが射程内の対象に通常の攻撃を行います。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>",
                     "actions": {
                         "jGbqijMmZwZGmxin": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "グアハラの呼び声",
-                    "description": "<p><strong>恐怖を2消費</strong>して、近距離以内のすべてのグアハランの変身者にスポットライトを当てます。それぞれが射程内の対象に通常の攻撃を行います。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>"
-                },
-                "YAEDgiRcxB9Y5Xpv": {
-                    "name": "群れの長",
-                    "description": "<p>プール。牙の君が攻撃に成功したとき、グアハラン・プールにトークンを1つ加えます。近距離以内のグアハランの味方が攻撃を行うとき、グアハラン・プールからトークンを1つ消費して、そのロールに有利を与えられます。</p>"
+                    }
                 },
                 "bRC0lNqjPVIVMW1u": {
                     "name": "獣の姿（形態変化）",
                     "description": "<p>牙の君が最後のHPをマークしたとき、それをグアハランのアレブルホに置き換え、直ちにスポットライトを当てます。</p>"
                 }
-            },
-            "name": "グアハランの牙の君",
-            "description": "<p>戦士の一団を率いて戦場に赴く、姿を変える軍将。</p>",
-            "motivesAndTactics": "味方を強める、群れを率いる、兵を鼓舞する"
+            }
         },
         "Guahalan Shifter": {
             "_note": "Guahalan Shifter",
+            "name": "グアハランの変身者",
+            "description": "<p>獣じみた特徴を持つ、仮面をつけた姿を変える戦士。</p>",
             "motivesAndTactics": "逃げる、儲ける、煙幕を張る",
+            "attack": {
+                "name": "戦棍"
+            },
             "experiences": {
                 "5eURENe7f4fFMEf2": {
                     "name": "狩人"
@@ -6261,6 +6266,7 @@
             "items": {
                 "hm59cVjpGREZwPQ8": {
                     "name": "獣を解き放つ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、変身者にさらに獣じみた姿をとらせます。この姿の間、変身者はマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>",
                     "actions": {
                         "TCb0zNkc1rx6Op4f": {
                             "name": "恐怖を消費する"
@@ -6271,27 +6277,27 @@
                             "name": "獣を解き放つ",
                             "description": "<p>この形態の間、マークしているストレスの数に等しいボーナスを攻撃ロールとダメージロールに得ます。さらに、行動する前に近距離ではなく遠距離まで移動できます。</p>"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して、変身者にさらに獣じみた姿をとらせます。この姿の間、変身者はマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>"
+                    }
                 },
                 "bKQurrqEhequsRvi": {
+                    "name": "群れの攻撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、通常の攻撃を行います。成功した場合、その攻撃は対象から超近距離以内にいる他の変身者の数と同じダメージのボーナスを得ます。</p>",
                     "actions": {
                         "lzlCBhfULidJL9qI": {
                             "name": "ストレスをマーク"
                         }
-                    },
-                    "name": "群れの攻撃",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、通常の攻撃を行います。成功した場合、その攻撃は対象から超近距離以内にいる他の変身者の数と同じダメージのボーナスを得ます。</p>"
+                    }
                 }
-            },
-            "name": "グアハランの変身者",
-            "description": "<p>獣じみた特徴を持つ、仮面をつけた姿を変える戦士。</p>",
-            "attack": {
-                "name": "戦棍"
             }
         },
         "Guahalan Spirit Beast": {
             "_note": "Guahalan Spirit Beast",
+            "name": "グアハランの霊獣",
+            "description": "<p>動物の姿をした、鮮やかな色の霊。</p>",
+            "motivesAndTactics": "守る、身を捧げる、取り囲む",
+            "attack": {
+                "name": "噛みつきと爪"
+            },
             "items": {
                 "e0A5dvoGSfLTKUfj": {
                     "name": "ミニオン（5）",
@@ -6313,34 +6319,40 @@
                 },
                 "MsyovuEmk2sl1ZxU": {
                     "name": "獣の爆弾",
+                    "description": "<p>霊獣が倒されたとき、白い炎となって爆発し、近接距離以内のクリーチャーに5の魔法ダメージを与えます。</p>",
                     "actions": {
                         "nKOB7RlQSd795y7F": {
+                            "name": "爆発する",
                             "areas": [
                                 {
                                     "name": "獣の爆弾"
                                 }
-                            ],
-                            "name": "爆発する"
+                            ]
                         }
-                    },
-                    "description": "<p>霊獣が倒されたとき、白い炎となって爆発し、近接距離以内のクリーチャーに5の魔法ダメージを与えます。</p>"
+                    }
                 }
-            },
-            "name": "グアハランの霊獣",
-            "description": "<p>動物の姿をした、鮮やかな色の霊。</p>",
-            "motivesAndTactics": "守る、身を捧げる、取り囲む",
-            "attack": {
-                "name": "噛みつきと爪"
             }
         },
         "Guahalan Spirit Singer": {
             "_note": "Guahalan Spirit Singer",
+            "name": "グアハランの霊歌い",
+            "description": "<p>獣じみた特徴を持つ、姿を変える召喚術師。</p>",
+            "motivesAndTactics": "退ける、強める、召喚する",
             "attack": {
                 "name": "霊の炎"
+            },
+            "experiences": {
+                "wlEduFI4VQ0xjWtu": {
+                    "name": "儀式"
+                },
+                "sMR5u8CeFlS3SMzJ": {
+                    "name": "古代史"
+                }
             },
             "items": {
                 "Yrqv87f6puOCxm10": {
                     "name": "獣を解き放つ",
+                    "description": "<p><strong>恐怖を1消費</strong>して、霊歌いにさらに獣じみた姿をとらせます。この姿の間、霊歌いはマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>",
                     "actions": {
                         "t9xXl4LL3AZi9jwd": {
                             "name": "恐怖を消費する"
@@ -6351,20 +6363,20 @@
                             "name": "獣を解き放つ",
                             "description": "<p>この形態の間、マークしているストレスの数に等しいボーナスを攻撃ロールとダメージロールに得ます。さらに、行動する前に近距離ではなく遠距離まで移動できます。</p>"
                         }
-                    },
-                    "description": "<p><strong>恐怖を1消費</strong>して、霊歌いにさらに獣じみた姿をとらせます。この姿の間、霊歌いはマークしているストレスの数と同じボーナスを攻撃ロールとダメージロールに得ます。さらに、アクションを行う前に近距離ではなく遠距離まで移動できます。</p>"
+                    }
                 },
                 "caJPsyCr135shtxb": {
+                    "name": "獣を呼ぶ者",
+                    "description": "<p><strong>恐怖を1消費</strong>して、霊歌いに超近距離以内へグアハランの霊獣を<strong>2d4</strong>体召喚させ、直ちに1体にスポットライトを当てます。</p>",
                     "actions": {
                         "RdekCPAM3sRbM7Vv": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "獣を呼ぶ者",
-                    "description": "<p><strong>恐怖を1消費</strong>して、霊歌いに超近距離以内へグアハランの霊獣を<strong>2d4</strong>体召喚させ、直ちに1体にスポットライトを当てます。</p>"
+                    }
                 },
                 "7cdY7q2H3EknbG3A": {
                     "name": "霊たちの怒り",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の任意の数のグアハランの霊獣にスポットライトを当て、それぞれを最も近いPCの近接距離まで移動させて通常の攻撃を行わせます。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>",
                     "actions": {
                         "p73h76x2G0lGMJpV": {
                             "name": "ストレスをマーク",
@@ -6374,66 +6386,66 @@
                                 }
                             ]
                         }
-                    },
-                    "description": "<p><strong>ストレスを1マーク</strong>して、超近距離以内の任意の数のグアハランの霊獣にスポットライトを当て、それぞれを最も近いPCの近接距離まで移動させて通常の攻撃を行わせます。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>"
+                    }
                 },
                 "IXX7AivO001xb0DP": {
+                    "name": "霊の供犠",
+                    "description": "<p>霊歌いがグアハランの霊獣から超近距離以内にいる間にダメージを受けようとするとき、<strong>恐怖を1消費</strong>して、その霊獣を犠牲にしてそのダメージを無効にできます。</p>",
                     "actions": {
                         "2AUWa9djQNaz85fL": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "霊の供犠",
-                    "description": "<p>霊歌いがグアハランの霊獣から超近距離以内にいる間にダメージを受けようとするとき、<strong>恐怖を1消費</strong>して、その霊獣を犠牲にしてそのダメージを無効にできます。</p>"
-                }
-            },
-            "name": "グアハランの霊歌い",
-            "description": "<p>獣じみた特徴を持つ、姿を変える召喚術師。</p>",
-            "motivesAndTactics": "退ける、強める、召喚する",
-            "experiences": {
-                "wlEduFI4VQ0xjWtu": {
-                    "name": "儀式"
-                },
-                "sMR5u8CeFlS3SMzJ": {
-                    "name": "古代史"
+                    }
                 }
             }
         },
         "Hallowed Archer": {
             "_note": "Hallowed Archer",
-            "items": {
-                "FGJTAeL38zTVd4fA": {
-                    "name": "罪ある者を罰す",
-                    "effects": {
-                        "ID85zoIa5GfhNMti": {
-                            "name": "罪ある者を罰す",
-                            "description": "<p>聖なる射手は、高位セラフによって「罪あり」と印された対象に2倍のダメージを与えます。</p>"
-                        }
-                    },
-                    "description": "<p>@Lookup[@name]は、高位セラフによって「罪あり」と印された対象に2倍のダメージを与えます。</p>"
-                },
-                "Ye35DuZroQfeFoNw": {
-                    "actions": {
-                        "pQLfy0I6sZhgAoIm": {
-                            "name": "ストレスをマーク"
-                        }
-                    },
-                    "name": "神なる一斉射",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、最大3体の対象に通常の攻撃を行います。</p>"
-                }
-            },
             "name": "聖なる射手",
             "description": "<p>聖別された弓を持つ霊の兵士たち。</p>",
             "motivesAndTactics": "集中射撃する、従う、位置を変える、一斉射する",
             "attack": {
                 "name": "聖別された長弓"
+            },
+            "items": {
+                "FGJTAeL38zTVd4fA": {
+                    "name": "罪ある者を罰す",
+                    "description": "<p>@Lookup[@name]は、高位セラフによって「罪あり」と印された対象に2倍のダメージを与えます。</p>",
+                    "effects": {
+                        "ID85zoIa5GfhNMti": {
+                            "name": "罪ある者を罰す",
+                            "description": "<p>聖なる射手は、高位セラフによって「罪あり」と印された対象に2倍のダメージを与えます。</p>"
+                        }
+                    }
+                },
+                "Ye35DuZroQfeFoNw": {
+                    "name": "神なる一斉射",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、最大3体の対象に通常の攻撃を行います。</p>",
+                    "actions": {
+                        "pQLfy0I6sZhgAoIm": {
+                            "name": "ストレスをマーク"
+                        }
+                    }
+                }
             }
         },
         "Hallowed Choir": {
             "_note": "Hallowed Choir",
+            "name": "聖なる聖歌隊",
+            "description": "<p>有翼の人型の天の軍勢。その歌声は宗教的な畏れの涙を呼び起こす。</p>",
+            "motivesAndTactics": "不信を歌でかき消す、声を高める",
+            "attack": {
+                "name": "聖歌の衝撃"
+            },
+            "experiences": {
+                "CVm00cg54kyn1m1K": {
+                    "name": "音楽"
+                }
+            },
             "items": {
                 "5oqRLicTNnITxlwx": {
                     "name": "天の終句",
+                    "description": "<p>カウントダウン（ループ 3）。聖歌隊の神なる歌は、繰り返すごとに自ら積み上がっていきます。聖歌隊が最初に現れたとき、カウントダウンを開始します。これはPCが希望を得たときに進みます。発動したとき、このステータスブロックにトークンを1つ置きます。聖歌隊は、このステータスブロック上のトークンの数と同じボーナスをダメージロールに得ます。</p>",
                     "actions": {
                         "TqM6TJH5SOvsh2yf": {
                             "name": "カウントダウン開始",
@@ -6453,8 +6465,11 @@
                             "name": "天の終句",
                             "description": "<p>聖歌隊は、このステータスブロック上のトークンの数と同じボーナスをダメージロールに得ます。</p>"
                         }
-                    },
-                    "description": "<p>カウントダウン（ループ 3）。聖歌隊の神なる歌は、繰り返すごとに自ら積み上がっていきます。聖歌隊が最初に現れたとき、カウントダウンを開始します。これはPCが希望を得たときに進みます。発動したとき、このステータスブロックにトークンを1つ置きます。聖歌隊は、このステータスブロック上のトークンの数と同じボーナスをダメージロールに得ます。</p>"
+                    }
+                },
+                "cOwcBvzgs3GYGxKE": {
+                    "name": "音響の猛攻",
+                    "description": "<p>聖歌隊は積み上げた神なるエネルギーを一度の爆発で解き放ち、このステータスブロックからトークンをすべて消します。消したトークン1つごとに、近距離以内の各敵に<strong>1d12</strong>の直接魔法ダメージを与えます。</p>"
                 },
                 "G1eSLlU2Qr7ZIPTH": {
                     "name": "群れ",
@@ -6464,26 +6479,17 @@
                             "name": "群れ"
                         }
                     }
-                },
-                "cOwcBvzgs3GYGxKE": {
-                    "name": "音響の猛攻",
-                    "description": "<p>聖歌隊は積み上げた神なるエネルギーを一度の爆発で解き放ち、このステータスブロックからトークンをすべて消します。消したトークン1つごとに、近距離以内の各敵に<strong>1d12</strong>の直接魔法ダメージを与えます。</p>"
-                }
-            },
-            "name": "聖なる聖歌隊",
-            "description": "<p>有翼の人型の天の軍勢。その歌声は宗教的な畏れの涙を呼び起こす。</p>",
-            "motivesAndTactics": "不信を歌でかき消す、声を高める",
-            "attack": {
-                "name": "聖歌の衝撃"
-            },
-            "experiences": {
-                "CVm00cg54kyn1m1K": {
-                    "name": "音楽"
                 }
             }
         },
         "Hallowed Soldier": {
             "_note": "Hallowed Soldier",
+            "name": "聖なる兵士",
+            "description": "<p>神なる武具をまとって引き上げられた、信徒たちの魂。</p>",
+            "motivesAndTactics": "従う、動きで上回る、罰する、群がる",
+            "attack": {
+                "name": "剣と盾"
+            },
             "items": {
                 "3QmaqgI6imRUvb7M": {
                     "name": "ミニオン（13）",
@@ -6507,19 +6513,25 @@
                         }
                     }
                 }
-            },
-            "name": "聖なる兵士",
-            "description": "<p>神なる武具をまとって引き上げられた、信徒たちの魂。</p>",
-            "motivesAndTactics": "従う、動きで上回る、罰する、群がる",
-            "attack": {
-                "name": "剣と盾"
             }
         },
         "Harbinger Of Death": {
             "_note": "Harbinger Of Death",
+            "name": "死の先触れ",
+            "description": "<p>骸骨の馬にまたがる干涸びた死体。両目は縫い閉じられ、体は塵と灰の埋葬布に包まれている。</p>",
+            "motivesAndTactics": "裁きを下す、斬り倒す、素早く動く、執念深く追う、魂を奪う",
+            "attack": {
+                "name": "大鎌"
+            },
+            "experiences": {
+                "VCmn6cyRzOrO0V3V": {
+                    "name": "裁き"
+                }
+            },
             "items": {
                 "DPsV47Ah9MHukhVe": {
-                    "name": "リレントレス（3）"
+                    "name": "リレントレス（3）",
+                    "description": "<p>先触れはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
                 "vI14KIZ1C0GnyQpR": {
                     "name": "乗騎",
@@ -6537,27 +6549,18 @@
                         }
                     }
                 },
+                "C7cdkWta8kLGaqXn": {
+                    "name": "死神を恐れよ",
+                    "description": "<p>先触れから遠距離以内でクリーチャーが倒されたとき、あなたは恐怖を1得ます。</p>"
+                },
                 "Dq0jQoARqtYf1drc": {
+                    "name": "首を刈る",
+                    "description": "<p><strong>恐怖を2消費</strong>して、先触れに近接距離以内のPCへ攻撃ロールを行わせます。成功した場合、<strong>[[/r d6]]</strong>をロールします。結果が6の場合、その対象はHPをすべてマークし、デスムーブを行わなければなりません。</p>",
                     "actions": {
                         "gpU4E159CzF9IZUG": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "首を刈る",
-                    "description": "<p><strong>恐怖を2消費</strong>して、先触れに近接距離以内のPCへ攻撃ロールを行わせます。成功した場合、<strong>[[/r d6]]</strong>をロールします。結果が6の場合、その対象はHPをすべてマークし、デスムーブを行わなければなりません。</p>"
-                },
-                "N2eKN7QmOdB1ZBat": {
-                    "actions": {
-                        "ERKcJSjuYXLL7lwI": {
-                            "name": "ストレスをマーク"
-                        }
-                    },
-                    "name": "灰は灰に、塵は塵に",
-                    "description": "<p>先触れがHPをマークしようとするとき、<strong>ストレスを1マーク</strong>して、遠距離以内の味方に代わりにそのHPをマークさせられます。</p>"
-                },
-                "C7cdkWta8kLGaqXn": {
-                    "name": "死神を恐れよ",
-                    "description": "<p>先触れから遠距離以内でクリーチャーが倒されたとき、あなたは恐怖を1得ます。</p>"
+                    }
                 },
                 "FHxhsBvJfrWsKGx5": {
                     "name": "倒れた者を起こせ",
@@ -6567,22 +6570,34 @@
                             "name": "味方を蘇らせる"
                         }
                     }
-                }
-            },
-            "name": "死の先触れ",
-            "description": "<p>骸骨の馬にまたがる干涸びた死体。両目は縫い閉じられ、体は塵と灰の埋葬布に包まれている。</p>",
-            "motivesAndTactics": "裁きを下す、斬り倒す、素早く動く、執念深く追う、魂を奪う",
-            "attack": {
-                "name": "大鎌"
-            },
-            "experiences": {
-                "VCmn6cyRzOrO0V3V": {
-                    "name": "裁き"
+                },
+                "N2eKN7QmOdB1ZBat": {
+                    "name": "灰は灰に、塵は塵に",
+                    "description": "<p>先触れがHPをマークしようとするとき、<strong>ストレスを1マーク</strong>して、遠距離以内の味方に代わりにそのHPをマークさせられます。</p>",
+                    "actions": {
+                        "ERKcJSjuYXLL7lwI": {
+                            "name": "ストレスをマーク"
+                        }
+                    }
                 }
             }
         },
         "Harbinger Of Famine": {
             "_note": "Harbinger Of Famine",
+            "name": "飢餓の先触れ",
+            "description": "<p>枯れた白馬にまたがる、干上がった殻のような体。全身が口に覆われ、群がる蠅に囲まれている。</p>",
+            "motivesAndTactics": "吸い取る、貧しくする、弱らせる、枯らす",
+            "attack": {
+                "name": "鉤付きの鞭打ち"
+            },
+            "experiences": {
+                "yVqhwfXLXssnmmdn": {
+                    "name": "飢え"
+                },
+                "EPx7yMYBbr7rGbrM": {
+                    "name": "渇き"
+                }
+            },
             "items": {
                 "eQxHqyIAxS8YL4on": {
                     "name": "リレントレス（2）",
@@ -6590,6 +6605,7 @@
                 },
                 "jALBcE8dCmRLWsfW": {
                     "name": "飢えの痛み",
+                    "description": "<p>カウントダウン（減少 6）。先触れが現れたとき、カウントダウンを開始します。これは先触れにスポットライトが当たったときに進みます。発動したとき、遠距離以内のすべてのPCはストレスを1マークし、「飢渇」状態になります。「飢渇」のあいだ、PCは直感ロールに成功してこの状態を消すまで希望を消費できません。</p>",
                     "actions": {
                         "bGu2SoZLSdOKsAjm": {
                             "name": "カウントダウン開始",
@@ -6613,19 +6629,20 @@
                             "name": "貪欲",
                             "description": "<p>「飢渇」のあいだ、PCは直感ロールに成功してこの状態を消すまで希望を消費できません。</p>"
                         }
-                    },
-                    "description": "<p>カウントダウン（減少 6）。先触れが現れたとき、カウントダウンを開始します。これは先触れにスポットライトが当たったときに進みます。発動したとき、遠距離以内のすべてのPCはストレスを1マークし、「飢渇」状態になります。「飢渇」のあいだ、PCは直感ロールに成功してこの状態を消すまで希望を消費できません。</p>"
+                    }
                 },
                 "4skXuiYVQGCEGyfP": {
+                    "name": "精髄を吸い取る",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCを最大3人選びます。各対象は<strong>4d6</strong>の魔法ダメージを受けます。</p>",
                     "actions": {
                         "batSgpaGtySlWx5H": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "精髄を吸い取る",
-                    "description": "<p><strong>恐怖を1消費</strong>して、PCを最大3人選びます。各対象は<strong>4d6</strong>の魔法ダメージを受けます。</p>"
+                    }
                 },
                 "0BirBknShzjOvSdz": {
+                    "name": "あまりに多くの口",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内のPCを攻撃します。成功した場合、先触れはその対象を掴んで噛みつき、<strong>4d6</strong>の物理ダメージを与え、対象が頑強ロールに成功して振り払うまで<em>拘束</em>します。</p>",
                     "actions": {
                         "eZUzkDgdSJWwlO3F": {
                             "name": "ストレスをマーク"
@@ -6636,18 +6653,16 @@
                             "name": "掴まれ",
                             "description": "<p>頑強ロールに成功して振り払うまで<em>拘束</em>されています。</p>"
                         }
-                    },
-                    "name": "あまりに多くの口",
-                    "description": "<p><strong>ストレスを1マーク</strong>して、近接距離以内のPCを攻撃します。成功した場合、先触れはその対象を掴んで噛みつき、<strong>4d6</strong>の物理ダメージを与え、対象が頑強ロールに成功して振り払うまで<em>拘束</em>します。</p>"
+                    }
                 },
                 "lbwK2we0LKpFP7mx": {
+                    "name": "枯らす手",
+                    "description": "<p><strong>恐怖を1消費</strong>して、先触れに近接距離以内の<em>拘束</em>されたPCの顔を撫でさせます。その対象はストレスを2マークし、希望を1失うか、HPを<strong>[[/r 1d4]]</strong>マークします。</p>",
                     "actions": {
                         "hWpjEQlwOjx9Tvel": {
                             "name": "恐怖を消費する"
                         }
-                    },
-                    "name": "枯らす手",
-                    "description": "<p><strong>恐怖を1消費</strong>して、先触れに近接距離以内の<em>拘束</em>されたPCの顔を撫でさせます。その対象はストレスを2マークし、希望を1失うか、HPを<strong>[[/r 1d4]]</strong>マークします。</p>"
+                    }
                 },
                 "9xewwwqEe0SRH5zR": {
                     "name": "乗騎",
@@ -6665,27 +6680,25 @@
                         }
                     }
                 }
-            },
-            "name": "飢餓の先触れ",
-            "description": "<p>枯れた白馬にまたがる、干上がった殻のような体。全身が口に覆われ、群がる蠅に囲まれている。</p>",
-            "motivesAndTactics": "吸い取る、貧しくする、弱らせる、枯らす",
-            "attack": {
-                "name": "鉤付きの鞭打ち"
-            },
-            "experiences": {
-                "yVqhwfXLXssnmmdn": {
-                    "name": "飢え"
-                },
-                "EPx7yMYBbr7rGbrM": {
-                    "name": "渇き"
-                }
             }
         },
         "Harbinger Of Pestilence": {
             "_note": "Harbinger Of Pestilence",
+            "name": "疫病の先触れ",
+            "description": "<p>蛆の食った馬にまたがる、うごめく虫とナメクジが膨れ上がって腐り、ひとつの人型の塊となったもの。</p>",
+            "motivesAndTactics": "清きものを汚す、弱き者に感染させる、疫病と病を呼ぶ",
+            "attack": {
+                "name": "汚染の手"
+            },
+            "experiences": {
+                "qVZiQNLqy5vfBICe": {
+                    "name": "腐敗"
+                }
+            },
             "items": {
                 "JIjSpCGXzAyayyGP": {
                     "name": "感染の光輪",
+                    "description": "<p>先触れは「感染源」です。「感染源」のクリーチャーから超近距離以内にいるPCがアクションを取ったとき、そのPCは<strong>[[/r d6]]</strong>をロールします。結果が1の場合、そのPCは「感染源」になります。「感染源」のあいだ、PCは<strong>希望を3消費</strong>してこの状態を消すまで、アクションロールに不利を得ます。「感染源」の敵対者はこの状態の影響を受けません。</p>",
                     "actions": {
                         "LaPHSgoEFRB22LRV": {
                             "name": "起動する",
@@ -6694,10 +6707,16 @@
                                     "name": "感染の光輪"
                                 }
                             ]
+                        },
+                        "MaE2uIQSufLqgPIM": {
+                            "name": "感染を適用する",
+                            "description": "<p>結果が1の場合、そのPCは「感染源」になります。「感染源」のあいだ、PCは<strong>希望を3消費</strong>してこの状態を消すまで、アクションロールに不利を得ます。「感染源」の敵対者はこの状態の影響を受けません。</p>"
                         }
                     },
                     "effects": {
                         "WYScx3su3JfFwfWq": {
+                            "name": "感染源",
+                            "description": "<p>「感染源」のあいだ、PCは<strong>希望を3消費</strong>してこの状態を消すまで、アクションロールに不利を得ます。「感染源」の敵対者はこの状態の影響を受けません。</p>",
                             "changes": [
                                 "アクションロール"
                             ]
@@ -6706,6 +6725,7 @@
                 },
                 "i5rQALLMNFdptbVX": {
                     "name": "蝗の群れ",
+                    "description": "<p><strong>恐怖を2消費</strong>して、先触れに超遠距離以内の一点へ蝗の群れを呼び出させます。その点から近距離以内の各PCは、鎧スロットを1つマークするか、<strong>4d10</strong>の直接物理ダメージを受けて<strong>[[/r d6]]</strong>をロールしなければなりません。結果が1〜2の場合、そのPCは「感染源」になります。</p>",
                     "actions": {
                         "uqFrkVImp9aSUGAc": {
                             "name": "恐怖を消費する",
@@ -6718,6 +6738,8 @@
                     }
                 },
                 "2BcaxW4N8lAM3rqF": {
+                    "name": "蛙の産卵",
+                    "description": "<p><strong>恐怖を1消費</strong>して、先触れに近距離以内の最大3人のPCの口の中へ病んだ蛙の一群を呼び出させます。各PCは社交リアクションロールに成功しなければ、<strong>4d12</strong>の魔法ダメージを受けて<strong>[[/r d6]]</strong>をロールします。結果が1〜3の場合、そのPCは「感染源」になります。</p>",
                     "actions": {
                         "gB1P87TqFmlBVKrb": {
                             "name": "恐怖を消費する"
@@ -6725,6 +6747,8 @@
                     }
                 },
                 "aQQZlLwA8OOXCJPW": {
+                    "name": "疫病をもたらす者",
+                    "description": "<p>シーン内のPCの人数までの任意の数のストレスをマークします。マークしたストレス1つごとに、先触れは遠距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.YhJrP7rTBiRdX5Fp]{感染源のゾンビ軍団}を<strong>1d4</strong>体召喚し、直ちにそのうち1体にスポットライトを当てます。</p>",
                     "actions": {
                         "pXOB1GZh2FwvU4hS": {
                             "name": "ストレスをマーク"
@@ -6751,6 +6775,17 @@
         },
         "Harbinger Of War": {
             "_note": "Harbinger Of War",
+            "name": "戦の先触れ",
+            "description": "<p>黒い鎧と角の兜をまとい、血に染まった軍旗を掲げる戦士。</p>",
+            "motivesAndTactics": "完全に破壊する、誉れある戦いをする、戦いを愉しむ、盾で打つ、強烈に打つ",
+            "attack": {
+                "name": "戦斧"
+            },
+            "experiences": {
+                "6b30eNHKku3KrAXx": {
+                    "name": "重装鎧"
+                }
+            },
             "items": {
                 "uO2wALRyMQMyoqlO": {
                     "name": "リレントレス（2）",
@@ -6758,18 +6793,25 @@
                 },
                 "l6LkfJH42kh3P2hm": {
                     "name": "鉄の賽",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、先触れに危険を承知の全力攻撃を試みさせます。有利を得て通常の攻撃を行います。成功した場合、対象は追加でHPを1マークします。失敗した場合、先触れはダメージを受けるか与えるまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "7AyuRjYxGqMeNakU": {
                             "name": "ストレスをマーク"
+                        },
+                        "s81xphhZ8KLSCibS": {
+                            "name": "脆弱になる"
                         }
                     },
                     "effects": {
                         "8UvQGEI82P5OvqJ2": {
-                            "name": "鉄の賽"
+                            "name": "鉄の賽",
+                            "description": "<p>先触れはダメージを受けるか与えるまで<em>脆弱</em>になります。</p>"
                         }
                     }
                 },
                 "TCJ1CG5eNfGuxrsG": {
+                    "name": "最高指揮官",
+                    "description": "<p>シーンごとに1回、<strong>恐怖を1消費</strong>して、近距離以内に聖なる兵士を<strong>1d6</strong>体召喚し、直ちにそのうち1体にスポットライトを当てます。</p>",
                     "actions": {
                         "lVMwHvsuX6Gn2PRl": {
                             "name": "恐怖を消費する"
@@ -6778,6 +6820,7 @@
                 },
                 "yZG0sINlKXLMaYlB": {
                     "name": "破城槌",
+                    "description": "<p>近距離以内でPCがアクションロールに失敗したとき、<strong>恐怖を1消費</strong>して、そのPCの近接距離まで移動し、有利を得て通常の攻撃を行えます。成功した場合、そのPCは通常のダメージを受け、スポットライトが当たるまで<em>脆弱</em>になります。</p>",
                     "actions": {
                         "tWHtWiFPG1twBJBo": {
                             "name": "恐怖を消費する"
@@ -6785,6 +6828,7 @@
                     },
                     "effects": {
                         "KPdvW2jbVU1RxOXz": {
+                            "name": "打ちのめされた",
                             "description": "<p>スポットライトが当たるまで<em>脆弱</em>です。</p>"
                         }
                     }
@@ -6809,13 +6853,24 @@
         },
         "Harpy": {
             "_note": "Harpy",
+            "name": "ハーピー",
+            "description": "<p>8フィートの翼を広げ、人の上半身と顔を持つ、荒々しく悪臭を放つ鳥。</p>",
+            "motivesAndTactics": "巣を守る、敵を高所から落とす、空から襲う、絶え間なく叫ぶ",
             "attack": {
                 "name": "鉤爪"
             },
+            "experiences": {
+                "m9QkvQxfRjztXaKG": {
+                    "name": "島嶼"
+                }
+            },
             "items": {
                 "Lx1ZNmwu5BfS48AD": {
+                    "name": "毒のオーラ",
+                    "description": "<p>@Lookup[@name]は悪臭を放ち、超近距離以内にいる間、ハーピー以外のすべての者を<em>脆弱</em>にします。</p>",
                     "actions": {
                         "dmvF8Xl8trtYxVYA": {
+                            "name": "悪臭を発する",
                             "areas": [
                                 {
                                     "name": "悪臭"
@@ -6825,12 +6880,14 @@
                     },
                     "effects": {
                         "b1p1GOBQ4VRDKvn6": {
-                            "name": "悪臭"
+                            "name": "悪臭",
+                            "description": "<p>ハーピーは悪臭を放ち、超近距離以内にいる間、ハーピー以外のすべての者を<em>脆弱</em>にします。</p>"
                         }
                     }
                 },
                 "L4R7Hwu3YKS0ySfl": {
                     "name": "急襲",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、@Lookup[@name]を遠距離以内の一点まで一直線に移動させ、@Lookup[@name]の進路上の対象に攻撃を行います。成功した場合、@Lookup[@name]は<strong>3d6</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "ppHoKGu7ZZRPg8K1": {
                             "name": "ストレスをマーク",
@@ -6846,6 +6903,9 @@
         },
         "Harrier": {
             "_note": "Harrier",
+            "name": "追い立て兵",
+            "description": "<p>投槍で武装した、身軽な戦士。</p>",
+            "motivesAndTactics": "側面を取る、追い立てる、距離を保って削る、稼ぐ",
             "attack": {
                 "name": "ジャベリン"
             },
@@ -6855,7 +6915,13 @@
                 }
             },
             "items": {
+                "t9Fa5jKLhvjD8Ar2": {
+                    "name": "距離を保つ",
+                    "description": "<p>通常の攻撃を行ったあと、@Lookup[@name]は遠距離以内のどこへでも移動できます。</p>"
+                },
                 "v8TMp5ATyAjrmJJM": {
+                    "name": "後退",
+                    "description": "<p>クリーチャーが攻撃のために近接距離まで移動したとき、その攻撃ロールの前に<strong>ストレスを1マーク</strong>して、近距離以内のどこへでも移動し、そのクリーチャーに攻撃を行えます。成功した場合、<strong>1d10+2</strong>の物理ダメージを与えます。</p>",
                     "actions": {
                         "FiuiLUbNUL0YKq7w": {
                             "name": "攻撃"
@@ -6866,6 +6932,12 @@
         },
         "Head Guard": {
             "_note": "Head Guard",
+            "name": "衛兵長",
+            "description": "<p>メイスと笛、そして轟くような声を持つ、熟練の衛兵。</p>",
+            "motivesAndTactics": "捕縛する、門を閉じる、縫い止める、栄誉を求める",
+            "attack": {
+                "name": "メイス"
+            },
             "experiences": {
                 "3B8vav5pEdBrxWXw": {
                     "name": "指揮官"
@@ -6877,6 +6949,7 @@
             "items": {
                 "SsgN2qSYpQLR43Cz": {
                     "name": "衛兵を呼び集める",
+                    "description": "<p><strong>恐怖を2消費</strong>して、@Lookup[@name]と遠距離以内の最大<strong>2d4</strong>体の味方にスポットライトを当てます。</p>",
                     "actions": {
                         "lI0lnRb3xrUjqIYX": {
                             "name": "激励",
@@ -6890,6 +6963,7 @@
                 },
                 "YeJ7eJVCKsRxG8mk": {
                     "name": "合図で動け",
+                    "description": "<p><em>カウントダウン（5）</em>。@Lookup[@name]に初めてスポットライトが当たったとき、カウントダウンを開始します。これはPCが攻撃ロールを行ったときに進みます。発動したとき、遠距離以内のすべての弓衛兵が、それぞれの射程内で最も近い対象に有利を得て通常の攻撃を行います。同じ対象への攻撃が複数成功した場合、そのダメージを合計します。</p>",
                     "actions": {
                         "xyhaCmPGiVMsTViH": {
                             "name": "カウントダウン開始",
@@ -6919,6 +6993,9 @@
         },
         "Head Vampire": {
             "_note": "Head Vampire",
+            "name": "吸血鬼の長",
+            "description": "<p>貴族の装いに身を包んだ、人の心を捉える不死者。</p>",
+            "motivesAndTactics": "下僕を作る、魅了する、命じる、飛ぶ、威圧する",
             "attack": {
                 "name": "レイピア"
             },
@@ -6943,6 +7020,8 @@
                     }
                 },
                 "1RfqKn7gYbWbSl0A": {
+                    "name": "我が目を見よ",
+                    "description": "<p>@Lookup[@name]の近接距離まで移動したクリーチャーは、直感リアクションロールを行わなければなりません。失敗した場合、あなたは恐怖を<strong>[[/r 1d4]]</strong>得ます。</p>",
                     "actions": {
                         "lOgkZTR1hybc6bnJ": {
                             "name": "セーブを振る"
@@ -6950,6 +7029,8 @@
                     }
                 },
                 "Oj6qkLG1N6uqQHcx": {
+                    "name": "従者を喰らう",
+                    "description": "<p>@Lookup[@name]が味方の近接距離以内にいるとき、その味方にHPを1マークさせられます。その後、@Lookup[@name]はHPを1つ消します。</p>",
                     "actions": {
                         "tM6TBTtmCXTnIzen": {
                             "name": "HPを消す"
@@ -6957,6 +7038,8 @@
                     }
                 },
                 "IWtpuQCuV82lOSry": {
+                    "name": "狩りの始まりだ",
+                    "description": "<p><strong>恐怖を2消費</strong>して、[[/r 1d4]]体の@UUID[Compendium.daggerheart.adversaries.Actor.WWyUp6Mxl1S3KYUG]{吸血鬼}を召喚します。それらは遠距離に現れ、直ちにスポットライトを得ます。</p>",
                     "actions": {
                         "jGFOnU6PNdWU6iF4": {
                             "name": "恐怖を消費する"
@@ -6965,8 +7048,10 @@
                 },
                 "6FsQf339qGHnz3ZF": {
                     "name": "生命吸い",
+                    "description": "<p>@Lookup[@name]にスポットライトが当たったとき、<strong>d8</strong>をロールします。結果が6以上の場合、超近距離以内のすべての対象はHPを1マークしなければなりません。</p>",
                     "actions": {
                         "DA8qT2omBcG4oryX": {
+                            "name": "d8をロール",
                             "areas": [
                                 {
                                     "name": "生命吸い"
@@ -6979,9 +7064,21 @@
         },
         "High Seraph": {
             "_note": "High Seraph",
+            "name": "高位セラフ",
+            "description": "<p>神なる覇者。その神の意志を執行する、聖なる戦士の軍勢を率いる。</p>",
+            "motivesAndTactics": "教義を執行する、飛ぶ、裁きを宣告する、討ち滅ぼす",
+            "attack": {
+                "name": "聖なる剣"
+            },
+            "experiences": {
+                "2PulxNtd34IsD5XC": {
+                    "name": "神なる知識"
+                }
+            },
             "items": {
                 "jUu058IZwt4u2goM": {
                     "name": "リレントレス（3）",
+                    "description": "<p>@Lookup[@name]はGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>",
                     "actions": {
                         "7oqXSF66R2GlB17O": {
                             "name": "スポットライト：リレントレス"
@@ -6997,7 +7094,25 @@
                         }
                     }
                 },
+                "FilEB21L5q9XxKE1": {
+                    "name": "裁定",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@Lookup[@name]が倒されるまで、対象をセラフの神の目に「罪あり」と映る状態にします。「罪あり」のあいだ、その対象は希望の結果で希望を得られません。@Lookup[@name]が「罪あり」の対象への通常の攻撃に成功したとき、通常のダメージの代わりに重傷ダメージを与えます。@Lookup[@name]が同時に印せる対象は1体だけです。</p>",
+                    "actions": {
+                        "ErGJWtFIXFPgKtek": {
+                            "name": "罪ありとする"
+                        }
+                    },
+                    "effects": {
+                        "O8G0oOf9f3qzNOAT": {
+                            "name": "罪あり",
+                            "description": "<p>「罪あり」のあいだ、希望の結果で希望を得られません。</p>",
+                            "durationDescription": "<p>高位セラフが倒されるまで。高位セラフが同時に印せる対象は1体だけです。</p>"
+                        }
+                    }
+                },
                 "Vrb8dIJcOJ3ClwO5": {
+                    "name": "神の光線",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、神性の一片を灼けつく光の束として反射させ、超遠距離以内の最大20体の対象を打ちます。対象は社交リアクションロールを行い、「罪あり」と印されている場合は不利を得ます。失敗した対象は<strong>4d6+12</strong>の魔法ダメージを受けます。成功した対象はダメージを半分受けます。</p>",
                     "actions": {
                         "HwC75gazlN0k30AL": {
                             "name": "セーブを振る"
@@ -7005,6 +7120,8 @@
                     }
                 },
                 "9LpLXpQBfQryJA60": {
+                    "name": "我らは一つ",
+                    "description": "<p>シーンごとに1回、<strong>恐怖を1消費</strong>して、遠距離以内の他のすべての敵対者にスポットライトを当てます。この方法でスポットライトを得た敵対者の攻撃は、ダメージを半分与えます。</p>",
                     "actions": {
                         "j6DmU9dtob5QStxY": {
                             "name": "恐怖を消費する"
@@ -7015,13 +7132,32 @@
         },
         "Hill Titan": {
             "_note": "Hill Titan",
+            "name": "丘のタイタン",
+            "description": "<p>獣の皮をまとい、虫の群れに囲まれた巨人。</p>",
+            "motivesAndTactics": "食べる、散らかす、縄張りを踏み歩く",
+            "attack": {
+                "name": "木の切り株"
+            },
+            "experiences": {
+                "OyApi8y9bJcUUzRW": {
+                    "name": "生存"
+                },
+                "OUwZgPQPvvamgWmo": {
+                    "name": "執念深い"
+                }
+            },
             "items": {
                 "M0xm1RuRp8RKZ9U2": {
                     "name": "リレントレス（3）",
                     "description": "<p>タイタンはGMのターンごとに3回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p>"
                 },
+                "4Ujl7ftNG0ZGGRng": {
+                    "name": "騙されやすい",
+                    "description": "<p>PCは、タイタンを騙すか情に訴えて操るためのアクションロールに有利を得ます。</p>"
+                },
                 "kkVrD8dy2HAdNz3a": {
                     "name": "虫の群れ",
+                    "description": "<p>PCは超近距離以内にいる間<em>脆弱</em>です。</p>",
                     "actions": {
                         "MWwpebNudgH13J0t": {
                             "name": "起動する",
@@ -7040,6 +7176,7 @@
                 },
                 "Xgwos3c1kvGSl9yu": {
                     "name": "剛腕の一振り",
+                    "description": "<p><strong>恐怖を1消費</strong>して、超近距離以内のすべての対象に通常の攻撃を行います。</p>",
                     "actions": {
                         "UNgyT9aqPZKIvskW": {
                             "name": "恐怖を消費する",
@@ -7059,9 +7196,21 @@
         },
         "Hive Walker": {
             "_note": "Hive Walker",
+            "name": "巣の歩行者",
+            "description": "<p>死肉を食う蜂の群体に満たされ、操られている死体。</p>",
+            "motivesAndTactics": "獲物を蜜で固める、巣を守る",
+            "attack": {
+                "name": "腐った拳"
+            },
+            "experiences": {
+                "ctdR3oIiodzFIF59": {
+                    "name": "肉食"
+                }
+            },
             "items": {
                 "h2aCJ7Beoel7DHW5": {
                     "name": "血の蜜",
+                    "description": "<p>歩行者は、自身と近距離以内の一点との間にいるすべての対象へ、濃い紅の蜜を吐きかけます。その線上の各対象は、敏捷リアクションロールに成功しなければ<strong>2d8</strong>の魔法ダメージを受け、蜜が固まって一時的に<em>拘束</em>されます。</p>",
                     "actions": {
                         "WspW0NENWuwhVUl7": {
                             "name": "リアクションロール",
@@ -7071,7 +7220,16 @@
                                 }
                             ]
                         }
+                    },
+                    "effects": {
+                        "zrn5xYQDSSFp6cTo": {
+                            "name": "蜜漬け"
+                        }
                     }
+                },
+                "EuyZSYnaWCLvPoKU": {
+                    "name": "蜂の噴出",
+                    "description": "<p>歩行者がHPをマークしたとき、復讐心に燃える蜂が体から噴き出して歩行者を守ります。超近距離以内の各対象は、直感リアクションロールに成功しなければ、@Lookup[@name]がマークしているHP1つごとに<strong>1d8</strong>の直接物理ダメージを受けます。<em>拘束</em>されている対象はこのリアクションロールに自動的に失敗します。</p>"
                 }
             }
         },
