@@ -223,16 +223,21 @@
         },
         "Archmage's Tower": {
             "_note": "Archmage's Tower",
+            "name": "大魔道士の塔",
+            "description": "<p>天を貫くあり得ないほど高い尖塔。計り知れない力を帯びて鳴り響いている。</p>",
+            "impulses": "魔法のエネルギーを集める、侵入者を疲弊させる、未知を明かす、魔力の爆発を解き放つ",
             "potentialAdversaries": {
-                "0UqoeKBq8XdcM2O2": {
-                    "label": "敵対者"
-                },
                 "tnf3DtcDpHvsezF0": {
                     "label": "錬金術の創造物たち"
+                },
+                "0UqoeKBq8XdcM2O2": {
+                    "label": "敵対者"
                 }
             },
             "items": {
                 "iuNPkv0BtBWGcx54": {
+                    "name": "秘術の防備",
+                    "description": "<p>カウントダウン（12）。塔を登るには、PCたちはこのカウントダウンを完了させなければなりません。失敗、または恐怖とともにのロールのとき、大魔道士の数多い秘術の罠と危険の1つを作動させ、<strong>3d10</strong>の魔法ダメージを受けます。恐怖とともに失敗した場合、与えられるダメージはそのPCのレベルと同じボーナスを得ます。</p><section id=\"secret-nspaK2xThGNULFBI\" class=\"secret\"><p>大魔道士の防備の造りは、その者の得意分野について何を物語るのか。罠と危険のすべてに共通する、その者ならではの作風や装飾とは何か。</p></section>",
                     "actions": {
                         "6PKq64PBIOd5ojv1": {
                             "name": "カウントダウン開始",
@@ -242,9 +247,7 @@
                                 }
                             ]
                         }
-                    },
-                    "name": "秘術の防備",
-                    "description": "<p>カウントダウン（12）。塔を登るには、PCたちはこのカウントダウンを完了させなければなりません。失敗、または恐怖とともにのロールのとき、大魔道士の数多い秘術の罠と危険の1つを作動させ、<strong>3d10</strong>の魔法ダメージを受けます。恐怖とともに失敗した場合、与えられるダメージはそのPCのレベルと同じボーナスを得ます。</p><section id=\"secret-nspaK2xThGNULFBI\" class=\"secret\"><p>大魔道士の防備の造りは、その者の得意分野について何を物語るのか。罠と危険のすべてに共通する、その者ならではの作風や装飾とは何か。</p></section>"
+                    }
                 },
                 "ioqwvW4AcpTpyybj": {
                     "name": "大魔道士の高巣",
@@ -274,13 +277,13 @@
                         }
                     }
                 }
-            },
-            "name": "大魔道士の塔",
-            "description": "<p>天を貫くあり得ないほど高い尖塔。計り知れない力を帯びて鳴り響いている。</p>",
-            "impulses": "魔法のエネルギーを集める、侵入者を疲弊させる、未知を明かす、魔力の爆発を解き放つ"
+            }
         },
         "Astral Realm": {
             "_note": "Astral Realm",
+            "name": "星幽界",
+            "description": "<p>エネルギーと感情からなる精神の領域。精神の強い者は、現実の規則を作り替えられる。</p>",
+            "impulses": "精神を攻める、潜在意識の恐れを呼び出す、知覚を歪める",
             "potentialAdversaries": {
                 "slL9ro9IoNdBE1Yf": {
                     "label": "敵対者"
@@ -290,7 +293,17 @@
                 }
             },
             "items": {
+                "Fq76Ws72FOecLook": {
+                    "name": "体外離脱",
+                    "description": "<p>パーティはこの領域に肉体としては存在しないため、頑強・敏捷・器用のロールは自動的に失敗します。さらに、キャラクターがHPをマークしようとするとき、代わりに希望を1失うかストレスを1マークしなければなりません。キャラクターがストレスをマークできない場合、デスムーブを行わなければなりません。</p><section id=\"secret-A45bSa6klHKxPj9D\" class=\"secret\"><p>あなたが思い描く自己像の投影は、肉体の見た目とどう違うのか。あなたはどちらを「本当の」自分だと考えるのか。</p></section>"
+                },
+                "7NjcuEJmBXwnljrt": {
+                    "name": "精神の顕現",
+                    "description": "<p>知識ロールに成功すれば、PCは重力を反転させたり、みるみる組み上がる階段を呼び出したりして、この精神の環境を変えられます。PCはシーンごとに1回、精神の顕現を使って、星幽界を進むためのロールに有利を得られます。</p><section id=\"secret-ER9W41lXmtlfbQhF\" class=\"secret\"><p>あなたが顕すその構造物は、現実の記憶なのか、自分の想像の産物なのか。より安定させるために、どの肝心な細部に意識を注ぐのか。</p></section>"
+                },
                 "y76PmjDZYo1JXqnF": {
+                    "name": "物質は幻",
+                    "description": "<p>カウントダウン（10）。ここでは時間と距離は相対的であり、この空間を移動するだけでも意志の力を要します。星幽界を渡るには、パーティは知識・直感・社交のロールのみを使ってこのカウントダウンを完了させなければなりません。恐怖とともに失敗した場合、そのPCは<strong>3d8</strong>の直接魔法ダメージを受けます。</p><section id=\"secret-Mn5Z8o43Wzq27aTW\" class=\"secret\"><p>あなたはこの場所を思考で進むのか、感覚で進むのか。ここではその違いが何をもたらすのか。</p></section>",
                     "actions": {
                         "YIFoatmQj0J5rmEI": {
                             "name": "カウントダウン開始",
@@ -300,17 +313,7 @@
                                 }
                             ]
                         }
-                    },
-                    "name": "物質は幻",
-                    "description": "<p>カウントダウン（10）。ここでは時間と距離は相対的であり、この空間を移動するだけでも意志の力を要します。星幽界を渡るには、パーティは知識・直感・社交のロールのみを使ってこのカウントダウンを完了させなければなりません。恐怖とともに失敗した場合、そのPCは<strong>3d8</strong>の直接魔法ダメージを受けます。</p><section id=\"secret-Mn5Z8o43Wzq27aTW\" class=\"secret\"><p>あなたはこの場所を思考で進むのか、感覚で進むのか。ここではその違いが何をもたらすのか。</p></section>"
-                },
-                "Fq76Ws72FOecLook": {
-                    "name": "体外離脱",
-                    "description": "<p>パーティはこの領域に肉体としては存在しないため、頑強・敏捷・器用のロールは自動的に失敗します。さらに、キャラクターがHPをマークしようとするとき、代わりに希望を1失うかストレスを1マークしなければなりません。キャラクターがストレスをマークできない場合、デスムーブを行わなければなりません。</p><section id=\"secret-A45bSa6klHKxPj9D\" class=\"secret\"><p>あなたが思い描く自己像の投影は、肉体の見た目とどう違うのか。あなたはどちらを「本当の」自分だと考えるのか。</p></section>"
-                },
-                "7NjcuEJmBXwnljrt": {
-                    "name": "精神の顕現",
-                    "description": "<p>知識ロールに成功すれば、PCは重力を反転させたり、みるみる組み上がる階段を呼び出したりして、この精神の環境を変えられます。PCはシーンごとに1回、精神の顕現を使って、星幽界を進むためのロールに有利を得られます。</p><section id=\"secret-ER9W41lXmtlfbQhF\" class=\"secret\"><p>あなたが顕すその構造物は、現実の記憶なのか、自分の想像の産物なのか。より安定させるために、どの肝心な細部に意識を注ぐのか。</p></section>"
+                    }
                 },
                 "atXhxNs4Ka7H3wiT": {
                     "name": "星幽の敵対者",
@@ -327,10 +330,7 @@
                         }
                     }
                 }
-            },
-            "name": "星幽界",
-            "description": "<p>エネルギーと感情からなる精神の領域。精神の強い者は、現実の規則を作り替えられる。</p>",
-            "impulses": "精神を攻める、潜在意識の恐れを呼び出す、知覚を歪める"
+            }
         },
         "Beach Day": {
             "_note": "Beach Day",
@@ -374,14 +374,76 @@
         },
         "Burning Heart of the Woods": {
             "_note": "Burning Heart of the Woods",
+            "name": "燃える森の心臓",
+            "description": "<p>濃い藍色の灰が空気を満たし、その中心では苔に覆われたそびえ立つ木が、病んだ青の炎で永遠に燃えている。</p>",
+            "impulses": "皆が従う異様な拍を打ち鳴らす、森を汚す",
+            "potentialAdversaries": {
+                "x0uI3WUhqmIcqimN": {
+                    "label": "獣"
+                },
+                "ndk8FXXrRjHiPN0R": {
+                    "label": "精霊たち"
+                },
+                "XD3YccQrTKsxtlSZ": {
+                    "label": "緑の守り手たち"
+                }
+            },
             "items": {
+                "hU32a8QZy62gdLGc": {
+                    "name": "混沌魔法の座",
+                    "description": "<p>PCが呪文発動ロールを行うとき、恐怖ダイスを2つ振って高い方の結果を採用しなければなりません。</p><section id=\"secret-oR4iWlNQoOg4IXMr\" class=\"secret\"><p><em>混沌に触れたこの場所で魔法を使うのはどんな感覚なのか。呪文の制御を失ったら何が起こると恐れているのか。</em></p></section>"
+                },
+                "nrwEMjdl5F86oES9": {
+                    "name": "藍の炎",
+                    "description": "<p>中心の木に近づいたPCは、知識ロールを行って、この環境を食い尽くした魔法を見極めようと試みられます。</p><ul><li><p><strong>成功した場合：</strong>以下の詳細のうち3つを得ます。恐怖とともに成功した場合、2つを得ます。</p></li><li><p><strong>失敗した場合：</strong>ストレスを1マークして1つを得て、この環境を調べる次のアクションロールに有利を得られます。</p></li><li><p><strong>詳細：</strong>これは堕ちた者の魔法による結果である。その汚染は灰色の苔を通して広がっている。これを清められるのは、進行カウントダウン（8）を伴う自然魔法の儀式のみである。</p></li></ul><section id=\"secret-SkDRzA8454MaIFU3\" class=\"secret\"><p><em>どの堕ちた者の教団がこの森を汚したのか。彼らはこの木から得た呪われた木材と樹液で、すでに何をしたのか。</em></p></section>"
+                },
+                "1aOeMMX0XuDtZbbB": {
+                    "name": "掴みかかる蔓",
+                    "description": "<p>棘を逆立てた動く蔓が下生えから鞭のように伸び、PCたちを絡め取ります。対象は敏捷リアクションロールに成功しなければ、器用または頑強のロールに成功して振り払い両方の状態を消すか、蔓に10のダメージを与えるまで、拘束かつ脆弱になります。対象が逃れるためのロールを行うとき、<strong>1d8+4</strong>の物理ダメージを受け、希望を1失います。</p><section id=\"secret-ysaK5Lw0DGsZsgxO\" class=\"secret\"><p><em>蔓が肉を貫くとき、どんな痛みを伴う記憶が表に浮かび上がるのか。</em></p></section>",
+                    "actions": {
+                        "SfUlV5CL2kWJvXQX": {
+                            "name": "セーブを振る",
+                            "description": "<p>棘を逆立てた動く蔓が下生えから鞭のように伸び、PCたちを絡め取ります。対象は敏捷リアクションロールに成功しなければ、器用または頑強のロールに成功して振り払い両方の状態を消すか、蔓に10のダメージを与えるまで、<em>拘束</em>かつ<em>脆弱</em>になります。対象が逃れるためのロールを行うとき、<strong>1d8+4</strong>の物理ダメージを受け、希望を1失います。</p><section class=\"secret\" id=\"secret-MEwPtrJUdIHjgb1k\"><p><em>蔓が肉を貫くとき、どんな痛みを伴う記憶が表に浮かび上がるのか。</em></p></section>"
+                        }
+                    },
+                    "effects": {
+                        "gCkqvBUljsOsYacB": {
+                            "name": "掴みかかる蔓",
+                            "description": "<p>器用または頑強のロールに成功して振り払い両方の状態を消すか、蔓に10のダメージを与えるまで、<em>拘束</em>かつ<em>脆弱</em>です。対象が逃れるためのロールを行うとき、<strong>1d8+4</strong>の物理ダメージを受け、希望を1失います。</p><section id=\"secret-Eui1zx8GKoUhEXq6\" class=\"secret\"><p><em>蔓が肉を貫くとき、どんな痛みを伴う記憶が表に浮かび上がるのか。</em></p></section>",
+                            "durationDescription": "<p>器用または頑強のロールに成功して振り払うか、蔓に10のダメージを与えるまで。</p>"
+                        }
+                    }
+                },
+                "JKFkDvwUOP35Tsr1": {
+                    "name": "炭の構築物",
+                    "description": "<p>藍の炎をまとった歪んだ獣たちが、あなたの選ぶ一点を踏み荒らして通り過ぎます。その点から近距離以内のすべての対象は敏捷リアクションロールを行わなければなりません。失敗した対象は<strong>3d12+3</strong>の物理ダメージを受けます。成功した対象は代わりにダメージを半分受けます。</p><section id=\"secret-696PMvOPzHmkdtYc\" class=\"secret\"><p><em>これらは炎に食い尽くされた本物の獣なのか、それとも汚染する魔法が作った構築物にすぎないのか。</em></p></section>",
+                    "actions": {
+                        "gbXIaKr8em134IZC": {
+                            "name": "セーブを振る",
+                            "areas": [
+                                {
+                                    "name": "炭の構築物"
+                                }
+                            ]
+                        }
+                    }
+                },
                 "kYxuTZjH7HDUGeWh": {
+                    "name": "息を詰まらせる灰",
+                    "description": "<p><em>カウントダウン（ループ 6）</em>。PCたちが燃える森の心臓に入ったとき、カウントダウンを開始します。発動したとき、すべてのキャラクターは頑強または直感リアクションロールを行わなければなりません。失敗した対象は<strong>4d6+5</strong>の直接物理ダメージを受けます。成功した対象はダメージを半分受けます。防護の面布や衣服は、このリアクションロールに有利を与えます。</p><section class=\"secret\" id=\"secret-qQq9TrwyjdayheMk\"><p><em>その灰はどんな幻覚を引き起こすのか。どんな不似合いな味がするのか。</em></p></section>",
                     "actions": {
                         "4XVdHOzycOXM5bh9": {
-                            "name": "ダメージ"
+                            "name": "ダメージ",
+                            "description": "<p>すべてのキャラクターは頑強または直感リアクションロールを行わなければなりません。失敗した対象は<strong>4d6+5</strong>の直接物理ダメージを受けます。成功した対象はダメージを半分受けます。防護の面布や衣服は、このリアクションロールに有利を与えます。</p><section class=\"secret\" id=\"secret-pf0x4kYIYL4CathW\"><p><em>その灰はどんな幻覚を引き起こすのか。どんな不似合いな味がするのか。</em></p></section>"
                         },
                         "3L0T97ZzTqZU6BE6": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（ループ 6）</em>。PCたちが燃える森の心臓に入ったとき、カウントダウンを開始します。</p>",
+                            "countdown": [
+                                {
+                                    "name": "息を詰まらせる灰"
+                                }
+                            ]
                         }
                     }
                 }
@@ -389,19 +451,105 @@
         },
         "Bustling Marketplace": {
             "_note": "Bustling Marketplace",
+            "name": "賑わう市場",
+            "description": "<p>集落の経済の中心。地元の職人、旅の商人、そしてあらゆる階層の客が集まる。</p>",
+            "impulses": "安く買って高く売る、近隣と遠方の品で誘い、そそる",
             "potentialAdversaries": {
+                "4rGNjVN6eT9xjsAa": {
+                    "label": "衛兵たち"
+                },
                 "ucd2xJvPBS43bybO": {
                     "label": "その他"
+                }
+            },
+            "items": {
+                "w8YmhoWPGc66Wrx3": {
+                    "name": "秤を傾ける",
+                    "description": "<p>PCは、やり取りの一部として一握りの金貨を差し出すことで、社交ロールに有利を得られます。</p><section id=\"secret-SkvXxhBWKBtYdJaq\" class=\"secret\"><p><em>どんな貨幣でも受け取られるのか、地元の通貨だけなのか。PCたちはこの賄賂をどれだけ露骨に差し出すのか。</em></p></section>"
+                },
+                "60uDqt9omFifZ7xd": {
+                    "name": "思わぬ掘り出し物",
+                    "description": "<p>商人の1人が、PCたちの欲しいもの、あるいは必要なものを持っていることを明かします。故郷の食べ物、希少な書物、魔法の材料、疑わしい宝の地図、魔法の鍵などです。</p><section id=\"secret-vuqosTt63aXllb93\" class=\"secret\"><p><em>その商人は、この珍品と引き換えに金貨以外の何を求めるのか。</em></p></section>"
+                },
+                "56qjiKMoN6S9riI6": {
+                    "name": "掠め取る指",
+                    "description": "<p>盗人がPCから何かを盗もうとします。そのPCは直感ロールに成功してその盗人に気づかなければ、盗人が近距離まで逃げ去るとともにGMの選ぶアイテムを1つ失います。盗まれた品を取り戻すには、盗人が<em>帰結カウントダウン（4）</em>を完了させて隠れ家へ逃げ込む前に、PCたちが<em>進行カウントダウン（6）</em>を完了させて盗人を追い詰めなければなりません。</p><section class=\"secret\" id=\"secret-UHBqg2AqmIAxgB15\"><p><em>この人物を掏摸に走らせたものは何か。盗人の隠れ家はどこにあり、どうやって人目を逃れてきたのか。</em></p></section>",
+                    "actions": {
+                        "GMy6OcMQnNJDDmtV": {
+                            "name": "セーブを振る",
+                            "description": "<p>盗人がPCから何かを盗もうとします。そのPCは直感ロールに成功してその盗人に気づかなければ、盗人が近距離まで逃げ去るとともにGMの選ぶアイテムを1つ失います。</p>"
+                        },
+                        "L2TFexCvxvuCOCXe": {
+                            "name": "カウントダウンを開始",
+                            "countdown": [
+                                {
+                                    "name": "盗人を追う"
+                                },
+                                {
+                                    "name": "隠れ家へ逃げる"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "l2FzZpR2reVmlkdp": {
+                    "name": "人波が閉じる",
+                    "description": "<p>PCの1人が集団から離れたとき、人波が動いてそのPCをパーティから切り離します。</p><section id=\"secret-JECVv19GdEo8ngkq\" class=\"secret\"><p><em>人波はそのPCをどこへ運ぶのか。一人でありながら囲まれていることを、そのPCはどう感じるのか。</em></p></section>"
                 }
             }
         },
         "Castle Siege": {
             "_note": "Castle Siege",
+            "name": "城の攻囲",
+            "description": "<p>堅固な城への侵入を目指して攻め手が戦う、進行中の攻囲。</p>",
+            "impulses": "戦う意志を削ぎ落とす、城壁を破る、緊張を高める",
+            "potentialAdversaries": {
+                "yNuW3h5S2tsbgLm4": {
+                    "label": "傭兵たち"
+                },
+                "djL6ySNZ1A0skdMT": {
+                    "label": "貴族の軍勢"
+                }
+            },
             "items": {
+                "2qUw5c3e22eywSwg": {
+                    "name": "秘密の入口",
+                    "description": "<p>PCは直感または知識ロールに成功することで、城への秘密の通り道を見つけるか思い出せます。</p><section id=\"secret-6U0wYxm3kM3G7mAX\" class=\"secret\"><p><em>攻め手にその通路を知られずに、どうやって入るのか。守り手の誰かがこの道を見張っているのか。</em></p></section>"
+                },
                 "eSTq8Y0v4Dwd13XU": {
+                    "name": "攻城兵器（環境変化）",
+                    "description": "<p><em>帰結カウントダウン（6）</em>。攻め手は守り手の防備を崩すため、攻城兵器を投入します。攻囲が始まったときにカウントダウンを開始します（長引く攻囲の場合は、代わりに長期カウントダウンにします）。発動したとき、守り手の防備は破られ、攻め手が中へ押し入ります。あなたは恐怖を2得て、その後「激戦」の環境へ切り替え、それにスポットライトを当てます。</p><section class=\"secret\" id=\"secret-P5oJplxVBVJGtggb\"><p><em>どんな攻城兵器が投入されているのか。それらは魔法のものか、ごく普通のものか、あるいは両方が混じっているのか。城へ突入するために、キャラクターたちはどんな防備を越えなければならないのか。</em></p></section>",
                     "actions": {
+                        "TGWI1Kvw4ZEP3QEo": {
+                            "name": "恐怖を得る",
+                            "description": "<p>守り手の防備は破られ、攻め手が中へ押し入ります。あなたは恐怖を2得て、その後「激戦」の環境へ切り替え、それにスポットライトを当てます。</p>"
+                        },
                         "udKS3ME8VKuayEyO": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><em>帰結カウントダウン（6）</em>。攻め手は守り手の防備を崩すため、攻城兵器を投入します。攻囲が始まったときにカウントダウンを開始します（長引く攻囲の場合は、代わりに長期カウントダウンにします）。</p>",
+                            "countdown": [
+                                {
+                                    "name": "攻城兵器（環境変化）"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "U59K0WKVjwbgzMZU": {
+                    "name": "増援だ！",
+                    "description": "<p>増援として、@UUID[Compendium.daggerheart.adversaries.Actor.7ai2opemrclQe3VF]{王国の騎士}1体、PCの人数と同じ数のティア3のミニオン、そして任意の敵対者2体を、選んだPCから遠距離以内に召喚します。王国の騎士は直ちにスポットライトを得ます。</p><section id=\"secret-qYx1WuL81hHF5XW8\" class=\"secret\"><p><em>彼らは誰を最初に狙うのか。どんな陣形をとるのか。</em></p></section>"
+                },
+                "bemKmwjBtbEFVWXM": {
+                    "name": "巻き添え",
+                    "description": "<p>敵対者が倒されたとき、<strong>恐怖を1消費</strong>して、攻城兵器の流れ弾を戦場の一点に当てられます。その点から超近距離以内のすべての対象は敏捷リアクションロールを行わなければなりません。</p><ul><li><p>失敗した対象は<strong>3d8+3</strong>の物理または魔法ダメージを受け、ストレスを1マークしなければなりません。</p></li><li><p>成功した対象はストレスを1マークしなければなりません。</p></li></ul><section id=\"secret-JdhetLsgL626ouo7\" class=\"secret\"><p><em>その一撃でどんな破片が飛び散るのか。容易には直せない何が壊されるのか。</em></p></section>",
+                    "actions": {
+                        "r5JN5oFYL5DC6Qqw": {
+                            "name": "セーブを振る",
+                            "areas": [
+                                {
+                                    "name": "巻き添え"
+                                }
+                            ]
                         }
                     }
                 }
@@ -409,18 +557,79 @@
         },
         "Chaos Realm": {
             "_note": "Chaos Realm",
+            "name": "混沌界",
+            "description": "<p>現実の法則が不安定で危険な、異界の空間。</p>",
+            "impulses": "確かさを消し去る、力を食い尽くす、論理に逆らう",
+            "potentialAdversaries": {
+                "2E8iPHwHt7srzJRS": {
+                    "label": "外なる領域の怪物たち"
+                }
+            },
             "items": {
                 "yXCBy1MQuh5GwH5Q": {
+                    "name": "あり得ない構造",
+                    "description": "<p>上は下、下は右、右は星の方。重力と方向そのものが揺らいでおり、この領域を移動しようとする試みはそれ自体が長い旅路となり、<em>進行カウントダウン（8）</em>を要します。失敗した場合、PCはそのロールの他の帰結に加えてストレスを1マークしなければなりません。</p><section class=\"secret\" id=\"secret-j76pJfYX7Cbt61Pq\"><p><em>定命の領域とこれほど異なる空間を動くのはどんな感覚なのか。均衡を保つために、どんな目印や点に意識を留めるのか。旅の途中でどんな奇怪な目印を通り過ぎるのか。</em></p></section>",
                     "actions": {
+                        "hli84bleKqYoU7YL": {
+                            "name": "ストレスをマーク",
+                            "description": "<p>失敗した場合、PCはそのロールの他の帰結に加えてストレスを1マークしなければなりません。</p>"
+                        },
                         "uZgtjZJVCedm93aJ": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>上は下、下は右、右は星の方。重力と方向そのものが揺らいでおり、この領域を移動しようとする試みはそれ自体が長い旅路となり、<em>進行カウントダウン（8）</em>を要します。</p><section class=\"secret\" id=\"secret-rsf1tT4N3HBDgKna\"><p><em>定命の領域とこれほど異なる空間を動くのはどんな感覚なのか。均衡を保つために、どんな目印や点に意識を留めるのか。旅の途中でどんな奇怪な目印を通り過ぎるのか。</em></p></section>",
+                            "countdown": [
+                                {
+                                    "name": "あり得ない構造"
+                                }
+                            ]
                         }
                     }
                 },
                 "0OYHJZqT0DlVz5be": {
+                    "name": "あなたのすべてを、この場所は奪っていく",
+                    "description": "<p><em>カウントダウン（ループ 1d4）</em>。カウントダウンを開始します。発動したとき、すべてのPCは社交リアクションロールに成功しなければ、最も高い特性が一時的に[[/r 1d4]]減少します。ただしその値と同じ数のストレスをマークすれば免れます。失われた特性値は、そのPCがクリティカル成功するか、混沌界から脱出したときに戻ります。</p><section class=\"secret\" id=\"secret-uG9quQrfVqBYix6p\"><p><em>この場所は、あなたを伝説たらしめているものをどうやって奪おうとするのか。その力を奪われるのはどんな感覚なのか。</em></p></section>",
                     "actions": {
+                        "zOQMo13vSiX3QReJ": {
+                            "name": "セーブを振る",
+                            "description": "<p>すべてのPCは社交リアクションロールに成功しなければ、最も高い特性が一時的に[[/r 1d4]]減少します。ただしその値と同じ数のストレスをマークすれば免れます。失われた特性値は、そのPCがクリティカル成功するか、混沌界から脱出したときに戻ります。</p><section class=\"secret\" id=\"secret-nXjHVXTDY3UzkRVb\"><p><em>この場所は、あなたを伝説たらしめているものをどうやって奪おうとするのか。その力を奪われるのはどんな感覚なのか。</em></p></section>"
+                        },
                         "FxAFpgPbGcmi3nlh": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（ループ 1d4）</em>。カウントダウンを開始します。</p>",
+                            "countdown": [
+                                {
+                                    "name": "あなたのすべてを、この場所は奪っていく"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "RNbAdBZM6gDNaRPn": {
+                    "name": "解体",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCに頑強リアクションロールを行わせます。失敗した場合、そのPCは<strong>4d10</strong>の直接魔法ダメージを受けます。成功した場合、ストレスを1マークしなければなりません。</p><section id=\"secret-HGAS3UaO0JcUPdlT\" class=\"secret\"><p><em>この場所があなたを解体しようとする間、他の世界のどんな光景が垣間見えるのか。その解体は、あなたの人格のどんな核心を消し去ろうとするのか。</em></p></section>",
+                    "actions": {
+                        "6AT7qvUE6I6eVHU8": {
+                            "name": "セーブを振る",
+                            "description": "<p><strong>恐怖を1消費</strong>して、PCに頑強リアクションロールを行わせます。失敗した場合、そのPCは<strong>4d10</strong>の直接魔法ダメージを受けます。成功した場合、ストレスを1マークしなければなりません。</p><section class=\"secret\" id=\"secret-ycMBQOJJjDI4wEwK\"><p><em>この場所があなたを解体しようとする間、他の世界のどんな光景が垣間見えるのか。その解体は、あなたの人格のどんな核心を消し去ろうとするのか。</em></p></section>"
+                        }
+                    }
+                },
+                "SZpUJeJETVQtZwae": {
+                    "name": "外なる領域の捕食者たち",
+                    "description": "<p><strong>恐怖を1消費</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.A0SeeDzwjvqOsyof]{外なる領域の忌まわしきもの}1体、@UUID[Compendium.daggerheart.adversaries.Actor.ms6nuOl3NFkhPj1k]{外なる領域の汚染者}1体、そして[[/r 2d6]]体の@UUID[Compendium.daggerheart.adversaries.Actor.moJhHgKqTKPS2WYS]{外なる領域の下僕}を召喚します。それらは論理と因果に逆らって、選んだPCの近距離に現れます。直ちにそのうち1体にスポットライトを当て、さらに恐怖を1消費して、その敵対者の通常の攻撃を自動的に成功させられます。</p><section class=\"secret\" id=\"secret-psXRRXLoibTKFpaW\"><p><em>これらの怪物は、生きた肉を追う途上で、砕けた世界の半ば食い尽くされたどんな残骸を投げ捨てていくのか。疑いなき悪意の合間に、かつて人であったことのどんな歪んだ反射が垣間見えるのか。</em></p></section>",
+                    "actions": {
+                        "KCzdCu2KhAx9KyhT": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "MyIh4CJsDnkjmeYs": {
+                    "name": "方向を失わせる現実",
+                    "description": "<p>恐怖とともにの結果が出たとき、現実が解けて組み直される幻視をPCが見るとして、混沌界がそのPCのどんな恐れを呼び起こすのかを描写してもらえます。そのPCは希望を1失います。それが最後の希望だった場合、あなたは恐怖を1得ます。</p><section id=\"secret-0TIAabOXzWKwGdZ4\" class=\"secret\"><p><em>そのPCはどんな瞬間を見るのか。それが記憶なら、この場所によってどう歪められているのか。本当の記憶を保ち続けるのはどれほど難しいのか。</em></p></section>",
+                    "actions": {
+                        "YIOvMuMMML7WeMWs": {
+                            "name": "希望を失う",
+                            "description": "<p>恐怖とともにの結果が出たとき、現実が解けて組み直される幻視をPCが見るとして、混沌界がそのPCのどんな恐れを呼び起こすのかを描写してもらえます。そのPCは希望を1失います。それが最後の希望だった場合、あなたは恐怖を1得ます。</p><section class=\"secret\" id=\"secret-2PNCQTvkwRTu3IYz\"><p><em>そのPCはどんな瞬間を見るのか。それが記憶なら、この場所によってどう歪められているのか。本当の記憶を保ち続けるのはどれほど難しいのか。</em></p></section>"
                         }
                     }
                 }
