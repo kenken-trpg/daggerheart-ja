@@ -35,7 +35,8 @@
             },
             "actions": {
                 "1nmjsSNRC9uHl2j4": {
-                    "name": "猛毒"
+                    "name": "猛毒",
+                    "description": "この武器で中傷値以上のダメージを与えたとき、対象は一時的に脆弱になります。"
                 }
             },
             "effects": {
@@ -72,7 +73,8 @@
             },
             "actions": {
                 "LlGYNCSjPpaHCgkl": {
-                    "name": "照準"
+                    "name": "照準",
+                    "description": "対象があなたから至近距離以内、または味方の1人の近接射程内にいる場合、あなたの攻撃には不利が付きます。ストレスを1マークして、このペナルティを無視できます。"
                 }
             }
         },
@@ -153,7 +155,8 @@
             },
             "actions": {
                 "avUWKAVzjRuqSuxx": {
-                    "name": "反射"
+                    "name": "反射",
+                    "description": "攻撃を行うとき、ストレスを1マークして、最初の対象から至近距離以内の別のクリーチャーもその攻撃の対象にできます。"
                 }
             }
         },
@@ -165,7 +168,8 @@
             },
             "effects": {
                 "sqvQgVCVUFwF7iEK": {
-                    "name": "緩衝"
+                    "name": "緩衝",
+                    "description": "ダメージしきい値に@Resolve[@item.tier + 1|sign]{+2}。"
                 }
             }
         },
@@ -177,7 +181,8 @@
             },
             "effects": {
                 "O9SelXMg3PlMtcnf": {
-                    "name": "集束"
+                    "name": "集束",
+                    "description": "<p>至近距離以内の対象へのメイン武器ダメージ＋1。</p>"
                 }
             }
         },
@@ -203,7 +208,8 @@
             },
             "effects": {
                 "sGVVxSM68Fmr1sSM": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -215,7 +221,8 @@
             },
             "effects": {
                 "E0PjC15OP55vIype": {
-                    "name": "甚大"
+                    "name": "甚大",
+                    "description": "回避値−1。攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -261,7 +268,8 @@
             },
             "actions": {
                 "6xZol0JjA03kazRt": {
-                    "name": "追撃"
+                    "name": "追撃",
+                    "description": "近接射程内でのメイン武器の攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。"
                 }
             },
             "effects": {
@@ -292,7 +300,8 @@
             },
             "actions": {
                 "ioC63eYWrrjhf6fW": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -338,7 +347,8 @@
             },
             "effects": {
                 "fwIRv0JhgzaawDwF": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -404,7 +414,8 @@
             },
             "actions": {
                 "a8XXgkfe64zMOY6R": {
-                    "name": "リロード"
+                    "name": "リロード",
+                    "description": "攻撃を行ったあと、d6を振ります。結果が1の場合、再び撃つ前にストレスを1マークしてこの武器をリロードしなければなりません。"
                 }
             }
         },
@@ -451,7 +462,8 @@
             },
             "effects": {
                 "zQMaG3JcUWJR9k2L": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -463,7 +475,8 @@
             },
             "effects": {
                 "6tJmTBsumbPmEwkY": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -547,7 +560,8 @@
             },
             "actions": {
                 "WbMKifYfcRQpDiP8": {
-                    "name": "跳ねる"
+                    "name": "跳ねる",
+                    "description": "ストレスを1つ以上マークして、その数だけ攻撃の射程内の対象に命中させます。"
                 }
             }
         },
@@ -579,7 +593,8 @@
             },
             "actions": {
                 "0BlWvjZi8EgnT6ln": {
-                    "name": "照準"
+                    "name": "照準",
+                    "description": "対象があなたから至近距離以内、または味方の1人の近接射程内にいる場合、あなたの攻撃には不利が付きます。ストレスを1マークして、このペナルティを無視できます。"
                 }
             }
         },
@@ -591,7 +606,8 @@
             },
             "actions": {
                 "t1BgFF5IT0L1QHGM": {
-                    "name": "リロード"
+                    "name": "リロード",
+                    "description": "攻撃を行ったあと、d6を振ります。結果が1の場合、再び撃つ前にストレスを1マークしてこの武器をリロードしなければなりません。"
                 }
             }
         },
@@ -617,7 +633,8 @@
             },
             "actions": {
                 "hsPKe9xRQlcMwR9v": {
-                    "name": "壊滅させる"
+                    "name": "壊滅させる",
+                    "description": "攻撃ロールを行う前に、ストレスを1マークして、ダメージダイスとしてd20を使えます。"
                 }
             }
         },
@@ -636,7 +653,13 @@
             },
             "actions": {
                 "pkg1z8LU5URZsQIe": {
-                    "name": "焼夷"
+                    "name": "焼夷",
+                    "description": "攻撃成功時、対象から至近距離以内のすべてのクリーチャーはHPを1マークしなければなりません。",
+                    "areas": [
+                        {
+                            "name": "焼夷"
+                        }
+                    ]
                 }
             },
             "effects": {
@@ -661,7 +684,8 @@
             },
             "actions": {
                 "KrXsIpyvPDci7gXH": {
-                    "name": "受け流し"
+                    "name": "受け流し",
+                    "description": "あなたが攻撃されたとき、この武器のダメージダイスを振ります。攻撃者のダメージダイスのいずれかがあなたのダイスと同じ値だった場合、あなたが受けるダメージを合計する前に、一致した出目が攻撃者のダメージダイスから除かれます。"
                 }
             }
         },
@@ -694,7 +718,8 @@
             },
             "actions": {
                 "1KG5ZPmXmH5X7GVe": {
-                    "name": "加速"
+                    "name": "加速",
+                    "description": "シーンごとに1回、ストレスを1マークして遠距離まで移動し、続いて攻撃を行います。この攻撃の習熟に＋1のボーナスを得ます。"
                 }
             },
             "effects": {
@@ -773,7 +798,8 @@
             },
             "effects": {
                 "Anbxt99bL9IWnlGh": {
-                    "name": "偏向"
+                    "name": "偏向",
+                    "description": "その攻撃に対して、鎧値に等しいボーナスを回避値に得ます"
                 }
             }
         },
@@ -806,7 +832,8 @@
             },
             "actions": {
                 "oS1KZo6N8KzUMxgt": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -818,7 +845,8 @@
             },
             "actions": {
                 "L7gm9rLjSswDoeg6": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -851,7 +879,8 @@
             },
             "effects": {
                 "X3a0PAJ9Tk4zVyxz": {
-                    "name": "鋸歯"
+                    "name": "鋸歯",
+                    "description": "ダメージダイスで1が出たとき、代わりに8ダメージになります。"
                 }
             }
         },
@@ -890,7 +919,8 @@
             },
             "actions": {
                 "HZfWsLRQkSlCt8iV": {
-                    "name": "戦慄"
+                    "name": "戦慄",
+                    "description": "この武器でクリーチャーを倒したとき、近距離以内のすべての敵対者はストレスを1マークしなければなりません。"
                 }
             }
         },
@@ -916,7 +946,8 @@
             },
             "effects": {
                 "DCie5eR1dZH2Qvln": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -942,7 +973,8 @@
             },
             "actions": {
                 "NO0cfOXGO0Z3vTwd": {
-                    "name": "二刀にする"
+                    "name": "二刀にする",
+                    "description": "メイン武器で攻撃を行うとき、近接射程内の別の対象にもダメージを与えられます。"
                 }
             }
         },
@@ -961,7 +993,8 @@
             },
             "effects": {
                 "sZ1XotFlGdkPPDG4": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -973,12 +1006,14 @@
             },
             "actions": {
                 "B3PW3yWLtXAN2bZq": {
-                    "name": "逸らす"
+                    "name": "逸らす",
+                    "description": "あなたが攻撃されたとき、鎧スロットを1マークして、その攻撃に対して鎧値に等しいボーナスを回避値に得られます。"
                 }
             },
             "effects": {
                 "lWlxUPj4Ma4TPkqb": {
-                    "name": "偏向"
+                    "name": "偏向",
+                    "description": "その攻撃に対して、鎧値に等しいボーナスを回避値に得ます"
                 }
             }
         },
@@ -990,7 +1025,8 @@
             },
             "actions": {
                 "oK1CHBxZLcmM37jR": {
-                    "name": "反射"
+                    "name": "反射",
+                    "description": "攻撃を行うとき、ストレスを1マークして、最初の対象から至近距離以内の別のクリーチャーもその攻撃の対象にできます。"
                 }
             }
         },
@@ -1002,7 +1038,8 @@
             },
             "actions": {
                 "EIwNjlroQWthm07Q": {
-                    "name": "活力を与える"
+                    "name": "活力を与える",
+                    "description": "攻撃成功時、d4を振ります。結果が4の場合、ストレスを1消去します。"
                 }
             }
         },
@@ -1014,9 +1051,11 @@
             },
             "effects": {
                 "tL0mow5BGsYS4wPp": {
-                    "name": "防護"
+                    "name": "防護",
+                    "description": "<p>鎧値＋1</p>"
                 }
-            }
+            },
+            "description": "<p><strong>防護</strong>：鎧値＋1。</p>"
         },
         "Ethereal Zweihänder": {
             "_note": "Ethereal Zweihänder",
@@ -1026,7 +1065,8 @@
             },
             "actions": {
                 "XdQBnYfIX5Km5KqU": {
-                    "name": "霊妙"
+                    "name": "霊妙",
+                    "description": "この武器を呼び出すにはストレスを1マークしなければなりません。シーン終了まで持続します。"
                 }
             },
             "effects": {
@@ -1051,7 +1091,8 @@
             },
             "effects": {
                 "CxilXxOVfmo18wTL": {
-                    "name": "緩衝"
+                    "name": "緩衝",
+                    "description": "ダメージしきい値に@Resolve[@item.tier + 1|sign]{+2}。"
                 }
             }
         },
@@ -1096,7 +1137,8 @@
             },
             "effects": {
                 "T831j6kZiMnpMNmv": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1108,7 +1150,8 @@
             },
             "effects": {
                 "vJzsPmp4JkV4QTDm": {
-                    "name": "集束"
+                    "name": "集束",
+                    "description": "<p>至近距離以内の対象へのメイン武器ダメージ＋1。</p>"
                 }
             }
         },
@@ -1120,7 +1163,8 @@
             },
             "actions": {
                 "XpE38Dn617zBvsiX": {
-                    "name": "燃やす"
+                    "name": "燃やす",
+                    "description": "ダメージダイスで6が出たとき、対象はストレスを1マークしなければなりません。"
                 }
             }
         },
@@ -1152,7 +1196,8 @@
             },
             "effects": {
                 "zoWZsD4ogzfPSPi7": {
-                    "name": "自己補正"
+                    "name": "自己補正",
+                    "description": "ダメージダイスで1が出たとき、代わりに6ダメージになります。"
                 }
             }
         },
@@ -1164,7 +1209,8 @@
             },
             "effects": {
                 "ir4iKLIQ4CH1Qckn": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1190,7 +1236,13 @@
             },
             "actions": {
                 "R0DsdoMfAJNfGLy5": {
-                    "name": "磁力"
+                    "name": "磁力",
+                    "description": "この武器で攻撃を行うとき、希望を1消費して、対象から至近距離以内のすべての敵対者にリアクションロール（16）を強制できます。失敗したクリーチャーはストレスを1マークし、対象の近接射程内へ引き寄せられます。",
+                    "areas": [
+                        {
+                            "name": "磁力"
+                        }
+                    ]
                 }
             }
         },
@@ -1202,7 +1254,8 @@
             },
             "effects": {
                 "K4VgrDjVj1U1m9Ie": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1214,7 +1267,8 @@
             },
             "effects": {
                 "904orawScurM9GjG": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1226,7 +1280,8 @@
             },
             "effects": {
                 "cffkpiwGpEGhjiUC": {
-                    "name": "甚大"
+                    "name": "甚大",
+                    "description": "回避値−1。攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1272,7 +1327,8 @@
             },
             "actions": {
                 "b9Nl6rOzaIoGUX5v": {
-                    "name": "壊滅させる"
+                    "name": "壊滅させる",
+                    "description": "攻撃ロールを行う前に、ストレスを1マークして、ダメージダイスとしてd20を使えます。"
                 }
             }
         },
@@ -1312,7 +1368,8 @@
             },
             "actions": {
                 "9rorDndpgEXMAnaf": {
-                    "name": "追撃"
+                    "name": "追撃",
+                    "description": "近接射程内でのメイン武器の攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。"
                 }
             },
             "effects": {
@@ -1377,7 +1434,8 @@
             },
             "actions": {
                 "wfUJ95m1Numktbyc": {
-                    "name": "照準"
+                    "name": "照準",
+                    "description": "対象があなたから至近距離以内、または味方の1人の近接射程内にいる場合、あなたの攻撃には不利が付きます。ストレスを1マークして、このペナルティを無視できます。"
                 }
             }
         },
@@ -1458,7 +1516,8 @@
             },
             "actions": {
                 "63LHxPGiZnKndZ6C": {
-                    "name": "反射"
+                    "name": "反射",
+                    "description": "攻撃を行うとき、ストレスを1マークして、最初の対象から至近距離以内の別のクリーチャーもその攻撃の対象にできます。"
                 }
             }
         },
@@ -1470,7 +1529,8 @@
             },
             "effects": {
                 "CodCGSBBAQufpUJ4": {
-                    "name": "緩衝"
+                    "name": "緩衝",
+                    "description": "<p>ダメージしきい値に@Resolve[@item.tier + 1|sign]{+2}。</p>"
                 }
             }
         },
@@ -1482,7 +1542,8 @@
             },
             "effects": {
                 "EBYlSiZrmwPd5G2J": {
-                    "name": "集束"
+                    "name": "集束",
+                    "description": "<p>至近距離以内の対象へのメイン武器ダメージ＋1。</p>"
                 }
             }
         },
@@ -1508,7 +1569,8 @@
             },
             "effects": {
                 "hnayB09P25ZW3gVY": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1520,7 +1582,8 @@
             },
             "effects": {
                 "2nl35v8sPAudiOIb": {
-                    "name": "甚大"
+                    "name": "甚大",
+                    "description": "回避値−1。攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -1566,7 +1629,8 @@
             },
             "actions": {
                 "PPMmt3MyqylWoBPQ": {
-                    "name": "追撃"
+                    "name": "追撃",
+                    "description": "近接射程内でのメイン武器の攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。"
                 }
             },
             "effects": {
@@ -1597,7 +1661,8 @@
             },
             "actions": {
                 "Ph7QtVYXhBfHFl0D": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -1643,7 +1708,8 @@
             },
             "effects": {
                 "K54TvFYeqh9tvGSS": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -1709,7 +1775,8 @@
             },
             "actions": {
                 "PP0Je3qdGdhYu53K": {
-                    "name": "リロード"
+                    "name": "リロード",
+                    "description": "攻撃を行ったあと、d6を振ります。結果が1の場合、再び撃つ前にストレスを1マークしてこの武器をリロードしなければなりません。"
                 }
             }
         },
@@ -1756,7 +1823,8 @@
             },
             "effects": {
                 "UW2fqbhBqvnK1coG": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -1768,7 +1836,8 @@
             },
             "effects": {
                 "PMXG4l85UkXRf41E": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -1866,7 +1935,8 @@
             },
             "actions": {
                 "gvtWBJWDlKyv1XyC": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -1905,9 +1975,11 @@
             },
             "effects": {
                 "vnR4Zhnb0rOqwrFw": {
-                    "name": "防護"
+                    "name": "防護",
+                    "description": "鎧値＋1"
                 }
-            }
+            },
+            "description": "<strong>防護：</strong>鎧値＋1"
         },
         "Lance": {
             "_note": "Lance",
@@ -1950,7 +2022,8 @@
             },
             "actions": {
                 "hYAHv9sRJB8FhWyF": {
-                    "name": "照準"
+                    "name": "照準",
+                    "description": "対象があなたから至近距離以内、または味方の1人の近接射程内にいる場合、あなたの攻撃には不利が付きます。ストレスを1マークして、このペナルティを無視できます。"
                 }
             }
         },
@@ -2031,7 +2104,8 @@
             },
             "actions": {
                 "DgcClkP4KaQpNhUD": {
-                    "name": "反射"
+                    "name": "反射",
+                    "description": "攻撃を行うとき、ストレスを1マークして、最初の対象から至近距離以内の別のクリーチャーもその攻撃の対象にできます。"
                 }
             }
         },
@@ -2043,7 +2117,8 @@
             },
             "effects": {
                 "GrtsRfCZH1IOkgje": {
-                    "name": "緩衝"
+                    "name": "緩衝",
+                    "description": "ダメージしきい値に@Resolve[@item.tier + 1|sign]{+2}。"
                 }
             }
         },
@@ -2055,7 +2130,8 @@
             },
             "effects": {
                 "urUpY16MvP1UGWyK": {
-                    "name": "集束"
+                    "name": "集束",
+                    "description": "<p>至近距離以内の対象へのメイン武器ダメージ＋1。</p>"
                 }
             }
         },
@@ -2081,7 +2157,8 @@
             },
             "effects": {
                 "OV1Ly7vX4owBUgLQ": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -2093,7 +2170,8 @@
             },
             "effects": {
                 "oRCiXSElN5xufUfn": {
-                    "name": "甚大"
+                    "name": "甚大",
+                    "description": "回避値−1。攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -2139,7 +2217,8 @@
             },
             "actions": {
                 "sE7LyJkbAZMXTGH3": {
-                    "name": "追撃"
+                    "name": "追撃",
+                    "description": "近接射程内でのメイン武器の攻撃が成功したとき、ストレスを1マークして、この攻撃の習熟に＋1のボーナスを得られます。"
                 }
             },
             "effects": {
@@ -2170,7 +2249,8 @@
             },
             "actions": {
                 "VJCNMcl7MoJWwuFl": {
-                    "name": "迅速"
+                    "name": "迅速",
+                    "description": "攻撃を行うとき、ストレスを1マークして、射程内の別のクリーチャーも対象にできます。"
                 }
             }
         },
@@ -2216,7 +2296,8 @@
             },
             "effects": {
                 "5vwZnbIvZmUi4tZM": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -2282,7 +2363,8 @@
             },
             "actions": {
                 "F5YMvafEsSwp8pqU": {
-                    "name": "リロード"
+                    "name": "リロード",
+                    "description": "攻撃を行ったあと、d6を振ります。結果が1の場合、再び撃つ前にストレスを1マークしてこの武器をリロードしなければなりません。"
                 }
             }
         },
@@ -2329,7 +2411,8 @@
             },
             "effects": {
                 "ebloMf4gItx38xkZ": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -2341,7 +2424,8 @@
             },
             "effects": {
                 "WAqE3sZFkTefglDq": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -2466,7 +2550,8 @@
             },
             "effects": {
                 "2J6vzNUel78JFypp": {
-                    "name": "強力"
+                    "name": "強力",
+                    "description": "攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。"
                 }
             }
         },
@@ -2492,12 +2577,14 @@
             },
             "actions": {
                 "A6lC0N6hQhqFTqCx": {
-                    "name": "貪欲"
+                    "name": "貪欲",
+                    "description": "金貨をひと掴み消費して、ダメージロールの習熟に＋1のボーナスを得ます。"
                 }
             },
             "effects": {
                 "zkfYb3BZcBjQJ9Bw": {
-                    "name": "貪欲"
+                    "name": "貪欲",
+                    "description": "<p>金貨をひと掴み消費して、ダメージロールの習熟に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -2509,7 +2596,8 @@
             },
             "effects": {
                 "I3wflHo4lw4LE4Gu": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "<p>近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます</p>"
                 }
             }
         },
@@ -2535,7 +2623,8 @@
             },
             "effects": {
                 "n5EB7pI0kv2Zx35G": {
-                    "name": "充填"
+                    "name": "充填",
+                    "description": "<p>ストレスを1マークして、メイン武器攻撃の習熟に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -2568,7 +2657,8 @@
             },
             "actions": {
                 "WEj9asBFTeuvpcgu": {
-                    "name": "捕縛"
+                    "name": "捕縛",
+                    "description": "至近距離以内の対象へのメイン武器の攻撃が成功したとき、希望を1消費して、その対象を一時的に脆弱にできます。"
                 }
             },
             "effects": {
@@ -2613,7 +2703,8 @@
             },
             "actions": {
                 "LYqVHYFcuJlf6omC": {
-                    "name": "凍結"
+                    "name": "凍結",
+                    "description": "この武器の攻撃によって対象がHPを2つ以上マークしたとき、その対象は一時的に拘束されます。"
                 }
             },
             "effects": {
@@ -2630,7 +2721,8 @@
             },
             "actions": {
                 "xd2N3IRFkGcy9byh": {
-                    "name": "衝撃を与える"
+                    "name": "衝撃を与える",
+                    "description": "攻撃成功時、希望を1消費して、対象を遠距離まで突き飛ばせます。"
                 }
             }
         },
@@ -2675,7 +2767,8 @@
             },
             "actions": {
                 "BSjjwnxjP7knntm9": {
-                    "name": "リロード"
+                    "name": "リロード",
+                    "description": "攻撃を行ったあと、d6を振ります。結果が1の場合、再び撃つ前にストレスを1マークしてこの武器をリロードしなければなりません。"
                 }
             }
         },
@@ -2715,10 +2808,12 @@
             },
             "effects": {
                 "DQ783nkboRdHiAdK": {
-                    "name": "兼務"
+                    "name": "兼務",
+                    "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1"
                 },
                 "iNCNhj2WdjpeJ0WX": {
-                    "name": "兼務"
+                    "name": "兼務",
+                    "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1"
                 }
             }
         },
@@ -2730,12 +2825,14 @@
             },
             "actions": {
                 "bWNQYdjog9uNuNfL": {
-                    "name": "破壊"
+                    "name": "破壊",
+                    "description": "攻撃成功時、至近距離以内のすべての敵対者はストレスを1マークしなければなりません。"
                 }
             },
             "effects": {
                 "vQJCrV4wxxhGUcBX": {
-                    "name": "破壊的"
+                    "name": "破壊的",
+                    "description": "素早さ−1"
                 }
             }
         },
@@ -2768,7 +2865,8 @@
             },
             "effects": {
                 "djNtNpasgNDRP8Dd": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "<p>近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます</p>"
                 }
             }
         },
@@ -2780,7 +2878,8 @@
             },
             "actions": {
                 "tD3OR33TwHpqDyGy": {
-                    "name": "鼓舞"
+                    "name": "鼓舞",
+                    "description": "攻撃でクリティカル成功したとき、近距離以内のすべてのPCは希望を1得ます。"
                 }
             }
         },
@@ -2799,7 +2898,8 @@
             },
             "effects": {
                 "dhhIibfRBwCGZ6Ab": {
-                    "name": "破壊的"
+                    "name": "破壊的",
+                    "description": "素早さ−1"
                 }
             }
         },
@@ -2811,7 +2911,8 @@
             },
             "effects": {
                 "HKh73AHxImdgxgTg": {
-                    "name": "対"
+                    "name": "対",
+                    "description": "近接射程内の対象へのメイン武器に、このサブ武器のティア＋1を加えます"
                 }
             }
         },
@@ -2823,7 +2924,8 @@
             },
             "actions": {
                 "Y5HGiYOQ5Nd3W4zo": {
-                    "name": "受け止め"
+                    "name": "受け止め",
+                    "description": "この武器の射程内の敵対者があなたにダメージを与えたとき、ストレスを2マークして、その敵対者にHPを1マークさせられます。"
                 }
             }
         },
@@ -2835,7 +2937,8 @@
             },
             "actions": {
                 "cGTB3G8sp5XZhucX": {
-                    "name": "吸収"
+                    "name": "吸収",
+                    "description": "攻撃成功時、希望を1消費して、対象にストレスを1マークさせられます。そうした場合、あなたはストレスを1消去します。"
                 }
             }
         },
@@ -2868,10 +2971,12 @@
             },
             "effects": {
                 "gz2f4hmXhl7hbM6p": {
-                    "name": "兼務"
+                    "name": "兼務",
+                    "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1"
                 },
                 "xLmqw1OcCztX7NI4": {
-                    "name": "兼務"
+                    "name": "兼務",
+                    "description": "鎧値＋1。近接射程のメイン武器ダメージ＋1"
                 }
             }
         },
@@ -2890,7 +2995,8 @@
             },
             "actions": {
                 "fdXtuFA7Sy6r2GOw": {
-                    "name": "触媒"
+                    "name": "触媒",
+                    "description": "攻撃成功時、ストレスを1マークして、近距離以内の味方1人に次の攻撃ロールへの＋3のボーナスを与えられます。"
                 }
             },
             "effects": {
@@ -2908,7 +3014,8 @@
             },
             "effects": {
                 "l3sq4oU9PFSf3voP": {
-                    "name": "鋸歯"
+                    "name": "鋸歯",
+                    "description": "ダメージダイスで1が出たとき、代わりに8ダメージになります。"
                 }
             }
         },
@@ -2927,7 +3034,8 @@
             },
             "actions": {
                 "go6bchi8pFs20jTQ": {
-                    "name": "跳ねる"
+                    "name": "跳ねる",
+                    "description": "ストレスを1つ以上マークして、その数だけ攻撃の射程内の対象に命中させます。"
                 }
             }
         },
@@ -3031,7 +3139,8 @@
             },
             "actions": {
                 "lwtLR9xWsREAonue": {
-                    "name": "狙撃"
+                    "name": "狙撃",
+                    "description": "武器攻撃に失敗したとき、希望を1消費して、次の武器攻撃を成功させられます。"
                 }
             }
         },
@@ -3050,7 +3159,8 @@
             },
             "actions": {
                 "weRZBt9v1kjNh6wI": {
-                    "name": "説得する"
+                    "name": "説得する",
+                    "description": "社交ロールを行う前に、ストレスを1マークして、結果に＋2のボーナスを得られます。"
                 }
             },
             "effects": {
@@ -3082,7 +3192,8 @@
             },
             "actions": {
                 "cLnI9hFkRUgW3VlN": {
-                    "name": "致命"
+                    "name": "致命",
+                    "description": "重傷値のダメージを与えたとき、対象は追加でHPを1マークしなければなりません。"
                 }
             }
         },
