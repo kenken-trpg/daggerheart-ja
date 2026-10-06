@@ -414,6 +414,8 @@
         },
         "Feast of Xuria": {
             "_note": "Feast of Xuria",
+            "name": "シュリアの饗宴",
+            "description": "<p>この食事を食べて、すべてのHPとストレスを消去し、希望を1d4得られます。</p>",
             "actions": {
                 "TL1fJitAJmDzrnHT": {
                     "name": "食べる"
@@ -422,54 +424,102 @@
         },
         "Featherbone": {
             "_note": "Featherbone",
+            "name": "羽根の骨",
+            "description": "<p>この骨を使い、自分のレベルに等しい分数のあいだ、落下速度を制御できます。</p>",
             "actions": {
                 "MC0EA6TDZpEHMz11": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "VfJIJBW96e45xQHY": {
+                    "name": "羽根の骨",
+                    "description": "<p>この骨を使い、自分のレベルに等しい分数のあいだ、落下速度を制御できます。</p>"
                 }
             }
         },
         "Featherstep Potion": {
             "_note": "Featherstep Potion",
+            "name": "羽足の薬",
+            "description": "<p>この薬を飲んで、足首から小さな翼を生やせます。次の休息まで、ティアに等しいボーナスを回避値に得ます。</p>",
             "actions": {
                 "Dslc1QsuuYEAgSAo": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "GVmJh6VwcqKS7uwm": {
+                    "name": "新しい効果",
+                    "description": "<p>この薬を飲んで、足首から小さな翼を生やせます。次の休息まで、ティアに等しいボーナスを回避値に得ます。</p>"
                 }
             }
         },
         "Formoid Serum": {
             "_note": "Formoid Serum",
+            "name": "蟻人の血清",
+            "description": "<p>この薬を飲んで、シーンの終わりまで1600万匹の蟻の群れになれます。装備、戦利品、特徴はすべて保持し、使用できます。</p>",
             "actions": {
                 "KVlbv22mTH5AO3Ab": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "TOS3bFpbQWATZcew": {
+                    "name": "蟻人の血清",
+                    "description": "<p>この薬を飲んで、シーンの終わりまで1600万匹の蟻の群れになれます。装備、戦利品、特徴はすべて保持し、使用できます。</p>"
                 }
             }
         },
         "Fulgurite Shard": {
             "_note": "Fulgurite Shard",
+            "name": "雷管石の破片",
+            "description": "<p>遠距離以内の地点を1つ選びます。その地点から近距離以内のすべての対象は、リアクションロール（16）に成功しなければ、その範囲に雷が走り、3d6の魔法ダメージを受けてストレスを1d4マークします。</p>",
             "actions": {
                 "EhwvyDwxvg44bKCq": {
-                    "name": "使う"
+                    "name": "使う",
+                    "areas": [
+                        {
+                            "name": "雷管石の破片"
+                        }
+                    ]
                 }
             }
         },
         "Gambler's Fallacy": {
             "_note": "Gambler's Fallacy",
+            "name": "賭博者の誤謬",
+            "description": "<p>豚の形をした投入口付きの陶器の壺に金貨を入れて、任意の数のひと掴み分の金貨を消費できます。この壺を遠距離以内の地点に投げつけると壺は爆発し、その地点から近距離以内のすべてのクリーチャーに、消費したひと掴みごとに1d20の魔法ダメージを与えます。壺の中の金貨はすべて失われます。</p>",
             "actions": {
                 "SLZn5uUrsucH90rQ": {
-                    "name": "投げつけ"
+                    "name": "投げつけ",
+                    "areas": [
+                        {
+                            "name": "賭博者の誤謬"
+                        }
+                    ]
                 }
             }
         },
         "Gill Salve": {
             "_note": "Gill Salve",
+            "name": "鰓の軟膏",
+            "description": "<p>この軟膏を首に塗って、自分のレベルに等しい分数のあいだ水中で呼吸できます。</p>",
             "actions": {
                 "57IIcyhEs2ByoENx": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "5rL9CY5GO9SJcEZq": {
+                    "name": "鰓の軟膏",
+                    "description": "<p>この軟膏を首に塗って、自分のレベルに等しい分数のあいだ水中で呼吸できます。</p>"
                 }
             }
         },
         "Glowmoss Mushroom": {
             "_note": "Glowmoss Mushroom",
+            "name": "光苔の茸",
+            "description": "<p>この茸を砕いて、次の長期休息まで明るい青色に光らせられます。</p>",
             "actions": {
                 "ZRKQmLZ709uJmwME": {
                     "name": "使う"
@@ -478,6 +528,8 @@
         },
         "Godling's Pomelo": {
             "_note": "Godling's Pomelo",
+            "name": "小神のザボン",
+            "description": "<p>この柑橘の実を食べて、すべてのHPとストレスを消去できます。</p>",
             "actions": {
                 "KYnbdh2UTxw5Xr9f": {
                     "name": "食べる"
@@ -486,6 +538,8 @@
         },
         "Gossip Flower": {
             "_note": "Gossip Flower",
+            "name": "噂の花",
+            "description": "<p>この種を土に植えられます。種は直ちに小さな花へ育ち、最大1週間にわたって聞いたことすべてを記録します。摘み取られると、花は記録した内容を実時間で読み上げ、そのあと枯れます。</p>",
             "actions": {
                 "s9KcCCsBG2OvWpfu": {
                     "name": "植える"
@@ -494,33 +548,76 @@
         },
         "Gravity Bomb": {
             "_note": "Gravity Bomb",
+            "name": "重力爆弾",
+            "description": "<p>この桃ほどの大きさの機械仕掛けの球を、遠距離以内の地点に投げつけられます。球は内側へ爆縮し、その地点から近距離以内のすべてのクリーチャーと物体を、球の近接射程内へ引き寄せます。</p>",
             "actions": {
                 "DlpFeXegeuolZMNQ": {
-                    "name": "投げつけ"
+                    "name": "投げつけ",
+                    "areas": [
+                        {
+                            "name": "重力爆弾"
+                        }
+                    ]
                 }
             }
         },
         "Green Ooze Oil": {
-            "_note": "Green Ooze Oil"
+            "_note": "Green Ooze Oil",
+            "name": "緑の軟泥の油",
+            "description": "<p>この油を自分の武器に塗れます。この武器で次に成功した攻撃は、追加で1d8の魔法ダメージを与え、対象を一時的に腐食状態にします。腐食状態のあいだ、対象はダメージしきい値に−2のペナルティを受けます。</p>",
+            "actions": {
+                "w8gPYG7TDSU3P0tJ": {
+                    "name": "塗りつける"
+                },
+                "Dt901UQjOONozDdc": {
+                    "name": "腐食を適用"
+                }
+            },
+            "effects": {
+                "0tVi0WsfLu3YzxeE": {
+                    "name": "緑の軟泥の油",
+                    "description": "<p>この油を自分の武器に塗れます。この武器で次に成功した攻撃は、追加で1d8の魔法ダメージを与え、対象を一時的に腐食状態にします。</p>"
+                },
+                "X0gyRnn8BECGV6P4": {
+                    "name": "腐食",
+                    "description": "<p>腐食状態のあいだ、対象はダメージしきい値に−2のペナルティを受けます。</p>"
+                }
+            }
         },
         "Grindletooth Venom": {
             "_note": "Grindletooth Venom",
+            "name": "グラインドルトゥースの毒",
+            "description": "<p>この毒を物理ダメージを与える武器に塗って、その武器での次のダメージロールにd6を加えられます。</p>",
             "actions": {
                 "BuzdaD4vLsbBS2gy": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "yx4ZkXeuXgw2KvV4": {
+                    "name": "グラインドルトゥースの毒"
                 }
             }
         },
         "Growing Potion": {
             "_note": "Growing Potion",
+            "name": "巨大化の薬",
+            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを2倍にできます。この姿のあいだ、頑強に＋2のボーナス、習熟に＋1のボーナスを得ます。</p>",
             "actions": {
                 "A8wHvMnKnewQ2J3m": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "YEGd74Lssj7rCmpF": {
+                    "name": "巨大化の薬"
                 }
             }
         },
         "Health Potion": {
             "_note": "Health Potion",
+            "name": "治癒の薬",
+            "description": "<p>HPを1d4+1消去します。</p>",
             "actions": {
                 "O5MYyHpkiEz9uf6A": {
                     "name": "飲む"
@@ -529,14 +626,24 @@
         },
         "Homet's Secret Potion": {
             "_note": "Homet's Secret Potion",
+            "name": "ホメットの秘薬",
+            "description": "<p>この薬を飲んだあと、次に成功した攻撃はクリティカル成功になります。</p>",
             "actions": {
                 "NCcqIcPhEsUnFh7S": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "QyzXAnvho7lVQQtP": {
+                    "name": "ホメットの秘薬",
+                    "description": "<p>次に成功した攻撃はクリティカル成功になります。</p>"
                 }
             }
         },
         "Hopehold Flare": {
             "_note": "Hopehold Flare",
+            "name": "希望灯の照明弾",
+            "description": "<p>この照明弾を使ったとき、近距離以内の味方は希望を消費するときにd6を振ります。結果が6の場合、その希望を消費せずにその効果を得ます。この照明弾はシーンの終わりまで持続します。</p><p>@Template[type:emanation|range:c]</p>",
             "actions": {
                 "hTF2K4uWcrUypLbs": {
                     "name": "使う"
@@ -545,6 +652,8 @@
         },
         "Improved Arcane Shard": {
             "_note": "Improved Arcane Shard",
+            "name": "改良秘術石の破片",
+            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は2d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "g3sQoxS6sL3mut3u": {
                     "name": "投げつけ"
@@ -553,14 +662,23 @@
         },
         "Improved Grindletooth Venom": {
             "_note": "Improved Grindletooth Venom",
+            "name": "改良グラインドルトゥースの毒",
+            "description": "<p>この毒を物理ダメージを与える武器に塗って、その武器での次のダメージロールにd8を加えられます。</p>",
             "actions": {
                 "KhZ4WVT9cLA1a1y8": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "P7tbNjq58bQ9R1Cc": {
+                    "name": "改良グラインドルトゥースの毒"
                 }
             }
         },
         "Instant Camp": {
             "_note": "Instant Camp",
+            "name": "即席の野営",
+            "description": "<p>この小さな機械仕掛けの箱を広げて、6人を安全に収容できる大きさの野営用天幕にできます。天幕は次の長期休息の終わりに畳まれます。</p>",
             "actions": {
                 "1UhyM1dgkuxYdcZB": {
                     "name": "使う"
@@ -569,25 +687,50 @@
         },
         "Invisibility Potion": {
             "_note": "Invisibility Potion",
+            "name": "透明化の薬",
+            "description": "<p>他のクリーチャーにダメージを与えるまで、または次の休息まで、あなたは隠密状態です。</p>",
             "actions": {
                 "6UjrzTOZRPHoV2cY": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "WjiPNLu2ps0qWTJ1": {
+                    "name": "不可視化",
+                    "description": "<p>他のクリーチャーにダメージを与えるまで、または次の休息まで、あなたは隠密状態です。</p>"
                 }
             }
         },
         "Iridian Dust": {
             "_note": "Iridian Dust",
+            "name": "虹彩の粉",
+            "description": "<p>この多彩な粉はあらゆるものに付着し、これを浴びたクリーチャーが隠密状態になるのを妨げます。</p>",
             "actions": {
                 "6XX75r85cvvUD1bz": {
                     "name": "使う"
                 }
+            },
+            "effects": {
+                "EncnEGvH7ME9zNgP": {
+                    "name": "虹彩の粉",
+                    "description": "<p>この多彩な粉はあらゆるものに付着し、これを浴びたクリーチャーが隠密状態になるのを妨げます。</p>"
+                }
             }
         },
         "Jar of Lost Voices": {
-            "_note": "Jar of Lost Voices"
+            "_note": "Jar of Lost Voices",
+            "name": "失われた声の壺",
+            "description": "<p>この壺を開けて、直感に等しい分数のあいだ、耳を聾する声の反響を解き放てます。遠距離以内にいてこの音に備えていないクリーチャーは、6d8の魔法ダメージを受けます。</p><p>@Template[type:emanation|range:f]</p>",
+            "actions": {
+                "QEk4TaJeN9FX8cZN": {
+                    "name": "開ける"
+                }
+            }
         },
         "Jumping Root": {
             "_note": "Jumping Root",
+            "name": "跳躍の根",
+            "description": "<p>この根を食べて、ロールせずに1回だけ遠距離まで跳躍します。</p>",
             "actions": {
                 "TT4jzve7o2ykPcQO": {
                     "name": "食べる"
@@ -596,6 +739,8 @@
         },
         "Knowledge Stone": {
             "_note": "Knowledge Stone",
+            "name": "知識の石",
+            "description": "<p>この石を持っているあいだに死んだ場合、味方1人があなたの装備枠からカードを1枚取り、自分の装備枠か保管庫に入れられます。その知識を受け取ったあと、石は崩れ去ります。</p>",
             "actions": {
                 "We38aIuxBrv8zhfr": {
                     "name": "使う"
@@ -604,17 +749,35 @@
         },
         "Lionheart Tonic": {
             "_note": "Lionheart Tonic",
+            "name": "獅子心の強壮薬",
+            "description": "<p>この強壮薬を飲んで、恐怖付きでロールするまで習熟に＋1のボーナスを得られます。</p>",
             "actions": {
                 "hn1FjWi0ii1DXv2N": {
                     "name": "飲む"
                 }
+            },
+            "effects": {
+                "tCvHGzF8uJF1ciCQ": {
+                    "name": "獅子心",
+                    "description": "<p>この強壮薬を飲んで、恐怖付きでロールするまで習熟に＋1のボーナスを得られます。</p>"
+                }
             }
         },
         "Lyrebird Lozenge": {
-            "_note": "Lyrebird Lozenge"
+            "_note": "Lyrebird Lozenge",
+            "name": "琴鳥の錠菓",
+            "description": "<p>この錠菓を口の中で溶かして、シーンの終わりまで、聞いたことのあるどんな声でも完璧に模写できます。</p>",
+            "effects": {
+                "b0lldg6nQ598gF8F": {
+                    "name": "琴鳥",
+                    "description": "<p>この錠菓を口の中で溶かして、シーンの終わりまで、聞いたことのあるどんな声でも完璧に模写できます。</p>"
+                }
+            }
         },
         "Magic-User's Malison": {
             "_note": "Magic-User's Malison",
+            "name": "魔法使いの呪詛",
+            "description": "<p>この呪文使いの囚われた魂を解き放ったとき、保管庫にあるカードの呪文1つを、装備枠にあるかのように発動できます。これは永久に保管庫に置かれたカードには働きません。</p>",
             "actions": {
                 "I9CPyBfAsQibn5PR": {
                     "name": "使う"

@@ -150,6 +150,15 @@ function allowedNumbers(source) {
     for (const word of String(source).toLowerCase().match(/[a-z]+/g) ?? []) {
         if (NUMBER_WORDS[word]) allowed.push(NUMBER_WORDS[word]);
     }
+    /*
+     * Japanese groups large numbers by 万 (ten thousand), not by thousands, so
+     * "16 million ants" is written 1600万匹: the 16 of the original is gone and
+     * a 1600 the original never had takes its place. Allow the regrouped form,
+     * and let the digits it replaces go missing.
+     */
+    for (const [, n] of String(source).toLowerCase().matchAll(/(\d+)\s*million/g)) {
+        allowed.push(String(Number(n) * 100));
+    }
     return allowed;
 }
 
@@ -1140,8 +1149,18 @@ const commands = {
                      * number of the original is still there.
                      */
                     const remaining = (String(value).match(NUMBERS) ?? []);
+                    /*
+                     * A 万-regrouped number stands in for the digits it replaces:
+                     * if the translation writes 1600万 for "16 million", the 16 is
+                     * accounted for and must not be reported as missing.
+                     */
+                    const regrouped = new Set();
+                    for (const [, n] of String(source).toLowerCase().matchAll(/(\d+)\s*million/g)) {
+                        if (remaining.includes(String(Number(n) * 100))) regrouped.add(n);
+                    }
                     const missing = [];
                     for (const number of String(source).match(NUMBERS) ?? []) {
+                        if (regrouped.has(number)) continue;
                         const at = remaining.indexOf(number);
                         if (at === -1) missing.push(number);
                         else remaining.splice(at, 1);
