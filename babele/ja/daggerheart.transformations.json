@@ -7,10 +7,14 @@
     },
     "entries": {
         "Change Shape": {
-            "_note": "Change Shape"
+            "_note": "Change Shape",
+            "name": "姿を変える",
+            "description": "<p>休息中、ダウンタイムムーブを使って、いまの種族を別の種族と入れ替えられます。そうしたとき、自分の見た目がどう変わるか述べてください。</p>"
         },
         "Corpse": {
-            "_note": "Corpse"
+            "_note": "Corpse",
+            "name": "死体",
+            "description": "<p>休息中、死んで間もないクリーチャーの遺骸が手に入る場合にのみ、HPを消去できます。その素材を使って自分の死体をどう保つか述べてください。</p>"
         },
         "Ephemeral": {
             "_note": "Ephemeral",
@@ -18,7 +22,14 @@
             "description": "<p>あなたの身体は実体と非実体のあいだで揺らぎます。物理ダメージに耐性を得て、魔法ダメージを2倍受け、<strong>ストレスを2マーク</strong>して一瞬だけ固体をすり抜けられます。</p>",
             "actions": {
                 "pBliCoFhJ1tpOfFN": {
-                    "name": "ストレスをマーク"
+                    "name": "ストレスをマーク",
+                    "description": "<p><strong>ストレスを2マーク</strong>して、一瞬だけ固体を通り抜けます。</p>"
+                }
+            },
+            "effects": {
+                "4G5m6sQQ3npqoK77": {
+                    "name": "儚き身",
+                    "description": "<p>あなたの体は実体のあるなしを揺らぎます。物理ダメージへの抵抗を得ますが、魔法ダメージは2倍受けます。</p>"
                 }
             }
         },
@@ -39,48 +50,95 @@
             }
         },
         "Gifted": {
-            "_note": "Gifted"
+            "_note": "Gifted",
+            "name": "恵まれた才",
+            "description": "<p>アクション、リアクション、ダメージのロールに＋1のボーナスを得ます。</p>",
+            "effects": {
+                "W38biQnO2uyIhRny": {
+                    "name": "恵まれた才",
+                    "description": "<p>アクション、リアクション、ダメージのロールに＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Howling Rampage": {
-            "_note": "Howling Rampage"
+            "_note": "Howling Rampage",
+            "name": "遠吠えの暴走",
+            "description": "<p>狼の姿のあいだに最後のストレスをマークしたとき、あなたは暴走に入ります。自分のティアに等しい数の<strong>d20</strong>を振り、至近距離以内のすべてのクリーチャーにその分の物理ダメージを与え、そのあと狼の姿が解けます。</p>",
+            "actions": {
+                "aDvVychT2u6QD8xw": {
+                    "areas": [
+                        {
+                            "name": "遠吠えの暴走"
+                        }
+                    ]
+                }
+            }
         },
         "Only Skin Deep": {
-            "_note": "Only Skin Deep"
+            "_note": "Only Skin Deep",
+            "name": "皮一枚だけ",
+            "description": "<p>選んだ種族の特徴のうち1つだけの恩恵を得ます。どれにするかは種族を選ぶときに決めます。ダウンタイムムーブを使って、その種族の別の特徴を選び直せます。</p>"
         },
         "Unfinished Business": {
-            "_note": "Unfinished Business"
+            "_note": "Unfinished Business",
+            "name": "未だ果たさぬこと",
+            "description": "<p>どんな目的か願いがあなたを死すべき者の領域に縛りつけているか、GMと相談して決めてください。それを果たしたとき、あなたは死の帳を越えます。</p>"
         },
         "Weight of Divinity": {
-            "_note": "Weight of Divinity"
+            "_note": "Weight of Divinity",
+            "name": "神性の重み",
+            "description": "<p>ロールに失敗したとき、ストレスを1マークしなければなりません。さもなければGMが恐怖を1得ます。</p>"
         },
         "Wolf Form": {
             "_note": "Wolf Form",
+            "name": "狼の姿",
+            "description": "<p>HPを1つ以上マークしたとき、<strong>ストレスを1マーク</strong>して狼の姿に入れます。この姿のあいだ、攻撃ロールとダメージロールに<strong>1d10</strong>のボーナスを得ます。狼の姿のあいだに希望付きでロールしたとき、ストレスを1マークしなければなりません。狼の姿は「遠吠えの暴走」に入るか休息を取るまで続きます。</p>",
             "actions": {
                 "zWtTSU2L4I0nFmKb": {
                     "name": "ストレスをマーク"
                 }
+            },
+            "effects": {
+                "G58SsLg2kER9qcNv": {
+                    "name": "狼の姿",
+                    "description": "<p>この姿のあいだ、攻撃ロールとダメージロールに<strong>1d10</strong>のボーナスを得ます。狼の姿のあいだに希望付きでロールしたとき、ストレスも1マークしなければなりません。狼の姿は「遠吠えの暴走」に入るか休息を取るまで続きます。</p>"
+                }
             }
         },
         "Won't Stay Dead": {
-            "_note": "Won't Stay Dead"
+            "_note": "Won't Stay Dead",
+            "name": "死んだままではいない",
+            "description": "<p>「すべてを賭ける」のデスムーブを選んで失敗したとき、<strong>HPを1つ恒久的にマーク</strong>して、代わりに成功にできます。そうした場合も、希望ダイスの値を使ってHPとストレスを消去します。最後のHPを恒久的にマークしたとき、あなたは死の帳を越えます。</p>"
         },
         "Demigod": {
-            "_note": "Demigod"
+            "_note": "Demigod",
+            "name": "半神",
+            "description": "<p>半神は、その血管に神々の血が流れる死すべきクリーチャーです。</p>"
         },
         "Ghost": {
-            "_note": "Ghost"
+            "_note": "Ghost",
+            "name": "ゴースト",
+            "description": "<p>ゴーストは、死すべき者の領域に縛られた、かつて生きていた者たちの霊です。</p>"
         },
         "Reanimated": {
-            "_note": "Reanimated"
+            "_note": "Reanimated",
+            "name": "蘇生体",
+            "description": "<p>蘇生体は、再び命を与えられた死体です。</p>"
         },
         "Shapeshifter": {
-            "_note": "Shapeshifter"
+            "_note": "Shapeshifter",
+            "name": "姿を変える者",
+            "description": "<p>姿を変える者は、自分の肉体の姿を変えられるクリーチャーです。</p>"
         },
         "Vampire": {
-            "_note": "Vampire"
+            "_note": "Vampire",
+            "name": "吸血鬼",
+            "description": "<p>吸血鬼は、鋭い牙を持ち、生者の血を糧とする不死のクリーチャーです。</p>"
         },
         "Werewolf": {
-            "_note": "Werewolf"
+            "_note": "Werewolf",
+            "name": "人狼",
+            "description": "<p>人狼は、大きな超自然の狼に変身するクリーチャーです。</p>"
         }
     }
 }

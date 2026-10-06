@@ -2,9 +2,14 @@
     "label": "communities",
     "collection": "daggerheart.communities",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
+    "folders": {
+        "Community Features": "コミュニティの特徴"
+    },
     "entries": {
         "Duneborne": {
-            "_note": "Duneborne"
+            "_note": "Duneborne",
+            "name": "砂丘生まれ",
+            "description": "<p>砂丘生まれのコミュニティの一員であるとは、移り変わる砂と乾いた気候の砂漠に住まいを築いてきたということです。</p>"
         },
         "Freeborne": {
             "_note": "Freeborne",
@@ -12,52 +17,94 @@
             "description": "<p>自由民のコミュニティの一員であるということは、かつて圧政下にあったが今は解放された共同体の出身だということです。</p>"
         },
         "Frostborne": {
-            "_note": "Frostborne"
+            "_note": "Frostborne",
+            "name": "霜生まれ",
+            "description": "<p>霜生まれのコミュニティの一員であるとは、雪と氷の地から来たということです。</p>"
         },
         "Hearthborne": {
-            "_note": "Hearthborne"
+            "_note": "Hearthborne",
+            "name": "炉端生まれ",
+            "description": "<p>炉端生まれのコミュニティの一員であるとは、質素な村や趣ある田舎で暮らしてきた、つつましい出自だということです。</p>"
         },
         "Highborne": {
-            "_note": "Highborne"
+            "_note": "Highborne",
+            "name": "高貴生まれ",
+            "description": "<p>高貴生まれのコミュニティの一員であるとは、社会の上層における優雅、豪奢、名望の生活に慣れているということです。</p>"
         },
         "Loreborne": {
-            "_note": "Loreborne"
+            "_note": "Loreborne",
+            "name": "学識生まれ",
+            "description": "<p>学識生まれのコミュニティの一員であるとは、学問や政治の手腕を重んじる社会の出だということです。</p>"
         },
         "Orderborne": {
-            "_note": "Orderborne"
+            "_note": "Orderborne",
+            "name": "規律生まれ",
+            "description": "<p>規律生まれのコミュニティの一員であるとは、鍛錬か信仰を重んじる集団の出であり、そこでの経験を映す信条の数々を守っているということです。</p>"
         },
         "Reborne": {
-            "_note": "Reborne"
+            "_note": "Reborne",
+            "name": "再生まれ",
+            "description": "<p>あなたはかつて別のコミュニティの一員でしたが、いまはもうそこに属していません。</p>"
         },
         "Ridgeborne": {
-            "_note": "Ridgeborne"
+            "_note": "Ridgeborne",
+            "name": "尾根生まれ",
+            "description": "<p>尾根生まれのコミュニティの一員であるとは、岩の峰と切り立った崖の山腹を故郷と呼んできたということです。</p>"
         },
         "Seaborne": {
-            "_note": "Seaborne"
+            "_note": "Seaborne",
+            "name": "海生まれ",
+            "description": "<p>海生まれのコミュニティの一員であるとは、大きな水域の上か、その近くで暮らしてきたということです。</p>"
         },
         "Slyborne": {
-            "_note": "Slyborne"
+            "_note": "Slyborne",
+            "name": "狡猾生まれ",
+            "description": "<p>狡猾生まれのコミュニティの一員であるとは、あらゆる犯罪者、詐欺師、ペテン師を含む、法の外で動く集団の出だということです。</p>"
         },
         "Underborne": {
-            "_note": "Underborne"
+            "_note": "Underborne",
+            "name": "地下生まれ",
+            "description": "<p>地下生まれのコミュニティの一員であるとは、地下の社会の出だということです。</p>"
         },
         "Wanderborne": {
-            "_note": "Wanderborne"
+            "_note": "Wanderborne",
+            "name": "放浪生まれ",
+            "description": "<p>放浪生まれのコミュニティの一員であるとは、定まった家を持たず、さまざまな文化に触れながら流れ者として暮らしてきたということです。</p>"
         },
         "Warborne": {
-            "_note": "Warborne"
+            "_note": "Warborne",
+            "name": "戦生まれ",
+            "description": "<p>戦生まれのコミュニティの一員であるとは、戦によって荒らされている、あるいは荒らされた地から来たということです。</p>"
         },
         "Wildborne": {
-            "_note": "Wildborne"
+            "_note": "Wildborne",
+            "name": "森生まれ",
+            "description": "<p>森生まれのコミュニティの一員であるとは、森の奥深くで暮らしてきたということです。</p>"
         },
         "Brave Face": {
-            "_note": "Brave Face"
+            "_note": "Brave Face",
+            "name": "強がり",
+            "description": "<p>セッションごとに1回、ストレスをマークさせられるとき、代わりに<strong>希望を1消費</strong>できます。</p>",
+            "actions": {
+                "sguCcIhnp8FjwVZd": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Close-Knit": {
-            "_note": "Close-Knit"
+            "_note": "Close-Knit",
+            "name": "固い絆",
+            "description": "<p>長期休息ごとに1回、<strong>任意の数の希望を消費</strong>して、遠距離以内の味方1人に同じ数の希望を与えられます。</p>",
+            "actions": {
+                "OmflNw0H1vsGAQVp": {
+                    "name": "希望を与える"
+                }
+            }
         },
         "Dedicated": {
             "_note": "Dedicated",
+            "name": "献身",
+            "description": "<p>育ちがあなたに植えつけた言葉か価値を3つ書き留めます。休息ごとに1回、いまの行動でそれらの信条の1つをどう体現しているか述べたとき、希望ダイスとしてd20を振れます</p>",
             "actions": {
                 "ZBVqSlsDUKf8uGrI": {
                     "name": "使う"
@@ -65,13 +112,29 @@
             }
         },
         "Found Family": {
-            "_note": "Found Family"
+            "_note": "Found Family",
+            "name": "選んだ家族",
+            "description": "<p>休息ごとに1回、<strong>希望を1消費</strong>して、味方の経験を自分のもののように使えます。そうしたとき、その味方と過ごした時間がこの瞬間へどう備えさせたか述べてください。</p><p>新しいコミュニティに加わるか、かつてのコミュニティを取り戻したとき、このカードを恒久的にそちらのカードと取り替えられます。</p>",
+            "actions": {
+                "jt9gOu3FQLcW1TFC": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Hardy": {
-            "_note": "Hardy"
+            "_note": "Hardy",
+            "name": "強健",
+            "description": "<p>休息を取ったとき、HPを1消去します。</p>"
         },
         "Know the Tide": {
-            "_note": "Know the Tide"
+            "_note": "Know the Tide",
+            "name": "潮を知る",
+            "description": "<p>命の満ち引きを感じ取れます。恐怖付きでロールしたとき、自分のコミュニティカードにトークンを1つ置きます。トークンは自分のレベルに等しい数まで持てます。アクションロールを行う前に、これらのトークンを任意の数だけ消費して、消費したトークン1つごとにそのロールに＋1のボーナスを得られます。各セッションの終わりに、消費していないトークンをすべて取り除きます。</p>",
+            "actions": {
+                "tFlus34KotJjHfTe": {
+                    "name": "潮を知る"
+                }
+            }
         },
         "Lightfoot": {
             "_note": "Lightfoot",
@@ -80,33 +143,113 @@
             "effects": {
                 "4my9X5XC3uwDSx7B": {
                     "name": "軽やかな足",
-                    "description": "<p>あなたの動きは自然と静かです。音を立てずに移動するロールに有利を得ます。</p>"
+                    "description": "<p>あなたの動きは自然と静かです。音を立てずに移動するロールに有利を得ます。</p>",
+                    "changes": [
+                        "音を立てずに移動する。"
+                    ]
                 }
             }
         },
         "Low-Light Living": {
-            "_note": "Low-Light Living"
+            "_note": "Low-Light Living",
+            "name": "薄明かりの暮らし",
+            "description": "<p>薄明かりか濃い影のある場所にいるとき、その場所で隠れる、調べる、細部を察知するロールに有利を得ます。</p>",
+            "effects": {
+                "pCp32u7UwqxCI4WW": {
+                    "name": "薄明かりの暮らし",
+                    "description": "<p>薄明かりか濃い影のある場所にいるとき、その場所で隠れる、調べる、細部を察知するロールに有利を得ます。</p>",
+                    "changes": [
+                        "薄明かりで隠れる、調べる、細部を察知するロール"
+                    ]
+                }
+            }
         },
         "Nomadic Pack": {
-            "_note": "Nomadic Pack"
+            "_note": "Nomadic Pack",
+            "name": "放浪者の荷袋",
+            "description": "<p>持ち物に放浪者の荷袋を加えます。セッションごとに1回、希望を1消費して、この荷袋に手を入れ、そのときの状況に役立つ普通のアイテムを取り出せます。何を取り出すかはGMと相談して決めてください。</p>",
+            "actions": {
+                "Jd9uVincqkIMAXgU": {
+                    "name": "アイテムを取り出す"
+                }
+            }
         },
         "Oasis": {
-            "_note": "Oasis"
+            "_note": "Oasis",
+            "name": "オアシス",
+            "description": "<p>短期休息中、あなたか味方1人は、ダウンタイムムーブに使ったダイスを振り直し、高い方の結果を取れます。</p>"
         },
         "Privilege": {
-            "_note": "Privilege"
+            "_note": "Privilege",
+            "name": "特権",
+            "description": "<p>貴族と交わる、値を交渉する、評判を利かせて望みを通すロールに有利を得ます。</p>",
+            "effects": {
+                "xgtjykfgvg142urA": {
+                    "name": "特権",
+                    "description": "<p>貴族と交わる、値を交渉する、評判を利かせて望みを通すロールに有利を得ます。</p>",
+                    "changes": [
+                        "貴族と交わる",
+                        "値を交渉する",
+                        "評判を利かせて望みを通す"
+                    ]
+                }
+            }
         },
         "Scoundrel": {
-            "_note": "Scoundrel"
+            "_note": "Scoundrel",
+            "name": "悪党",
+            "description": "<p>犯罪者と交渉する、嘘を見抜く、隠れるのに安全な場所を見つけるロールに有利を得ます。</p>",
+            "effects": {
+                "snkYmZ22Q8HHLY9M": {
+                    "name": "悪党",
+                    "description": "<p>犯罪者と交渉する、嘘を見抜く、隠れるのに安全な場所を見つけるロールに有利を得ます。</p>",
+                    "changes": [
+                        "犯罪者と交渉する",
+                        "嘘を見抜く",
+                        "隠れるのに安全な場所を見つける"
+                    ]
+                }
+            }
         },
         "Steady": {
-            "_note": "Steady"
+            "_note": "Steady",
+            "name": "堅実",
+            "description": "<p>危険な崖や岩棚を渡る、厳しい環境を進む、生き延びる知識を使うロールに有利を得ます。</p>",
+            "effects": {
+                "QDf9LD8Mhd0Cw0CB": {
+                    "name": "堅実",
+                    "description": "<p>危険な崖や岩棚を渡る、厳しい環境を進む、生き延びる知識を使うロールに有利を得ます。</p>",
+                    "changes": [
+                        "危険な崖や岩棚を渡る",
+                        "厳しい環境を進む",
+                        "生き延びる知識を使う"
+                    ]
+                }
+            }
         },
         "Unbound": {
-            "_note": "Unbound"
+            "_note": "Unbound",
+            "name": "束縛なき",
+            "description": "<p>セッションごとに1回、恐怖付きでロールしたとき、代わりに希望付きのロールに変えられます。</p>",
+            "actions": {
+                "L03g0jA9msxRiuXL": {
+                    "name": "恐怖を希望へ"
+                }
+            }
         },
         "Well-Read": {
-            "_note": "Well-Read"
+            "_note": "Well-Read",
+            "name": "博識",
+            "description": "<p>名の知れた人物や場所の歴史、文化、政治に関わるロールに有利を得ます。</p>",
+            "effects": {
+                "RwhxYOAAKKlYZiz0": {
+                    "name": "博識",
+                    "description": "<p>名の知れた人物や場所の歴史、文化、政治に関わるロールに有利を得ます。</p>",
+                    "changes": [
+                        "名の知れた人物や場所の歴史、文化、政治"
+                    ]
+                }
+            }
         }
     }
 }

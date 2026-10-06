@@ -8,13 +8,19 @@
     },
     "entries": {
         "Additional Consumables": {
-            "_note": "Additional Consumables"
+            "_note": "Additional Consumables",
+            "name": "追加の消耗品",
+            "description": "<p>以下の表には、Hope &amp; Fear 拡張セットの消耗品が含まれます。</p>"
         },
         "Additional Items": {
-            "_note": "Additional Items"
+            "_note": "Additional Items",
+            "name": "追加のアイテム",
+            "description": "<p>以下の表には、Hope &amp; Fear 拡張セットのアイテムが含まれます。</p>"
         },
         "Core Set Consumables": {
-            "_note": "Core Set Consumables"
+            "_note": "Core Set Consumables",
+            "name": "コアセットの消耗品",
+            "description": "<p>以下の表には、Daggerheart コアセットの消耗品が含まれます。</p>"
         },
         "Core Set Items": {
             "_note": "Core Set Items",
@@ -30,6 +36,36 @@
                 },
                 "FxYpST4nQUTBp1mN": {
                     "description": "<p>敵対者を1体以上捕らえる。</p>"
+                },
+                "bTkZgxqEr4lNxzeK": {
+                    "description": "<p>魔法の装置を起動する。</p>"
+                },
+                "T39LgOL1cw5AIY59": {
+                    "description": "<p>キャラクターに罪を着せる、またはその評判を汚す。</p>"
+                },
+                "MHgv8dlrwA3ZmBKq": {
+                    "description": "<p>相手を隅か待ち伏せの地点へ追い込む。</p>"
+                },
+                "4USCNNavzVvBqldn": {
+                    "description": "<p>魔法の儀式、法的な式典、時機を要する呪文を止める。</p>"
+                },
+                "gwZnWTauHsbb6rsr": {
+                    "description": "<p>戦線を守る——敵を特定の場所か集団に到達させない。</p>"
+                },
+                "beDIxxPyCCVa8nlE": {
+                    "description": "<p>対象に証拠か追跡装置を仕込む。</p>"
+                },
+                "C70V6prVmZd5VRV8": {
+                    "description": "<p>別の集団が到着する前に特定の場所を確保する。</p>"
+                },
+                "i02rh05CvhHlKJCN": {
+                    "description": "<p>相手に嫌がらせをして資源を削る、あるいは手を取らせ続ける。</p>"
+                },
+                "AbNgD5GCbWuui9oP": {
+                    "description": "<p>建築物、彫像、祠、武器のいずれかを破壊する。</p>"
+                },
+                "TCrdyh3qhl2vtQxO": {
+                    "description": "<p>状況を調べて、既知の情報を裏づけるか否定する。</p>"
                 }
             }
         }
