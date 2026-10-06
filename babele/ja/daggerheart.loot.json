@@ -5,13 +5,13 @@
     "entries": {
         "Airblade Charm": {
             "_note": "Airblade Charm",
+            "name": "空刃の護符",
+            "description": "<p>この護符は近接射程の武器に取り付けられます。休息ごとに3回、護符を起動して、近距離以内の対象を攻撃できます。</p>",
             "actions": {
                 "nlAfmdgfHTmsOdPb": {
                     "name": "起動する"
                 }
-            },
-            "name": "空刃の護符",
-            "description": "<p>この護符は近接射程の武器に取り付けられます。休息ごとに3回、護符を起動して、近距離以内の対象を攻撃できます。</p>"
+            }
         },
         "Alistair's Torch": {
             "_note": "Alistair's Torch",
@@ -25,13 +25,13 @@
         },
         "Arcane Prism": {
             "_note": "Arcane Prism",
+            "name": "秘術のプリズム",
+            "description": "<p>このプリズムを選んだ場所に据えて起動します。そこから近距離以内のすべての味方は、呪文発動ロールに＋1のボーナスを得ます。起動しているあいだ、プリズムは動かせません。プリズムを停止させたら、次の長期休息まで再び起動できません。</p>",
             "actions": {
                 "QgBDJh0laEvOB94w": {
                     "name": "起動する"
                 }
             },
-            "name": "秘術のプリズム",
-            "description": "<p>このプリズムを選んだ場所に据えて起動します。そこから近距離以内のすべての味方は、呪文発動ロールに＋1のボーナスを得ます。起動しているあいだ、プリズムは動かせません。プリズムを停止させたら、次の長期休息まで再び起動できません。</p>",
             "effects": {
                 "Ee3Z0PnyERiNFgjU": {
                     "name": "秘術のプリズム"
@@ -51,13 +51,13 @@
         },
         "Augur's Relic": {
             "_note": "Augur's Relic",
+            "name": "占者の遺物",
+            "description": "<p>長期休息ごとに1回、希望を消費せずに自分の希望の特徴を起動できます。遺物は1つしか持てません。</p>",
             "actions": {
                 "liWsgZGKy0Jk9BVb": {
                     "name": "起動する"
                 }
-            },
-            "name": "占者の遺物",
-            "description": "<p>長期休息ごとに1回、希望を消費せずに自分の希望の特徴を起動できます。遺物は1つしか持てません。</p>"
+            }
         },
         "Bag of Ficklesand": {
             "_note": "Bag of Ficklesand",
@@ -81,13 +81,13 @@
         },
         "Belt of Unity": {
             "_note": "Belt of Unity",
+            "name": "結束の帯",
+            "description": "<p>セッションごとに1回、希望を5消費して、2人ではなく3人のPCでタッグチームロールを主導できます。</p>",
             "actions": {
                 "SuaYNEUO9U9TIZWb": {
                     "name": "使う"
                 }
-            },
-            "name": "結束の帯",
-            "description": "<p>セッションごとに1回、希望を5消費して、2人ではなく3人のPCでタッグチームロールを主導できます。</p>"
+            }
         },
         "Blackwing Quill": {
             "_note": "Blackwing Quill",
@@ -137,13 +137,13 @@
         },
         "Calming Pendant": {
             "_note": "Calming Pendant",
+            "name": "静穏のペンダント",
+            "description": "<p>最後のストレスをマークするとき、[[/r d6]]を振ります。結果が5以上の場合、それをマークしません。</p>",
             "actions": {
                 "wIlkGuUddWSUp4nN": {
                     "name": "使う"
                 }
-            },
-            "name": "静穏のペンダント",
-            "description": "<p>最後のストレスをマークするとき、[[/r d6]]を振ります。結果が5以上の場合、それをマークしません。</p>"
+            }
         },
         "Caltrops": {
             "_note": "Caltrops",
@@ -208,13 +208,13 @@
         },
         "Communion Relic": {
             "_note": "Communion Relic",
+            "name": "交感の遺物",
+            "description": "<p>休息ごとに1回、希望を1消費して、味方の経験を自分のもののように使えます。遺物は1つしか持てません。</p>",
             "actions": {
                 "f9OftUibtcsKJv94": {
                     "name": "希望を消費する"
                 }
-            },
-            "name": "交感の遺物",
-            "description": "<p>休息ごとに1回、希望を1消費して、味方の経験を自分のもののように使えます。遺物は1つしか持てません。</p>"
+            }
         },
         "Companion Case": {
             "_note": "Companion Case",
@@ -244,13 +244,13 @@
         },
         "Crucible Frames": {
             "_note": "Crucible Frames",
+            "name": "坩堝の眼鏡",
+            "description": "<p>この眼鏡は物体やクリーチャーの弱点を明らかにします。休息ごとに3回、希望を1消費して、攻撃ロールに有利を得られます。</p>",
             "actions": {
                 "pOrtB09wEkZiihkg": {
                     "name": "希望を消費する"
                 }
-            },
-            "name": "坩堝の眼鏡",
-            "description": "<p>この眼鏡は物体やクリーチャーの弱点を明らかにします。休息ごとに3回、希望を1消費して、攻撃ロールに有利を得られます。</p>"
+            }
         },
         "Dagginae's Obsidian Slate": {
             "_note": "Dagginae's Obsidian Slate",
@@ -287,13 +287,13 @@
         },
         "Elusive Amulet": {
             "_note": "Elusive Amulet",
+            "name": "捉えどころない護符",
+            "description": "<p>長期休息ごとに1回、この護符を起動して、移動するまで隠密状態になれます。この方法で隠密状態のあいだ、敵対者が通常ならあなたを見える位置に移動しても、あなたは見つかりません。</p>",
             "actions": {
                 "vitnEzfU3gCzsRem": {
                     "name": "起動する"
                 }
             },
-            "name": "捉えどころない護符",
-            "description": "<p>長期休息ごとに1回、この護符を起動して、移動するまで隠密状態になれます。この方法で隠密状態のあいだ、敵対者が通常ならあなたを見える位置に移動しても、あなたは見つかりません。</p>",
             "effects": {
                 "YBkYjxU0Vn5JEsMK": {
                     "name": "捉えどころない護符",
@@ -341,19 +341,37 @@
         "Fire Jar": {
             "_note": "Fire Jar",
             "name": "火の壺",
-            "description": "<p>この壺の奇妙な液体の中身を注ぎ出して、直ちに火を起こせます。中身は長期休息を取ると元に戻ります。</p>"
+            "description": "<p>この壺の奇妙な液体の中身を注ぎ出して、直ちに火を起こせます。中身は長期休息を取ると元に戻ります。</p>",
+            "actions": {
+                "nzXMuxD8DpT1dMXF": {
+                    "name": "注ぐ"
+                }
+            }
         },
         "Flickerfly Pendant": {
-            "_note": "Flickerfly Pendant"
+            "_note": "Flickerfly Pendant",
+            "name": "瞬羽蝶のペンダント",
+            "description": "<p>このペンダントを持っているあいだ、物理ダメージを与える近接射程の武器は薄絹のような光沢を帯び、至近距離以内の対象を攻撃できます。</p>"
         },
         "Force Disc": {
-            "_note": "Force Disc"
+            "_note": "Force Disc",
+            "name": "力場の円盤",
+            "description": "<p>この揺らめく二次元の魔法の力場の円盤は直径4フィートで、小石と魔法的につながっています。円盤は常に小石の北3フィート、同じ高さに浮かびます。小石の質量は、円盤が載せている総質量の100分の1に等しくなります。</p>"
         },
         "Furball Bag": {
-            "_note": "Furball Bag"
+            "_note": "Furball Bag",
+            "name": "毛玉の袋",
+            "description": "<p>休息ごとに1回、この袋から、出自も種もはっきりしない無害な猫ほどの大きさの毛深い生き物を[[/r 2d20]]匹取り出せます。</p>",
+            "actions": {
+                "bIr96Iej1iMgJ1cw": {
+                    "name": "生き物を取り出す"
+                }
+            }
         },
         "Gadiman's Backpack": {
             "_note": "Gadiman's Backpack",
+            "name": "ガディマンの背負い袋",
+            "description": "<p>休息ごとに1回、希望を1消費して、この鞄の中に1立方フィートまでの大きさの普通のアイテムを呼び出せます。</p>",
             "actions": {
                 "ERENWVE5XQzIUQfz": {
                     "name": "希望を消費する"
@@ -361,133 +379,260 @@
             }
         },
         "Gecko Gloves": {
-            "_note": "Gecko Gloves"
+            "_note": "Gecko Gloves",
+            "name": "ヤモリの手袋",
+            "description": "<p>垂直な面を登り、天井を渡れます。</p>"
         },
         "Gem of Alacrity": {
-            "_note": "Gem of Alacrity"
+            "_note": "Gem of Alacrity",
+            "name": "敏速の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに素早さを使えるようになります。</p>"
         },
         "Gem of Audacity": {
-            "_note": "Gem of Audacity"
+            "_note": "Gem of Audacity",
+            "name": "大胆の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに社交を使えるようになります。</p>"
         },
         "Gem of Insight": {
-            "_note": "Gem of Insight"
+            "_note": "Gem of Insight",
+            "name": "洞察の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに直感を使えるようになります。</p>"
         },
         "Gem of Might": {
-            "_note": "Gem of Might"
+            "_note": "Gem of Might",
+            "name": "剛力の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに頑強を使えるようになります。</p>"
         },
         "Gem of Precision": {
-            "_note": "Gem of Precision"
+            "_note": "Gem of Precision",
+            "name": "精確の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに器用を使えるようになります。</p>"
         },
         "Gem of Sagacity": {
-            "_note": "Gem of Sagacity"
+            "_note": "Gem of Sagacity",
+            "name": "明知の宝玉",
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに知識を使えるようになります。</p>"
         },
         "Ghoulskin Gloves": {
-            "_note": "Ghoulskin Gloves"
+            "_note": "Ghoulskin Gloves",
+            "name": "グールの皮の手袋",
+            "description": "<p>この手袋をつけて物理武器で攻撃したとき、そのダメージは物理と魔法の両方として扱われます。</p>"
         },
         "Glamour Stone": {
-            "_note": "Glamour Stone"
+            "_note": "Glamour Stone",
+            "name": "幻装の石",
+            "description": "<p>この小石ほどの大きさの石を起動して、見える相手の姿を記憶します。希望を1消費して、その装いを幻影として自分の上に魔法的に再現します。</p>",
+            "actions": {
+                "ATQgH12mufTOQLKs": {
+                    "name": "幻影を作る"
+                }
+            },
+            "effects": {
+                "K5SB6tfuDkdVaQYe": {
+                    "name": "幻装の石",
+                    "description": "<p>この小石ほどの大きさの石を起動して、見える相手の姿を記憶します。希望を1消費して、その装いを幻影として自分の上に魔法的に再現します。</p>"
+                }
+            }
         },
         "Glider": {
-            "_note": "Glider"
+            "_note": "Glider",
+            "name": "滑空傘",
+            "description": "<p>落下しているあいだ、<strong>ストレスを1マーク</strong>して、この小さな落下傘を広げ、安全に地面へ滑空できます。</p>",
+            "actions": {
+                "Adz50oihGEMJxbyA": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Gloves of Alacrity": {
-            "_note": "Gloves of Alacrity"
+            "_note": "Gloves of Alacrity",
+            "name": "敏速の手袋",
+            "description": "<p>武器をリロードするためにストレスをマークするとき、それをマークしません。</p>"
         },
         "Gourmet Granules": {
-            "_note": "Gourmet Granules"
+            "_note": "Gourmet Granules",
+            "name": "美食の顆粒",
+            "description": "<p>この旨味の粉は、どれほど味気なくても腐っていても、振りかけた食べ物を美味で健やかなものに変えます。</p>"
         },
         "Grapnel": {
-            "_note": "Grapnel"
+            "_note": "Grapnel",
+            "name": "引っ掛け鉤",
+            "description": "<p>切り立った面を登るアクションロールに有利を得ます。</p>",
+            "effects": {
+                "GdW5jIrTba4dr4Rv": {
+                    "name": "引っ掛け鉤",
+                    "description": "<p>切り立った面を登るアクションロールに有利を得ます。</p>",
+                    "changes": [
+                        "切り立った面を登るアクションロール"
+                    ]
+                }
+            }
         },
         "Gravewarden's Bell": {
-            "_note": "Gravewarden's Bell"
+            "_note": "Gravewarden's Bell",
+            "name": "墓守の鈴",
+            "description": "<p>この鈴は、幽霊か不死のクリーチャーが遠距離以内に入ったときに鳴ります。</p>"
         },
         "Greatstone": {
-            "_note": "Greatstone"
+            "_note": "Greatstone",
+            "name": "大石",
+            "description": "<p>この石は、まだ特徴を持っていない武器に取り付けられます。その武器は以下の特徴を得ます。</p><p><strong>強力</strong>：攻撃成功時、ダメージダイスを1個追加で振り、最も低い出目を捨てます。</p>"
         },
         "Hero's Helm": {
-            "_note": "Hero's Helm"
+            "_note": "Hero's Helm",
+            "name": "英雄の兜",
+            "description": "<p>攻撃でクリティカル成功したとき、近距離以内のすべての味方は希望を1得ます。</p>",
+            "actions": {
+                "SpZw1xs8sk4c8Hn9": {
+                    "name": "希望を与える",
+                    "areas": [
+                        {
+                            "name": "英雄の兜"
+                        }
+                    ]
+                }
+            }
         },
         "Hollowbark Horn": {
-            "_note": "Hollowbark Horn"
+            "_note": "Hollowbark Horn",
+            "name": "空木の角笛",
+            "description": "<p>この角笛を吹いて、小さな森の生き物を1匹呼び、簡単な用を果たさせられます。</p>"
         },
         "Homing Compasses": {
-            "_note": "Homing Compasses"
+            "_note": "Homing Compasses",
+            "name": "帰向の羅針盤",
+            "description": "<p>この2つの羅針盤は、どれほど離れていても互いを指し示します。</p>"
         },
         "Honing Relic": {
-            "_note": "Honing Relic"
+            "_note": "Honing Relic",
+            "name": "研磨の遺物",
+            "description": "<p>自分が選んだ経験1つに＋1のボーナスを得ます。遺物は1つしか持てません。</p>"
         },
         "Hopekeeper Locket": {
             "_note": "Hopekeeper Locket",
+            "name": "希望守りのロケット",
+            "description": "<p>長期休息中、希望が6ある場合、希望を1消費して、このロケットに自分の満ちた決意を込められます。</p><p>希望が0のとき、このロケットを使って直ちに希望を1得られます。この方法で再び使うには、ロケットに改めて込め直さなければなりません。</p>",
             "actions": {
+                "iwDm6P1ABr7vojGr": {
+                    "name": "力を注ぐ"
+                },
                 "xof31iSNIfxhbZH9": {
                     "name": "使う"
                 }
             }
         },
         "Infinite Bag": {
-            "_note": "Infinite Bag"
+            "_note": "Infinite Bag",
+            "name": "無限の袋",
+            "description": "<p>この袋にアイテムを収めると、空きが尽きることのないポケット次元に保たれます。アイテムはいつでも取り出せます。</p>"
         },
         "Insomniac's Periapt": {
             "_note": "Insomniac's Periapt",
+            "name": "不眠者の護符",
+            "description": "<p>HPもストレスも消去せずに休息を取ったとき、次の休息まで攻撃ロールとダメージロールに＋2のボーナスを得ます。</p>",
             "actions": {
                 "c4teM6lMrHR7170V": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "lQGyhpLsjSIa2IFI": {
+                    "name": "不眠",
+                    "description": "<p>次の休息まで攻撃ロールとダメージロールに＋2のボーナスを得ます。</p>"
                 }
             }
         },
         "Iron Dagger Pendant": {
             "_note": "Iron Dagger Pendant",
+            "name": "鉄のダガーのペンダント",
+            "description": "<p>長期休息ごとに1回、希望を1消費して、クリーチャーの名前をこのペンダントに告げられます。ペンダントは次の長期休息まで、そのクリーチャーの現在の場所へあなたを穏やかに引き寄せます。</p>",
             "actions": {
                 "yLsPSAceq9zCOWbV": {
                     "name": "起動する"
                 }
+            },
+            "effects": {
+                "s4bAygaEXKL5YTRQ": {
+                    "name": "鉄のダガーのペンダント",
+                    "description": "<p>このペンダントは次の長期休息まで、そのクリーチャーの現在の場所へあなたを穏やかに引き寄せます。</p>"
+                }
             }
         },
         "Iron Veil": {
-            "_note": "Iron Veil"
+            "_note": "Iron Veil",
+            "name": "鉄の面紗",
+            "description": "<p>この鎖編みの頭巾は、着用者を妖精のクリーチャーから見えなくします。</p>"
         },
         "Kingfisher's Net": {
-            "_note": "Kingfisher's Net"
+            "_note": "Kingfisher's Net",
+            "name": "翡翠の網",
+            "description": "<p>長期休息ごとに1回、この網を使って、どれほど魚がいそうにない水であっても、どんな量の水からでも生きた魚を1匹すくい上げられます。</p>"
         },
         "Knockback Bracelets": {
             "_note": "Knockback Bracelets",
+            "name": "打ち払いの腕輪",
             "description": "<p>武器攻撃が成功したとき、対象をその位置から近距離まで突き飛ばせます。</p>"
         },
         "Lakestrider Boots": {
-            "_note": "Lakestrider Boots"
+            "_note": "Lakestrider Boots",
+            "name": "湖渡りの長靴",
+            "description": "<p>水面を柔らかい地面のように歩けます。</p>"
         },
         "Loaded Dice": {
-            "_note": "Loaded Dice"
+            "_note": "Loaded Dice",
+            "name": "いかさまダイス",
+            "description": "<p>器用ロール（14）に成功して、この重り入りのダイスの出目を選べます。恐怖付きでロールした場合、見ていた者はそのダイスが仕込みだと気づきます。</p>"
         },
         "Lorekeeper": {
-            "_note": "Lorekeeper"
+            "_note": "Lorekeeper",
+            "name": "知識守り",
+            "description": "<p>この書物に、敵対するクリーチャー3体までの名前と詳細を記録できます。それらのクリーチャーに対するアクションロールに＋1のボーナスを得ます。</p>"
         },
         "Manacles": {
-            "_note": "Manacles"
+            "_note": "Manacles",
+            "name": "手枷",
+            "description": "<p>この錠付きの手枷には鍵が付いています。</p>"
         },
         "Mandragorian Torch": {
-            "_note": "Mandragorian Torch"
+            "_note": "Mandragorian Torch",
+            "name": "マンドラゴラの松明",
+            "description": "<p>この松明は、持ち主にだけ見える光を放ちます。</p>"
         },
         "Map of Revelation": {
-            "_note": "Map of Revelation"
+            "_note": "Map of Revelation",
+            "name": "啓示の地図",
+            "description": "<p>この地図は一度にクリーチャー1体と同調させられます。地図は常に、同調したクリーチャーの場所を示します。</p>"
         },
         "Minor Health Potion Recipe": {
-            "_note": "Minor Health Potion Recipe"
+            "_note": "Minor Health Potion Recipe",
+            "name": "小治癒の薬の製法",
+            "description": "<p>ダウンタイムムーブとして、血の小瓶を1つ使い、小治癒の薬を作れます。</p>"
         },
         "Minor Stamina Potion Recipe": {
-            "_note": "Minor Stamina Potion Recipe"
+            "_note": "Minor Stamina Potion Recipe",
+            "name": "小体力の薬の製法",
+            "description": "<p>ダウンタイムムーブとして、クリーチャーの骨を使い、小体力の薬を作れます。</p>"
         },
         "Molepaw Mittens": {
             "_note": "Molepaw Mittens",
+            "name": "モグラの手の手袋",
+            "description": "<p>希望を1消費して、その後10分のあいだ、土の中を水のように泳げます。</p>",
             "actions": {
                 "SzsYjhQY2sZ7VdtD": {
                     "name": "希望を消費する"
                 }
+            },
+            "effects": {
+                "zhPgjJuW4MWl7Lb9": {
+                    "name": "モグラの手の手袋",
+                    "description": "<p>その後10分のあいだ、土の中を水のように泳げます。</p>"
+                }
             }
         },
         "Mythic Dust Recipe": {
-            "_note": "Mythic Dust Recipe"
+            "_note": "Mythic Dust Recipe",
+            "name": "神話の粉の製法",
+            "description": "<p>ダウンタイムムーブとして、ひと掴みの細かな金粉を使い、神話の粉を作れます。</p>"
         },
         "Namer's Oracle": {
             "_note": "Namer's Oracle"
@@ -670,7 +815,12 @@
             "_note": "Vial of Darksmoke Recipe"
         },
         "Warp Pendant": {
-            "_note": "Warp Pendant"
+            "_note": "Warp Pendant",
+            "actions": {
+                "B1xcdTjpaoK4TxI5": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Whisperstep Anklet": {
             "_note": "Whisperstep Anklet"

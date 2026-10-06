@@ -381,10 +381,20 @@
             }
         },
         "Devastating Strikes": {
-            "_note": "Devastating Strikes"
+            "_note": "Devastating Strikes",
+            "actions": {
+                "EvdZLuP0wunF5cmq": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Elusive Prey": {
-            "_note": "Elusive Prey"
+            "_note": "Elusive Prey",
+            "actions": {
+                "9lvrqQKTEB3NRwvM": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Fleet": {
             "_note": "Fleet"
@@ -393,7 +403,12 @@
             "_note": "Fragile"
         },
         "Hobbling Strike": {
-            "_note": "Hobbling Strike"
+            "_note": "Hobbling Strike",
+            "actions": {
+                "p8DESOMGA6dLwEMz": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Hollow Bones": {
             "_note": "Hollow Bones"
@@ -411,13 +426,23 @@
             "_note": "Physical Defense"
         },
         "Rampage": {
-            "_note": "Rampage"
+            "_note": "Rampage",
+            "actions": {
+                "N7IoOHpqcvcJNsJQ": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Snapping Strike": {
             "_note": "Snapping Strike"
         },
         "Takedown": {
-            "_note": "Takedown"
+            "_note": "Takedown",
+            "actions": {
+                "9H8KTVtqnSlEGoZ1": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Thick Hide": {
             "_note": "Thick Hide"
@@ -451,7 +476,12 @@
             "_note": "Vicious Maul"
         },
         "Warning Hiss": {
-            "_note": "Warning Hiss"
+            "_note": "Warning Hiss",
+            "actions": {
+                "D9YmUP1aeiCzNxcC": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Webslinger": {
             "_note": "Webslinger"

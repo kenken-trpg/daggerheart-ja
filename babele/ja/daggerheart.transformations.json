@@ -54,7 +54,12 @@
             "_note": "Weight of Divinity"
         },
         "Wolf Form": {
-            "_note": "Wolf Form"
+            "_note": "Wolf Form",
+            "actions": {
+                "zWtTSU2L4I0nFmKb": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Won't Stay Dead": {
             "_note": "Won't Stay Dead"

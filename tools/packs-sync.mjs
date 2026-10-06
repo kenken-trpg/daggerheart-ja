@@ -149,8 +149,11 @@ function allowedNumbers(source) {
     const allowed = String(source).match(NUMBERS) ?? [];
     for (const word of String(source).toLowerCase().match(/[a-z]+/g) ?? []) {
         if (NUMBER_WORDS[word]) allowed.push(NUMBER_WORDS[word]);
-        /* "a hundredfold" is 100倍: the multiplier is the number word with -fold on it. */
-        const bare = word.replace(/fold$/, '');
+        /*
+         * "a hundredfold" is 100倍 and "one-hundredth" is 100分の1: both name a
+         * number the bare word table knows, with a suffix on it.
+         */
+        const bare = word.replace(/(fold|th)$/, '');
         if (bare !== word && NUMBER_WORDS[bare]) allowed.push(NUMBER_WORDS[bare]);
     }
     /*

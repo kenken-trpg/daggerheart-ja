@@ -79,7 +79,12 @@
             "_note": "Tidekin"
         },
         "Adaptability": {
-            "_note": "Adaptability"
+            "_note": "Adaptability",
+            "actions": {
+                "D7EE2L2Y96nfrfTW": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Amphibious": {
             "_note": "Amphibious",
@@ -108,7 +113,12 @@
             }
         },
         "Danger Sense": {
-            "_note": "Danger Sense"
+            "_note": "Danger Sense",
+            "actions": {
+                "V2K3pMWOCVwBUnjq": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Death Connection": {
             "_note": "Death Connection"
@@ -134,7 +144,12 @@
             "_note": "Eye of the Storm"
         },
         "Fearless": {
-            "_note": "Fearless"
+            "_note": "Fearless",
+            "actions": {
+                "G1H7k5RdvS1EJgFu": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Feline Instincts": {
             "_note": "Feline Instincts"
@@ -149,7 +164,12 @@
             "_note": "Fungril Network"
         },
         "Gale Force": {
-            "_note": "Gale Force"
+            "_note": "Gale Force",
+            "actions": {
+                "3WRpmFBVS5HvCcOG": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Hallowed Aura": {
             "_note": "Hallowed Aura"
@@ -158,7 +178,12 @@
             "_note": "High Stamina"
         },
         "Ignition": {
-            "_note": "Ignition"
+            "_note": "Ignition",
+            "actions": {
+                "uMtBNRpIZ67EyWxD": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Immovable": {
             "_note": "Immovable"
@@ -178,10 +203,20 @@
             }
         },
         "Lifespring": {
-            "_note": "Lifespring"
+            "_note": "Lifespring",
+            "actions": {
+                "xIWHvlsLjznMLrGX": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Long Tongue": {
-            "_note": "Long Tongue"
+            "_note": "Long Tongue",
+            "actions": {
+                "MhAWv7tuvkfOf7wQ": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Luckbender": {
             "_note": "Luckbender"
@@ -207,7 +242,12 @@
             "_note": "Purposeful Design"
         },
         "Quick Reactions": {
-            "_note": "Quick Reactions"
+            "_note": "Quick Reactions",
+            "actions": {
+                "6Av1Y8JXWDkteLhc": {
+                    "name": "ストレスをマーク"
+                }
+            }
         },
         "Reach": {
             "_note": "Reach",
@@ -219,6 +259,11 @@
             "effects": {
                 "3V4FPoyjJUnFP9WS": {
                     "name": "格納する"
+                }
+            },
+            "actions": {
+                "HfiAg14hrYt7Yvnj": {
+                    "name": "ストレスをマーク"
                 }
             }
         },
@@ -255,7 +300,12 @@
             }
         },
         "Wings": {
-            "_note": "Wings"
+            "_note": "Wings",
+            "actions": {
+                "dpKxkDSjXsP8kHMI": {
+                    "name": "ストレスをマーク"
+                }
+            }
         }
     }
 }
