@@ -7,79 +7,129 @@
     },
     "entries": {
         "Aetheris": {
-            "_note": "Aetheris"
+            "_note": "Aetheris",
+            "name": "エーテリス",
+            "description": "<p>エーテリスは、翼と神聖な紋様で最も見分けやすい人型種族です。</p>"
         },
         "Clank": {
-            "_note": "Clank"
+            "_note": "Clank",
+            "name": "クランク",
+            "description": "<p>クランクは、金属、木、石などさまざまな素材から造られた、意識を持つ機械の存在です。</p>"
         },
         "Drakona": {
-            "_note": "Drakona"
+            "_note": "Drakona",
+            "name": "ドラコナ",
+            "description": "<p>ドラコナは翼のない竜の人型といった姿で、強力な元素のブレスを備えています。</p>"
         },
         "Dwarf": {
-            "_note": "Dwarf"
+            "_note": "Dwarf",
+            "name": "ドワーフ",
+            "description": "<p>ドワーフは、角張った体つき、引き締まった筋肉、濃い毛髪を持つ背の低い人型種族として最も見分けやすい存在です。</p>"
         },
         "Earthkin": {
-            "_note": "Earthkin"
+            "_note": "Earthkin",
+            "name": "大地族",
+            "description": "<p>大地族は、肉と土からなる体を持つ人型種族です。</p>"
         },
         "Elf": {
-            "_note": "Elf"
+            "_note": "Elf",
+            "name": "エルフ",
+            "description": "<p>エルフはたいてい背が高い人型種族で、尖った耳と鋭敏に研ぎ澄まされた感覚を持ちます。</p>"
         },
         "Emberkin": {
-            "_note": "Emberkin"
+            "_note": "Emberkin",
+            "name": "燃え殻族",
+            "description": "<p>燃え殻族は、肉と火からなる体を持つ人型種族です。</p>"
         },
         "Faerie": {
-            "_note": "Faerie"
+            "_note": "Faerie",
+            "name": "フェアリー",
+            "description": "<p>フェアリーは、昆虫のような特徴を持つ翼の生えた人型のクリーチャーです。</p>"
         },
         "Faun": {
-            "_note": "Faun"
+            "_note": "Faun",
+            "name": "ファウン",
+            "description": "<p>ファウンは、曲がった角、四角い瞳孔、割れた蹄を持つ山羊の人型といった姿です。</p>"
         },
         "Firbolg": {
-            "_note": "Firbolg"
+            "_note": "Firbolg",
+            "name": "ファーボルグ",
+            "description": "<p>ファーボルグは牛の人型種族で、幅広い鼻と長く垂れた耳でたいてい見分けられます。</p>"
         },
         "Fungril": {
-            "_note": "Fungril"
+            "_note": "Fungril",
+            "name": "ファングリル",
+            "description": "<p>ガラパは、引っ込める大きな丸い甲羅を持つ人型の亀といった姿です。</p>"
         },
         "Galapa": {
-            "_note": "Galapa"
+            "_note": "Galapa",
+            "name": "ガラパ",
+            "description": "<p>ガラパは、引っ込める大きな丸い甲羅を持つ人型の亀といった姿です。</p>"
         },
         "Giant": {
-            "_note": "Giant"
+            "_note": "Giant",
+            "name": "ジャイアント",
+            "description": "<p>ジャイアントはそびえ立つ人型種族で、広い肩、長い腕、そして1つから3つの目を持ちます。</p>"
         },
         "Gnome": {
-            "_note": "Gnome"
+            "_note": "Gnome",
+            "name": "ノーム",
+            "description": "<p>ノームはたいてい小柄な人型種族で、円錐形の頭と短い距離を転移する能力を持ちます。</p>"
         },
         "Goblin": {
-            "_note": "Goblin"
+            "_note": "Goblin",
+            "name": "ゴブリン",
+            "description": "<p>ゴブリンは小柄な人型種族で、大きな目と薄い膜状の巨大な耳で容易に見分けられます。</p>"
         },
         "Halfling": {
-            "_note": "Halfling"
+            "_note": "Halfling",
+            "name": "ハーフリング",
+            "description": "<p>ハーフリングは小柄な人型種族で、毛深い大きな足と目立つ丸い耳を持ちます。</p>"
         },
         "Human": {
-            "_note": "Human"
+            "_note": "Human",
+            "name": "ヒューマン",
+            "description": "<p>ヒューマンは、器用な手、丸い耳、そして持久に向いた体つきで最も見分けやすい存在です。</p>"
         },
         "Infernis": {
-            "_note": "Infernis"
+            "_note": "Infernis",
+            "name": "インフェルニス",
+            "description": "<p>インフェルニスは、鋭い犬歯、尖った耳、そして角を持つ人型種族です。彼らは下方の円環の魔神の末裔です。</p>"
         },
         "Katari": {
-            "_note": "Katari"
+            "_note": "Katari",
+            "name": "カタリ",
+            "description": "<p>カタリは猫の人型種族で、引っ込められる爪、縦に裂けた瞳孔、高い位置にある三角の耳を持ちます。</p>"
         },
         "Orc": {
-            "_note": "Orc"
+            "_note": "Orc",
+            "name": "オーク",
+            "description": "<p>オークは、角張った顔立ちと下顎から突き出た猪のような牙で最も見分けやすい人型種族です。</p>"
         },
         "Ribbet": {
-            "_note": "Ribbet"
+            "_note": "Ribbet",
+            "name": "リベット",
+            "description": "<p>リベットは、飛び出た目と水かきのある手足を持つ人型の蛙といった姿です。</p>"
         },
         "Simiah": {
-            "_note": "Simiah"
+            "_note": "Simiah",
+            "name": "シミア",
+            "description": "<p>シミアは、長い手足と物をつかめる足を持つ人型の猿や類人猿といった姿です。</p>"
         },
         "Skykin": {
-            "_note": "Skykin"
+            "_note": "Skykin",
+            "name": "空族",
+            "description": "<p>空族は、肉と風からなる体を持つ人型種族です。</p>"
         },
         "Tidekin": {
-            "_note": "Tidekin"
+            "_note": "Tidekin",
+            "name": "潮族",
+            "description": "<p>潮族は、肉と水からなる体を持つ人型種族です。</p>"
         },
         "Adaptability": {
             "_note": "Adaptability",
+            "name": "適応力",
+            "description": "<p>自分の経験を活用したロールに失敗したとき、<strong>ストレスを1マーク</strong>して振り直せます。</p>",
             "actions": {
                 "D7EE2L2Y96nfrfTW": {
                     "name": "ストレスをマーク"
@@ -88,24 +138,44 @@
         },
         "Amphibious": {
             "_note": "Amphibious",
-            "name": "両生"
+            "name": "両生",
+            "description": "<p>水中で自然に呼吸し、動けます。</p>"
         },
         "kFuNdXalIInsFRlh": {
             "_note": "Amphibious",
-            "name": "両生"
+            "name": "両生",
+            "description": "<p>水中で自然に呼吸し、動けます。</p>"
         },
         "Caprine Leap": {
-            "_note": "Caprine Leap"
+            "_note": "Caprine Leap",
+            "name": "山羊の跳躍",
+            "description": "<p>近距離以内のどこへでも、通常の移動と同じように跳躍できます。これにより障害物を飛び越え、裂け目を跳び、壁を容易に越えられます。</p>"
         },
         "Celestial Trance": {
-            "_note": "Celestial Trance"
+            "_note": "Celestial Trance",
+            "name": "天上の恍惚",
+            "description": "<p>休息中、恍惚に入って、ダウンタイムムーブを1つ追加で選べます。</p>",
+            "effects": {
+                "LqQvZJJLNMnFkt1D": {
+                    "name": "天上の恍惚",
+                    "description": "<p>休息中、恍惚に入って、ダウンタイムムーブを1つ追加で選べます。</p>"
+                }
+            }
         },
         "Celestial Wings": {
-            "_note": "Celestial Wings"
+            "_note": "Celestial Wings",
+            "name": "天上の翼",
+            "description": "<p>飛行できる翼を持っています。シーンごとに1回、飛行しているあいだ、鎧スロットをマークする代わりに<strong>希望を1消費</strong>できます。</p>",
+            "actions": {
+                "UWBrm5byhRrJpu4x": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Charge": {
             "_note": "Charge",
             "name": "充填する",
+            "description": "<p>遠距離か超遠距離から1体以上の対象の近接射程内へ移動する素早さロールに成功したとき、<strong>ストレスを1マーク</strong>して、近接射程内のすべての対象に<strong>1d12</strong>の物理ダメージを与えられます。</p>",
             "actions": {
                 "KLg0T6I1w24sfIbH": {
                     "name": "ダメージを与える"
@@ -114,6 +184,8 @@
         },
         "Danger Sense": {
             "_note": "Danger Sense",
+            "name": "危機感知",
+            "description": "<p>休息ごとに1回、<strong>ストレスを1マーク</strong>して、あなたか至近距離以内の味方への攻撃を敵対者に振り直させます。</p>",
             "actions": {
                 "V2K3pMWOCVwBUnjq": {
                     "name": "ストレスをマーク"
@@ -121,30 +193,86 @@
             }
         },
         "Death Connection": {
-            "_note": "Death Connection"
+            "_note": "Death Connection",
+            "name": "死とのつながり",
+            "description": "<p>死んで間もない死体に触れているあいだ、<strong>ストレスを1マーク</strong>して、自分が選んだ特定の感情か感覚にまつわる記憶を1つ、その死体から引き出せます。</p>",
+            "actions": {
+                "0RdKeWfbPRTHcAMf": {
+                    "name": "引き出す"
+                }
+            }
         },
         "Dread Visage": {
-            "_note": "Dread Visage"
+            "_note": "Dread Visage",
+            "name": "畏怖の面貌",
+            "description": "<p>敵対するクリーチャーを威嚇するロールに有利を得ます。</p>",
+            "effects": {
+                "2Gd6iHQX521aAZqC": {
+                    "name": "畏怖の面貌",
+                    "description": "<p>敵対するクリーチャーを威嚇するロールに有利を得ます</p>",
+                    "changes": [
+                        "畏怖の面貌：敵対するクリーチャーを威嚇するロール"
+                    ]
+                }
+            }
         },
         "Efficient": {
-            "_note": "Efficient"
+            "_note": "Efficient",
+            "name": "効率的",
+            "description": "<p>短期休息を取るとき、短期休息のムーブの代わりに長期休息のムーブを選べます。</p>",
+            "effects": {
+                "EEryWN2nE33ppGHi": {
+                    "name": "効率的",
+                    "description": "<p>短期休息を取るとき、短期休息のムーブの代わりに長期休息のムーブを選べます。</p>"
+                }
+            }
         },
         "Elemental Breath": {
             "_note": "Elemental Breath",
+            "name": "元素のブレス",
+            "description": "<p>自分のブレスの元素を1つ選びます（電撃、炎、氷など）。このブレスは至近距離以内の対象1体か対象の一団に対して使えます。そのとき、習熟を使って<strong>d8</strong>の魔法ダメージを与える直感の武器として扱います。</p>",
             "actions": {
                 "a6WROv0OKx0lbYVa": {
-                    "name": "攻撃"
+                    "name": "攻撃",
+                    "areas": [
+                        {
+                            "name": "元素のブレス"
+                        }
+                    ]
                 }
             }
         },
         "Endurance": {
-            "_note": "Endurance"
+            "_note": "Endurance",
+            "name": "持久",
+            "description": "<p>キャラクター作成時にHPスロットを1つ追加で得ます。</p>",
+            "effects": {
+                "db8W2Q0Qty84XV0x": {
+                    "name": "持久",
+                    "description": "<p>キャラクター作成時にHPスロットを1つ追加で得ます。</p>"
+                }
+            }
         },
         "Eye of the Storm": {
-            "_note": "Eye of the Storm"
+            "_note": "Eye of the Storm",
+            "name": "嵐の目",
+            "description": "<p><strong>希望を2消費</strong>して、あなたか近接射程内の味方1人に、重傷値のダメージを受けるかこの特徴を再び使うまで、回避値に＋1のボーナスを与えます。</p>",
+            "actions": {
+                "q5tGBckJzCGyIbmu": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "2XEJf5yXdvk1r81V": {
+                    "name": "嵐の目",
+                    "description": "<p>回避値に＋1のボーナス。</p>"
+                }
+            }
         },
         "Fearless": {
             "_note": "Fearless",
+            "name": "恐れ知らず",
+            "description": "<p>恐怖付きでロールしたとき、<strong>ストレスを2マーク</strong>して、代わりに希望付きのロールに変えられます。</p>",
             "actions": {
                 "G1H7k5RdvS1EJgFu": {
                     "name": "ストレスをマーク"
@@ -152,19 +280,44 @@
             }
         },
         "Feline Instincts": {
-            "_note": "Feline Instincts"
+            "_note": "Feline Instincts",
+            "name": "猫の本能",
+            "description": "<p>素早さロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
+            "actions": {
+                "ALsGHOy0q5THGxz5": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Fireproof": {
-            "_note": "Fireproof"
+            "_note": "Fireproof",
+            "name": "耐火",
+            "description": "<p>魔法の炎も普通の炎も、そのダメージを無効化します。</p>"
         },
         "Flicker Step": {
-            "_note": "Flicker Step"
+            "_note": "Flicker Step",
+            "name": "瞬きの歩み",
+            "description": "<p>シーンごとに1回、遠距離以内の見える別の地点へ転移できます。</p>",
+            "actions": {
+                "Mm3kdZ1AOYnDY0E9": {
+                    "name": "テレポート"
+                }
+            }
         },
         "Fungril Network": {
-            "_note": "Fungril Network"
+            "_note": "Fungril Network",
+            "name": "ファングリルの網",
+            "description": "<p><strong>直感ロール（12）</strong>を行い、自分の菌糸の連なりを使って同じ種族の者たちと話します。成功した場合、どれほど離れていても意思を通じ合えます。</p>",
+            "actions": {
+                "ZYfigAyUdDUteczO": {
+                    "name": "意思を通じる"
+                }
+            }
         },
         "Gale Force": {
             "_note": "Gale Force",
+            "name": "疾風",
+            "description": "<p><strong>ストレスを1マーク</strong>して突風を呼び起こし、あなたか至近距離の味方1人を超遠距離まで運びます。さらに、あなたは常に自分の落下する速さを制御できます。</p>",
             "actions": {
                 "3WRpmFBVS5HvCcOG": {
                     "name": "ストレスをマーク"
@@ -172,30 +325,66 @@
             }
         },
         "Hallowed Aura": {
-            "_note": "Hallowed Aura"
+            "_note": "Hallowed Aura",
+            "name": "聖別されたオーラ",
+            "description": "<p>長期休息ごとに1回、近距離以内の味方が恐怖付きでロールしたとき、代わりに希望付きのロールに変えられます。</p>",
+            "actions": {
+                "NBKcarcNqeWCqCHG": {
+                    "name": "恐怖を希望へ"
+                }
+            }
         },
         "High Stamina": {
-            "_note": "High Stamina"
+            "_note": "High Stamina",
+            "name": "高い体力",
+            "description": "<p>キャラクター作成時にストレススロットを1つ追加で得ます。</p>",
+            "effects": {
+                "Xl3TsKUJcl6vi1ly": {
+                    "name": "高い体力",
+                    "description": "<p>キャラクター作成時にストレススロットを1つ追加で得ます。</p>"
+                }
+            }
         },
         "Ignition": {
             "_note": "Ignition",
+            "name": "点火",
+            "description": "<p><strong>ストレスを1マーク</strong>して、シーンの終わりまでメイン武器を炎で包みます。武器が燃えているあいだ、それは明るい光を放ち、その武器でのダメージロールに<strong>1d6</strong>のボーナスを得ます。</p>",
             "actions": {
                 "uMtBNRpIZ67EyWxD": {
                     "name": "ストレスをマーク"
                 }
+            },
+            "effects": {
+                "YWiD5AGYLBKvajs2": {
+                    "name": "点火",
+                    "description": "<p>武器が燃えているあいだ、それは明るい光を放ち、その武器でのダメージロールに<strong>1d6</strong>のボーナスを得ます。</p>"
+                }
             }
         },
         "Immovable": {
-            "_note": "Immovable"
+            "_note": "Immovable",
+            "name": "不動",
+            "description": "<p>地面に触れているあいだ、意志に反して持ち上げられたり動かされたりしません。</p>"
         },
         "Increased Fortitude": {
-            "_note": "Increased Fortitude"
+            "_note": "Increased Fortitude",
+            "name": "増した剛毅",
+            "description": "<p><strong>希望を3消費</strong>して、受ける物理ダメージを半分にします。</p>",
+            "actions": {
+                "pFPbjyexOPx5gog6": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Internal Compass": {
-            "_note": "Internal Compass"
+            "_note": "Internal Compass",
+            "name": "内なる羅針盤",
+            "description": "<p>希望ダイスで1が出たとき、振り直せます。</p>"
         },
         "Kick": {
             "_note": "Kick",
+            "name": "蹴り",
+            "description": "<p>近接射程内の対象への攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、その対象を蹴って離れられます。追加で<strong>2d6</strong>のダメージを与え、あなたかその対象のいずれかを至近距離まで後退させます。</p>",
             "actions": {
                 "bXbQ57CB1Hfj5XrS": {
                     "name": "ダメージを与える"
@@ -204,6 +393,8 @@
         },
         "Lifespring": {
             "_note": "Lifespring",
+            "name": "命の泉",
+            "description": "<p>休息ごとに1回、少量の水が手に入るとき、<strong>ストレスを1マーク</strong>して、あなたか至近距離以内の味方1人のHPを1消去できます。</p>",
             "actions": {
                 "xIWHvlsLjznMLrGX": {
                     "name": "ストレスをマーク"
@@ -212,6 +403,8 @@
         },
         "Long Tongue": {
             "_note": "Long Tongue",
+            "name": "長い舌",
+            "description": "<p>長い舌を使って近距離以内のものをつかめます。<strong>ストレスを1マーク</strong>して、舌を、習熟を使って<strong>d12</strong>の物理ダメージを与える器用の近距離武器として使えます。</p>",
             "actions": {
                 "MhAWv7tuvkfOf7wQ": {
                     "name": "ストレスをマーク"
@@ -219,10 +412,19 @@
             }
         },
         "Luckbender": {
-            "_note": "Luckbender"
+            "_note": "Luckbender",
+            "name": "運曲げ",
+            "description": "<p>セッションごとに1回、あなたか近距離以内の同意した味方がアクションロールを行ったあと、<strong>希望を3消費</strong>して二面性のダイスを振り直せます。</p>",
+            "actions": {
+                "l1wUmqMzG8YF9sqb": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Luckbringer": {
             "_note": "Luckbringer",
+            "name": "運運び",
+            "description": "<p>各セッションの始まりに、パーティの全員が希望を1得ます。</p>",
             "actions": {
                 "8sK3t73bFkpb999C": {
                     "name": "希望を得る"
@@ -230,19 +432,49 @@
             }
         },
         "Natural Climber": {
-            "_note": "Natural Climber"
+            "_note": "Natural Climber",
+            "name": "生まれついての登り手",
+            "description": "<p>均衡を取ることや登攀に関わる素早さロールに有利を得ます。</p>",
+            "effects": {
+                "HQeQH9gUfrjlWWcg": {
+                    "name": "生まれついての登り手",
+                    "description": "<p>均衡を取ることや登攀に関わる素早さロールに有利を得ます。</p>",
+                    "changes": [
+                        "均衡を取ることや登攀に関わる素早さロール"
+                    ]
+                }
+            }
         },
         "Nimble": {
-            "_note": "Nimble"
+            "_note": "Nimble",
+            "name": "軽やか",
+            "description": "<p>キャラクター作成時に回避値へ恒久的な＋1のボーナスを得ます。</p>",
+            "effects": {
+                "zaxVYqKzUYDJ3SDq": {
+                    "name": "軽やか",
+                    "description": "<p>キャラクター作成時に回避値へ恒久的な＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Nimble Fingers": {
-            "_note": "Nimble Fingers"
+            "_note": "Nimble Fingers",
+            "name": "軽やかな指",
+            "description": "<p>器用ロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
+            "actions": {
+                "eIaosYhBPLBmFMSr": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Purposeful Design": {
-            "_note": "Purposeful Design"
+            "_note": "Purposeful Design",
+            "name": "目的ある設計",
+            "description": "<p>誰があなたを造り、どんな目的のためだったかを決めます。キャラクター作成時に、その目的に最もよくかなう経験を1つ選び、それに恒久的な＋1のボーナスを得ます。</p><section id=\"secret-buVzWddXKTJlXDpq\" class=\"secret\"><p>註：この恒久的なボーナスは自動処理されていません。該当する編集欄で経験の値を手動で上げてください。</p></section>"
         },
         "Quick Reactions": {
             "_note": "Quick Reactions",
+            "name": "素早い反応",
+            "description": "<p><strong>ストレスを1マーク</strong>して、リアクションロールに有利を得ます。</p>",
             "actions": {
                 "6Av1Y8JXWDkteLhc": {
                     "name": "ストレスをマーク"
@@ -251,11 +483,13 @@
         },
         "Reach": {
             "_note": "Reach",
-            "name": "リーチ"
+            "name": "リーチ",
+            "description": "<p>近接射程を持つ武器、能力、呪文、その他の特徴を、代わりに至近距離を持つものとして扱います。</p>"
         },
         "Retract": {
             "_note": "Retract",
             "name": "格納する",
+            "description": "<p><strong>ストレスを1マーク</strong>して、甲羅の中に引っ込めます。甲羅の中にいるあいだ、物理ダメージへの抵抗を得ますが、アクションロールに不利が付き、移動できません。<br><br>（マークしたら、効果タブで「引っ込み」の効果を手動で有効にし、アクションロールを行うときは不利をマークしてください。甲羅から出たら、効果タブで「引っ込み」の効果を手動で無効にしてください。）</p>",
             "actions": {
                 "HfiAg14hrYt7Yvnj": {
                     "name": "ストレスをマーク"
@@ -263,36 +497,104 @@
             },
             "effects": {
                 "3V4FPoyjJUnFP9WS": {
-                    "name": "格納する"
+                    "name": "格納する",
+                    "description": "<p>甲羅の中にいるあいだ、物理ダメージへの抵抗を得ますが、アクションロールに不利が付き、移動できません。</p>",
+                    "changes": [
+                        null,
+                        "アクションロール"
+                    ]
                 }
             }
         },
         "Retracting Claws": {
-            "_note": "Retracting Claws"
+            "_note": "Retracting Claws",
+            "name": "引っ込む爪",
+            "description": "<p><strong>素早さロール</strong>を行って、近接射程内の対象を引っ掻きます。成功した場合、その対象は一時的に脆弱になります。</p>",
+            "actions": {
+                "LcFhDb3sJk8sraAc": {
+                    "name": "引っ掻く"
+                }
+            },
+            "effects": {
+                "pO76svFkmWmZ6LjC": {
+                    "name": "引っ込められる爪"
+                }
+            }
         },
         "Scales": {
-            "_note": "Scales"
+            "_note": "Scales",
+            "name": "鱗",
+            "description": "<p>あなたの鱗は生まれついての防護として働きます。重傷値のダメージを受けるとき、<strong>ストレスを1マーク</strong>して、マークするHPを1つ減らせます。</p>",
+            "effects": {
+                "b6Pkwwk7pgBeeUTe": {
+                    "name": "鱗",
+                    "description": "<p>重傷値のダメージを受けるとき、ストレスを1マークして、マークするHPを1つ減らせます。</p>"
+                }
+            }
         },
         "Shell": {
-            "_note": "Shell"
+            "_note": "Shell",
+            "name": "甲羅",
+            "description": "<p>ダメージしきい値に習熟に等しいボーナスを得ます。</p>",
+            "effects": {
+                "41uiZKXzSSomf9YD": {
+                    "name": "甲羅",
+                    "description": "<p>ダメージしきい値に習熟に等しいボーナスを得ます。</p>"
+                }
+            }
         },
         "Stoneskin": {
-            "_note": "Stoneskin"
+            "_note": "Stoneskin",
+            "name": "石肌",
+            "description": "<p>キャラクター作成時に鎧値とダメージしきい値へ恒久的な＋1のボーナスを得ます。</p>",
+            "effects": {
+                "XVc542D7mVNeoRCb": {
+                    "name": "石肌",
+                    "description": "<p>キャラクター作成時に鎧値とダメージしきい値へ恒久的な＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Sturdy": {
-            "_note": "Sturdy"
+            "_note": "Sturdy",
+            "name": "頑丈",
+            "description": "<p>残りHPが1のとき、あなたへの攻撃には不利が付きます。</p>"
         },
         "Surefooted": {
-            "_note": "Surefooted"
+            "_note": "Surefooted",
+            "name": "確かな足取り",
+            "description": "<p>素早さロールの不利を無視します。</p>"
         },
         "Thick Skin": {
-            "_note": "Thick Skin"
+            "_note": "Thick Skin",
+            "name": "厚い肌",
+            "description": "<p>軽傷値のダメージを受けたとき、HPをマークする代わりに<strong>ストレスを2マーク</strong>できます。</p>",
+            "effects": {
+                "4Lc40mNnRInTKMC5": {
+                    "name": "厚い肌",
+                    "description": "<p>軽傷値のダメージを受けたとき、HPをマークする代わりにストレスを2マークできます。</p>"
+                }
+            }
         },
         "Tusks": {
-            "_note": "Tusks"
+            "_note": "Tusks",
+            "name": "牙",
+            "description": "<p>近接射程内の対象への攻撃に成功したとき、<strong>希望を1消費</strong>して、牙でその対象を突き刺し、追加で<strong>1d6</strong>のダメージを与えられます。</p>",
+            "actions": {
+                "ytSFDCONRi5L4THz": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "klEyAxQa5YHXVnrl": {
+                    "name": "牙",
+                    "description": "<p>牙でその対象を突き刺し、この攻撃で追加で1d6のダメージを与えます。</p>"
+                }
+            }
         },
         "Unshakeable": {
             "_note": "Unshakeable",
+            "name": "揺るがぬ",
+            "description": "<p>ストレスをマークするとき、<strong>d6</strong>を振ります。結果が6の場合、それをマークしません。</p>",
             "actions": {
                 "x8xbjyCrJ0okOpIU": {
                     "name": "使う"
@@ -301,9 +603,17 @@
         },
         "Wings": {
             "_note": "Wings",
+            "name": "翼",
+            "description": "<p>飛行できます。飛行しているあいだ、敵対者があなたに攻撃を行ったあとに<strong>ストレスを1マーク</strong>して、その攻撃に対する回避値に＋2のボーナスを得られます。</p>",
             "actions": {
                 "dpKxkDSjXsP8kHMI": {
                     "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "zD3xVdwkEQi2ivOn": {
+                    "name": "翼",
+                    "description": "<p>その敵対者の攻撃に対する回避値に＋2のボーナスを得ます。</p>"
                 }
             }
         }
