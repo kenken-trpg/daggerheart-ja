@@ -18,6 +18,9 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
 
       # タグ (v は付けない) をそのままバージョンとして使う。
       - name: Read the version from the tag
@@ -26,12 +29,22 @@ jobs:
 
       # module.json の version / download がタグと食い違ったまま配られると、
       # Foundry が更新を検出できなくなる。ここで揃える。
+      # Witherwild 除外 (DPCGL 1.9.3) と enricher 保全を、配布物を作る前に検査する。
+      # これを人間が手で走らせている限り「ビルドで強制」とは言えない。
+      - name: Check the licence boundary before building
+        run: npm run packs:check
+
       - name: Point the manifest at this release
+        env:
+          VERSION: ${{ steps.version.outputs.value }}
+          REPO: ${{ github.repository }}
         run: |
           python3 - <<'PY'
           import json, os
-          version = "${{ steps.version.outputs.value }}"
-          repo = "${{ github.repository }}"
+          # タグ名は環境変数で受け取る。${{ }} でソースに直接展開すると、
+          # 引用符や改行を含むタグがこのスクリプトに注入できてしまう。
+          version = os.environ["VERSION"]
+          repo = os.environ["REPO"]
           with open("module.json") as f:
               manifest = json.load(f)
           manifest["version"] = version

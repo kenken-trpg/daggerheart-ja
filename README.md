@@ -1,11 +1,20 @@
 # Daggerheart 日本語化 (非公式)
 
 Foundry VTT の [Daggerheart システム (Foundryborne/daggerheart)](https://github.com/Foundryborne/daggerheart)
-の UI を日本語化する、非公式のモジュールです。
+を日本語化する、非公式のモジュールです。UI だけでなく、コンペンディウム収録内容
+(敵対者・環境・クラス・ドメインの能力カード・装備・SRD ジャーナルなど
+15 パック 10,484 フィールド) も訳してあります。
 
 **公式システムをそのまま使います。** システムを置き換えないので、
 公式システム向けのモジュールと併用できます。日英の切り替えは、
 このモジュールを有効化するか無効化するかだけです。
+
+## 動作環境
+
+| | 必要 | 確認済み |
+| --- | --- | --- |
+| Foundry VTT | 14.364 以上 | 14.368 |
+| daggerheart システム | 2.10.7 以上 | 2.10.9 |
 
 ## インストール
 
@@ -64,12 +73,25 @@ Babele はコンペンディウムを書き換えません。読み込み時に�
 
 ## 開発
 
-翻訳の運用方法は [`lang/translation/README.md`](lang/translation/README.md) にあります。
+翻訳の運用方法は [`lang/translation/README.md`](https://github.com/kenken-trpg/daggerheart-ja/blob/main/lang/translation/README.md) にあります。
 
 ```bash
-npm run reference    # 上流の lang/en.json を参照用に取得する
-npm run lang:report  # 原文との差分状況を確認する
+npm run reference     # 上流の lang/en.json を参照用に取得する
+npm run lang:report   # UI 文言の原文との差分状況を確認する
+npm run packs:report  # コンペンディウム訳の進捗と、上流更新で古くなった訳を見る
+npm run packs:check   # ライセンス境界と enricher/数値の保全を検査する
+npm run packs:terms   # 訳語の揺れ (同じ英語に別の訳) を検査する
 ```
+
+`packs:check` と `packs:terms` は GitHub Actions でも毎コミット走ります。
+`packs:check` はリリースの zip を作る前にも走るので、Witherwild 除外は
+手作業ではなくビルドで担保されています。
+
+## 不具合・訳語の報告
+
+訳の誤りや崩れたレイアウトは
+[Issues](https://github.com/kenken-trpg/daggerheart-ja/issues) へお願いします。
+報告のとき Foundry とシステムのバージョン、該当する画面か文言があると助かります。
 
 ## ライセンス
 

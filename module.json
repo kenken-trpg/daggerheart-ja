@@ -1,7 +1,7 @@
 {
     "id": "daggerheart-ja",
     "title": "Daggerheart 日本語化",
-    "description": "Foundryborne/daggerheart システムの UI を日本語化する非公式モジュール。公式システムをそのまま使うので、公式システム向けのモジュールと併用できる。",
+    "description": "Foundryborne/daggerheart システムを日本語化する非公式モジュール。UI だけでなく、コンペンディウム収録内容も Babele 経由で日本語化する。公式システムをそのまま使うので、公式システム向けのモジュールと併用できる。",
     "version": "0.1.0",
     "compatibility": {
         "minimum": "14.364",

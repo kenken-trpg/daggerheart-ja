@@ -1,0 +1,27 @@
+name: Check
+
+# 訳文ファイルに対する検査を、リリースを待たずに毎コミットで走らせる。
+#
+# packs:check は Witherwild 除外 (DPCGL 1.9.3) と enricher/数値の保全を見る。
+# どちらも配った後では直せない種類の間違いなので、ここで止める。
+# Foundry も Babele も要らず、リポジトリ内のファイルだけで完結する。
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Licence boundary and enricher preservation
+        run: npm run packs:check
+      - name: Term agreement
+        run: npm run packs:terms
