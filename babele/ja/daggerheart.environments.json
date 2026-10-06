@@ -1550,14 +1550,14 @@
         },
         "Imperial Court": {
             "_note": "Imperial Court",
+            "name": "帝国の宮廷",
+            "description": "<p>強大な帝国の壮麗な領域。奪い取った財宝で贅沢に飾られている。</p>",
+            "impulses": "帝国の統治を正当化し永続させる、力と安楽の約束で競争相手を誘惑する",
             "potentialAdversaries": {
                 "JTuzman711Fqs3u1": {
                     "label": "その他"
                 }
             },
-            "name": "帝国の宮廷",
-            "description": "<p>強大な帝国の壮麗な領域。奪い取った財宝で贅沢に飾られている。</p>",
-            "impulses": "帝国の統治を正当化し永続させる、力と安楽の約束で競争相手を誘惑する",
             "items": {
                 "OXUbWRt1Dj0vk7mW": {
                     "name": "すべての道はここに通ず",
@@ -1600,46 +1600,6 @@
         },
         "Local Festival": {
             "_note": "Local Festival",
-            "items": {
-                "RuasHmyv0xhIZyyd": {
-                    "actions": {
-                        "LTzzLhiHJsXvIJrR": {
-                            "name": "カウントダウン開始",
-                            "countdown": [
-                                {
-                                    "name": "競技に勝て！"
-                                },
-                                {
-                                    "name": "競争相手たち！"
-                                }
-                            ]
-                        }
-                    },
-                    "name": "「競技を始めよ！」",
-                    "description": "<p>この祭りの名物の一つは、競技あるいは一連の遊戯です。PCが1人以上名乗りを上げた場合、相手となる競争者を登場させます。勝利を収めるには、PCたちは、競争相手が帰結カウントダウン（5）を完了させる前に、競技に勝つか点を取って進行カウントダウン（5）を完了させなければなりません。</p><section id=\"secret-FhbOBBEMcN44Q1nL\" class=\"secret\"><p>この競技はどんな技や能力を試すのか。勝者は何を得るのか。PCたちや競争相手にとって、負けが許されないのはなぜか。</p></section>"
-                },
-                "UkKVWILpbLEpDfpN": {
-                    "actions": {
-                        "s51HEF5OCNml4qQY": {
-                            "name": "希望を得る",
-                            "description": "<p>PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます</p>"
-                        },
-                        "azmh4bn7ERauB0sK": {
-                            "name": "侮辱への報い"
-                        }
-                    },
-                    "name": "土地の伝説的存在",
-                    "description": "<p>祭りは、土地の民話に登場する人物の到来で締めくくられます。その者は、子らに菓子を与える、貴族をからかう、来年の作物を祝福するといった特別な務めを果たします。PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます。その人物を侮辱した場合、その者に呪われて<strong>[[/r 1d6+2]]</strong>の魔法ダメージを受け、あなたは恐怖を1得ます。</p><section id=\"secret-ZKKvt9MLfAw4gxgH\" class=\"secret\"><p>これは唯一の存在なのか、人から人へ受け継がれる役なのか。どんな際立った姿をしているのか。恵みと災いを与えるその力はどこから来ているのか。</p></section>"
-                },
-                "4o45XcMZbTJYJmMH": {
-                    "name": "忘れまい、忘れまい",
-                    "description": "<p>この時季は、町の創設や夏至といった重要な記念日や天文現象に当たります。知識ロールに成功すれば、PCは以下の問いのうち1つに答えられます（クリティカル成功なら2つ）。失敗した場合、1つに答えますが、その答えのどの部分が不正確なのかをあなたが決め、恐怖を1得ます。</p><ul><li><p>この祭りは、ここの経済に欠かせない作物か輸出品を祝っている。それは何か。</p></li><li><p>去年はなぜこの祭りが開かれなかったのか。</p></li><li><p>この祭りは、隣接する地方で開かれる別の祭りと似ている。</p></li></ul><section id=\"secret-FvJMGWjMRAlkm12t\" class=\"secret\"><p>その二つはどこが違うのか。土地の人々は何を祝っているのか。この祭りは何で知られているのか。PCたちはこれを最初にどうやって聞いたのか。</p></section>"
-                },
-                "ml0hetjckq8NkK7P": {
-                    "name": "政治の駆け引き",
-                    "description": "<p>皆が一箇所に集まるこの機に、土地の人々は確執を収め、新たな商いを起こし、土地の政治を渡り歩こうとします。PCは社交ロールを行って、この動きに首を突っ込めます。成功した場合、仕事を与え、重要な情報を分け、あるいは有用な紹介をしてくれる土地の名士と縁を結びます。失敗した場合、ストレスを1マークしなければなりません。</p><section id=\"secret-gbt1gd18PRoAoy4v\" class=\"secret\"><p>皆の口に上っている新たな危機とは何か。この共同体が自力でその問題を解けないのはなぜか。助けの見返りにPCたちへ何を差し出せるのか。</p></section>"
-                }
-            },
             "name": "土地の祭り",
             "description": "<p>平民も貴族も、周辺一帯から集まって一週間続く祝いを行う。</p>",
             "impulses": "土地の文化と歴史を表す、新たな縁を結ぶ、共同体を強める",
@@ -1653,31 +1613,65 @@
                 "43YbBAN8zHvuBnPi": {
                     "label": "サンドゥルのならず者たち"
                 }
+            },
+            "items": {
+                "4o45XcMZbTJYJmMH": {
+                    "name": "忘れまい、忘れまい",
+                    "description": "<p>この時季は、町の創設や夏至といった重要な記念日や天文現象に当たります。知識ロールに成功すれば、PCは以下の問いのうち1つに答えられます（クリティカル成功なら2つ）。失敗した場合、1つに答えますが、その答えのどの部分が不正確なのかをあなたが決め、恐怖を1得ます。</p><ul><li><p>この祭りは、ここの経済に欠かせない作物か輸出品を祝っている。それは何か。</p></li><li><p>去年はなぜこの祭りが開かれなかったのか。</p></li><li><p>この祭りは、隣接する地方で開かれる別の祭りと似ている。</p></li></ul><section id=\"secret-FvJMGWjMRAlkm12t\" class=\"secret\"><p>その二つはどこが違うのか。土地の人々は何を祝っているのか。この祭りは何で知られているのか。PCたちはこれを最初にどうやって聞いたのか。</p></section>"
+                },
+                "ml0hetjckq8NkK7P": {
+                    "name": "政治の駆け引き",
+                    "description": "<p>皆が一箇所に集まるこの機に、土地の人々は確執を収め、新たな商いを起こし、土地の政治を渡り歩こうとします。PCは社交ロールを行って、この動きに首を突っ込めます。成功した場合、仕事を与え、重要な情報を分け、あるいは有用な紹介をしてくれる土地の名士と縁を結びます。失敗した場合、ストレスを1マークしなければなりません。</p><section id=\"secret-gbt1gd18PRoAoy4v\" class=\"secret\"><p>皆の口に上っている新たな危機とは何か。この共同体が自力でその問題を解けないのはなぜか。助けの見返りにPCたちへ何を差し出せるのか。</p></section>"
+                },
+                "RuasHmyv0xhIZyyd": {
+                    "name": "「競技を始めよ！」",
+                    "description": "<p>この祭りの名物の一つは、競技あるいは一連の遊戯です。PCが1人以上名乗りを上げた場合、相手となる競争者を登場させます。勝利を収めるには、PCたちは、競争相手が帰結カウントダウン（5）を完了させる前に、競技に勝つか点を取って進行カウントダウン（5）を完了させなければなりません。</p><section id=\"secret-FhbOBBEMcN44Q1nL\" class=\"secret\"><p>この競技はどんな技や能力を試すのか。勝者は何を得るのか。PCたちや競争相手にとって、負けが許されないのはなぜか。</p></section>",
+                    "actions": {
+                        "LTzzLhiHJsXvIJrR": {
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "競技に勝て！"
+                                },
+                                {
+                                    "name": "競争相手たち！"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "UkKVWILpbLEpDfpN": {
+                    "name": "土地の伝説的存在",
+                    "description": "<p>祭りは、土地の民話に登場する人物の到来で締めくくられます。その者は、子らに菓子を与える、貴族をからかう、来年の作物を祝福するといった特別な務めを果たします。PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます。その人物を侮辱した場合、その者に呪われて<strong>[[/r 1d6+2]]</strong>の魔法ダメージを受け、あなたは恐怖を1得ます。</p><section id=\"secret-ZKKvt9MLfAw4gxgH\" class=\"secret\"><p>これは唯一の存在なのか、人から人へ受け継がれる役なのか。どんな際立った姿をしているのか。恵みと災いを与えるその力はどこから来ているのか。</p></section>",
+                    "actions": {
+                        "s51HEF5OCNml4qQY": {
+                            "name": "希望を得る",
+                            "description": "<p>PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます</p>"
+                        },
+                        "azmh4bn7ERauB0sK": {
+                            "name": "侮辱への報い"
+                        }
+                    }
+                }
             }
         },
         "Local Tavern": {
             "_note": "Local Tavern",
+            "name": "土地の酒場",
+            "description": "<p>その町の社交の中心として賑わう酒場。</p>",
+            "impulses": "冒険者に機会を与える、共同体を育む",
             "potentialAdversaries": {
-                "TzAxfdQKMVRRx5z5": {
-                    "label": "その他"
-                },
                 "H53IurNOv7hOTz88": {
                     "label": "衛兵たち"
                 },
                 "2g6jJtdA8WiA0ihA": {
                     "label": "傭兵たち"
+                },
+                "TzAxfdQKMVRRx5z5": {
+                    "label": "その他"
                 }
             },
             "items": {
-                "H3LNvVrUbsAkgjni": {
-                    "actions": {
-                        "4UjyjYaMdcnFmVrL": {
-                            "name": "ダメージ"
-                        }
-                    },
-                    "name": "酒場の乱闘",
-                    "description": "<p><strong>恐怖を1消費</strong>して、酒場で乱闘を起こします。乱闘が続いている間にPCが酒場内を移動しようとするとき、敏捷または社交ロールに成功しなければ、荒い振り回しや投げられた物で<strong>1d6+2</strong>の物理ダメージを受けます。PCは、酒場の客を挑発するようなアクションロールに成功することで、この特徴を自ら起こそうと試みられます。</p><section class=\"secret\" id=\"secret-xLK8VSKLM6JQRySG\"><p><em>乱闘を始めたのは誰か。それを収めるには何が要るのか。</em></p></section>"
-                },
                 "7to5Zu0lNycExCQi": {
                     "name": "町の噂は？",
                     "description": "<p>PCは社交ロールで、酒場の主、従業員、客に、土地の出来事、噂、仕事の口を尋ねられます。成功した場合、以下の詳細のうち2つを選んで知れます——クリティカル成功なら3つです。失敗した場合、1つを選び、相手が関係のないことを喋り続けるのでストレスを1マークします。</p><ul><li><p>PCの背景に関わる、興味を引く噂</p></li><li><p>近くの脅威や事情に関わる、有望なパーティ向けの仕事</p></li><li><p>彼らが見たものに関わる土地の民話</p></li><li><p>共同体の問題を示唆する町の噂話</p></li></ul><section id=\"secret-x6IPMS6Z4MFBE65u\" class=\"secret\"><p><em>誰がどんな情報を持っているのか。土地の人々はPCたちについてどんな噂を広め始めるのか。</em></p></section>"
@@ -1693,11 +1687,17 @@
                 "QPezCAC18vIc5xRC": {
                     "name": "町にやって来る者",
                     "description": "<p>パーティを何かのために雇いたい、あるいはPCの背景に関わる重要なNPCを登場させます。</p><section class=\"secret\" id=\"secret-DB6Th0yGCjAsAZp6\"><p><em>その者はPCたちがここにいると知っていたのか。この町で何を求めているのか。</em></p></section>"
+                },
+                "H3LNvVrUbsAkgjni": {
+                    "name": "酒場の乱闘",
+                    "description": "<p><strong>恐怖を1消費</strong>して、酒場で乱闘を起こします。乱闘が続いている間にPCが酒場内を移動しようとするとき、敏捷または社交ロールに成功しなければ、荒い振り回しや投げられた物で<strong>1d6+2</strong>の物理ダメージを受けます。PCは、酒場の客を挑発するようなアクションロールに成功することで、この特徴を自ら起こそうと試みられます。</p><section class=\"secret\" id=\"secret-xLK8VSKLM6JQRySG\"><p><em>乱闘を始めたのは誰か。それを収めるには何が要るのか。</em></p></section>",
+                    "actions": {
+                        "4UjyjYaMdcnFmVrL": {
+                            "name": "ダメージ"
+                        }
+                    }
                 }
-            },
-            "name": "土地の酒場",
-            "description": "<p>その町の社交の中心として賑わう酒場。</p>",
-            "impulses": "冒険者に機会を与える、共同体を育む"
+            }
         },
         "Masquerade Ball": {
             "_note": "Masquerade Ball",
@@ -1747,24 +1747,119 @@
                 "KudBK6FBt61ZuaCf": {
                     "actions": {
                         "uzEK3NqCE3R3xE0P": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "ストームフロント"
+                                }
+                            ]
                         }
-                    }
+                    },
+                    "name": "ストームフロント",
+                    "description": "<p>カウントダウン（8）。嵐が到来したら、カウントダウンを起動します。PCが希望付きでロールしたとき、カウントが減ります。発動したとき、嵐は散り散りになるか、別の地域へ移動します。</p><section id=\"secret-Z7vvQy3iuOU8tvR3\" class=\"secret\"><p>嵐をやり過ごすのに最も安全な場所はどこですか？　ここにいる人々は何のためなら命を危険にさらす覚悟がありますか？</p></section>"
                 },
                 "QvkOrklI6GjzD96R": {
                     "actions": {
                         "z8NTM8n3Hc1z8VyS": {
                             "name": "リアクションロール"
                         }
+                    },
+                    "name": "危険な天候",
+                    "description": "<p>メガストームの極端な風、霧、雲に覆われ、この地域全体が移動しづらくなっています。PCは敏捷のリアクションロールに成功しなければ、アクションロールの一部として移動できません。</p><section id=\"secret-cxNkS9iRa73BLTIc\" class=\"secret\"><p>他に誰が渦に飲まれて迷っていますか？　あなたはどうやって彼らを導き出しますか？</p></section>",
+                    "effects": {
+                        "St1oj5HlmKYKFYM4": {
+                            "name": "危険な天候",
+                            "description": "<p>PCは敏捷のリアクションロールに成功しなければ、アクションロールの一部として移動できません。</p>"
+                        }
                     }
+                },
+                "YbTId6KRLXisM3sB": {
+                    "name": "ボムサイクロン",
+                    "description": "<p><strong>恐怖を消費</strong>して、選んだ地点に雷雨や竜巻といった極端な気象現象を呼び出します。その地点から近距離以内にいる各対象は、あなたが選んだ特性を使ったリアクションロールに成功しなければ、雹に打たれる、空中に投げ上げられる、雷に打たれる、あるいは同様の効果を受けます。失敗した対象は、あなたが選んだ種類の<strong>2d10+2</strong>ダメージを受けます。</p><section id=\"secret-X3Vc104ppCM1lXyl\" class=\"secret\"><p>これはPCたちが経験したなかで最悪の天候ですか？　PCたちは身を守るのにこの近辺の何を使えますか？</p></section>",
+                    "actions": {
+                        "6ObCFnx4xbCP6VDb": {
+                            "name": "恐怖を消費する",
+                            "areas": [
+                                {
+                                    "name": "ボムサイクロン"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "TlX8yI5OWVmOK3cF": {
+                    "name": "ストームハート",
+                    "description": "<p><strong>恐怖を消費</strong>して、メガストームの生ける動力源を明らかにします。PCから遠距離以内に嵐の巨人か水の大精霊を召喚し、直後にスポットライトを当てます。この敵対者が倒されるまで、「ストームフロント」のカウントダウンは減りません。この敵対者が倒されたとき、メガストームは終わります。</p><section id=\"secret-SlWRKU8Q6x4AItts\" class=\"secret\"><p>この生き物は自分の目的のために嵐を呼んだのですか、それともさらに大きな存在に仕えているのですか？　なぜこの場所を破壊の標的に定めたのですか？</p></section>",
+                    "actions": {
+                        "NrpLBc8WNJvCP8CM": {
+                            "name": "嵐の巨人",
+                            "description": "<p><strong>恐怖を消費</strong>して、メガストームの生ける動力源を明らかにします。PCから遠距離以内に嵐の巨人を召喚し、直後にスポットライトを当てます。この敵対者が倒されるまで、「ストームフロント」のカウントダウンは減りません。この敵対者が倒されたとき、メガストームは終わります。</p><section id=\"secret-SlWRKU8Q6x4AItts\" class=\"secret\"><p>この生き物は自分の目的のために嵐を呼んだのですか、それともさらに大きな存在に仕えているのですか？　なぜこの場所を破壊の標的に定めたのですか？</p></section>"
+                        },
+                        "g3oU6TuFtE3izvOJ": {
+                            "name": "水の大精霊",
+                            "description": "<p><strong>恐怖を消費</strong>して、メガストームの生ける動力源を明らかにします。PCから遠距離以内に水の大精霊を召喚し、直後にスポットライトを当てます。この敵対者が倒されるまで、「ストームフロント」のカウントダウンは減りません。この敵対者が倒されたとき、メガストームは終わります。</p><section id=\"secret-SlWRKU8Q6x4AItts\" class=\"secret\"><p>この生き物は自分の目的のために嵐を呼んだのですか、それともさらに大きな存在に仕えているのですか？　なぜこの場所を破壊の標的に定めたのですか？</p></section>"
+                        }
+                    }
+                },
+                "0pdHjCFHlKIvNU23": {
+                    "name": "街路の混乱",
+                    "description": "<p>メガストームは地元の人々のあいだに恐怖と混乱を広げています。嵐がどのようにNPCを危険にさらすか描写してください。次にスポットライトを得たPCがそのNPCを救うためにアクションを使わなかった場合、あなたは恐怖を1つ得ます。</p><section id=\"secret-rq0SEXuKwlNrk9xG\" class=\"secret\"><p>この状況に乗じているのは誰ですか？　ここを取り仕切っているはずなのは誰で、その人物はどうなったのですか？</p></section>"
                 }
-            }
+            },
+            "name": "メガストーム",
+            "description": "<p>極端な気象現象が突如として現れ、パーティは自分たちの生存と他者の安全とを天秤にかけることを強いられます。</p>",
+            "impulses": "ハリケーンの風を吹かせる、土石流で息を詰まらせる、建物を崩す、水没させる、瓦礫を投げつける、空を光らせる"
         },
         "Moon Kingdom": {
             "_note": "Moon Kingdom",
             "potentialAdversaries": {
                 "TGaPRMzMRhCwaj1v": {
                     "label": "敵対者"
+                },
+                "dGGEFeoh8LOS51RN": {
+                    "label": "土地の動物たち"
+                }
+            },
+            "name": "月の王国",
+            "description": "<p>とうに失われた月の王国の、謎めいて光を放つ孤立した廃墟。忘れられた魔法と古代の技術の残響が漂います。</p>",
+            "impulses": "夢と現実の境を曖昧にする、意識を潮のように満ち引きさせる、古代の栄華の残響をささやく",
+            "items": {
+                "EwKS8purdqfLft20": {
+                    "name": "夢のような大気",
+                    "description": "<p>月の王国にあるものはすべて、夢のようにふわふわと感じられます。跳躍すれば遠くまで届き、音はくすんで聞こえます。大気は虹色に輝く結晶の塵で満ちており、それは思考や感情に応じて揺らぎ、過去の記憶や未来の光景を記録していることもあります。シーンごとに1回、PCは本能のロールを行い、過去の出来事が残した精神の痕跡を読み取れます。</p><section id=\"secret-m7MBCB6cZ1kqfzV1\" class=\"secret\"><p>PCたちはどんな霊妙な香りや感覚を味わいますか？　この大気は彼らのあいだのやり取りにどんな影響を与えますか？</p></section>",
+                    "actions": {
+                        "EbKXnEAy2wWNljFJ": {
+                            "name": "精神の痕跡を読み取る"
+                        }
+                    }
+                },
+                "LBPo3tyONcyWo2ap": {
+                    "name": "静寂の廃墟",
+                    "description": "<p>首都のそびえ立つ銀と青の建築は損なわれていませんが、月の潮に合わせて脈打つ生物発光する草花に覆い尽くされています。技巧のロールに成功したPCは、月の植物を枯らさずに採取できます。生きた月の植物を1つ以上食べたPCは、次の長期休息まで呪文詠唱ロールに+1のボーナスを得ます。</p><section id=\"secret-pqH7oBOwsaP1KHwl\" class=\"secret\"><p>この月の植物は地上のどんな草花に似ていますか？　どんな味がして、食べた者の体にどんな影響を与えますか？</p></section>",
+                    "actions": {
+                        "f6Zbv7K0hNXRcun4": {
+                            "name": "月の植物を食べる"
+                        }
+                    },
+                    "effects": {
+                        "b4fl1uw4coFPlcYk": {
+                            "name": "月の植物",
+                            "description": "<p>生きた月の植物を1つ以上食べたPCは、次の長期休息まで呪文詠唱ロールに+1のボーナスを得ます。</p>"
+                        }
+                    }
+                },
+                "JbybeL7zwmsLBdgt": {
+                    "name": "月のアストロロギウム",
+                    "description": "<p>首都の最も高い塔の頂には、歴史を再生できる水晶の夢の機械が据えられています。知識のロールに成功したPCは、この機械を修復できます。機械が修復されたら、存在感のロールに成功したPCはそれを操作して、月の王国の興亡の歴史を知ることができます。</p><ul><li><p>クリティカル成功：PCは月の王国の歴史における重要な出来事と人物について明確な情報を得て、さらに希望を<strong>[[/r 1d4]]</strong>得ます。この希望は、自分の見た光景を共有したPCたちに分配できます。</p></li><li><p>希望付きの成功：PCは月の王国の歴史における重要な出来事と人物について明確な情報を得ます。</p></li><li><p>恐怖付きのロール：PCは王国の破滅的な終焉にまつわる短い閃光と感覚を受け取ります。そのロールが失敗だった場合、PCは光景に精神を侵され<strong>4d10+5</strong>の魔法ダメージを受けます。</p></li></ul><section id=\"secret-pggKJalwbqUZggZ8\" class=\"secret\"><p>この機械はどんな姿で、どのように動くのですか？　PCたちは月の王国の歴史について何を知りますか？</p></section>",
+                    "actions": {
+                        "lYDqOLkyBEeQUdji": {
+                            "description": "<p>恐怖付きのロール：PCは王国の破滅的な終焉にまつわる短い閃光と感覚を受け取ります。そのロールが失敗だった場合、PCは光景に精神を侵され<strong>4d10+5</strong>の魔法ダメージを受けます。</p>"
+                        }
+                    }
+                },
+                "0L199n6Ftdu0Ski7": {
+                    "name": "月の女王の墓所",
+                    "description": "<p>月の王国の最後の統治者は、城塞の奥深くで透石膏の棺に保存されています。その寝所を調べるロールが恐怖付きだった場合、彼女の呪わしい亡霊が目覚めてパーティを襲います。棺のそばに月の女王の霊（大降霊術師）を召喚し、直後にスポットライトを当てます。</p><section id=\"secret-T4ooy4DmaUjaWXzA\" class=\"secret\"><p>誰が彼女をここに葬ったのですか、そしてなぜですか？　彼女は蘇らせることができますか、それとも霊を滅ぼすしか道はありませんか？</p></section>"
                 }
             }
         },
@@ -1773,34 +1868,117 @@
             "potentialAdversaries": {
                 "8aqHp1uxtxvnuNSU": {
                     "label": "その他"
+                },
+                "f08TnNkCjPIzmQHh": {
+                    "label": "獣"
                 }
             },
             "items": {
                 "jkm03DXYYajsRk2j": {
                     "actions": {
                         "P2fHddwfyEGUwpCH": {
-                            "name": "ダメージ"
+                            "name": "ダメージ",
+                            "description": "<p>恐怖を消費して、氷の激流で山を削り、雪崩を起こします。その進路にいるすべてのPCは、敏捷か筋力のリアクションロールに成功しなければ、なぎ倒されて山を転がり落ちます。ロープやピトン、その他の登攀用具を使っているPCは、このロールに有利を得ます。失敗した対象は遠距離まで山を転がり落ち、<strong>2d20</strong>の物理ダメージを受け、ストレスを1つ記録しなければなりません。成功した対象はストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-scxxru7P29oZ1dt8\"><p><em>PCたちはどうやって雪崩をやり過ごそうとしますか？　仲間が山腹を転がり落ちていったとき、キャラクターたちはどんな手立てで互いを見つけ出そうとしますか？</em></p></section>"
                         }
-                    }
+                    },
+                    "name": "雪崩",
+                    "description": "<p>恐怖を消費して、氷の激流で山を削り、雪崩を起こします。その進路にいるすべてのPCは、敏捷か筋力のリアクションロールに成功しなければ、なぎ倒されて山を転がり落ちます。ロープやピトン、その他の登攀用具を使っているPCは、このロールに有利を得ます。失敗した対象は遠距離まで山を転がり落ち、<strong>2d20</strong>の物理ダメージを受け、ストレスを1つ記録しなければなりません。成功した対象はストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-3gM8fEJj1vD9W88k\"><p><em>PCたちはどうやって雪崩をやり過ごそうとしますか？　仲間が山腹を転がり落ちていったとき、キャラクターたちはどんな手立てで互いを見つけ出そうとしますか？</em></p></section>"
                 },
                 "hkZVEduCWJFR0h2S": {
                     "actions": {
                         "88MyOC3IRcct6VLk": {
                             "name": "召喚"
                         }
-                    }
+                    },
+                    "name": "猛禽の巣",
+                    "description": "<p>PCたちが猛禽の狩り場に入ったとき、@UUID[Compendium.daggerheart.adversaries.Actor.OMQ0v6PE8s1mSU0K]{巨大鷲}2体が、選んだPCから超遠距離以内に現れ、PCたちを獲物と見定めます。</p><section id=\"secret-aU19zKlmhVBdS2oF\" class=\"secret\"><p><em>この鷲たちが最後に獲物を見つけてからどれくらい経っていますか？　巣には卵や、まだ羽の生えていない雛がいますか？</em></p></section>"
                 },
                 "K8ld4m5yTA6WZwUs": {
                     "actions": {
                         "yJj6IsNNTEyKndvO": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（ループ4）</em>。PCたちが山道に入ったら、カウントダウンを起動します。</p>",
+                            "countdown": [
+                                {
+                                    "name": "氷の風"
+                                }
+                            ]
+                        },
+                        "kDV2h9DhO6fEDcjl": {
+                            "name": "セーブを振る",
+                            "description": "<p>この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-nEZRdWaqMAIUoQG0\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>"
+                        }
+                    },
+                    "name": "氷の風",
+                    "description": "<p><em>カウントダウン（ループ4）</em>。PCたちが山道に入ったら、カウントダウンを起動します。発動したとき、この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-FsJMzj3ZZuf134s2\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>"
+                },
+                "cIAMenvMXHPTpOFn": {
+                    "name": "刻まれた印章",
+                    "description": "<p>山肌に大きな印と彫刻が刻まれています。関連する背景や経験を持つPCは、それが氷の風の力を強める天候の魔法だと見抜きます。知識のロールに成功したPCは、その印章についての情報、その作り手についての情報、そしてそれを打ち消す方法を思い出せます。PCがクリティカル成功した場合、その印章が尾根生まれの魔法使いの様式だと見抜き、印章を打ち消すロールに有利を得ます。</p><section id=\"secret-5FNK8Z7pIo0nEyCA\" class=\"secret\"><p><em>この魔法を仕掛けたのは誰ですか？　その者は近くにいますか？　なぜ天候をより過酷にしたかったのですか？</em></p></section>"
+                }
+            },
+            "name": "山道",
+            "description": "<p>雲を貫く岩の峰々。曲がりくねった道が幾重ものつづら折りを経て峰を越えていきます。</p>",
+            "impulses": "物資と体力から厳しい通行料を取る、魔法による細工を明かす、進みを遅らせる"
+        },
+        "Necromancer's Ossuary": {
+            "_note": "Necromancer's Ossuary",
+            "name": "降霊術師の納骨堂",
+            "description": "<p>書庫と曲がりくねった通路、そして無数の石棺を備えた埃っぽい地下墓所。不運な侵入者たちの血が飛び散っています。</p>",
+            "impulses": "侵入者を惑わせる、埋もれたままにすべき秘密を掘り返す、不死を顕現させる、不死者の波を解き放つ",
+            "potentialAdversaries": {
+                "eYaDM6WMAmdzysKZ": {
+                    "label": "大降霊術師の軍勢"
+                }
+            },
+            "items": {
+                "SJo1Pw0fE4vKnisr": {
+                    "name": "生者に場所はない",
+                    "description": "<p>HPを消去する特徴やアクションは、使用に希望を1つ消費する必要があります。すでに希望を消費するものである場合、PCは追加で希望を1つ消費しなければなりません。</p><section class=\"secret\" id=\"secret-kxbv8Ju7dkBJnduH\"><p><em>これほど生に反する場所で癒やそうとするのは、どんな感覚ですか？</em></p></section>",
+                    "actions": {
+                        "jVY198vniaTSlgsX": {
+                            "name": "希望を失う"
+                        }
+                    }
+                },
+                "Egi337jsYlldHzEH": {
+                    "name": "幾世紀の知識",
+                    "description": "<p>PCは書庫と実験室を調査し、知識のロールを行って、秘術、この地の歴史、そして降霊術師の企みに関する情報を得られます。</p><section id=\"secret-HAWRKErLm6NSqzHc\" class=\"secret\"><p><em>その書物の題名は何ですか？　降霊術師はどんな計画に取り組んでいて、それはその者の企みについて何を物語っていますか？</em></p></section>"
+                },
+                "asSGMUdf4gG4PO8F": {
+                    "name": "骨の炸裂",
+                    "description": "<p>この環境内であなたが選んだ地点から近距離以内にいるすべての対象は、敏捷のリアクションロールに成功しなければ、納骨堂の一部が周囲で爆発し、骨の破片によって<strong>4d8+8</strong>の物理ダメージを受けます。</p><section id=\"secret-b6zF5gClmMcrmeVT\" class=\"secret\"><p><em>どんな古代の骨の建築が壊れますか？　どんな骨があなたの鎧に突き刺さりますか？</em></p></section>",
+                    "actions": {
+                        "M1mOwi4Limw2hRwL": {
+                            "name": "セーブを振る",
+                            "areas": [
+                                {
+                                    "name": "骨の炸裂"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "mnpqMpYCjdlwtvBp": {
+                    "name": "死のオーラ",
+                    "description": "<p>シーンごとに1回、<strong>d4</strong>を振ります。降霊術師から遠距離以内にいる各不死者は、出た結果に等しいHPとストレスを消去できます。その数をHPとストレスにどう割り振るかは、その不死者が選べます。</p><section id=\"secret-LzevSyHyOxNxLwwh\" class=\"secret\"><p><em>よみがえった活力はどのように現れますか？　彼らはより生者らしく見えますか、それとは逆に、より朽ちているのに力強いのですか？</em></p></section>",
+                    "actions": {
+                        "UWCibXbQZG22PJ3l": {
+                            "name": "d4をロール",
+                            "description": "<p>シーンごとに1回、<strong>d4</strong>を振ります。降霊術師から遠距離以内にいる各不死者は、出た結果に等しいHPとストレスを消去できます。その数をHPとストレスにどう割り振るかは、その不死者が選べます。</p><section class=\"secret\" id=\"secret-frj3OBrXCjpKtWSg\"><p><em>よみがえった活力はどのように現れますか？　彼らはより生者らしく見えますか、それとは逆に、より朽ちているのに力強いのですか？</em></p></section>"
+                        }
+                    }
+                },
+                "chJRXNg5zyTGbcG5": {
+                    "name": "湧いて出てくる！",
+                    "description": "<p><strong>恐怖を消費</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.gP3fWTLzSFnpA8EJ]{腐ったゾンビ}を[[/r 1d6]]体、@UUID[Compendium.daggerheart.adversaries.Actor.CP6iRfHdyFWniTHY]{完成されたゾンビ}を2体、または@UUID[Compendium.daggerheart.adversaries.Actor.YhJrP7rTBiRdX5Fp]{ゾンビ軍団}を1体召喚します。彼らは選んだPCから近距離以内に現れます。</p><section class=\"secret\" id=\"secret-O5DKa2eIgNp51OVK\"><p><em>この者たちは降霊術師の駒になる前は何者でしたか？　英雄たちの目に、その生の名残はどのように映りますか？</em></p></section>",
+                    "actions": {
+                        "hFeTdiHWeCYkb8Hg": {
+                            "name": "恐怖を消費する"
                         }
                     }
                 }
             }
-        },
-        "Necromancer's Ossuary": {
-            "_note": "Necromancer's Ossuary"
         },
         "Ocean Voyage": {
             "_note": "Ocean Voyage",
