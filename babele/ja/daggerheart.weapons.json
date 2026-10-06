@@ -1046,6 +1046,7 @@
         "Enchanted Shillelagh": {
             "_note": "Enchanted Shillelagh",
             "name": "魔法の棍棒",
+            "description": "<p><strong>防護</strong>：鎧値＋1。</p>",
             "attack": {
                 "name": "攻撃"
             },
@@ -1054,8 +1055,7 @@
                     "name": "防護",
                     "description": "<p>鎧値＋1</p>"
                 }
-            },
-            "description": "<p><strong>防護</strong>：鎧値＋1。</p>"
+            }
         },
         "Ethereal Zweihänder": {
             "_note": "Ethereal Zweihänder",
@@ -1970,6 +1970,7 @@
         "Labrys Axe": {
             "_note": "Labrys Axe",
             "name": "ラブリュス斧",
+            "description": "<strong>防護：</strong>鎧値＋1",
             "attack": {
                 "name": "攻撃"
             },
@@ -1978,8 +1979,7 @@
                     "name": "防護",
                     "description": "鎧値＋1"
                 }
-            },
-            "description": "<strong>防護：</strong>鎧値＋1"
+            }
         },
         "Lance": {
             "_note": "Lance",

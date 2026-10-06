@@ -11,14 +11,17 @@
     "entries": {
         "Advanced Banded Armor": {
             "_note": "Advanced Banded Armor",
+            "name": "上級帯金鎧",
             "effects": {
                 "clo7We2aUibWdsmD": {
-                    "name": "かさばる"
+                    "name": "かさばる",
+                    "description": "回避値−1。重傷値のダメージを受けたとき、ストレスを1マークしなければなりません。"
                 }
             }
         },
         "Advanced Brigandine Armor": {
             "_note": "Advanced Brigandine Armor",
+            "name": "上級ブリガンダイン鎧",
             "effects": {
                 "Z1MLDyOdXJvYA0sr": {
                     "name": "裏打ち",
@@ -28,6 +31,7 @@
         },
         "Advanced Chainmail Armor": {
             "_note": "Advanced Chainmail Armor",
+            "name": "上級鎖帷子",
             "effects": {
                 "qlzHOAnpBYzosQxK": {
                     "name": "重い",
@@ -37,6 +41,7 @@
         },
         "Advanced Full Plate Armor": {
             "_note": "Advanced Full Plate Armor",
+            "name": "上級フルプレート鎧",
             "effects": {
                 "awdHgEaM54G3emOU": {
                     "name": "非常に重い",
@@ -46,6 +51,7 @@
         },
         "Advanced Gambeson Armor": {
             "_note": "Advanced Gambeson Armor",
+            "name": "上級ガンベゾン鎧",
             "effects": {
                 "Fq9Q93IHCchhfSss": {
                     "name": "柔軟",
@@ -54,18 +60,22 @@
             }
         },
         "Advanced Leather Armor": {
-            "_note": "Advanced Leather Armor"
+            "_note": "Advanced Leather Armor",
+            "name": "上級革鎧"
         },
         "Advanced Mage Robes": {
             "_note": "Advanced Mage Robes",
+            "name": "上級魔術師のローブ",
             "effects": {
                 "FdkTFA6u4HAKrwa2": {
-                    "name": "付呪"
+                    "name": "付呪",
+                    "description": "ダメージしきい値に呪文発動特性に等しいボーナスを得ます。"
                 }
             }
         },
         "Advanced Scale Mail Armor": {
             "_note": "Advanced Scale Mail Armor",
+            "name": "上級鱗鎧",
             "effects": {
                 "2uaDK1adL1aVP1Pg": {
                     "name": "扱いにくい",
@@ -75,6 +85,7 @@
         },
         "Astral Raiment": {
             "_note": "Astral Raiment",
+            "name": "星幽の衣",
             "actions": {
                 "1xXZfSn4U37AgDRB": {
                     "name": "星辰",
@@ -84,14 +95,17 @@
         },
         "Banded Armor": {
             "_note": "Banded Armor",
+            "name": "帯金鎧",
             "effects": {
                 "JkRfeN3ioW857m1p": {
-                    "name": "かさばる"
+                    "name": "かさばる",
+                    "description": "回避値−1。重傷値のダメージを受けたとき、ストレスを1マークしなければなりません。"
                 }
             }
         },
         "Bellamoi Fine Armor": {
             "_note": "Bellamoi Fine Armor",
+            "name": "ベラモイの上質な鎧",
             "effects": {
                 "Hy0sNtFS1JAXxgwC": {
                     "name": "金装飾",
@@ -101,6 +115,7 @@
         },
         "Bladefare Armor": {
             "_note": "Bladefare Armor",
+            "name": "刃渡りの鎧",
             "effects": {
                 "s8KtTIngTjnOlaTP": {
                     "name": "物理",
@@ -110,14 +125,17 @@
         },
         "Bloodstone Plate Armor": {
             "_note": "Bloodstone Plate Armor",
+            "name": "血玉石のプレート鎧",
             "actions": {
                 "LoUjBJNX5nvhKyZM": {
-                    "name": "HPを消す"
+                    "name": "HPを消す",
+                    "description": "近接射程内での武器攻撃がクリティカル成功したとき、HPを1消去します。"
                 }
             }
         },
         "Brigandine Armor": {
             "_note": "Brigandine Armor",
+            "name": "ブリガンダイン鎧",
             "effects": {
                 "Qqdax2Dl4UHB9TxB": {
                     "name": "裏打ち",
@@ -127,6 +145,7 @@
         },
         "Chainmail Armor": {
             "_note": "Chainmail Armor",
+            "name": "鎖帷子",
             "effects": {
                 "ZfO5NjpqEIzZVlPq": {
                     "name": "重い",
@@ -136,6 +155,7 @@
         },
         "Channeling Armor": {
             "_note": "Channeling Armor",
+            "name": "伝導の鎧",
             "effects": {
                 "8bwf1Ri3jYkjphEv": {
                     "name": "伝導",
@@ -145,71 +165,92 @@
         },
         "Circle-Forged Dreadplate": {
             "_note": "Circle-Forged Dreadplate",
+            "name": "円陣鍛えの恐怖鎧",
             "actions": {
                 "3io8jJeWVrwcKBcF": {
-                    "name": "呪詛"
+                    "name": "呪詛",
+                    "description": "攻撃によってHPを何個かマークしたとき、d4を振ります。結果が4の場合、攻撃者は同じ数のストレスをマークしなければなりません。"
                 }
             }
         },
         "Cloverweave Cloak": {
             "_note": "Cloverweave Cloak",
+            "name": "苜蓿織りの外套",
             "actions": {
                 "0JzAOuMyJDSdEpy3": {
-                    "name": "幸運の恵み"
+                    "name": "幸運の恵み",
+                    "description": "シーンごとに1回、希望付きの失敗を恐怖付きの成功に変えられます。"
                 }
             }
         },
         "Darkweave Shroud": {
             "_note": "Darkweave Shroud",
+            "name": "闇織りの覆い",
             "actions": {
                 "5Hq0OZmmnGykxe6H": {
-                    "name": "幽体歩行"
+                    "name": "幽体歩行",
+                    "description": "休息ごとに1回、ストレスを1マークして、固体を通り抜けて近距離まで移動します。"
                 }
             }
         },
         "Deep-Forged Coral Armor": {
             "_note": "Deep-Forged Coral Armor",
+            "name": "深海鍛えの珊瑚鎧",
             "effects": {
                 "3lzAYwHLDaq0HiMs": {
-                    "name": "水棲"
+                    "name": "水棲",
+                    "description": "水中で呼吸でき、水没しているあいだ素早さロールに有利を得ます。",
+                    "changes": [
+                        "水没しているあいだの素早さロール"
+                    ]
                 }
             }
         },
         "Dragonscale Armor": {
-            "_note": "Dragonscale Armor"
+            "_note": "Dragonscale Armor",
+            "name": "竜鱗鎧"
         },
         "Dunamis Silkchain": {
-            "_note": "Dunamis Silkchain"
+            "_note": "Dunamis Silkchain",
+            "name": "デュナミスの絹鎖"
         },
         "Elundrian Chain Armor": {
             "_note": "Elundrian Chain Armor",
+            "name": "エルンドリアの鎖鎧",
             "effects": {
                 "xGxqTCO8MjNq5Cw6": {
-                    "name": "結界"
+                    "name": "結界",
+                    "description": "受ける魔法ダメージを、ダメージしきい値に当てる前に鎧値だけ軽減します。"
                 }
             }
         },
         "Emberwoven Armor": {
-            "_note": "Emberwoven Armor"
+            "_note": "Emberwoven Armor",
+            "name": "燃え殻織りの鎧"
         },
         "Enchanter's Robes": {
             "_note": "Enchanter's Robes",
+            "name": "付呪師のローブ",
             "actions": {
                 "SqJwukvzZAPDgCJy": {
-                    "name": "記憶術"
+                    "name": "記憶術",
+                    "description": "シーンごとに1回、再読込コストを支払わずに保管庫からドメインカードを1枚呼び戻せます。"
                 }
             }
         },
         "Full Fortified Armor": {
             "_note": "Full Fortified Armor",
+            "name": "全身強化鎧",
             "effects": {
                 "QIefVb73cm9gYju8": {
-                    "name": "強化"
+                    "name": "強化",
+                    "description": "鎧スロットをマークしたとき、攻撃の重さをしきい値1段階ではなく2段階下げます。"
                 }
             }
         },
         "Full Plate Armor": {
             "_note": "Full Plate Armor",
+            "name": "フルプレート鎧",
             "effects": {
                 "mfKMW9SX3Mnos1nY": {
                     "name": "非常に重い",
@@ -219,6 +260,7 @@
         },
         "Gambeson Armor": {
             "_note": "Gambeson Armor",
+            "name": "ガンベゾン鎧",
             "effects": {
                 "v1FNEsypRF5W6vVc": {
                     "name": "柔軟",
@@ -228,14 +270,17 @@
         },
         "Gilded Sunplate": {
             "_note": "Gilded Sunplate",
+            "name": "金装飾の陽光鎧",
             "actions": {
                 "d9r7VK4r3fb7KHMu": {
-                    "name": "輝耀"
+                    "name": "輝耀",
+                    "description": "シーンごとに1回、希望を消費したとき、鎧スロットを1消せます。"
                 }
             }
         },
         "Godbound Laminar": {
             "_note": "Godbound Laminar",
+            "name": "神縛りのラミナー鎧",
             "actions": {
                 "h7BCDsiPhLZxwllM": {
                     "name": "希望を得る",
@@ -245,6 +290,7 @@
         },
         "Granminster's Finery": {
             "_note": "Granminster's Finery",
+            "name": "グランミンスターの装い",
             "effects": {
                 "zvc1X0O4HyQE9yfV": {
                     "name": "壮麗",
@@ -254,33 +300,41 @@
         },
         "Hallowed Heroplate": {
             "_note": "Hallowed Heroplate",
+            "name": "聖別された英雄鎧",
             "actions": {
                 "BI0HMrVMByFTti3u": {
-                    "name": "祝福"
+                    "name": "祝福",
+                    "description": "長期休息ごとに1回、「すべてを賭ける」のデスムーブを行う前に、任意の数の希望を消費できます。希望ダイスの結果に、消費した希望の数に等しいボーナスを得ます。"
                 }
             }
         },
         "Harrowbone Armor": {
-            "_note": "Harrowbone Armor"
+            "_note": "Harrowbone Armor",
+            "name": "苛み骨の鎧"
         },
         "Hawkguard's Mantle": {
             "_note": "Hawkguard's Mantle",
+            "name": "鷹衛のマント",
             "actions": {
                 "DlCbxmVa5udw4wLA": {
-                    "name": "滑空"
+                    "name": "滑空",
+                    "description": "遠距離まで滑空でき、落下によるダメージを無効化します。"
                 }
             }
         },
         "Improved Banded Armor": {
             "_note": "Improved Banded Armor",
+            "name": "改良帯金鎧",
             "effects": {
                 "ItHCEXGyY7KY3ODo": {
-                    "name": "かさばる"
+                    "name": "かさばる",
+                    "description": "回避値−1。重傷値のダメージを受けたとき、ストレスを1マークしなければなりません。"
                 }
             }
         },
         "Improved Brigandine Armor": {
             "_note": "Improved Brigandine Armor",
+            "name": "改良ブリガンダイン鎧",
             "effects": {
                 "qtuLYIIbHcUzeVpq": {
                     "name": "裏打ち",
@@ -290,6 +344,7 @@
         },
         "Improved Chainmail Armor": {
             "_note": "Improved Chainmail Armor",
+            "name": "改良鎖帷子",
             "effects": {
                 "JHupzYULxdQzFzuj": {
                     "name": "重い",
@@ -299,6 +354,7 @@
         },
         "Improved Full Plate Armor": {
             "_note": "Improved Full Plate Armor",
+            "name": "改良フルプレート鎧",
             "effects": {
                 "wstJ1aKKtmXgCwxB": {
                     "name": "非常に重い",
@@ -308,6 +364,7 @@
         },
         "Improved Gambeson Armor": {
             "_note": "Improved Gambeson Armor",
+            "name": "改良ガンベゾン鎧",
             "effects": {
                 "BFwU3ErPaajUSMUz": {
                     "name": "柔軟",
@@ -316,18 +373,22 @@
             }
         },
         "Improved Leather Armor": {
-            "_note": "Improved Leather Armor"
+            "_note": "Improved Leather Armor",
+            "name": "改良革鎧"
         },
         "Improved Mage Robes": {
             "_note": "Improved Mage Robes",
+            "name": "改良魔術師のローブ",
             "effects": {
                 "68KNvbicN2lASHIo": {
-                    "name": "付呪"
+                    "name": "付呪",
+                    "description": "ダメージしきい値に呪文発動特性に等しいボーナスを得ます。"
                 }
             }
         },
         "Improved Scale Mail Armor": {
             "_note": "Improved Scale Mail Armor",
+            "name": "改良鱗鎧",
             "effects": {
                 "bE8TfDWmibDVXlDK": {
                     "name": "扱いにくい",
@@ -337,25 +398,31 @@
         },
         "Irontree Breastplate Armor": {
             "_note": "Irontree Breastplate Armor",
+            "name": "鉄樹の胸当て鎧",
             "effects": {
                 "P3aCN8PQgPXP4C9M": {
-                    "name": "補強"
+                    "name": "補強",
+                    "description": "<p>最後の鎧スロットをマークしたとき、鎧スロットを1つ以上消すまで、ダメージしきい値が＋2されます。</p>"
                 }
             }
         },
         "Leather Armor": {
-            "_note": "Leather Armor"
+            "_note": "Leather Armor",
+            "name": "革鎧"
         },
         "Legendary Banded Armor": {
             "_note": "Legendary Banded Armor",
+            "name": "伝説帯金鎧",
             "effects": {
                 "jTiOZCLUWkOdkkts": {
-                    "name": "かさばる"
+                    "name": "かさばる",
+                    "description": "回避値−1。重傷値のダメージを受けたとき、ストレスを1マークしなければなりません。"
                 }
             }
         },
         "Legendary Brigandine Armor": {
             "_note": "Legendary Brigandine Armor",
+            "name": "伝説ブリガンダイン鎧",
             "effects": {
                 "QOqo9BxoI3zEqakL": {
                     "name": "裏打ち",
@@ -365,6 +432,7 @@
         },
         "Legendary Chainmail Armor": {
             "_note": "Legendary Chainmail Armor",
+            "name": "伝説鎖帷子",
             "effects": {
                 "8Oa6Y375X8UpcPph": {
                     "name": "重い",
@@ -374,6 +442,7 @@
         },
         "Legendary Full Plate Armor": {
             "_note": "Legendary Full Plate Armor",
+            "name": "伝説フルプレート鎧",
             "effects": {
                 "zvzkRX2Uevemmbz4": {
                     "name": "非常に重い",
@@ -383,6 +452,7 @@
         },
         "Legendary Gambeson Armor": {
             "_note": "Legendary Gambeson Armor",
+            "name": "伝説ガンベゾン鎧",
             "effects": {
                 "3AUNxBoj7mp1ziJQ": {
                     "name": "柔軟",
@@ -391,18 +461,22 @@
             }
         },
         "Legendary Leather Armor": {
-            "_note": "Legendary Leather Armor"
+            "_note": "Legendary Leather Armor",
+            "name": "伝説革鎧"
         },
         "Legendary Mage Robes": {
             "_note": "Legendary Mage Robes",
+            "name": "伝説魔術師のローブ",
             "effects": {
                 "YEg4fgH21uRnKW7f": {
-                    "name": "付呪"
+                    "name": "付呪",
+                    "description": "ダメージしきい値に呪文発動特性に等しいボーナスを得ます。"
                 }
             }
         },
         "Legendary Scale Mail Armor": {
             "_note": "Legendary Scale Mail Armor",
+            "name": "伝説鱗鎧",
             "effects": {
                 "yYHxeQ0YPiVl8Cbc": {
                     "name": "扱いにくい",
@@ -412,14 +486,17 @@
         },
         "Mage Robes": {
             "_note": "Mage Robes",
+            "name": "魔術師のローブ",
             "effects": {
                 "wYHVkzegSmeXOsmn": {
-                    "name": "付呪"
+                    "name": "付呪",
+                    "description": "ダメージしきい値に呪文発動特性に等しいボーナスを得ます。"
                 }
             }
         },
         "Monett's Cloak": {
             "_note": "Monett's Cloak",
+            "name": "モネットの外套",
             "effects": {
                 "3n4O7PyAWMEFdr5p": {
                     "name": "魔法",
@@ -429,36 +506,45 @@
         },
         "Resonant Harness": {
             "_note": "Resonant Harness",
+            "name": "共鳴する装具",
             "actions": {
                 "iTv5QVsZaJ6KYEv3": {
-                    "name": "硝子質"
+                    "name": "硝子質",
+                    "description": "重傷値以上のダメージを受けるとき、鎧スロットを2マークしてそのダメージを無効化できます。そうした場合、ダウンタイムムーブとして防具を修理するまで、ダメージしきい値に−5のペナルティを受けます。"
                 }
             },
             "effects": {
                 "dzGZkBgtJjQh3JH1": {
-                    "name": "硝子質"
+                    "name": "硝子質",
+                    "description": "ダウンタイムムーブとして防具を修理するまで、ダメージしきい値に−5のペナルティを受けます"
                 }
             }
         },
         "Rosewild Armor": {
-            "_note": "Rosewild Armor"
+            "_note": "Rosewild Armor",
+            "name": "野薔薇の鎧"
         },
         "Rune-Forged Exosuit": {
             "_note": "Rune-Forged Exosuit",
+            "name": "ルーン鍛えの外装",
             "effects": {
                 "VSuoGIo7GpK3JLfA": {
-                    "name": "同調"
+                    "name": "同調",
+                    "description": "装備枠に入れられるドメインカードの最大数が1枚減りますが、ダメージしきい値にティアに等しいボーナスを得ます。"
                 }
             }
         },
         "Runes of Fortification": {
-            "_note": "Runes of Fortification"
+            "_note": "Runes of Fortification",
+            "name": "強化のルーン"
         },
         "Runetan Floating Armor": {
-            "_note": "Runetan Floating Armor"
+            "_note": "Runetan Floating Armor",
+            "name": "ルーネタンの浮遊鎧"
         },
         "Savior Chainmail": {
             "_note": "Savior Chainmail",
+            "name": "救い手の鎖帷子",
             "effects": {
                 "rkrqlwqtR9REgRx7": {
                     "name": "扱いにくい",
@@ -468,6 +554,7 @@
         },
         "Scale Mail Armor": {
             "_note": "Scale Mail Armor",
+            "name": "鱗鎧",
             "effects": {
                 "2wGrVqcFO8jiTuDv": {
                     "name": "扱いにくい",
@@ -477,6 +564,7 @@
         },
         "Skywarden's Lamellar": {
             "_note": "Skywarden's Lamellar",
+            "name": "空守りの小札鎧",
             "effects": {
                 "P1bG8YNaWOUkRbn7": {
                     "name": "警戒",
@@ -486,30 +574,37 @@
         },
         "Spidersilk Tunic": {
             "_note": "Spidersilk Tunic",
+            "name": "蜘蛛糸の胴着",
             "effects": {
                 "a1I284B2QCnVEs7e": {
-                    "name": "壁登り"
+                    "name": "壁登り",
+                    "description": "回避値＋1。地面と同じように壁を歩けます。"
                 }
             }
         },
         "Spiked Plate Armor": {
             "_note": "Spiked Plate Armor",
+            "name": "棘付きのプレート鎧",
             "effects": {
                 "V8CcTcVAIxHq8KNd": {
-                    "name": "鋭利"
+                    "name": "鋭利",
+                    "description": "近接射程内の対象への攻撃が成功したとき、ダメージロールにd4を加えます。"
                 }
             }
         },
         "Stormthread Habit": {
             "_note": "Stormthread Habit",
+            "name": "嵐糸の法衣",
             "actions": {
                 "yOf6C8teHAmMhIF1": {
-                    "name": "鎧スロットを消す"
+                    "name": "鎧スロットを消す",
+                    "description": "シーンごとに1回、魔法ダメージを受けたとき、鎧スロットを1消せます。"
                 }
             }
         },
         "Trollhide Cuirass": {
             "_note": "Trollhide Cuirass",
+            "name": "トロール皮の胴鎧",
             "actions": {
                 "3KVzpGEV8ThH4jhu": {
                     "name": "自己修復",
@@ -518,16 +613,20 @@
             }
         },
         "Tyris Soft Armor": {
-            "_note": "Tyris Soft Armor"
+            "_note": "Tyris Soft Armor",
+            "name": "ティリスの柔鎧"
         },
         "Veritas Opal Armor": {
-            "_note": "Veritas Opal Armor"
+            "_note": "Veritas Opal Armor",
+            "name": "ヴェリタス・オパールの鎧"
         },
         "Wyrdwood Splint Armor": {
             "_note": "Wyrdwood Splint Armor",
+            "name": "運命樹の板金鎧",
             "actions": {
                 "ajgzKFQYH5aUzmZk": {
-                    "name": "疾歩"
+                    "name": "疾歩",
+                    "description": "拘束されず、アクションロールの一部として遠距離まで移動できます。"
                 }
             }
         }
