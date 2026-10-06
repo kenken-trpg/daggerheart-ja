@@ -906,14 +906,137 @@
                 "oFfu3hUhp4ta4qwT": {
                     "actions": {
                         "bUIfzuWd1VfiV8sc": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><em>カウントダウン（6）</em>。PCたちがその場面に入るか、教団が魔神を召喚する儀式を始めたとき、カウントダウンを開始します。敵対者を1体、儀式を率いる者として指定します。このカウントダウンはPCが恐怖とともにロールしたときに進みます。</p>",
+                            "countdown": [
+                                {
+                                    "name": "召喚"
+                                }
+                            ]
+                        },
+                        "HG7tbEdlYl3yLQnR": {
+                            "name": "魔神を召喚"
+                        }
+                    },
+                    "name": "召喚",
+                    "description": "<p><em>カウントダウン（6）</em>。PCたちがその場面に入るか、教団が魔神を召喚する儀式を始めたとき、カウントダウンを開始します。敵対者を1体、儀式を率いる者として指定します。このカウントダウンはPCが恐怖とともにロールしたときに進みます。発動したとき、儀式を率いる者の超近距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.3tqCjDwJAQ7JKqMb]{下級魔神}を1体召喚します。率いる者が倒された場合、儀式は失敗し、カウントダウンは何の効果もなく終了します。</p><section class=\"secret\" id=\"secret-OXdRqIZ0R8wGn3Gm\"><p><em>成功した場合、教団はこの繋がれた魔神をどう使うのか。次は何を召喚しようとするのか。</em></p></section>"
+                },
+                "iiHjguQG2aBn9g8i": {
+                    "name": "冒された地",
+                    "description": "<p>教団員たちはこの場所を堕ちた神々に捧げ、その穢れた影響が染み込んでいます。この環境にいる間、PCの希望ダイスをd10に下げます。この冒瀆は進行カウントダウン（6）で取り除けます。</p><section class=\"secret\" id=\"secret-iPgKjrXJYw4cy0EX\"><p><em>PCたちは、この場所の何かがおかしいと最初にどうやって気づくのか。希望が遠ざけられている間、どんな恐れが再び浮かび上がるのか。</em></p></section>",
+                    "actions": {
+                        "7W3sWRLzjG3dKcgq": {
+                            "name": "影響"
+                        }
+                    },
+                    "effects": {
+                        "8yNIw8Y7rfMdOqWC": {
+                            "name": "冒された地",
+                            "description": "<p>冒された地にいる間、あなたの希望ダイスはd10に下がります。</p>"
                         }
                     }
+                },
+                "0Rgqw1kUPeJ11ldd": {
+                    "name": "冒瀆の力",
+                    "description": "<p>儀式の力の一部が、割り込む者を退けるために教団員の1人へ注がれます。敵対者を1体選び、シーンが終わるかその敵対者が倒されるまで、恐るべき魔法を「注がれた」状態にします。「注がれた」敵対者は直ちにスポットライトを得て、以下の利益のうち1つを得ます。<strong>恐怖を1消費</strong>した場合は3つすべてを得ます：</p><ul><li><p>すべての攻撃に有利を得ます。</p></li><li><p>攻撃が成功したとき、追加で<strong>1d10</strong>のダメージを与えます。</p></li><li><p>以下の特徴を得ます：<strong>リレントレス（2）- パッシブ</strong>。この敵対者はGMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p></li></ul><section class=\"secret\" id=\"secret-600LhfEy1uNSxWdJ\"><p><em>その敵の見た目はどう変わるのか。その一撃は、どんな恐れを表に引きずり出すのか。</em></p></section>",
+                    "actions": {
+                        "EATw4ZkcuGeDfgLZ": {
+                            "name": "力を注ぐ"
+                        }
+                    },
+                    "effects": {
+                        "dYQBQq1xIysM0qLo": {
+                            "name": "冒瀆の力",
+                            "description": "<p>「注がれた」敵対者は直ちにスポットライトを得て、以下の利益のうち1つを得ます。<strong>恐怖を1消費</strong>した場合は3つすべてを得ます：</p><ul><li><p>すべての攻撃に有利を得ます。</p></li><li><p>攻撃が成功したとき、追加で<strong>1d10</strong>のダメージを与えます。</p></li><li><p>以下の特徴を得ます：<strong>リレントレス（2）- パッシブ</strong>。この敵対者はGMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p></li></ul><section class=\"secret\" id=\"secret-YOHA68Na64uXDAxu\"><p><em>その敵の見た目はどう変わるのか。その一撃は、どんな恐れを表に引きずり出すのか。</em></p></section>"
+                        },
+                        "Hxw5lXE77bGzuaOu": {
+                            "name": "冒瀆の力 - ダメージ"
+                        }
+                    }
+                },
+                "WltEUhtYwfnX8WCc": {
+                    "name": "儀式を完遂せよ",
+                    "description": "<p>儀式を率いる者が攻撃または呪文の対象になったとき、その者から超近距離以内の味方は<strong>ストレスを1マーク</strong>して、代わりに自分がその攻撃または呪文の対象になれます。</p><section id=\"secret-4QYQNJKFywfwkGGp\" class=\"secret\"><p><em>これほどの献身が恐怖と支配の追求に向けられているのを見るのは、どんな心地なのか。</em></p></section>"
+                }
+            },
+            "name": "教団の儀式",
+            "description": "<p>堕ちた者の教団が、敗れた神々の印と、病んだ緑に燃える篝火を囲んで集まっている。</p>",
+            "impulses": "土地を汚す、定命の領域を下層環と繋ぐ",
+            "potentialAdversaries": {
+                "hNREaghvi4LqHQ06": {
+                    "label": "堕ちた者の教団"
                 }
             }
         },
         "Cursed Graveyard": {
-            "_note": "Cursed Graveyard"
+            "_note": "Cursed Graveyard",
+            "name": "呪われた墓地",
+            "description": "<p>崩れかけた墓石、死者に憑かれた捻れた木々、苔と蔦に覆われた納骨堂が広がる墓場。</p>",
+            "impulses": "六フィートの地下に埋める、霧で息を詰まらせる、埋もれた財宝の約束で誘う、安らがぬ死者を解き放つ",
+            "potentialAdversaries": {
+                "6RB1MDFDZlGQGOXa": {
+                    "label": "汚された霊たち"
+                },
+                "9nT0BYx6IU732cL0": {
+                    "label": "生ける屍たち"
+                }
+            },
+            "items": {
+                "jAe6q70mR0ujYqnD": {
+                    "name": "もう一人ぶんの空き",
+                    "description": "<p>PCがこの墓地で最後のHPをマークしたとき、デスムーブを行う代わりに幽鬼になります。幽鬼である間、そのPCは生者と意思を通わせられますが、物理的な世界に干渉できず、自分の亡骸から近距離以内に留まるか、死の帳を越えるかしなければなりません。この状態は、そのPCがHPを1つ消したとき消えます。</p><section id=\"secret-qGN79en8zBOIKQe2\" class=\"secret\"><p>幽鬼になったPCは、どんな新たな情報や経験を得るのか。パーティはどうすればそのPCの霊を肉体と再び結べるのか。その儀式が失敗したら何が起こるのか。</p></section>"
+                },
+                "eil7GhCVyJXoc4uH": {
+                    "name": "聖別された地",
+                    "description": "<p>墓地の中心には、手つかずに見える礼拝堂があります。直感ロールに成功すれば、PCはこの建物が墓地の住人たちに対して聖別されていることを見つけられます。礼拝堂の中にいる間、PCたちは霊や不死者と戦う、あるいは追い払うためのアクションロールに有利を得ます。</p><section id=\"secret-8lcytZzx1FbzPrVx\" class=\"secret\"><p>この場所を聖別したのは誰で、その者はどうなったのか。ここではどんな聖遺物が見つかるのか。</p></section>",
+                    "actions": {
+                        "AOMtkIy1zWkhxi2L": {
+                            "name": "聖別を適用"
+                        }
+                    },
+                    "effects": {
+                        "0ECCZGKZdUeX9DBP": {
+                            "name": "聖別",
+                            "description": "<p>礼拝堂の中にいる間、PCたちは霊や不死者と戦う、あるいは追い払うためのアクションロールに有利を得ます。</p>",
+                            "changes": [
+                                "霊や不死者と戦う、あるいは追い払うためのアクションロール。"
+                            ]
+                        }
+                    }
+                },
+                "6Xhz8IATLKk3IYZW": {
+                    "name": "霧の瘴気",
+                    "description": "<p><strong>恐怖を1消費</strong>して、遠距離以内の範囲を、湿った土から滲み上がる低く垂れ込めた霊気の霧で満たします。PCがその瘴気の中で恐怖とともにロールしたとき、ストレスを1マークしなければなりません。</p><section id=\"secret-C7vJsPrAkoE7hjNM\" class=\"secret\"><p>PCたちはその霧の中に、どんな恐ろしいものを見るのか。その瘴気はどんな方向感覚を狂わせる匂いを放つのか。</p></section>",
+                    "actions": {
+                        "QTzzIjmEReDO7Vt3": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "n254TZpHt6PwppCi": {
+                    "name": "死者が起き上がる",
+                    "description": "<p><strong>恐怖を1消費</strong>して、PCの足元の地面から不死者の手を突き出させます。その対象は敏捷または社交リアクションロールに成功しなければ、ストレスを1マークし、手に掴まれて一時的に<em>拘束</em>されます。</p><section id=\"secret-8B2ArSeN4EKOWMbW\" class=\"secret\"><p>この者たちは生前どんな人々だったのか。なぜここに埋められたのか。なぜ死んだままでいないのか。</p></section>",
+                    "actions": {
+                        "LxndzJzTJia0RRL8": {
+                            "name": "恐怖を消費する"
+                        }
+                    },
+                    "effects": {
+                        "1LtLrNsKEwrurfqT": {
+                            "name": "死者が起き上がる"
+                        }
+                    }
+                },
+                "LJoxtl56DlH4GrOu": {
+                    "name": "死者はたやすくは死なない",
+                    "description": "<p>敵対者が最後のHPをマークしようとするとき、<strong>d6</strong>をロールします。結果が5か6の場合、その敵対者はそれをマークしません。</p><section id=\"secret-3zJIG3Bv3IBMpn6E\" class=\"secret\"><p>この地に死を拒めと命じたのは誰か。ここでは死者はどう変わって戻ってくるのか。</p></section>",
+                    "actions": {
+                        "FOVeu1EoSVPgSyMw": {
+                            "name": "不死の判定"
+                        }
+                    }
+                }
+            }
         },
         "Deadly Dungeon": {
             "_note": "Deadly Dungeon",
@@ -921,9 +1044,44 @@
                 "G6rUp9taBiyUIQvy": {
                     "actions": {
                         "DrDWYorQQD7Z6uwt": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "曲がり角また曲がり角"
+                                }
+                            ]
+                        }
+                    },
+                    "name": "曲がり角また曲がり角",
+                    "description": "<p>カウントダウン（6）。パーティが迷宮に入ったとき、カウントダウンを開始します。これはPCが通路を進むためのアクションロールに成功したときに進みます。発動したとき、PCたちは迷宮の最も深く、最も暗く、最も固く守られた場所に到達します。</p><section id=\"secret-U1QJ76Mn90bhcq6y\" class=\"secret\"><p>この迷宮の中心にはどんな報酬があるのか。それを守るためにこの迷宮を造ったのは誰か。</p></section>"
+                },
+                "Y8BCsSqUBRNVycHf": {
+                    "name": "深い懐",
+                    "description": "<p>休憩ごとに1回、PCたちは迷宮の中で財宝の隠し場所を見つけられます。先に潜った者たちの亡骸の上か、隠し扉の奥です。迷宮を進むロールに成功したとき、PCは希望を最大5まで消費して、その数の<strong>[[/r d6]]{d6}</strong>をロールできます。出た結果1つごとに、パーティは以下の戦利品または装備を得ます：</p><ol><li><p>一握りの金貨に相当する、ばらの宝石・装身具・小物・貨幣</p></li><li><p>コモンのアイテムまたは消耗品</p></li><li><p>アンコモンのアイテムまたは消耗品</p></li><li><p>レアのアイテムまたは消耗品</p></li><li><p>レジェンダリーのアイテムまたは消耗品</p></li><li><p>パーティのティアの武器または防具</p></li></ol><section id=\"secret-pijQnwy6NtYYhveZ\" class=\"secret\"><p>以前の持ち主たちはどんな者だったのか。PCたちは掠め取った品を、どうやって迷宮の外へ持ち出すつもりなのか。</p></section>"
+                },
+                "1onLVsttc9m0tcfW": {
+                    "name": "徘徊する怪物",
+                    "description": "<p>パーティが迷宮の新たな区画に入ったとき、<strong>恐怖を1消費</strong>して、パーティのティア以下の敵対者<strong>1d4</strong>体を遠距離以内に召喚し、<strong>[[/r d6]]</strong>をロールできます。結果が1か2の場合、PCたちは前兆に気づいてその遭遇に備えられます。最初にアクションロールを行うPCはそれに有利を得ます。結果が3か4の場合、戦闘は通常どおり始まります。結果が5か6の場合、敵対者たちがPCたちの不意を突いて直ちにスポットライトを得て、あなたは恐怖を1得ます。</p><section id=\"secret-mX9aXZNDuTk77Dln\" class=\"secret\"><p>これらのクリーチャーはどうやってここへ来たのか。PCたちが出くわしたとき、何をしていたのか。</p></section>",
+                    "actions": {
+                        "V8hmLE2BCeGj8hJo": {
+                            "name": "恐怖を消費する"
                         }
                     }
+                },
+                "PMiyh1YfhcMCnEre": {
+                    "name": "仕掛け罠",
+                    "description": "<p>PCが迷宮を進むためのアクションロールに失敗したとき、罠や危険を作動させます。杭の落とし穴、振り子の刃の列、ゆっくり水で満たされる密室などです。パーティは集団アクションロールに成功して、それを止めるか、解除するか、そこから脱出しなければなりません。失敗した場合、その集団アクションロールに加わった各PCは<strong>2d6+3</strong>の物理または魔法ダメージ（GMが選択）を受けます。</p><section id=\"secret-ORvRK15fEmVPMhNn\" class=\"secret\"><p>この迷宮はどんな罠や危険で満ちているのか。その造りは、設計した者について何を物語るのか。パーティが着く前に作動したものはあるのか。</p></section>"
+                }
+            },
+            "name": "死の迷宮",
+            "description": "<p>怪物、罠、財宝で満ちた、薄暗い地下の坑道と部屋の連なり。</p>",
+            "impulses": "パーティの資源を食い尽くす、罠を作動させる、財宝で誘う、怪物をけしかける、方向を失わせる",
+            "potentialAdversaries": {
+                "sGbzbXsgB4qjaZbz": {
+                    "label": "迷宮の住人たち"
+                },
+                "BhKfIeoClSGtemGN": {
+                    "label": "競合する冒険者たち"
                 }
             }
         },
@@ -938,42 +1096,159 @@
                 "IHLJjpOQyWjmCLAL": {
                     "actions": {
                         "uJSaDLFcrtvIPFaD": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>この環境が最初にスポットライトを得たとき、神々を倒そうとする「簒奪者」として敵対者を1体指定します。簒奪者が儀式を執り行うために必要なものを揃える間、長期<em>カウントダウン（8）</em>を開始します。</p><section class=\"secret\" id=\"secret-FyeeA41DYc7DdjY7\"><p><em>簒奪者にまだ必要なものは何か。高位セラフの心臓か。古の渡り門の磁石か。不倶戴天の敵2人の忠誠か。清らかな魂の、胸の張り裂けるような涙か。</em></p></section>",
+                            "countdown": [
+                                {
+                                    "name": "最後の支度"
+                                }
+                            ]
+                        },
+                        "UMGyEHdQhYXyGEss": {
+                            "name": "カウントダウン発動",
+                            "description": "<p>この環境にスポットライトを当てて「終わりの始まり」の特徴を使います。</p>"
                         }
-                    }
+                    },
+                    "name": "最後の支度",
+                    "description": "<p>この環境が最初にスポットライトを得たとき、神々を倒そうとする「簒奪者」として敵対者を1体指定します。簒奪者が儀式を執り行うために必要なものを揃える間、長期<em>カウントダウン（8）</em>を開始します。発動したとき、この環境にスポットライトを当てて「終わりの始まり」の特徴を使います。この環境が場にある間、あなたは恐怖を最大15まで持てます。</p><section class=\"secret\" id=\"secret-5ezbFLP3BnyqQPov\"><p><em>簒奪者にまだ必要なものは何か。高位セラフの心臓か。古の渡り門の磁石か。不倶戴天の敵2人の忠誠か。清らかな魂の、胸の張り裂けるような涙か。</em></p></section>"
                 },
                 "AJdG1krRvixBFCZG": {
                     "actions": {
                         "KNWpWnJboRIaZ3Yu": {
-                            "name": "カウントダウン"
+                            "name": "カウントダウン",
+                            "description": "<p>「最後の支度」の長期カウントダウンが発動したとき、簒奪者は聖域の門そのものを打ち叩き始めます。神への攻囲<em>カウントダウン（10）</em>を開始します。簒奪者にスポットライトを当ててその猛攻を描写し、このカウントダウンを1進めます。簒奪者が中傷以上のダメージを受けた場合、カウントダウンを1戻します。</p><section class=\"secret\" id=\"secret-u7mt9OivMXWU5s3S\"><p><em>自然の理が破られるとき、定命の領域はどう身をよじるのか。どんな定命の者たちが、この冒瀆を遠くから目にするのか。</em></p></section>",
+                            "countdown": [
+                                {
+                                    "name": "終わりの始まり"
+                                }
+                            ]
+                        },
+                        "N83u4SKOlCfLvdYI": {
+                            "name": "カウントダウン発動",
+                            "description": "<p>簒奪者は定命の領域と上なる聖域を隔てる壁を砕き、神々を討ってその座に就こうとします。簒奪者のマークされていないHP1つごとに、あなたは恐怖を1得ます。追加のGMムーブとして、恐怖を消費せずに直ちに「神殺し」の特徴を使えます。</p>"
+                        }
+                    },
+                    "name": "終わりの始まり",
+                    "description": "<p>「最後の支度」の長期カウントダウンが発動したとき、簒奪者は聖域の門そのものを打ち叩き始めます。神への攻囲<em>カウントダウン（10）</em>を開始します。簒奪者にスポットライトを当ててその猛攻を描写し、このカウントダウンを1進めます。簒奪者が中傷以上のダメージを受けた場合、カウントダウンを1戻します。発動したとき、簒奪者は定命の領域と上なる聖域を隔てる壁を砕き、神々を討ってその座に就こうとします。簒奪者のマークされていないHP1つごとに、あなたは恐怖を1得ます。追加のGMムーブとして、恐怖を消費せずに直ちに「神殺し」の特徴を使えます。</p><section class=\"secret\" id=\"secret-eVeMBBA7aAZgn9FO\"><p><em>自然の理が破られるとき、定命の領域はどう身をよじるのか。どんな定命の者たちが、この冒瀆を遠くから目にするのか。</em></p></section>"
+                },
+                "fA2wVTxpDPaTlP9v": {
+                    "name": "神の祝福",
+                    "description": "<p>PCがクリティカル成功したとき、希望を2消費して、使用回数に制限のある能力（休憩ごとに1回、セッションごとに1回など）を1つ回復できます。</p><section id=\"secret-IRlwaXlRxPqtJ6eg\" class=\"secret\"><p><em>この簒奪に抗うあなたを、どの神があなたに味方するのか。新たに戻った力に、その神の影響はどう表れるのか。</em></p></section>"
+                },
+                "OWUM3eFiZrIn0Bjd": {
+                    "name": "汚す者たちの群れ",
+                    "description": "<p><strong>恐怖を2消費</strong>して、神への攻囲を助けるため、簒奪者の近距離以内に[[/r 1d4+2]]体の@UUID[Compendium.daggerheart.adversaries.Actor.OsLG2BjaEdTZUJU9]{堕ちた者の突撃兵}を召喚します。直ちにその突撃兵たちにスポットライトを当て、「集団攻撃」アクションを使います。</p><section class=\"secret\" id=\"secret-QJHdwGNSuTgS59gn\"><p><em>この兵たちはどの高位の堕ちた者に仕えているのか。どの神の肉を貪りたいと願っているのか。</em></p></section>",
+                    "actions": {
+                        "okcqGrI4rdghugUi": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "CL3wPZNOtw6m5WVT": {
+                    "name": "神殺し",
+                    "description": "<p>神への攻囲カウントダウン（「終わりの始まり」参照）が発動している場合、<strong>恐怖を3消費</strong>して、簒奪者が上なる聖域の神の1柱を討ち、その力を貪ってさらに強くなる様子を描写できます。簒奪者はHPを2つ消します。その難易度、ダメージ、攻撃修正値のいずれかを上げるか、討たれた神から得た新たな特徴を与えます。</p><section id=\"secret-OIyf1RZFfLopuMlg\" class=\"secret\"><p><em>最期を迎えるのはどの神か。その最期の言葉は何か。簒奪者が奪った新たな力はどう顕れるのか。</em></p></section>",
+                    "actions": {
+                        "hwQsng6Kt8pQBD3Z": {
+                            "name": "恐怖を消費する",
+                            "description": "<p>神への攻囲カウントダウン（「終わりの始まり」参照）が発動している場合、<strong>恐怖を3消費</strong>して、簒奪者が上なる聖域の神の1柱を討ち、その力を貪ってさらに強くなる様子を描写できます。簒奪者はHPを2つ消します。その難易度、ダメージ、攻撃修正値のいずれかを上げるか、討たれた神から得た新たな特徴を与えます。</p><section class=\"secret\" id=\"secret-SDqxukOa9Sz8zbGZ\"><p><em>最期を迎えるのはどの神か。その最期の言葉は何か。簒奪者が奪った新たな力はどう顕れるのか。</em></p></section>"
+                        }
+                    },
+                    "effects": {
+                        "znFFS76Nopwb8Yi7": {
+                            "name": "神殺し"
+                        },
+                        "i3KYskkA9D4GHbXi": {
+                            "name": "神殺し",
+                            "description": "<p>その難易度、ダメージ、攻撃修正値のいずれかを上げるか、討たれた神から得た新たな特徴を与えます。</p><section class=\"secret\" id=\"secret-BLw5aVqkkCtUQXnk\"><p><em>最期を迎えるのはどの神か。その最期の言葉は何か。簒奪者が奪った新たな力はどう顕れるのか。</em></p></section>"
+                        }
+                    }
+                },
+                "GUAo44cJCnS1GE9p": {
+                    "name": "儀式の結節点",
+                    "description": "<p>簒奪者に対して恐怖とともに失敗したとき、そのPCは魔力の反動でストレスを<strong>1d4</strong>マークしなければなりません。</p><section id=\"secret-FROwYRDYLwvnn2lH\" class=\"secret\"><p><em>力が及ばないとき、過去の失敗のどんな幻視があなたを苛むのか。その記憶は簒奪者によってどう歪められるのか。</em></p></section>",
+                    "actions": {
+                        "9qXDsVnWI436IWEk": {
+                            "name": "ストレスをマーク",
+                            "description": "<p>簒奪者に対して恐怖とともに失敗したとき、そのPCは魔力の反動でストレスを<strong>1d4</strong>マークしなければなりません。</p><section class=\"secret\" id=\"secret-ysZhGlH7LtJS0qua\"><p><em>力が及ばないとき、過去の失敗のどんな幻視があなたを苛むのか。その記憶は簒奪者によってどう歪められるのか。</em></p></section>"
                         }
                     }
                 }
-            }
+            },
+            "name": "神位の簒奪",
+            "description": "<p>上なる聖域の門を破り、新たな神々そのものを退けるために組まれた巨大な儀式。</p>",
+            "impulses": "力を集める、畏れ伏させる、異論を黙らせる"
         },
         "Dragon's Lair": {
             "_note": "Dragon's Lair",
             "potentialAdversaries": {
                 "o1qnuycew667nPOW": {
                     "label": "敵対者"
+                },
+                "qy2gXfJmTL0CFppe": {
+                    "label": "ドラゴンの手下たち"
                 }
             },
             "items": {
                 "pegaB8CRjmGWv9nS": {
                     "actions": {
                         "etwUv30ZO9B3fhtB": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>帰結カウントダウン（8）。この財宝を集めたドラゴンは、その山の上か下、あるいは近くのどこかで眠っています。PCたちが巣に入ったとき、カウントダウンを開始します。</p><section id=\"secret-TVAoo3QGrYFefBrN\" class=\"secret\"><p>このドラゴンはどこで眠っているのか。何の夢を見ているのか。</p></section>",
+                            "countdown": [
+                                {
+                                    "name": "ドラゴンが目覚める"
+                                }
+                            ]
+                        },
+                        "CFE0Nn3ZAH5WOiUm": {
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、ドラゴンが目覚め、各PCは社交リアクションロールに成功しなければストレスを1マークします。この方法でマークされたストレス1つごとに、あなたは恐怖を1得ます。</p>"
                         }
-                    }
+                    },
+                    "name": "ドラゴンが目覚める",
+                    "description": "<p>帰結カウントダウン（8）。この財宝を集めたドラゴンは、その山の上か下、あるいは近くのどこかで眠っています。PCたちが巣に入ったとき、カウントダウンを開始します。発動したとき、ドラゴンが目覚め、各PCは社交リアクションロールに成功しなければストレスを1マークします。この方法でマークされたストレス1つごとに、あなたは恐怖を1得ます。</p><section id=\"secret-TVAoo3QGrYFefBrN\" class=\"secret\"><p>このドラゴンはどこで眠っているのか。何の夢を見ているのか。</p></section>"
                 },
                 "fIMQKSHm44QnzH4J": {
                     "actions": {
                         "fivZUD41F3co7mpU": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>巣の中心には財宝の山がそびえています。パーティがその財宝を探し当てたい場合、進行カウントダウン（12）を完了させなければなりません。</p><section id=\"secret-c5rDaRnGOqpV651U\" class=\"secret\"><p>パーティはこの蓄えをどうやって知ったのか。ここで何を見つけたいと願っているのか。</p></section>",
+                            "countdown": [
+                                {
+                                    "name": "財宝の山"
+                                }
+                            ]
+                        },
+                        "Sg5WFWjGBdagExNU": {
+                            "name": "カウントダウン発動",
+                            "description": "<p>発動したとき、パーティは帰結カウントダウンを進めることで、1＋自分たちのティアと同じ数の<strong>d12</strong>をアイテム表または消耗品表（どちらかを選択）に振り、財宝の山を漁れます。</p>"
+                        }
+                    },
+                    "name": "財宝の山",
+                    "description": "<p>巣の中心には財宝の山がそびえています。パーティがその財宝を探し当てたい場合、進行カウントダウン（12）を完了させなければなりません。発動したとき、パーティは帰結カウントダウンを進めることで、1＋自分たちのティアと同じ数の<strong>d12</strong>をアイテム表または消耗品表（どちらかを選択）に振り、財宝の山を漁れます。</p><section id=\"secret-c5rDaRnGOqpV651U\" class=\"secret\"><p>パーティはこの蓄えをどうやって知ったのか。ここで何を見つけたいと願っているのか。</p></section>"
+                },
+                "JHXmz0CTLW0hPNE3": {
+                    "name": "火山の活動",
+                    "description": "<p><strong>恐怖を1消費</strong>して、火山の噴火を起こします。各キャラクターは敏捷リアクションロールを行わなければなりません。失敗した対象は、周囲の大地が割れるとともに溶岩と炎の噴出に焼かれ、<strong>3d8+5</strong>の物理ダメージを受けます。成功した対象はダメージを半分受けます。</p><section id=\"secret-wK4jwXYwQ8B99vnM\" class=\"secret\"><p>火山の形が変わることで、どの逃げ道が塞がれるのか。PCたちは息詰まる熱からどうやって身を守るのか。</p></section>",
+                    "actions": {
+                        "ggDE54OjCFGY16GG": {
+                            "name": "恐怖を消費する"
+                        }
+                    }
+                },
+                "xx3KQQfdNcgfXKsT": {
+                    "name": "番犬たち",
+                    "description": "<p>PCが巣を進むためのロールに失敗したとき、<strong>恐怖を1消費</strong>して、<strong>1d6</strong>体のドレイクと最大2体のワイヴァーンを召喚できます。それらはPCの近距離以内に現れ、直ちにスポットライトを得ます。</p><section id=\"secret-djhS7HsAdx5uu4m7\" class=\"secret\"><p>これらのクリーチャーはなぜ眠るドラゴンに仕えているのか。パーティはその存在を予感させるどんな兆しを見つけるのか。</p></section>",
+                    "actions": {
+                        "v3Hdh64vMs80IxnO": {
+                            "name": "恐怖を消費する"
                         }
                     }
                 }
-            }
+            },
+            "name": "ドラゴンの巣",
+            "description": "<p>活火山の中心に積み上げられた、黄金、宝石、遺物の山。</p>",
+            "impulses": "下層へ誘い込む、脱出を不可能にする、財宝で誘う、ドラゴンを起こす"
         },
         "Duel": {
             "_note": "Duel",
