@@ -5,5 +5,13 @@
     "en:Guardian": "An adversary's experience 守護者 ('one who guards'), which is not the Guardian class (ガーディアン).",
     "daggerheart.adversaries / Sprite :: name": "The adversary species スプライト, not the generic word for a fey: the Forest Sprites card summons 妖精, which is also what the Redcaps are called.",
     "daggerheart.adversaries / Vault Guardian Sentinel :: items.DLspoIclNJcTB3YJ.actions.4RQnBu4kcUs3PcPH.name": "Taking aim at a target (狙いを定める), not the Sigil of Retribution's heraldic marking (紋章を刻む).",
-    "daggerheart.weapons / Grappler :: name": "The grappling-hook device 鉤縄, not the Masque Muerte Experience of the same name, which is the grappling skill 組み技."
+    "daggerheart.weapons / Grappler :: name": "The grappling-hook device 鉤縄, not the Masque Muerte Experience of the same name, which is the grappling skill 組み技.",
+    "daggerheart.consumables / Chimeric Saliva :: actions.COnklgpCjVWRqgSz.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Gill Salve :: actions.57IIcyhEs2ByoENx.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Grindletooth Venom :: actions.BuzdaD4vLsbBS2gy.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Improved Grindletooth Venom :: actions.KhZ4WVT9cLA1a1y8.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Red Ooze Oil :: actions.eqXBNr0DbYAIVGS9.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Redthorn Saliva :: actions.kOU2DpAIHvQsFY5A.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Salamander Salve :: actions.Hz6U04pXtOYBDQ2L.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用).",
+    "daggerheart.consumables / Steelskin Salve :: actions.MnlcijQlwEDHPPLW.name": "Smearing a salve or venom onto something (塗る), not the environment packs' button that applies an active effect (適用)."
 }

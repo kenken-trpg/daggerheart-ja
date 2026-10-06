@@ -4,7 +4,12 @@
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "entries": {
         "Airblade Charm": {
-            "_note": "Airblade Charm"
+            "_note": "Airblade Charm",
+            "actions": {
+                "nlAfmdgfHTmsOdPb": {
+                    "name": "起動する"
+                }
+            }
         },
         "Alistair's Torch": {
             "_note": "Alistair's Torch"
@@ -13,13 +18,23 @@
             "_note": "Arcane Cloak"
         },
         "Arcane Prism": {
-            "_note": "Arcane Prism"
+            "_note": "Arcane Prism",
+            "actions": {
+                "QgBDJh0laEvOB94w": {
+                    "name": "起動する"
+                }
+            }
         },
         "Attune Relic": {
             "_note": "Attune Relic"
         },
         "Augur's Relic": {
-            "_note": "Augur's Relic"
+            "_note": "Augur's Relic",
+            "actions": {
+                "liWsgZGKy0Jk9BVb": {
+                    "name": "起動する"
+                }
+            }
         },
         "Bag of Ficklesand": {
             "_note": "Bag of Ficklesand"
@@ -86,7 +101,12 @@
             "_note": "Collar of Ascendancy"
         },
         "Communion Relic": {
-            "_note": "Communion Relic"
+            "_note": "Communion Relic",
+            "actions": {
+                "f9OftUibtcsKJv94": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Companion Case": {
             "_note": "Companion Case"
@@ -98,7 +118,12 @@
             "_note": "Corrector Sprite"
         },
         "Crucible Frames": {
-            "_note": "Crucible Frames"
+            "_note": "Crucible Frames",
+            "actions": {
+                "pOrtB09wEkZiihkg": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Dagginae's Obsidian Slate": {
             "_note": "Dagginae's Obsidian Slate"
@@ -110,7 +135,12 @@
             "_note": "Eclipse Coin"
         },
         "Elusive Amulet": {
-            "_note": "Elusive Amulet"
+            "_note": "Elusive Amulet",
+            "actions": {
+                "vitnEzfU3gCzsRem": {
+                    "name": "起動する"
+                }
+            }
         },
         "Elven Spyglass": {
             "_note": "Elven Spyglass"
@@ -140,7 +170,12 @@
             "_note": "Furball Bag"
         },
         "Gadiman's Backpack": {
-            "_note": "Gadiman's Backpack"
+            "_note": "Gadiman's Backpack",
+            "actions": {
+                "ERENWVE5XQzIUQfz": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Gecko Gloves": {
             "_note": "Gecko Gloves"
@@ -219,7 +254,12 @@
             }
         },
         "Iron Dagger Pendant": {
-            "_note": "Iron Dagger Pendant"
+            "_note": "Iron Dagger Pendant",
+            "actions": {
+                "yLsPSAceq9zCOWbV": {
+                    "name": "起動する"
+                }
+            }
         },
         "Iron Veil": {
             "_note": "Iron Veil"
@@ -255,7 +295,12 @@
             "_note": "Minor Stamina Potion Recipe"
         },
         "Molepaw Mittens": {
-            "_note": "Molepaw Mittens"
+            "_note": "Molepaw Mittens",
+            "actions": {
+                "SzsYjhQY2sZ7VdtD": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Mythic Dust Recipe": {
             "_note": "Mythic Dust Recipe"
@@ -264,7 +309,12 @@
             "_note": "Namer's Oracle"
         },
         "Nighthawker's Ring": {
-            "_note": "Nighthawker's Ring"
+            "_note": "Nighthawker's Ring",
+            "actions": {
+                "dZni6lym19ljT67O": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Paragon's Chain": {
             "_note": "Paragon's Chain",
@@ -316,10 +366,20 @@
             "_note": "Returning Ring"
         },
         "Ring of Resistance": {
-            "_note": "Ring of Resistance"
+            "_note": "Ring of Resistance",
+            "actions": {
+                "4swwe8SZeh2KyPtl": {
+                    "name": "起動する"
+                }
+            }
         },
         "Ring of Silence": {
-            "_note": "Ring of Silence"
+            "_note": "Ring of Silence",
+            "actions": {
+                "Y4mvuJ4tncrKhyjY": {
+                    "name": "起動する"
+                }
+            }
         },
         "Ring of Unbreakable Resolve": {
             "_note": "Ring of Unbreakable Resolve",
@@ -330,7 +390,12 @@
             }
         },
         "Rings of Alliance": {
-            "_note": "Rings of Alliance"
+            "_note": "Rings of Alliance",
+            "actions": {
+                "maCcwSIizfVArFmH": {
+                    "name": "起動する"
+                }
+            }
         },
         "Rings of Camaraderie": {
             "_note": "Rings of Camaraderie"
@@ -364,7 +429,12 @@
             }
         },
         "Soul-Twin Circlets": {
-            "_note": "Soul-Twin Circlets"
+            "_note": "Soul-Twin Circlets",
+            "actions": {
+                "2a8CN94tQarhPBO7": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Speaking Orbs": {
             "_note": "Speaking Orbs"
@@ -412,7 +482,12 @@
             "_note": "Windup Toy"
         },
         "Woven Net": {
-            "_note": "Woven Net"
+            "_note": "Woven Net",
+            "actions": {
+                "yv0l43uUDB2gWFd1": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Zephyr's Jar": {
             "_note": "Zephyr's Jar"

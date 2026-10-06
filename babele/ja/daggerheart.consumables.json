@@ -5,6 +5,8 @@
     "entries": {
         "Acidpaste": {
             "_note": "Acidpaste",
+            "name": "酸のペースト",
+            "description": "<p>このペーストは明るい閃光を放ちながら壁やその他の表面を食い溶かします。</p>",
             "actions": {
                 "FQ2Ty0pP3z6JrBr6": {
                     "name": "使う"
@@ -13,37 +15,111 @@
         },
         "Arcticite Shard": {
             "_note": "Arcticite Shard",
+            "name": "極氷石の破片",
+            "description": "<p>遠距離以内の地点を1つ選びます。その地点から近距離以内のすべての対象は、リアクションロール（16）に成功しなければ、3d6の魔法ダメージを受け、氷によって一時的に拘束されます。</p>",
             "actions": {
                 "u61vq2eNNTNpTvGb": {
-                    "name": "使う"
+                    "name": "使う",
+                    "areas": [
+                        {
+                            "name": "極氷石の破片"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "koocjgxyH9j8N58M": {
+                    "name": "氷結"
                 }
             }
         },
         "Armor Stitcher": {
-            "_note": "Armor Stitcher"
+            "_note": "Armor Stitcher",
+            "name": "鎧の縫い具",
+            "description": "<p>この縫い具を使い、任意の数の希望を消費して、その数だけ鎧スロットを消せます。</p>",
+            "actions": {
+                "abD6jRVvOJnKUQaE": {
+                    "name": "希望を消費する"
+                }
+            }
         },
         "Attune Potion": {
-            "_note": "Attune Potion"
+            "_note": "Attune Potion",
+            "name": "同調の薬",
+            "description": "<p>次の直感ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "aiyNOQZbVpTDagXy": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "I5vgALTNDVApxy9d": {
+                    "name": "同調の薬"
+                }
+            }
         },
         "Berserker's Brew": {
-            "_note": "Berserker's Brew"
+            "_note": "Berserker's Brew",
+            "name": "狂戦士の醸造酒",
+            "description": "<p>この一杯の液体を飲んだとき、直感に等しい値（最低1）のボーナスを頑強に得て、同じ値のペナルティを器用と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>",
+            "actions": {
+                "nwZQuJ6aY0i7EerN": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "lniOwCkDKynTi4bw": {
+                    "name": "狂乱",
+                    "description": "<p>この一杯の液体を飲んだとき、直感に等しい値（最低1）のボーナスを頑強に得て、同じ値のペナルティを器用と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>"
+                }
+            }
         },
         "Blinding Orb": {
             "_note": "Blinding Orb",
+            "name": "目潰しの宝珠",
+            "description": "<p>この宝珠を起動して、強い光の閃光を生み出せます。近距離以内のすべての対象は、HPをマークするまで脆弱になります。</p><p>@Template[type:emanation|range:c]</p>",
+            "actions": {
+                "vk4dE0C8bjNdTwAF": {
+                    "name": "起動する"
+                }
+            },
             "effects": {
                 "nryJhrF26hyFQUxH": {
+                    "name": "目潰しの宝珠",
+                    "description": "<p>HPを1マークするまで脆弱です。</p>",
                     "durationDescription": "<p>HPをマークするまで。</p>"
                 }
             }
         },
         "Blood of the Yorgi": {
-            "_note": "Blood of the Yorgi"
+            "_note": "Blood of the Yorgi",
+            "name": "ヨルギの血",
+            "description": "<p>この血を飲んで、いまいる場所から消え、超遠距離以内の見える地点に直ちに再び現れられます。</p>",
+            "actions": {
+                "6QGfkGkFqqzuVOOY": {
+                    "name": "飲む"
+                }
+            }
         },
         "Bolster Potion": {
-            "_note": "Bolster Potion"
+            "_note": "Bolster Potion",
+            "name": "強壮の薬",
+            "description": "<p>次の頑強ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "YqbQKTgblItoZOm8": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "HVCJp9Tkhr1i4Oc1": {
+                    "name": "強壮の薬"
+                }
+            }
         },
         "Bonding Honey": {
             "_note": "Bonding Honey",
+            "name": "接着の蜜",
+            "description": "<p>この蜜は2つの物体を永久に接着するのに使えます。</p>",
             "actions": {
                 "SWrgUGHIWCXpED1b": {
                     "name": "使う"
@@ -51,16 +127,52 @@
             }
         },
         "Bridge Seed": {
-            "_note": "Bridge Seed"
+            "_note": "Bridge Seed",
+            "name": "橋の種",
+            "description": "<p>あなたのいる場所から、遠距離以内のあなたが選んだ地点まで太い蔓が伸び、それを登ったり渡ったりできます。蔓は次の短期休息で消えます。</p>",
+            "actions": {
+                "dk7fhkfA4m5lqNWB": {
+                    "name": "植える"
+                }
+            }
         },
         "Bundle of Spiderlegs": {
-            "_note": "Bundle of Spiderlegs"
+            "_note": "Bundle of Spiderlegs",
+            "name": "蜘蛛の脚の束",
+            "description": "<p>この蜘蛛の脚を食べて、次の休息まで壁を歩けます。</p>",
+            "actions": {
+                "PvaegGLkYV7DRR8F": {
+                    "name": "食べる"
+                }
+            },
+            "effects": {
+                "x7FTsmzljd0t5trC": {
+                    "name": "蜘蛛歩き",
+                    "description": "<p>この蜘蛛の脚を食べて、次の休息まで壁を歩けます。</p>"
+                }
+            }
         },
         "Cacophonous Concoction": {
-            "_note": "Cacophonous Concoction"
+            "_note": "Cacophonous Concoction",
+            "name": "不協和音の調合薬",
+            "description": "<p>この薬を飲んだとき、その後1時間のあいだにあなたが言ったりしたりしたことは、目撃者には語り直せなくなります。見たこと、聞いたこと、その他感じ取ったことを伝えようとしても、それは歪むか意味をなさないものになります。</p>",
+            "actions": {
+                "YTku2CwfIvhaO74n": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "Z1WDQBtKdwfOqrGH": {
+                    "name": "不協和音",
+                    "description": "<p>この薬を飲んだとき、その後1時間のあいだにあなたが言ったりしたりしたことは、目撃者には語り直せなくなります。見たこと、聞いたこと、その他感じ取ったことを伝えようとしても、それは歪むか意味をなさないものになります。</p>",
+                    "durationDescription": "<p>1時間</p>"
+                }
+            }
         },
         "Channelstone": {
             "_note": "Channelstone",
+            "name": "伝導石",
+            "description": "<p>この石を使い、保管庫から呪文か魔道書を1枚取り出し、1回使用して、保管庫に戻せます。</p>",
             "actions": {
                 "X4KtBG5Uve09hRoj": {
                     "name": "使う"
@@ -68,13 +180,40 @@
             }
         },
         "Charm Potion": {
-            "_note": "Charm Potion"
+            "_note": "Charm Potion",
+            "name": "魅了の薬",
+            "description": "<p>次の社交ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "2trd3JYIb527LIrn": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "COrKb7gBin4Ro6r6": {
+                    "name": "魅了の薬"
+                }
+            }
         },
         "Chimeric Saliva": {
-            "_note": "Chimeric Saliva"
+            "_note": "Chimeric Saliva",
+            "name": "キメラの唾液",
+            "description": "<p>この唾液を物理ダメージを与える武器に塗って、次の休息までそのダメージ種別を魔法に変えられます。</p>",
+            "actions": {
+                "COnklgpCjVWRqgSz": {
+                    "name": "塗る"
+                }
+            },
+            "effects": {
+                "7FPuCdj1fB3utrnw": {
+                    "name": "キメラの唾液",
+                    "description": "<p>この唾液を物理ダメージを与える武器に塗って、次の休息までそのダメージ種別を魔法に変えられます。</p>"
+                }
+            }
         },
         "Circle of the Void": {
             "_note": "Circle of the Void",
+            "name": "虚無の円陣",
+            "description": "<p>ストレスを1マークして、遠距離まで広がる虚無を生み出します。虚無の内部では魔法を発動できず、虚無の内部にいるクリーチャーは魔法ダメージを無効化します。</p>",
             "actions": {
                 "ovR11FWCpXaFMPVx": {
                     "name": "使う"
@@ -82,59 +221,204 @@
             }
         },
         "Ciscan Fog Bottle": {
-            "_note": "Ciscan Fog Bottle"
+            "_note": "Ciscan Fog Bottle",
+            "name": "シスカンの霧瓶",
+            "description": "<p>この瓶を割って、近距離以内の範囲を魔法の霧で満たせます。霧に入ったクリーチャーはストレスを1消去し、隠密状態になります。</p>",
+            "actions": {
+                "3uoMUFXhffsn6XGm": {
+                    "name": "割る",
+                    "areas": [
+                        {
+                            "name": "シスカンの霧瓶"
+                        }
+                    ]
+                }
+            }
         },
         "Cockerel Claw Tea": {
-            "_note": "Cockerel Claw Tea"
+            "_note": "Cockerel Claw Tea",
+            "name": "雄鶏の爪の茶",
+            "description": "<p>この茶を飲んで、長期休息を取ったかのように自分の特徴を回復できます。</p>",
+            "actions": {
+                "DsF1KOn8OlHyio9V": {
+                    "name": "飲む"
+                }
+            }
         },
         "Concoction": {
-            "_note": "Concoction"
+            "_note": "Concoction",
+            "name": "調合薬",
+            "description": "<p>この薬を飲んで、次に目を合わせた相手の最も深い恐れを知れます。</p>"
         },
         "Control Potion": {
-            "_note": "Control Potion"
+            "_note": "Control Potion",
+            "name": "制御の薬",
+            "description": "<p>次の器用ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "l5dx5uYsH0btLDJq": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "1VAQYZ1YYc9ew9UR": {
+                    "name": "制御の薬"
+                }
+            }
         },
         "Cupbearer's Bezoar": {
-            "_note": "Cupbearer's Bezoar"
+            "_note": "Cupbearer's Bezoar",
+            "name": "献酌人の胃石",
+            "description": "<p>この胃石を飲み込んで、次の長期休息まで毒を無効化できます。</p>",
+            "actions": {
+                "0vtn2lGnZ5td2ScU": {
+                    "name": "呑み込む"
+                }
+            },
+            "effects": {
+                "zEo9puBV6VSHcG9d": {
+                    "name": "献酌人の胃石",
+                    "description": "<p>この胃石を飲み込んで、次の長期休息まで毒を無効化できます。</p>"
+                }
+            }
         },
         "Death Tea": {
-            "_note": "Death Tea"
+            "_note": "Death Tea",
+            "name": "死の茶",
+            "description": "<p>この茶を飲んだあと、攻撃でクリティカル成功したとき、対象を即座に殺します。次の長期休息までに攻撃でクリティカル成功しなかった場合、あなたは死にます。</p>",
+            "actions": {
+                "U7da5R4pgVkEQJVj": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "IqlpqsgurXsUEQhs": {
+                    "name": "死の茶",
+                    "description": "<p>この茶を飲んだあと、攻撃でクリティカル成功したとき、対象を即座に殺します。次の長期休息までに攻撃でクリティカル成功しなかった場合、あなたは死にます。</p>"
+                }
+            }
         },
         "Deathseer's Powder": {
-            "_note": "Deathseer's Powder"
+            "_note": "Deathseer's Powder",
+            "name": "死見者の粉",
+            "description": "<p>この粉を死んで間もない死体に振りかけて、その者の生の最後の1分を霊的に再現させられます。</p>",
+            "actions": {
+                "dCR3Zm361WUZz4Zf": {
+                    "name": "振りかける"
+                }
+            }
         },
         "Demiurge's Draught": {
-            "_note": "Demiurge's Draught"
+            "_note": "Demiurge's Draught",
+            "name": "造物主の一服",
+            "description": "<p>この一服を飲んで、次に成功した攻撃ロールの習熟に＋1のボーナスを得られます。</p>",
+            "actions": {
+                "NtsZfglcGGEAOV49": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "MiXqv9zMmL9T6lEr": {
+                    "name": "造物主の一服",
+                    "description": "<p>この一服を飲んで、次に成功した攻撃ロールの習熟に＋1のボーナスを得られます。</p>"
+                }
+            }
         },
         "Displacement Token": {
-            "_note": "Displacement Token"
+            "_note": "Displacement Token",
+            "name": "転移の護符",
+            "description": "<p>この護符を飲み込んで、あなたが操れる自分の幻影2つを呼び出せます。各幻影はダメージを受けるまで、または次の休息まで持続します。</p>",
+            "actions": {
+                "CFvo1SWGb6ekNsJr": {
+                    "name": "呑み込む"
+                }
+            },
+            "effects": {
+                "AlJJnO4ct2xmzt93": {
+                    "name": "転移",
+                    "description": "<p>この護符を飲み込んで、あなたが操れる自分の幻影2つを呼び出せます。各幻影はダメージを受けるまで、または次の休息まで持続します。</p>"
+                }
+            }
         },
         "Dragonbloom Tea": {
-            "_note": "Dragonbloom Tea"
+            "_note": "Dragonbloom Tea",
+            "name": "竜花の茶",
+            "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して直感ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p>",
+            "actions": {
+                "rcHEz3ImUDwo6lPC": {
+                    "name": "飲む",
+                    "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して直感ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p><p>@Template[type:emanation|range:c]</p>"
+                }
+            }
         },
         "Drakemantle": {
             "_note": "Drakemantle",
+            "name": "竜の外套",
+            "description": "<p>この付呪された古代竜の皮を使い、シーンの終わりまで竜の特質を得られます。シーンの終わりに皮はぼろぼろに崩れ落ちます。それまで、あなたは飛行でき、ダメージしきい値に＋5のボーナス、習熟に＋1のボーナスを得ます。</p>",
             "actions": {
                 "0QgmfGle8IJYkWv7": {
                     "name": "使う"
                 }
+            },
+            "effects": {
+                "7z9abeZBZ0KzU4jV": {
+                    "name": "竜化",
+                    "description": "<p>シーンの終わりまで、あなたは飛行でき、ダメージしきい値に＋5のボーナス、習熟に＋1のボーナスを得ます。</p>"
+                }
             }
         },
         "Dripfang Poison": {
-            "_note": "Dripfang Poison"
+            "_note": "Dripfang Poison",
+            "name": "滴る牙の毒",
+            "description": "<p>この毒を摂取したクリーチャーは8d10の直接魔法ダメージを受けます。</p>",
+            "actions": {
+                "F8CUhhCuZMnXVCrw": {
+                    "name": "摂取する"
+                }
+            }
         },
         "Emberite Shard": {
             "_note": "Emberite Shard",
+            "name": "燃え殻石の破片",
+            "description": "<p>遠距離以内の地点を1つ選びます。その地点から近距離以内のすべての対象は、リアクションロール（16）に成功しなければ、3d6の魔法ダメージを受け、一時的に燃焼状態になります。燃焼状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、燃焼の状態を消去します。</p>",
             "actions": {
                 "Vn84rygVCeQ2wt4S": {
-                    "name": "使う"
+                    "name": "使う",
+                    "areas": [
+                        {
+                            "name": "燃え殻石の破片"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "H8wg8ZbvK3EY9UXd": {
+                    "name": "燃焼",
+                    "description": "<p>燃焼状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、燃焼の状態を消去します。</p>"
                 }
             }
         },
         "Enlighten Potion": {
-            "_note": "Enlighten Potion"
+            "_note": "Enlighten Potion",
+            "name": "啓明の薬",
+            "description": "<p>次の知識ロールに＋1のボーナスを得ます。</p>",
+            "actions": {
+                "F3K719gxEwQH697e": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "QNzVrDW73jF1d5wE": {
+                    "name": "啓明の薬"
+                }
+            }
         },
         "Feast of Xuria": {
-            "_note": "Feast of Xuria"
+            "_note": "Feast of Xuria",
+            "actions": {
+                "TL1fJitAJmDzrnHT": {
+                    "name": "食べる"
+                }
+            }
         },
         "Featherbone": {
             "_note": "Featherbone",
@@ -145,10 +429,20 @@
             }
         },
         "Featherstep Potion": {
-            "_note": "Featherstep Potion"
+            "_note": "Featherstep Potion",
+            "actions": {
+                "Dslc1QsuuYEAgSAo": {
+                    "name": "飲む"
+                }
+            }
         },
         "Formoid Serum": {
-            "_note": "Formoid Serum"
+            "_note": "Formoid Serum",
+            "actions": {
+                "KVlbv22mTH5AO3Ab": {
+                    "name": "飲む"
+                }
+            }
         },
         "Fulgurite Shard": {
             "_note": "Fulgurite Shard",
@@ -159,10 +453,20 @@
             }
         },
         "Gambler's Fallacy": {
-            "_note": "Gambler's Fallacy"
+            "_note": "Gambler's Fallacy",
+            "actions": {
+                "SLZn5uUrsucH90rQ": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Gill Salve": {
-            "_note": "Gill Salve"
+            "_note": "Gill Salve",
+            "actions": {
+                "57IIcyhEs2ByoENx": {
+                    "name": "塗る"
+                }
+            }
         },
         "Glowmoss Mushroom": {
             "_note": "Glowmoss Mushroom",
@@ -173,28 +477,63 @@
             }
         },
         "Godling's Pomelo": {
-            "_note": "Godling's Pomelo"
+            "_note": "Godling's Pomelo",
+            "actions": {
+                "KYnbdh2UTxw5Xr9f": {
+                    "name": "食べる"
+                }
+            }
         },
         "Gossip Flower": {
-            "_note": "Gossip Flower"
+            "_note": "Gossip Flower",
+            "actions": {
+                "s9KcCCsBG2OvWpfu": {
+                    "name": "植える"
+                }
+            }
         },
         "Gravity Bomb": {
-            "_note": "Gravity Bomb"
+            "_note": "Gravity Bomb",
+            "actions": {
+                "DlpFeXegeuolZMNQ": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Green Ooze Oil": {
             "_note": "Green Ooze Oil"
         },
         "Grindletooth Venom": {
-            "_note": "Grindletooth Venom"
+            "_note": "Grindletooth Venom",
+            "actions": {
+                "BuzdaD4vLsbBS2gy": {
+                    "name": "塗る"
+                }
+            }
         },
         "Growing Potion": {
-            "_note": "Growing Potion"
+            "_note": "Growing Potion",
+            "actions": {
+                "A8wHvMnKnewQ2J3m": {
+                    "name": "飲む"
+                }
+            }
         },
         "Health Potion": {
-            "_note": "Health Potion"
+            "_note": "Health Potion",
+            "actions": {
+                "O5MYyHpkiEz9uf6A": {
+                    "name": "飲む"
+                }
+            }
         },
         "Homet's Secret Potion": {
-            "_note": "Homet's Secret Potion"
+            "_note": "Homet's Secret Potion",
+            "actions": {
+                "NCcqIcPhEsUnFh7S": {
+                    "name": "飲む"
+                }
+            }
         },
         "Hopehold Flare": {
             "_note": "Hopehold Flare",
@@ -205,10 +544,20 @@
             }
         },
         "Improved Arcane Shard": {
-            "_note": "Improved Arcane Shard"
+            "_note": "Improved Arcane Shard",
+            "actions": {
+                "g3sQoxS6sL3mut3u": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Improved Grindletooth Venom": {
-            "_note": "Improved Grindletooth Venom"
+            "_note": "Improved Grindletooth Venom",
+            "actions": {
+                "KhZ4WVT9cLA1a1y8": {
+                    "name": "塗る"
+                }
+            }
         },
         "Instant Camp": {
             "_note": "Instant Camp",
@@ -219,7 +568,12 @@
             }
         },
         "Invisibility Potion": {
-            "_note": "Invisibility Potion"
+            "_note": "Invisibility Potion",
+            "actions": {
+                "6UjrzTOZRPHoV2cY": {
+                    "name": "飲む"
+                }
+            }
         },
         "Iridian Dust": {
             "_note": "Iridian Dust",
@@ -233,7 +587,12 @@
             "_note": "Jar of Lost Voices"
         },
         "Jumping Root": {
-            "_note": "Jumping Root"
+            "_note": "Jumping Root",
+            "actions": {
+                "TT4jzve7o2ykPcQO": {
+                    "name": "食べる"
+                }
+            }
         },
         "Knowledge Stone": {
             "_note": "Knowledge Stone",
@@ -244,7 +603,12 @@
             }
         },
         "Lionheart Tonic": {
-            "_note": "Lionheart Tonic"
+            "_note": "Lionheart Tonic",
+            "actions": {
+                "hn1FjWi0ii1DXv2N": {
+                    "name": "飲む"
+                }
+            }
         },
         "Lyrebird Lozenge": {
             "_note": "Lyrebird Lozenge"
@@ -258,31 +622,76 @@
             }
         },
         "Major Arcane Shard": {
-            "_note": "Major Arcane Shard"
+            "_note": "Major Arcane Shard",
+            "actions": {
+                "8JHqtEYD0uOGwHdd": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Major Attune Potion": {
-            "_note": "Major Attune Potion"
+            "_note": "Major Attune Potion",
+            "actions": {
+                "zerWKpcBvtiaUfaw": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Bolster Potion": {
-            "_note": "Major Bolster Potion"
+            "_note": "Major Bolster Potion",
+            "actions": {
+                "Z7ehTbRegQvq74tl": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Charm Potion": {
-            "_note": "Major Charm Potion"
+            "_note": "Major Charm Potion",
+            "actions": {
+                "Bz6oZUN317mLvQSk": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Control Potion": {
-            "_note": "Major Control Potion"
+            "_note": "Major Control Potion",
+            "actions": {
+                "fk272mE2zHIHq8qR": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Enlighten Potion": {
-            "_note": "Major Enlighten Potion"
+            "_note": "Major Enlighten Potion",
+            "actions": {
+                "cZL1A3hNXHbjfwi3": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Health Potion": {
-            "_note": "Major Health Potion"
+            "_note": "Major Health Potion",
+            "actions": {
+                "Xm2ldAlmUQY4jlLb": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Stamina Potion": {
-            "_note": "Major Stamina Potion"
+            "_note": "Major Stamina Potion",
+            "actions": {
+                "3duuNVqCeQaUUKTo": {
+                    "name": "飲む"
+                }
+            }
         },
         "Major Stride Potion": {
-            "_note": "Major Stride Potion"
+            "_note": "Major Stride Potion",
+            "actions": {
+                "UIVnvI726LJnlK86": {
+                    "name": "飲む"
+                }
+            }
         },
         "Mask of the Echoed Self": {
             "_note": "Mask of the Echoed Self",
@@ -293,16 +702,31 @@
             }
         },
         "Mesmer's Tonic": {
-            "_note": "Mesmer's Tonic"
+            "_note": "Mesmer's Tonic",
+            "actions": {
+                "Phn88PDC41cdVDfi": {
+                    "name": "飲む"
+                }
+            }
         },
         "Midas Flask": {
             "_note": "Midas Flask"
         },
         "Minor Health Potion": {
-            "_note": "Minor Health Potion"
+            "_note": "Minor Health Potion",
+            "actions": {
+                "9HVL2MPFX9VGiSsV": {
+                    "name": "飲む"
+                }
+            }
         },
         "Minor Stamina Potion": {
-            "_note": "Minor Stamina Potion"
+            "_note": "Minor Stamina Potion",
+            "actions": {
+                "fdjpkjhzHQOrZPm0": {
+                    "name": "飲む"
+                }
+            }
         },
         "Mirror of Marigold": {
             "_note": "Mirror of Marigold",
@@ -313,10 +737,20 @@
             }
         },
         "Mnemonic Potion": {
-            "_note": "Mnemonic Potion"
+            "_note": "Mnemonic Potion",
+            "actions": {
+                "k5WiotZKqgqnIhA2": {
+                    "name": "飲む"
+                }
+            }
         },
         "Moonlight Orb": {
-            "_note": "Moonlight Orb"
+            "_note": "Moonlight Orb",
+            "actions": {
+                "1U6wvIFjYqA34md4": {
+                    "name": "砕く"
+                }
+            }
         },
         "Morphing Clay": {
             "_note": "Morphing Clay",
@@ -338,7 +772,12 @@
             }
         },
         "Necroprancer's Bell": {
-            "_note": "Necroprancer's Bell"
+            "_note": "Necroprancer's Bell",
+            "actions": {
+                "pcvtxqrsExvk81Cc": {
+                    "name": "割る"
+                }
+            }
         },
         "Night Hag's Dust": {
             "_note": "Night Hag's Dust",
@@ -349,7 +788,12 @@
             }
         },
         "Nightmare Mead": {
-            "_note": "Nightmare Mead"
+            "_note": "Nightmare Mead",
+            "actions": {
+                "rW0fiHW8nt8ZRbXm": {
+                    "name": "飲む"
+                }
+            }
         },
         "Ogre Musk": {
             "_note": "Ogre Musk",
@@ -365,19 +809,44 @@
                 "bVXuZXEmYW6RJwLh": {
                     "name": "使う"
                 }
+            },
+            "effects": {
+                "GqjpFGEyO7V4w0C7": {
+                    "durationDescription": "<p>1時間</p>"
+                }
             }
         },
         "Phial of Deep Ink": {
-            "_note": "Phial of Deep Ink"
+            "_note": "Phial of Deep Ink",
+            "actions": {
+                "w4GSznmO2AyEuVgY": {
+                    "name": "飲む"
+                }
+            },
+            "effects": {
+                "9HHlvGuxhvOqe4JX": {
+                    "durationDescription": "<p>1時間</p>"
+                }
+            }
         },
         "Pipeweed": {
             "_note": "Pipeweed"
         },
         "Potion of Stability": {
-            "_note": "Potion of Stability"
+            "_note": "Potion of Stability",
+            "actions": {
+                "ifj42z5FhfMVyyd1": {
+                    "name": "飲む"
+                }
+            }
         },
         "Potion of Vigilance": {
             "_note": "Potion of Vigilance",
+            "actions": {
+                "OyzV63XMO4ndOH0w": {
+                    "name": "飲む"
+                }
+            },
             "effects": {
                 "G0wMnYEtCryop6IX": {
                     "name": "警戒"
@@ -401,10 +870,20 @@
             }
         },
         "Red Ooze Oil": {
-            "_note": "Red Ooze Oil"
+            "_note": "Red Ooze Oil",
+            "actions": {
+                "eqXBNr0DbYAIVGS9": {
+                    "name": "塗る"
+                }
+            }
         },
         "Redthorn Saliva": {
-            "_note": "Redthorn Saliva"
+            "_note": "Redthorn Saliva",
+            "actions": {
+                "kOU2DpAIHvQsFY5A": {
+                    "name": "塗る"
+                }
+            }
         },
         "Replication Parchment": {
             "_note": "Replication Parchment",
@@ -415,7 +894,12 @@
             }
         },
         "Salamander Salve": {
-            "_note": "Salamander Salve"
+            "_note": "Salamander Salve",
+            "actions": {
+                "Hz6U04pXtOYBDQ2L": {
+                    "name": "塗る"
+                }
+            }
         },
         "Self-Sewing Thread": {
             "_note": "Self-Sewing Thread",
@@ -426,7 +910,12 @@
             }
         },
         "Shrinking Potion": {
-            "_note": "Shrinking Potion"
+            "_note": "Shrinking Potion",
+            "actions": {
+                "F9vKFVwtJfR4Q8Kh": {
+                    "name": "飲む"
+                }
+            }
         },
         "Slayer's Salt": {
             "_note": "Slayer's Salt",
@@ -440,13 +929,23 @@
             "_note": "Sleeping Sap"
         },
         "Snakeskin Spirit": {
-            "_note": "Snakeskin Spirit"
+            "_note": "Snakeskin Spirit",
+            "actions": {
+                "773SxjjdjRsxoroZ": {
+                    "name": "飲む"
+                }
+            }
         },
         "Snap Powder": {
             "_note": "Snap Powder"
         },
         "Snapthorn Seed": {
-            "_note": "Snapthorn Seed"
+            "_note": "Snapthorn Seed",
+            "actions": {
+                "hGKzpxGdX4F8Ff4h": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Sprite Bottle": {
             "_note": "Sprite Bottle",
@@ -457,7 +956,12 @@
             }
         },
         "Staff of Reversal": {
-            "_note": "Staff of Reversal"
+            "_note": "Staff of Reversal",
+            "actions": {
+                "TgL2lMYlKXuHxXIq": {
+                    "name": "割る"
+                }
+            }
         },
         "Stake of Abjuration": {
             "_note": "Stake of Abjuration",
@@ -468,7 +972,12 @@
             }
         },
         "Stamina Potion": {
-            "_note": "Stamina Potion"
+            "_note": "Stamina Potion",
+            "actions": {
+                "BnYXCo5zr50Sw8gj": {
+                    "name": "飲む"
+                }
+            }
         },
         "Stardrop": {
             "_note": "Stardrop",
@@ -479,19 +988,44 @@
             }
         },
         "Steelskin Salve": {
-            "_note": "Steelskin Salve"
+            "_note": "Steelskin Salve",
+            "actions": {
+                "MnlcijQlwEDHPPLW": {
+                    "name": "塗る"
+                }
+            }
         },
         "Stonemason's Fortune": {
-            "_note": "Stonemason's Fortune"
+            "_note": "Stonemason's Fortune",
+            "actions": {
+                "E3rM3gMAWFF727g9": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Stride Potion": {
-            "_note": "Stride Potion"
+            "_note": "Stride Potion",
+            "actions": {
+                "GwQgdB3E1HogFKvD": {
+                    "name": "飲む"
+                }
+            }
         },
         "Sun Tree Sap": {
-            "_note": "Sun Tree Sap"
+            "_note": "Sun Tree Sap",
+            "actions": {
+                "Fh7OR8ZmiLNvRPHa": {
+                    "name": "摂取する"
+                }
+            }
         },
         "Sunlight Orb": {
-            "_note": "Sunlight Orb"
+            "_note": "Sunlight Orb",
+            "actions": {
+                "oIj5dyEurCiLVWmx": {
+                    "name": "砕く"
+                }
+            }
         },
         "Sweet Moss": {
             "_note": "Sweet Moss",
@@ -502,13 +1036,28 @@
             }
         },
         "Tears of the Undying Hero": {
-            "_note": "Tears of the Undying Hero"
+            "_note": "Tears of the Undying Hero",
+            "actions": {
+                "gNMQ40LnJLRNnXfH": {
+                    "name": "飲む"
+                }
+            }
         },
         "Unstable Arcane Shard": {
-            "_note": "Unstable Arcane Shard"
+            "_note": "Unstable Arcane Shard",
+            "actions": {
+                "D7BTCUV5DOXmqC0l": {
+                    "name": "投げつけ"
+                }
+            }
         },
         "Varik Leaves": {
-            "_note": "Varik Leaves"
+            "_note": "Varik Leaves",
+            "actions": {
+                "9e4l2Yiy8uV26SQF": {
+                    "name": "食べる"
+                }
+            }
         },
         "Verglasian Seed": {
             "_note": "Verglasian Seed"
@@ -522,10 +1071,20 @@
             }
         },
         "Vial of Featherfall": {
-            "_note": "Vial of Featherfall"
+            "_note": "Vial of Featherfall",
+            "actions": {
+                "MDhdI3fzO6awr9Dp": {
+                    "name": "飲む"
+                }
+            }
         },
         "Vial of Moondrip": {
-            "_note": "Vial of Moondrip"
+            "_note": "Vial of Moondrip",
+            "actions": {
+                "6Ny75zR1b8I8Ycsb": {
+                    "name": "飲む"
+                }
+            }
         },
         "Warding Candle": {
             "_note": "Warding Candle",
@@ -544,7 +1103,12 @@
             }
         },
         "Yakamel Milk": {
-            "_note": "Yakamel Milk"
+            "_note": "Yakamel Milk",
+            "actions": {
+                "goGJk7IIgbOvrTVZ": {
+                    "name": "摂取する"
+                }
+            }
         }
     }
 }
