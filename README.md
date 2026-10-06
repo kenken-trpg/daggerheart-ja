@@ -21,9 +21,15 @@ https://raw.githubusercontent.com/kenken-trpg/daggerheart-ja/main/module.json
 | モジュール | 役目 |
 | --- | --- |
 | [Japanese \[JA\] Translation](https://foundryvtt.com/packages/foundryVTTja) | Foundry 本体の UI を日本語化する。入れないと素の UI が英語のままになる |
+| [Babele](https://foundryvtt.com/packages/babele) | コンペンディウム収録内容の翻訳に使う。入れないとカードやデータブロックが英語のままになる |
+| [libWrapper](https://foundryvtt.com/packages/lib-wrapper) | Babele が動作に必要とする |
 
 ワールドの「設定 > モジュール管理」で有効化したあと、
 Foundry の言語設定を日本語にしてください。
+
+Babele はコンペンディウムを書き換えません。読み込み時に訳を重ねるだけなので、
+公式システムのパックはそのまま残り、英語に戻すのはこのモジュールを
+無効化するだけです。
 
 ## 翻訳の範囲
 
@@ -31,7 +37,7 @@ Foundry の言語設定を日本語にしてください。
 | --- | --- |
 | システムの UI 文言 (`lang/ja.json`) | 対応済み |
 | 日本語で崩れるレイアウトの CSS 修正 | 対応済み |
-| コンペンディウム収録内容 (能力カード、敵、装備など) | **未対応**。[Babele](https://foundryvtt.com/packages/babele) 経由で対応予定 |
+| コンペンディウム収録内容 (能力カード、敵、装備など) | 対応済み。[Babele](https://foundryvtt.com/packages/babele) 経由で 15 パック 10,484 フィールド |
 | システムのコードに直接書かれた一部の文言 | **対応不可**。モジュールからは上書きできません |
 
 ## 以前のシステム版 (`daggerheart-ja` システム) から移行する
@@ -45,8 +51,16 @@ Foundry の言語設定を日本語にしてください。
 1. 公式の Daggerheart システムをインストールする。
 2. このモジュールをインストールして有効化する。
 3. 既存の daggerheart-ja ワールドを開くには、ワールドの `world.json` の `"system"` を
-   `"daggerheart-ja"` から `"daggerheart"` に書き換える。
+   `"daggerheart-ja"` から `"daggerheart"` に書き換える。Foundry の画面からは
+   ワールドのシステムを変更できないため、ファイルを直接編集する必要があります。
 4. システム版 (`daggerheart-ja` システム) をアンインストールする。
+
+3 について、注意が1つあります。システム版は ID 改名のとき flags とコンペンディウムの
+名前空間も `daggerheart-ja` に変えていました。そのため、システム版で遊んでいた期間に
+書かれた `flags.daggerheart-ja` や `Compendium.daggerheart-ja.*` への参照は、
+公式システムでは解決されません。アクターやアイテムの数値 (`system.*`) は
+名前空間に依存しないので残りますが、不安があれば新しいワールドを作り、
+アクターとアイテムをエクスポート/インポートしてください。
 
 ## 開発
 
