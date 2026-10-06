@@ -3,6 +3,11 @@
     "collection": "daggerheart.weapons",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "folders": {
+        "Combat Wheelchairs": "戦闘用車椅子",
+        "Magical Weapons": "魔法武器",
+        "Physical Weapons": "物理武器",
+        "Primary Weapons": "メイン武器",
+        "Secondary Weapons": "サブ武器",
         "Tier 1": "ティア1",
         "Tier 2": "ティア2",
         "Tier 3": "ティア3",
@@ -24,6 +29,7 @@
         },
         "Adder's Fang": {
             "_note": "Adder's Fang",
+            "name": "まだら蛇の牙",
             "attack": {
                 "name": "攻撃"
             },
@@ -40,6 +46,7 @@
         },
         "Advanced Arcane-Frame Wheelchair": {
             "_note": "Advanced Arcane-Frame Wheelchair",
+            "name": "上級秘術骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -52,12 +59,14 @@
         },
         "Advanced Arcane Gauntlets": {
             "_note": "Advanced Arcane Gauntlets",
+            "name": "上級秘術の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Arcane Rifle": {
             "_note": "Advanced Arcane Rifle",
+            "name": "上級秘術の銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -69,24 +78,28 @@
         },
         "Advanced Battleaxe": {
             "_note": "Advanced Battleaxe",
+            "name": "上級戦斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Brass Knuckles": {
             "_note": "Advanced Brass Knuckles",
+            "name": "上級ブラスナックル",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Brightsword": {
             "_note": "Advanced Brightsword",
+            "name": "上級輝剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Broadsword": {
             "_note": "Advanced Broadsword",
+            "name": "上級幅広剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -99,36 +112,42 @@
         },
         "Advanced Casting Dagger": {
             "_note": "Advanced Casting Dagger",
+            "name": "上級詠唱の短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Crossbow": {
             "_note": "Advanced Crossbow",
+            "name": "上級クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Cutlass": {
             "_note": "Advanced Cutlass",
+            "name": "上級カトラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Dagger": {
             "_note": "Advanced Dagger",
+            "name": "上級ダガー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Dualstaff": {
             "_note": "Advanced Dualstaff",
+            "name": "上級双頭杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Enchanted Chakram": {
             "_note": "Advanced Enchanted Chakram",
+            "name": "上級魔法のチャクラム",
             "attack": {
                 "name": "攻撃"
             },
@@ -140,6 +159,7 @@
         },
         "Advanced Fighting Cloak": {
             "_note": "Advanced Fighting Cloak",
+            "name": "上級戦闘外套",
             "attack": {
                 "name": "攻撃"
             },
@@ -151,6 +171,7 @@
         },
         "Advanced Focus Runes": {
             "_note": "Advanced Focus Runes",
+            "name": "上級集束のルーン",
             "attack": {
                 "name": "攻撃"
             },
@@ -162,18 +183,21 @@
         },
         "Advanced Glowing Rings": {
             "_note": "Advanced Glowing Rings",
+            "name": "上級光る指輪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Grappler": {
             "_note": "Advanced Grappler",
+            "name": "上級鉤縄",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Greatstaff": {
             "_note": "Advanced Greatstaff",
+            "name": "上級大杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -185,6 +209,7 @@
         },
         "Advanced Greatsword": {
             "_note": "Advanced Greatsword",
+            "name": "上級大剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -196,6 +221,7 @@
         },
         "Advanced Halberd": {
             "_note": "Advanced Halberd",
+            "name": "上級ハルバード",
             "attack": {
                 "name": "攻撃"
             },
@@ -208,24 +234,28 @@
         },
         "Advanced Hallowed Axe": {
             "_note": "Advanced Hallowed Axe",
+            "name": "上級聖別された斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Hand Crossbow": {
             "_note": "Advanced Hand Crossbow",
+            "name": "上級片手クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Hand Runes": {
             "_note": "Advanced Hand Runes",
+            "name": "上級手のルーン",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Hatchet": {
             "_note": "Advanced Hatchet",
+            "name": "上級手斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -243,6 +273,7 @@
         },
         "Advanced Heavy-Frame Wheelchair": {
             "_note": "Advanced Heavy-Frame Wheelchair",
+            "name": "上級重骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -255,6 +286,7 @@
         },
         "Advanced Katana": {
             "_note": "Advanced Katana",
+            "name": "上級刀",
             "attack": {
                 "name": "攻撃"
             },
@@ -266,12 +298,14 @@
         },
         "Advanced Light-Frame Wheelchair": {
             "_note": "Advanced Light-Frame Wheelchair",
+            "name": "上級軽骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Longbow": {
             "_note": "Advanced Longbow",
+            "name": "上級ロングボウ",
             "attack": {
                 "name": "攻撃"
             },
@@ -284,18 +318,21 @@
         },
         "Advanced Longsword": {
             "_note": "Advanced Longsword",
+            "name": "上級ロングソード",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Mace": {
             "_note": "Advanced Mace",
+            "name": "上級メイス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Offhand Brass Knuckles": {
             "_note": "Advanced Offhand Brass Knuckles",
+            "name": "上級逆手のブラスナックル",
             "attack": {
                 "name": "攻撃"
             },
@@ -307,30 +344,35 @@
         },
         "Advanced Quarterstaff": {
             "_note": "Advanced Quarterstaff",
+            "name": "上級六尺棒",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Rapier": {
             "_note": "Advanced Rapier",
+            "name": "上級レイピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Returning Blade": {
             "_note": "Advanced Returning Blade",
+            "name": "上級帰還する刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Rope Dart": {
             "_note": "Advanced Rope Dart",
+            "name": "上級縄付きの投げ矢",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Round Shield": {
             "_note": "Advanced Round Shield",
+            "name": "上級円盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -343,6 +385,7 @@
         },
         "Advanced Rune Shield": {
             "_note": "Advanced Rune Shield",
+            "name": "上級ルーンの盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -355,6 +398,7 @@
         },
         "Advanced Runelock Pistol": {
             "_note": "Advanced Runelock Pistol",
+            "name": "上級ルーン式拳銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -366,36 +410,42 @@
         },
         "Advanced Scepter": {
             "_note": "Advanced Scepter",
+            "name": "上級笏",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Scimitar": {
             "_note": "Advanced Scimitar",
+            "name": "上級シミター",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Shadowblade": {
             "_note": "Advanced Shadowblade",
+            "name": "上級影の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Shortbow": {
             "_note": "Advanced Shortbow",
+            "name": "上級ショートボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Shortstaff": {
             "_note": "Advanced Shortstaff",
+            "name": "上級短杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Shortsword": {
             "_note": "Advanced Shortsword",
+            "name": "上級ショートソード",
             "attack": {
                 "name": "攻撃"
             },
@@ -407,6 +457,7 @@
         },
         "Advanced Small Dagger": {
             "_note": "Advanced Small Dagger",
+            "name": "上級小型の短剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -418,18 +469,21 @@
         },
         "Advanced Spear": {
             "_note": "Advanced Spear",
+            "name": "上級スピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Throwing Knives": {
             "_note": "Advanced Throwing Knives",
+            "name": "上級投げナイフ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Tower Shield": {
             "_note": "Advanced Tower Shield",
+            "name": "上級塔盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -446,18 +500,21 @@
         },
         "Advanced Twisted Dagger": {
             "_note": "Advanced Twisted Dagger",
+            "name": "上級捻れた短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Wand": {
             "_note": "Advanced Wand",
+            "name": "上級ワンド",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Warhammer": {
             "_note": "Advanced Warhammer",
+            "name": "上級ウォーハンマー",
             "attack": {
                 "name": "攻撃"
             },
@@ -470,18 +527,21 @@
         },
         "Advanced Whip": {
             "_note": "Advanced Whip",
+            "name": "上級鞭",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Advanced Whipsword": {
             "_note": "Advanced Whipsword",
+            "name": "上級鞭剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Arc Wand": {
             "_note": "Arc Wand",
+            "name": "電弧の杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -493,6 +553,7 @@
         },
         "Arcane-Frame Wheelchair": {
             "_note": "Arcane-Frame Wheelchair",
+            "name": "秘術骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -505,12 +566,14 @@
         },
         "Arcane Gauntlets": {
             "_note": "Arcane Gauntlets",
+            "name": "秘術の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Arcane Rifle": {
             "_note": "Arcane Rifle",
+            "name": "秘術の銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -522,6 +585,7 @@
         },
         "Arquebus": {
             "_note": "Arquebus",
+            "name": "火縄銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -533,18 +597,21 @@
         },
         "Axe of Fortunis": {
             "_note": "Axe of Fortunis",
+            "name": "フォルトゥニスの斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Battleaxe": {
             "_note": "Battleaxe",
+            "name": "戦斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Bec de Corbin": {
             "_note": "Bec de Corbin",
+            "name": "ベック・ド・コルバン",
             "attack": {
                 "name": "攻撃"
             },
@@ -556,12 +623,14 @@
         },
         "Black Powder Revolver": {
             "_note": "Black Powder Revolver",
+            "name": "黒色火薬のリボルバー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Black Powder Serpentine": {
             "_note": "Black Powder Serpentine",
+            "name": "黒色火薬のサーペンタイン砲",
             "attack": {
                 "name": "攻撃"
             },
@@ -579,12 +648,14 @@
         },
         "Blackblood Tendril": {
             "_note": "Blackblood Tendril",
+            "name": "黒血の触手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Bladed Fan": {
             "_note": "Bladed Fan",
+            "name": "刃付きの扇",
             "attack": {
                 "name": "攻撃"
             },
@@ -596,24 +667,28 @@
         },
         "Bladed Star": {
             "_note": "Bladed Star",
+            "name": "刃付きの星",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Bladed Whip": {
             "_note": "Bladed Whip",
+            "name": "刃付きの鞭",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Blessed Anlace": {
             "_note": "Blessed Anlace",
+            "name": "祝福されたアンラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Blitz Hammer": {
             "_note": "Blitz Hammer",
+            "name": "電撃の鎚",
             "attack": {
                 "name": "攻撃"
             },
@@ -631,30 +706,35 @@
         },
         "Bloodstaff": {
             "_note": "Bloodstaff",
+            "name": "血の杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Blunderbuss": {
             "_note": "Blunderbuss",
+            "name": "ラッパ銃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Brass Knuckles": {
             "_note": "Brass Knuckles",
+            "name": "ブラスナックル",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Braveshield": {
             "_note": "Braveshield",
+            "name": "勇者の盾",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Bravesword": {
             "_note": "Bravesword",
+            "name": "勇者の剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -667,12 +747,14 @@
         },
         "Brightsword": {
             "_note": "Brightsword",
+            "name": "輝剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Broadsword": {
             "_note": "Broadsword",
+            "name": "幅広剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -685,6 +767,7 @@
         },
         "Buckler": {
             "_note": "Buckler",
+            "name": "小円盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -696,24 +779,28 @@
         },
         "Cane Sword": {
             "_note": "Cane Sword",
+            "name": "仕込み杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Casting Dagger": {
             "_note": "Casting Dagger",
+            "name": "詠唱の短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Casting Sword": {
             "_note": "Casting Sword",
+            "name": "詠唱の剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Chained Scythe": {
             "_note": "Chained Scythe",
+            "name": "鎖付きの大鎌",
             "attack": {
                 "name": "攻撃"
             },
@@ -725,6 +812,7 @@
         },
         "Clockwork Crossbow": {
             "_note": "Clockwork Crossbow",
+            "name": "歯車仕掛けのクロスボウ",
             "attack": {
                 "name": "攻撃"
             },
@@ -736,24 +824,28 @@
         },
         "Collapsible Baton": {
             "_note": "Collapsible Baton",
+            "name": "伸縮棍",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Crossbow": {
             "_note": "Crossbow",
+            "name": "クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Crystal Spear": {
             "_note": "Crystal Spear",
+            "name": "水晶の槍",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Curved Dagger": {
             "_note": "Curved Dagger",
+            "name": "曲刀のダガー",
             "attack": {
                 "name": "攻撃"
             },
@@ -765,12 +857,14 @@
         },
         "Cutlass": {
             "_note": "Cutlass",
+            "name": "カトラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Cyrurgien's Scalpel": {
             "_note": "Cyrurgien's Scalpel",
+            "name": "シルルジャンのメス",
             "attack": {
                 "name": "攻撃"
             },
@@ -783,12 +877,14 @@
         },
         "Dagger": {
             "_note": "Dagger",
+            "name": "ダガー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Demon's Edge": {
             "_note": "Demon's Edge",
+            "name": "魔神の刃",
             "attack": {
                 "name": "攻撃"
             },
@@ -800,18 +896,21 @@
         },
         "Devouring Dagger": {
             "_note": "Devouring Dagger",
+            "name": "貪食の短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Displacement Razor": {
             "_note": "Displacement Razor",
+            "name": "転移の剃刀",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Double Flail": {
             "_note": "Double Flail",
+            "name": "双連接棍",
             "attack": {
                 "name": "攻撃"
             },
@@ -823,18 +922,21 @@
         },
         "Dual-Ended Sword": {
             "_note": "Dual-Ended Sword",
+            "name": "両刃付きの剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Dualstaff": {
             "_note": "Dualstaff",
+            "name": "双頭杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Echo Blade": {
             "_note": "Echo Blade",
+            "name": "反響の刃",
             "attack": {
                 "name": "攻撃"
             },
@@ -846,12 +948,14 @@
         },
         "Ego Blade": {
             "_note": "Ego Blade",
+            "name": "自我の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Elder Bow": {
             "_note": "Elder Bow",
+            "name": "古老の弓",
             "attack": {
                 "name": "攻撃"
             },
@@ -863,6 +967,7 @@
         },
         "Eldritch Vambrace": {
             "_note": "Eldritch Vambrace",
+            "name": "異形の篭手",
             "attack": {
                 "name": "攻撃"
             },
@@ -879,6 +984,7 @@
         },
         "Enchanted Chakram": {
             "_note": "Enchanted Chakram",
+            "name": "魔法のチャクラム",
             "attack": {
                 "name": "攻撃"
             },
@@ -890,6 +996,7 @@
         },
         "Enchanted Lute": {
             "_note": "Enchanted Lute",
+            "name": "魔法のリュート",
             "attack": {
                 "name": "攻撃"
             },
@@ -901,6 +1008,7 @@
         },
         "Enchanted Shillelagh": {
             "_note": "Enchanted Shillelagh",
+            "name": "魔法の棍棒",
             "attack": {
                 "name": "攻撃"
             },
@@ -912,6 +1020,7 @@
         },
         "Ethereal Zweihänder": {
             "_note": "Ethereal Zweihänder",
+            "name": "霊妙なツヴァイハンダー",
             "attack": {
                 "name": "攻撃"
             },
@@ -929,12 +1038,14 @@
         },
         "Extended Polearm": {
             "_note": "Extended Polearm",
+            "name": "伸長する長柄武器",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Fighting Cloak": {
             "_note": "Fighting Cloak",
+            "name": "戦闘外套",
             "attack": {
                 "name": "攻撃"
             },
@@ -946,6 +1057,7 @@
         },
         "Finehair Bow": {
             "_note": "Finehair Bow",
+            "name": "細毛の弓",
             "attack": {
                 "name": "攻撃"
             },
@@ -958,12 +1070,14 @@
         },
         "Firestaff": {
             "_note": "Firestaff",
+            "name": "炎の杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Flickerfly Blade": {
             "_note": "Flickerfly Blade",
+            "name": "瞬羽蝶の刃",
             "attack": {
                 "name": "攻撃"
             },
@@ -976,6 +1090,7 @@
         },
         "Floating Bladeshards": {
             "_note": "Floating Bladeshards",
+            "name": "浮遊する刃の破片",
             "attack": {
                 "name": "攻撃"
             },
@@ -987,6 +1102,7 @@
         },
         "Focus Runes": {
             "_note": "Focus Runes",
+            "name": "集束のルーン",
             "attack": {
                 "name": "攻撃"
             },
@@ -998,6 +1114,7 @@
         },
         "Fury Gem": {
             "_note": "Fury Gem",
+            "name": "憤怒の宝玉",
             "attack": {
                 "name": "攻撃"
             },
@@ -1009,6 +1126,7 @@
         },
         "Fusion Gloves": {
             "_note": "Fusion Gloves",
+            "name": "融合の手袋",
             "attack": {
                 "name": "攻撃"
             },
@@ -1021,12 +1139,14 @@
         },
         "Ghostblade": {
             "_note": "Ghostblade",
+            "name": "幽鬼の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Gilded Bow": {
             "_note": "Gilded Bow",
+            "name": "金箔張りの弓",
             "attack": {
                 "name": "攻撃"
             },
@@ -1038,6 +1158,7 @@
         },
         "Gilded Falchion": {
             "_note": "Gilded Falchion",
+            "name": "金箔張りのファルシオン",
             "attack": {
                 "name": "攻撃"
             },
@@ -1049,18 +1170,21 @@
         },
         "Glowing Rings": {
             "_note": "Glowing Rings",
+            "name": "光る指輪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Grappler": {
             "_note": "Grappler",
+            "name": "鉤縄",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Gravity Arbalest": {
             "_note": "Gravity Arbalest",
+            "name": "重力アーバレスト",
             "attack": {
                 "name": "攻撃"
             },
@@ -1072,6 +1196,7 @@
         },
         "Greatbow": {
             "_note": "Greatbow",
+            "name": "大弓",
             "attack": {
                 "name": "攻撃"
             },
@@ -1083,6 +1208,7 @@
         },
         "Greatstaff": {
             "_note": "Greatstaff",
+            "name": "大杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -1094,6 +1220,7 @@
         },
         "Greatsword": {
             "_note": "Greatsword",
+            "name": "大剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1105,12 +1232,14 @@
         },
         "Gunblade": {
             "_note": "Gunblade",
+            "name": "銃剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Halberd": {
             "_note": "Halberd",
+            "name": "ハルバード",
             "attack": {
                 "name": "攻撃"
             },
@@ -1123,18 +1252,21 @@
         },
         "Hallowed Axe": {
             "_note": "Hallowed Axe",
+            "name": "聖別された斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hammer of Exota": {
             "_note": "Hammer of Exota",
+            "name": "エクソタの鎚",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hammer of Wrath": {
             "_note": "Hammer of Wrath",
+            "name": "憤怒の鎚",
             "attack": {
                 "name": "攻撃"
             },
@@ -1146,30 +1278,35 @@
         },
         "Hand Cannon": {
             "_note": "Hand Cannon",
+            "name": "携行砲",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hand Crossbow": {
             "_note": "Hand Crossbow",
+            "name": "片手クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hand Runes": {
             "_note": "Hand Runes",
+            "name": "手のルーン",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hand Sling": {
             "_note": "Hand Sling",
+            "name": "片手投石紐",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Hatchet": {
             "_note": "Hatchet",
+            "name": "手斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -1187,6 +1324,7 @@
         },
         "Heavy-Frame Wheelchair": {
             "_note": "Heavy-Frame Wheelchair",
+            "name": "重骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -1199,18 +1337,21 @@
         },
         "Ilmari's Rifle": {
             "_note": "Ilmari's Rifle",
+            "name": "イルマリの銃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Impact Gauntlet": {
             "_note": "Impact Gauntlet",
+            "name": "衝撃の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Arcane-Frame Wheelchair": {
             "_note": "Improved Arcane-Frame Wheelchair",
+            "name": "改良秘術骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -1223,12 +1364,14 @@
         },
         "Improved Arcane Gauntlets": {
             "_note": "Improved Arcane Gauntlets",
+            "name": "改良秘術の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Arcane Rifle": {
             "_note": "Improved Arcane Rifle",
+            "name": "改良秘術の銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -1240,24 +1383,28 @@
         },
         "Improved Battleaxe": {
             "_note": "Improved Battleaxe",
+            "name": "改良戦斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Brass Knuckles": {
             "_note": "Improved Brass Knuckles",
+            "name": "改良ブラスナックル",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Brightsword": {
             "_note": "Improved Brightsword",
+            "name": "改良輝剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Broadsword": {
             "_note": "Improved Broadsword",
+            "name": "改良幅広剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1270,36 +1417,42 @@
         },
         "Improved Casting Dagger": {
             "_note": "Improved Casting Dagger",
+            "name": "改良詠唱の短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Crossbow": {
             "_note": "Improved Crossbow",
+            "name": "改良クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Cutlass": {
             "_note": "Improved Cutlass",
+            "name": "改良カトラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Dagger": {
             "_note": "Improved Dagger",
+            "name": "改良ダガー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Dualstaff": {
             "_note": "Improved Dualstaff",
+            "name": "改良双頭杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Enchanted Chakram": {
             "_note": "Improved Enchanted Chakram",
+            "name": "改良魔法のチャクラム",
             "attack": {
                 "name": "攻撃"
             },
@@ -1311,6 +1464,7 @@
         },
         "Improved Fighting Cloak": {
             "_note": "Improved Fighting Cloak",
+            "name": "改良戦闘外套",
             "attack": {
                 "name": "攻撃"
             },
@@ -1322,6 +1476,7 @@
         },
         "Improved Focus Runes": {
             "_note": "Improved Focus Runes",
+            "name": "改良集束のルーン",
             "attack": {
                 "name": "攻撃"
             },
@@ -1333,18 +1488,21 @@
         },
         "Improved Glowing Rings": {
             "_note": "Improved Glowing Rings",
+            "name": "改良光る指輪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Grappler": {
             "_note": "Improved Grappler",
+            "name": "改良鉤縄",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Greatstaff": {
             "_note": "Improved Greatstaff",
+            "name": "改良大杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -1356,6 +1514,7 @@
         },
         "Improved Greatsword": {
             "_note": "Improved Greatsword",
+            "name": "改良大剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1367,6 +1526,7 @@
         },
         "Improved Halberd": {
             "_note": "Improved Halberd",
+            "name": "改良ハルバード",
             "attack": {
                 "name": "攻撃"
             },
@@ -1379,24 +1539,28 @@
         },
         "Improved Hallowed Axe": {
             "_note": "Improved Hallowed Axe",
+            "name": "改良聖別された斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Hand Crossbow": {
             "_note": "Improved Hand Crossbow",
+            "name": "改良片手クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Hand Runes": {
             "_note": "Improved Hand Runes",
+            "name": "改良手のルーン",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Hatchet": {
             "_note": "Improved Hatchet",
+            "name": "改良手斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -1414,6 +1578,7 @@
         },
         "Improved Heavy-Frame Wheelchair": {
             "_note": "Improved Heavy-Frame Wheelchair",
+            "name": "改良重骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -1426,6 +1591,7 @@
         },
         "Improved Katana": {
             "_note": "Improved Katana",
+            "name": "改良刀",
             "attack": {
                 "name": "攻撃"
             },
@@ -1437,12 +1603,14 @@
         },
         "Improved Light-Frame Wheelchair": {
             "_note": "Improved Light-Frame Wheelchair",
+            "name": "改良軽骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Longbow": {
             "_note": "Improved Longbow",
+            "name": "改良ロングボウ",
             "attack": {
                 "name": "攻撃"
             },
@@ -1455,18 +1623,21 @@
         },
         "Improved Longsword": {
             "_note": "Improved Longsword",
+            "name": "改良ロングソード",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Mace": {
             "_note": "Improved Mace",
+            "name": "改良メイス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Offhand Brass Knuckles": {
             "_note": "Improved Offhand Brass Knuckles",
+            "name": "改良逆手のブラスナックル",
             "attack": {
                 "name": "攻撃"
             },
@@ -1478,30 +1649,35 @@
         },
         "Improved Quarterstaff": {
             "_note": "Improved Quarterstaff",
+            "name": "改良六尺棒",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Rapier": {
             "_note": "Improved Rapier",
+            "name": "改良レイピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Returning Blade": {
             "_note": "Improved Returning Blade",
+            "name": "改良帰還する刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Rope Dart": {
             "_note": "Improved Rope Dart",
+            "name": "改良縄付きの投げ矢",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Round Shield": {
             "_note": "Improved Round Shield",
+            "name": "改良円盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -1514,6 +1690,7 @@
         },
         "Improved Rune Shield": {
             "_note": "Improved Rune Shield",
+            "name": "改良ルーンの盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -1526,6 +1703,7 @@
         },
         "Improved Runelock Pistol": {
             "_note": "Improved Runelock Pistol",
+            "name": "改良ルーン式拳銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -1537,36 +1715,42 @@
         },
         "Improved Scepter": {
             "_note": "Improved Scepter",
+            "name": "改良笏",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Scimitar": {
             "_note": "Improved Scimitar",
+            "name": "改良シミター",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Shadowblade": {
             "_note": "Improved Shadowblade",
+            "name": "改良影の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Shortbow": {
             "_note": "Improved Shortbow",
+            "name": "改良ショートボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Shortstaff": {
             "_note": "Improved Shortstaff",
+            "name": "改良短杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Shortsword": {
             "_note": "Improved Shortsword",
+            "name": "改良ショートソード",
             "attack": {
                 "name": "攻撃"
             },
@@ -1578,6 +1762,7 @@
         },
         "Improved Small Dagger": {
             "_note": "Improved Small Dagger",
+            "name": "改良小型の短剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1589,18 +1774,21 @@
         },
         "Improved Spear": {
             "_note": "Improved Spear",
+            "name": "改良スピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Throwing Knives": {
             "_note": "Improved Throwing Knives",
+            "name": "改良投げナイフ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Tower Shield": {
             "_note": "Improved Tower Shield",
+            "name": "改良塔盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -1617,18 +1805,21 @@
         },
         "Improved Twisted Dagger": {
             "_note": "Improved Twisted Dagger",
+            "name": "改良捻れた短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Wand": {
             "_note": "Improved Wand",
+            "name": "改良ワンド",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Warhammer": {
             "_note": "Improved Warhammer",
+            "name": "改良ウォーハンマー",
             "attack": {
                 "name": "攻撃"
             },
@@ -1641,30 +1832,35 @@
         },
         "Improved Whip": {
             "_note": "Improved Whip",
+            "name": "改良鞭",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Improved Whipsword": {
             "_note": "Improved Whipsword",
+            "name": "改良鞭剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Infinite Staff": {
             "_note": "Infinite Staff",
+            "name": "無限の杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Javelins": {
             "_note": "Javelins",
+            "name": "投槍",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Katana": {
             "_note": "Katana",
+            "name": "刀",
             "attack": {
                 "name": "攻撃"
             },
@@ -1676,6 +1872,7 @@
         },
         "Keeper's Staff": {
             "_note": "Keeper's Staff",
+            "name": "守り手の杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -1688,18 +1885,21 @@
         },
         "Knuckle Blades": {
             "_note": "Knuckle Blades",
+            "name": "拳の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Knuckle Claws": {
             "_note": "Knuckle Claws",
+            "name": "拳の爪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Labrys Axe": {
             "_note": "Labrys Axe",
+            "name": "ラブリュス斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -1711,6 +1911,7 @@
         },
         "Lance": {
             "_note": "Lance",
+            "name": "ランス",
             "attack": {
                 "name": "攻撃"
             },
@@ -1723,6 +1924,7 @@
         },
         "Legendary Arcane-Frame Wheelchair": {
             "_note": "Legendary Arcane-Frame Wheelchair",
+            "name": "伝説秘術骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -1735,12 +1937,14 @@
         },
         "Legendary Arcane Gauntlets": {
             "_note": "Legendary Arcane Gauntlets",
+            "name": "伝説秘術の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Arcane Rifle": {
             "_note": "Legendary Arcane Rifle",
+            "name": "伝説秘術の銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -1752,24 +1956,28 @@
         },
         "Legendary Battleaxe": {
             "_note": "Legendary Battleaxe",
+            "name": "伝説戦斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Brass Knuckles": {
             "_note": "Legendary Brass Knuckles",
+            "name": "伝説ブラスナックル",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Brightsword": {
             "_note": "Legendary Brightsword",
+            "name": "伝説輝剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Broadsword": {
             "_note": "Legendary Broadsword",
+            "name": "伝説幅広剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1782,36 +1990,42 @@
         },
         "Legendary Casting Dagger": {
             "_note": "Legendary Casting Dagger",
+            "name": "伝説詠唱の短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Crossbow": {
             "_note": "Legendary Crossbow",
+            "name": "伝説クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Cutlass": {
             "_note": "Legendary Cutlass",
+            "name": "伝説カトラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Dagger": {
             "_note": "Legendary Dagger",
+            "name": "伝説ダガー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Dualstaff": {
             "_note": "Legendary Dualstaff",
+            "name": "伝説双頭杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Enchanted Chakram": {
             "_note": "Legendary Enchanted Chakram",
+            "name": "伝説魔法のチャクラム",
             "attack": {
                 "name": "攻撃"
             },
@@ -1823,6 +2037,7 @@
         },
         "Legendary Fighting Cloak": {
             "_note": "Legendary Fighting Cloak",
+            "name": "伝説戦闘外套",
             "attack": {
                 "name": "攻撃"
             },
@@ -1834,6 +2049,7 @@
         },
         "Legendary Focus Runes": {
             "_note": "Legendary Focus Runes",
+            "name": "伝説集束のルーン",
             "attack": {
                 "name": "攻撃"
             },
@@ -1845,18 +2061,21 @@
         },
         "Legendary Glowing Rings": {
             "_note": "Legendary Glowing Rings",
+            "name": "伝説光る指輪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Grappler": {
             "_note": "Legendary Grappler",
+            "name": "伝説鉤縄",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Greatstaff": {
             "_note": "Legendary Greatstaff",
+            "name": "伝説大杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -1868,6 +2087,7 @@
         },
         "Legendary Greatsword": {
             "_note": "Legendary Greatsword",
+            "name": "伝説大剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -1879,6 +2099,7 @@
         },
         "Legendary Halberd": {
             "_note": "Legendary Halberd",
+            "name": "伝説ハルバード",
             "attack": {
                 "name": "攻撃"
             },
@@ -1891,24 +2112,28 @@
         },
         "Legendary Hallowed Axe": {
             "_note": "Legendary Hallowed Axe",
+            "name": "伝説聖別された斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Hand Crossbow": {
             "_note": "Legendary Hand Crossbow",
+            "name": "伝説片手クロスボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Hand Runes": {
             "_note": "Legendary Hand Runes",
+            "name": "伝説手のルーン",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Hatchet": {
             "_note": "Legendary Hatchet",
+            "name": "伝説手斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -1926,6 +2151,7 @@
         },
         "Legendary Heavy-Frame Wheelchair": {
             "_note": "Legendary Heavy-Frame Wheelchair",
+            "name": "伝説重骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             },
@@ -1938,6 +2164,7 @@
         },
         "Legendary Katana": {
             "_note": "Legendary Katana",
+            "name": "伝説刀",
             "attack": {
                 "name": "攻撃"
             },
@@ -1949,12 +2176,14 @@
         },
         "Legendary Light-Frame Wheelchair": {
             "_note": "Legendary Light-Frame Wheelchair",
+            "name": "伝説軽骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Longbow": {
             "_note": "Legendary Longbow",
+            "name": "伝説ロングボウ",
             "attack": {
                 "name": "攻撃"
             },
@@ -1967,18 +2196,21 @@
         },
         "Legendary Longsword": {
             "_note": "Legendary Longsword",
+            "name": "伝説ロングソード",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Mace": {
             "_note": "Legendary Mace",
+            "name": "伝説メイス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Offhand Brass Knuckles": {
             "_note": "Legendary Offhand Brass Knuckles",
+            "name": "伝説逆手のブラスナックル",
             "attack": {
                 "name": "攻撃"
             },
@@ -1990,30 +2222,35 @@
         },
         "Legendary Quarterstaff": {
             "_note": "Legendary Quarterstaff",
+            "name": "伝説六尺棒",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Rapier": {
             "_note": "Legendary Rapier",
+            "name": "伝説レイピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Returning Blade": {
             "_note": "Legendary Returning Blade",
+            "name": "伝説帰還する刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Rope Dart": {
             "_note": "Legendary Rope Dart",
+            "name": "伝説縄付きの投げ矢",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Round Shield": {
             "_note": "Legendary Round Shield",
+            "name": "伝説円盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2026,6 +2263,7 @@
         },
         "Legendary Rune Shield": {
             "_note": "Legendary Rune Shield",
+            "name": "伝説ルーンの盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2038,6 +2276,7 @@
         },
         "Legendary Runelock Pistol": {
             "_note": "Legendary Runelock Pistol",
+            "name": "伝説ルーン式拳銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -2049,36 +2288,42 @@
         },
         "Legendary Scepter": {
             "_note": "Legendary Scepter",
+            "name": "伝説笏",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Scimitar": {
             "_note": "Legendary Scimitar",
+            "name": "伝説シミター",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Shadowblade": {
             "_note": "Legendary Shadowblade",
+            "name": "伝説影の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Shortbow": {
             "_note": "Legendary Shortbow",
+            "name": "伝説ショートボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Shortstaff": {
             "_note": "Legendary Shortstaff",
+            "name": "伝説短杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Shortsword": {
             "_note": "Legendary Shortsword",
+            "name": "伝説ショートソード",
             "attack": {
                 "name": "攻撃"
             },
@@ -2090,6 +2335,7 @@
         },
         "Legendary Small Dagger": {
             "_note": "Legendary Small Dagger",
+            "name": "伝説小型の短剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -2101,18 +2347,21 @@
         },
         "Legendary Spear": {
             "_note": "Legendary Spear",
+            "name": "伝説スピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Throwing Knives": {
             "_note": "Legendary Throwing Knives",
+            "name": "伝説投げナイフ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Tower Shield": {
             "_note": "Legendary Tower Shield",
+            "name": "伝説塔盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2129,18 +2378,21 @@
         },
         "Legendary Twisted Dagger": {
             "_note": "Legendary Twisted Dagger",
+            "name": "伝説捻れた短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Wand": {
             "_note": "Legendary Wand",
+            "name": "伝説ワンド",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Warhammer": {
             "_note": "Legendary Warhammer",
+            "name": "伝説ウォーハンマー",
             "attack": {
                 "name": "攻撃"
             },
@@ -2153,24 +2405,28 @@
         },
         "Legendary Whip": {
             "_note": "Legendary Whip",
+            "name": "伝説鞭",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Legendary Whipsword": {
             "_note": "Legendary Whipsword",
+            "name": "伝説鞭剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Light-Frame Wheelchair": {
             "_note": "Light-Frame Wheelchair",
+            "name": "軽骨組みの車椅子",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Longbow": {
             "_note": "Longbow",
+            "name": "ロングボウ",
             "attack": {
                 "name": "攻撃"
             },
@@ -2183,24 +2439,28 @@
         },
         "Longsword": {
             "_note": "Longsword",
+            "name": "ロングソード",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Möbius Orb": {
             "_note": "Möbius Orb",
+            "name": "メビウスの宝珠",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Mace": {
             "_note": "Mace",
+            "name": "メイス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Mage Orb": {
             "_note": "Mage Orb",
+            "name": "魔術師の宝珠",
             "attack": {
                 "name": "攻撃"
             },
@@ -2212,18 +2472,21 @@
         },
         "Magus Revolver": {
             "_note": "Magus Revolver",
+            "name": "魔導士のリボルバー",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Meridian Cutlass": {
             "_note": "Meridian Cutlass",
+            "name": "子午線のカトラス",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Midas Scythe": {
             "_note": "Midas Scythe",
+            "name": "ミダスの大鎌",
             "attack": {
                 "name": "攻撃"
             },
@@ -2240,6 +2503,7 @@
         },
         "Offhand Brass Knuckles": {
             "_note": "Offhand Brass Knuckles",
+            "name": "逆手のブラスナックル",
             "attack": {
                 "name": "攻撃"
             },
@@ -2251,18 +2515,21 @@
         },
         "Parrying Dagger": {
             "_note": "Parrying Dagger",
+            "name": "受け流しの短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Platinum Estoc": {
             "_note": "Platinum Estoc",
+            "name": "白金のエストック",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Powered Gauntlet": {
             "_note": "Powered Gauntlet",
+            "name": "動力籠手",
             "attack": {
                 "name": "攻撃"
             },
@@ -2274,24 +2541,28 @@
         },
         "Primer Shard": {
             "_note": "Primer Shard",
+            "name": "起爆の破片",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Quarterstaff": {
             "_note": "Quarterstaff",
+            "name": "六尺棒",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Rapier": {
             "_note": "Rapier",
+            "name": "レイピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Razor Wire": {
             "_note": "Razor Wire",
+            "name": "剃刀線",
             "attack": {
                 "name": "攻撃"
             },
@@ -2308,30 +2579,35 @@
         },
         "Retractable Saber": {
             "_note": "Retractable Saber",
+            "name": "格納式サーベル",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Returning Axe": {
             "_note": "Returning Axe",
+            "name": "帰還する斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Returning Blade": {
             "_note": "Returning Blade",
+            "name": "帰還する刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Ricochet Axes": {
             "_note": "Ricochet Axes",
+            "name": "跳弾の斧",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Rime Scepter": {
             "_note": "Rime Scepter",
+            "name": "霧氷の笏",
             "attack": {
                 "name": "攻撃"
             },
@@ -2348,6 +2624,7 @@
         },
         "Rocket Maul": {
             "_note": "Rocket Maul",
+            "name": "噴射大槌",
             "attack": {
                 "name": "攻撃"
             },
@@ -2359,12 +2636,14 @@
         },
         "Rope Dart": {
             "_note": "Rope Dart",
+            "name": "縄付きの投げ矢",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Round Shield": {
             "_note": "Round Shield",
+            "name": "円盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2377,6 +2656,7 @@
         },
         "Rune Shield": {
             "_note": "Rune Shield",
+            "name": "ルーンの盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2389,6 +2669,7 @@
         },
         "Runelock Pistol": {
             "_note": "Runelock Pistol",
+            "name": "ルーン式拳銃",
             "attack": {
                 "name": "攻撃"
             },
@@ -2400,30 +2681,35 @@
         },
         "Runes of Ruination": {
             "_note": "Runes of Ruination",
+            "name": "破滅のルーン",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Scepter": {
             "_note": "Scepter",
+            "name": "笏",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Scepter of Elias": {
             "_note": "Scepter of Elias",
+            "name": "エリアスの笏",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Scimitar": {
             "_note": "Scimitar",
+            "name": "シミター",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Segmented Staff": {
             "_note": "Segmented Staff",
+            "name": "節杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -2438,6 +2724,7 @@
         },
         "Severed Dragon Claw": {
             "_note": "Severed Dragon Claw",
+            "name": "切り落とされた竜の爪",
             "attack": {
                 "name": "攻撃"
             },
@@ -2454,24 +2741,28 @@
         },
         "Shadowblade": {
             "_note": "Shadowblade",
+            "name": "影の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Shortbow": {
             "_note": "Shortbow",
+            "name": "ショートボウ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Shortstaff": {
             "_note": "Shortstaff",
+            "name": "短杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Shortsword": {
             "_note": "Shortsword",
+            "name": "ショートソード",
             "attack": {
                 "name": "攻撃"
             },
@@ -2483,6 +2774,7 @@
         },
         "Singing Sword": {
             "_note": "Singing Sword",
+            "name": "歌う剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -2494,12 +2786,14 @@
         },
         "Siphoning Gauntlets": {
             "_note": "Siphoning Gauntlets",
+            "name": "吸収の籠手",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Sledge Axe": {
             "_note": "Sledge Axe",
+            "name": "大槌斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -2511,6 +2805,7 @@
         },
         "Small Dagger": {
             "_note": "Small Dagger",
+            "name": "小型の短剣",
             "attack": {
                 "name": "攻撃"
             },
@@ -2522,6 +2817,7 @@
         },
         "Soldier's Pike": {
             "_note": "Soldier's Pike",
+            "name": "兵士のパイク",
             "attack": {
                 "name": "攻撃"
             },
@@ -2533,6 +2829,7 @@
         },
         "Soul Chain": {
             "_note": "Soul Chain",
+            "name": "魂の鎖",
             "attack": {
                 "name": "攻撃"
             },
@@ -2544,24 +2841,28 @@
         },
         "Spear": {
             "_note": "Spear",
+            "name": "スピア",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Spellbound Bangles": {
             "_note": "Spellbound Bangles",
+            "name": "呪縛の腕輪",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Spiked Bow": {
             "_note": "Spiked Bow",
+            "name": "棘付きの弓",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Spiked Shield": {
             "_note": "Spiked Shield",
+            "name": "棘付きの盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2576,12 +2877,14 @@
         },
         "Splintershaft Bow": {
             "_note": "Splintershaft Bow",
+            "name": "裂け柄の弓",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Staff of Augma": {
             "_note": "Staff of Augma",
+            "name": "アウグマの杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -2599,6 +2902,7 @@
         },
         "Starmetal Blade": {
             "_note": "Starmetal Blade",
+            "name": "星金属の刃",
             "attack": {
                 "name": "攻撃"
             },
@@ -2610,12 +2914,14 @@
         },
         "Steelforged Halberd": {
             "_note": "Steelforged Halberd",
+            "name": "鋼鍛えのハルバード",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Storm God's Greataxe": {
             "_note": "Storm God's Greataxe",
+            "name": "嵐神の大斧",
             "attack": {
                 "name": "攻撃"
             },
@@ -2627,24 +2933,28 @@
         },
         "Swinging Ropeblade": {
             "_note": "Swinging Ropeblade",
+            "name": "振り回す縄刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Sword of Light & Flame": {
             "_note": "Sword of Light & Flame",
+            "name": "光と炎の剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Talon Blades": {
             "_note": "Talon Blades",
+            "name": "鉤爪の刃",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Thistlebow": {
             "_note": "Thistlebow",
+            "name": "薊の弓",
             "attack": {
                 "name": "攻撃"
             },
@@ -2657,12 +2967,14 @@
         },
         "Throwing Knives": {
             "_note": "Throwing Knives",
+            "name": "投げナイフ",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Tinker's Hammer": {
             "_note": "Tinker's Hammer",
+            "name": "細工師の鎚",
             "attack": {
                 "name": "攻撃"
             },
@@ -2675,6 +2987,7 @@
         },
         "Tower Shield": {
             "_note": "Tower Shield",
+            "name": "塔盾",
             "attack": {
                 "name": "攻撃"
             },
@@ -2691,24 +3004,28 @@
         },
         "Twisted Dagger": {
             "_note": "Twisted Dagger",
+            "name": "捻れた短剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Urok Broadsword": {
             "_note": "Urok Broadsword",
+            "name": "ウロクの幅広剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Void Needle": {
             "_note": "Void Needle",
+            "name": "虚無の針",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Vorpal Shard": {
             "_note": "Vorpal Shard",
+            "name": "首切りの破片",
             "attack": {
                 "name": "攻撃"
             },
@@ -2720,12 +3037,14 @@
         },
         "Wand": {
             "_note": "Wand",
+            "name": "ワンド",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Wand of Enthrallment": {
             "_note": "Wand of Enthrallment",
+            "name": "魅了の細杖",
             "attack": {
                 "name": "攻撃"
             },
@@ -2743,18 +3062,21 @@
         },
         "Wand of Essek": {
             "_note": "Wand of Essek",
+            "name": "エセックの細杖",
             "attack": {
                 "name": "攻撃"
             }
         },
         "War Dart": {
             "_note": "War Dart",
+            "name": "戦の投げ矢",
             "attack": {
                 "name": "攻撃"
             }
         },
         "War Pick": {
             "_note": "War Pick",
+            "name": "戦鶴嘴",
             "attack": {
                 "name": "攻撃"
             },
@@ -2766,6 +3088,7 @@
         },
         "War Scythe": {
             "_note": "War Scythe",
+            "name": "戦大鎌",
             "attack": {
                 "name": "攻撃"
             },
@@ -2778,6 +3101,7 @@
         },
         "Warhammer": {
             "_note": "Warhammer",
+            "name": "ウォーハンマー",
             "attack": {
                 "name": "攻撃"
             },
@@ -2790,24 +3114,28 @@
         },
         "Whip": {
             "_note": "Whip",
+            "name": "鞭",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Whipsword": {
             "_note": "Whipsword",
+            "name": "鞭剣",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Widogast Pendant": {
             "_note": "Widogast Pendant",
+            "name": "ウィドーガストのペンダント",
             "attack": {
                 "name": "攻撃"
             }
         },
         "Yutari Bloodbow": {
             "_note": "Yutari Bloodbow",
+            "name": "ユタリの血弓",
             "attack": {
                 "name": "攻撃"
             }

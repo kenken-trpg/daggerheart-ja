@@ -4,5 +4,6 @@
     "daggerheart.subclasses / Perfect Recall :: actions.rFZj0ZsnJCc0PS3h.name": "Recalling a card from the vault (リコール, as the card UI calls it), not the Knowledge trait's verb (想起する).",
     "en:Guardian": "An adversary's experience 守護者 ('one who guards'), which is not the Guardian class (ガーディアン).",
     "daggerheart.adversaries / Sprite :: name": "The adversary species スプライト, not the generic word for a fey: the Forest Sprites card summons 妖精, which is also what the Redcaps are called.",
-    "daggerheart.adversaries / Vault Guardian Sentinel :: items.DLspoIclNJcTB3YJ.actions.4RQnBu4kcUs3PcPH.name": "Taking aim at a target (狙いを定める), not the Sigil of Retribution's heraldic marking (紋章を刻む)."
+    "daggerheart.adversaries / Vault Guardian Sentinel :: items.DLspoIclNJcTB3YJ.actions.4RQnBu4kcUs3PcPH.name": "Taking aim at a target (狙いを定める), not the Sigil of Retribution's heraldic marking (紋章を刻む).",
+    "daggerheart.weapons / Grappler :: name": "The grappling-hook device 鉤縄, not the Masque Muerte Experience of the same name, which is the grappling skill 組み技."
 }
