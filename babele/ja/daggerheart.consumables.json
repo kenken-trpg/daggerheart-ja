@@ -379,7 +379,7 @@
         "Emberite Shard": {
             "_note": "Emberite Shard",
             "name": "燃え殻石の破片",
-            "description": "<p>遠距離以内の地点を1つ選びます。その地点から近距離以内のすべての対象は、リアクションロール（16）に成功しなければ、3d6の魔法ダメージを受け、一時的に燃焼状態になります。燃焼状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、燃焼の状態を消去します。</p>",
+            "description": "<p>遠距離以内の地点を1つ選びます。その地点から近距離以内のすべての対象は、リアクションロール（16）に成功しなければ、3d6の魔法ダメージを受け、一時的に炎上状態になります。炎上状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、炎上の状態を消去します。</p>",
             "actions": {
                 "Vn84rygVCeQ2wt4S": {
                     "name": "使う",
@@ -392,8 +392,8 @@
             },
             "effects": {
                 "H8wg8ZbvK3EY9UXd": {
-                    "name": "燃焼",
-                    "description": "<p>燃焼状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、燃焼の状態を消去します。</p>"
+                    "name": "炎上",
+                    "description": "<p>炎上状態のあいだ、クリーチャーはアクションロールを行うたびにd4を振らなければなりません。結果が1の場合、HPを1マークします。結果が4の場合、炎上の状態を消去します。</p>"
                 }
             }
         },
@@ -786,6 +786,8 @@
         },
         "Major Arcane Shard": {
             "_note": "Major Arcane Shard",
+            "name": "大秘術石の破片",
+            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は4d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "8JHqtEYD0uOGwHdd": {
                     "name": "投げつけ"
@@ -794,46 +796,83 @@
         },
         "Major Attune Potion": {
             "_note": "Major Attune Potion",
+            "name": "大同調の薬",
+            "description": "<p>次の休息まで直感に＋1のボーナスを得ます。</p>",
             "actions": {
                 "zerWKpcBvtiaUfaw": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "v2EXGXbJaewaMxFC": {
+                    "name": "大同調の薬"
                 }
             }
         },
         "Major Bolster Potion": {
             "_note": "Major Bolster Potion",
+            "name": "大強壮の薬",
+            "description": "<p>次の休息まで頑強に＋1のボーナスを得ます。</p>",
             "actions": {
                 "Z7ehTbRegQvq74tl": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "3PfXBJy0ZjLBDAIn": {
+                    "name": "大強壮の薬"
                 }
             }
         },
         "Major Charm Potion": {
             "_note": "Major Charm Potion",
+            "name": "大魅了の薬",
+            "description": "<p>次の休息まで社交に＋1のボーナスを得ます。</p>",
             "actions": {
                 "Bz6oZUN317mLvQSk": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "3iXv9QiuLGOfDCi2": {
+                    "name": "大魅了の薬"
                 }
             }
         },
         "Major Control Potion": {
             "_note": "Major Control Potion",
+            "name": "大制御の薬",
+            "description": "<p>次の休息まで器用に＋1のボーナスを得ます。</p>",
             "actions": {
                 "fk272mE2zHIHq8qR": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "YOgojNdjARXUUrky": {
+                    "name": "大制御の薬"
                 }
             }
         },
         "Major Enlighten Potion": {
             "_note": "Major Enlighten Potion",
+            "name": "大啓明の薬",
+            "description": "<p>次の休息まで知識に＋1のボーナスを得ます。</p>",
             "actions": {
                 "cZL1A3hNXHbjfwi3": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "Ul5brgnx88npVGNj": {
+                    "name": "大啓明の薬"
                 }
             }
         },
         "Major Health Potion": {
             "_note": "Major Health Potion",
+            "name": "大治癒の薬",
+            "description": "<p>HPを1d4+2消去します。</p>",
             "actions": {
                 "Xm2ldAlmUQY4jlLb": {
                     "name": "飲む"
@@ -842,6 +881,8 @@
         },
         "Major Stamina Potion": {
             "_note": "Major Stamina Potion",
+            "name": "大体力の薬",
+            "description": "<p>ストレスを1d4+2消去します。</p>",
             "actions": {
                 "3duuNVqCeQaUUKTo": {
                     "name": "飲む"
@@ -850,14 +891,23 @@
         },
         "Major Stride Potion": {
             "_note": "Major Stride Potion",
+            "name": "大疾走の薬",
+            "description": "<p>次の休息まで素早さに＋1のボーナスを得ます。</p>",
             "actions": {
                 "UIVnvI726LJnlK86": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "L9dAw8pws1o02XkE": {
+                    "name": "大疾走の薬"
                 }
             }
         },
         "Mask of the Echoed Self": {
             "_note": "Mask of the Echoed Self",
+            "name": "反響する自己の仮面",
+            "description": "<p>次のレベルアップのときにこの仮面をかぶって、自分の特性の値を任意に入れ替えられます。そうした場合、この仮面はあなたの永久の顔になります。</p>",
             "actions": {
                 "PAq1qXNxaJSLhaDZ": {
                     "name": "使う"
@@ -866,17 +916,34 @@
         },
         "Mesmer's Tonic": {
             "_note": "Mesmer's Tonic",
+            "name": "魅惑師の強壮薬",
+            "description": "<p>この強壮薬を飲んだとき、次の休息まで、あなたに聞こえるのは至近距離以内のクリーチャーの表層の思考だけになります。</p>",
             "actions": {
                 "Phn88PDC41cdVDfi": {
                     "name": "飲む"
                 }
+            },
+            "effects": {
+                "i0aZGk4NPFEvEz8A": {
+                    "name": "魅惑師の強壮薬",
+                    "description": "<p>この強壮薬を飲んだとき、次の休息まで、あなたに聞こえるのは至近距離以内のクリーチャーの表層の思考だけになります。</p>"
+                }
             }
         },
         "Midas Flask": {
-            "_note": "Midas Flask"
+            "_note": "Midas Flask",
+            "name": "ミダスの小瓶",
+            "description": "<p>この小瓶の錬金液を普通のアイテムに注いで、直ちにひと掴みの金貨へ変成できます。</p>",
+            "actions": {
+                "x95WATbyPt8gmmHT": {
+                    "name": "注ぐ"
+                }
+            }
         },
         "Minor Health Potion": {
             "_note": "Minor Health Potion",
+            "name": "小治癒の薬",
+            "description": "<p>HPを1d4消去します。</p>",
             "actions": {
                 "9HVL2MPFX9VGiSsV": {
                     "name": "飲む"
@@ -885,6 +952,8 @@
         },
         "Minor Stamina Potion": {
             "_note": "Minor Stamina Potion",
+            "name": "小体力の薬",
+            "description": "<p>ストレスを1d4消去します。</p>",
             "actions": {
                 "fdjpkjhzHQOrZPm0": {
                     "name": "飲む"
@@ -893,6 +962,8 @@
         },
         "Mirror of Marigold": {
             "_note": "Mirror of Marigold",
+            "name": "マリゴールドの鏡",
+            "description": "<p>ダメージを受けたとき、希望を1消費してそのダメージを無効化できます。そのあと鏡は砕けます。</p>",
             "actions": {
                 "EPN43cQmNC97cCw9": {
                     "name": "使う"
@@ -901,6 +972,8 @@
         },
         "Mnemonic Potion": {
             "_note": "Mnemonic Potion",
+            "name": "記憶術の薬",
+            "description": "<p>この薬を飲んで、希望を消費せずに経験を活用できます。</p>",
             "actions": {
                 "k5WiotZKqgqnIhA2": {
                     "name": "飲む"
@@ -909,6 +982,8 @@
         },
         "Moonlight Orb": {
             "_note": "Moonlight Orb",
+            "name": "月光の宝珠",
+            "description": "<p>この宝珠を砕いて、超遠距離以内の範囲を、その後24時間のあいだ月明かりの夜のように見せられます。</p>",
             "actions": {
                 "1U6wvIFjYqA34md4": {
                     "name": "砕く"
@@ -917,41 +992,83 @@
         },
         "Morphing Clay": {
             "_note": "Morphing Clay",
+            "name": "変形の粘土",
+            "description": "<p>希望を1消費してこの粘土を使い、次の休息まで自分の顔を見分けられないほどに変えられます。</p>",
             "actions": {
                 "S4wEG1RzfLNtvcg7": {
                     "name": "使う"
                 }
+            },
+            "effects": {
+                "rMno0zO5Cbwlu4zn": {
+                    "name": "変形の粘土",
+                    "description": "<p>次の休息まで、あなたの顔は見分けられません。</p>"
+                }
             }
         },
         "Mossmantle Potion": {
-            "_note": "Mossmantle Potion"
+            "_note": "Mossmantle Potion",
+            "name": "苔衣の薬",
+            "description": "<p>この茶を飲んで、次の休息まで自然の環境に完璧に溶け込めます。</p>",
+            "effects": {
+                "sD8E0UwaDP0eWKdC": {
+                    "name": "溶け込み",
+                    "description": "<p>この茶を飲んで、次の休息まで自然の環境に完璧に溶け込めます。</p>"
+                }
+            }
         },
         "Mythic Dust": {
             "_note": "Mythic Dust",
+            "name": "神話の粉",
+            "description": "<p>この粉を魔法ダメージを与える武器に塗って、その武器での次のダメージロールにd12を加えられます。</p>",
             "actions": {
                 "oHph7e6VrOwPetbE": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "L68lFhuWdS3ppDxR": {
+                    "name": "神話の粉"
                 }
             }
         },
         "Necroprancer's Bell": {
             "_note": "Necroprancer's Bell",
+            "name": "死馬躍らせの鈴",
+            "description": "<p>この錆びた舌のない鈴を地面に打ちつけて割り、地中から這い出て次の日の出まであなたに仕える骸骨の騎乗獣を召喚できます。</p>",
             "actions": {
                 "pcvtxqrsExvk81Cc": {
                     "name": "割る"
+                }
+            },
+            "effects": {
+                "Oihi5Ky4bcPQnKDI": {
+                    "name": "死馬躍らせの鈴",
+                    "description": "<p>この錆びた舌のない鈴を地面に打ちつけて割り、地中から這い出て次の日の出まであなたに仕える骸骨の騎乗獣を召喚できます。</p>",
+                    "durationDescription": "<p>次の日の出</p>"
                 }
             }
         },
         "Night Hag's Dust": {
             "_note": "Night Hag's Dust",
+            "name": "夜の鬼婆の粉",
+            "description": "<p>この粉を敵対者の顔に吹きつけて、次の長期休息までその敵対者がストレスを消去できないようにできます。</p>",
             "actions": {
                 "8ElDwnjDsJop9qRi": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "jha2Ky9tdadIpZ7T": {
+                    "name": "夜の鬼婆の粉",
+                    "description": "<p>この粉を敵対者の顔に吹きつけて、次の長期休息までその敵対者がストレスを消去できないようにできます。</p>"
                 }
             }
         },
         "Nightmare Mead": {
             "_note": "Nightmare Mead",
+            "name": "悪夢の蜂蜜酒",
+            "description": "<p>この薬を飲んで、次に目を合わせた相手の最も深い恐れを知れます。そうした場合、GMは恐怖を1得ます。</p>",
             "actions": {
                 "rW0fiHW8nt8ZRbXm": {
                     "name": "飲む"
@@ -960,14 +1077,24 @@
         },
         "Ogre Musk": {
             "_note": "Ogre Musk",
+            "name": "オーガの香",
+            "description": "<p>この香を使って、次の休息まで、普通の手段でも魔法の手段でも誰にも追跡されないようにできます。</p>",
             "actions": {
                 "t0vgSnAuIcj7IevQ": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "n73d0J4oMCBIPWHN": {
+                    "name": "オーガの香",
+                    "description": "<p>次の休息まで、普通の手段でも魔法の手段でも追跡されません。</p>"
                 }
             }
         },
         "Packet of Space Dust": {
             "_note": "Packet of Space Dust",
+            "name": "星辰の粉の小包",
+            "description": "<p>この粉は、覆ったものを空気より軽くします。1包にはピクニック籠の中身を覆えるだけの粉が入っており、効果は1時間持続します。</p>",
             "actions": {
                 "bVXuZXEmYW6RJwLh": {
                     "name": "使う"
@@ -975,12 +1102,16 @@
             },
             "effects": {
                 "GqjpFGEyO7V4w0C7": {
+                    "name": "星辰の粉まみれ",
+                    "description": "<p>この粉は、覆ったものを空気より軽くします。効果は1時間持続します。</p>",
                     "durationDescription": "<p>1時間</p>"
                 }
             }
         },
         "Phial of Deep Ink": {
             "_note": "Phial of Deep Ink",
+            "name": "深海の墨の小瓶",
+            "description": "<p>この瓶の墨を飲んで、その後1時間のあいだ、おおよそ自分と同じ大きさの頭足類に変身できます。ゴムのような皮膚、柔らかい骨、水中で呼吸する能力を得て、手足が合計8本になるまで新しい手足が生えます。</p>",
             "actions": {
                 "w4GSznmO2AyEuVgY": {
                     "name": "飲む"
@@ -988,23 +1119,41 @@
             },
             "effects": {
                 "9HHlvGuxhvOqe4JX": {
+                    "name": "深海の墨の小瓶",
+                    "description": "<p>この瓶の墨を飲んで、その後1時間のあいだ、おおよそ自分と同じ大きさの頭足類に変身できます。ゴムのような皮膚、柔らかい骨、水中で呼吸する能力を得て、手足が合計8本になるまで新しい手足が生えます。</p>",
                     "durationDescription": "<p>1時間</p>"
                 }
             }
         },
         "Pipeweed": {
-            "_note": "Pipeweed"
+            "_note": "Pipeweed",
+            "name": "喫煙草",
+            "description": "<p>短期休息中に「ストレスを消去する」のダウンタイムムーブを選んだとき、この酔わない葉を喫して、追加でストレスを1消去できます。「ストレスを消去する」のダウンタイムムーブを選んだ他のPCも、この恩恵を得ます。</p>",
+            "actions": {
+                "z1s1NGbVvRiRFpER": {
+                    "name": "喫する"
+                }
+            }
         },
         "Potion of Stability": {
             "_note": "Potion of Stability",
+            "name": "安定の薬",
+            "description": "<p>この薬を飲んで、ダウンタイムムーブを1つ追加で選べます。</p>",
             "actions": {
                 "ifj42z5FhfMVyyd1": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "PjjGC4TpzjSz9z8s": {
+                    "name": "安定の薬"
                 }
             }
         },
         "Potion of Vigilance": {
             "_note": "Potion of Vigilance",
+            "name": "警戒の薬",
+            "description": "<p>この薬を飲んで、HPを1マークするまで回避値に＋1のボーナスを得られます。</p>",
             "actions": {
                 "OyzV63XMO4ndOH0w": {
                     "name": "飲む"
@@ -1012,12 +1161,15 @@
             },
             "effects": {
                 "G0wMnYEtCryop6IX": {
-                    "name": "警戒"
+                    "name": "警戒",
+                    "description": "<p>この薬を飲んで、HPを1マークするまで回避値に＋1のボーナスを得られます。</p>"
                 }
             }
         },
         "Psychopomp's Shroud": {
             "_note": "Psychopomp's Shroud",
+            "name": "死の導き手の覆い",
+            "description": "<p>この覆いを、死んで間もないクリーチャーの死体にかけられます。そのクリーチャーの霊は覆いに入り、次の日の出まであなたの霊の助手になります。日の出とともに霊は死の帳を越え、覆いを持っていきます。</p>",
             "actions": {
                 "FrzmFgaqCApbu3Km": {
                     "name": "使う"
@@ -1026,6 +1178,8 @@
         },
         "Quintessential Severant": {
             "_note": "Quintessential Severant",
+            "name": "真髄断ち",
+            "description": "<p>この魔法の刃を使い、付呪、契約、魔法のつながり、神への誓いといった、魔法的あるいは形而上の結びつきを1つ断てます。そうした場合、刃は砕けます。</p>",
             "actions": {
                 "vlPzHqlUT2JLoeKz": {
                     "name": "使う"
@@ -1034,9 +1188,25 @@
         },
         "Red Ooze Oil": {
             "_note": "Red Ooze Oil",
+            "name": "赤の軟泥の油",
+            "description": "<p>この油を自分の武器に塗れます。この武器で次に成功した攻撃は、追加で1d8の魔法ダメージを与え、対象を一時的に燃焼状態にします。燃焼状態のあいだ、対象はスポットライトを得たときに1d4の魔法ダメージを受けます。</p>",
             "actions": {
                 "eqXBNr0DbYAIVGS9": {
                     "name": "塗る"
+                },
+                "jD3LZE5YeVjfTAtU": {
+                    "name": "燃え上がらせる",
+                    "description": "<p>燃焼状態のあいだ、対象はスポットライトを得たときに1d4の魔法ダメージを受けます。</p>"
+                }
+            },
+            "effects": {
+                "x3sGgfLR0gkXxw5f": {
+                    "name": "赤の軟泥の油",
+                    "description": "<p>この油を自分の武器に塗れます。この武器で次に成功した攻撃は、追加で1d8の魔法ダメージを与え、対象を一時的に燃焼状態にします。</p>"
+                },
+                "f7f3BWAGe5vkkruK": {
+                    "name": "燃焼",
+                    "description": "<p>燃焼状態のあいだ、対象はスポットライトを得たときに1d4の魔法ダメージを受けます。</p>"
                 }
             }
         },
