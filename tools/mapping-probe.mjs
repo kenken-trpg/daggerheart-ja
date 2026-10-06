@@ -94,16 +94,19 @@ const check = (label, actual, expected) =>
     const data = await document('classes', '0Qw2heB75eXNV4SM');
     const out = translate('Item', data, await translationsFor('daggerheart.classes', '0Qw2heB75eXNV4SM', data.name));
     check('backgroundQuestions[2] translated', out.system.backgroundQuestions[2], 'あなたが最近敗れ、どうしても再戦したい相手は誰ですか？');
-    check('backgroundQuestions[0] left alone', out.system.backgroundQuestions[0], data.system.backgroundQuestions[0]);
+    check('backgroundQuestions[0] translated', out.system.backgroundQuestions[0],
+        '直接にも間接にも、あなたが今の型で戦う術を学んだのは、形成期をどこで過ごしたからですか？');
     check('backgroundQuestions length', out.system.backgroundQuestions.length, data.system.backgroundQuestions.length);
     check('connections[2] translated', out.system.connections[2], 'あなたが私に言ったことを、私はまだ許していません。それは何で、なぜ言ったのですか？');
-    check('connections[1] left alone', out.system.connections[1], data.system.connections[1]);
+    check('connections[1] translated', out.system.connections[1],
+        '旅の中で、私はあなたの何を頼りにしていますか？それについてあなたはどう感じていますか？');
     const tier = out.system.levelupOptionTiers['4'].kX18xCR6KbTS3iTP;
     const tierBefore = data.system.levelupOptionTiers['4'].kX18xCR6KbTS3iTP;
-    check('levelup label', tier.label, 'コンボ・ダイを永続的に1段階上げる（d4からd6、d6からd8など）。');
+    check('levelup label', tier.label, 'コンボダイスを1段階永続的に上げる（d4からd6、d6からd8など）。');
     check('levelup subType untouched', tier.subType, tierBefore.subType);
     check('levelup minCost untouched', tier.minCost, tierBefore.minCost);
-    check('untranslated tier 2 label intact', out.system.levelupOptionTiers['2'].UXJXoQH2UH12UaWS.label, tierBefore.label);
+    /* the same option appears in two tiers, so both copies must read the same */
+    check('tier 2 label matches tier 4', out.system.levelupOptionTiers['2'].UXJXoQH2UH12UaWS.label, tier.label);
 }
 
 /* --- effects: an object-valued change, and duration prose ------------- */
@@ -169,8 +172,8 @@ const check = (label, actual, expected) =>
     const first = out.results.find(r => r._id === 'LDuVbmdvhJiEOe7U');
     check('text result description', first.description, '<p>重要なアイテムを入手する（手に入れる、または盗む）。</p>');
     check('text result range untouched', first.range, table.results.find(r => r._id === 'LDuVbmdvhJiEOe7U').range);
-    check('untranslated result left alone', out.results.find(r => r._id === 'bTkZgxqEr4lNxzeK').description,
-        table.results.find(r => r._id === 'bTkZgxqEr4lNxzeK').description);
+    check('a later result is translated too', out.results.find(r => r._id === 'bTkZgxqEr4lNxzeK').description,
+        '<p>魔法の装置を起動する。</p>');
     check('result count', out.results.length, table.results.length);
 }
 {
@@ -222,9 +225,8 @@ const check = (label, actual, expected) =>
     check('page body translated', dice?.text?.content?.includes('希望・恐怖・有利・不利'), true);
     check('the link inside it survived',
         dice?.text?.content?.includes('https://foundryvtt.com/packages/dice-so-nice'), true);
-    const untouched = out.pages.find(p => p.name === 'Automation / Manual');
-    check('an untranslated page is left alone', untouched?.text?.content,
-        welcome.pages.find(p => p.name === 'Automation / Manual').text.content);
+    const automation = out.pages.find(p => p.name === '自動処理／手動');
+    check('every permitted page is translated', !!automation, true);
     check('page count', out.pages.length, welcome.pages.length);
 
     /*
