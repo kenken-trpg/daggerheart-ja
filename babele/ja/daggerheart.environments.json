@@ -1294,14 +1294,14 @@
         },
         "Grand Feast": {
             "_note": "Grand Feast",
+            "name": "大宴会",
+            "description": "<p>飲み物、食べ物、そして楽しみが多すぎるほど揃った、共同体ぐるみの祝い。</p>",
+            "impulses": "皆を一つに集める、節目を祝う、羽目を外させる",
             "potentialAdversaries": {
                 "XVwmaoATfYXwo3B2": {
                     "label": "敵対者"
                 }
             },
-            "name": "大宴会",
-            "description": "<p>飲み物、食べ物、そして楽しみが多すぎるほど揃った、共同体ぐるみの祝い。</p>",
-            "impulses": "皆を一つに集める、節目を祝う、羽目を外させる",
             "items": {
                 "FcbTcbTe6fcl5nCe": {
                     "name": "軽い口と早い友",
@@ -1364,24 +1364,23 @@
         },
         "Hallowed Temple": {
             "_note": "Hallowed Temple",
+            "name": "聖なる神殿",
+            "description": "<p>賑わいながらもよく手入れされた神殿。癒しを施し、定期の礼拝を営み、司祭またはセラフが監督している。</p>",
+            "impulses": "定命の領域を上なる聖域と繋ぐ、神の力を示す、信徒に助けと慰めを与える",
+            "potentialAdversaries": {
+                "4oKNnCRPuWEFni6D": {
+                    "label": "衛兵たち"
+                }
+            },
             "items": {
                 "hgHpS2k1sVxHKiG1": {
+                    "name": "癒しの場",
+                    "description": "<p>聖なる神殿で休憩を取ったPCは、自動的にHPをすべて消します。</p><section class=\"secret\" id=\"secret-L4xPjXbsFBvAJkG3\"><p><em>その香はどんな匂いがするのか。従者たちはどんな歌を歌うのか。</em></p></section>",
                     "actions": {
                         "uLCoTKa7Jn2HaRqR": {
                             "name": "治癒"
                         }
-                    },
-                    "name": "癒しの場",
-                    "description": "<p>聖なる神殿で休憩を取ったPCは、自動的にHPをすべて消します。</p><section class=\"secret\" id=\"secret-L4xPjXbsFBvAJkG3\"><p><em>その香はどんな匂いがするのか。従者たちはどんな歌を歌うのか。</em></p></section>"
-                },
-                "8tGAuFRyM4onvQ2o": {
-                    "actions": {
-                        "pJVipg7CbA9CB0Um": {
-                            "name": "汎用"
-                        }
-                    },
-                    "name": "神の譴責",
-                    "description": "<p>PCたちが不法に立ち入り、冒瀆を働き、あるいは聖職者たちを怒らせたとき、<strong>恐怖を1消費</strong>して、その意志を押し通すため、上位の司祭の近距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.r1mbfSSwKWdcFdAU]{高位セラフ}1体と[[/r 1d4]]体の@UUID[Compendium.daggerheart.adversaries.Actor.B4LZcGuBAHzyVdzy]{剣衛兵}を召喚できます。</p><section class=\"secret\" id=\"secret-bJG5Vk2KPgau6rQB\"><p><em>彼らが神の塗油を受けた使い手であることを示す、どんな象徴や聖印を帯びているのか。その集団を率いるのは誰で、何がその者をこの召命へ導いたのか。</em></p></section>"
+                    }
                 },
                 "uqV1mTkJmXJwMYue": {
                     "name": "神の導き",
@@ -1396,34 +1395,30 @@
                             "description": "<p>シーンごとに1回、各PCはストレスを1マークして、恐怖とともにの結果を希望とともにの結果に変えられます。</p><section class=\"secret\" id=\"secret-1BKTtBh9igK1y871\"><p><em>恐怖が迫るとき、あなたはどんな感情や記憶に繋がるのか。</em></p></section>"
                         }
                     }
-                }
-            },
-            "name": "聖なる神殿",
-            "description": "<p>賑わいながらもよく手入れされた神殿。癒しを施し、定期の礼拝を営み、司祭またはセラフが監督している。</p>",
-            "impulses": "定命の領域を上なる聖域と繋ぐ、神の力を示す、信徒に助けと慰めを与える",
-            "potentialAdversaries": {
-                "4oKNnCRPuWEFni6D": {
-                    "label": "衛兵たち"
+                },
+                "8tGAuFRyM4onvQ2o": {
+                    "name": "神の譴責",
+                    "description": "<p>PCたちが不法に立ち入り、冒瀆を働き、あるいは聖職者たちを怒らせたとき、<strong>恐怖を1消費</strong>して、その意志を押し通すため、上位の司祭の近距離以内に@UUID[Compendium.daggerheart.adversaries.Actor.r1mbfSSwKWdcFdAU]{高位セラフ}1体と[[/r 1d4]]体の@UUID[Compendium.daggerheart.adversaries.Actor.B4LZcGuBAHzyVdzy]{剣衛兵}を召喚できます。</p><section class=\"secret\" id=\"secret-bJG5Vk2KPgau6rQB\"><p><em>彼らが神の塗油を受けた使い手であることを示す、どんな象徴や聖印を帯びているのか。その集団を率いるのは誰で、何がその者をこの召命へ導いたのか。</em></p></section>",
+                    "actions": {
+                        "pJVipg7CbA9CB0Um": {
+                            "name": "汎用"
+                        }
+                    }
                 }
             }
         },
         "Haunted City": {
             "_note": "Haunted City",
+            "name": "幽霊の都市",
+            "description": "<p>過ぎた時代の安らがぬ霊たちが住む、捨てられた都市。</p>",
+            "impulses": "誤らせて方向を失わせる、公のものも個人のものも、終末を再演する",
+            "notes": "<p>潜在的な敵対者には以下も含まれます：</p><p><em><strong>他の敵対者の幽霊版（「幽霊の姿」参照）</strong></em></p>",
+            "potentialAdversaries": {
+                "h07vZopQbVt6dlY6": {
+                    "label": "幽霊たち"
+                }
+            },
             "items": {
-                "i0FV2Djaq0vB57cq": {
-                    "actions": {
-                        "VhqZKDA4032i8zY3": {
-                            "name": "カウントダウン開始",
-                            "countdown": [
-                                {
-                                    "name": "あの日の終末"
-                                }
-                            ]
-                        }
-                    },
-                    "name": "あの日の終末",
-                    "description": "<p><strong>恐怖を1消費</strong>して、かつてこの都市を荒らした災厄の残響を顕します。災厄がPCたちの周囲で再演される間、<em>進行カウントダウン（5）</em>を開始します。カウントダウンを完了させてその破局から逃れるには、PCたちは荒れ狂う炎、逃げ惑う市民、崩れる建物、崩落する街路といった脅威を越えながら、歴史を思い起こし、避けがたいものから逃れる手がかりを見つけなければなりません。</p><section class=\"secret\" id=\"secret-3MamLVZP4l2SxHzO\"><p><em>これは、この都市が捨てられる原因となった災厄なのか。この災厄について何が知られており、それはPCたちの脱出にどう役立つのか。</em></p></section>"
-                },
                 "h8Dv8pToiCVklPhv": {
                     "name": "埋もれた知識",
                     "description": "<p>この都市には解き明かされていない謎が数えきれないほどあります。滅びた都市について知ろうとするPCは、直感または知識ロールを行って、この場所について学び、（憑かれているかもしれない）戦利品を見つけられます。</p><ul><li><p><strong>クリティカル成功</strong>：価値ある情報と、それに関わる有用なアイテムを得ます。</p></li><li><p><strong>希望とともに成功：</strong>価値ある情報を得ます。</p></li><li><p><strong>恐怖とともに成功：</strong>漠然とした、あるいは不完全な情報を掴みます。</p></li><li><p><strong>いずれの失敗：</strong>ストレスを1マークして、徹底的に探した末に手がかりを1つ見つけます。</p></li></ul><section id=\"secret-b7Tkr2KzblSvwAPj\" class=\"secret\"><p><em>この都市はどんなより大きな秘密を抱えているのか。なぜこれほど多くの幽霊がここに留まっているのか。すでにここで悪しき末路を迎えた、破滅した冒険者たちとは誰か。</em></p></section>"
@@ -1447,28 +1442,33 @@
                 "ZA2RzxH5FlnrcYLN": {
                     "name": "行き止まり",
                     "description": "<p>かつての時代の幽霊たちが、街路の祭り、革命、強盗など、過ぎ去った時代の場面を顕します。これらの憑依はPCたちの周囲の都市の形を変え、来た道を塞ぎ、迂回を強い、あるいは——強盗の最中に競合する盗人と間違われるなど——難題を突きつけます。</p><section id=\"secret-ttpwol0cvVxPyK7e\" class=\"secret\"><p><em>幽霊たちはあなたから何を望んでいるのか。あなたは彼らから何を必要としているのか。</em></p></section>"
-                }
-            },
-            "name": "幽霊の都市",
-            "description": "<p>過ぎた時代の安らがぬ霊たちが住む、捨てられた都市。</p>",
-            "impulses": "誤らせて方向を失わせる、公のものも個人のものも、終末を再演する",
-            "notes": "<p>潜在的な敵対者には以下も含まれます：</p><p><em><strong>他の敵対者の幽霊版（「幽霊の姿」参照）</strong></em></p>",
-            "potentialAdversaries": {
-                "h07vZopQbVt6dlY6": {
-                    "label": "幽霊たち"
+                },
+                "i0FV2Djaq0vB57cq": {
+                    "name": "あの日の終末",
+                    "description": "<p><strong>恐怖を1消費</strong>して、かつてこの都市を荒らした災厄の残響を顕します。災厄がPCたちの周囲で再演される間、<em>進行カウントダウン（5）</em>を開始します。カウントダウンを完了させてその破局から逃れるには、PCたちは荒れ狂う炎、逃げ惑う市民、崩れる建物、崩落する街路といった脅威を越えながら、歴史を思い起こし、避けがたいものから逃れる手がかりを見つけなければなりません。</p><section class=\"secret\" id=\"secret-3MamLVZP4l2SxHzO\"><p><em>これは、この都市が捨てられる原因となった災厄なのか。この災厄について何が知られており、それはPCたちの脱出にどう役立つのか。</em></p></section>",
+                    "actions": {
+                        "VhqZKDA4032i8zY3": {
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "あの日の終末"
+                                }
+                            ]
+                        }
+                    }
                 }
             }
         },
         "Heist": {
             "_note": "Heist",
+            "name": "強盗",
+            "description": "<p>パーティは、内に守られた情報や品を手に入れるため、隠された、あるいは固く守られた場所への侵入を果たさなければならない。</p>",
+            "impulses": "パーティに下準備を強いる、分断する、障害を立てる、内に閉じ込める、資源を使い果たさせる",
             "potentialAdversaries": {
                 "gzQzvwR4kNa9okSB": {
                     "label": "敵対者"
                 }
             },
-            "name": "強盗",
-            "description": "<p>パーティは、内に守られた情報や品を手に入れるため、隠された、あるいは固く守られた場所への侵入を果たさなければならない。</p>",
-            "impulses": "パーティに下準備を強いる、分断する、障害を立てる、内に閉じ込める、資源を使い果たさせる",
             "items": {
                 "NYEgUIaGnponoqC0": {
                     "name": "下準備",
@@ -1525,13 +1525,76 @@
             }
         },
         "Hold The Line": {
-            "_note": "Hold The Line"
+            "_note": "Hold The Line",
+            "name": "戦線を保て",
+            "description": "<p>味方が重要な目的を果たし終えるまで、パーティは何波もの敵を押し返さなければならない。</p>",
+            "impulses": "敵の波をパーティの岸辺に打ちつける、息をつかせない、守るべき者を狙う",
+            "items": {
+                "TtbL2KY7QoeCG82g": {
+                    "name": "護衛",
+                    "description": "<p>PCたちは、NPC（その「守るべき者」）が、魔法の儀式を終える、機械の装置を直すといった務めを果たし終えるまで、その者を守らなければなりません。シーンの始めに、シーン内のPCの人数と同じ値で務めのカウントダウンを開始します。これはPCたちが敵対者の波を1つ退けたときに進みます。発動したとき、守るべき者はその務めを果たし終えます。</p><section id=\"secret-R8KOc1205jXsMlww\" class=\"secret\"><p>PCたちが守っているのは誰で、その守るべき者は何をしようとしているのか。それを止めたいのは誰か。守るべき者が務めを果たせなかったら何が起こるのか。</p></section>"
+                },
+                "PLpqyj4fQgYvSdPb": {
+                    "name": "「失敗は許されぬ！」",
+                    "description": "<p>最初の敵対者の波が現れたとき、シーン内のPCの人数と同じ値の決意のカウントダウンを、守るべき者の傍らに置きます。敵対者が守るべき者に攻撃を行ったとき、その攻撃は自動的に成功し、決意のカウントダウンが進みます。発動したとき、守るべき者は逃げ去るか、死ぬか、動けなくなります。</p><section id=\"secret-JWroAY99fQXoYGpH\" class=\"secret\"><p>この務めは、守るべき者にとってなぜそれほど重要なのか。その決意を折る力を持つものは何か。</p></section>"
+                },
+                "ycAtgL8GOU2Igpvz": {
+                    "name": "群がる大軍",
+                    "description": "<p>すべての敵対者は「リレントレス（2）」の特徴を得ます。GMのターンごとに2回までスポットライトを当てられます。スポットライトを当てるには通常どおり恐怖を消費します。</p><section id=\"secret-usl2dk9xB2kyjwK4\" class=\"secret\"><p>この敵たちが新たに得た力はどこから来ているのか。それを断つ手立てはあるのか。</p></section>"
+                },
+                "vaxu1A87BmoI6UvK": {
+                    "name": "波また波",
+                    "description": "<p>シーンに敵対者がいないとき、守るべき者から遠距離に敵対者の波を1つ召喚します。各波は、シーン内のPC1人につきティア1のミニオン2体で構成されます。</p><section id=\"secret-WrKxpSfCTwdbDVYX\" class=\"secret\"><p>これらの敵対者はどこから来るのか。影から彼らを率いているのは誰か。</p></section>"
+                }
+            }
         },
         "Imperial Court": {
             "_note": "Imperial Court",
             "potentialAdversaries": {
                 "JTuzman711Fqs3u1": {
                     "label": "その他"
+                }
+            },
+            "name": "帝国の宮廷",
+            "description": "<p>強大な帝国の壮麗な領域。奪い取った財宝で贅沢に飾られている。</p>",
+            "impulses": "帝国の統治を正当化し永続させる、力と安楽の約束で競争相手を誘惑する",
+            "items": {
+                "OXUbWRt1Dj0vk7mW": {
+                    "name": "すべての道はここに通ず",
+                    "description": "<p>帝国の宮廷にいる間、PCは、帝国の暮らしの作法に沿わない、あるいは帝国の支配を支えない行動を取るための社交ロールに不利を得ます。</p><section id=\"secret-P8G0DAghe8QgaSZV\" class=\"secret\"><p><em>ここでの言葉の使われ方は、別の生き方を語ることすら難しくしているのか。忠誠に対する明白な利益のうち、別の道を語ろうとするときに軋みを生むものは何か。</em></p></section>"
+                },
+                "LURReixasmMbiP2C": {
+                    "name": "競い合う臣従者たち",
+                    "description": "<p>PCたちは宮廷で、帝国の臣民、臣従者、嘆願者たちを見つけられます。それぞれが寵愛を争い、権力への近さを求め、忠誠と引き換えに恩を交わし、他者より上の地位へ昇ろうとしています。競争相手を陥れようと必死な者もいれば、反逆に近い話し合いにさえ耳を傾ける者もいるでしょう。</p><section id=\"secret-pDDW0dor0MhTdx4c\" class=\"secret\"><p><em>彼らは臣従から何を得ており、それは何を代償にしてきたのか。止めようのないものに抗うことを考えさせるほどの搾取とは何か。</em></p></section>"
+                },
+                "tm9FL5gJF7Oheu21": {
+                    "name": "帝国の引力",
+                    "description": "<p><strong>恐怖を1消費</strong>して、帝国に従うか支えることと引き換えに、PCに千載一遇の機会、あるいは大きな目的を叶える申し出を差し出します。その対象は社交リアクションロールを行わなければなりません。失敗した場合、ストレスをすべてマークするか、その申し出を受けなければなりません。すでにストレスをすべてマークしている場合、その申し出を受けるか、帝国から自ら身を退けるかしなければなりません。成功した場合、誘惑に削られてストレスを<strong>1d4</strong>マークしなければなりません。</p><section class=\"secret\" id=\"secret-4carYxEQygk6m4cQ\"><p><em>PCたちは、この無慈悲な力と手を組むことさえ考えるほど、何を切実に望んでいるのか。帝国の手の者は、どうやってそのPCの最大の望みを知ったのか。</em></p></section>",
+                    "actions": {
+                        "Pr8CpaOehr1cE1b8": {
+                            "name": "セーブを振る",
+                            "description": "<p><strong>恐怖を1消費</strong>して、帝国に従うか支えることと引き換えに、PCに千載一遇の機会、あるいは大きな目的を叶える申し出を差し出します。その対象は社交リアクションロールを行わなければなりません。失敗した場合、ストレスをすべてマークするか、その申し出を受けなければなりません。すでにストレスをすべてマークしている場合、その申し出を受けるか、帝国から自ら身を退けるかしなければなりません。成功した場合、誘惑に削られてストレスを<strong>1d4</strong>マークしなければなりません。</p><section class=\"secret\" id=\"secret-jB2klJ9141Yiot3c\"><p><em>PCたちは、この無慈悲な力と手を組むことさえ考えるほど、何を切実に望んでいるのか。帝国の手の者は、どうやってそのPCの最大の望みを知ったのか。</em></p></section>"
+                        }
+                    }
+                },
+                "HwSKX5r40ux0OfJN": {
+                    "name": "帝国の勅令",
+                    "description": "<p><strong>恐怖を1消費</strong>して、帝国の目論みに関わる長期カウントダウンを[[/r 1d4]]進めます。これによってそのカウントダウンが発動した場合、計画が実行されるとともに、その目論みに関わる布告が宮廷で告げられます。</p><section class=\"secret\" id=\"secret-kuZLu5mJvqvQ1NvT\"><p><em>この計画を早めるために、どんな力の誇示や富の移転が必要だったのか。これを成すために、誰の暮らしが乱され、あるいは覆されたのか。</em></p></section>",
+                    "actions": {
+                        "9ipckCFMz9DVw8ab": {
+                            "name": "d4をロール"
+                        }
+                    }
+                },
+                "YPMgWUagVq1Hicqo": {
+                    "name": "どこにでも目がある",
+                    "description": "<p>恐怖とともにの結果が出たとき、<strong>恐怖を1消費</strong>して、帝国に忠実な誰かに宮廷内の反逆的な話を聞かせられます。PCは、集団の話が聞かれたことに気づくために直感リアクションロールに成功しなければなりません。成功すれば、PCたちが露見する前にその目撃者を押さえようと試みられます。</p><section class=\"secret\" id=\"secret-kN4J3annyev9WWUs\"><p><em>帝国はこの目撃者をどう抱き込んでいるのか。帝国が自分を良く扱っていなくとも、まず帝国を守ろうとするのはなぜか。</em></p></section>",
+                    "actions": {
+                        "czEbFu3uIlW5Spju": {
+                            "name": "セーブを振る",
+                            "description": "<p>恐怖とともにの結果が出たとき、<strong>恐怖を1消費</strong>して、帝国に忠実な誰かに宮廷内の反逆的な話を聞かせられます。PCは、集団の話が聞かれたことに気づくために直感リアクションロールに成功しなければなりません。成功すれば、PCたちが露見する前にその目撃者を押さえようと試みられます。</p><section class=\"secret\" id=\"secret-lCrNuPGNEGSBiTSY\"><p><em>帝国はこの目撃者をどう抱き込んでいるのか。帝国が自分を良く扱っていなくとも、まず帝国を守ろうとするのはなぜか。</em></p></section>"
+                        }
+                    }
                 }
             }
         },
@@ -1541,16 +1604,54 @@
                 "RuasHmyv0xhIZyyd": {
                     "actions": {
                         "LTzzLhiHJsXvIJrR": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "競技に勝て！"
+                                },
+                                {
+                                    "name": "競争相手たち！"
+                                }
+                            ]
                         }
-                    }
+                    },
+                    "name": "「競技を始めよ！」",
+                    "description": "<p>この祭りの名物の一つは、競技あるいは一連の遊戯です。PCが1人以上名乗りを上げた場合、相手となる競争者を登場させます。勝利を収めるには、PCたちは、競争相手が帰結カウントダウン（5）を完了させる前に、競技に勝つか点を取って進行カウントダウン（5）を完了させなければなりません。</p><section id=\"secret-FhbOBBEMcN44Q1nL\" class=\"secret\"><p>この競技はどんな技や能力を試すのか。勝者は何を得るのか。PCたちや競争相手にとって、負けが許されないのはなぜか。</p></section>"
                 },
                 "UkKVWILpbLEpDfpN": {
                     "actions": {
                         "s51HEF5OCNml4qQY": {
-                            "name": "希望を得る"
+                            "name": "希望を得る",
+                            "description": "<p>PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます</p>"
+                        },
+                        "azmh4bn7ERauB0sK": {
+                            "name": "侮辱への報い"
                         }
-                    }
+                    },
+                    "name": "土地の伝説的存在",
+                    "description": "<p>祭りは、土地の民話に登場する人物の到来で締めくくられます。その者は、子らに菓子を与える、貴族をからかう、来年の作物を祝福するといった特別な務めを果たします。PCたちがこの人物にふさわしい敬意と礼を示した場合、謎めいた預言や魔法の小物といったふさわしい祝福を得て、パーティ内で分配する希望を<strong>[[/r d4]] </strong>得ます。その人物を侮辱した場合、その者に呪われて<strong>[[/r 1d6+2]]</strong>の魔法ダメージを受け、あなたは恐怖を1得ます。</p><section id=\"secret-ZKKvt9MLfAw4gxgH\" class=\"secret\"><p>これは唯一の存在なのか、人から人へ受け継がれる役なのか。どんな際立った姿をしているのか。恵みと災いを与えるその力はどこから来ているのか。</p></section>"
+                },
+                "4o45XcMZbTJYJmMH": {
+                    "name": "忘れまい、忘れまい",
+                    "description": "<p>この時季は、町の創設や夏至といった重要な記念日や天文現象に当たります。知識ロールに成功すれば、PCは以下の問いのうち1つに答えられます（クリティカル成功なら2つ）。失敗した場合、1つに答えますが、その答えのどの部分が不正確なのかをあなたが決め、恐怖を1得ます。</p><ul><li><p>この祭りは、ここの経済に欠かせない作物か輸出品を祝っている。それは何か。</p></li><li><p>去年はなぜこの祭りが開かれなかったのか。</p></li><li><p>この祭りは、隣接する地方で開かれる別の祭りと似ている。</p></li></ul><section id=\"secret-FvJMGWjMRAlkm12t\" class=\"secret\"><p>その二つはどこが違うのか。土地の人々は何を祝っているのか。この祭りは何で知られているのか。PCたちはこれを最初にどうやって聞いたのか。</p></section>"
+                },
+                "ml0hetjckq8NkK7P": {
+                    "name": "政治の駆け引き",
+                    "description": "<p>皆が一箇所に集まるこの機に、土地の人々は確執を収め、新たな商いを起こし、土地の政治を渡り歩こうとします。PCは社交ロールを行って、この動きに首を突っ込めます。成功した場合、仕事を与え、重要な情報を分け、あるいは有用な紹介をしてくれる土地の名士と縁を結びます。失敗した場合、ストレスを1マークしなければなりません。</p><section id=\"secret-gbt1gd18PRoAoy4v\" class=\"secret\"><p>皆の口に上っている新たな危機とは何か。この共同体が自力でその問題を解けないのはなぜか。助けの見返りにPCたちへ何を差し出せるのか。</p></section>"
+                }
+            },
+            "name": "土地の祭り",
+            "description": "<p>平民も貴族も、周辺一帯から集まって一週間続く祝いを行う。</p>",
+            "impulses": "土地の文化と歴史を表す、新たな縁を結ぶ、共同体を強める",
+            "potentialAdversaries": {
+                "LTxP8vZW7KiVkU7l": {
+                    "label": "祭りの警備"
+                },
+                "DPTWl7saE8CkcAA1": {
+                    "label": "土地の名士たち"
+                },
+                "43YbBAN8zHvuBnPi": {
+                    "label": "サンドゥルのならず者たち"
                 }
             }
         },
@@ -1559,6 +1660,12 @@
             "potentialAdversaries": {
                 "TzAxfdQKMVRRx5z5": {
                     "label": "その他"
+                },
+                "H53IurNOv7hOTz88": {
+                    "label": "衛兵たち"
+                },
+                "2g6jJtdA8WiA0ihA": {
+                    "label": "傭兵たち"
                 }
             },
             "items": {
@@ -1567,12 +1674,67 @@
                         "4UjyjYaMdcnFmVrL": {
                             "name": "ダメージ"
                         }
+                    },
+                    "name": "酒場の乱闘",
+                    "description": "<p><strong>恐怖を1消費</strong>して、酒場で乱闘を起こします。乱闘が続いている間にPCが酒場内を移動しようとするとき、敏捷または社交ロールに成功しなければ、荒い振り回しや投げられた物で<strong>1d6+2</strong>の物理ダメージを受けます。PCは、酒場の客を挑発するようなアクションロールに成功することで、この特徴を自ら起こそうと試みられます。</p><section class=\"secret\" id=\"secret-xLK8VSKLM6JQRySG\"><p><em>乱闘を始めたのは誰か。それを収めるには何が要るのか。</em></p></section>"
+                },
+                "7to5Zu0lNycExCQi": {
+                    "name": "町の噂は？",
+                    "description": "<p>PCは社交ロールで、酒場の主、従業員、客に、土地の出来事、噂、仕事の口を尋ねられます。成功した場合、以下の詳細のうち2つを選んで知れます——クリティカル成功なら3つです。失敗した場合、1つを選び、相手が関係のないことを喋り続けるのでストレスを1マークします。</p><ul><li><p>PCの背景に関わる、興味を引く噂</p></li><li><p>近くの脅威や事情に関わる、有望なパーティ向けの仕事</p></li><li><p>彼らが見たものに関わる土地の民話</p></li><li><p>共同体の問題を示唆する町の噂話</p></li></ul><section id=\"secret-x6IPMS6Z4MFBE65u\" class=\"secret\"><p><em>誰がどんな情報を持っているのか。土地の人々はPCたちについてどんな噂を広め始めるのか。</em></p></section>"
+                },
+                "oLn3co1mN83OiFWo": {
+                    "name": "芸で夕食を稼げ",
+                    "description": "<p>PCは社交ロールを行って、客たちに一度だけ芸を披露できます。成功した場合、一握りの金貨を<strong>[[/r 1d4]]</strong>ぶん稼ぎます（クリティカル成功なら<strong>[[/r 2d4]]</strong>ぶん）。失敗した場合、ストレスを1マークします。</p><section id=\"secret-vrH9YdQGP2sTa3cV\" class=\"secret\"><p><em>あなたはどの演目を披露するのか。その演目はあなたにとってどんな意味を持つのか。人前でそれを演じたのは最後にいつか。</em></p></section>"
+                },
+                "cAbSo5VQHxJqJPKm": {
+                    "name": "謎めいた余所者",
+                    "description": "<p>素性を隠し、陰になった席に潜む余所者を登場させます。</p><section id=\"secret-tgxS9TgbDCpI1kZC\" class=\"secret\"><p><em>その者は何を望んでいるのか。PCたちをどう見ているのか。どんな癖や持ち物があるのか。</em></p></section>"
+                },
+                "QPezCAC18vIc5xRC": {
+                    "name": "町にやって来る者",
+                    "description": "<p>パーティを何かのために雇いたい、あるいはPCの背景に関わる重要なNPCを登場させます。</p><section class=\"secret\" id=\"secret-DB6Th0yGCjAsAZp6\"><p><em>その者はPCたちがここにいると知っていたのか。この町で何を求めているのか。</em></p></section>"
+                }
+            },
+            "name": "土地の酒場",
+            "description": "<p>その町の社交の中心として賑わう酒場。</p>",
+            "impulses": "冒険者に機会を与える、共同体を育む"
+        },
+        "Masquerade Ball": {
+            "_note": "Masquerade Ball",
+            "name": "仮面舞踏会",
+            "description": "<p>仮面をつけた者たちが秘密と恩を取り引きする、上流社交界の祝宴。</p>",
+            "impulses": "夜を徹して踊る、食べて浮かれる、密約を結ぶ、価値ある情報を取り引きする",
+            "potentialAdversaries": {
+                "XrsOn1uflDlwE4EM": {
+                    "label": "工作員たち"
+                },
+                "vLC92lDxsxj3rHvi": {
+                    "label": "宴客たち"
+                }
+            },
+            "items": {
+                "BrmEXZ6Nowpg7LRS": {
+                    "name": "仮装必須",
+                    "description": "<p>舞踏会に来る者は皆、仮装で現れることを求められます。PCは、自分が本当は違う誰か——あるいは何か——であると他者に信じ込ませるための社交ロールに有利を得ます。</p><section id=\"secret-AG9eLROeP0oeQwD9\" class=\"secret\"><p>PCたちは何の装いで現れるのか。その仮装は、彼らの本当の姿について何を露わにするのか。</p></section>"
+                },
+                "AkVcdbmlKOIBAkp6": {
+                    "name": "「一曲いかが？」",
+                    "description": "<p>踊っている間、PCは他者を動かすために社交ロールの代わりに敏捷ロールを行えます。</p><section id=\"secret-Xi3GbKgbKvxZGUmM\" class=\"secret\"><p>ここで流行っている舞踏の、注目すべき点や独特な点は何か。PCたちはそれをどこで習ったのか。</p></section>"
+                },
+                "4yP8POf2j4QjnB1I": {
+                    "name": "人違い",
+                    "description": "<p>ごく重要な人物が、PCをさらに重要な人物と勘違いします。その対象は社交リアクションロールで、その勘違いに乗れます。成功した場合、そのPCはその重要人物に、便宜を図らせる、肝心な情報を伝えさせる、あるいは紹介をさせることを頼めます。失敗した場合、そのPCは正体が露見してストレスを1マークし、宴から追い出されると脅されます。</p><section id=\"secret-VRYpjv4zFDNsoP5e\" class=\"secret\"><p>その重要人物は、PCを誰と勘違いするのか。その勘違いはどんな扉を開くのか。どんな危険をもたらすのか。</p></section>"
+                },
+                "r2uqWKreHwK2Yo16": {
+                    "name": "暗躍",
+                    "description": "<p><strong>恐怖を1消費</strong>して、工作員に価値あるものを盗ませるか、重要な人物を暗殺させようとします。PCは直感ロールを行って、その目的が果たされる前に気づこうと試みられます。成功した場合、そのPCは割り込む機会を得ます。恐怖とともに失敗した場合、そのPCは誤ってその罪に巻き込まれます。</p><section id=\"secret-jFoSujZKwaVESokx\" class=\"secret\"><p>その工作員は誰のために働いているのか。なぜ仮面舞踏会へ送り込んだのか。</p></section>",
+                    "actions": {
+                        "zcgNYuHJjWV4Tl1a": {
+                            "name": "恐怖を消費する"
+                        }
                     }
                 }
             }
-        },
-        "Masquerade Ball": {
-            "_note": "Masquerade Ball"
         },
         "Megastorm": {
             "_note": "Megastorm",
