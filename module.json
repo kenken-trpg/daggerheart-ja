@@ -51,7 +51,12 @@
             {
                 "id": "babele",
                 "type": "module",
-                "reason": "コンペンディウム収録内容の翻訳に使う。未実装。"
+                "reason": "コンペンディウム収録内容の翻訳に使う。入れないとカードやデータブロックが英語のままになる。"
+            },
+            {
+                "id": "lib-wrapper",
+                "type": "module",
+                "reason": "Babele が動作に必要とする。Babele を入れるなら一緒に入れる。"
             }
         ]
     },
