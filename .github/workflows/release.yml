@@ -29,6 +29,16 @@ jobs:
 
       # module.json の version / download がタグと食い違ったまま配られると、
       # Foundry が更新を検出できなくなる。ここで揃える。
+      # check は上流の原文と突き合わせるので、参照用の原文を取る。
+      # main ではなく module.json が verified と宣言しているシステム版に固定する。
+      # 検査は「我々が対応すると言っているバージョン」に対して行うべきで、
+      # 動いている上流に対して行うと無関係な失敗で赤くなる。
+      - name: Fetch the upstream reference
+        run: |
+          ref=$(python3 -c "import json;print(json.load(open('module.json'))['relationships']['systems'][0]['compatibility']['verified'])")
+          echo "pinning the reference to daggerheart $ref"
+          npm run reference -- "$ref"
+
       # Witherwild 除外 (DPCGL 1.9.3) と enricher 保全を、配布物を作る前に検査する。
       # これを人間が手で走らせている限り「ビルドで強制」とは言えない。
       - name: Check the licence boundary before building

@@ -21,6 +21,16 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      # check は上流の原文と突き合わせるので、参照用の原文を取る。
+      # main ではなく module.json が verified と宣言しているシステム版に固定する。
+      # 検査は「我々が対応すると言っているバージョン」に対して行うべきで、
+      # 動いている上流に対して行うと無関係な失敗で赤くなる。
+      - name: Fetch the upstream reference
+        run: |
+          ref=$(python3 -c "import json;print(json.load(open('module.json'))['relationships']['systems'][0]['compatibility']['verified'])")
+          echo "pinning the reference to daggerheart $ref"
+          npm run reference -- "$ref"
+
       - name: Licence boundary and enricher preservation
         run: npm run packs:check
       - name: Term agreement
