@@ -2500,3 +2500,88 @@ to translate:     3555
 consumables 490、loot 346、armors 188）、小さな残り（ancestries 209、
 communities 92、beastforms 266、transformations 49、rolltables 23）、
 最後に journals（ウィザーワイルドとクレジットは除外）。
+
+## 工程12: environments パックを訳し切った
+
+47エントリ、933フィールド。ティアで分かれていないので、アルファベット順に
+1バッチ4〜5エントリで進めた（e1〜e11）。
+
+### 環境パック特有の構造
+
+環境は「カウントダウンを走らせる仕掛け」の集まりで、同じ文が3か所に
+重複して載る。
+
+- 特徴（feature）の description に全文
+- その特徴の action の description に、発動前の部分だけ
+- 別の action の description に、発動後の部分だけ
+
+`Trial by Jury` や `Take Captives` がその形。前半と後半を別々に訳すと
+境目で言葉が食い違うので、まず全文を訳してから機械的に切り出した。
+
+`<section class="secret">` のGM質問も同じ文が複数のコピーに載る。原文が
+`<em>` で囲んでいるパックとそうでないパックが混ざっているので、コピーごとに
+原文のタグをそのまま写す（`check` はタグ数を見るので、整えると落ちる）。
+
+### 確定した用語
+
+| 原語 | 訳語 | 備考 |
+| --- | --- | --- |
+| Progress Countdown | 進行カウントダウン | |
+| Consequence Countdown | 帰結カウントダウン | |
+| Dynamic Countdown | ダイナミックカウントダウン | UIの「ダイナミックトークン」に倣った |
+| Judgment Die | 審判ダイス | Time Court 固有 |
+| Morale Die | 士気ダイス | Raiding Party 固有 |
+| Air Supply Countdown | 空気残量カウントダウン | Sunken Citadel と Volcanic Eruption で共有 |
+| Faded | 褪色した | Realm Of The Dead 固有の敵対者状態 |
+| Pitched Battle | 激戦 | Castle Siege の本文から先に決まっていた |
+| Apply（単独） | 適用 | 他は「○○を適用」 |
+
+### 落とし穴: babele を直接直すと apply で巻き戻る
+
+`terms` の指摘に合わせて `babele/ja/*.json` を直接書き換えたところ、
+次のバッチで `apply` を走らせた時点で `packs-pending.json` の古い値に
+上書きされ、同じ3件が再び報告された。
+
+**修正は `packs-pending.json` 側に入れる。** babele は apply の出力なので、
+そこだけ直しても次の apply で消える。
+
+### 環境→敵対者の参照
+
+環境の本文は敵対者を名前で呼ぶ。`@UUID` が張られているものは Babele が
+解決してくれるが、素の文中の名前（`Storm Giant`、`Deep Dweller`、
+`Temporal Enforcer`、`Demon of Avarice`、`Vault Guardian Gaoler`）は
+ただの文字列なので、adversaries パックの既訳を引いて揃えるしかない。
+`Redcap Biters` のように複数形で登録されている項目があるので、
+単数形で引くと空振りする。
+
+### 原文の綴り
+
+fi/fl の合字が崩れた箇所が大量にある（`identifi es`、`profi t`、
+`diff erence`、`unfl edged`、`refl ect`、`fi nd`）。ほかに `succceeds`、
+`Appky`（action 名）、`their their` の重複。いずれも意図どおりに訳した。
+
+### 検証
+
+```
+daggerheart.environments     100%  933/933 fields
+47エントリ: 英語のまま残った名前 0件
+英語のまま残った特徴名を持つエントリ 0件
+```
+
+`packs:check` 問題なし、`packs:terms` 一致、lint 0件。
+実機（localhost:30100 / dh-ja）で再読み込みして確認済み。
+
+### 現状
+
+```
+packs enabled:    15/15
+translated:       8617
+to translate:     1867
+```
+
+次は items/*（weapons 982、consumables 490、loot 346、armors 188）。
+weapons 56% と armors 48% は工程11で意図せず入った prefill で、
+まだ1フィールドずつ読んでいない機械出力なので、読み直しが必要。
+その後 小さな残り（ancestries 209、communities 92、beastforms 266、
+transformations 49、rolltables 23）、最後に journals（ウィザーワイルドと
+クレジットは除外）。
