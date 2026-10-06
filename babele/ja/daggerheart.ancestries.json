@@ -256,14 +256,14 @@
         "Retract": {
             "_note": "Retract",
             "name": "格納する",
-            "effects": {
-                "3V4FPoyjJUnFP9WS": {
-                    "name": "格納する"
-                }
-            },
             "actions": {
                 "HfiAg14hrYt7Yvnj": {
                     "name": "ストレスをマーク"
+                }
+            },
+            "effects": {
+                "3V4FPoyjJUnFP9WS": {
+                    "name": "格納する"
                 }
             }
         },

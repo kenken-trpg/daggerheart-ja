@@ -635,13 +635,28 @@
             "description": "<p>ダウンタイムムーブとして、ひと掴みの細かな金粉を使い、神話の粉を作れます。</p>"
         },
         "Namer's Oracle": {
-            "_note": "Namer's Oracle"
+            "_note": "Namer's Oracle",
+            "name": "名付け手の神託",
+            "description": "<p>セッションごとに1回、このルーンのダイスを振って、最後に触れた相手の完全な名前を明らかにできます。</p>",
+            "actions": {
+                "M3YbDPW9w7rIXZG1": {
+                    "name": "ダイスをロール"
+                }
+            }
         },
         "Nighthawker's Ring": {
             "_note": "Nighthawker's Ring",
             "actions": {
                 "dZni6lym19ljT67O": {
                     "name": "希望を消費する"
+                }
+            },
+            "name": "夜鷹の指輪",
+            "description": "<p>希望を1消費して、この指輪の宝石をシーンの終わりまで起動します。起動しているあいだ、宝石は着用者が隠された財宝にどれだけ近いかを色で示します。近ければ暖色、遠ければ寒色になります。</p>",
+            "effects": {
+                "EUPb3chDFCISikV4": {
+                    "name": "夜鷹の指輪",
+                    "description": "<p>起動しているあいだ、宝石は着用者が隠された財宝にどれだけ近いかを色で示します。近ければ暖色、遠ければ寒色になります。</p>"
                 }
             }
         },
@@ -651,13 +666,24 @@
                 "esnUuqMcvyOvI6PV": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "模範者の鎖",
+            "description": "<p>ダウンタイムムーブとして、自分が大切にしている理想か信条について瞑想し、意志をこの鎖に込められます。</p><p>長期休息ごとに1回、希望を1消費して、その信条に直接かなうロールで希望ダイスとしてd20を振れます。</p>"
         },
         "Phobophage's Circlet": {
-            "_note": "Phobophage's Circlet"
+            "_note": "Phobophage's Circlet",
+            "name": "恐怖喰いの環冠",
+            "description": "<p>GMが恐怖を消費したとき、d4を振ります。シーンごとに1回、結果が4の場合、ストレスを1消去します。</p>",
+            "actions": {
+                "2s4ofx7L65OGBX6I": {
+                    "name": "d4をロール"
+                }
+            }
         },
         "Phoenix Feather": {
-            "_note": "Phoenix Feather"
+            "_note": "Phoenix Feather",
+            "name": "不死鳥の羽根",
+            "description": "<p>意識を失ったときに不死鳥の羽根を1枚以上持っていた場合、傷痕を得るかどうかを決めるロールに＋1のボーナスを得ます。</p>"
         },
         "Piercing Arrows": {
             "_note": "Piercing Arrows",
@@ -665,20 +691,40 @@
                 "DW5AqEM0F8XaUqpn": {
                     "name": "使う"
                 }
+            },
+            "name": "貫通の矢",
+            "description": "<p>休息ごとに3回、この矢での攻撃に成功したとき、ダメージロールに習熟を加えられます。</p>",
+            "effects": {
+                "lRfqfbwlfxzPbE6U": {
+                    "name": "貫通の矢",
+                    "description": "<p>この攻撃のダメージロールに習熟を加えます。</p>"
+                }
             }
         },
         "Piper Whistle": {
-            "_note": "Piper Whistle"
+            "_note": "Piper Whistle",
+            "name": "笛吹きの呼子",
+            "description": "<p>この手作りの呼子は特徴的な音を出します。この呼子を吹くと、その鋭い音は半径1マイル以内に届きます。</p>"
         },
         "Portal Frames": {
-            "_note": "Portal Frames"
+            "_note": "Portal Frames",
+            "name": "門の額縁",
+            "description": "<p>この一対の小さな装飾額縁は、赤と青が1つずつでつながっています。一方に入ったものは、もう一方から出てきます。</p>"
         },
         "Portal Seed": {
-            "_note": "Portal Seed"
+            "_note": "Portal Seed",
+            "name": "門の種",
+            "description": "<p>この種を地面に植えて、その場所に門を育てられます。門は24時間で使えるようになります。この門を使って、門の種を植えた他のどの場所へも移動できます。門は、どれだけでも魔法ダメージを与えれば壊せます。</p>"
         },
         "Premium Bedroll": {
             "_note": "Premium Bedroll",
-            "name": "高級寝袋"
+            "name": "高級寝袋",
+            "description": "<p>ダウンタイム中、自動でストレスを1消去します。</p>",
+            "actions": {
+                "Xe0zhVbSzZLgX1nC": {
+                    "name": "仮眠を取る"
+                }
+            }
         },
         "Quillshawl": {
             "_note": "Quillshawl",
@@ -686,13 +732,19 @@
                 "bOTGYms5yiburnW8": {
                     "name": "リアクションロール"
                 }
-            }
+            },
+            "name": "針毛の肩掛け",
+            "description": "<p>敵対者が近接射程内からあなたを攻撃した場合、その敵対者はリアクションロール（12）に成功しなければHPを1マークします。</p>"
         },
         "Reliquary of the Sightless Saint": {
-            "_note": "Reliquary of the Sightless Saint"
+            "_note": "Reliquary of the Sightless Saint",
+            "name": "盲いた聖者の聖遺物箱",
+            "description": "<p>「すべてを賭ける」のデスムーブを行うとき、希望ダイスに＋1のボーナスを得ます。</p>"
         },
         "Returning Ring": {
-            "_note": "Returning Ring"
+            "_note": "Returning Ring",
+            "name": "帰還の指輪",
+            "description": "<p>この指輪をつけてメイン武器を投げたとき、その武器は攻撃の直後にあなたの手に戻ります。</p>"
         },
         "Ring of Resistance": {
             "_note": "Ring of Resistance",
@@ -700,13 +752,30 @@
                 "4swwe8SZeh2KyPtl": {
                     "name": "起動する"
                 }
+            },
+            "name": "抵抗の指輪",
+            "description": "<p>長期休息ごとに1回、あなたへの攻撃が成功したあとにこの指輪を起動して、そのダメージを半分にできます。</p>",
+            "effects": {
+                "Sj7uGf560T7u4rlX": {
+                    "name": "抵抗の指輪",
+                    "description": "<p>長期休息ごとに1回、あなたへの攻撃が成功したあとにこの指輪を起動して、そのダメージを半分にできます。</p>"
+                }
             }
         },
         "Ring of Silence": {
             "_note": "Ring of Silence",
             "actions": {
                 "Y4mvuJ4tncrKhyjY": {
-                    "name": "起動する"
+                    "name": "起動する",
+                    "description": "<p><strong>希望を1消費</strong>してこの指輪を起動します。次の休息まで、あなたの足音は消えます。</p>"
+                }
+            },
+            "name": "静寂の指輪",
+            "description": "<p>希望を1消費してこの指輪を起動します。次の休息まで、あなたの足音は消えます。</p>",
+            "effects": {
+                "9JSLRu7amQ4iuIO7": {
+                    "name": "静寂の指輪",
+                    "description": "<p>次の休息まで、あなたの足音は消えます。</p>"
                 }
             }
         },
@@ -716,7 +785,9 @@
                 "R92d0DSVEwmqNJhM": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "不屈の決意の指輪",
+            "description": "<p>セッションごとに1回、GMが恐怖を消費したとき、希望を4消費して、その消費された恐怖の効果を打ち消せます。</p>"
         },
         "Rings of Alliance": {
             "_note": "Rings of Alliance",
@@ -724,16 +795,24 @@
                 "maCcwSIizfVArFmH": {
                     "name": "起動する"
                 }
-            }
+            },
+            "name": "同盟の指輪",
+            "description": "<p>この一対の薔薇金の指輪は、2体のクリーチャーが着用できます。セッションごとに1回、もう一方の指輪をつけている相手とのタッグチームロールを、希望を消費せず、セッションごとのタッグチームロールの回数にも数えずに始められます。</p>"
         },
         "Rings of Camaraderie": {
-            "_note": "Rings of Camaraderie"
+            "_note": "Rings of Camaraderie",
+            "name": "友情の指輪",
+            "description": "<p>この一対の木の指輪は、2体のクリーチャーが着用できます。もう一方の指輪をつけている相手のストレスを、（その相手の許しを得て）自分のもののようにマークできます。</p>"
         },
         "Rings of Friendship": {
-            "_note": "Rings of Friendship"
+            "_note": "Rings of Friendship",
+            "name": "友愛の指輪",
+            "description": "<p>この一対のとぐろを巻いた蛇の形の指輪は、2体のクリーチャーが着用できます。もう一方の指輪をつけている相手の希望を、（その相手の許しを得て）自分のもののように消費できます。</p>"
         },
         "Self-Tying Rope": {
-            "_note": "Self-Tying Rope"
+            "_note": "Self-Tying Rope",
+            "name": "自ら結ぶ縄",
+            "description": "<p>この縄に命じて、自ら結ばせたり解かせたりできます。</p>"
         },
         "Shard of Memory": {
             "_note": "Shard of Memory",
@@ -741,13 +820,24 @@
                 "YNRybKQC51muVHYH": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "記憶の破片",
+            "description": "<p>長期休息ごとに1回、再読込コストを支払う代わりに<strong>希望を2消費</strong>して、保管庫からドメインカードを1枚呼び戻せます。</p>"
         },
         "Silee's Folding Knife": {
-            "_note": "Silee's Folding Knife"
+            "_note": "Silee's Folding Knife",
+            "name": "シリーの折りたたみナイフ",
+            "description": "<p>この3インチの刃は、それを収めている柄だけは別として、どんなものでも容易に切り裂きます。</p>"
         },
         "Skeleton Key": {
-            "_note": "Skeleton Key"
+            "_note": "Skeleton Key",
+            "name": "万能鍵",
+            "description": "<p>この鍵を使って施錠された扉を開けるとき、器用ロールに有利を得ます。</p>",
+            "actions": {
+                "lV6W9M1CX6N8jSpt": {
+                    "name": "鍵を使う"
+                }
+            }
         },
         "Sorcerer's Hat": {
             "_note": "Sorcerer's Hat",
@@ -755,7 +845,9 @@
                 "GqZbEhbCJOCok3Ph": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "魔術師の帽子",
+            "description": "<p>この青い円錐形の帽子は銀の星で覆われています。休息ごとに1回、保管庫にある再読込コストが自分のティア以下の呪文を1つ発動できます。これは永久に保管庫に置かれたカードには働きません。</p>"
         },
         "Soul-Twin Circlets": {
             "_note": "Soul-Twin Circlets",
@@ -763,31 +855,83 @@
                 "2a8CN94tQarhPBO7": {
                     "name": "希望を消費する"
                 }
-            }
+            },
+            "name": "双子の魂の環冠",
+            "description": "<p>この一対の環冠は、2体のクリーチャーが着用できます。希望を1消費して、もう一方の環冠をつけている相手と位置を入れ替えられます。</p>"
         },
         "Speaking Orbs": {
-            "_note": "Speaking Orbs"
+            "_note": "Speaking Orbs",
+            "name": "語りの宝珠",
+            "description": "<p>この一対の宝珠は、それを持つクリーチャーがどれほど離れていても互いに話し合えるようにします。</p>"
         },
         "Stride Relic": {
-            "_note": "Stride Relic"
+            "_note": "Stride Relic",
+            "name": "疾走の遺物",
+            "description": "<p>素早さに＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "7lHIbMyCDonSxSZf": {
+                    "name": "疾走の遺物",
+                    "description": "<p>素早さに＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Suspended Rod": {
-            "_note": "Suspended Rod"
+            "_note": "Suspended Rod",
+            "name": "静止の棒",
+            "description": "<p>この平たい棒にはルーンが刻まれています。棒を起動すると、直ちにその場に静止します。停止させるまで、棒は動かず、重力の法則に従わず、その場に留まり続けます。</p>"
         },
         "Temporal Sanctuary": {
-            "_note": "Temporal Sanctuary"
+            "_note": "Temporal Sanctuary",
+            "name": "時の聖域",
+            "description": "<p>時の聖域で休息を取ったPCは、ダウンタイムムーブを1つ追加で選べます。</p>",
+            "effects": {
+                "K1ZreKqxSLXvANm5": {
+                    "name": "時の聖域",
+                    "description": "<p>時の聖域で休息を取ったPCは、ダウンタイムムーブを1つ追加で選べます。</p>"
+                }
+            }
         },
         "Thief's Compass": {
-            "_note": "Thief's Compass"
+            "_note": "Thief's Compass",
+            "name": "盗人の羅針盤",
+            "description": "<p>この羅針盤は、屋内では最も近い出口の方向を、屋外では最も近い入口の方向を指します。</p>"
         },
         "Timekeeper's Pendant": {
-            "_note": "Timekeeper's Pendant"
+            "_note": "Timekeeper's Pendant",
+            "name": "時守りのペンダント",
+            "description": "<p>休息ごとにダウンタイムムーブを1つ追加で選べます。</p>",
+            "effects": {
+                "RaFL9RF6M2Oa1Mc0": {
+                    "name": "時守りのペンダント",
+                    "description": "<p>休息ごとにダウンタイムムーブを1つ追加で選べます。</p>"
+                }
+            }
         },
         "Titan's Girdle": {
-            "_note": "Titan's Girdle"
+            "_note": "Titan's Girdle",
+            "name": "巨人の帯",
+            "description": "<p>シーンごとに1回、この帯を起動して、次の攻撃の習熟に＋1のボーナスを得られます。</p>",
+            "actions": {
+                "bdJqnWHYKhzkQg7j": {
+                    "name": "帯を起動する"
+                }
+            },
+            "effects": {
+                "YQFUsFB2APojHKbh": {
+                    "name": "起動した帯",
+                    "description": "<p>次の攻撃の習熟に＋1のボーナス。</p>"
+                }
+            }
         },
         "Traveler's Bell": {
-            "_note": "Traveler's Bell"
+            "_note": "Traveler's Bell",
+            "name": "旅人の鈴",
+            "description": "<p>長期休息ごとに1回、この鈴を鳴らして、険しい地形を抜ける最短の安全な道を1時間のあいだ魔法的に開けます。</p>",
+            "actions": {
+                "U3U0FAL95FouCQ8P": {
+                    "name": "鈴を鳴らす"
+                }
+            }
         },
         "Two-Faced Aegis Brooch": {
             "_note": "Two-Faced Aegis Brooch",
@@ -801,18 +945,26 @@
             },
             "effects": {
                 "v4B2AXAw5ipJ3KG6": {
-                    "name": "表"
+                    "name": "表",
+                    "description": "<p>表が出た場合、次に受ける物理ダメージを無効化します。</p>"
                 },
                 "pxrbpDOlTozFmTnr": {
-                    "name": "裏"
+                    "name": "裏",
+                    "description": "<p>裏が出た場合、次に受ける魔法ダメージを無効化します。</p>"
                 }
-            }
+            },
+            "name": "二面の守りの飾り留め",
+            "description": "<p>休息ごとに1回、[[/r 1d2]]{硬貨を投げます}。表が出た場合、次に受ける物理ダメージを無効化します。裏が出た場合、次に受ける魔法ダメージを無効化します。</p>"
         },
         "Valorstone": {
-            "_note": "Valorstone"
+            "_note": "Valorstone",
+            "name": "勇気の石",
+            "description": "<p>この石は、まだ特徴を持っていない防具に取り付けられます。その防具は以下の特徴を得ます。</p><p><strong>堅靭</strong>：最後の鎧スロットをマークする前に、d6を振ります。結果が6の場合、鎧スロットをマークせずに重さをしきい値1段階下げます。</p>"
         },
         "Vial of Darksmoke Recipe": {
-            "_note": "Vial of Darksmoke Recipe"
+            "_note": "Vial of Darksmoke Recipe",
+            "name": "暗煙の小瓶の製法",
+            "description": "<p>ダウンタイムムーブとして、ストレスを1マークして、暗煙の小瓶を作れます。</p>"
         },
         "Warp Pendant": {
             "_note": "Warp Pendant",
@@ -820,16 +972,24 @@
                 "B1xcdTjpaoK4TxI5": {
                     "name": "ストレスをマーク"
                 }
-            }
+            },
+            "name": "転移のペンダント",
+            "description": "<p>休息ごとに1回、ストレスを1マークして、はっきりと見える場所へ転移します。</p>"
         },
         "Whisperstep Anklet": {
-            "_note": "Whisperstep Anklet"
+            "_note": "Whisperstep Anklet",
+            "name": "忍び足の足輪",
+            "description": "<p>この足輪は、歩く速さより速く動かないあいだ、あなたの足音を消します。</p>"
         },
         "Wildrider's Saddle": {
-            "_note": "Wildrider's Saddle"
+            "_note": "Wildrider's Saddle",
+            "name": "野駆けの鞍",
+            "description": "<p>この鞍は、取り付けられたどんな動物にも、乗り手の指示を理解する能力を与えます。</p>"
         },
         "Windup Toy": {
-            "_note": "Windup Toy"
+            "_note": "Windup Toy",
+            "name": "ねじ巻き玩具",
+            "description": "<p>この小さな機械仕掛けの装置はストリクスウルフの仔の形をしており、簡単な芸をするよう仕込めます。</p>"
         },
         "Woven Net": {
             "_note": "Woven Net",
@@ -837,10 +997,22 @@
                 "yv0l43uUDB2gWFd1": {
                     "name": "投げつけ"
                 }
+            },
+            "name": "編んだ網",
+            "description": "<p>この網を使って器用ロールを行い、小さなクリーチャーを捕らえられます。捕らえられた対象は、攻撃ロール（16）に成功すれば抜け出せます。</p>",
+            "effects": {
+                "KjAianGutrQuJNs3": {
+                    "name": "編んだ網"
+                },
+                "nY2UFMPZdoSUr6Ps": {
+                    "name": "編んだ網"
+                }
             }
         },
         "Zephyr's Jar": {
-            "_note": "Zephyr's Jar"
+            "_note": "Zephyr's Jar",
+            "name": "微風の壺",
+            "description": "<p>この空の壺を荒天のときに開けて、嵐を捕らえ、晴れた空を残せます。嵐は壺を再び開けて解き放つまで、中に留まります。</p>"
         }
     }
 }
