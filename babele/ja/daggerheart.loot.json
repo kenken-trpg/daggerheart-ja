@@ -646,13 +646,13 @@
         },
         "Nighthawker's Ring": {
             "_note": "Nighthawker's Ring",
+            "name": "夜鷹の指輪",
+            "description": "<p>希望を1消費して、この指輪の宝石をシーンの終わりまで起動します。起動しているあいだ、宝石は着用者が隠された財宝にどれだけ近いかを色で示します。近ければ暖色、遠ければ寒色になります。</p>",
             "actions": {
                 "dZni6lym19ljT67O": {
                     "name": "希望を消費する"
                 }
             },
-            "name": "夜鷹の指輪",
-            "description": "<p>希望を1消費して、この指輪の宝石をシーンの終わりまで起動します。起動しているあいだ、宝石は着用者が隠された財宝にどれだけ近いかを色で示します。近ければ暖色、遠ければ寒色になります。</p>",
             "effects": {
                 "EUPb3chDFCISikV4": {
                     "name": "夜鷹の指輪",
@@ -662,13 +662,13 @@
         },
         "Paragon's Chain": {
             "_note": "Paragon's Chain",
+            "name": "模範者の鎖",
+            "description": "<p>ダウンタイムムーブとして、自分が大切にしている理想か信条について瞑想し、意志をこの鎖に込められます。</p><p>長期休息ごとに1回、希望を1消費して、その信条に直接かなうロールで希望ダイスとしてd20を振れます。</p>",
             "actions": {
                 "esnUuqMcvyOvI6PV": {
                     "name": "使う"
                 }
-            },
-            "name": "模範者の鎖",
-            "description": "<p>ダウンタイムムーブとして、自分が大切にしている理想か信条について瞑想し、意志をこの鎖に込められます。</p><p>長期休息ごとに1回、希望を1消費して、その信条に直接かなうロールで希望ダイスとしてd20を振れます。</p>"
+            }
         },
         "Phobophage's Circlet": {
             "_note": "Phobophage's Circlet",
@@ -687,13 +687,13 @@
         },
         "Piercing Arrows": {
             "_note": "Piercing Arrows",
+            "name": "貫通の矢",
+            "description": "<p>休息ごとに3回、この矢での攻撃に成功したとき、ダメージロールに習熟を加えられます。</p>",
             "actions": {
                 "DW5AqEM0F8XaUqpn": {
                     "name": "使う"
                 }
             },
-            "name": "貫通の矢",
-            "description": "<p>休息ごとに3回、この矢での攻撃に成功したとき、ダメージロールに習熟を加えられます。</p>",
             "effects": {
                 "lRfqfbwlfxzPbE6U": {
                     "name": "貫通の矢",
@@ -728,13 +728,13 @@
         },
         "Quillshawl": {
             "_note": "Quillshawl",
+            "name": "針毛の肩掛け",
+            "description": "<p>敵対者が近接射程内からあなたを攻撃した場合、その敵対者はリアクションロール（12）に成功しなければHPを1マークします。</p>",
             "actions": {
                 "bOTGYms5yiburnW8": {
                     "name": "リアクションロール"
                 }
-            },
-            "name": "針毛の肩掛け",
-            "description": "<p>敵対者が近接射程内からあなたを攻撃した場合、その敵対者はリアクションロール（12）に成功しなければHPを1マークします。</p>"
+            }
         },
         "Reliquary of the Sightless Saint": {
             "_note": "Reliquary of the Sightless Saint",
@@ -748,13 +748,13 @@
         },
         "Ring of Resistance": {
             "_note": "Ring of Resistance",
+            "name": "抵抗の指輪",
+            "description": "<p>長期休息ごとに1回、あなたへの攻撃が成功したあとにこの指輪を起動して、そのダメージを半分にできます。</p>",
             "actions": {
                 "4swwe8SZeh2KyPtl": {
                     "name": "起動する"
                 }
             },
-            "name": "抵抗の指輪",
-            "description": "<p>長期休息ごとに1回、あなたへの攻撃が成功したあとにこの指輪を起動して、そのダメージを半分にできます。</p>",
             "effects": {
                 "Sj7uGf560T7u4rlX": {
                     "name": "抵抗の指輪",
@@ -764,14 +764,14 @@
         },
         "Ring of Silence": {
             "_note": "Ring of Silence",
+            "name": "静寂の指輪",
+            "description": "<p>希望を1消費してこの指輪を起動します。次の休息まで、あなたの足音は消えます。</p>",
             "actions": {
                 "Y4mvuJ4tncrKhyjY": {
                     "name": "起動する",
                     "description": "<p><strong>希望を1消費</strong>してこの指輪を起動します。次の休息まで、あなたの足音は消えます。</p>"
                 }
             },
-            "name": "静寂の指輪",
-            "description": "<p>希望を1消費してこの指輪を起動します。次の休息まで、あなたの足音は消えます。</p>",
             "effects": {
                 "9JSLRu7amQ4iuIO7": {
                     "name": "静寂の指輪",
@@ -781,23 +781,23 @@
         },
         "Ring of Unbreakable Resolve": {
             "_note": "Ring of Unbreakable Resolve",
+            "name": "不屈の決意の指輪",
+            "description": "<p>セッションごとに1回、GMが恐怖を消費したとき、希望を4消費して、その消費された恐怖の効果を打ち消せます。</p>",
             "actions": {
                 "R92d0DSVEwmqNJhM": {
                     "name": "使う"
                 }
-            },
-            "name": "不屈の決意の指輪",
-            "description": "<p>セッションごとに1回、GMが恐怖を消費したとき、希望を4消費して、その消費された恐怖の効果を打ち消せます。</p>"
+            }
         },
         "Rings of Alliance": {
             "_note": "Rings of Alliance",
+            "name": "同盟の指輪",
+            "description": "<p>この一対の薔薇金の指輪は、2体のクリーチャーが着用できます。セッションごとに1回、もう一方の指輪をつけている相手とのタッグチームロールを、希望を消費せず、セッションごとのタッグチームロールの回数にも数えずに始められます。</p>",
             "actions": {
                 "maCcwSIizfVArFmH": {
                     "name": "起動する"
                 }
-            },
-            "name": "同盟の指輪",
-            "description": "<p>この一対の薔薇金の指輪は、2体のクリーチャーが着用できます。セッションごとに1回、もう一方の指輪をつけている相手とのタッグチームロールを、希望を消費せず、セッションごとのタッグチームロールの回数にも数えずに始められます。</p>"
+            }
         },
         "Rings of Camaraderie": {
             "_note": "Rings of Camaraderie",
@@ -816,13 +816,13 @@
         },
         "Shard of Memory": {
             "_note": "Shard of Memory",
+            "name": "記憶の破片",
+            "description": "<p>長期休息ごとに1回、再読込コストを支払う代わりに<strong>希望を2消費</strong>して、保管庫からドメインカードを1枚呼び戻せます。</p>",
             "actions": {
                 "YNRybKQC51muVHYH": {
                     "name": "使う"
                 }
-            },
-            "name": "記憶の破片",
-            "description": "<p>長期休息ごとに1回、再読込コストを支払う代わりに<strong>希望を2消費</strong>して、保管庫からドメインカードを1枚呼び戻せます。</p>"
+            }
         },
         "Silee's Folding Knife": {
             "_note": "Silee's Folding Knife",
@@ -841,23 +841,23 @@
         },
         "Sorcerer's Hat": {
             "_note": "Sorcerer's Hat",
+            "name": "魔術師の帽子",
+            "description": "<p>この青い円錐形の帽子は銀の星で覆われています。休息ごとに1回、保管庫にある再読込コストが自分のティア以下の呪文を1つ発動できます。これは永久に保管庫に置かれたカードには働きません。</p>",
             "actions": {
                 "GqZbEhbCJOCok3Ph": {
                     "name": "使う"
                 }
-            },
-            "name": "魔術師の帽子",
-            "description": "<p>この青い円錐形の帽子は銀の星で覆われています。休息ごとに1回、保管庫にある再読込コストが自分のティア以下の呪文を1つ発動できます。これは永久に保管庫に置かれたカードには働きません。</p>"
+            }
         },
         "Soul-Twin Circlets": {
             "_note": "Soul-Twin Circlets",
+            "name": "双子の魂の環冠",
+            "description": "<p>この一対の環冠は、2体のクリーチャーが着用できます。希望を1消費して、もう一方の環冠をつけている相手と位置を入れ替えられます。</p>",
             "actions": {
                 "2a8CN94tQarhPBO7": {
                     "name": "希望を消費する"
                 }
-            },
-            "name": "双子の魂の環冠",
-            "description": "<p>この一対の環冠は、2体のクリーチャーが着用できます。希望を1消費して、もう一方の環冠をつけている相手と位置を入れ替えられます。</p>"
+            }
         },
         "Speaking Orbs": {
             "_note": "Speaking Orbs",
@@ -935,6 +935,8 @@
         },
         "Two-Faced Aegis Brooch": {
             "_note": "Two-Faced Aegis Brooch",
+            "name": "二面の守りの飾り留め",
+            "description": "<p>休息ごとに1回、[[/r 1d2]]{硬貨を投げます}。表が出た場合、次に受ける物理ダメージを無効化します。裏が出た場合、次に受ける魔法ダメージを無効化します。</p>",
             "actions": {
                 "jO0d2urVgS7Sam8O": {
                     "name": "表"
@@ -952,9 +954,7 @@
                     "name": "裏",
                     "description": "<p>裏が出た場合、次に受ける魔法ダメージを無効化します。</p>"
                 }
-            },
-            "name": "二面の守りの飾り留め",
-            "description": "<p>休息ごとに1回、[[/r 1d2]]{硬貨を投げます}。表が出た場合、次に受ける物理ダメージを無効化します。裏が出た場合、次に受ける魔法ダメージを無効化します。</p>"
+            }
         },
         "Valorstone": {
             "_note": "Valorstone",
@@ -968,13 +968,13 @@
         },
         "Warp Pendant": {
             "_note": "Warp Pendant",
+            "name": "転移のペンダント",
+            "description": "<p>休息ごとに1回、ストレスを1マークして、はっきりと見える場所へ転移します。</p>",
             "actions": {
                 "B1xcdTjpaoK4TxI5": {
                     "name": "ストレスをマーク"
                 }
-            },
-            "name": "転移のペンダント",
-            "description": "<p>休息ごとに1回、ストレスを1マークして、はっきりと見える場所へ転移します。</p>"
+            }
         },
         "Whisperstep Anklet": {
             "_note": "Whisperstep Anklet",
@@ -993,13 +993,13 @@
         },
         "Woven Net": {
             "_note": "Woven Net",
+            "name": "編んだ網",
+            "description": "<p>この網を使って器用ロールを行い、小さなクリーチャーを捕らえられます。捕らえられた対象は、攻撃ロール（16）に成功すれば抜け出せます。</p>",
             "actions": {
                 "yv0l43uUDB2gWFd1": {
                     "name": "投げつけ"
                 }
             },
-            "name": "編んだ網",
-            "description": "<p>この網を使って器用ロールを行い、小さなクリーチャーを捕らえられます。捕らえられた対象は、攻撃ロール（16）に成功すれば抜け出せます。</p>",
             "effects": {
                 "KjAianGutrQuJNs3": {
                     "name": "編んだ網"

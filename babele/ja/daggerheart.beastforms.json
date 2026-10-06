@@ -3,6 +3,7 @@
     "collection": "daggerheart.beastforms",
     "_upstream": "Foundryborne/daggerheart@2.10.9",
     "folders": {
+        "Beastform Features": "ビーストフォームの特徴",
         "Tier 1": "ティア1",
         "Tier 2": "ティア2",
         "Tier 3": "ティア3",
@@ -11,9 +12,17 @@
     "entries": {
         "Agile Scout": {
             "_note": "Agile Scout",
+            "name": "敏速な斥候",
+            "examples": "狐、鼠、鼬など",
             "advantageOn": {
                 "mtep5GS5Ruj6ZXk1": {
                     "value": "欺く"
+                },
+                "HtQHzK88eiFGP1sW": {
+                    "value": "発見する"
+                },
+                "pq2OXeTmvgRVWTnM": {
+                    "value": "忍び寄る"
                 }
             },
             "effects": {
@@ -24,9 +33,17 @@
         },
         "Aquatic Predator": {
             "_note": "Aquatic Predator",
+            "name": "水棲の捕食者",
+            "examples": "イルカ、シャチ、サメなど",
             "advantageOn": {
                 "1AcQrnvX9BKAWb0Y": {
                     "value": "攻撃"
+                },
+                "BY5ht3SqyKw0dBr1": {
+                    "value": "泳ぐ"
+                },
+                "4OW2JewIhcKpwzVE": {
+                    "value": "追跡する"
                 }
             },
             "effects": {
@@ -37,9 +54,17 @@
         },
         "Aquatic Scout": {
             "_note": "Aquatic Scout",
+            "name": "水棲の斥候",
+            "examples": "ウナギ、魚、タコなど",
             "advantageOn": {
                 "OG0TnlIP9lKye1e9": {
                     "value": "進路を取る"
+                },
+                "q3yvEjEGqK6o4AYw": {
+                    "value": "忍び寄る"
+                },
+                "RWK8rni8s7nYVP7I": {
+                    "value": "泳ぐ"
                 }
             },
             "effects": {
@@ -50,6 +75,19 @@
         },
         "Armored Sentry": {
             "_note": "Armored Sentry",
+            "name": "装甲の衛士",
+            "examples": "アルマジロ、センザンコウ、亀など",
+            "advantageOn": {
+                "4AbCgOZvyUFH9Pug": {
+                    "value": "掘る"
+                },
+                "8GsRyXaQnfsGNGW6": {
+                    "value": "発見する"
+                },
+                "0ut15QizNIG254Vw": {
+                    "value": "庇う"
+                }
+            },
             "effects": {
                 "hd0uVl6ZZeyPJn9O": {
                     "name": "ビーストフォーム変身"
@@ -58,9 +96,20 @@
         },
         "Epic Aquatic Beast": {
             "_note": "Epic Aquatic Beast",
+            "name": "壮大な水棲の獣",
+            "examples": "ダイオウイカ、鯨など",
             "advantageOn": {
+                "DzjyAaegBTZSxhT4": {
+                    "value": "発見する"
+                },
+                "rRDzTGkLNCbStmih": {
+                    "value": "庇う"
+                },
                 "0k26pAQLTjfEfviV": {
                     "value": "恐れさせる"
+                },
+                "zkEFnEqpAf4lqy5W": {
+                    "value": "追跡する"
                 }
             },
             "effects": {
@@ -71,9 +120,14 @@
         },
         "Great Predator": {
             "_note": "Great Predator",
+            "name": "大いなる捕食者",
+            "examples": "ダイアウルフ、ヴェロキラプトル、サーベルタイガーなど",
             "advantageOn": {
                 "WvQYbcASMk0IwESy": {
                     "value": "攻撃"
+                },
+                "Hzr7zL547nyrZyZK": {
+                    "value": "忍び寄る"
                 },
                 "3wDuhdlzs3gOJ9l9": {
                     "value": "疾走する"
@@ -87,9 +141,17 @@
         },
         "Great Winged Beast": {
             "_note": "Great Winged Beast",
+            "name": "大いなる翼の獣",
+            "examples": "巨大鷲、隼など",
             "advantageOn": {
                 "9J8GmsoqjBiXJLKE": {
                     "value": "欺く"
+                },
+                "MkD8mmiirYPqs0oA": {
+                    "value": "気を引く"
+                },
+                "qzud50ZkqNJgYhRH": {
+                    "value": "発見する"
                 }
             },
             "effects": {
@@ -100,6 +162,19 @@
         },
         "Household Friend": {
             "_note": "Household Friend",
+            "name": "家の友",
+            "examples": "猫、犬、兎など",
+            "advantageOn": {
+                "CXfEZDZ96ajdn5aU": {
+                    "value": "登攀"
+                },
+                "IojJaTrMIkT4xFSN": {
+                    "value": "発見する"
+                },
+                "IwwGzrAig49bAy8y": {
+                    "value": "庇う"
+                }
+            },
             "effects": {
                 "CzMAMg2q5gL15JrZ": {
                     "name": "ビーストフォーム変身"
@@ -108,23 +183,35 @@
         },
         "Legendary Beast": {
             "_note": "Legendary Beast",
+            "name": "伝説の獣",
             "effects": {
                 "cL4kH57pf2nGIxaK": {
-                    "name": "ビーストフォーム変身"
+                    "name": "ビーストフォーム変身",
+                    "description": "<p>ティア1のビーストフォームの選択肢を1つ選び、その生き物のより大きく、より強力な姿になります。この姿のあいだ、元の姿の特性と特徴をすべて保ち、さらに以下のボーナスを得ます。</p><ul><li><p>ダメージロールに＋6のボーナス</p></li><li><p>この姿が使う特性に＋1のボーナス</p></li><li><p>回避値に＋2のボーナス</p></li></ul>"
                 }
             }
         },
         "Legendary Hybrid": {
             "_note": "Legendary Hybrid",
+            "name": "伝説の混成体",
             "effects": {
                 "RbZKFWATkfLZm67j": {
-                    "name": "ビーストフォーム変身"
+                    "name": "ビーストフォーム変身",
+                    "description": "<p>この生き物に変身するには、<strong>追加でストレスを1マーク</strong>します。ティア1〜2のビーストフォームの選択肢から任意に2つ選びます。それらの選択肢から、利点を合計4つと特徴を2つ選びます。</p>"
                 }
             }
         },
         "Massive Behemoth": {
             "_note": "Massive Behemoth",
+            "name": "巨大な巨獣",
+            "examples": "象、マンモス、サイなど",
             "advantageOn": {
+                "4dxvlv6F3kjurgJg": {
+                    "value": "発見する"
+                },
+                "WiskYFviMDpdKcR6": {
+                    "value": "庇う"
+                },
                 "AoFiYKVbPxGalK8Y": {
                     "value": "恐れさせる"
                 },
@@ -140,9 +227,17 @@
         },
         "Mighty Lizard": {
             "_note": "Mighty Lizard",
+            "name": "強大な蜥蜴",
+            "examples": "アリゲーター、クロコダイル、アメリカドクトカゲなど",
             "advantageOn": {
                 "f5tUBKOfwDQKPrYP": {
                     "value": "攻撃"
+                },
+                "XS1zEu9IJ6ec0mZ0": {
+                    "value": "忍び寄る"
+                },
+                "K0hUzxErOc7t0myx": {
+                    "value": "追跡する"
                 }
             },
             "effects": {
@@ -153,6 +248,8 @@
         },
         "Mighty Strider": {
             "_note": "Mighty Strider",
+            "name": "強大な駆け手",
+            "examples": "駱駝、馬、縞馬など",
             "advantageOn": {
                 "Az0LCAgV6NQMddlz": {
                     "value": "跳躍する"
@@ -172,12 +269,17 @@
         },
         "Mythic Aerial Hunter": {
             "_note": "Mythic Aerial Hunter",
+            "name": "神話の空の狩人",
+            "examples": "竜、プテロダクティルス、ロック鳥、ワイバーンなど",
             "advantageOn": {
                 "wqIBmWSIbwwJdB07": {
                     "value": "攻撃"
                 },
                 "wUjIM4ohI1309Qmy": {
                     "value": "欺く"
+                },
+                "7YTz0VSytRCmpn3Y": {
+                    "value": "発見する"
                 },
                 "YyyzVE5FOevDKvAP": {
                     "value": "進路を取る"
@@ -191,25 +293,34 @@
         },
         "Mythic Beast": {
             "_note": "Mythic Beast",
+            "name": "神話の獣",
             "effects": {
                 "vhwbPQ2YT64qD1t1": {
-                    "name": "ビーストフォーム変身"
+                    "name": "ビーストフォーム変身",
+                    "description": "<p>ティア1かティア2のビーストフォームの選択肢を1つ選び、その生き物のより大きく、より強力な姿になります。この姿のあいだ、元の姿の特性と特徴をすべて保ち、さらに以下のボーナスを得ます。</p><ul><li><p>ダメージロールに＋9のボーナス</p></li><li><p>この姿が使う特性に＋2のボーナス</p></li><li><p>回避値に＋3のボーナス</p></li><li><p>ダメージダイスが1段階大きくなります（d6はd8に、d8はd10になるなど）</p></li></ul>"
                 }
             }
         },
         "Mythic Hybrid": {
             "_note": "Mythic Hybrid",
+            "name": "神話の混成体",
             "effects": {
                 "HutJQ9HGtr1Eoibp": {
-                    "name": "ビーストフォーム変身"
+                    "name": "ビーストフォーム変身",
+                    "description": "<p>この生き物に変身するには、<strong>追加でストレスを2マーク</strong>します。ティア1〜3のビーストフォームの選択肢から任意に3つ選びます。それらの選択肢から、利点を合計5つと特徴を3つ選びます。</p>"
                 }
             }
         },
         "Nimble Grazer": {
             "_note": "Nimble Grazer",
+            "name": "身軽な草食獣",
+            "examples": "鹿、ガゼル、山羊など",
             "advantageOn": {
                 "pZh7UYwWgdddKX77": {
                     "value": "跳躍する"
+                },
+                "MVO36LtrjuSU4cAv": {
+                    "value": "忍び寄る"
                 },
                 "P9W2JIx0FJgQf6b6": {
                     "value": "疾走する"
@@ -223,12 +334,17 @@
         },
         "Pack Predator": {
             "_note": "Pack Predator",
+            "name": "群れの捕食者",
+            "examples": "コヨーテ、ハイエナ、狼など",
             "advantageOn": {
                 "WwCjWpa7n6KcP3kY": {
                     "value": "攻撃"
                 },
                 "oNzBOc2bkcb7CrQk": {
                     "value": "疾走する"
+                },
+                "wtz5CPetdNzXTyBA": {
+                    "value": "追跡する"
                 }
             },
             "effects": {
@@ -239,9 +355,17 @@
         },
         "Pouncing Predator": {
             "_note": "Pouncing Predator",
+            "name": "跳びかかる捕食者",
+            "examples": "チーター、獅子、豹など",
             "advantageOn": {
                 "q5bjThxdJ1JAuX2r": {
                     "value": "攻撃"
+                },
+                "paOxE0DUkqKYVbss": {
+                    "value": "登攀"
+                },
+                "nDnJf1tiImA6ryyy": {
+                    "value": "忍び寄る"
                 }
             },
             "effects": {
@@ -252,9 +376,14 @@
         },
         "Powerful Beast": {
             "_note": "Powerful Beast",
+            "name": "強力な獣",
+            "examples": "熊、雄牛、ムースなど",
             "advantageOn": {
                 "LhmE20iV5HBExx0A": {
                     "value": "進路を取る"
+                },
+                "EP4KQJfmXWGomsVC": {
+                    "value": "庇う"
                 },
                 "lMMv1eTry3N6rZCx": {
                     "value": "恐れさせる"
@@ -268,9 +397,17 @@
         },
         "Stalking Arachnid": {
             "_note": "Stalking Arachnid",
+            "name": "忍び寄る蜘蛛",
+            "examples": "タランチュラ、コモリグモなど",
             "advantageOn": {
                 "udIR54Etg9sx2XbM": {
                     "value": "攻撃"
+                },
+                "6On5GDzLxq6bao36": {
+                    "value": "登攀"
+                },
+                "IZjCaeEmcRBzGeDn": {
+                    "value": "忍び寄る"
                 }
             },
             "effects": {
@@ -281,7 +418,12 @@
         },
         "Striking Serpent": {
             "_note": "Striking Serpent",
+            "name": "打ちかかる蛇",
+            "examples": "コブラ、ガラガラヘビ、マムシなど",
             "advantageOn": {
+                "5bQks8eptInw0g9i": {
+                    "value": "登攀"
+                },
                 "j0mztP3MfVkA8KVL": {
                     "value": "欺く"
                 },
@@ -297,6 +439,8 @@
         },
         "Terrible Lizard": {
             "_note": "Terrible Lizard",
+            "name": "恐ろしい蜥蜴",
+            "examples": "ブラキオサウルス、ティラノサウルスなど",
             "advantageOn": {
                 "onvcDZ0vtg88AjUn": {
                     "value": "攻撃"
@@ -306,6 +450,9 @@
                 },
                 "oPA8ogGHNDvxrJps": {
                     "value": "恐れさせる"
+                },
+                "BIdGziN8wJX0iaHQ": {
+                    "value": "追跡する"
                 }
             },
             "effects": {
@@ -336,52 +483,118 @@
             }
         },
         "Agile": {
-            "_note": "Agile"
+            "_note": "Agile",
+            "name": "敏速",
+            "description": "<p>あなたの移動は音を立てず、<strong>希望を1消費</strong>して、ロールせずに遠距離まで移動できます。</p>",
+            "actions": {
+                "4yQ56hSL5LBkzrV6": {
+                    "name": "希望を消費する",
+                    "description": "<p><strong>希望を1消費</strong>して、ロールせずに遠距離まで移動します。</p>"
+                }
+            }
         },
         "Aquatic": {
             "_note": "Aquatic",
-            "name": "水棲"
+            "name": "水棲",
+            "description": "<p>水中で自然に呼吸し、動けます。</p>"
         },
         "Armored Shell": {
             "_note": "Armored Shell",
+            "name": "装甲の殻",
+            "description": "<p>硬化した外皮によって物理ダメージへの抵抗を得ます。さらに<strong>鎧スロットを1マーク</strong>して、殻の中に引っ込めます。殻の中にいるあいだ、物理ダメージは（抵抗を適用したあと）鎧値に等しい数だけ軽減されますが、この状態を解かないと他のアクションを行えません。</p>",
             "actions": {
                 "15XSCpCAZ2JLspmN": {
-                    "name": "格納する"
+                    "name": "格納する",
+                    "description": "<p><strong>鎧スロットを1マーク</strong>して、殻の中に引っ込めます。殻の中にいるあいだ、物理ダメージは（抵抗を適用したあと）鎧値に等しい数だけ軽減されますが、この状態を解かないと他のアクションを行えません。</p>"
+                }
+            },
+            "effects": {
+                "XFmEC0kDQJNrGbtr": {
+                    "name": "装甲の殻",
+                    "description": "<p>硬化した外皮によって物理ダメージへの抵抗を得ます。</p>"
+                },
+                "OY3lEB3vuDKNLzxv": {
+                    "name": "引っ込み",
+                    "description": "<p>殻の中にいるあいだ、物理ダメージは（抵抗を適用したあと）鎧値に等しい数だけ軽減されますが、この状態を解かないと他のアクションを行えません。</p>"
                 }
             }
         },
         "Bird's-Eye View": {
-            "_note": "Bird's-Eye View"
+            "_note": "Bird's-Eye View",
+            "name": "鳥の目の眺め",
+            "description": "<p>好きなときに飛行できます。休息ごとに1回、空中にいるあいだ、ロールせずに眼下の場面についてGMに質問を1つできます。キャラクターがその情報に基づいて行動するロールを初めて行うとき、そのロールに有利を得ます。</p>",
+            "actions": {
+                "JRCE5826Yhh09aaI": {
+                    "name": "質問する",
+                    "description": "<p>休息ごとに1回、空中にいるあいだ、ロールせずに眼下の場面についてGMに質問を1つできます。キャラクターがその情報に基づいて行動するロールを初めて行うとき、そのロールに有利を得ます。</p>"
+                }
+            }
         },
         "Cannonball": {
-            "_note": "Cannonball"
+            "_note": "Cannonball",
+            "name": "砲弾",
+            "description": "<p><strong>ストレスを1マーク</strong>して、味方にあなたを敵対者へ投げつけさせるか撃ち出させます。そのために、味方は近距離以内の対象に対し、素早さか頑強（味方が選ぶ）を使った攻撃ロールを行います。成功した場合、その敵対者は投げた者の習熟を使った<strong>d12+2</strong>の物理ダメージを受けます。<strong>希望を1消費</strong>して、最初の敵対者から至近距離以内の敵対者をもう1体対象にできます。2体目の対象は、1体目に与えたダメージの半分を受けます。</p>",
+            "actions": {
+                "5Vxm8LyBHE1GYbsv": {
+                    "name": "砲弾",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、味方にあなたを敵対者へ投げつけさせるか撃ち出させます。そのために、味方は近距離以内の対象に対し、素早さか頑強（味方が選ぶ）を使った攻撃ロールを行います。成功した場合、その敵対者は投げた者の習熟を使った<strong>d12+2</strong>の物理ダメージを受けます。</p>"
+                },
+                "QCQzArBrajYi2D2I": {
+                    "name": "希望を消費する",
+                    "description": "<p><strong>希望を1消費</strong>して、最初の敵対者から至近距離以内の敵対者をもう1体対象にできます。2体目の対象は、1体目に与えたダメージの半分を受けます。</p>"
+                }
+            }
         },
         "Carrier": {
-            "_note": "Carrier"
+            "_note": "Carrier",
+            "name": "運び手",
+            "description": "<p>移動するとき、同意した味方を2人まで連れていけます。</p>"
         },
         "KAl5lxAaEfu21ukQ": {
-            "_note": "Carrier"
+            "_note": "Carrier",
+            "name": "運び手",
+            "description": "<p>移動するとき、同意した味方を4人まで連れていけます。</p>"
         },
         "TME5cvuTk0TW3yiJ": {
-            "_note": "Carrier"
+            "_note": "Carrier",
+            "name": "運び手",
+            "description": "<p>移動するとき、同意した味方を3人まで連れていけます。</p>"
         },
         "Companion": {
             "_note": "Companion",
-            "name": "相棒"
+            "name": "相棒",
+            "description": "<p>「味方を助ける」を行うとき、有利ダイスとして<strong>d8</strong>を振れます。</p>"
         },
         "Deadly Raptor": {
-            "_note": "Deadly Raptor"
+            "_note": "Deadly Raptor",
+            "name": "致命の猛禽",
+            "description": "<p>好きなときに飛行でき、アクションの一部として遠距離まで移動できます。少なくとも近距離から一直線に対象の近接射程内へ移動し、同じアクションでその対象に攻撃を行ったとき、習熟より低い出目が出たダメージダイスをすべて振り直せます。</p>"
         },
         "Demolish": {
             "_note": "Demolish",
+            "name": "破砕",
+            "description": "<p><strong>希望を1消費</strong>して、一直線に遠距離まで移動し、その線の近接射程内のすべての対象に攻撃を行います。成功した対象は、あなたの習熟を使った<strong>d8+10</strong>の物理ダメージを受け、一時的に<em>脆弱</em>になります。</p>",
             "actions": {
                 "5SXMT39vrZoK7GBM": {
-                    "name": "攻撃"
+                    "name": "攻撃",
+                    "description": "<p>希望を1消費して、一直線に遠距離まで移動し、その線の近接射程内のすべての対象に攻撃を行います。成功した対象は、あなたの習熟を使ったd8+10の物理ダメージを受け、一時的に脆弱になります。</p>",
+                    "areas": [
+                        {
+                            "name": "破砕"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "FXdFgEgqVl5gIWJS": {
+                    "name": "破砕され"
                 }
             }
         },
         "Devastating Strikes": {
             "_note": "Devastating Strikes",
+            "name": "壊滅的な打撃",
+            "description": "<p>近接射程内の対象に重傷値のダメージを与えたとき、<strong>ストレスを1マーク</strong>して、その対象に追加でHPを1マークさせられます。</p>",
             "actions": {
                 "EvdZLuP0wunF5cmq": {
                     "name": "ストレスをマーク"
@@ -390,6 +603,8 @@
         },
         "Elusive Prey": {
             "_note": "Elusive Prey",
+            "name": "捉えどころない獲物",
+            "description": "<p>あなたへの攻撃ロールが成功するとき、<strong>ストレスを1マーク</strong>して<strong>d4</strong>を振れます。その結果を、この攻撃に対する回避値に加えます。</p>",
             "actions": {
                 "9lvrqQKTEB3NRwvM": {
                     "name": "ストレスをマーク"
@@ -397,86 +612,230 @@
             }
         },
         "Fleet": {
-            "_note": "Fleet"
+            "_note": "Fleet",
+            "name": "快足",
+            "description": "<p><strong>希望を1消費</strong>して、ロールせずに遠距離まで移動します。</p>",
+            "actions": {
+                "pn5p2ocVvVPzDyAX": {
+                    "name": "移動する"
+                }
+            }
         },
         "Fragile": {
-            "_note": "Fragile"
+            "_note": "Fragile",
+            "name": "脆い",
+            "description": "<p>中傷値以上のダメージを受けたとき、ビーストフォームが解けます。</p>"
         },
         "Hobbling Strike": {
             "_note": "Hobbling Strike",
+            "name": "足を奪う一撃",
+            "description": "<p>近接射程内の対象への攻撃に成功したとき、<strong>ストレスを1マーク</strong>して、その対象を一時的に<em>脆弱</em>にできます。</p>",
             "actions": {
                 "p8DESOMGA6dLwEMz": {
                     "name": "ストレスをマーク"
                 }
+            },
+            "effects": {
+                "2kKkV9zhfvqA2vlt": {
+                    "name": "足を奪う一撃"
+                }
             }
         },
         "Hollow Bones": {
-            "_note": "Hollow Bones"
+            "_note": "Hollow Bones",
+            "name": "中空の骨",
+            "description": "<p>ダメージしきい値に−2のペナルティを受けます。</p>",
+            "effects": {
+                "RM8wHu5GIF6zfF7V": {
+                    "name": "中空の骨",
+                    "description": "<p>ダメージしきい値に−2のペナルティを受けます。</p>"
+                }
+            }
         },
         "Massive Stride": {
-            "_note": "Massive Stride"
+            "_note": "Massive Stride",
+            "name": "巨躯の歩み",
+            "description": "<p>ロールせずに遠距離まで移動できます。体の大きさにより、（GMの裁量で）険しい地形を無視します。</p>"
         },
         "Ocean Master": {
-            "_note": "Ocean Master"
+            "_note": "Ocean Master",
+            "name": "大洋の主",
+            "description": "<p>水中で自然に呼吸し、動けます。近接射程内の対象への攻撃に成功したとき、その対象を一時的に<em>拘束</em>できます。</p>",
+            "actions": {
+                "ge2koBRj4snhIzDA": {
+                    "name": "拘束する",
+                    "description": "<p>近接射程内の対象への攻撃に成功したとき、その対象を一時的に<em>拘束</em>できます。</p>"
+                }
+            },
+            "effects": {
+                "6GBczj8REkDmgX2Q": {
+                    "name": "大洋の主"
+                }
+            }
         },
         "Pack Hunting": {
-            "_note": "Pack Hunting"
+            "_note": "Pack Hunting",
+            "name": "群れ狩り",
+            "description": "<p>あなたの直前に行動した味方と同じ対象への攻撃に成功したとき、ダメージロールに<strong>d8</strong>を加えます。</p>"
         },
         "Physical Defense": {
-            "_note": "Physical Defense"
+            "_note": "Physical Defense",
+            "name": "物理防御",
+            "description": "<p>ダメージしきい値に＋3のボーナスを得ます。</p>",
+            "effects": {
+                "hs9vWE92QQQx15ET": {
+                    "name": "物理防御",
+                    "description": "<p>ダメージしきい値に＋3のボーナスを得ます。</p>"
+                }
+            }
         },
         "Rampage": {
             "_note": "Rampage",
+            "name": "暴れ回る",
+            "description": "<p>ダメージダイスで1が出たとき、d10を振ってその結果をダメージロールに加えられます。さらに攻撃ロールを行う前に、<strong>ストレスを1マーク</strong>して、その攻撃の習熟に＋1のボーナスを得られます。</p>",
             "actions": {
                 "N7IoOHpqcvcJNsJQ": {
-                    "name": "ストレスをマーク"
+                    "name": "ストレスをマーク",
+                    "description": "<p>攻撃ロールを行う前に、ストレスを1マークして、その攻撃の習熟に＋1のボーナスを得られます。</p>"
+                }
+            },
+            "effects": {
+                "A7l4JEBC1FFQajsN": {
+                    "name": "暴れ回る",
+                    "description": "<p>攻撃ロールを行う前に、ストレスを1マークして、その攻撃の習熟に＋1のボーナスを得られます。</p>"
                 }
             }
         },
         "Snapping Strike": {
-            "_note": "Snapping Strike"
+            "_note": "Snapping Strike",
+            "name": "噛みつきの打撃",
+            "description": "<p>近接射程内の対象への攻撃に成功したとき、<strong>希望を1消費</strong>して、その相手を顎で噛み締め、一時的に<em>拘束</em>かつ<em>脆弱</em>にできます。</p>",
+            "actions": {
+                "ib94yYJ1HA0dm0VC": {
+                    "name": "希望を消費する"
+                }
+            },
+            "effects": {
+                "y3EsJuInxE7juNXT": {
+                    "name": "噛みつきの打撃"
+                }
+            }
         },
         "Takedown": {
             "_note": "Takedown",
+            "name": "引き倒し",
+            "description": "<p><strong>ストレスを1マーク</strong>して、対象の近接射程内へ移動し、その対象に攻撃ロールを行います。成功した場合、この攻撃の習熟に＋2のボーナスを得て、その対象はストレスを1マークしなければなりません。</p>",
             "actions": {
                 "9H8KTVtqnSlEGoZ1": {
                     "name": "ストレスをマーク"
                 }
+            },
+            "effects": {
+                "BuKQ4yMAFebxj83k": {
+                    "name": "引き倒し",
+                    "description": "<p>この攻撃の習熟に＋2のボーナスを得て、その対象はストレスを1マークしなければなりません。</p>"
+                }
             }
         },
         "Thick Hide": {
-            "_note": "Thick Hide"
+            "_note": "Thick Hide",
+            "name": "厚い皮",
+            "description": "<p>ダメージしきい値に＋2のボーナスを得ます。</p>",
+            "effects": {
+                "ZoUJy8EOm9mVXuAw": {
+                    "name": "厚い皮",
+                    "description": "<p>ダメージしきい値に＋2のボーナスを得ます。</p>"
+                }
+            }
         },
         "Trample": {
             "_note": "Trample",
+            "name": "踏みつけ",
+            "description": "<p><strong>ストレスを1マーク</strong>して、一直線に近距離まで移動し、その線の近接射程内のすべての対象に攻撃を行います。成功した対象は、あなたの習熟を使った<strong>d8+1</strong>の物理ダメージを受け、一時的に<em>脆弱</em>になります。</p>",
             "actions": {
                 "YCOTIv9IVEKpumbJ": {
-                    "name": "攻撃"
+                    "name": "攻撃",
+                    "description": "<p><strong>ストレスを1マーク</strong>して、一直線に近距離まで移動し、その線の近接射程内のすべての対象に攻撃を行います。成功した対象は、あなたの習熟を使ったd8+1の物理ダメージを受け、一時的に<em>脆弱</em>になります。</p>",
+                    "areas": [
+                        {
+                            "name": "踏みつけ"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "LkekG4IngVW9rFjI": {
+                    "name": "踏みつけられ"
                 }
             }
         },
         "Undaunted": {
-            "_note": "Undaunted"
+            "_note": "Undaunted",
+            "name": "不屈",
+            "description": "<p>すべてのダメージしきい値に＋2のボーナスを得ます。</p>",
+            "effects": {
+                "wVoUVQJ2Ik7CiUuV": {
+                    "name": "不屈",
+                    "description": "<p>すべてのダメージしきい値に＋2のボーナスを得ます。</p>"
+                }
+            }
         },
         "Unyielding": {
-            "_note": "Unyielding"
+            "_note": "Unyielding",
+            "name": "不撓",
+            "description": "<p>鎧スロットをマークするとき、<strong>d6</strong>を振ります。結果が5以上の場合、鎧スロットをマークせずに重さをしきい値1段階下げます。</p>",
+            "actions": {
+                "hiGZCQpdTVqE5W4B": {
+                    "name": "d6をロール"
+                }
+            }
         },
         "Venomous Bite": {
-            "_note": "Venomous Bite"
+            "_note": "Venomous Bite",
+            "name": "毒の噛みつき",
+            "description": "<p>近接射程内の対象への攻撃に成功したとき、その対象は一時的に毒状態になります。毒状態のクリーチャーは、行動するたびに<strong>1d10</strong>の直接物理ダメージを受けます。</p>",
+            "actions": {
+                "eow90DYK6cUWOk7g": {
+                    "name": "毒"
+                }
+            },
+            "effects": {
+                "TTyAKKoUCoYXSMs4": {
+                    "name": "毒",
+                    "description": "<p>毒状態のクリーチャーは、行動するたびに<strong>1d10</strong>の直接物理ダメージを受けます。</p>"
+                }
+            }
         },
         "Venomous Strike": {
             "_note": "Venomous Strike",
+            "name": "毒の打撃",
+            "description": "<p>至近距離以内の任意の数の対象に攻撃を行います。成功した場合、その対象は一時的に毒状態になります。毒状態のクリーチャーは、行動するたびに<strong>1d10</strong>の直接物理ダメージを受けます。</p>",
             "actions": {
                 "igRoXxgaTT9tBQS7": {
                     "name": "攻撃"
                 }
+            },
+            "effects": {
+                "1iQPj96LqUNkRaxE": {
+                    "name": "毒",
+                    "description": "<p>毒状態のクリーチャーは、行動するたびに<strong>1d10</strong>の直接物理ダメージを受けます。</p>"
+                }
             }
         },
         "Vicious Maul": {
-            "_note": "Vicious Maul"
+            "_note": "Vicious Maul",
+            "name": "凶悪な噛み裂き",
+            "description": "<p>対象への攻撃に成功したとき、<strong>希望を1消費</strong>して、その対象を一時的に脆弱にし、この攻撃の習熟に＋1のボーナスを得られます。</p>",
+            "effects": {
+                "MIAh9XNwDXGDktCm": {
+                    "name": "噛み裂かれ"
+                }
+            }
         },
         "Warning Hiss": {
             "_note": "Warning Hiss",
+            "name": "警告の威嚇音",
+            "description": "<p><strong>ストレスを1マーク</strong>して、近接射程内の任意の数の対象を至近距離まで後退させます。</p>",
             "actions": {
                 "D9YmUP1aeiCzNxcC": {
                     "name": "ストレスをマーク"
@@ -484,7 +843,20 @@
             }
         },
         "Webslinger": {
-            "_note": "Webslinger"
+            "_note": "Webslinger",
+            "name": "糸繰り",
+            "description": "<p>冒険にも戦闘にも役立つ強靭な糸を作れます。この糸はクリーチャー1体を支えられるほど丈夫です。近距離以内の対象に対する器用ロールに成功して、その対象を一時的に<em>拘束</em>できます。</p>",
+            "actions": {
+                "vRU6xutkp3VYxZ0i": {
+                    "name": "拘束する",
+                    "description": "<p>近距離以内の対象に対する器用ロールに成功して、その対象を一時的に<em>拘束</em>できます。</p>"
+                }
+            },
+            "effects": {
+                "cBJueH89gNvvDKfQ": {
+                    "name": "糸繰り"
+                }
+            }
         }
     }
 }
