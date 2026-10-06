@@ -9,13 +9,19 @@
                 "nlAfmdgfHTmsOdPb": {
                     "name": "起動する"
                 }
-            }
+            },
+            "name": "空刃の護符",
+            "description": "<p>この護符は近接射程の武器に取り付けられます。休息ごとに3回、護符を起動して、近距離以内の対象を攻撃できます。</p>"
         },
         "Alistair's Torch": {
-            "_note": "Alistair's Torch"
+            "_note": "Alistair's Torch",
+            "name": "アリスターの松明",
+            "description": "<p>この魔法の松明は好きなときに灯せます。炎の光は本来よりもはるかに広い空間を満たし、洞窟を昼のように明るく照らすほどです。</p>"
         },
         "Arcane Cloak": {
-            "_note": "Arcane Cloak"
+            "_note": "Arcane Cloak",
+            "name": "秘術の外套",
+            "description": "<p>呪文発動特性を持つクリーチャーがこの外套を着ているあいだ、その色、質感、大きさを好きなように変えられます。</p>"
         },
         "Arcane Prism": {
             "_note": "Arcane Prism",
@@ -23,10 +29,25 @@
                 "QgBDJh0laEvOB94w": {
                     "name": "起動する"
                 }
+            },
+            "name": "秘術のプリズム",
+            "description": "<p>このプリズムを選んだ場所に据えて起動します。そこから近距離以内のすべての味方は、呪文発動ロールに＋1のボーナスを得ます。起動しているあいだ、プリズムは動かせません。プリズムを停止させたら、次の長期休息まで再び起動できません。</p>",
+            "effects": {
+                "Ee3Z0PnyERiNFgjU": {
+                    "name": "秘術のプリズム"
+                }
             }
         },
         "Attune Relic": {
-            "_note": "Attune Relic"
+            "_note": "Attune Relic",
+            "name": "同調の遺物",
+            "description": "<p>直感に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "KmoJVnCQJUGyrZIk": {
+                    "name": "同調の遺物",
+                    "description": "<p>直感に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Augur's Relic": {
             "_note": "Augur's Relic",
@@ -34,13 +55,29 @@
                 "liWsgZGKy0Jk9BVb": {
                     "name": "起動する"
                 }
-            }
+            },
+            "name": "占者の遺物",
+            "description": "<p>長期休息ごとに1回、希望を消費せずに自分の希望の特徴を起動できます。遺物は1つしか持てません。</p>"
         },
         "Bag of Ficklesand": {
-            "_note": "Bag of Ficklesand"
+            "_note": "Bag of Ficklesand",
+            "name": "気まぐれ砂の袋",
+            "description": "<p><code>[[/dr trait=\"presence\" difficulty=\"10\"]]</code>に成功して、この小さな砂袋をはるかに重く、あるいは軽くなるよう言いくるめられます。さらに<code>[[/dr trait=\"finesse\" difficulty=\"10\"]]</code>に成功すると、砂を少し対象の顔に吹きつけて、その対象を一時的に脆弱にできます。</p>",
+            "actions": {
+                "vPXp3uifPTpZxcvt": {
+                    "name": "砂を吹きつける"
+                }
+            },
+            "effects": {
+                "Ouq3xWzj5rf6olVs": {
+                    "name": "気まぐれ砂の袋"
+                }
+            }
         },
         "Ball Bearings": {
-            "_note": "Ball Bearings"
+            "_note": "Ball Bearings",
+            "name": "鉄球",
+            "description": "<p>この小袋には完璧になめらかな金属の球が入っています。</p>"
         },
         "Belt of Unity": {
             "_note": "Belt of Unity",
@@ -48,28 +85,55 @@
                 "SuaYNEUO9U9TIZWb": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "結束の帯",
+            "description": "<p>セッションごとに1回、希望を5消費して、2人ではなく3人のPCでタッグチームロールを主導できます。</p>"
         },
         "Blackwing Quill": {
-            "_note": "Blackwing Quill"
+            "_note": "Blackwing Quill",
+            "name": "黒翼の羽根ペン",
+            "description": "<p>この羽根ペンはインクが尽きることも、削り直す必要もありません。</p>"
         },
         "Bloodstone": {
-            "_note": "Bloodstone"
+            "_note": "Bloodstone",
+            "name": "血玉石",
+            "description": "<p>この石は、まだ特徴を持っていない武器に取り付けられます。その武器は以下の特徴を得ます。</p><p><strong>残虐</strong>：ダメージダイスで最大値が出たとき、ダメージダイスを1個追加で振ります。</p>"
         },
         "Bolster Relic": {
-            "_note": "Bolster Relic"
+            "_note": "Bolster Relic",
+            "name": "強壮の遺物",
+            "description": "<p>頑強に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "ByYXvJNr5YbXqn8I": {
+                    "name": "強壮の遺物",
+                    "description": "<p>頑強に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Boots of Supple Mystique": {
-            "_note": "Boots of Supple Mystique"
+            "_note": "Boots of Supple Mystique",
+            "name": "しなやかな神秘の長靴",
+            "description": "<p>この長靴を履いているあいだ、痕跡も足跡も残しません。</p>"
         },
         "Box of Dragon Dust": {
-            "_note": "Box of Dragon Dust"
+            "_note": "Box of Dragon Dust",
+            "name": "竜の粉の箱",
+            "description": "<p>この小箱には可燃性の粉が詰まっています。</p>"
         },
         "Box of Many Goods": {
-            "_note": "Box of Many Goods"
+            "_note": "Box of Many Goods",
+            "name": "多品の箱",
+            "description": "<p>長期休息ごとに1回、この小箱を開けて[[/r d12]]を振れます。結果が1〜6の場合、箱は空です。結果が7〜10の場合、無作為の一般的な消耗品が1つ入っています。結果が11〜12の場合、無作為の一般的な消耗品が2つ入っています。</p>",
+            "actions": {
+                "lt1iEma1OVUNZ77o": {
+                    "name": "開ける"
+                }
+            }
         },
         "Brooch": {
-            "_note": "Brooch"
+            "_note": "Brooch",
+            "name": "飾り留め",
+            "description": "<p>武器攻撃が成功したとき、対象をその位置から近距離まで突き飛ばせます。</p>"
         },
         "Calming Pendant": {
             "_note": "Calming Pendant",
@@ -77,28 +141,70 @@
                 "wIlkGuUddWSUp4nN": {
                     "name": "使う"
                 }
-            }
+            },
+            "name": "静穏のペンダント",
+            "description": "<p>最後のストレスをマークするとき、[[/r d6]]を振ります。結果が5以上の場合、それをマークしません。</p>"
         },
         "Caltrops": {
-            "_note": "Caltrops"
+            "_note": "Caltrops",
+            "name": "撒き菱",
+            "description": "<p>この撒き菱を自分の周囲の至近距離の範囲に撒けます。その範囲を急いで通り抜けるクリーチャーは、ストレスを1マークしなければなりません。</p>",
+            "actions": {
+                "6vD0Gcej6Xn0s7Do": {
+                    "name": "撒き菱を撒く",
+                    "areas": [
+                        {
+                            "name": "撒き菱"
+                        }
+                    ]
+                }
+            }
         },
         "Charging Quiver": {
-            "_note": "Charging Quiver"
+            "_note": "Charging Quiver",
+            "name": "充填の矢筒",
+            "description": "<p>この矢筒に収めていた矢での攻撃に成功したとき、ダメージロールに現在のティアに等しいボーナスを得ます。</p>",
+            "effects": {
+                "0zebbOsyjkm9IqE6": {
+                    "name": "充填の矢筒"
+                }
+            }
         },
         "Charm Relic": {
-            "_note": "Charm Relic"
+            "_note": "Charm Relic",
+            "name": "魅了の遺物",
+            "description": "<p>社交に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "2yr8Ps6wvaG3b1qy": {
+                    "name": "魅了の遺物",
+                    "description": "<p>社交に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Cheater's Coin": {
-            "_note": "Cheater's Coin"
+            "_note": "Cheater's Coin",
+            "name": "いかさま師の硬貨",
+            "description": "<p>この硬貨を投げるとき、希望を1消費して、どちらの面が出るかを決められます。</p>",
+            "actions": {
+                "UlWs1OJaoBtyhF2b": {
+                    "name": "いかさまをする"
+                }
+            }
         },
         "Clay Companion": {
-            "_note": "Clay Companion"
+            "_note": "Clay Companion",
+            "name": "粘土の相棒",
+            "description": "<p>この粘土の塊を粘土の動物の相棒へ形作ると、それはその動物として振る舞います。たとえば粘土の蜘蛛は粘土の巣を張り、粘土の鳥は飛べます。粘土の相棒は姿が変わっても記憶と人格を保ちますが、形ごとに新しい癖を身につけることもあります。</p>"
         },
         "Collapsible Pole": {
-            "_note": "Collapsible Pole"
+            "_note": "Collapsible Pole",
+            "name": "伸縮棒",
+            "description": "<p>この18フィートの棒は、連結した3フィートの節6本に分解できます。</p>"
         },
         "Collar of Ascendancy": {
-            "_note": "Collar of Ascendancy"
+            "_note": "Collar of Ascendancy",
+            "name": "昇格の首輪",
+            "description": "<p>この首輪をつけた動物は、共通語を話し理解する能力を得ます。</p>"
         },
         "Communion Relic": {
             "_note": "Communion Relic",
@@ -106,16 +212,35 @@
                 "f9OftUibtcsKJv94": {
                     "name": "希望を消費する"
                 }
-            }
+            },
+            "name": "交感の遺物",
+            "description": "<p>休息ごとに1回、希望を1消費して、味方の経験を自分のもののように使えます。遺物は1つしか持てません。</p>"
         },
         "Companion Case": {
-            "_note": "Companion Case"
+            "_note": "Companion Case",
+            "name": "相棒の容れ",
+            "description": "<p>この容れには小さな動物の相棒が収まります。相棒が中にいるあいだ、その動物と容れはあらゆるダメージと有害な効果を無効化します。</p>"
         },
         "Control Relic": {
-            "_note": "Control Relic"
+            "_note": "Control Relic",
+            "name": "制御の遺物",
+            "description": "<p>器用に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "OwjK2TqOizTiRGxD": {
+                    "name": "制御の遺物",
+                    "description": "<p>器用に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Corrector Sprite": {
-            "_note": "Corrector Sprite"
+            "_note": "Corrector Sprite",
+            "name": "校正のスプライト",
+            "description": "<p>この小さなスプライトはあなたの耳の穴の窪みに座り、戦闘中に役立つ助言をささやきます。短期休息ごとに1回、攻撃ロールに有利を得られます。</p>",
+            "actions": {
+                "saCkJzt1fb9GnEre": {
+                    "name": "聞く"
+                }
+            }
         },
         "Crucible Frames": {
             "_note": "Crucible Frames",
@@ -123,16 +248,42 @@
                 "pOrtB09wEkZiihkg": {
                     "name": "希望を消費する"
                 }
-            }
+            },
+            "name": "坩堝の眼鏡",
+            "description": "<p>この眼鏡は物体やクリーチャーの弱点を明らかにします。休息ごとに3回、希望を1消費して、攻撃ロールに有利を得られます。</p>"
         },
         "Dagginae's Obsidian Slate": {
-            "_note": "Dagginae's Obsidian Slate"
+            "_note": "Dagginae's Obsidian Slate",
+            "name": "ダギナエの黒曜石板",
+            "description": "<p>この紙のように薄い火山ガラスの板は、記録官が覚書を取るのに使います。その表面に刻まれた情報は消えますが、あなたが設定した合図で呼び戻せます。</p>"
         },
         "Dual Flask": {
-            "_note": "Dual Flask"
+            "_note": "Dual Flask",
+            "name": "二連の水筒",
+            "description": "<p>この水筒は2種類の液体を入れられます。側面の小さな切替を倒して、どちらを出すか切り替えられます。</p>"
         },
         "Eclipse Coin": {
-            "_note": "Eclipse Coin"
+            "_note": "Eclipse Coin",
+            "name": "日食の硬貨",
+            "description": "<p>休息ごとに1回、[[/r 1d2]]{硬貨を投げます。}表が出た場合、次に攻撃が成功するまで攻撃ロールに＋1のボーナスを得ます。裏が出た場合、あなたへの攻撃が失敗するまで回避値に＋1を得ます。</p>",
+            "actions": {
+                "82pnPzZykFw7Xhci": {
+                    "name": "表"
+                },
+                "zOi26P1bxyLh8S39": {
+                    "name": "裏"
+                }
+            },
+            "effects": {
+                "1thJk2e2snAmyvq3": {
+                    "name": "表",
+                    "description": "<p>次に攻撃が成功するまで攻撃ロールに＋1のボーナス。</p>"
+                },
+                "oGs7nvr3uO52GVTI": {
+                    "name": "裏",
+                    "description": "<p>あなたへの攻撃が失敗するまで回避値に＋1。</p>"
+                }
+            }
         },
         "Elusive Amulet": {
             "_note": "Elusive Amulet",
@@ -140,25 +291,57 @@
                 "vitnEzfU3gCzsRem": {
                     "name": "起動する"
                 }
+            },
+            "name": "捉えどころない護符",
+            "description": "<p>長期休息ごとに1回、この護符を起動して、移動するまで隠密状態になれます。この方法で隠密状態のあいだ、敵対者が通常ならあなたを見える位置に移動しても、あなたは見つかりません。</p>",
+            "effects": {
+                "YBkYjxU0Vn5JEsMK": {
+                    "name": "捉えどころない護符",
+                    "description": "<p>移動するまで隠密状態です。この方法で隠密状態のあいだ、敵対者が通常ならあなたを見える位置に移動しても、あなたは見つかりません。</p>"
+                }
             }
         },
         "Elven Spyglass": {
-            "_note": "Elven Spyglass"
+            "_note": "Elven Spyglass",
+            "name": "エルフの望遠鏡",
+            "description": "<p>この望遠鏡を使って、視界を100倍に拡大できます。</p>"
         },
         "Empty Chest": {
-            "_note": "Empty Chest"
+            "_note": "Empty Chest",
+            "name": "空の櫃",
+            "description": "<p>この魔法の櫃は空に見えます。定められた合図の言葉を唱えるか動作を行って櫃を開けると、中に収めたアイテムが見えます。</p>"
         },
         "Enchanter's Loupe": {
-            "_note": "Enchanter's Loupe"
+            "_note": "Enchanter's Loupe",
+            "name": "付呪師の拡大鏡",
+            "description": "<p>この拡大鏡を使って、幻影や付呪を見通せます。</p>"
         },
         "Enlighten Relic": {
-            "_note": "Enlighten Relic"
+            "_note": "Enlighten Relic",
+            "name": "啓明の遺物",
+            "description": "<p>知識に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "effects": {
+                "aWOGlmqC9l86GlFV": {
+                    "name": "啓明の遺物",
+                    "description": "<p>知識に＋1のボーナスを得ます。</p>"
+                }
+            }
         },
         "Escher's Mirrorball": {
-            "_note": "Escher's Mirrorball"
+            "_note": "Escher's Mirrorball",
+            "name": "エッシャーの鏡球",
+            "description": "<p>長期休息ごとに1回、この拳ほどの大きさの銀の球に命じて、周囲の全方位の像をその表面に写し取らせられます。この像は次の長期休息まで残ります。</p>",
+            "effects": {
+                "V5vAUbBIXfaUmMKi": {
+                    "name": "写し取った像",
+                    "description": "<p>この像は次の長期休息まで残ります。</p>"
+                }
+            }
         },
         "Fire Jar": {
-            "_note": "Fire Jar"
+            "_note": "Fire Jar",
+            "name": "火の壺",
+            "description": "<p>この壺の奇妙な液体の中身を注ぎ出して、直ちに火を起こせます。中身は長期休息を取ると元に戻ります。</p>"
         },
         "Flickerfly Pendant": {
             "_note": "Flickerfly Pendant"
@@ -268,7 +451,8 @@
             "_note": "Kingfisher's Net"
         },
         "Knockback Bracelets": {
-            "_note": "Knockback Bracelets"
+            "_note": "Knockback Bracelets",
+            "description": "<p>武器攻撃が成功したとき、対象をその位置から近距離まで突き飛ばせます。</p>"
         },
         "Lakestrider Boots": {
             "_note": "Lakestrider Boots"
@@ -461,7 +645,23 @@
             "_note": "Traveler's Bell"
         },
         "Two-Faced Aegis Brooch": {
-            "_note": "Two-Faced Aegis Brooch"
+            "_note": "Two-Faced Aegis Brooch",
+            "actions": {
+                "jO0d2urVgS7Sam8O": {
+                    "name": "表"
+                },
+                "MFe6wYWZt1D95fIU": {
+                    "name": "裏"
+                }
+            },
+            "effects": {
+                "v4B2AXAw5ipJ3KG6": {
+                    "name": "表"
+                },
+                "pxrbpDOlTozFmTnr": {
+                    "name": "裏"
+                }
+            }
         },
         "Valorstone": {
             "_note": "Valorstone"

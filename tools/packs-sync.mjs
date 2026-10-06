@@ -149,6 +149,9 @@ function allowedNumbers(source) {
     const allowed = String(source).match(NUMBERS) ?? [];
     for (const word of String(source).toLowerCase().match(/[a-z]+/g) ?? []) {
         if (NUMBER_WORDS[word]) allowed.push(NUMBER_WORDS[word]);
+        /* "a hundredfold" is 100倍: the multiplier is the number word with -fold on it. */
+        const bare = word.replace(/fold$/, '');
+        if (bare !== word && NUMBER_WORDS[bare]) allowed.push(NUMBER_WORDS[bare]);
     }
     /*
      * Japanese groups large numbers by 万 (ten thousand), not by thousands, so
