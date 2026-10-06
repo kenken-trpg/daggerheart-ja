@@ -27,8 +27,6 @@ jobs:
         id: version
         run: echo "value=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
 
-      # module.json の version / download がタグと食い違ったまま配られると、
-      # Foundry が更新を検出できなくなる。ここで揃える。
       # check は上流の原文と突き合わせるので、参照用の原文を取る。
       # main ではなく module.json が verified と宣言しているシステム版に固定する。
       # 検査は「我々が対応すると言っているバージョン」に対して行うべきで、
@@ -44,6 +42,8 @@ jobs:
       - name: Check the licence boundary before building
         run: npm run packs:check
 
+      # module.json の version / download がタグと食い違ったまま配られると、
+      # Foundry が更新を検出できなくなる。ここで揃える。
       - name: Point the manifest at this release
         env:
           VERSION: ${{ steps.version.outputs.value }}
@@ -51,8 +51,10 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, os
-          # タグ名は環境変数で受け取る。${{ }} でソースに直接展開すると、
+          # タグ名は環境変数で受け取る。式展開でソースへ直接埋め込むと、
           # 引用符や改行を含むタグがこのスクリプトに注入できてしまう。
+          # (そのコメント自体も書けない: Actions はファイル中のどこにあっても
+          #  式の記法を解釈するので、ヒアドキュメントの中でも評価される。)
           version = os.environ["VERSION"]
           repo = os.environ["REPO"]
           with open("module.json") as f:
