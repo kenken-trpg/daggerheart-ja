@@ -595,7 +595,8 @@
             },
             "effects": {
                 "yx4ZkXeuXgw2KvV4": {
-                    "name": "グラインドルトゥースの毒"
+                    "name": "グラインドルトゥースの毒",
+                    "description": "<p>毒を塗った武器での次のダメージロールで、追加で1d6の物理ダメージを与えます。</p>"
                 }
             }
         },
@@ -671,7 +672,8 @@
             },
             "effects": {
                 "P7tbNjq58bQ9R1Cc": {
-                    "name": "改良グラインドルトゥースの毒"
+                    "name": "改良グラインドルトゥースの毒",
+                    "description": "<p>毒を塗った武器での次のダメージロールで、追加で1d8の物理ダメージを与えます。</p>"
                 }
             }
         },
@@ -1028,7 +1030,8 @@
             },
             "effects": {
                 "L68lFhuWdS3ppDxR": {
-                    "name": "神話の粉"
+                    "name": "神話の粉",
+                    "description": "<p>塗った武器での次のダメージロールで、追加で1d12の魔法ダメージを与えます。</p>"
                 }
             }
         },
@@ -1212,14 +1215,24 @@
         },
         "Redthorn Saliva": {
             "_note": "Redthorn Saliva",
+            "name": "赤棘の唾液",
+            "description": "<p>この唾液を物理ダメージを与える武器に塗って、その武器での次のダメージロールにd12を加えられます。</p>",
             "actions": {
                 "kOU2DpAIHvQsFY5A": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "tWf00ezdpxQQLuZ1": {
+                    "name": "赤棘の唾液",
+                    "description": "<p>唾液を塗った武器での次のダメージロールで、追加で1d12の物理ダメージを与えます。</p>"
                 }
             }
         },
         "Replication Parchment": {
             "_note": "Replication Parchment",
+            "name": "複写の羊皮紙",
+            "description": "<p>この羊皮紙を別の羊皮紙に触れさせて、もう一方の内容を完璧に写し取れます。使用するとこの羊皮紙は普通の紙になります。</p>",
             "actions": {
                 "j5gIVHXvcGu7PEZZ": {
                     "name": "使う"
@@ -1228,15 +1241,28 @@
         },
         "Salamander Salve": {
             "_note": "Salamander Salve",
+            "name": "火トカゲの軟膏",
+            "description": "<p>この軟膏を肌に塗って、次の休息まで熱を無効化できます。</p>",
             "actions": {
                 "Hz6U04pXtOYBDQ2L": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "rlsDpkLoqhBbHxUk": {
+                    "name": "火トカゲの軟膏",
+                    "description": "<p>この軟膏を肌に塗って、次の休息まで熱を無効化できます。</p>"
                 }
             }
         },
         "Self-Sewing Thread": {
             "_note": "Self-Sewing Thread",
+            "name": "自ら縫う糸",
+            "description": "<p>この糸を使って、HPを1つか鎧スロットを2つのいずれかを消去できます。</p>",
             "actions": {
+                "Smq9zj8nNK64CS62": {
+                    "name": "HPを消す"
+                },
                 "dE5BTVbmJ4Yuoy0M": {
                     "name": "鎧スロットを消す"
                 }
@@ -1244,14 +1270,23 @@
         },
         "Shrinking Potion": {
             "_note": "Shrinking Potion",
+            "name": "縮小の薬",
+            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを半分にできます。この姿のあいだ、素早さに＋2のボーナス、習熟に−1のペナルティを受けます。</p>",
             "actions": {
                 "F9vKFVwtJfR4Q8Kh": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "yaRLd7eHWYm2MHRM": {
+                    "name": "縮小の薬"
                 }
             }
         },
         "Slayer's Salt": {
             "_note": "Slayer's Salt",
+            "name": "討ち手の塩",
+            "description": "<p>この塩を窓枠や敷居に沿って線状に撒いて、線が崩れるまで不死のクリーチャーが越えられない魔法の障壁を作れます。</p>",
             "actions": {
                 "3IALZdyYjIgAbgea": {
                     "name": "使う"
@@ -1259,10 +1294,19 @@
             }
         },
         "Sleeping Sap": {
-            "_note": "Sleeping Sap"
+            "_note": "Sleeping Sap",
+            "name": "眠りの樹液",
+            "description": "<p>この薬を飲んで、ひと晩の休息のあいだ眠りに落ちられます。目覚めたときにすべてのストレスを消去します。</p>",
+            "actions": {
+                "0cqzI66ChzO6x8WF": {
+                    "name": "目覚める"
+                }
+            }
         },
         "Snakeskin Spirit": {
             "_note": "Snakeskin Spirit",
+            "name": "蛇皮の蒸留酒",
+            "description": "<p>この薬を飲んで、皮膚の表層を脱ぎ捨て、傷痕を1つ癒やせます。</p>",
             "actions": {
                 "773SxjjdjRsxoroZ": {
                     "name": "飲む"
@@ -1270,18 +1314,39 @@
             }
         },
         "Snap Powder": {
-            "_note": "Snap Powder"
+            "_note": "Snap Powder",
+            "name": "弾ける粉",
+            "description": "<p>ストレスを1マークして、HPを1消去します。</p>",
+            "actions": {
+                "FVn1NAbzHHyX2lsM": {
+                    "name": "吸い込む"
+                }
+            }
         },
         "Snapthorn Seed": {
             "_note": "Snapthorn Seed",
+            "name": "弾ける棘の種",
+            "description": "<p>この種を見える地点に投げつけられます。種は絡み合う縛めの蔓となって爆発し、その地点から近距離以内のすべてのクリーチャーを一時的に拘束します。</p>",
             "actions": {
                 "hGKzpxGdX4F8Ff4h": {
-                    "name": "投げつけ"
+                    "name": "投げつけ",
+                    "areas": [
+                        {
+                            "name": "弾ける棘の種"
+                        }
+                    ]
+                }
+            },
+            "effects": {
+                "Zi97S6oahSHgWD96": {
+                    "name": "棘縛"
                 }
             }
         },
         "Sprite Bottle": {
             "_note": "Sprite Bottle",
+            "name": "スプライトの瓶",
+            "description": "<p>最後のHPをマークしたとき、この瓶は砕けて中のスプライトを解き放ちます。スプライトはあなたのHPをすべて消去し、死すべき者の領域から消えていきます。</p>",
             "actions": {
                 "OaeTodiubEfIhiZe": {
                     "name": "使う"
@@ -1290,6 +1355,8 @@
         },
         "Staff of Reversal": {
             "_note": "Staff of Reversal",
+            "name": "反転の杖",
+            "description": "<p>この杖を地面に打ちつけて折り、遠距離以内の魔法による変身か効果を1つ反転させられます。</p>",
             "actions": {
                 "TgL2lMYlKXuHxXIq": {
                     "name": "割る"
@@ -1298,6 +1365,8 @@
         },
         "Stake of Abjuration": {
             "_note": "Stake of Abjuration",
+            "name": "退魔の杭",
+            "description": "<p>この杭を地面に打ち込み、宣告を1つ行えます。次の休息まで、杭から遠距離以内にいてその宣告に背いたクリーチャーは、ストレスを1マークしなければなりません。杭は次の休息まで保ち、そのあと砕けます。</p>",
             "actions": {
                 "he7oP28pyrltNq7I": {
                     "name": "使う"
@@ -1306,6 +1375,8 @@
         },
         "Stamina Potion": {
             "_note": "Stamina Potion",
+            "name": "体力の薬",
+            "description": "<p>ストレスを1d4+1消去します。</p>",
             "actions": {
                 "BnYXCo5zr50Sw8gj": {
                     "name": "飲む"
@@ -1314,38 +1385,65 @@
         },
         "Stardrop": {
             "_note": "Stardrop",
+            "name": "星の滴",
+            "description": "<p>この星の滴を使い、彗星の雹嵐を呼び出して、超遠距離以内のすべての対象に8d20の物理ダメージを与えられます。</p>",
             "actions": {
                 "pt5U6hlyx4T7MUOa": {
-                    "name": "使う"
+                    "name": "使う",
+                    "description": "<p>この星の滴を使い、彗星の雹嵐を呼び出して、超遠距離以内のすべての対象に8d20の物理ダメージを与えられます。</p><p>@Template[type:emanation|range:vf]</p>"
                 }
             }
         },
         "Steelskin Salve": {
             "_note": "Steelskin Salve",
+            "name": "鋼肌の軟膏",
+            "description": "<p>この軟膏を肌に塗って、シーンの終わりまでダメージしきい値にティアに等しいボーナスを得られます。</p>",
             "actions": {
                 "MnlcijQlwEDHPPLW": {
                     "name": "塗る"
+                }
+            },
+            "effects": {
+                "5QULYy5qOtKlgCrC": {
+                    "name": "鋼肌",
+                    "description": "<p>この軟膏を肌に塗って、シーンの終わりまでダメージしきい値にティアに等しいボーナスを得られます。</p>"
                 }
             }
         },
         "Stonemason's Fortune": {
             "_note": "Stonemason's Fortune",
+            "name": "石工の幸運",
+            "description": "<p>この灰色の煉瓦を地面に投げつけると、直ちに高さ6フィート、幅10フィート、厚さ2フィートの硬い石の壁へと育ちます。</p>",
             "actions": {
                 "E3rM3gMAWFF727g9": {
-                    "name": "投げつけ"
+                    "name": "投げつけ",
+                    "areas": [
+                        {
+                            "name": "石工の幸運"
+                        }
+                    ]
                 }
             }
         },
         "Stride Potion": {
             "_note": "Stride Potion",
+            "name": "疾走の薬",
+            "description": "<p>次の素早さロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "GwQgdB3E1HogFKvD": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "xQ0xPDxskzZH4jeK": {
+                    "name": "疾走の薬"
                 }
             }
         },
         "Sun Tree Sap": {
             "_note": "Sun Tree Sap",
+            "name": "陽樹の樹液",
+            "description": "<p>この樹液を摂取して[[/r d6]]を振ります。結果が5〜6の場合、HPを2消去します。結果が2〜4の場合、ストレスを3消去します。結果が1の場合、死の帳の向こうを見て、変わり果てて戻り、傷痕を1つ得ます。</p>",
             "actions": {
                 "Fh7OR8ZmiLNvRPHa": {
                     "name": "摂取する"
@@ -1354,6 +1452,8 @@
         },
         "Sunlight Orb": {
             "_note": "Sunlight Orb",
+            "name": "陽光の宝珠",
+            "description": "<p>この宝珠を砕いて、超遠距離以内の範囲を、その後24時間のあいだ陽の差す昼のように見せられます。</p>",
             "actions": {
                 "oIj5dyEurCiLVWmx": {
                     "name": "砕く"
@@ -1362,22 +1462,39 @@
         },
         "Sweet Moss": {
             "_note": "Sweet Moss",
+            "name": "甘苔",
+            "description": "<p>この苔を休息中に摂取して、HPを1d10かストレスを1d10消去できます。</p>",
             "actions": {
+                "Sft4HkhlqsYH5qKI": {
+                    "name": "HPを消す",
+                    "description": "<p>この苔を休息中に摂取して、HPを1d10消去できます。</p>"
+                },
                 "IolxVguij8PjHSVt": {
-                    "name": "ストレスを消す"
+                    "name": "ストレスを消す",
+                    "description": "<p>この苔を休息中に摂取して、ストレスを1d10消去できます。</p>"
                 }
             }
         },
         "Tears of the Undying Hero": {
             "_note": "Tears of the Undying Hero",
+            "name": "不死の英雄の涙",
+            "description": "<p>この薬を飲んだとき、次の長期休息まで死はあなたに触れられません。最後のHPをマークするとき、デスムーブを行う代わりに、最後のアクションロールを1回行い、そのあと夢のない眠りに落ちます。味方が「傷の手当て」のダウンタイムムーブを選んであなたのHPを消去するまで、あなたは眠り続けます。</p>",
             "actions": {
                 "gNMQ40LnJLRNnXfH": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "yTtc0DSPzG9uSVp8": {
+                    "name": "不死",
+                    "description": "<p>この薬を飲んだとき、次の長期休息まで死はあなたに触れられません。最後のHPをマークするとき、デスムーブを行う代わりに、最後のアクションロールを1回行い、そのあと夢のない眠りに落ちます。味方が「傷の手当て」のダウンタイムムーブを選んであなたのHPを消去するまで、あなたは眠り続けます。</p>"
                 }
             }
         },
         "Unstable Arcane Shard": {
             "_note": "Unstable Arcane Shard",
+            "name": "不安定な秘術石の破片",
+            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は1d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "D7BTCUV5DOXmqC0l": {
                     "name": "投げつけ"
@@ -1386,6 +1503,8 @@
         },
         "Varik Leaves": {
             "_note": "Varik Leaves",
+            "name": "ヴァリクの葉",
+            "description": "<p>この対になった葉を食べて、直ちに希望を2得られます。</p>",
             "actions": {
                 "9e4l2Yiy8uV26SQF": {
                     "name": "食べる"
@@ -1393,53 +1512,107 @@
             }
         },
         "Verglasian Seed": {
-            "_note": "Verglasian Seed"
+            "_note": "Verglasian Seed",
+            "name": "ヴェルグラスの種",
+            "description": "<p>この氷の破片を使い、近距離までの水面を直ちに凍らせられます。</p>",
+            "actions": {
+                "CXyExqbdVths6G9L": {
+                    "areas": [
+                        {
+                            "name": "ヴェルグラスの種"
+                        }
+                    ]
+                }
+            }
         },
         "Vial of Darksmoke": {
             "_note": "Vial of Darksmoke",
+            "name": "暗煙の小瓶",
+            "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、素早さに等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>",
             "actions": {
                 "4nFnAoyH5dENizsx": {
-                    "name": "使う"
+                    "name": "使う",
+                    "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、素早さに等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>"
                 }
             }
         },
         "Vial of Featherfall": {
             "_note": "Vial of Featherfall",
+            "name": "羽落ちの小瓶",
+            "description": "<p>この薬を飲んで、その後10分のあいだ落下によるダメージを無視できます。</p>",
             "actions": {
                 "MDhdI3fzO6awr9Dp": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "hjMkahGPmDxo8Fu1": {
+                    "name": "羽落ち",
+                    "description": "<p>その後10分のあいだ、落下によるダメージを無視します。</p>",
+                    "durationDescription": "<p>10分</p>"
                 }
             }
         },
         "Vial of Moondrip": {
             "_note": "Vial of Moondrip",
+            "name": "月滴の小瓶",
+            "description": "<p>この小瓶の中身を飲んだとき、次の休息まで完全な暗闇の中でも見えます。</p>",
             "actions": {
                 "6Ny75zR1b8I8Ycsb": {
                     "name": "飲む"
+                }
+            },
+            "effects": {
+                "548KAUPcSbQLsivh": {
+                    "name": "月滴の小瓶",
+                    "description": "<p>次の休息まで完全な暗闇の中でも見えます。</p>"
                 }
             }
         },
         "Warding Candle": {
             "_note": "Warding Candle",
+            "name": "結界の蝋燭",
+            "description": "<p>この蝋燭に火を灯して、近距離以内の範囲を光の暈で満たせます。暈の外にいるクリーチャーは、暈の内側にいるクリーチャーへの害意を持っている場合、暈に入れません。蝋燭は1時間燃え続けます。</p>",
             "actions": {
                 "qKYY5VnmyONGrMTO": {
-                    "name": "使う"
+                    "name": "使う",
+                    "areas": [
+                        {
+                            "name": "結界の蝋燭"
+                        }
+                    ]
                 }
             }
         },
         "Wingsprout": {
             "_note": "Wingsprout",
+            "name": "翼の芽",
+            "description": "<p>魔法の翼を得て、自分のレベルに等しい分数のあいだ飛行できます。</p>",
             "actions": {
                 "HopgGHn12CHiDNuk": {
                     "name": "使う"
+                }
+            },
+            "effects": {
+                "80F8gAn7ejhhNL7R": {
+                    "name": "翼の芽",
+                    "description": "<p>魔法の翼を得て、自分のレベルに等しい分数のあいだ飛行できます。</p>"
                 }
             }
         },
         "Yakamel Milk": {
             "_note": "Yakamel Milk",
+            "name": "ヤカメルの乳",
+            "description": "<p>この乳を摂取したあと、次にHPを1つ以上消去したとき、追加でHPを1消去します。</p>",
             "actions": {
                 "goGJk7IIgbOvrTVZ": {
                     "name": "摂取する"
+                }
+            },
+            "effects": {
+                "oTTGr4S9AS5BJEZY": {
+                    "name": "ヤカメルの乳",
+                    "description": "<p>この乳を摂取したあと、次にHPを1つ以上消去したとき、追加でHPを1消去します。</p>"
                 }
             }
         }
