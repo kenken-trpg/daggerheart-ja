@@ -30,7 +30,7 @@
         "Accomplished": {
             "_note": "Accomplished",
             "name": "熟達者",
-            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下の能力カードを追加で1枚取ります。</p>"
         },
         "Act of Reprisal": {
             "_note": "Act of Reprisal",
@@ -206,7 +206,7 @@
         "Brilliant": {
             "_note": "Brilliant",
             "name": "英明",
-            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下の能力カードを追加で1枚取ります。</p>"
         },
         "Circle of Power": {
             "_note": "Circle of Power",
@@ -1205,7 +1205,7 @@
         "Perfect Recall": {
             "_note": "Perfect Recall",
             "name": "完全記憶",
-            "description": "<p>休憩ごとに1回、保管庫にあるドメインカードをリコールするとき、そのリコールコストを1減らせます。</p>",
+            "description": "<p>休憩ごとに1回、保管庫にある能力カードをリコールするとき、そのリコールコストを1減らせます。</p>",
             "actions": {
                 "rFZj0ZsnJCc0PS3h": {
                     "name": "リコール"
@@ -1247,7 +1247,7 @@
         "Prepared": {
             "_note": "Prepared",
             "name": "備えあり",
-            "description": "<p>アクセスを持つドメインから、自分のレベル以下のドメインカードを追加で1枚取ります。</p>"
+            "description": "<p>アクセスを持つドメインから、自分のレベル以下の能力カードを追加で1枚取ります。</p>"
         },
         "Pummeljoy": {
             "_note": "Pummeljoy",

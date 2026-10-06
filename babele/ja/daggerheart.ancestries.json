@@ -414,7 +414,7 @@
         "Luckbender": {
             "_note": "Luckbender",
             "name": "運曲げ",
-            "description": "<p>セッションごとに1回、あなたか近距離以内の同意した味方がアクションロールを行ったあと、<strong>希望を3消費</strong>して二面性のダイスを振り直せます。</p>",
+            "description": "<p>セッションごとに1回、あなたか近距離以内の同意した味方がアクションロールを行ったあと、<strong>希望を3消費</strong>してデュアリティダイスを振り直せます。</p>",
             "actions": {
                 "l1wUmqMzG8YF9sqb": {
                     "name": "希望を消費する"

@@ -632,7 +632,7 @@
         "Mythic Dust Recipe": {
             "_note": "Mythic Dust Recipe",
             "name": "神話の粉の製法",
-            "description": "<p>ダウンタイムムーブとして、ひと掴みの細かな金粉を使い、神話の粉を作れます。</p>"
+            "description": "<p>ダウンタイムムーブとして、一握りの細かな金粉を使い、神話の粉を作れます。</p>"
         },
         "Namer's Oracle": {
             "_note": "Namer's Oracle",
@@ -817,7 +817,7 @@
         "Shard of Memory": {
             "_note": "Shard of Memory",
             "name": "記憶の破片",
-            "description": "<p>長期休息ごとに1回、再読込コストを支払う代わりに<strong>希望を2消費</strong>して、保管庫からドメインカードを1枚呼び戻せます。</p>",
+            "description": "<p>長期休息ごとに1回、再読込コストを支払う代わりに<strong>希望を2消費</strong>して、保管庫から能力カードを1枚呼び戻せます。</p>",
             "actions": {
                 "YNRybKQC51muVHYH": {
                     "name": "使う"
