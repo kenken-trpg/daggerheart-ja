@@ -1738,6 +1738,9 @@
         },
         "Megastorm": {
             "_note": "Megastorm",
+            "name": "メガストーム",
+            "description": "<p>極端な気象現象が突如として現れ、パーティは自分たちの生存と他者の安全とを天秤にかけることを強いられます。</p>",
+            "impulses": "ハリケーンの風を吹かせる、土石流で息を詰まらせる、建物を崩す、水没させる、瓦礫を投げつける、空を光らせる",
             "potentialAdversaries": {
                 "hEkx10JrH1v3FFzG": {
                     "label": "敵対者"
@@ -1745,6 +1748,8 @@
             },
             "items": {
                 "KudBK6FBt61ZuaCf": {
+                    "name": "ストームフロント",
+                    "description": "<p>カウントダウン（8）。嵐が到来したら、カウントダウンを起動します。PCが希望付きでロールしたとき、カウントが減ります。発動したとき、嵐は散り散りになるか、別の地域へ移動します。</p><section id=\"secret-Z7vvQy3iuOU8tvR3\" class=\"secret\"><p>嵐をやり過ごすのに最も安全な場所はどこですか？　ここにいる人々は何のためなら命を危険にさらす覚悟がありますか？</p></section>",
                     "actions": {
                         "uzEK3NqCE3R3xE0P": {
                             "name": "カウントダウン開始",
@@ -1754,18 +1759,16 @@
                                 }
                             ]
                         }
-                    },
-                    "name": "ストームフロント",
-                    "description": "<p>カウントダウン（8）。嵐が到来したら、カウントダウンを起動します。PCが希望付きでロールしたとき、カウントが減ります。発動したとき、嵐は散り散りになるか、別の地域へ移動します。</p><section id=\"secret-Z7vvQy3iuOU8tvR3\" class=\"secret\"><p>嵐をやり過ごすのに最も安全な場所はどこですか？　ここにいる人々は何のためなら命を危険にさらす覚悟がありますか？</p></section>"
+                    }
                 },
                 "QvkOrklI6GjzD96R": {
+                    "name": "危険な天候",
+                    "description": "<p>メガストームの極端な風、霧、雲に覆われ、この地域全体が移動しづらくなっています。PCは敏捷のリアクションロールに成功しなければ、アクションロールの一部として移動できません。</p><section id=\"secret-cxNkS9iRa73BLTIc\" class=\"secret\"><p>他に誰が渦に飲まれて迷っていますか？　あなたはどうやって彼らを導き出しますか？</p></section>",
                     "actions": {
                         "z8NTM8n3Hc1z8VyS": {
                             "name": "リアクションロール"
                         }
                     },
-                    "name": "危険な天候",
-                    "description": "<p>メガストームの極端な風、霧、雲に覆われ、この地域全体が移動しづらくなっています。PCは敏捷のリアクションロールに成功しなければ、アクションロールの一部として移動できません。</p><section id=\"secret-cxNkS9iRa73BLTIc\" class=\"secret\"><p>他に誰が渦に飲まれて迷っていますか？　あなたはどうやって彼らを導き出しますか？</p></section>",
                     "effects": {
                         "St1oj5HlmKYKFYM4": {
                             "name": "危険な天候",
@@ -1805,24 +1808,21 @@
                     "name": "街路の混乱",
                     "description": "<p>メガストームは地元の人々のあいだに恐怖と混乱を広げています。嵐がどのようにNPCを危険にさらすか描写してください。次にスポットライトを得たPCがそのNPCを救うためにアクションを使わなかった場合、あなたは恐怖を1つ得ます。</p><section id=\"secret-rq0SEXuKwlNrk9xG\" class=\"secret\"><p>この状況に乗じているのは誰ですか？　ここを取り仕切っているはずなのは誰で、その人物はどうなったのですか？</p></section>"
                 }
-            },
-            "name": "メガストーム",
-            "description": "<p>極端な気象現象が突如として現れ、パーティは自分たちの生存と他者の安全とを天秤にかけることを強いられます。</p>",
-            "impulses": "ハリケーンの風を吹かせる、土石流で息を詰まらせる、建物を崩す、水没させる、瓦礫を投げつける、空を光らせる"
+            }
         },
         "Moon Kingdom": {
             "_note": "Moon Kingdom",
-            "potentialAdversaries": {
-                "TGaPRMzMRhCwaj1v": {
-                    "label": "敵対者"
-                },
-                "dGGEFeoh8LOS51RN": {
-                    "label": "土地の動物たち"
-                }
-            },
             "name": "月の王国",
             "description": "<p>とうに失われた月の王国の、謎めいて光を放つ孤立した廃墟。忘れられた魔法と古代の技術の残響が漂います。</p>",
             "impulses": "夢と現実の境を曖昧にする、意識を潮のように満ち引きさせる、古代の栄華の残響をささやく",
+            "potentialAdversaries": {
+                "dGGEFeoh8LOS51RN": {
+                    "label": "土地の動物たち"
+                },
+                "TGaPRMzMRhCwaj1v": {
+                    "label": "敵対者"
+                }
+            },
             "items": {
                 "EwKS8purdqfLft20": {
                     "name": "夢のような大気",
@@ -1865,36 +1865,49 @@
         },
         "Mountain Pass": {
             "_note": "Mountain Pass",
+            "name": "山道",
+            "description": "<p>雲を貫く岩の峰々。曲がりくねった道が幾重ものつづら折りを経て峰を越えていきます。</p>",
+            "impulses": "物資と体力から厳しい通行料を取る、魔法による細工を明かす、進みを遅らせる",
             "potentialAdversaries": {
-                "8aqHp1uxtxvnuNSU": {
-                    "label": "その他"
-                },
                 "f08TnNkCjPIzmQHh": {
                     "label": "獣"
+                },
+                "8aqHp1uxtxvnuNSU": {
+                    "label": "その他"
                 }
             },
             "items": {
+                "cIAMenvMXHPTpOFn": {
+                    "name": "刻まれた印章",
+                    "description": "<p>山肌に大きな印と彫刻が刻まれています。関連する背景や経験を持つPCは、それが氷の風の力を強める天候の魔法だと見抜きます。知識のロールに成功したPCは、その印章についての情報、その作り手についての情報、そしてそれを打ち消す方法を思い出せます。PCがクリティカル成功した場合、その印章が尾根生まれの魔法使いの様式だと見抜き、印章を打ち消すロールに有利を得ます。</p><section id=\"secret-5FNK8Z7pIo0nEyCA\" class=\"secret\"><p><em>この魔法を仕掛けたのは誰ですか？　その者は近くにいますか？　なぜ天候をより過酷にしたかったのですか？</em></p></section>"
+                },
                 "jkm03DXYYajsRk2j": {
+                    "name": "雪崩",
+                    "description": "<p>恐怖を消費して、氷の激流で山を削り、雪崩を起こします。その進路にいるすべてのPCは、敏捷か筋力のリアクションロールに成功しなければ、なぎ倒されて山を転がり落ちます。ロープやピトン、その他の登攀用具を使っているPCは、このロールに有利を得ます。失敗した対象は遠距離まで山を転がり落ち、<strong>2d20</strong>の物理ダメージを受け、ストレスを1つ記録しなければなりません。成功した対象はストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-3gM8fEJj1vD9W88k\"><p><em>PCたちはどうやって雪崩をやり過ごそうとしますか？　仲間が山腹を転がり落ちていったとき、キャラクターたちはどんな手立てで互いを見つけ出そうとしますか？</em></p></section>",
                     "actions": {
                         "P2fHddwfyEGUwpCH": {
                             "name": "ダメージ",
                             "description": "<p>恐怖を消費して、氷の激流で山を削り、雪崩を起こします。その進路にいるすべてのPCは、敏捷か筋力のリアクションロールに成功しなければ、なぎ倒されて山を転がり落ちます。ロープやピトン、その他の登攀用具を使っているPCは、このロールに有利を得ます。失敗した対象は遠距離まで山を転がり落ち、<strong>2d20</strong>の物理ダメージを受け、ストレスを1つ記録しなければなりません。成功した対象はストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-scxxru7P29oZ1dt8\"><p><em>PCたちはどうやって雪崩をやり過ごそうとしますか？　仲間が山腹を転がり落ちていったとき、キャラクターたちはどんな手立てで互いを見つけ出そうとしますか？</em></p></section>"
                         }
-                    },
-                    "name": "雪崩",
-                    "description": "<p>恐怖を消費して、氷の激流で山を削り、雪崩を起こします。その進路にいるすべてのPCは、敏捷か筋力のリアクションロールに成功しなければ、なぎ倒されて山を転がり落ちます。ロープやピトン、その他の登攀用具を使っているPCは、このロールに有利を得ます。失敗した対象は遠距離まで山を転がり落ち、<strong>2d20</strong>の物理ダメージを受け、ストレスを1つ記録しなければなりません。成功した対象はストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-3gM8fEJj1vD9W88k\"><p><em>PCたちはどうやって雪崩をやり過ごそうとしますか？　仲間が山腹を転がり落ちていったとき、キャラクターたちはどんな手立てで互いを見つけ出そうとしますか？</em></p></section>"
+                    }
                 },
                 "hkZVEduCWJFR0h2S": {
+                    "name": "猛禽の巣",
+                    "description": "<p>PCたちが猛禽の狩り場に入ったとき、@UUID[Compendium.daggerheart.adversaries.Actor.OMQ0v6PE8s1mSU0K]{巨大鷲}2体が、選んだPCから超遠距離以内に現れ、PCたちを獲物と見定めます。</p><section id=\"secret-aU19zKlmhVBdS2oF\" class=\"secret\"><p><em>この鷲たちが最後に獲物を見つけてからどれくらい経っていますか？　巣には卵や、まだ羽の生えていない雛がいますか？</em></p></section>",
                     "actions": {
                         "88MyOC3IRcct6VLk": {
                             "name": "召喚"
                         }
-                    },
-                    "name": "猛禽の巣",
-                    "description": "<p>PCたちが猛禽の狩り場に入ったとき、@UUID[Compendium.daggerheart.adversaries.Actor.OMQ0v6PE8s1mSU0K]{巨大鷲}2体が、選んだPCから超遠距離以内に現れ、PCたちを獲物と見定めます。</p><section id=\"secret-aU19zKlmhVBdS2oF\" class=\"secret\"><p><em>この鷲たちが最後に獲物を見つけてからどれくらい経っていますか？　巣には卵や、まだ羽の生えていない雛がいますか？</em></p></section>"
+                    }
                 },
                 "K8ld4m5yTA6WZwUs": {
+                    "name": "氷の風",
+                    "description": "<p><em>カウントダウン（ループ4）</em>。PCたちが山道に入ったら、カウントダウンを起動します。発動したとき、この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-FsJMzj3ZZuf134s2\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>",
                     "actions": {
+                        "kDV2h9DhO6fEDcjl": {
+                            "name": "セーブを振る",
+                            "description": "<p>この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-nEZRdWaqMAIUoQG0\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>"
+                        },
                         "yJj6IsNNTEyKndvO": {
                             "name": "カウントダウン開始",
                             "description": "<p><em>カウントダウン（ループ4）</em>。PCたちが山道に入ったら、カウントダウンを起動します。</p>",
@@ -1903,23 +1916,10 @@
                                     "name": "氷の風"
                                 }
                             ]
-                        },
-                        "kDV2h9DhO6fEDcjl": {
-                            "name": "セーブを振る",
-                            "description": "<p>この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-nEZRdWaqMAIUoQG0\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>"
                         }
-                    },
-                    "name": "氷の風",
-                    "description": "<p><em>カウントダウン（ループ4）</em>。PCたちが山道に入ったら、カウントダウンを起動します。発動したとき、この道を通るすべてのキャラクターは、筋力のリアクションロールに成功しなければストレスを1つ記録します。極寒に適した衣服を着ているPCは、これらのロールに有利を得ます。</p><section class=\"secret\" id=\"secret-FsJMzj3ZZuf134s2\"><p><em>PCたちの体はどこから先に感覚を失いますか？　彼らは前進しながらどうやって暖を取ろうとしますか？</em></p></section>"
-                },
-                "cIAMenvMXHPTpOFn": {
-                    "name": "刻まれた印章",
-                    "description": "<p>山肌に大きな印と彫刻が刻まれています。関連する背景や経験を持つPCは、それが氷の風の力を強める天候の魔法だと見抜きます。知識のロールに成功したPCは、その印章についての情報、その作り手についての情報、そしてそれを打ち消す方法を思い出せます。PCがクリティカル成功した場合、その印章が尾根生まれの魔法使いの様式だと見抜き、印章を打ち消すロールに有利を得ます。</p><section id=\"secret-5FNK8Z7pIo0nEyCA\" class=\"secret\"><p><em>この魔法を仕掛けたのは誰ですか？　その者は近くにいますか？　なぜ天候をより過酷にしたかったのですか？</em></p></section>"
+                    }
                 }
-            },
-            "name": "山道",
-            "description": "<p>雲を貫く岩の峰々。曲がりくねった道が幾重ものつづら折りを経て峰を越えていきます。</p>",
-            "impulses": "物資と体力から厳しい通行料を取る、魔法による細工を明かす、進みを遅らせる"
+            }
         },
         "Necromancer's Ossuary": {
             "_note": "Necromancer's Ossuary",
@@ -1982,25 +1982,78 @@
         },
         "Ocean Voyage": {
             "_note": "Ocean Voyage",
+            "name": "大洋の航海",
+            "description": "<p>PCたちは労働を対価として差し出し、遠く離れた目的地までの船旅を得ます。</p>",
+            "impulses": "波の下に潜むものを明かす、見当違いの方角へ送り出す、船を沈める、物資を使い果たさせる",
+            "potentialAdversaries": {
+                "1jkJtSVsk6R7dwt6": {
+                    "label": "深海の住人たち"
+                },
+                "yvbQHy61C6WGqrAC": {
+                    "label": "海賊たち"
+                }
+            },
             "items": {
                 "Zlo11bOuvioULbVJ": {
+                    "name": "大海原",
+                    "description": "<p>カウントダウン（8）。目的地に到達するには、パーティが「大海原」カウントダウンを完了させる必要があります。PCが船旅を助けるアクションロールに成功したとき、カウントが減ります。</p><section id=\"secret-Y98FsUG7DS8SkoNy\" class=\"secret\"><p>この船はどこへ向かっていますか？　航路上のどんな危険について、乗員たちは声を落として語りますか？</p></section>",
                     "actions": {
                         "GlWdHSDokrOWrLZ9": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "大海原"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "LuFQmRD0fVO3L8e4": {
+                    "name": "食糧が尽きかける",
+                    "description": "<p>この航海で初めてPCが恐怖付きの失敗をロールしたとき、船倉の食糧と真水が害虫とカビに汚されていたことが乗員に判明します。パーティが目的地に到達するまで、「大海原」カウントダウンを進めるアクションロールを行うPCは、まず筋力のリアクションロールに成功しなければストレスを1つ記録します。</p><section id=\"secret-2ahDDnn1hplEjUMi\" class=\"secret\"><p>食糧に何が起きたのですか？　全員が飢えと渇きで死なないように、乗員はどんな思い切った手段を取りますか？</p></section>",
+                    "actions": {
+                        "kPU663WndRB8rJ4V": {
+                            "name": "飢えのロール"
                         }
                     }
                 },
                 "tvisN7BBtyqYfbYm": {
+                    "name": "「海賊だ！」",
+                    "description": "<p><strong>恐怖を消費</strong>して、檣楼の乗員が水平線に黒い帆を見つけます！　帰結カウントダウン（4）を開始します。パーティが目的地に到達する前に発動した場合、海賊が船に追いつき、乗り込んできます。恐怖を1つ得て、海賊船長1体と海賊の襲撃者の群れ3つをパーティから近距離以内に召喚します。</p><section id=\"secret-yLGOWZhusEDol9jX\" class=\"secret\"><p>船長は追ってくる船に見覚えがありますか？　この海域の海賊はどんな不義な手口で名が知られていますか？</p></section>",
                     "actions": {
                         "AM4eoWDdD6FGNdpr": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p><strong>恐怖を消費</strong>して、檣楼の乗員が水平線に黒い帆を見つけます！　帰結カウントダウン（4）を開始します。</p><section id=\"secret-yLGOWZhusEDol9jX\" class=\"secret\"><p>船長は追ってくる船に見覚えがありますか？　この海域の海賊はどんな不義な手口で名が知られていますか？</p></section>",
+                            "countdown": [
+                                {
+                                    "name": "「海賊だ！」"
+                                }
+                            ]
+                        },
+                        "phsCnHpUL2dW0usB": {
+                            "name": "帰結の発動",
+                            "description": "<p>パーティが目的地に到達する前に発動した場合、海賊が船に追いつき、乗り込んできます。恐怖を1つ得て、海賊船長1体と海賊の襲撃者の群れ3つをパーティから近距離以内に召喚します。</p>"
                         }
                     }
                 },
                 "A8979rx43bQwftNO": {
+                    "name": "荒天",
+                    "description": "<p>「大海原」カウントダウンが奇数まで減ったとき、<strong>d6</strong>を振ります。結果が4以上の場合、船は荒天の領域に突っ込みます。たとえば航行を困難にする霧の帯や、船を転覆させかねないスコールです。各PCはGMが選ぶ関連する特性を使ったリアクションロールに成功しなければ、ストレスを<strong>1d4</strong>記録します。</p><section id=\"secret-q3ZonXxWUaf350tb\" class=\"secret\"><p>この天候は、PCたちがこれまでに経験したものとどう違いますか？　彼らはこの難所を抜けるために、乗員とどう連携しますか？</p></section>",
                     "actions": {
+                        "lB1hhkrXmP7ubkF3": {
+                            "name": "天候の判定"
+                        },
                         "Vl8CVLgqLA5lYIFv": {
                             "name": "リアクションロール"
+                        }
+                    }
+                },
+                "7mrJfLzWik833uVN": {
+                    "name": "ここに怪物あり",
+                    "description": "<p>「大海原」カウントダウンが偶数まで減ったとき、<strong>d6</strong>を振ります。結果が4以上の場合、深海の住人を<strong>[[/r 1d4]]</strong>体召喚します。</p><section id=\"secret-edpkLKKioU8ToEDv\" class=\"secret\"><p>この生き物たちを船に引き寄せているのは何ですか？　戦闘せずに追い払う方法はありますか？</p></section>",
+                    "actions": {
+                        "2WbaXoYYIlnEAKNo": {
+                            "name": "怪物の判定"
                         }
                     }
                 }
@@ -2008,22 +2061,140 @@
         },
         "Outpost Town": {
             "_note": "Outpost Town",
+            "name": "辺境の町",
+            "description": "<p>国や地方のはずれにある小さな町。ダンジョンや墓所、その他の冒険の目的地に近い場所です。</p>",
+            "impulses": "追い詰められた者を確かな死地へ駆り立てる、すり切れた希望で儲ける",
             "potentialAdversaries": {
+                "yZr3dTicergVkU0d": {
+                    "label": "鋸刃のナイフの盗賊たち"
+                },
                 "KZSZadT58Pd1kaDH": {
                     "label": "その他"
+                }
+            },
+            "items": {
+                "whN2Ztn2wMqD7uW3": {
+                    "name": "噂が飛び交う",
+                    "description": "<p>噂はこの世界で最も速く巡る通貨です。PCは存在感のロールを行って、大きな出来事について尋ねられます。何を知るかは、以下の基準に基づいてロールの結果によって決まります。</p><ul><li><p><strong>クリティカル成功：</strong>大きな出来事を2つ知ります。PCはその噂の1つについて追加の質問を1つでき、（必ずしも完全ではないにせよ）真実の答えを得ます。</p></li><li><p><strong>希望付きの成功：</strong>出来事を2つ知ります。少なくとも1つはそのキャラクターの背景に関わるものです。</p></li><li><p><strong>恐怖付きの成功：</strong>そのキャラクターの背景に関わる不穏な噂を1つ知ります。</p></li><li><p><strong>いずれかの失敗：</strong>地元の人々は尋ねられたことに快く応じません。PCはストレスを1つ記録して、関わりのある噂を1つ知ります。</p></li></ul><section id=\"secret-IRa0gzmTR2psynpd\" class=\"secret\"><p><em>PCたちは物見高い旅人に伝えられるどんな知らせを持っていますか？　地元の人々はそれらの出来事をどう思っていますか？</em></p></section>"
+                },
+                "nhf2TK7HSkuAgIi8": {
+                    "name": "壊れた羅針盤の会",
+                    "description": "<p>冒険者の互助会がここに支部を構えており、英雄たちが自慢話と噂を交わし、思い描いた成功に乾杯し、競争相手を出し抜く策をめぐらせています。</p><section id=\"secret-dqbYBpMMEMIe3Woh\" class=\"secret\"><p><em>ここにいる冒険者たちはどんな自慢話をしていて、あなたはそのうちどれが本当だと思いますか？</em></p></section>"
+                },
+                "cPozA1iT4NLwsWqB": {
+                    "name": "競合パーティ",
+                    "description": "<p>別の冒険者パーティがここにいて、PCたちと同じ財宝や手がかりを狙っています。</p><section id=\"secret-1CvOSOAzIzFqPzXt\" class=\"secret\"><p><em>どのPCが競合パーティの一員とつながりを持っていますか？　彼らはPCに先に声をかけますか、それともPCが動くのを待ちますか？</em></p></section>"
+                },
+                "uxu8YrvYVxP3Qc2y": {
+                    "name": "あんたの店に何かあったら気の毒だな",
+                    "description": "<p>PCたちは、地元の犯罪組織の頭目の手下が雑貨屋から金をゆすり取る場面を目撃します。</p><section id=\"secret-QbURC6tIeF3hLLT6\" class=\"secret\"><p><em>PCたちが割って入ると、どんな厄介事が起きますか？</em></p></section>"
+                },
+                "21tdueq5Wgvj3vG4": {
+                    "name": "悪い場所、悪い時機",
+                    "description": "<p>夜間、あるいはパーティが裏路地で孤立しているとき、あなたは<strong>恐怖を消費</strong>して、彼らから奪い取ろうとする盗賊の一団を登場させられます。盗賊たちは選んだPCから近距離以内に現れ、@UUID[Compendium.daggerheart.adversaries.Actor.CBKixLH3yhivZZuL]{鋸刃のナイフの膝砕き}1体、PCの人数と同じ数の@UUID[Compendium.daggerheart.adversaries.Actor.C0OMQqV7pN6t7ouR]{下っ端}、そして@UUID[Compendium.daggerheart.adversaries.Actor.aTljstqteGoLpCBq]{副官}1体で構成されます。より大人数のパーティには、@UUID[Compendium.daggerheart.adversaries.Actor.MbBPIOxaxXYNApXz]{呪い手}か@UUID[Compendium.daggerheart.adversaries.Actor.1zuyof1XuIfi3aMG]{鋸刃のナイフの狙撃手}を加えます。</p><section class=\"secret\" id=\"secret-5MEuvRtxMnpLEwAA\"><p><em>この者たちが追い詰められた元冒険者だと、どんな細部がパーティに示しますか？</em></p></section>",
+                    "actions": {
+                        "UBHQzK5D6Dn5QuPc": {
+                            "name": "恐怖を消費する",
+                            "description": "<p>夜間、あるいはパーティが裏路地で孤立しているとき、あなたは<strong>恐怖を消費</strong>して、彼らから奪い取ろうとする盗賊の一団を登場させられます。盗賊たちは選んだPCから近距離以内に現れ、@UUID[Compendium.daggerheart.adversaries.Actor.CBKixLH3yhivZZuL]{鋸刃のナイフの膝砕き}1体、PCの人数と同じ数の@UUID[Compendium.daggerheart.adversaries.Actor.C0OMQqV7pN6t7ouR]{下っ端}、そして@UUID[Compendium.daggerheart.adversaries.Actor.aTljstqteGoLpCBq]{副官}1体で構成されます。</p><section id=\"secret-8U6iwKGNeWQ27x1A\" class=\"secret\"><p>より大人数のパーティには、@UUID[Compendium.daggerheart.adversaries.Actor.MbBPIOxaxXYNApXz]{呪い手}か@UUID[Compendium.daggerheart.adversaries.Actor.1zuyof1XuIfi3aMG]{鋸刃のナイフの狙撃手}を加えます。</p><p><em>この者たちが追い詰められた元冒険者だと、どんな細部がパーティに示しますか？</em></p></section>"
+                        }
+                    }
                 }
             }
         },
         "Pitched Battle": {
-            "_note": "Pitched Battle"
+            "_note": "Pitched Battle",
+            "name": "激戦",
+            "description": "<p>武装した2つの大集団のあいだで繰り広げられる大規模な戦闘。</p>",
+            "impulses": "人、土地、富を奪い取る、強欲と栄光のために血を流させる",
+            "potentialAdversaries": {
+                "tGf8mFL6DiGaOzxS": {
+                    "label": "傭兵たち"
+                },
+                "E13BxwBg4sKl01IR": {
+                    "label": "貴族の軍勢"
+                }
+            },
+            "items": {
+                "HG9GwIZoCDcqOEOc": {
+                    "name": "激戦",
+                    "description": "<p>戦闘が続く戦場を横切るのは極めて危険です。PCは敏捷のロールに成功しなければそもそも移動できず、成功しても近距離までしか進めません。近接距離以内に敵対者がいる場合、移動のための敏捷のロールを行うにはストレスを1つ記録しなければなりません。</p><section id=\"secret-c0pwA8OrITyfhrCX\" class=\"secret\"><p><em>戦っている者たちはあなたを敵と見間違えますか、それとも邪魔者と見なしますか？　この乱戦のなかで、あなたは味方と敵を見分けられますか？</em></p></section>"
+                },
+                "fnvOiHKsd34EaLqG": {
+                    "name": "焼き払い、略奪する",
+                    "description": "<p>攻め手が火を放ち、貴重な資産を奪い、重要な人物をさらい、あるいは住民を殺して、賭け金を引き上げます。</p><section id=\"secret-5JBRdq8QJcmurvLp\" class=\"secret\"><p><em>ここで貴重なものは何ですか？　最も無防備なのは誰ですか？</em></p></section>"
+                },
+                "r9kkodHghWm01mje": {
+                    "name": "戦争魔法",
+                    "description": "<p><strong>恐怖を消費</strong>して、一方の陣営の魔法使いが大規模な破壊魔法を使います。その魔法使いから超遠距離以内の戦場上の地点を1つ選びます。その地点から近距離以内にいるすべての対象は、敏捷のリアクションロールを行わなければなりません。失敗した対象は<strong>3d12+8</strong>の魔法ダメージを受け、ストレスを1つ記録しなければなりません。</p><section id=\"secret-PpyF0dXMEudYnFqh\" class=\"secret\"><p><em>その攻撃はどんな形を取りますか——酸を降らせる火球、刃の嵐でしょうか？　この攻撃はどんな戦術目標を達成するためのもので、次に何が起きますか？</em></p></section>",
+                    "actions": {
+                        "1giAFbu3tGqXwi8g": {
+                            "name": "セーブを振る",
+                            "areas": [
+                                {
+                                    "name": "戦争魔法"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "ZAIvH5CfhehW48EY": {
+                    "name": "増援",
+                    "description": "<p>増援として、@UUID[Compendium.daggerheart.adversaries.Actor.7ai2opemrclQe3VF]{王国の騎士}1体、PCの人数に等しい数のティア3のミニオン、そしてあなたが選ぶ敵対者2体を、選んだPCから遠距離以内に召喚します。王国の騎士は直後にスポットライトを得ます。</p><section id=\"secret-ZNhg3daBKekzABSQ\" class=\"secret\"><p><em>彼らは誰を最初に狙いますか？　どんな陣形を取りますか？</em></p></section>"
+                }
+            }
         },
         "Raging River": {
             "_note": "Raging River",
+            "name": "荒れ狂う川",
+            "description": "<p>橋のかかっていない流れの速い川。たいていの人を流してしまうほどの深さがあります。</p>",
+            "impulses": "渡るのを阻む、備えのない者を流し去る、土地を分かつ",
+            "potentialAdversaries": {
+                "UUdCj6oiRrJ4QWWD": {
+                    "label": "獣"
+                },
+                "IOPWkNbGuLvPgnSy": {
+                    "label": "鋸刃のナイフの盗賊たち"
+                }
+            },
             "items": {
                 "4ILX7BCinmsGqrJM": {
+                    "name": "危険な渡河",
+                    "description": "<p>川を渡るには、パーティが<em>進行カウントダウン（4）</em>を完了させる必要があります。</p><section class=\"secret\" id=\"secret-l7tHfgFFOGdvlnll\"><p>恐怖付きの失敗をロールしたPCは、この特徴に恐怖を消費せずとも、直ちに「引き波」アクションの対象になります。</p></section><section class=\"secret\" id=\"secret-VF0r7nXxQlmuwMpj\"><p><em>PCたちの誰かは、こうした川を歩いて渡ったことがありますか？　溺れることを恐れている者はいますか？</em></p></section>",
                     "actions": {
                         "91HPIEEcVKPQ5qqn": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>川を渡るには、パーティが<em>進行カウントダウン（4）</em>を完了させる必要があります。</p><section class=\"secret\" id=\"secret-aKJuTbAZaPUFxoiE\"><p>恐怖付きの失敗をロールしたPCは、この特徴に恐怖を消費せずとも、直ちに「引き波」アクションの対象になります。</p></section><section class=\"secret\" id=\"secret-GSYTFIq8J3k2a4Ww\"><p><em>PCたちの誰かは、こうした川を歩いて渡ったことがありますか？　溺れることを恐れている者はいますか？</em></p></section>",
+                            "countdown": [
+                                {
+                                    "name": "危険な渡河"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "WsNoSwwtv0r80BMj": {
+                    "name": "引き波",
+                    "description": "<p><strong>恐怖を消費</strong>して、PC1体を引き波に捕らえます。そのPCは敏捷のリアクションロールを行わなければなりません。失敗した場合、<strong>1d6+1</strong>の物理ダメージを受け、川を近距離分下流へ流され、川から出るまで脆弱になります。成功した場合、ストレスを1つ記録しなければなりません。</p><section id=\"secret-H6i1kuyHdtq9Eqgw\" class=\"secret\"><p><em>川底にはどんな小物や装身具が沈んでいますか？　この川には捕食者が泳いでいますか？</em></p></section>",
+                    "actions": {
+                        "f2e3gbhzD7z8BdCc": {
+                            "name": "セーブを振る",
+                            "description": "<p><strong>恐怖を消費</strong>して、PC1体を引き波に捕らえます。そのPCは敏捷のリアクションロールを行わなければなりません。失敗した場合、<strong>1d6+1</strong>の物理ダメージを受け、川を近距離分下流へ流され、川から出るまで脆弱になります。成功した場合、ストレスを1つ記録しなければなりません。</p><section class=\"secret\" id=\"secret-FmZbu6m2gtachqyE\"><p><em>川底にはどんな小物や装身具が沈んでいますか？　この川には捕食者が泳いでいますか？</em></p></section>"
+                        }
+                    },
+                    "effects": {
+                        "T0ouSQyR8cVpAn79": {
+                            "name": "引き波",
+                            "description": "<p>川から出るまで<em>脆弱</em>。</p>",
+                            "durationDescription": "<p>川から出るまで。</p>"
+                        }
+                    }
+                },
+                "SDTS3LOPMVJOt1S1": {
+                    "name": "辛抱強い狩人",
+                    "description": "<p><strong>恐怖を消費</strong>して、@UUID[Compendium.daggerheart.adversaries.Actor.8KWVLWXFhlY2kYx0]{ガラスの蛇}1体を選んだPCから近距離以内に召喚します。蛇は川の中かその近くに現れ、直後にスポットライトを得て「回る蛇」アクションを使います。</p><section class=\"secret\" id=\"secret-F8zsJQg3xWOPpH5v\"><p><em>この獣は巣穴にどんな財宝を持っていますか？　この捕食者にすでに餌食となった旅人はいますか？</em></p></section>",
+                    "actions": {
+                        "uY9HMKE4Q5g7bRKg": {
+                            "name": "恐怖を消費する"
                         }
                     }
                 }
@@ -2031,18 +2202,71 @@
         },
         "Raiding Party": {
             "_note": "Raiding Party",
+            "name": "襲撃隊",
+            "description": "<p>海賊船が港町や海辺の村に乗員を吐き出し、略奪と強奪を行います。</p>",
+            "impulses": "火を放つ、速さと数で圧倒する、打ち付けられていないものはすべて奪う",
+            "potentialAdversaries": {
+                "Z1qk14bnBBCM7Tnq": {
+                    "label": "船の乗員たち"
+                }
+            },
             "items": {
                 "dnSlfFgkd1LPKYJK": {
+                    "name": "地元の人々を奮い立たせる",
+                    "description": "<p>進行カウントダウン（5）。海賊が初めて現れたら、カウントダウンを起動します。PCが海賊の襲撃による混乱と破壊を食い止めるアクションロールに成功したとき、カウントが減ります。発動したとき、地元の人々はパーティの行動に鼓舞され、海賊との戦いに加わります。各PCは<strong>d6</strong>の士気ダイスを得ます。これはアクション、リアクション、ダメージのロールに加えるために消費できます。</p><section id=\"secret-NqlXza4xMHH2Xg50\" class=\"secret\"><p>海賊たちは住民を襲うほかに、どのように町を脅かし危険にさらしますか？　PCたちはどんな防備を活用できますか？</p></section>",
                     "actions": {
                         "raJathH1q7FLOSZm": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "countdown": [
+                                {
+                                    "name": "地元の人々を奮い立たせる"
+                                }
+                            ]
+                        },
+                        "I4b2ItXJJnHEvbL5": {
+                            "name": "カウントダウン発動"
+                        }
+                    },
+                    "effects": {
+                        "f0Z8uHmEtgydUBUw": {
+                            "name": "士気",
+                            "description": "<p>各PCは<strong>d6</strong>の士気ダイスを得ます。これはアクション、リアクション、ダメージのロールに加えるために消費できます。</p>"
+                        }
+                    }
+                },
+                "g8rVoim9sVVWOUIF": {
+                    "name": "談判",
+                    "description": "<p>知識のロールに成功したPCは、海賊船長に談判を要求できるだけの海賊の掟に通じています。談判が申し入れられたら、船長は戦闘を中断し、PCが存在感のロールで和平を求めるか降伏の条件を交渉するのを認めます。</p><section id=\"secret-Q4z36YQBOr7uyizx\" class=\"secret\"><p>この海賊たちは、なぜこの船長に付き従うほど敬意を抱いているのですか？　彼らは不当に得た戦利品よりも何を大切にしていますか？</p></section>"
+                },
+                "8tAazh5aJlCqJd3O": {
+                    "name": "「砲を撃て！」",
+                    "description": "<p>恐怖を3つまで消費して、海賊船が戦闘のなかへ砲撃を行います。消費した恐怖1つごとに、戦場上の任意の地点を1つ選びます。それらの地点の1つ以上から近距離以内にいる各PCは、敏捷のリアクションロールを行わなければなりません。失敗した対象は<strong>1d8+3</strong>の物理ダメージを受けます。成功した対象はストレスを1つ記録するか、半分のダメージを受けます。</p><section id=\"secret-UmLdFr4sIQ0ggsEU\" class=\"secret\"><p>この砲弾はどんな巻き添えを生みますか？　誰の命を無造作に危険にさらしますか？</p></section>",
+                    "actions": {
+                        "OcdAyplZ9XyttQf1": {
+                            "name": "恐怖を消費する",
+                            "areas": [
+                                {
+                                    "name": "「砲を撃て！」"
+                                }
+                            ]
                         }
                     }
                 },
                 "ncVzTMqGM3EyK7wZ": {
+                    "name": "捕虜を取る",
+                    "description": "<p>このシーンにいるPCの人数に等しい数の海賊が倒されたとき、<strong>d6</strong>を振ります。結果が5か6の場合、海賊たちは戦術を変え、あとで身代金を取るために地元の人々を捕らえて船へ退きます。帰結カウントダウン（4）を起動します。PCがアクションロールを行ったとき、カウントが減ります。発動したとき、海賊たちは捕虜を連れて船出します。</p><section id=\"secret-Fiohy1JPx1I5NxnI\" class=\"secret\"><p>海賊たちは誰を最良の捕虜と見なし、それはなぜですか？　彼らは捕虜を返す代わりに何を求めますか？</p></section>",
                     "actions": {
+                        "GdTh93YptNRtQvMn": {
+                            "name": "戦術のロール"
+                        },
                         "YXmX29Zrh0w8urQF": {
-                            "name": "カウントダウン開始"
+                            "name": "カウントダウン開始",
+                            "description": "<p>帰結カウントダウン（4）を起動します。PCがアクションロールを行ったとき、カウントが減ります。発動したとき、海賊たちは捕虜を連れて船出します。</p>",
+                            "countdown": [
+                                {
+                                    "name": "捕虜を取る"
+                                }
+                            ]
                         }
                     }
                 }
