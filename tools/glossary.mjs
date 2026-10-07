@@ -62,34 +62,48 @@ export function parseCsv(text) {
  * the merged stack of every glossary present.
  */
 export async function loadGlossaries(only) {
-    const glossary = new Map();
-    const sources = [];
     let files = [];
     try {
         files = (await fs.readdir(GLOSSARY_DIR)).filter(f => f.endsWith('.csv')).toSorted();
     } catch {
-        return { glossary, sources };
+        return { glossary: new Map(), sources: [] };
     }
     if (only) files = files.filter(file => file.includes(only));
-    for (const file of files) {
-        const rows = parseCsv((await fs.readFile(path.join(GLOSSARY_DIR, file), 'utf8')).replace(/^﻿/, ''));
+    return loadGlossaryFiles(files.map(file => path.join(GLOSSARY_DIR, file)));
+}
+
+/**
+ * The same load, from paths given outright rather than discovered in
+ * GLOSSARY_DIR.
+ *
+ * An outside translation has to be weighed before it is taken in -- the
+ * translator's permission may not be given, and the wordings may collide with
+ * wordings already shipped across thousands of fields. Dropping the CSV into
+ * GLOSSARY_DIR to find that out would make every other tool compare against it
+ * too: `packs:terms` and `check` would start reporting against a source that
+ * has not been adopted, and `prepare` would pre-fill from it. So a file can be
+ * read where it lies, which keeps the decision reversible by not making one.
+ *
+ * Entries are labelled by basename, so a report attributes a wording to the
+ * same name whether the file was placed or merely pointed at.
+ */
+export async function loadGlossaryFiles(paths) {
+    const glossary = new Map();
+    const sources = [];
+    for (const file of paths) {
+        const rows = parseCsv((await fs.readFile(file, 'utf8')).replace(/^\ufeff/, ''));
+        const label = path.basename(file);
         let entries = 0;
         for (const [english, japanese] of rows.slice(1)) {
             if (!english?.trim() || !japanese?.trim()) continue;
-            glossary.set(normalize(english), { japanese: japanese.trim(), file });
+            glossary.set(normalize(english), { japanese: japanese.trim(), file: label });
             entries++;
         }
-        sources.push({ file, entries });
+        sources.push({ file: label, entries, path: file });
     }
     return { glossary, sources };
 }
 
-/**
- * The en->ja pairs lang/ja.json itself uses, which are the house style.
- *
- * Both arguments are flat key->string maps. A key whose Japanese is still the
- * English fallback teaches nothing and is skipped.
- */
 export function establishedWordings(en, ja) {
     const established = new Map();
     for (const key of Object.keys(ja)) {

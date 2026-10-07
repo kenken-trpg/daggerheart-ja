@@ -1460,8 +1460,11 @@ README.md（Licenses 節）より:
 
 ## しろぱんだ訳の取り込みについて
 
-**現状: 未取り込み。** 受け入れ側の仕組み (`glossary/`、`lang-sync.mjs` の
-`diff` による既訳との差分採否) だけを用意した段階。
+**現状: 未取り込み。** 受け入れ側の仕組みだけを用意した段階。
+`glossary/` への取り込み口、UI 側 (`lang-sync.mjs diff`) とコンペンディウム側
+(`packs-sync.mjs diff`) の用語ごとの採否、そして**置かずに比較するだけの
+読み取り専用モード** (`--from=` + `--count`) が揃っている。許諾が未了なので
+取り込みは行っていない。
 
 取り込む場合に先に片付けること:
 
@@ -1492,8 +1495,79 @@ README.md（Licenses 節）より:
    この出典は**対訳併記型** (見出しに原語が併記されている) なので、原典との
    対応付けは不要で、抽出のみで CSV が起こせる。
 3. 上の表に出典・版・参照日・許諾の状況を追記する。
-4. `node tools/lang-sync.mjs diff --only=shiropanda` → 用語ごとに採否を決める → `apply`。
-   未訳キーがある場合は `prepare` も併用する。
+4. `diff` で用語ごとに採否を決める → `apply`。未訳キーがある場合は `prepare` も併用する。
+   UI 側が `tools/lang-sync.mjs diff`、コンペンディウム側が `tools/packs-sync.mjs diff` で、
+   **フラグは両方同じ**。次節を参照。
+
+### 採用前に数で見る (`diff --count`)
+
+許諾が下りる前でも、取り込みの価値とコストは測れる。**CSV を
+`glossary/` に置かずに**比較できる。
+
+```bash
+node tools/packs-sync.mjs diff --from=~/dl/shiropanda.csv --count   # コンペンディウム側
+node tools/lang-sync.mjs  diff --from=~/dl/shiropanda.csv --count   # UI 側
+```
+
+`--count` は**何も書かない**。衝突した用語を、影響するフィールド数の多い順に、
+現行訳と提案訳を並べて出すだけである。
+
+`--from=` で**置かずに読む**ことが肝心である。`glossary/` に置いてしまうと、
+採否を決める前に他のツールが全部その CSV を見始める。`packs:terms` と
+`lang:report` が未採用の出典に対して不一致を報告しはじめ、`prepare` が
+そこから prefill する。置かなければ、決めないという選択が維持できる。
+
+出力の例 (架空の CSV で動作確認したもの):
+
+```
+compared against: fake-weapons.csv (6)
+6 term(s) differ, across 6 field(s)
+
+-- compendium only: 6 term(s), 6 field(s) --
+    1  Aantari Bow
+         now: アーンタリ・ボウ
+         new: 【テスト訳】Aantari Bow
+```
+
+### UI にもある用語は別枠に出る
+
+`packs-sync.mjs diff` は、衝突した用語を2つに分ける。
+
+- **compendium only** — コンペンディウムにしか無い語。作業ファイルに書き出される。
+- **also in the UI** — `lang/ja.json` にもある語。**作業ファイルには書き出さない。**
+
+後者をコンペンディウム側だけで切り替えると、UI と食い違う。それはまさに
+`packs:terms` が落とす状態なので、**両方同時か、どちらもやらないか**しかない。
+この枠に入った語は、先に UI 側の `lang-sync.mjs diff` で決める。
+
+```
+-- also in the UI: 1 term(s), 4 field(s) --
+    4  Vulnerable
+         now: 脆弱
+         new: 脆弱（別訳）
+         lang/ja.json: 脆弱
+```
+
+### フラグ
+
+| フラグ | 働き |
+| --- | --- |
+| `--only=<substring>` | `glossary/` に**置いてある** CSV のうち、名前が一致するものだけと比較する |
+| `--from=<path>` | 置いていない CSV をその場で読んで比較する |
+| `--count` | 何も書かず、用語ごとの件数だけ報告する |
+| `--adopt` | `ja` に提案訳を先に入れる。却下が「消す」操作になる |
+| `--pack=<substring>` | 対象パックを絞る (packs 側のみ) |
+| `--force` | 未記入の作業ファイルを上書きする (packs 側のみ) |
+
+`--only=` と `--from=` は同じものを二度指すので、両方渡すとエラーになる。
+
+作業ファイル (`packs-pending.json` / `pending.json`) は `prepare` と共有で、
+`diff` は上書きする。packs 側は**未記入の作業が残っていれば拒否する**
+(`--force` で上書き)。このファイルは gitignore なので、潰すとそこにしか無い
+作業が消える。
+
+採用した値は、原文が1段落の `<p>` で包まれていれば `<p>` を復元して入る
+(`prepare` の prefill と同じ扱い)。
 
 ## 再撤回: A (翻訳モジュール) へ移る (2026-10-04)
 

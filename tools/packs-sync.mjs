@@ -18,6 +18,8 @@
  *          for the English they currently sit against.
  * `terms`  holds the compendium to the wordings the UI and the glossaries
  *          already use, and to itself.
+ * `diff`   weighs an outside translation against the one shipped, before any of
+ *          it is adopted -- how many fields each of its wordings would change.
  * `check`  verifies that a translation has not broken what must survive it --
  *          Foundry enrichers (@UUID[...], @Lookup[...], [[/dr ...]]) have to
  *          appear in the translation exactly as often as in the original.
@@ -38,7 +40,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-import { establishedWordings, flatten, loadGlossaries, normalize } from './glossary.mjs';
+import { GLOSSARY_DIR, establishedWordings, flatten, loadGlossaries, loadGlossaryFiles, normalize } from './glossary.mjs';
 import { freshness, hash, readSources, writeSources } from './sources.mjs';
 
 const REFERENCE_PACKS = path.join('lang', '.reference', 'packs');
@@ -583,6 +585,38 @@ const plain = text =>
         .trim()
         .slice(0, 100);
 
+/** `--name=value` off the command line; true for a bare `--name`. */
+const flag = name => {
+    const hit = process.argv.find(argument => argument === `--${name}` || argument.startsWith(`--${name}=`));
+    if (!hit) return undefined;
+    const at = hit.indexOf('=');
+    return at < 0 ? true : hit.slice(at + 1);
+};
+
+/**
+ * The packs to work on, narrowed by --pack=<substring>.
+ *
+ * A 10,423-field working file cannot be translated in one pass. The file is
+ * keyed by collection and `apply` only reads the collections it finds, so a
+ * narrowed file applies exactly as a whole one would.
+ */
+const selectPacks = () => {
+    const only = flag('pack');
+    if (typeof only !== 'string') return ENABLED;
+    const packs = ENABLED.filter(pack => PACKS[pack].includes(only) || pack.includes(only));
+    if (!packs.length) throw new Error(`no enabled pack matches --pack=${only}`);
+    return packs;
+};
+
+/**
+ * Put a single-paragraph field's wrapper back around a bare wording.
+ *
+ * The dictionaries hold plain wordings, but a compendium field is often a
+ * one-paragraph document. Dropping a wording in bare would lose the `<p>`.
+ */
+const rewrap = (source, japanese) =>
+    /^<p>(?:(?!<p>)[\s\S])*<\/p>$/.test(String(source).trim()) ? `<p>${japanese}</p>` : japanese;
+
 /**
  * The key one translated field gets in its source-hash record: the document's
  * entry key and the field path inside it, which is exactly how `audit` names a
@@ -655,15 +689,8 @@ const commands = {
         let count = 0;
         let prefilled = 0;
 
-        /*
-         * A 10,423-field working file cannot be translated in one pass, so
-         * --pack=<substring> narrows it to the packs being worked on. The file
-         * is keyed by collection and `apply` only reads the collections it
-         * finds, so a narrowed file applies exactly as a whole one would.
-         */
-        const only = process.argv.find(a => a.startsWith('--pack='))?.slice('--pack='.length);
-        const packs = only ? ENABLED.filter(pack => PACKS[pack].includes(only) || pack.includes(only)) : ENABLED;
-        if (!packs.length) throw new Error(`no enabled pack matches --pack=${only}`);
+        const only = flag('pack');
+        const packs = selectPacks();
 
         /*
          * Pre-fill from the wordings already approved elsewhere: lang/ja.json
@@ -678,14 +705,7 @@ const commands = {
             const text = plain(source);
             if (!text || text.length > 60) return '';
             const japanese = (approved.get(normalize(text)) ?? glossary.get(normalize(text)))?.japanese ?? '';
-            if (!japanese) return '';
-            /*
-             * The dictionaries hold plain wordings, but a compendium field is
-             * often a one-paragraph document. Dropping a pre-filled wording in
-             * bare would lose the `<p>`, so put the source's own wrapper back.
-             */
-            const wrapped = /^<p>(?:(?!<p>)[\s\S])*<\/p>$/.test(source.trim());
-            return wrapped ? `<p>${japanese}</p>` : japanese;
+            return japanese ? rewrap(source, japanese) : ''
         };
 
         for (const pack of packs) {
@@ -748,7 +768,7 @@ const commands = {
         await fs.writeFile(PENDING, `${JSON.stringify(pending, null, 4)}\n`);
         console.log(
             `${count} field(s) to translate -> ${PENDING}` +
-                (only ? ` (${packs.length} pack(s) matching "${only}")` : '') +
+                (typeof only === 'string' ? ` (${packs.length} pack(s) matching "${only}")` : '') +
                 (prefilled ? `, ${prefilled} pre-filled from lang/ja.json and the glossaries` : '')
         );
         console.log('Fill in the empty "ja" values, then run: node tools/packs-sync.mjs apply');
@@ -994,6 +1014,176 @@ const commands = {
     },
 
     /**
+     * Weigh an outside Japanese translation against the one already shipped.
+     *
+     * `terms` answers "does the compendium agree with the glossaries it has
+     * adopted". This answers the question that comes before adoption: if this
+     * outside wording were taken in, what would change, and how much. The
+     * counterpart on the UI side is `lang-sync.mjs diff`, and the two take the
+     * same flags for the same reasons.
+     *
+     *   --only=<substring>  compare against just the glossaries in
+     *                       lang/translation/glossary/ whose filename matches
+     *   --from=<path>       compare against a CSV that has NOT been placed in
+     *                       that directory, so nothing else starts using it
+     *   --count             report only, writing nothing: each colliding term
+     *                       with the number of fields it would change
+     *   --adopt             pre-fill `ja` with the suggestion, so rejecting a
+     *                       wording means clearing a value instead of copying one
+     *   --pack=<substring>  narrow to the packs whose name matches
+     *   --force             overwrite a working file that still has unfilled work
+     *
+     * A term lang/ja.json also uses is reported separately. Adopting it here
+     * alone would leave the compendium disagreeing with the UI, which is exactly
+     * what `terms` fails on -- those have to be switched on both sides or on
+     * neither, so they are not written to the working file.
+     */
+    async diff() {
+        const only = flag('only');
+        const from = flag('from');
+        const countOnly = Boolean(flag('count'));
+        const adopt = Boolean(flag('adopt'));
+        const force = Boolean(flag('force'));
+
+        if (only && from) throw new Error('--only= and --from= name the same thing twice; pass one.');
+        if (!only && !from)
+            throw new Error(
+                'Nothing to compare against. Pass --only=<substring> for a glossary already in ' +
+                    `${GLOSSARY_DIR}, or --from=<path> for a CSV you have not placed there.`
+            );
+
+        const { glossary, sources } = from
+            ? await loadGlossaryFiles([from])
+            : await loadGlossaries(typeof only === 'string' ? only : undefined);
+        if (!sources.length) throw new Error(`No glossary in ${GLOSSARY_DIR} matches "${only}".`);
+
+        const packs = selectPacks();
+        const uiEn = flatten(await readJson(path.join('lang', '.reference', 'en.json')));
+        const established = establishedWordings(uiEn, flatten(await readJson(path.join('lang', 'ja.json'))));
+        const exempt = await readJson(path.join('lang', 'translation', 'terms-exempt.json')).catch(() => ({}));
+
+        /* Same cut and same comparison as `terms`: beyond this is prose. */
+        const SHORT = 60;
+        const tight = text => normalize(text).replace(/\s+/g, '');
+
+        /* term -> what it would change. Grouped by term, because the decision is per term. */
+        const collisions = new Map();
+
+        for (const pack of packs) {
+            const { collection, file, documents, keys } = await buildPack(pack);
+            const current = await readJson(file).catch(() => ({ entries: {} }));
+
+            for (const [key, source, value] of translatedFields(pack, documents, keys, current)) {
+                const text = plain(source);
+                if (!text || text.length > SHORT) continue;
+                if (exempt[`${collection} / ${key}`] || exempt[`en:${text}`]) continue;
+
+                const term = normalize(text);
+                const suggestion = glossary.get(term);
+                if (!suggestion) continue;
+
+                const here = plain(value);
+                if (tight(suggestion.japanese) === tight(here)) continue;
+
+                const entry = collisions.get(term) ?? {
+                    en: text,
+                    suggest: suggestion.japanese,
+                    house: established.get(term)?.japanese ?? null,
+                    current: new Map(),
+                    fields: []
+                };
+                entry.current.set(here, (entry.current.get(here) ?? 0) + 1);
+                entry.fields.push({ collection, key, source, value: here });
+                collisions.set(term, entry);
+            }
+        }
+
+        const ordered = [...collisions.values()].toSorted((a, b) => b.fields.length - a.fields.length);
+        const blocked = ordered.filter(entry => entry.house && tight(entry.house) !== tight(entry.suggest));
+        const open = ordered.filter(entry => !blocked.includes(entry));
+        const fields = count => count.reduce((total, entry) => total + entry.fields.length, 0);
+
+        console.log(`compared against: ${sources.map(s => `${s.file} (${s.entries})`).join(', ')}`);
+        console.log(
+            `${collisions.size} term(s) differ, across ${fields(ordered)} field(s)` +
+                `${packs.length < ENABLED.length ? ` in ${packs.length} pack(s)` : ''}\n`
+        );
+
+        const show = entry => {
+            const wordings = [...entry.current.entries()].toSorted((a, b) => b[1] - a[1]);
+            console.log(`${String(entry.fields.length).padStart(5)}  ${entry.en}`);
+            for (const [wording, n] of wordings) console.log(`         now: ${wording}${wordings.length > 1 ? ` (${n})` : ''}`);
+            console.log(`         new: ${entry.suggest}`);
+            if (entry.house) console.log(`         lang/ja.json: ${entry.house}`);
+        };
+
+        if (open.length) {
+            console.log(`-- compendium only: ${open.length} term(s), ${fields(open)} field(s) --`);
+            for (const entry of open) show(entry);
+        }
+
+        if (blocked.length) {
+            console.log(
+                `\n-- also in the UI: ${blocked.length} term(s), ${fields(blocked)} field(s) --\n` +
+                    '   These are lang/ja.json wordings. Switching them here alone is what `terms`\n' +
+                    '   fails on, so they are left out of the working file. Decide them on the UI\n' +
+                    `   side first: node tools/lang-sync.mjs diff ${from ? `--from=${from}` : `--only=${only}`}`
+            );
+            for (const entry of blocked) show(entry);
+        }
+
+        if (countOnly) {
+            console.log(`\nNothing written. Drop --count to write the ${fields(open)} field(s) above to ${PENDING}.`);
+            return;
+        }
+
+        /*
+         * The working file is shared with `prepare`, and a diff overwrites it.
+         * Clobbering a part-finished translation pass would lose work that only
+         * exists there, since the file is gitignored.
+         */
+        const existing = await readJson(PENDING).catch(() => null);
+        if (existing && !force) {
+            const unfilled = Object.values(existing)
+                .flatMap(entries => Object.values(entries))
+                .flatMap(fieldSet => Object.entries(fieldSet))
+                .filter(([where, value]) => where !== '_note' && !value?.ja).length;
+            if (unfilled)
+                throw new Error(
+                    `${PENDING} still has ${unfilled} unfilled field(s) from an earlier run. ` +
+                        'Apply or clear it first, or pass --force to overwrite it.'
+                );
+        }
+
+        /* The shape `apply` reads: collection -> entry key -> field -> { ja }. */
+        const pending = {};
+        let written = 0;
+        for (const entry of open) {
+            for (const field of entry.fields) {
+                const at = field.key.lastIndexOf(' :: ');
+                const [id, where] = at < 0 ? [field.key, field.key] : [field.key.slice(0, at), field.key.slice(at + 4)];
+                const collection = (pending[field.collection] ??= {});
+                const document = (collection[id] ??= { _note: id });
+                /*
+                 * `current` is the wording in flight and `suggest` the proposal;
+                 * `apply` reads only `ja`, so both stay visible while deciding.
+                 */
+                const suggest = rewrap(field.source, entry.suggest);
+                document[where] = { en: field.source, current: field.value, suggest, ja: adopt ? suggest : '' };
+                written += 1;
+            }
+        }
+
+        await fs.writeFile(PENDING, `${JSON.stringify(pending, null, 4)}\n`);
+        console.log(`\n${PENDING}: ${written} field(s) across ${open.length} term(s)`);
+        console.log(
+            adopt
+                ? 'Suggestions are pre-filled. Clear the "ja" of every one you reject, then run: node tools/packs-sync.mjs apply'
+                : 'Copy "suggest" into "ja" for each one you accept, then run: node tools/packs-sync.mjs apply'
+        );
+    },
+
+    /**
      * Hold the compendium to the Japanese the project already uses.
      *
      * `report` counts, `audit` prints pairs for reading, and `check` guards the
@@ -1198,4 +1388,15 @@ if (!command) {
     console.error(`Usage: node tools/packs-sync.mjs [${Object.keys(commands).join('|')}]`);
     process.exit(1);
 }
-await command();
+
+/*
+ * A usage mistake -- no comparison source, a --pack that matches nothing -- is
+ * the user's to fix, not a crash to read a stack trace for. Anything without a
+ * message of its own still gets one, so a genuine bug stays debuggable.
+ */
+try {
+    await command();
+} catch (error) {
+    console.error(error.message ? `${error.message}` : error);
+    process.exitCode = 1;
+}

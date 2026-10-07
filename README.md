@@ -83,6 +83,14 @@ npm run packs:check   # ライセンス境界と enricher/数値の保全を検�
 npm run packs:terms   # 訳語の揺れ (同じ英語に別の訳) を検査する
 ```
 
+外部の対訳資料を取り込むか判断するときは、`glossary/` に置かずに比較できます。
+`--count` は何も書かず、衝突した用語と影響フィールド数だけを報告します。
+
+```bash
+node tools/packs-sync.mjs diff --from=<path.csv> --count   # コンペンディウム側
+node tools/lang-sync.mjs  diff --from=<path.csv> --count   # UI 側
+```
+
 `packs:check` と `packs:terms` は GitHub Actions でも毎コミット走ります。
 `packs:check` はリリースの zip を作る前にも走るので、Witherwild 除外は
 手作業ではなくビルドで担保されています。

@@ -25,7 +25,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-import { establishedWordings, flatten, GLOSSARY_DIR, loadGlossaries, normalize } from './glossary.mjs';
+import { establishedWordings, flatten, GLOSSARY_DIR, loadGlossaries, loadGlossaryFiles, normalize } from './glossary.mjs';
 import { freshness, hash, readSources, writeSources } from './sources.mjs';
 
 const LANG = 'lang';
@@ -166,14 +166,29 @@ const commands = {
      * Normalized comparison keeps pure punctuation drift out of the list.
      *
      *   --only=<substring>  compare against just the glossaries whose filename matches
+     *   --from=<path>       compare against a CSV that has NOT been placed in
+     *                       the glossary directory, so no other tool starts
+     *                       using a source that has not been adopted
+     *   --count             report only, writing nothing: the terms that would
+     *                       change, and how many keys each one touches
      *   --adopt             pre-fill `ja` with the suggestion, so rejecting means
      *                       clearing a value instead of copying one
      */
     async diff() {
         const { en, ja } = await analyze();
         const only = flag('only');
+        const from = flag('from');
+        const countOnly = Boolean(flag('count'));
         const adopt = Boolean(flag('adopt'));
-        const { glossary, sources } = await loadGlossaries(typeof only === 'string' ? only : undefined);
+
+        if (only && from) {
+            console.error('--only= and --from= name the same thing twice; pass one.');
+            process.exit(1);
+        }
+
+        const { glossary, sources } = from
+            ? await loadGlossaryFiles([from])
+            : await loadGlossaries(typeof only === 'string' ? only : undefined);
 
         if (!sources.length) {
             console.error(
@@ -199,8 +214,26 @@ const commands = {
         }
 
         const total = Object.keys(pending).length;
-        await fs.writeFile(PENDING, `${JSON.stringify({ retired: [], pending }, null, 4)}\n`);
+
+        /* Grouped by wording, because the decision is per term and not per key. */
+        const byTerm = new Map();
+        for (const entry of Object.values(pending)) {
+            const term = byTerm.get(normalize(entry.en)) ?? { en: entry.en, suggest: entry.suggest, keys: 0 };
+            term.keys += 1;
+            byTerm.set(normalize(entry.en), term);
+        }
+
         console.log(`compared against: ${sources.map(source => `${source.file} (${source.entries})`).join(', ')}`);
+
+        if (countOnly) {
+            console.log(`${byTerm.size} term(s) differ, across ${total} key(s)\n`);
+            for (const term of [...byTerm.values()].toSorted((a, b) => b.keys - a.keys))
+                console.log(`${String(term.keys).padStart(5)}  ${term.en}\n         new: ${term.suggest}`);
+            console.log(`\nNothing written. Drop --count to write the ${total} key(s) to ${PENDING}.`);
+            return;
+        }
+
+        await fs.writeFile(PENDING, `${JSON.stringify({ retired: [], pending }, null, 4)}\n`);
         console.log(`${PENDING}: ${total} key(s) where the glossary differs from lang/ja.json`);
         for (const [file, count] of bySource) console.log(`  ${count} from ${file}`);
         console.log(
