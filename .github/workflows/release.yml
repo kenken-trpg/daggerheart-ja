@@ -59,7 +59,12 @@ jobs:
           repo = os.environ["REPO"]
           with open("module.json") as f:
               manifest = json.load(f)
-          manifest["version"] = version
+          with open("package.json") as f:
+              package = json.load(f)
+          # バージョンを上げ忘れると main のマニフェストが更新を案内できない。
+          # タグだけで ZIP の版を変えず、コミット済みの版との一致を必須にする。
+          if manifest["version"] != version or package["version"] != version:
+              raise SystemExit("Release tag, module.json and package.json versions must match")
           manifest["url"] = f"https://github.com/{repo}"
           manifest["manifest"] = f"https://raw.githubusercontent.com/{repo}/main/module.json"
           manifest["download"] = f"https://github.com/{repo}/releases/download/{version}/module.zip"

@@ -36,6 +36,10 @@ https://raw.githubusercontent.com/kenken-trpg/daggerheart-ja/main/module.json
 ワールドの「設定 > モジュール管理」で有効化したあと、
 Foundry の言語設定を日本語にしてください。
 
+インストール済みのモジュールは、セットアップ画面の「モジュール管理」から
+更新してください。0.1.1 では能力値名を「敏捷・筋力・技巧・本能・存在・知識」に
+統一しています。更新後にワールドを開き直すと、シートや判定の表示に反映されます。
+
 Babele はコンペンディウムを書き換えません。読み込み時に訳を重ねるだけなので、
 公式システムのパックはそのまま残り、英語に戻すのはこのモジュールを
 無効化するだけです。
@@ -94,6 +98,21 @@ node tools/lang-sync.mjs  diff --from=<path.csv> --count   # UI 側
 `packs:check` と `packs:terms` は GitHub Actions でも毎コミット走ります。
 `packs:check` はリリースの zip を作る前にも走るので、Witherwild 除外は
 手作業ではなくビルドで担保されています。
+
+### 更新を配布する
+
+`main` への push だけでは、インストール済みモジュールには更新が届きません。
+Foundry はマニフェストの `version` で更新を判定し、`download` に指定された
+リリースの ZIP を取得します。
+
+1. `module.json` と `package.json` の `version` を同じ新しい版に上げ、
+   `module.json` の `download` をその版の `module.zip` に変更する。
+2. 翻訳の検査を実行し、変更をコミットして `main` に push する。
+3. そのコミットを指すタグ（例: `0.1.1`）で GitHub Release を公開する。
+   Release ワークフローが `module.json` と `module.zip` を添付したことを確認する。
+4. 公開マニフェスト URL から隔離した FVTT 環境へインストールし、
+   配布されたバージョンと日本語表示を確認する。ローカルリポジトリへの
+   シンボリックリンクを使った実演だけでは、配布経路の確認にはならない。
 
 ## 不具合・訳語の報告
 
