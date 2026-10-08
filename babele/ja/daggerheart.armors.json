@@ -45,7 +45,7 @@
             "effects": {
                 "awdHgEaM54G3emOU": {
                     "name": "非常に重い",
-                    "description": "回避値−2。素早さ−1"
+                    "description": "回避値−2。敏捷−1"
                 }
             }
         },
@@ -79,7 +79,7 @@
             "effects": {
                 "2uaDK1adL1aVP1Pg": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -109,7 +109,7 @@
             "effects": {
                 "Hy0sNtFS1JAXxgwC": {
                     "name": "金装飾",
-                    "description": "社交＋1"
+                    "description": "存在＋1"
                 }
             }
         },
@@ -199,9 +199,9 @@
             "effects": {
                 "3lzAYwHLDaq0HiMs": {
                     "name": "水棲",
-                    "description": "水中で呼吸でき、水没しているあいだ素早さロールに有利を得ます。",
+                    "description": "水中で呼吸でき、水没しているあいだ敏捷ロールに有利を得ます。",
                     "changes": [
-                        "水没しているあいだの素早さロール"
+                        "水没しているあいだの敏捷ロール"
                     ]
                 }
             }
@@ -254,7 +254,7 @@
             "effects": {
                 "mfKMW9SX3Mnos1nY": {
                     "name": "非常に重い",
-                    "description": "回避値−2。素早さ−1"
+                    "description": "回避値−2。敏捷−1"
                 }
             }
         },
@@ -294,7 +294,7 @@
             "effects": {
                 "zvc1X0O4HyQE9yfV": {
                     "name": "壮麗",
-                    "description": "鎧値に社交と同じ値のボーナスを得ます。"
+                    "description": "鎧値に存在と同じ値のボーナスを得ます。"
                 }
             }
         },
@@ -358,7 +358,7 @@
             "effects": {
                 "wstJ1aKKtmXgCwxB": {
                     "name": "非常に重い",
-                    "description": "回避値−2。素早さ−1"
+                    "description": "回避値−2。敏捷−1"
                 }
             }
         },
@@ -392,7 +392,7 @@
             "effects": {
                 "bE8TfDWmibDVXlDK": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -446,7 +446,7 @@
             "effects": {
                 "zvzkRX2Uevemmbz4": {
                     "name": "非常に重い",
-                    "description": "回避値−2。素早さ−1"
+                    "description": "回避値−2。敏捷−1"
                 }
             }
         },
@@ -480,7 +480,7 @@
             "effects": {
                 "yYHxeQ0YPiVl8Cbc": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -558,7 +558,7 @@
             "effects": {
                 "2wGrVqcFO8jiTuDv": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },

@@ -3,6 +3,9 @@
 `lang/ja.json` は上流 (Foundryborne/daggerheart) の `lang/en.json` を追従して維持する。
 作業は `tools/lang-sync.mjs` で行う。
 
+能力値名は Agility＝敏捷、Strength＝筋力、Finesse＝技巧、Instinct＝本能、
+Presence＝存在、Knowledge＝知識に統一する。
+
 > **このファイルはシステムフォーク
 > ([kenken-trpg/daggerheart](https://github.com/kenken-trpg/daggerheart)) から
 > 引き継いだ。** 用語集・Babele・CSS・実機テスト・ライセンスの各節はそのまま
@@ -2722,7 +2725,7 @@ Legendary だけ レジェンダリー にした。伝説 にすると weapons �
 「冒険を運営する」は 69,372 字で、うち相当な部分が表と
 `@UUID[...]{ラベル}` のリストだった。これは手で書き写さず生成した。
 
-- 難易度の目安6表（素早さ／頑強／器用／直感／社交／知識）は
+- 難易度の目安6表（敏捷／筋力／技巧／本能／存在／知識）は
   行列をPythonのリストで書き、`<table><tbody><tr><td data-colwidth=...`
   を組み立てた。原文とタグ列を比較して完全一致を確認している
   （`re.findall(r'<[^>]+>', s)` を突き合わせる）。

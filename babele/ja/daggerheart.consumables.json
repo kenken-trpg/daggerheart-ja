@@ -46,7 +46,7 @@
         "Attune Potion": {
             "_note": "Attune Potion",
             "name": "同調の薬",
-            "description": "<p>次の直感ロールに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の本能ロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "aiyNOQZbVpTDagXy": {
                     "name": "飲む"
@@ -61,7 +61,7 @@
         "Berserker's Brew": {
             "_note": "Berserker's Brew",
             "name": "狂戦士の醸造酒",
-            "description": "<p>この一杯の液体を飲んだとき、直感に等しい値（最低1）のボーナスを頑強に得て、同じ値のペナルティを器用と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>",
+            "description": "<p>この一杯の液体を飲んだとき、本能に等しい値（最低1）のボーナスを筋力に得て、同じ値のペナルティを技巧と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>",
             "actions": {
                 "nwZQuJ6aY0i7EerN": {
                     "name": "飲む"
@@ -70,7 +70,7 @@
             "effects": {
                 "lniOwCkDKynTi4bw": {
                     "name": "狂乱",
-                    "description": "<p>この一杯の液体を飲んだとき、直感に等しい値（最低1）のボーナスを頑強に得て、同じ値のペナルティを器用と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>"
+                    "description": "<p>この一杯の液体を飲んだとき、本能に等しい値（最低1）のボーナスを筋力に得て、同じ値のペナルティを技巧と知識に受けます。この効果はデスムーブを行うまで、または次の休息まで持続します。</p>"
                 }
             }
         },
@@ -104,7 +104,7 @@
         "Bolster Potion": {
             "_note": "Bolster Potion",
             "name": "強壮の薬",
-            "description": "<p>次の頑強ロールに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の筋力ロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "YqbQKTgblItoZOm8": {
                     "name": "飲む"
@@ -182,7 +182,7 @@
         "Charm Potion": {
             "_note": "Charm Potion",
             "name": "魅了の薬",
-            "description": "<p>次の社交ロールに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の存在ロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "2trd3JYIb527LIrn": {
                     "name": "飲む"
@@ -253,7 +253,7 @@
         "Control Potion": {
             "_note": "Control Potion",
             "name": "制御の薬",
-            "description": "<p>次の器用ロールに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の技巧ロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "l5dx5uYsH0btLDJq": {
                     "name": "飲む"
@@ -342,11 +342,11 @@
         "Dragonbloom Tea": {
             "_note": "Dragonbloom Tea",
             "name": "竜花の茶",
-            "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して直感ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p>",
+            "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して本能ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p>",
             "actions": {
                 "rcHEz3ImUDwo6lPC": {
                     "name": "飲む",
-                    "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して直感ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p><p>@Template[type:emanation|range:c]</p>"
+                    "description": "<p>この茶を飲んで、炎のブレス攻撃を放てます。あなたの前方、近距離以内のすべての敵対者に対して本能ロールを行います。成功した対象は、あなたの習熟を使ったd20の物理ダメージを受けます。</p><p>@Template[type:emanation|range:c]</p>"
                 }
             }
         },
@@ -603,7 +603,7 @@
         "Growing Potion": {
             "_note": "Growing Potion",
             "name": "巨大化の薬",
-            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを2倍にできます。この姿のあいだ、頑強に＋2のボーナス、習熟に＋1のボーナスを得ます。</p>",
+            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを2倍にできます。この姿のあいだ、筋力に＋2のボーナス、習熟に＋1のボーナスを得ます。</p>",
             "actions": {
                 "A8wHvMnKnewQ2J3m": {
                     "name": "飲む"
@@ -654,7 +654,7 @@
         "Improved Arcane Shard": {
             "_note": "Improved Arcane Shard",
             "name": "改良秘術石の破片",
-            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は2d20の魔法ダメージを受けます。</p>",
+            "description": "<p>技巧ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は2d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "g3sQoxS6sL3mut3u": {
                     "name": "投げつけ"
@@ -722,7 +722,7 @@
         "Jar of Lost Voices": {
             "_note": "Jar of Lost Voices",
             "name": "失われた声の壺",
-            "description": "<p>この壺を開けて、直感に等しい分数のあいだ、耳を聾する声の反響を解き放てます。遠距離以内にいてこの音に備えていないクリーチャーは、6d8の魔法ダメージを受けます。</p><p>@Template[type:emanation|range:f]</p>",
+            "description": "<p>この壺を開けて、本能に等しい分数のあいだ、耳を聾する声の反響を解き放てます。遠距離以内にいてこの音に備えていないクリーチャーは、6d8の魔法ダメージを受けます。</p><p>@Template[type:emanation|range:f]</p>",
             "actions": {
                 "QEk4TaJeN9FX8cZN": {
                     "name": "開ける"
@@ -789,7 +789,7 @@
         "Major Arcane Shard": {
             "_note": "Major Arcane Shard",
             "name": "大秘術石の破片",
-            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は4d20の魔法ダメージを受けます。</p>",
+            "description": "<p>技巧ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は4d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "8JHqtEYD0uOGwHdd": {
                     "name": "投げつけ"
@@ -799,7 +799,7 @@
         "Major Attune Potion": {
             "_note": "Major Attune Potion",
             "name": "大同調の薬",
-            "description": "<p>次の休息まで直感に＋1のボーナスを得ます。</p>",
+            "description": "<p>次の休息まで本能に＋1のボーナスを得ます。</p>",
             "actions": {
                 "zerWKpcBvtiaUfaw": {
                     "name": "飲む"
@@ -814,7 +814,7 @@
         "Major Bolster Potion": {
             "_note": "Major Bolster Potion",
             "name": "大強壮の薬",
-            "description": "<p>次の休息まで頑強に＋1のボーナスを得ます。</p>",
+            "description": "<p>次の休息まで筋力に＋1のボーナスを得ます。</p>",
             "actions": {
                 "Z7ehTbRegQvq74tl": {
                     "name": "飲む"
@@ -829,7 +829,7 @@
         "Major Charm Potion": {
             "_note": "Major Charm Potion",
             "name": "大魅了の薬",
-            "description": "<p>次の休息まで社交に＋1のボーナスを得ます。</p>",
+            "description": "<p>次の休息まで存在に＋1のボーナスを得ます。</p>",
             "actions": {
                 "Bz6oZUN317mLvQSk": {
                     "name": "飲む"
@@ -844,7 +844,7 @@
         "Major Control Potion": {
             "_note": "Major Control Potion",
             "name": "大制御の薬",
-            "description": "<p>次の休息まで器用に＋1のボーナスを得ます。</p>",
+            "description": "<p>次の休息まで技巧に＋1のボーナスを得ます。</p>",
             "actions": {
                 "fk272mE2zHIHq8qR": {
                     "name": "飲む"
@@ -894,7 +894,7 @@
         "Major Stride Potion": {
             "_note": "Major Stride Potion",
             "name": "大疾走の薬",
-            "description": "<p>次の休息まで素早さに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の休息まで敏捷に＋1のボーナスを得ます。</p>",
             "actions": {
                 "UIVnvI726LJnlK86": {
                     "name": "飲む"
@@ -1271,7 +1271,7 @@
         "Shrinking Potion": {
             "_note": "Shrinking Potion",
             "name": "縮小の薬",
-            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを半分にできます。この姿のあいだ、素早さに＋2のボーナス、習熟に−1のペナルティを受けます。</p>",
+            "description": "<p>この薬を飲んで、この姿を解くことを選ぶまで、または次の休息まで、自分の大きさを半分にできます。この姿のあいだ、敏捷に＋2のボーナス、習熟に−1のペナルティを受けます。</p>",
             "actions": {
                 "F9vKFVwtJfR4Q8Kh": {
                     "name": "飲む"
@@ -1428,7 +1428,7 @@
         "Stride Potion": {
             "_note": "Stride Potion",
             "name": "疾走の薬",
-            "description": "<p>次の素早さロールに＋1のボーナスを得ます。</p>",
+            "description": "<p>次の敏捷ロールに＋1のボーナスを得ます。</p>",
             "actions": {
                 "GwQgdB3E1HogFKvD": {
                     "name": "飲む"
@@ -1494,7 +1494,7 @@
         "Unstable Arcane Shard": {
             "_note": "Unstable Arcane Shard",
             "name": "不安定な秘術石の破片",
-            "description": "<p>器用ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は1d20の魔法ダメージを受けます。</p>",
+            "description": "<p>技巧ロールを行って、この破片を遠距離以内の敵対者の一団に投げつけられます。成功した対象は1d20の魔法ダメージを受けます。</p>",
             "actions": {
                 "D7BTCUV5DOXmqC0l": {
                     "name": "投げつけ"
@@ -1528,11 +1528,11 @@
         "Vial of Darksmoke": {
             "_note": "Vial of Darksmoke",
             "name": "暗煙の小瓶",
-            "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、素早さに等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>",
+            "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、敏捷に等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>",
             "actions": {
                 "4nFnAoyH5dENizsx": {
                     "name": "使う",
-                    "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、素早さに等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>"
+                    "description": "<p>敵対者があなたを攻撃したとき、この小瓶を使い、敏捷に等しい数のd6を振ります。最も高い出目を、その攻撃に対する回避値に加えます。</p>"
                 }
             }
         },

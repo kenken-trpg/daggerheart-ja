@@ -41,11 +41,11 @@
         "Attune Relic": {
             "_note": "Attune Relic",
             "name": "同調の遺物",
-            "description": "<p>直感に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "description": "<p>本能に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
             "effects": {
                 "KmoJVnCQJUGyrZIk": {
                     "name": "同調の遺物",
-                    "description": "<p>直感に＋1のボーナスを得ます。</p>"
+                    "description": "<p>本能に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -102,11 +102,11 @@
         "Bolster Relic": {
             "_note": "Bolster Relic",
             "name": "強壮の遺物",
-            "description": "<p>頑強に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "description": "<p>筋力に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
             "effects": {
                 "ByYXvJNr5YbXqn8I": {
                     "name": "強壮の遺物",
-                    "description": "<p>頑強に＋1のボーナスを得ます。</p>"
+                    "description": "<p>筋力に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -173,11 +173,11 @@
         "Charm Relic": {
             "_note": "Charm Relic",
             "name": "魅了の遺物",
-            "description": "<p>社交に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "description": "<p>存在に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
             "effects": {
                 "2yr8Ps6wvaG3b1qy": {
                     "name": "魅了の遺物",
-                    "description": "<p>社交に＋1のボーナスを得ます。</p>"
+                    "description": "<p>存在に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -224,11 +224,11 @@
         "Control Relic": {
             "_note": "Control Relic",
             "name": "制御の遺物",
-            "description": "<p>器用に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "description": "<p>技巧に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
             "effects": {
                 "OwjK2TqOizTiRGxD": {
                     "name": "制御の遺物",
-                    "description": "<p>器用に＋1のボーナスを得ます。</p>"
+                    "description": "<p>技巧に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -386,27 +386,27 @@
         "Gem of Alacrity": {
             "_note": "Gem of Alacrity",
             "name": "敏速の宝玉",
-            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに素早さを使えるようになります。</p>"
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに敏捷を使えるようになります。</p>"
         },
         "Gem of Audacity": {
             "_note": "Gem of Audacity",
             "name": "大胆の宝玉",
-            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに社交を使えるようになります。</p>"
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに存在を使えるようになります。</p>"
         },
         "Gem of Insight": {
             "_note": "Gem of Insight",
             "name": "洞察の宝玉",
-            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに直感を使えるようになります。</p>"
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに本能を使えるようになります。</p>"
         },
         "Gem of Might": {
             "_note": "Gem of Might",
             "name": "剛力の宝玉",
-            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに頑強を使えるようになります。</p>"
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに筋力を使えるようになります。</p>"
         },
         "Gem of Precision": {
             "_note": "Gem of Precision",
             "name": "精確の宝玉",
-            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに器用を使えるようになります。</p>"
+            "description": "<p>この宝玉を武器に取り付けると、その武器で攻撃を行うときに技巧を使えるようになります。</p>"
         },
         "Gem of Sagacity": {
             "_note": "Gem of Sagacity",
@@ -581,7 +581,7 @@
         "Loaded Dice": {
             "_note": "Loaded Dice",
             "name": "いかさまダイス",
-            "description": "<p>器用ロール（14）に成功して、この重り入りのダイスの出目を選べます。恐怖付きでロールした場合、見ていた者はそのダイスが仕込みだと気づきます。</p>"
+            "description": "<p>技巧ロール（14）に成功して、この重り入りのダイスの出目を選べます。恐怖付きでロールした場合、見ていた者はそのダイスが仕込みだと気づきます。</p>"
         },
         "Lorekeeper": {
             "_note": "Lorekeeper",
@@ -832,7 +832,7 @@
         "Skeleton Key": {
             "_note": "Skeleton Key",
             "name": "万能鍵",
-            "description": "<p>この鍵を使って施錠された扉を開けるとき、器用ロールに有利を得ます。</p>",
+            "description": "<p>この鍵を使って施錠された扉を開けるとき、技巧ロールに有利を得ます。</p>",
             "actions": {
                 "lV6W9M1CX6N8jSpt": {
                     "name": "鍵を使う"
@@ -867,11 +867,11 @@
         "Stride Relic": {
             "_note": "Stride Relic",
             "name": "疾走の遺物",
-            "description": "<p>素早さに＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
+            "description": "<p>敏捷に＋1のボーナスを得ます。遺物は1つしか持てません。</p>",
             "effects": {
                 "7lHIbMyCDonSxSZf": {
                     "name": "疾走の遺物",
-                    "description": "<p>素早さに＋1のボーナスを得ます。</p>"
+                    "description": "<p>敏捷に＋1のボーナスを得ます。</p>"
                 }
             }
         },
@@ -994,7 +994,7 @@
         "Woven Net": {
             "_note": "Woven Net",
             "name": "編んだ網",
-            "description": "<p>この網を使って器用ロールを行い、小さなクリーチャーを捕らえられます。捕らえられた対象は、攻撃ロール（16）に成功すれば抜け出せます。</p>",
+            "description": "<p>この網を使って技巧ロールを行い、小さなクリーチャーを捕らえられます。捕らえられた対象は、攻撃ロール（16）に成功すれば抜け出せます。</p>",
             "actions": {
                 "yv0l43uUDB2gWFd1": {
                     "name": "投げつけ"

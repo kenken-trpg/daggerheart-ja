@@ -175,7 +175,7 @@
         "Charge": {
             "_note": "Charge",
             "name": "充填する",
-            "description": "<p>遠距離か超遠距離から1体以上の対象の近接射程内へ移動する素早さロールに成功したとき、<strong>ストレスを1マーク</strong>して、近接射程内のすべての対象に<strong>1d12</strong>の物理ダメージを与えられます。</p>",
+            "description": "<p>遠距離か超遠距離から1体以上の対象の近接射程内へ移動する敏捷ロールに成功したとき、<strong>ストレスを1マーク</strong>して、近接射程内のすべての対象に<strong>1d12</strong>の物理ダメージを与えられます。</p>",
             "actions": {
                 "KLg0T6I1w24sfIbH": {
                     "name": "ダメージを与える"
@@ -230,7 +230,7 @@
         "Elemental Breath": {
             "_note": "Elemental Breath",
             "name": "元素のブレス",
-            "description": "<p>自分のブレスの元素を1つ選びます（電撃、炎、氷など）。このブレスは至近距離以内の対象1体か対象の一団に対して使えます。そのとき、習熟を使って<strong>d8</strong>の魔法ダメージを与える直感の武器として扱います。</p>",
+            "description": "<p>自分のブレスの元素を1つ選びます（電撃、炎、氷など）。このブレスは至近距離以内の対象1体か対象の一団に対して使えます。そのとき、習熟を使って<strong>d8</strong>の魔法ダメージを与える本能の武器として扱います。</p>",
             "actions": {
                 "a6WROv0OKx0lbYVa": {
                     "name": "攻撃",
@@ -282,7 +282,7 @@
         "Feline Instincts": {
             "_note": "Feline Instincts",
             "name": "猫の本能",
-            "description": "<p>素早さロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
+            "description": "<p>敏捷ロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
             "actions": {
                 "ALsGHOy0q5THGxz5": {
                     "name": "希望を消費する"
@@ -307,7 +307,7 @@
         "Fungril Network": {
             "_note": "Fungril Network",
             "name": "ファングリルの網",
-            "description": "<p><strong>直感ロール（12）</strong>を行い、自分の菌糸の連なりを使って同じ種族の者たちと話します。成功した場合、どれほど離れていても意思を通じ合えます。</p>",
+            "description": "<p><strong>本能ロール（12）</strong>を行い、自分の菌糸の連なりを使って同じ種族の者たちと話します。成功した場合、どれほど離れていても意思を通じ合えます。</p>",
             "actions": {
                 "ZYfigAyUdDUteczO": {
                     "name": "意思を通じる"
@@ -404,7 +404,7 @@
         "Long Tongue": {
             "_note": "Long Tongue",
             "name": "長い舌",
-            "description": "<p>長い舌を使って近距離以内のものをつかめます。<strong>ストレスを1マーク</strong>して、舌を、習熟を使って<strong>d12</strong>の物理ダメージを与える器用の近距離武器として使えます。</p>",
+            "description": "<p>長い舌を使って近距離以内のものをつかめます。<strong>ストレスを1マーク</strong>して、舌を、習熟を使って<strong>d12</strong>の物理ダメージを与える技巧の近距離武器として使えます。</p>",
             "actions": {
                 "MhAWv7tuvkfOf7wQ": {
                     "name": "ストレスをマーク"
@@ -434,13 +434,13 @@
         "Natural Climber": {
             "_note": "Natural Climber",
             "name": "生まれついての登り手",
-            "description": "<p>均衡を取ることや登攀に関わる素早さロールに有利を得ます。</p>",
+            "description": "<p>均衡を取ることや登攀に関わる敏捷ロールに有利を得ます。</p>",
             "effects": {
                 "HQeQH9gUfrjlWWcg": {
                     "name": "生まれついての登り手",
-                    "description": "<p>均衡を取ることや登攀に関わる素早さロールに有利を得ます。</p>",
+                    "description": "<p>均衡を取ることや登攀に関わる敏捷ロールに有利を得ます。</p>",
                     "changes": [
-                        "均衡を取ることや登攀に関わる素早さロール"
+                        "均衡を取ることや登攀に関わる敏捷ロール"
                     ]
                 }
             }
@@ -459,7 +459,7 @@
         "Nimble Fingers": {
             "_note": "Nimble Fingers",
             "name": "軽やかな指",
-            "description": "<p>器用ロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
+            "description": "<p>技巧ロールを行うとき、<strong>希望を2消費</strong>して希望ダイスを振り直せます。</p>",
             "actions": {
                 "eIaosYhBPLBmFMSr": {
                     "name": "希望を消費する"
@@ -509,7 +509,7 @@
         "Retracting Claws": {
             "_note": "Retracting Claws",
             "name": "引っ込む爪",
-            "description": "<p><strong>素早さロール</strong>を行って、近接射程内の対象を引っ掻きます。成功した場合、その対象は一時的に脆弱になります。</p>",
+            "description": "<p><strong>敏捷ロール</strong>を行って、近接射程内の対象を引っ掻きます。成功した場合、その対象は一時的に脆弱になります。</p>",
             "actions": {
                 "LcFhDb3sJk8sraAc": {
                     "name": "引っ掻く"
@@ -562,7 +562,7 @@
         "Surefooted": {
             "_note": "Surefooted",
             "name": "確かな足取り",
-            "description": "<p>素早さロールの不利を無視します。</p>"
+            "description": "<p>敏捷ロールの不利を無視します。</p>"
         },
         "Thick Skin": {
             "_note": "Thick Skin",

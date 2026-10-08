@@ -235,7 +235,7 @@
             "effects": {
                 "pdRt0nO1ooGPO3cm": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -321,7 +321,7 @@
             "effects": {
                 "CUpkNgCUE6CWAXc3": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -665,7 +665,7 @@
             "effects": {
                 "DQcdvMkGHEUycaBv": {
                     "name": "焼夷",
-                    "description": "素早さ−1"
+                    "description": "敏捷−1"
                 }
             }
         },
@@ -1125,7 +1125,7 @@
             "effects": {
                 "jMIrOhpPUncn7dWg": {
                     "name": "鋭翼",
-                    "description": "<p>ダメージロールに素早さに等しいボーナスを得ます。</p>"
+                    "description": "<p>ダメージロールに敏捷に等しいボーナスを得ます。</p>"
                 }
             }
         },
@@ -1301,7 +1301,7 @@
             "effects": {
                 "YxaGOWcQEesO9zPR": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -1596,7 +1596,7 @@
             "effects": {
                 "POQepSxCro9T9OYT": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -1682,7 +1682,7 @@
             "effects": {
                 "TC4yGDrnOisOpDQu": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -1990,7 +1990,7 @@
             "effects": {
                 "zj1ddWCXh6TuGr3c": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -2184,7 +2184,7 @@
             "effects": {
                 "MmVRlnSLFWBfNJlB": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -2270,7 +2270,7 @@
             "effects": {
                 "004BkCQeQzuMVGS3": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -2517,7 +2517,7 @@
             "effects": {
                 "9gKDF96uId07289w": {
                     "name": "扱いにくい",
-                    "description": "器用−1"
+                    "description": "技巧−1"
                 }
             }
         },
@@ -2832,7 +2832,7 @@
             "effects": {
                 "vQJCrV4wxxhGUcBX": {
                     "name": "破壊的",
-                    "description": "素早さ−1"
+                    "description": "敏捷−1"
                 }
             }
         },
@@ -2899,7 +2899,7 @@
             "effects": {
                 "dhhIibfRBwCGZ6Ab": {
                     "name": "破壊的",
-                    "description": "素早さ−1"
+                    "description": "敏捷−1"
                 }
             }
         },
@@ -3160,13 +3160,13 @@
             "actions": {
                 "weRZBt9v1kjNh6wI": {
                     "name": "説得する",
-                    "description": "社交ロールを行う前に、ストレスを1マークして、結果に＋2のボーナスを得られます。"
+                    "description": "存在ロールを行う前に、ストレスを1マークして、結果に＋2のボーナスを得られます。"
                 }
             },
             "effects": {
                 "mlgTXtMVMC83kUaZ": {
                     "name": "説得力",
-                    "description": "社交ロールに＋2します"
+                    "description": "存在ロールに＋2します"
                 }
             }
         },
