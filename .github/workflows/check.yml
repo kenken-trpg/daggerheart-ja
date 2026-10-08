@@ -18,9 +18,15 @@ jobs:
       contents: read
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Release guard regression tests
+        run: npm run release:test
+      - name: Require a new version for changed release files
+        run: npm run release:check -- --allow-unreleased
       # check は上流の原文と突き合わせるので、参照用の原文を取る。
       # main ではなく module.json が verified と宣言しているシステム版に固定する。
       # 検査は「我々が対応すると言っているバージョン」に対して行うべきで、

@@ -85,6 +85,8 @@ npm run lang:report   # UI 文言の原文との差分状況を確認する
 npm run packs:report  # コンペンディウム訳の進捗と、上流更新で古くなった訳を見る
 npm run packs:check   # ライセンス境界と enricher/数値の保全を検査する
 npm run packs:terms   # 訳語の揺れ (同じ英語に別の訳) を検査する
+npm run release:check -- --allow-unreleased # 版番号・URL・公開済みタグとの差分を検査する
+npm run release:published # タグと公開 Release の ZIP が現在のソースと一致するか検査する
 ```
 
 外部の対訳資料を取り込むか判断するときは、`glossary/` に置かずに比較できます。
@@ -107,12 +109,30 @@ Foundry はマニフェストの `version` で更新を判定し、`download` �
 
 1. `module.json` と `package.json` の `version` を同じ新しい版に上げ、
    `module.json` の `download` をその版の `module.zip` に変更する。
-2. 翻訳の検査を実行し、変更をコミットして `main` に push する。
-3. そのコミットを指すタグ（例: `0.1.1`）で GitHub Release を公開する。
+2. `git fetch --tags origin` 後に `npm run release:check -- --allow-unreleased` と
+   翻訳の検査を実行し、変更をコミットして `main` に push する。
+3. そのコミットを指すタグ（例: `0.1.2`、`v` 接頭辞なし）で GitHub Release を公開する。
    Release ワークフローが `module.json` と `module.zip` を添付したことを確認する。
 4. 公開マニフェスト URL から隔離した FVTT 環境へインストールし、
    配布されたバージョンと日本語表示を確認する。ローカルリポジトリへの
    シンボリックリンクを使った実演だけでは、配布経路の確認にはならない。
+
+リリース漏れは GitHub Actions で次のように検出します。
+
+- **Check（push / PR）**: 公開済みタグと配布ファイルが異なるのに版番号が同じなら失敗します。
+  `module.json` と `package.json` の版番号、および `download` の版番号も検査します。
+  新しい版番号の未公開変更は PR で許容します。
+- **Release（公開時）**: タグとソースの一致、訳文の検査に合格した場合だけ ZIP を添付します。
+- **Distribution（main の push / Release 処理完了後 / 毎日 / 手動）**:
+  現在の `main` に対応するタグと公開 Release が存在し、添付マニフェストと ZIP 内の
+  全配布ファイルが現在のソースと一致するか検査します。タグ漏れ、Release の未公開、
+  添付漏れ、古い ZIP を検出します。
+
+`main` に新しい版を push してから Release が完成するまでは、Distribution が失敗するのが
+正常です。Release 完了後の実行が成功したことを確認してください。毎日の検査は日本時間
+12:23 に設定しています（GitHub の混雑で遅れる場合があります）。
+これは CI による検出であり、直接 push を拒否する設定ではありません。PR のマージも
+強制的に止めたい場合は、リポジトリの ruleset で `check` を必須にしてください。
 
 ## 不具合・訳語の報告
 

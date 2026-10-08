@@ -2,10 +2,7 @@ name: Release
 
 # Release を publish したときに、その Release へ module.json と module.zip を添付する。
 #
-# フォーク (kenken-trpg/daggerheart) ではこのイベントでワークフローが走らず、
-# 成果物をローカルで作って手で添付していた。新しいリポジトリでは走るはずだが、
-# 初回のリリースで実際に走ったかを必ず確認すること。走らない場合は
-# 「ローカルでリリース成果物を作る手順」が lang/translation/README.md にある。
+# Distribution ワークフローが完了後に公開 ZIP と main の一致を再検査する。
 
 on:
   release:
@@ -18,14 +15,18 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Verify the source payload against its release tag
+        run: npm run release:check
 
       # タグ (v は付けない) をそのままバージョンとして使う。
       - name: Read the version from the tag
         id: version
-        run: echo "value=${GITHUB_REF_NAME#v}" >> "$GITHUB_OUTPUT"
+        run: echo "value=$GITHUB_REF_NAME" >> "$GITHUB_OUTPUT"
 
       # check は上流の原文と突き合わせるので、参照用の原文を取る。
       # main ではなく module.json が verified と宣言しているシステム版に固定する。
@@ -41,6 +42,8 @@ jobs:
       # これを人間が手で走らせている限り「ビルドで強制」とは言えない。
       - name: Check the licence boundary before building
         run: npm run packs:check
+      - name: Check term agreement before building
+        run: npm run packs:terms
 
       # module.json の version / download がタグと食い違ったまま配られると、
       # Foundry が更新を検出できなくなる。ここで揃える。
@@ -79,9 +82,9 @@ jobs:
               f.write("\n")
           PY
 
-      # 配布物は翻訳と CSS だけ。ビルドするものが無いので依存関係も要らない。
+      # 検査対象と同じ一覧から配布物を作る。ビルド用の依存関係は不要。
       - name: Build module.zip
-        run: zip -r ./module.zip module.json lang/ja.json styles/ scripts/ babele/ README.md LICENSE NOTICE
+        run: node tools/release-check.mjs --files | zip -r ./module.zip -@
 
       - name: Attach the files to the release
         uses: ncipollo/release-action@v1

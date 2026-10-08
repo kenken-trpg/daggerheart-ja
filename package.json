@@ -1,11 +1,14 @@
 {
     "name": "daggerheart-ja",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Japanese translation module for the Foundryborne Daggerheart system on Foundry VTT",
     "license": "MIT",
     "private": true,
     "type": "module",
     "scripts": {
+        "release:check": "node tools/release-check.mjs",
+        "release:published": "node tools/release-check.mjs --published",
+        "release:test": "node --test tools/release-check.test.mjs",
         "reference": "node ./tools/fetch-reference.mjs",
         "lang:report": "node ./tools/lang-sync.mjs report",
         "lang:prepare": "node ./tools/lang-sync.mjs prepare",

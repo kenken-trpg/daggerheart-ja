@@ -1,0 +1,42 @@
+name: Distribution
+
+# A published tag alone is insufficient: Foundry needs a matching downloadable ZIP.
+on:
+  push:
+    branches: [main]
+  workflow_run:
+    workflows: [Release]
+    types: [completed]
+  schedule:
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  distribution:
+    runs-on: ubuntu-latest
+    steps:
+      # Always inspect current main, including after a release of an older commit.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Verify the tag, published manifest and downloadable ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: npm run release:published
+      - name: Explain an incomplete distribution
+        if: failure()
+        run: |
+          cat >> "$GITHUB_STEP_SUMMARY" <<'EOF'
+          ## Distribution is incomplete
+          main の版番号・タグ・公開 Release・配布 ZIP が一致していません。
+          ログの FAIL を確認し、版番号を上げて Release を公開してください。
+          main への push だけでは FVTT に更新は届きません。
+          Release 完了後にこの検査が再実行されます。手動実行も可能です。
+          EOF
